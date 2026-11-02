@@ -275,3 +275,7 @@ The rebuilt `Gboard-By-Eliwoa-ui-fix.apk` includes the latest source. [UI-REPAIR
 ### Full-height placement and shift theme follow-up
 
 The latest download is `Gboard-By-Eliwoa-anchor-fix.apk`. [ANCHOR-THEME-REPAIR.md](ANCHOR-THEME-REPAIR.md) records the measured full-height layout regression, bottom anchoring, native touch-inset hook and restoration of native shift tint/caps-lock artwork. Twenty UI tests plus the 50 earlier checks pass. `reports/anchor-verification.json` is the current APK verification; earlier reports remain historical.
+
+### Current writing modes and shift bindings
+
+The latest artifact is `Gboard-By-Eliwoa-writing-modes.apk`. [WRITING-MODES.md](WRITING-MODES.md) documents the natural multilingual prompt, sentence/full-text settings, manual and automatic checks, whole-document validation and review, and the actual three null shift-style references. The manual shift repair has been removed. Current verification is `reports/writing-verification.json` (112 checks). Earlier reports remain historical. The ordinary offline build command is unchanged.

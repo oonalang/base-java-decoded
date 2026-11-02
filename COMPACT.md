@@ -1,46 +1,30 @@
 # Compact handoff
 
-## Current state
+- App: **Gboard By Eliwoa**, package **com.gboard.eli**, based on Gboard18.4.1 arm64-v8a / Android API32+.
+- Latest artifact: **Gboard-By-Eliwoa-writing-modes.apk**. SHA-256: **0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728**.
+- Model default remains **gemini-3.5-flash-lite**. The user's key stays on the phone and was never supplied to this workspace.
+- Sentence mode remains default. Full text/essay covers the entire field (including after the cursor), up to30,000 UTF-16 characters. Choose manual or automatic checks in settings; manual tap remains available when auto is on.
+- Full-text results open a scrollable review before Apply. Whole-text capture and replacement reject incomplete, oversized, stale and unsupported snapshots. Sensitive fields are still excluded.
+- Natural multilingual/code-switched instructions preserve casual voice, correct words directly and prohibit em dashes/semicolons. Input is a JSON message string rather than conversational instructions. Actual language/style quality is not live-tested here.
+- Shift root cause now repaired: default style0x7f150421 had null attrs1ad/1ae/1af. They reference original locked/off/on drawables5b0/5b1/5b2 again. Manual shift view/tint/alpha overrides are removed entirely.
+- Existing settings-startup, rounded bar, bottom anchoring, touch insets and icon-only-collapse fixes remain.
+- **112 checks pass**:50 API33 UI/core tests,53 policy/sentence checks,9 certificate checks. Same signer, five dex files, 16KB ZIP alignment, all34,193 public IDs valid and zero build IP connections. All four original dex files and15 native libraries match the previous anchor APK.
+- **New APK phone behavior and live Gemini output remain unverified.** The user reported the earlier app generally worked but shift was blank and multilingual text was not corrected.
 
-- App: **Gboard By Eliwoa**, installed package **`com.gboard.eli`**.
-- Source: Gboard `18.4.1.985164140-release-arm64-v8a`, versionCode `176027078`, minSdk 32, targetSdk 37.
-- Implemented: a dedicated AI Grammar toggle/correction row, Gemini client, programmatic settings and checked sentence replacement.
-- Model default: **`gemini-3.5-flash-lite`**. Users enter their key in **AI Grammar Settings**. No user's key is stored in the source or APK.
-- Latest artifact: **`Gboard-By-Eliwoa-anchor-fix.apk`**. SHA-256: **`044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689`**.
-- Build/resource/signature checks pass for that artifact. **This newest APK has not yet been tested on the phone. Live Gemini behavior is also unverified.**
-- Current APK includes the latest chat-field/Gemini fixes plus the settings, corners, collapse and shift repair documented in [UI-REPAIR.md](aigrammar/UI-REPAIR.md). Twenty API 33 Android UI tests cover settings, measured full-height/wrapped layout, resizing, native touch regions and shift theme/state; all pass. The screenshot regression and white-tint override are repaired in [ANCHOR-THEME-REPAIR.md](aigrammar/ANCHOR-THEME-REPAIR.md).
+## Continue
 
-## Fixed failures
+1. Install the latest APK as an update without clearing data.
+2. Verify shift off/on/caps lock and selected theme, settings taps and anchoring.
+3. Try a misspelled word and Taglish phrase, then full paragraphs with the cursor in the middle.
+4. Test full-text manual/auto, preview cancel/apply, stale edits and keyboard rebuilding.
+5. For failures, capture the newest com.gboard.eli log rather than reusing old crash-buffer entries.
 
-1. Welcome-screen BitmapDrawable had `src=@null`; it now uses the clone artwork.
-2. A local startup self-check rejected the clone's actual certificate. It retains the original check and adds an exact package-and-certificate-pinned fallback for this clone only. `ryi`/SignatureUtils and external Google authentication checks are unchanged.
-3. Opening a textbox crashed while parsing the `prime` keyboard: popup icons became null because the base required a missing density split. The user supplied the **matching `config.xxhdpi` split**. Restored **113 drawable IDs / 115 images**, one integer, one qualified style and **204 references in 53 XML files**, including **all 42 broken popup-icon references**. The keyboard parser is unchanged.
+## Constraints
 
-## Verification
+- Edit base_decoded, use base_java read-only. Never rename original native-facing classes or packages.
+- Find obfuscated/resource mappings by evidence and confirm smali. Keep original registers, labels and exception ranges valid.
+- Build with pre-staged tools offline. The normal build script is unchanged.
+- Do not publish API keys, raw device logs or new private signing material. The owner separately authorized the existing public signing-backup ZIP transfer.
+- Keep the original Gboard installed and preserve clone data when updating.
 
-- 20 Android UI tests, 41 privacy/sentence checks and 9 identity checks pass (70 total).
-- apktool build, five dex files, 16 KB ZIP alignment and APK signature verification pass.
-- All 34,193 current public declarations resolve; classes2/3/4 and all 15 native libraries are byte-identical. The primary dex adds one confirmed insets hook; original method locals/registers are unchanged.
-- The actual compiled APK's 204 restored XML references resolve to their original nonzero IDs.
-- No bitmap/nine-patch source or popup-icon reference remains null. All 23 nine-patch images have compiled chunks.
-- All 15 native libraries, original LatinIME class and `base_java/` remain unchanged.
-- Build traced with no IP connects/network sends. Tool provisioning and artifact publication are separate from the offline build.
-
-## Non-negotiable constraints
-
-- Edit `base_decoded/`; use `base_java/` read-only for evidence.
-- Do not rename original smali/native-facing classes or packages, especially `com.android.inputmethod.latin.LatinIME`.
-- Find obfuscated symbols from Java evidence and confirm smali before editing. Keep registers, labels and exception ranges valid.
-- Do not globally replace the original package string; upstream Google namespaces and credentials remain as audited.
-- Never commit signing keys/passwords, private download links, user API keys, wireless pairing details or raw device logs.
-- Preserve the original Gboard installation and the clone's data when testing updates.
-
-## Next actions
-
-1. Install the newly rebuilt `releases/Gboard-By-Eliwoa-anchor-fix.apk` as an update; the signer is unchanged.
-2. Select the clone and tap a textbox. Confirm the keyboard shows the shift arrow and the new grammar bar.
-3. Test settings, four rounded corners, icon-only collapse/restore, repeated shift and caps lock, anchoring in chat/search and native theme/caps-lock color, then Gemini Save/Test and chip replacement. The new APK still needs a phone test.
-4. If it fails, capture a **new** crash log and identify the latest `com.gboard.eli` exception. Old crash-buffer entries remain after updating.
-5. Do not claim runtime success until the user reports these checks passing.
-
-Detailed references: [CONTEXT.md](CONTEXT.md), [build guide](aigrammar/README.md), [startup repair](aigrammar/STARTUP-REPAIR.md), [density restoration](aigrammar/DENSITY-RESTORE.md), and [verification JSON](aigrammar/reports/verification.json).
+Details: [CONTEXT.md](CONTEXT.md), [WRITING-MODES.md](aigrammar/WRITING-MODES.md), [build guide](aigrammar/README.md), [verification](aigrammar/reports/writing-verification.json).

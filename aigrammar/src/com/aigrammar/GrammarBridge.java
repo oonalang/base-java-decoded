@@ -17,7 +17,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.inputmethod.EditorInfo;
@@ -28,15 +27,15 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Button;
+import android.widget.PopupWindow;
+import android.widget.ScrollView;
 
 /** Small platform-only adapter. No reflection into Gboard and no root replacement. */
 public final class GrammarBridge implements SharedPreferences.OnSharedPreferenceChangeListener {
     private static GrammarBridge instance;
     // R.id.keyboard_holder, confirmed in res/values/public.xml and layout ...0171.
     private static final int KEYBOARD_HOLDER = 0x7f0b05e9;
-    // R.id.key_pos_shift and the default SoftKeyView icon slot.
-    private static final int KEY_SHIFT = 0x7f0b05b0;
-    private static final int KEY_ICON = 0x7f0b03c0;
     private final InputMethodService ime;
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable timer = new Runnable() {
@@ -59,8 +58,8 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             updateRowPosition();
         }
     };
-    private ViewTreeObserver shiftObserver;
-    private ViewTreeObserver.OnPreDrawListener shiftPreDraw;
+    private ViewTreeObserver geometryObserver;
+    private ViewTreeObserver.OnPreDrawListener geometryPreDraw;
     private EditorInfo editor;
     private boolean active;
     private boolean collapsed;
@@ -71,6 +70,8 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private String lastRequested;
     private boolean requesting;
     private String statusError;
+    private String statusNotice;
+    private PopupWindow review;
     private Snapshot offered;
     private String correction;
 
@@ -116,8 +117,8 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             bridge.lastRequested = null;
             bridge.refreshToggle();
             bridge.refreshStatus();
-            bridge.repairShiftIcon();
-            if (GrammarClient.isEnabled()) bridge.handler.postDelayed(bridge.timer, 700);
+            bridge.refreshGeometry();
+            bridge.scheduleCheck();
         } catch (RuntimeException error) { Log.w("AIGrammar", "Cannot start grammar session"); }
     }
 
@@ -128,8 +129,9 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             bridge.invalidate();
             bridge.cursorStart = start;
             bridge.cursorEnd = end;
-            bridge.repairShiftIcon();
-            if (bridge.allowed()) bridge.handler.postDelayed(bridge.timer, 700);
+            bridge.refreshGeometry();
+            bridge.refreshStatus();
+            bridge.scheduleCheck();
         } catch (RuntimeException error) { bridge.invalidate(); }
     }
 
@@ -144,7 +146,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         instance.active = instance.editor == ime.getCurrentInputEditorInfo();
         instance.refreshToggle();
         instance.refreshStatus();
-        instance.repairShiftIcon();
+        instance.refreshGeometry();
     }
 
     public static void destroy(InputMethodService ime) {
@@ -175,11 +177,11 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         invalidate();
         if (registered != null) registered.unregisterOnSharedPreferenceChangeListener(this);
         registered = null;
-        if (shiftObserver != null && shiftObserver.isAlive() && shiftPreDraw != null) {
-            shiftObserver.removeOnPreDrawListener(shiftPreDraw);
+        if (geometryObserver != null && geometryObserver.isAlive() && geometryPreDraw != null) {
+            geometryObserver.removeOnPreDrawListener(geometryPreDraw);
         }
-        shiftObserver = null;
-        shiftPreDraw = null;
+        geometryObserver = null;
+        geometryPreDraw = null;
         if (row != null && row.getParent() instanceof ViewGroup)
             ((ViewGroup) row.getParent()).removeView(row);
         row = null;
@@ -191,6 +193,14 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     }
 
     private void restoreBaseMargin() {
+        if (geometryPreDraw != null) {
+            if (geometryObserver != null && geometryObserver.isAlive())
+                geometryObserver.removeOnPreDrawListener(geometryPreDraw);
+            if (rowRoot != null && rowRoot.getViewTreeObserver().isAlive())
+                rowRoot.getViewTreeObserver().removeOnPreDrawListener(geometryPreDraw);
+        }
+        geometryObserver = null;
+        geometryPreDraw = null;
         if (rowRoot != null) rowRoot.removeOnLayoutChangeListener(rowPositionListener);
         if (keyboardBase != null
                 && keyboardBase.getLayoutParams() instanceof FrameLayout.LayoutParams) {
@@ -292,6 +302,9 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             Log.w("AIGrammar", "Expected keyboard base is absent");
             return;
         }
+        // A new keyboard view must not retain a preview tied to the old window.
+        invalidate();
+        lastRequested = null;
         readTheme();
         SharedPreferences prefs = GrammarClient.preferences();
         collapsed = prefs != null && prefs.getBoolean("collapsed", false);
@@ -318,7 +331,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             refreshToggle();
             refreshStatus();
             if (enable && !GrammarClient.hasKey()) openSettings();
-            else if (enable && allowed()) handler.postDelayed(timer, 700);
+            else if (enable) scheduleCheck();
         });
         toggle.setOnLongClickListener(view -> {
             openSettings();
@@ -354,7 +367,10 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         chipBackground.setColor(accent);
         chipBackground.setCornerRadius(dp(17));
         chip.setBackground(chipBackground);
-        chip.setOnClickListener(view -> applyCorrection());
+        chip.setOnClickListener(view -> {
+            if (offered != null && offered.fullText != null) showFullTextReview();
+            else applyCorrection();
+        });
         chip.setVisibility(View.GONE);
         row.addView(chip, new LinearLayout.LayoutParams(0, -2, 1));
 
@@ -384,7 +400,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         refreshToggle();
         refreshStatus();
         handler.postDelayed(new Runnable() {
-            @Override public void run() { repairShiftIcon(); }
+            @Override public void run() { refreshGeometry(); }
         }, 300);
     }
 
@@ -408,7 +424,8 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             if (toggle != null) toggle.performClick();
         } else if (!GrammarClient.hasKey()) {
             openSettings();
-        } else if (statusError != null) {
+        } else if (statusError != null || isFullTextMode()) {
+            if (requesting) return;
             lastRequested = null;
             requestCorrection();
         }
@@ -423,7 +440,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             if (prefs != null) prefs.edit().putBoolean("collapsed", value).apply();
         }
         applyCollapsed();
-        if (!value && allowed()) handler.postDelayed(timer, 700);
+        if (!value) scheduleCheck();
     }
 
     private void applyCollapsed() {
@@ -457,11 +474,28 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
                 && EditorPolicy.allows(editor.inputType, editor.imeOptions, editor.packageName);
     }
 
+    private boolean isFullTextMode() {
+        SharedPreferences prefs = GrammarClient.preferences();
+        return prefs != null && "full_text".equals(prefs.getString("scope", "sentence"));
+    }
+
+    private void scheduleCheck() {
+        handler.removeCallbacks(timer);
+        SharedPreferences prefs = GrammarClient.preferences();
+        if (!allowed() || (isFullTextMode()
+                && (prefs == null || !prefs.getBoolean("full_text_auto", false)))) return;
+        handler.postDelayed(timer, isFullTextMode() ? 1500 : 700);
+    }
+
     private Snapshot snapshot() {
         // This check must precede getSelectedText/getTextBeforeCursor/getTextAfterCursor.
         if (!allowed()) return null;
         InputConnection connection = ime.getCurrentInputConnection();
         if (connection == null) return null;
+        if (isFullTextMode()) {
+            FullTextSnapshot full = FullTextSnapshot.capture(connection, cursorStart, cursorEnd);
+            return full == null ? null : new Snapshot(connection, editor, revision, cursorStart, full);
+        }
         CharSequence selected = connection.getSelectedText(0);
         if (selected != null && selected.length() > 0) return null;
         CharSequence before = connection.getTextBeforeCursor(201, 0);
@@ -474,6 +508,12 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     }
 
     private boolean matches(Snapshot expected) {
+        if (expected.fullText != null) {
+            return allowed() && isFullTextMode() && editor == expected.editor
+                    && revision == expected.revision && cursorStart == expected.cursor
+                    && expected.fullText.matches(ime.getCurrentInputConnection());
+        }
+        if (isFullTextMode()) return false;
         Snapshot current = snapshot();
         return current != null && current.connection == expected.connection
                 && current.editor == expected.editor && current.revision == expected.revision
@@ -484,24 +524,35 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private void requestCorrection() {
         try {
             final Snapshot source = snapshot();
-            if (source == null || source.slice.text.equals(lastRequested)) return;
-            lastRequested = source.slice.text;
+            if (source == null) {
+                if (allowed() && isFullTextMode()) {
+                    statusError = "Cannot read the whole field (limit 30,000 characters)";
+                    refreshStatus();
+                }
+                return;
+            }
+            final String input = source.fullText == null ? source.slice.text : source.fullText.text;
+            if (input.trim().length() < 3 || input.equals(lastRequested)) return;
+            lastRequested = input;
             requesting = true;
             statusError = null;
+            statusNotice = null;
             hideChip();
-            GrammarClient.request(source.slice.text, new GrammarClient.Callback() {
+            refreshStatus();
+            GrammarClient.request(input, source.fullText != null, new GrammarClient.Callback() {
                 @Override public void onResult(String corrected) {
                     requesting = false;
                     try {
                         if (!matches(source)) { hideChip(); return; }
                         // Restore the editor's original trailing spaces/newlines.
-                        String core = corrected.trim();
-                        if (core.isEmpty() || core.equals(source.slice.text)) {
+                        String core = source.fullText == null ? corrected.trim() : corrected;
+                        if (core.trim().isEmpty() || core.equals(input)) {
+                            statusNotice = "No changes needed";
                             hideChip();
                             return;
                         }
                         offered = source;
-                        correction = core + source.slice.trailing;
+                        correction = source.fullText == null ? core + source.slice.trailing : core;
                         showChip(core);
                     } catch (RuntimeException error) { hideChip(); }
                 }
@@ -524,8 +575,10 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private void showChip(String core) {
         if (chip == null) return;
         if (collapsed) return;
-        chip.setText("✓  " + core);
-        chip.setContentDescription("Apply grammar correction: " + core);
+        boolean full = offered != null && offered.fullText != null;
+        chip.setText(full ? "Review full-text correction" : "✓  " + core);
+        chip.setContentDescription(full ? "Review correction for the whole field"
+                : "Apply grammar correction: " + core);
         chip.setVisibility(View.VISIBLE);
         refreshStatus();
     }
@@ -536,6 +589,14 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             String replacement = correction;
             if (source == null || replacement == null || !matches(source)) { invalidate(); return; }
             InputConnection connection = source.connection;
+            if (source.fullText != null) {
+                invalidate();
+                boolean applied = source.fullText.apply(connection, replacement);
+                if (applied) statusNotice = "Full-text correction applied";
+                else statusError = "Text changed or this app rejected the edit, check again";
+                refreshStatus();
+                return;
+            }
             invalidate();
             connection.beginBatchEdit();
             try {
@@ -561,7 +622,75 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         }
     }
 
+    private void showFullTextReview() {
+        final Snapshot source = offered;
+        final String replacement = correction;
+        if (source == null || replacement == null || !matches(source)) { invalidate(); return; }
+        dismissReview();
+        try {
+            LinearLayout content = new LinearLayout(ime);
+            content.setOrientation(LinearLayout.VERTICAL);
+            content.setPadding(dp(14), dp(12), dp(14), dp(10));
+            content.setBackground(barBackground());
+            TextView title = new TextView(ime);
+            title.setText("Review full-text correction");
+            title.setTextColor(fg);
+            title.setTextSize(16);
+            title.setPadding(0, 0, 0, dp(8));
+            content.addView(title);
+            TextView body = new TextView(ime);
+            body.setText(replacement);
+            body.setTextSize(15);
+            body.setTextColor(fg);
+            body.setPadding(0, 0, dp(4), dp(8));
+            ScrollView scroll = new ScrollView(ime);
+            scroll.addView(body);
+            content.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
+            LinearLayout actions = new LinearLayout(ime);
+            Button cancel = new Button(ime);
+            cancel.setText("Cancel");
+            cancel.setAllCaps(false);
+            cancel.setOnClickListener(view -> dismissReview());
+            actions.addView(cancel, new LinearLayout.LayoutParams(0, dp(44), 1));
+            Button apply = new Button(ime);
+            apply.setText("Apply to full text");
+            apply.setAllCaps(false);
+            apply.setOnClickListener(view -> {
+                if (offered != source || !replacement.equals(correction)) { invalidate(); return; }
+                dismissReview();
+                applyCorrection();
+            });
+            actions.addView(apply, new LinearLayout.LayoutParams(0, dp(44), 1));
+            content.addView(actions);
+            int height = Math.min(dp(360), ime.getResources().getDisplayMetrics().heightPixels / 2);
+            final PopupWindow popup = new PopupWindow(content,
+                    Math.max(dp(200), rowRoot.getWidth() - dp(24)), height, false);
+            popup.setInputMethodMode(PopupWindow.INPUT_METHOD_NOT_NEEDED);
+            popup.setOutsideTouchable(true);
+            popup.setBackgroundDrawable(barBackground());
+            popup.setElevation(dp(8));
+            popup.setOnDismissListener(() -> { if (review == popup) review = null; });
+            int[] location = new int[2];
+            row.getLocationInWindow(location);
+            review = popup;
+            popup.showAtLocation(row, Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0,
+                    Math.max(dp(8), location[1] - height - dp(4)));
+        } catch (RuntimeException error) {
+            dismissReview();
+            statusError = "Cannot open the review, try again";
+            refreshStatus();
+            Log.w("AIGrammar", "Cannot show full-text review");
+        }
+    }
+
+    private void dismissReview() {
+        PopupWindow popup = review;
+        review = null;
+        if (popup != null) popup.dismiss();
+    }
+
     private void hideChip() {
+        dismissReview();
         offered = null;
         correction = null;
         if (chip != null) {
@@ -576,9 +705,13 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         revision++;
         handler.removeCallbacks(timer);
         // Excluded fields can be our own SettingsActivity. Do not cancel its Test request.
-        if (requesting) GrammarClient.cancelPending();
+        if (requesting) {
+            GrammarClient.cancelPending();
+            lastRequested = null;
+        }
         requesting = false;
         statusError = null;
+        statusNotice = null;
         hideChip();
     }
 
@@ -630,86 +763,38 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             status.setText("Add your Gemini key");
             status.setTextColor(accent);
         } else if (requesting) {
-            status.setText("Checking grammar…");
+            status.setText(isFullTextMode() ? "Checking full text…" : "Checking grammar…");
             status.setTextColor(muted);
         } else if (statusError != null) {
             status.setText(statusError + " · tap to retry");
             status.setTextColor(error);
+        } else if (statusNotice != null) {
+            status.setText(statusNotice);
+            status.setTextColor(muted);
+        } else if (!allowed()) {
+            status.setText(cursorStart != cursorEnd ? "Place the cursor to check text"
+                    : "AI Grammar paused in this field");
+            status.setTextColor(muted);
         } else {
-            status.setText("AI Grammar ON");
+            status.setText(isFullTextMode() ? "Check full text · tap" : "AI Grammar ON");
             status.setTextColor(muted);
         }
     }
 
-    private void repairShiftIcon() {
-        try {
-            updateRowPosition();
-            Window window = ime.getWindow() == null ? null : ime.getWindow().getWindow();
-            View root = window == null ? null : window.getDecorView();
-            if (root == null) return;
-            // Observe the stable window, not a key child that Gboard replaces when
-            // changing case/layout. Never retain the old child ImageView.
-            if (shiftObserver != root.getViewTreeObserver()) {
-                if (shiftObserver != null && shiftObserver.isAlive() && shiftPreDraw != null)
-                    shiftObserver.removeOnPreDrawListener(shiftPreDraw);
-                shiftObserver = null;
-                hookShiftIcon(root);
-            }
-            repairVisibleShiftKeys(root);
-        } catch (RuntimeException error) {
-            Log.w("AIGrammar", "Cannot repair shift icon");
-        }
-    }
-
-    private void hookShiftIcon(View shift) {
-        if (shiftObserver != null || shift == null) return;
-        final ViewTreeObserver observer = shift.getViewTreeObserver();
-        if (!observer.isAlive()) return;
-        shiftObserver = observer;
-        shiftPreDraw = new ViewTreeObserver.OnPreDrawListener() {
-            @Override public boolean onPreDraw() {
-                repairShiftIcon();
-                return true;
-            }
+    private void refreshGeometry() {
+        updateRowPosition();
+        if (rowRoot == null || !rowRoot.isAttachedToWindow()) return;
+        ViewTreeObserver observer = rowRoot.getViewTreeObserver();
+        if (geometryObserver == observer) return;
+        if (geometryObserver != null && geometryObserver.isAlive() && geometryPreDraw != null)
+            geometryObserver.removeOnPreDrawListener(geometryPreDraw);
+        // An observer can transfer listeners when an input view attaches.
+        if (geometryPreDraw != null) observer.removeOnPreDrawListener(geometryPreDraw);
+        geometryObserver = observer;
+        geometryPreDraw = new ViewTreeObserver.OnPreDrawListener() {
+            @Override public boolean onPreDraw() { updateRowPosition(); return true; }
         };
-        observer.addOnPreDrawListener(shiftPreDraw);
-    }
-
-    private void repairVisibleShiftKeys(View view) {
-        if (view.getVisibility() != View.VISIBLE) return;
-        if (view.getId() == KEY_SHIFT) {
-            ImageView icon = findImageView(view);
-            if (icon != null) applyShiftIcon(icon);
-            return;
-        }
-        if (view instanceof ViewGroup) {
-            ViewGroup group = (ViewGroup) view;
-            for (int i = 0; i < group.getChildCount(); i++)
-                repairVisibleShiftKeys(group.getChildAt(i));
-        }
-    }
-
-    private void applyShiftIcon(ImageView icon) {
-        if (icon.getVisibility() != View.VISIBLE) icon.setVisibility(View.VISIBLE);
-        // Native rhz.e()/onb.s() own the themed tint and off/on/locked drawable.
-        // Repair a fully hidden icon without bleaching native color/translucency
-        // or replacing an on/locked state with the off glyph during a transition.
-        if (icon.getAlpha() == 0f) icon.setAlpha(1f);
-        if (icon.getImageAlpha() == 0) icon.setImageAlpha(255);
-    }
-
-    private ImageView findImageView(View view) {
-        if (view instanceof ImageView && view.getId() == KEY_ICON) return (ImageView) view;
-        // An ImageView may itself be GONE; its enclosing key content must be current.
-        if (view.getVisibility() != View.VISIBLE) return null;
-        if (view instanceof ViewGroup) {
-            ViewGroup group = (ViewGroup) view;
-            for (int i = 0; i < group.getChildCount(); i++) {
-                ImageView found = findImageView(group.getChildAt(i));
-                if (found != null) return found;
-            }
-        }
-        return null;
+        observer.addOnPreDrawListener(geometryPreDraw);
     }
 
     @Override public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
@@ -718,13 +803,14 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             applyCollapsed();
             return;
         }
-        if (!"enabled".equals(key) && !"api_key".equals(key) && !"model".equals(key)) return;
+        if (!"enabled".equals(key) && !"api_key".equals(key) && !"model".equals(key)
+                && !"scope".equals(key) && !"full_text_auto".equals(key)) return;
         invalidate();
         lastRequested = null;
         statusError = null;
         refreshToggle();
         refreshStatus();
-        if (allowed()) handler.postDelayed(timer, 700);
+        scheduleCheck();
     }
 
     private static final class Snapshot {
@@ -735,10 +821,18 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         final String before;
         final String after;
         final SentenceSlice slice;
+        final FullTextSnapshot fullText;
         Snapshot(InputConnection connection, EditorInfo editor, long revision, int cursor,
                 String before, String after, SentenceSlice slice) {
             this.connection = connection; this.editor = editor; this.revision = revision;
             this.cursor = cursor; this.before = before; this.after = after; this.slice = slice;
+            this.fullText = null;
+        }
+        Snapshot(InputConnection connection, EditorInfo editor, long revision, int cursor,
+                FullTextSnapshot fullText) {
+            this.connection = connection; this.editor = editor; this.revision = revision;
+            this.cursor = cursor; this.fullText = fullText;
+            before = null; after = null; slice = null;
         }
     }
 }

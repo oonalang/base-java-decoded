@@ -104,8 +104,8 @@
 
     move-result v5
 
-    .line 24
-    const-string v6, ".!?\u3002\uff01\uff1f\u061f"
+    .line 25
+    const-string v6, ".!?\u3002\uff01\uff1f\u061f\u06d4\u0964\u0965\u0589\u1362\u104b\u037e"
 
     invoke-virtual {v6, v5}, Ljava/lang/String;->indexOf(I)I
 
@@ -117,7 +117,7 @@
 
     move v4, v7
 
-    .line 25
+    .line 26
     :cond_3f
     const/16 v6, 0xa
 
@@ -131,7 +131,7 @@
 
     add-int/lit8 v4, v3, 0x1
 
-    .line 26
+    .line 27
     invoke-virtual {p0, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -154,15 +154,15 @@
 
     goto :goto_2e
 
-    .line 27
+    .line 28
     :cond_5d
     :goto_5d
     add-int/lit8 v4, v3, 0x1
 
-    .line 28
+    .line 29
     nop
 
-    .line 31
+    .line 32
     :cond_60
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -174,7 +174,7 @@
 
     return-object v0
 
-    .line 32
+    .line 33
     :cond_69
     :goto_69
     if-ge v4, v1, :cond_78
@@ -193,7 +193,7 @@
 
     goto :goto_69
 
-    .line 33
+    .line 34
     :cond_78
     sub-int v2, v1, v4
 
@@ -213,7 +213,7 @@
 
     goto :goto_a4
 
-    .line 35
+    .line 36
     :cond_87
     invoke-virtual {p0, v4}, Ljava/lang/String;->charAt(I)C
 
@@ -227,7 +227,7 @@
 
     return-object v0
 
-    .line 36
+    .line 37
     :cond_92
     new-instance v0, Lcom/aigrammar/SentenceSlice;
 
@@ -239,17 +239,17 @@
 
     move-result-object v3
 
-    .line 37
+    .line 38
     invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
     invoke-direct {v0, v2, v3, p0}, Lcom/aigrammar/SentenceSlice;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 36
+    .line 37
     return-object v0
 
-    .line 33
+    .line 34
     :cond_a4
     :goto_a4
     return-object v0

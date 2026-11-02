@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/aigrammar/GrammarBridge;->hookShiftIcon(Landroid/view/View;)V
+    value = Lcom/aigrammar/GrammarBridge;->refreshGeometry()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 669
+    .line 794
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$5;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,13 +38,12 @@
 .method public onPreDraw()Z
     .registers 2
 
-    .line 671
+    .line 795
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$5;->this$0:Lcom/aigrammar/GrammarBridge;
 
-    # invokes: Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
-    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$200(Lcom/aigrammar/GrammarBridge;)V
+    # invokes: Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
+    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$100(Lcom/aigrammar/GrammarBridge;)V
 
-    .line 672
     const/4 v0, 0x1
 
     return v0

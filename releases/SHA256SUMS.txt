@@ -1,3 +1,4 @@
 e3ad4163e1851b2b5a0b34c8dcf7c012be51b2802dded85ad89158a13d66c1f0  Gboard-By-Eliwoa-resources-fixed.apk
 83b4cdfcbd3db194ec7b6befe559e0431e9983cb8cf3bb847a7c71846eff6477  Gboard-By-Eliwoa-ui-fix.apk
 044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689  Gboard-By-Eliwoa-anchor-fix.apk
+0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728  Gboard-By-Eliwoa-writing-modes.apk

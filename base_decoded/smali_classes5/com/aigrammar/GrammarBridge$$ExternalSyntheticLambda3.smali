@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLongClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,15 +24,13 @@
 
 
 # virtual methods
-.method public final onLongClick(Landroid/view/View;)Z
+.method public final onClick(Landroid/view/View;)V
     .registers 3
 
     .line 0
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda3;->f$0:Lcom/aigrammar/GrammarBridge;
 
-    invoke-virtual {v0, p1}, Lcom/aigrammar/GrammarBridge;->lambda$attachRow$3$com-aigrammar-GrammarBridge(Landroid/view/View;)Z
+    invoke-virtual {v0, p1}, Lcom/aigrammar/GrammarBridge;->lambda$attachRow$0$com-aigrammar-GrammarBridge(Landroid/view/View;)V
 
-    move-result p1
-
-    return p1
+    return-void
 .end method

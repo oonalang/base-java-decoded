@@ -2,15 +2,19 @@
 
 An experimental Android keyboard clone, package **`com.gboard.eli`**, with a dedicated **AI Grammar** row above the existing keyboard. The model default is **`gemini-3.5-flash-lite`**.
 
-The latest APK anchors the grammar bar immediately above the actual keyboard, including full-height input windows. It restores Gboard’s original shift artwork and preserves native theme/caps-lock colors. The settings-startup, rounded background and icon-only-collapse fixes are retained. See [anchor/theme repair and verification](aigrammar/ANCHOR-THEME-REPAIR.md).
+The latest APK adds natural multilingual editing, including mixed-language text such as Taglish, and an optional whole-field/essay mode. Sentence mode stays the default. It also repairs the three missing shift-style references so the original native off/on/locked icons can load. See [writing modes and verification](aigrammar/WRITING-MODES.md).
 
 The APK build, resource restoration, signing and static checks pass for the published artifact. It still needs an Android phone test and a live Gemini test. Earlier test APKs exposed startup and missing-resource failures that are documented below.
 
-[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-anchor-fix.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
+[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-writing-modes.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
 
 ## Configure
 
 Open **AI Grammar Settings**, enter your own Gemini API key, set model `gemini-3.5-flash-lite`, and use **Save → Test**. Enable/select **Gboard By Eliwoa** in Android's keyboard settings. The grammar toggle starts OFF. The row has a sparkle toggle, a status line, a gear button and a **V** collapse button. Tap the sparkle to turn grammar on, tap the gear (or long-press the sparkle) for settings, and tap the green correction chip to replace the checked sentence before the cursor. The V leaves only the sparkle at the left. Tap that icon to restore the row; it keeps the ON/OFF setting. Grammar checks pause while collapsed and never reopen it automatically.
+
+For paragraphs and essays, open **AI Grammar Settings → What to check → Full text / essay**. Leave **Check full text after a pause** off for manual checks, or enable it for automatic checks. The keyboard’s **Check full text** action remains available. Full text includes both sides of the cursor, up to 30,000 characters, and opens a scrollable review before applying.
+
+The prompt preserves casual voice and each language, avoids em dashes/semicolons and generic filler, and corrects supplied words directly instead of asking for a word. Live model output quality still needs checking on the phone.
 
 Saved model preferences survive updates; change an older saved model manually. API keys belong in the app's private preferences on the device, not in this repository.
 
@@ -19,7 +23,7 @@ Saved model preferences survive updates; change an older saved model manually. A
 - The grammar bar is now theme-aware, collapses with the **V** button, remembers its collapsed state, exposes a gear button, and shows requests/errors instead of failing silently.
 - Chat and search fields that set Android's `TYPE_TEXT_FLAG_NO_SUGGESTIONS` are no longer skipped. Password, email, URL, private-learning and non-text fields remain excluded.
 - Gemini 3 responses are parsed from real text parts, `maxOutputTokens` is larger, and the client waits longer before reporting a network failure.
-- Original shift glyphs are restored. Current visible key content is resolved after case/layout changes; native tint, state and nonzero opacity are retained.
+- Original shift glyphs and their three default-style references are restored. Manual shift view overrides are removed, leaving loading, theme tint and caps-lock state to Gboard.
 
 ## Repository map
 

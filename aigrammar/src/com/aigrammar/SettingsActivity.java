@@ -2,6 +2,7 @@ package com.aigrammar;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
@@ -16,6 +17,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -23,6 +26,11 @@ import android.widget.TextView;
 public final class SettingsActivity extends Activity {
     private EditText apiKey;
     private EditText model;
+    private RadioGroup scope;
+    private RadioButton sentenceScope;
+    private RadioButton fullTextScope;
+    private Switch fullTextAuto;
+    private TextView scopeHint;
     private TextView status;
     private Button test;
     private boolean destroyed;
@@ -95,11 +103,46 @@ public final class SettingsActivity extends Activity {
         layout.addView(model);
 
         TextView modelHint = new TextView(this);
-        modelHint.setText("Use the bare model ID. The default is optimized for short corrections.");
+        modelHint.setText("Use the bare model ID, such as gemini-3.5-flash-lite.");
         modelHint.setTextSize(12);
         modelHint.setTextColor(muted);
         modelHint.setPadding(dp(2), dp(6), 0, dp(16));
         layout.addView(modelHint);
+
+        layout.addView(section("WHAT TO CHECK"));
+        scope = new RadioGroup(this);
+        scope.setOrientation(RadioGroup.VERTICAL);
+        sentenceScope = scopeOption("Sentence by sentence");
+        fullTextScope = scopeOption("Full text / essay");
+        scope.addView(sentenceScope, new RadioGroup.LayoutParams(-1, -2));
+        scope.addView(fullTextScope, new RadioGroup.LayoutParams(-1, -2));
+        boolean fullText = "full_text".equals(prefs.getString("scope", "sentence"));
+        scope.check(fullText ? fullTextScope.getId() : sentenceScope.getId());
+        layout.addView(scope);
+
+        fullTextAuto = new Switch(this);
+        fullTextAuto.setText("Check full text after a pause");
+        fullTextAuto.setTextSize(14);
+        fullTextAuto.setTextColor(foreground);
+        fullTextAuto.setPadding(dp(2), dp(6), 0, dp(6));
+        fullTextAuto.setChecked(prefs.getBoolean("full_text_auto", false));
+        layout.addView(fullTextAuto);
+
+        scopeHint = new TextView(this);
+        scopeHint.setTextSize(12);
+        scopeHint.setTextColor(muted);
+        scopeHint.setLineSpacing(dp(2), 1f);
+        scopeHint.setPadding(dp(2), dp(4), 0, dp(18));
+        updateScopeHint();
+        layout.addView(scopeHint);
+        scope.setOnCheckedChangeListener((group, checkedId) -> {
+            prefs.edit().putString("scope", selectedScope()).apply();
+            updateScopeHint();
+        });
+        fullTextAuto.setOnCheckedChangeListener((button, value) -> {
+            prefs.edit().putBoolean("full_text_auto", value).apply();
+            updateScopeHint();
+        });
 
         Switch enabled = new Switch(this);
         enabled.setText("Enable AI Grammar");
@@ -164,7 +207,7 @@ public final class SettingsActivity extends Activity {
         });
 
         TextView footer = new TextView(this);
-        footer.setText("Only the current sentence before the cursor is sent, and only after a short pause. Password, email, URL and private-learning fields are skipped.");
+        footer.setText("Sentence mode sends the current sentence after a short pause. Full text mode checks the whole field when you ask, with automatic checks available too. Password, email, URL and private-learning fields are skipped in both modes.");
         footer.setTextSize(12);
         footer.setTextColor(muted);
         footer.setLineSpacing(dp(2), 1f);
@@ -268,6 +311,36 @@ public final class SettingsActivity extends Activity {
         return view;
     }
 
+    private RadioButton scopeOption(String label) {
+        RadioButton view = new RadioButton(this);
+        view.setId(View.generateViewId());
+        view.setText(label);
+        view.setTextSize(15);
+        view.setTextColor(foreground);
+        view.setPadding(dp(2), dp(5), 0, dp(5));
+        view.setButtonTintList(new ColorStateList(
+                new int[][]{{android.R.attr.state_checked}, {}},
+                new int[]{accent, muted}));
+        return view;
+    }
+
+    private String selectedScope() {
+        return fullTextScope != null && fullTextScope.isChecked() ? "full_text" : "sentence";
+    }
+
+    private void updateScopeHint() {
+        if (scopeHint == null) return;
+        boolean fullText = "full_text".equals(selectedScope());
+        if (fullTextAuto != null) fullTextAuto.setVisibility(fullText ? View.VISIBLE : View.GONE);
+        if (!fullText) {
+            scopeHint.setText("Check the current sentence automatically after you pause typing. This is the default.");
+        } else if (fullTextAuto != null && fullTextAuto.isChecked()) {
+            scopeHint.setText("Check the whole field after a 1.5-second pause, including text after the cursor, up to 30,000 characters. You can also tap Check full text in the keyboard any time.");
+        } else {
+            scopeHint.setText("Edit the whole field, including text after the cursor, up to 30,000 characters. Tap Check full text in the keyboard when you are ready.");
+        }
+    }
+
     private void save() {
         String name = model.getText().toString().trim();
         if (name.isEmpty()) name = GrammarClient.DEFAULT_MODEL;
@@ -275,7 +348,9 @@ public final class SettingsActivity extends Activity {
         if (prefs == null) return;
         prefs.edit()
                 .putString("api_key", apiKey.getText().toString().trim())
-                .putString("model", name).apply();
+                .putString("model", name)
+                .putString("scope", selectedScope())
+                .putBoolean("full_text_auto", fullTextAuto != null && fullTextAuto.isChecked()).apply();
     }
 
     @Override protected void onPause() {

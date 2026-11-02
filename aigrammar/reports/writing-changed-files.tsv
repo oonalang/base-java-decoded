@@ -1,0 +1,56 @@
+path	reason
+.gitattributes	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+COMPACT.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+CONTEXT.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+README.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+aigrammar/ANCHOR-THEME-REPAIR.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+aigrammar/README.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+aigrammar/WRITING-MODES.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+aigrammar/reports/writing-build-network.trace	Record exact changes and final offline build, style binding, signing, compiled-source and test verification.
+aigrammar/reports/writing-build.log	Record exact changes and final offline build, style binding, signing, compiled-source and test verification.
+aigrammar/reports/writing-signing-certificate.txt	Record exact changes and final offline build, style binding, signing, compiled-source and test verification.
+aigrammar/reports/writing-ui-tests.log	Record exact changes and final offline build, style binding, signing, compiled-source and test verification.
+aigrammar/reports/writing-verification.json	Record exact changes and final offline build, style binding, signing, compiled-source and test verification.
+aigrammar/src/com/aigrammar/FullTextSnapshot.java	Capture, verify and replace only complete unchanged documents with bounded input and no delete fallback.
+aigrammar/src/com/aigrammar/GrammarBridge.java	Integrate manual/automatic scopes, complete document snapshots, stale-safe review/apply, clear status and native shift ownership.
+aigrammar/src/com/aigrammar/GrammarClient.java	Use natural multilingual editing rules and a message data envelope, with appropriate full-text response limits.
+aigrammar/src/com/aigrammar/SentenceSlice.java	Recognize additional non-Latin sentence endings without depending on keyboard locale.
+aigrammar/src/com/aigrammar/SettingsActivity.java	Add persistent sentence/full-text scope and optional full-text automatic checks.
+aigrammar/tests/PolicyTest.java	Verify scope defaults, persistence, scheduling, privacy, multilingual boundaries, complete snapshots, preview/apply and race/rejection safety.
+aigrammar/tests/android/src/test/java/com/aigrammar/FullTextBridgeTest.java	Verify scope defaults, persistence, scheduling, privacy, multilingual boundaries, complete snapshots, preview/apply and race/rejection safety.
+aigrammar/tests/android/src/test/java/com/aigrammar/FullTextTest.java	Verify scope defaults, persistence, scheduling, privacy, multilingual boundaries, complete snapshots, preview/apply and race/rejection safety.
+aigrammar/tests/android/src/test/java/com/aigrammar/GrammarUiTest.java	Verify scope defaults, persistence, scheduling, privacy, multilingual boundaries, complete snapshots, preview/apply and race/rejection safety.
+aigrammar/tests/android/src/test/java/com/aigrammar/SettingsScopeTest.java	Verify scope defaults, persistence, scheduling, privacy, multilingual boundaries, complete snapshots, preview/apply and race/rejection safety.
+base_decoded/res/values/styles.xml	Restore the three source-proven null shift attribute references to original locked/off/on drawables.
+base_decoded/smali_classes5/com/aigrammar/FullTextSnapshot.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda0.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda1.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda2.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda3.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda4.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda5.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda6.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda7.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda8.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda9.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$1.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$2.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$3.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$4.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$5.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$Snapshot.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$1.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$2.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SentenceSlice.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda0.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda1.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda2.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda3.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda4.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$1.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity.smali	Generate valid helper smali from Java8 for writing modes, whole-document snapshots, review, prompts and settings.
+releases/Gboard-By-Eliwoa-writing-modes.apk	Publish same-signer writing-mode update APK.
+releases/README.md	Update current artifact, settings instructions, checksum and compact/detailed continuation context.
+releases/SHA256SUMS.txt	Update current artifact, settings instructions, checksum and compact/detailed continuation context.

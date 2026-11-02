@@ -31,7 +31,7 @@
 .method constructor <init>(JLjava/lang/String;Lcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;)V
     .registers 6
 
-    .line 187
+    .line 221
     iput-wide p1, p0, Lcom/aigrammar/GrammarClient$2;->val$token:J
 
     iput-object p3, p0, Lcom/aigrammar/GrammarClient$2;->val$error:Ljava/lang/String;
@@ -50,7 +50,7 @@
 .method public run()V
     .registers 5
 
-    .line 189
+    .line 223
     iget-wide v0, p0, Lcom/aigrammar/GrammarClient$2;->val$token:J
 
     # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
@@ -68,7 +68,7 @@
 
     return-void
 
-    .line 190
+    .line 224
     :cond_f
     iget-object v0, p0, Lcom/aigrammar/GrammarClient$2;->val$error:Ljava/lang/String;
 
@@ -89,7 +89,7 @@
 
     invoke-interface {v0, v1}, Lcom/aigrammar/GrammarClient$Callback;->onError(Ljava/lang/String;)V
 
-    .line 191
+    .line 225
     :goto_22
     return-void
 .end method

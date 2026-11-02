@@ -1,18 +1,18 @@
 # Test APK
 
-[Download Gboard-By-Eliwoa-anchor-fix.apk](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-anchor-fix.apk)
+[Download Gboard-By-Eliwoa-writing-modes.apk](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-writing-modes.apk)
 
-Android arm64-v8a, API 32+. Install as an update to the previous Eliwoa clone; the package and signing key are unchanged. Keep the original Gboard available while testing.
+Android arm64-v8a, API32+. Install as an update with the same signer. Saved key/model settings are retained.
 
-The current APK fixes the full-height-window bar positioning and preserves native shift theme/caps-lock appearance, retaining the settings and collapse fixes. Build/resource/signature checks and 70 checks (including 20 Android UI tests) pass. **Phone keyboard testing and a live Gemini test remain pending.**
+This build repairs the shift style references and adds natural multilingual editing plus optional full-text/essay checks. Sentence mode stays default. In AI Grammar Settings choose Full text/essay, then turn automatic checks on or off. Manual Check full text remains available. Full-text results have a scrollable review before Apply, with a30,000-character limit.
 
-Verify the download in Termux:
+112 checks pass. The new APK and live Gemini output still need phone verification. [Details and tests](../aigrammar/WRITING-MODES.md).
 
 ```bash
 cd ~/storage/downloads
-sha256sum Gboard-By-Eliwoa-anchor-fix.apk
+sha256sum Gboard-By-Eliwoa-writing-modes.apk
 ```
 
-Expected SHA-256: `044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689`.
+Expected SHA-256: `0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728`.
 
-No user Gemini API key is included. Enter yours in AI Grammar Settings and set the model to `gemini-3.5-flash-lite`. First confirm the keyboard opens in a textbox, then test the grammar chip in a normal notes/message field.
+No user Gemini key is included. Enter yours in AI Grammar Settings if not already saved. The model default is `gemini-3.5-flash-lite`.

@@ -34,6 +34,9 @@ public class PolicyTest {
         sentence("First line\nShe go today", "She go today", "She go today", "");
         sentence("Hello 😃 this are fine", "Hello 😃 this are fine", "Hello 😃 this are fine", "");
         sentence("你好。這是測試", "這是測試", "這是測試", "");
+        sentence("पहला वाक्य। यह गलत हैं", "यह गलत हैं", "यह गलत हैं", "");
+        sentence("پہلا جملہ۔ یہ درست ہیں", "یہ درست ہیں", "یہ درست ہیں", "");
+        sentence("sige send mo nalang zip", "sige send mo nalang zip", "sige send mo nalang zip", "");
         String longText = new String(new char[201]).replace('\0', 'a');
         check(SentenceSlice.from(longText) == null);
         sentence(longText.substring(0, 190) + ". Short go", "Short go", "Short go", "");

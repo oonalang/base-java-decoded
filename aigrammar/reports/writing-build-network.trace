@@ -1,0 +1,223 @@
+12271 +++ exited with 0 +++
+12270 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12271, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12270 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12270, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12272 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12272, si_uid=1000, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+12273 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12273, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12274 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12274, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12276 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12276 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12276 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12282 +++ exited with 0 +++
+12280 +++ exited with 0 +++
+12281 +++ exited with 0 +++
+12278 +++ exited with 0 +++
+12286 +++ exited with 0 +++
+12283 +++ exited with 0 +++
+12276 +++ exited with 0 +++
+12289 +++ exited with 0 +++
+12277 +++ exited with 0 +++
+12287 +++ exited with 0 +++
+12279 +++ exited with 0 +++
+12292 +++ exited with 0 +++
+12291 +++ exited with 0 +++
+12290 +++ exited with 0 +++
+12288 +++ exited with 0 +++
+12285 +++ exited with 0 +++
+12284 +++ exited with 0 +++
+12293 +++ exited with 0 +++
+12275 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12275, si_uid=1000, si_status=0, si_utime=38 /* 0.38 s */, si_stime=10 /* 0.10 s */} ---
+12294 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12294, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12297 +++ exited with 0 +++
+12296 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12297, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12296 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12296, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12298 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12298, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12299 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12299, si_uid=1000, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+12300 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12300, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12301 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12301, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12303 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12303 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12303 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12312 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x7f7559f0df00} ---
+12303 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x8} ---
+12303 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x8} ---
+12314 +++ exited with 0 +++
+12306 +++ exited with 0 +++
+12307 +++ exited with 0 +++
+12305 +++ exited with 0 +++
+12303 +++ exited with 0 +++
+12313 +++ exited with 0 +++
+12312 +++ exited with 0 +++
+12310 +++ exited with 0 +++
+12309 +++ exited with 0 +++
+12304 +++ exited with 0 +++
+12311 +++ exited with 0 +++
+12308 +++ exited with 0 +++
+12302 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12302, si_uid=1000, si_status=0, si_utime=235 /* 2.35 s */, si_stime=57 /* 0.57 s */} ---
+12319 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12319, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12321 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12321 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12321 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12321 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12321 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12340 +++ exited with 0 +++
+12339 +++ exited with 0 +++
+12327 +++ exited with 0 +++
+12341 +++ exited with 0 +++
+12325 +++ exited with 0 +++
+12326 +++ exited with 0 +++
+12323 +++ exited with 0 +++
+12331 +++ exited with 0 +++
+12328 +++ exited with 0 +++
+12321 +++ exited with 0 +++
+12338 +++ exited with 0 +++
+12333 +++ exited with 0 +++
+12332 +++ exited with 0 +++
+12330 +++ exited with 0 +++
+12324 +++ exited with 0 +++
+12337 +++ exited with 0 +++
+12336 +++ exited with 0 +++
+12335 +++ exited with 0 +++
+12334 +++ exited with 0 +++
+12329 +++ exited with 0 +++
+12322 +++ exited with 0 +++
+12320 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12320, si_uid=1000, si_status=0, si_utime=505 /* 5.05 s */, si_stime=107 /* 1.07 s */} ---
+12343 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12343 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12343 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12360 +++ exited with 0 +++
+12361 +++ exited with 0 +++
+12363 +++ exited with 0 +++
+12349 +++ exited with 0 +++
+12347 +++ exited with 0 +++
+12348 +++ exited with 0 +++
+12345 +++ exited with 0 +++
+12350 +++ exited with 0 +++
+12343 +++ exited with 0 +++
+12362 +++ exited with 0 +++
+12351 +++ exited with 0 +++
+12355 +++ exited with 0 +++
+12353 +++ exited with 0 +++
+12346 +++ exited with 0 +++
+12344 +++ exited with 0 +++
+12356 +++ exited with 0 +++
+12358 +++ exited with 0 +++
+12357 +++ exited with 0 +++
+12354 +++ exited with 0 +++
+12352 +++ exited with 0 +++
+12359 +++ exited with 0 +++
+12342 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12342, si_uid=1000, si_status=0, si_utime=95 /* 0.95 s */, si_stime=39 /* 0.39 s */} ---
+12364 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12364, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12365 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12365, si_uid=1000, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+12366 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12366, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12367 +++ exited with 0 +++
+12295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12367, si_uid=1000, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+12295 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12295, si_uid=1000, si_status=0, si_utime=0, si_stime=11 /* 0.11 s */} ---
+12369 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12369 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12369 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12386 +++ exited with 0 +++
+12373 +++ exited with 0 +++
+12431 +++ exited with 0 +++
+12374 +++ exited with 0 +++
+12375 +++ exited with 0 +++
+12371 +++ exited with 0 +++
+12376 +++ exited with 0 +++
+12369 +++ exited with 0 +++
+12387 +++ exited with 0 +++
+12385 +++ exited with 0 +++
+12384 +++ exited with 0 +++
+12383 +++ exited with 0 +++
+12382 +++ exited with 0 +++
+12381 +++ exited with 0 +++
+12379 +++ exited with 0 +++
+12378 +++ exited with 0 +++
+12372 +++ exited with 0 +++
+12370 +++ exited with 0 +++
+12380 +++ exited with 0 +++
+12377 +++ exited with 0 +++
+12368 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12368, si_uid=1000, si_status=0, si_utime=589 /* 5.89 s */, si_stime=2010 /* 20.10 s */} ---
+12432 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12432, si_uid=1000, si_status=0, si_utime=13 /* 0.13 s */, si_stime=235 /* 2.35 s */} ---
+12434 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12434 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12434 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12434 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x8} ---
+12434 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x8} ---
+12434 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x8} ---
+12434 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0xc} ---
+12453 +++ exited with 0 +++
+12452 +++ exited with 0 +++
+12455 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x7fecc52e3000} ---
+12454 +++ exited with 0 +++
+12455 +++ exited with 0 +++
+12457 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x7fecc52e3000} ---
+12456 +++ exited with 0 +++
+12457 +++ exited with 0 +++
+12458 +++ exited with 0 +++
+12440 +++ exited with 0 +++
+12438 +++ exited with 0 +++
+12439 +++ exited with 0 +++
+12436 +++ exited with 0 +++
+12444 +++ exited with 0 +++
+12441 +++ exited with 0 +++
+12434 +++ exited with 0 +++
+12451 +++ exited with 0 +++
+12449 +++ exited with 0 +++
+12448 +++ exited with 0 +++
+12447 +++ exited with 0 +++
+12450 +++ exited with 0 +++
+12443 +++ exited with 0 +++
+12442 +++ exited with 0 +++
+12446 +++ exited with 0 +++
+12445 +++ exited with 0 +++
+12435 +++ exited with 0 +++
+12437 +++ exited with 0 +++
+12433 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12433, si_uid=1000, si_status=0, si_utime=364 /* 3.64 s */, si_stime=279 /* 2.79 s */} ---
+12459 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12459, si_uid=1000, si_status=0, si_utime=4 /* 0.04 s */, si_stime=76 /* 0.76 s */} ---
+12461 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12461 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12461 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+12479 +++ exited with 0 +++
+12467 +++ exited with 0 +++
+12465 +++ exited with 0 +++
+12463 +++ exited with 0 +++
+12466 +++ exited with 0 +++
+12468 +++ exited with 0 +++
+12461 +++ exited with 0 +++
+12476 +++ exited with 0 +++
+12475 +++ exited with 0 +++
+12473 +++ exited with 0 +++
+12472 +++ exited with 0 +++
+12470 +++ exited with 0 +++
+12478 +++ exited with 0 +++
+12464 +++ exited with 0 +++
+12462 +++ exited with 0 +++
+12474 +++ exited with 0 +++
+12471 +++ exited with 0 +++
+12469 +++ exited with 0 +++
+12477 +++ exited with 0 +++
+12460 +++ exited with 0 +++
+12269 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12460, si_uid=1000, si_status=0, si_utime=77 /* 0.77 s */, si_stime=28 /* 0.28 s */} ---
+12269 +++ exited with 0 +++

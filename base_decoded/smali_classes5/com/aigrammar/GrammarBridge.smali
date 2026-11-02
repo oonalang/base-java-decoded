@@ -17,10 +17,6 @@
 # static fields
 .field private static final KEYBOARD_HOLDER:I = 0x7f0b05e9
 
-.field private static final KEY_ICON:I = 0x7f0b03c0
-
-.field private static final KEY_SHIFT:I = 0x7f0b05b0
-
 .field private static instance:Lcom/aigrammar/GrammarBridge;
 
 
@@ -53,6 +49,10 @@
 
 .field private fg:I
 
+.field private geometryObserver:Landroid/view/ViewTreeObserver;
+
+.field private geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
 .field private final handler:Landroid/os/Handler;
 
 .field private final ime:Landroid/inputmethodservice/InputMethodService;
@@ -71,6 +71,8 @@
 
 .field private requesting:Z
 
+.field private review:Landroid/widget/PopupWindow;
+
 .field private revision:J
 
 .field private row:Landroid/widget/LinearLayout;
@@ -81,13 +83,11 @@
 
 .field private settings:Landroid/widget/ImageButton;
 
-.field private shiftObserver:Landroid/view/ViewTreeObserver;
-
-.field private shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
 .field private status:Landroid/widget/TextView;
 
 .field private statusError:Ljava/lang/String;
+
+.field private statusNotice:Ljava/lang/String;
 
 .field private stroke:I
 
@@ -100,10 +100,10 @@
 .method private constructor <init>(Landroid/inputmethodservice/InputMethodService;)V
     .registers 4
 
-    .line 85
+    .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 41
+    .line 40
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -114,29 +114,29 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
 
-    .line 42
+    .line 41
     new-instance v0, Lcom/aigrammar/GrammarBridge$1;
 
     invoke-direct {v0, p0}, Lcom/aigrammar/GrammarBridge$1;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
 
-    .line 55
+    .line 54
     new-instance v0, Lcom/aigrammar/GrammarBridge$2;
 
     invoke-direct {v0, p0}, Lcom/aigrammar/GrammarBridge$2;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 69
+    .line 68
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
 
-    .line 70
+    .line 69
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->cursorEnd:I
 
-    .line 85
+    .line 86
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     return-void
@@ -145,7 +145,7 @@
 .method static synthetic access$000(Lcom/aigrammar/GrammarBridge;)V
     .registers 1
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->requestCorrection()V
 
     return-void
@@ -154,7 +154,7 @@
 .method static synthetic access$100(Lcom/aigrammar/GrammarBridge;)V
     .registers 1
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
 
     return-void
@@ -163,7 +163,16 @@
 .method static synthetic access$1002(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    .line 33
+    .line 35
+    iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1102(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
+    .registers 2
+
+    .line 35
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
     return-object p1
@@ -172,8 +181,8 @@
 .method static synthetic access$200(Lcom/aigrammar/GrammarBridge;)V
     .registers 1
 
-    .line 33
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
+    .line 35
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshGeometry()V
 
     return-void
 .end method
@@ -181,7 +190,7 @@
 .method static synthetic access$302(Lcom/aigrammar/GrammarBridge;Z)Z
     .registers 2
 
-    .line 33
+    .line 35
     iput-boolean p1, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
 
     return p1
@@ -190,7 +199,7 @@
 .method static synthetic access$400(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;)Z
     .registers 2
 
-    .line 33
+    .line 35
     invoke-direct {p0, p1}, Lcom/aigrammar/GrammarBridge;->matches(Lcom/aigrammar/GrammarBridge$Snapshot;)Z
 
     move-result p0
@@ -201,52 +210,52 @@
 .method static synthetic access$500(Lcom/aigrammar/GrammarBridge;)V
     .registers 1
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
 
     return-void
 .end method
 
-.method static synthetic access$602(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;)Lcom/aigrammar/GrammarBridge$Snapshot;
+.method static synthetic access$602(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    .line 33
+    .line 35
+    iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$702(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;)Lcom/aigrammar/GrammarBridge$Snapshot;
+    .registers 2
+
+    .line 35
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
 
     return-object p1
 .end method
 
-.method static synthetic access$702(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$802(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    .line 33
+    .line 35
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic access$800(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)V
+.method static synthetic access$900(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)V
     .registers 2
 
-    .line 33
+    .line 35
     invoke-direct {p0, p1}, Lcom/aigrammar/GrammarBridge;->showChip(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$902(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
-    .registers 2
-
-    .line 33
-    iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
-
-    return-object p1
-.end method
-
 .method private allowed()Z
     .registers 5
 
-    .line 451
+    .line 468
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->active:Z
 
     const/4 v1, 0x0
@@ -277,7 +286,7 @@
 
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
-    .line 452
+    .line 469
     invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->isInputViewShown()Z
 
     move-result v0
@@ -292,7 +301,7 @@
 
     iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
-    .line 453
+    .line 470
     invoke-virtual {v2}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputEditorInfo()Landroid/view/inputmethod/EditorInfo;
 
     move-result-object v2
@@ -311,7 +320,7 @@
 
     goto :goto_64
 
-    .line 455
+    .line 472
     :cond_3c
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
@@ -323,7 +332,7 @@
 
     check-cast v0, Landroid/os/UserManager;
 
-    .line 456
+    .line 473
     if-eqz v0, :cond_62
 
     invoke-virtual {v0}, Landroid/os/UserManager;->isUserUnlocked()Z
@@ -344,7 +353,7 @@
 
     iget-object v3, v3, Landroid/view/inputmethod/EditorInfo;->packageName:Ljava/lang/String;
 
-    .line 457
+    .line 474
     invoke-static {v0, v2, v3}, Lcom/aigrammar/EditorPolicy;->allows(IILjava/lang/String;)Z
 
     move-result v0
@@ -358,11 +367,11 @@
     :cond_62
     nop
 
-    .line 456
+    .line 473
     :goto_63
     return v1
 
-    .line 454
+    .line 471
     :cond_64
     :goto_64
     return v1
@@ -371,7 +380,7 @@
 .method private applyCollapsed()V
     .registers 8
 
-    .line 430
+    .line 447
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     if-eqz v0, :cond_be
@@ -390,7 +399,7 @@
 
     goto/16 :goto_be
 
-    .line 431
+    .line 448
     :cond_12
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
@@ -398,7 +407,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setMinimumHeight(I)V
 
-    .line 432
+    .line 449
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     const/4 v2, 0x4
@@ -423,7 +432,7 @@
 
     invoke-virtual {v0, v3, v5, v6, v4}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
-    .line 433
+    .line 450
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-boolean v3, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
@@ -442,7 +451,7 @@
     :goto_3b
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 434
+    .line 451
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -451,7 +460,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 435
+    .line 452
     iget-boolean v3, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v3, :cond_51
@@ -470,7 +479,7 @@
     :goto_52
     iput v3, v0, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
-    .line 436
+    .line 453
     iget-boolean v3, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v3, :cond_5b
@@ -489,7 +498,7 @@
 
     iput v3, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
-    .line 437
+    .line 454
     invoke-direct {p0, v2}, Lcom/aigrammar/GrammarBridge;->dp(I)I
 
     move-result v3
@@ -510,12 +519,12 @@
 
     invoke-virtual {v0, v3, v5, v6, v4}, Landroid/widget/FrameLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 438
+    .line 455
     iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 439
+    .line 456
     iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -524,7 +533,7 @@
 
     check-cast v3, Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 440
+    .line 457
     iget v4, p0, Lcom/aigrammar/GrammarBridge;->baseTopMargin:I
 
     iget v0, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
@@ -539,15 +548,15 @@
 
     iput v4, v3, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
-    .line 441
+    .line 458
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 442
+    .line 459
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
 
-    .line 443
+    .line 460
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->settings:Landroid/widget/ImageButton;
 
     iget-boolean v2, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
@@ -566,7 +575,7 @@
     :goto_a3
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 444
+    .line 461
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->collapse:Landroid/widget/ImageButton;
 
     iget-boolean v2, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
@@ -578,24 +587,24 @@
     :cond_ad
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 445
+    .line 462
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v0, :cond_b7
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
 
-    .line 446
+    .line 463
     :cond_b7
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 447
+    .line 464
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 448
+    .line 465
     return-void
 
-    .line 430
+    .line 447
     :cond_be
     :goto_be
     return-void
@@ -604,70 +613,108 @@
 .method private applyCorrection()V
     .registers 8
 
-    .line 535
+    .line 588
     :try_start_0
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    .line 536
+    .line 589
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
 
-    .line 537
-    if-eqz v0, :cond_7b
+    .line 590
+    if-eqz v0, :cond_98
 
-    if-eqz v1, :cond_7b
+    if-eqz v1, :cond_98
 
     invoke-direct {p0, v0}, Lcom/aigrammar/GrammarBridge;->matches(Lcom/aigrammar/GrammarBridge$Snapshot;)Z
 
     move-result v2
 
-    if-nez v2, :cond_f
+    if-nez v2, :cond_10
 
-    goto :goto_7b
+    goto/16 :goto_98
 
-    .line 538
-    :cond_f
+    .line 591
+    :cond_10
     iget-object v2, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
-    .line 539
+    .line 592
+    iget-object v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    if-eqz v3, :cond_2e
+
+    .line 593
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 540
-    invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->beginBatchEdit()Z
-    :try_end_17
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_17} :catch_7f
+    .line 594
+    iget-object v0, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
 
-    .line 543
-    :try_start_17
+    invoke-virtual {v0, v2, v1}, Lcom/aigrammar/FullTextSnapshot;->apply(Landroid/view/inputmethod/InputConnection;Ljava/lang/String;)Z
+
+    move-result v0
+
+    .line 595
+    if-eqz v0, :cond_26
+
+    const-string v0, "Full-text correction applied"
+
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
+
+    goto :goto_2a
+
+    .line 596
+    :cond_26
+    const-string v0, "Text changed or this app rejected the edit, check again"
+
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
+
+    .line 597
+    :goto_2a
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
+
+    .line 598
+    return-void
+
+    .line 600
+    :cond_2e
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
+
+    .line 601
+    invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->beginBatchEdit()Z
+    :try_end_34
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_34} :catch_9c
+
+    .line 604
+    :try_start_34
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->finishComposingText()Z
 
     move-result v3
-    :try_end_1b
-    .catchall {:try_start_17 .. :try_end_1b} :catchall_76
+    :try_end_38
+    .catchall {:try_start_34 .. :try_end_38} :catchall_93
 
-    if-nez v3, :cond_21
+    if-nez v3, :cond_3e
 
-    .line 557
-    :try_start_1d
+    .line 618
+    :try_start_3a
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->endBatchEdit()Z
-    :try_end_20
-    .catch Ljava/lang/RuntimeException; {:try_start_1d .. :try_end_20} :catch_7f
+    :try_end_3d
+    .catch Ljava/lang/RuntimeException; {:try_start_3a .. :try_end_3d} :catch_9c
 
-    .line 543
+    .line 604
     return-void
 
-    .line 545
-    :cond_21
+    .line 606
+    :cond_3e
     const/16 v3, 0xc9
 
     const/4 v4, 0x0
 
-    :try_start_24
+    :try_start_41
     invoke-interface {v2, v3, v4}, Landroid/view/inputmethod/InputConnection;->getTextBeforeCursor(II)Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    .line 546
-    if-eqz v3, :cond_72
+    .line 607
+    if-eqz v3, :cond_8f
 
     iget-object v5, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
 
@@ -675,45 +722,45 @@
 
     move-result v3
 
-    if-nez v3, :cond_33
+    if-nez v3, :cond_50
 
-    goto :goto_72
+    goto :goto_8f
 
-    .line 547
-    :cond_33
+    .line 608
+    :cond_50
     const/16 v3, 0x20
 
     invoke-interface {v2, v3, v4}, Landroid/view/inputmethod/InputConnection;->getTextAfterCursor(II)Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    .line 548
+    .line 609
     invoke-interface {v2, v4}, Landroid/view/inputmethod/InputConnection;->getSelectedText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 549
+    .line 610
     iget-object v6, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->after:Ljava/lang/String;
 
     invoke-static {v6, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_6e
+    if-eqz v3, :cond_8b
 
-    if-eqz v5, :cond_4e
+    if-eqz v5, :cond_6b
 
-    .line 550
+    .line 611
     invoke-interface {v5}, Ljava/lang/CharSequence;->length()I
 
     move-result v3
 
-    if-lez v3, :cond_4e
+    if-lez v3, :cond_6b
 
-    goto :goto_6e
+    goto :goto_8b
 
-    .line 551
-    :cond_4e
+    .line 612
+    :cond_6b
     iget-object v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
     iget-object v3, v3, Lcom/aigrammar/SentenceSlice;->original:Ljava/lang/String;
@@ -726,137 +773,90 @@
 
     move-result v3
 
-    if-eqz v3, :cond_6a
+    if-eqz v3, :cond_87
 
-    .line 552
+    .line 613
     const/4 v3, 0x1
 
     invoke-interface {v2, v1, v3}, Landroid/view/inputmethod/InputConnection;->commitText(Ljava/lang/CharSequence;I)Z
 
     move-result v1
 
-    if-nez v1, :cond_6a
+    if-nez v1, :cond_87
 
-    .line 554
+    .line 615
     iget-object v0, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
     iget-object v0, v0, Lcom/aigrammar/SentenceSlice;->original:Ljava/lang/String;
 
     invoke-interface {v2, v0, v3}, Landroid/view/inputmethod/InputConnection;->commitText(Ljava/lang/CharSequence;I)Z
-    :try_end_6a
-    .catchall {:try_start_24 .. :try_end_6a} :catchall_76
+    :try_end_87
+    .catchall {:try_start_41 .. :try_end_87} :catchall_93
 
-    .line 557
-    :cond_6a
-    :try_start_6a
+    .line 618
+    :cond_87
+    :try_start_87
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->endBatchEdit()Z
 
-    .line 561
-    goto :goto_8a
+    .line 622
+    goto :goto_a7
 
-    .line 557
-    :cond_6e
-    :goto_6e
+    .line 618
+    :cond_8b
+    :goto_8b
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->endBatchEdit()Z
 
-    .line 550
+    .line 611
     return-void
 
-    .line 557
-    :cond_72
-    :goto_72
+    .line 618
+    :cond_8f
+    :goto_8f
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->endBatchEdit()Z
 
-    .line 546
+    .line 607
     return-void
 
-    .line 557
-    :catchall_76
+    .line 618
+    :catchall_93
     move-exception v0
 
     invoke-interface {v2}, Landroid/view/inputmethod/InputConnection;->endBatchEdit()Z
 
     throw v0
 
-    .line 537
-    :cond_7b
-    :goto_7b
+    .line 590
+    :cond_98
+    :goto_98
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
-    :try_end_7e
-    .catch Ljava/lang/RuntimeException; {:try_start_6a .. :try_end_7e} :catch_7f
+    :try_end_9b
+    .catch Ljava/lang/RuntimeException; {:try_start_87 .. :try_end_9b} :catch_9c
 
     return-void
 
-    .line 558
-    :catch_7f
+    .line 619
+    :catch_9c
     move-exception v0
 
-    .line 559
+    .line 620
     const-string v0, "AIGrammar"
 
     const-string v1, "Editor rejected grammar replacement"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 560
+    .line 621
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 562
-    :goto_8a
-    return-void
-.end method
-
-.method private applyShiftIcon(Landroid/widget/ImageView;)V
-    .registers 4
-
-    .line 693
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getVisibility()I
-
-    move-result v0
-
-    if-eqz v0, :cond_a
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 697
-    :cond_a
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getAlpha()F
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    cmpl-float v0, v0, v1
-
-    if-nez v0, :cond_18
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setAlpha(F)V
-
-    .line 698
-    :cond_18
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getImageAlpha()I
-
-    move-result v0
-
-    if-nez v0, :cond_23
-
-    const/16 v0, 0xff
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageAlpha(I)V
-
-    .line 699
-    :cond_23
+    .line 623
+    :goto_a7
     return-void
 .end method
 
 .method public static attach(Landroid/inputmethodservice/InputMethodService;Landroid/view/View;)V
     .registers 2
 
-    .line 104
+    .line 105
     :try_start_0
     invoke-static {p0}, Lcom/aigrammar/GrammarBridge;->get(Landroid/inputmethodservice/InputMethodService;)Lcom/aigrammar/GrammarBridge;
 
@@ -866,7 +866,7 @@
     :try_end_7
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_7} :catch_8
 
-    .line 105
+    .line 106
     goto :goto_10
 
     :catch_8
@@ -878,7 +878,7 @@
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 106
+    .line 107
     :goto_10
     return-void
 .end method
@@ -886,37 +886,37 @@
 .method private attachRow(Landroid/view/View;)V
     .registers 13
 
-    .line 285
+    .line 295
     const v0, 0x7f0b05e9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 288
+    .line 298
     const v1, 0x7f0b05c3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 289
+    .line 299
     instance-of v2, p1, Landroid/widget/FrameLayout;
 
-    if-eqz v2, :cond_269
+    if-eqz v2, :cond_26f
 
-    if-eqz v0, :cond_269
+    if-eqz v0, :cond_26f
 
-    if-eqz v1, :cond_269
+    if-eqz v1, :cond_26f
 
-    .line 290
+    .line 300
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    if-ne v0, p1, :cond_269
+    if-ne v0, p1, :cond_26f
 
-    .line 291
+    .line 301
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
@@ -925,23 +925,31 @@
 
     if-nez v0, :cond_26
 
-    goto/16 :goto_269
+    goto/16 :goto_26f
 
-    .line 295
+    .line 306
     :cond_26
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
+
+    .line 307
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    .line 308
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->readTheme()V
 
-    .line 296
+    .line 309
     invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 297
+    .line 310
     const/4 v2, 0x1
 
     const/4 v3, 0x0
 
-    if-eqz v0, :cond_3b
+    if-eqz v0, :cond_41
 
     const-string v4, "collapsed"
 
@@ -949,22 +957,22 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3b
+    if-eqz v0, :cond_41
 
     move v0, v2
 
-    goto :goto_3c
+    goto :goto_42
 
-    :cond_3b
+    :cond_41
     move v0, v3
 
-    :goto_3c
+    :goto_42
     iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
-    .line 298
+    .line 311
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    if-eqz v0, :cond_59
+    if-eqz v0, :cond_5f
 
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
@@ -974,9 +982,9 @@
 
     instance-of v0, v0, Landroid/view/ViewGroup;
 
-    if-eqz v0, :cond_59
+    if-eqz v0, :cond_5f
 
-    .line 299
+    .line 312
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getParent()Landroid/view/ViewParent;
@@ -989,14 +997,14 @@
 
     invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 300
-    :cond_59
+    .line 313
+    :cond_5f
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->restoreBaseMargin()V
 
-    .line 301
+    .line 314
     iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
-    .line 302
+    .line 315
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
@@ -1007,13 +1015,13 @@
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->baseTopMargin:I
 
-    .line 303
+    .line 316
     check-cast p1, Landroid/widget/FrameLayout;
 
-    .line 304
+    .line 317
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
 
-    .line 305
+    .line 318
     new-instance v0, Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1022,19 +1030,19 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    .line 306
+    .line 319
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 307
+    .line 320
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x10
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
-    .line 308
+    .line 321
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->barBackground()Landroid/graphics/drawable/Drawable;
@@ -1043,12 +1051,12 @@
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 309
+    .line 322
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setClipToOutline(Z)V
 
-    .line 311
+    .line 324
     new-instance v0, Landroid/widget/TextView;
 
     iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1057,37 +1065,37 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
-    .line 312
+    .line 325
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     const/16 v4, 0x11
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 313
+    .line 326
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 314
+    .line 327
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
-    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda3;
 
-    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda0;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda3;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 323
+    .line 336
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
-    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda1;
+    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda4;
 
-    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda1;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda4;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 327
+    .line 340
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-object v5, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
@@ -1108,7 +1116,7 @@
 
     invoke-virtual {v0, v5, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 329
+    .line 342
     new-instance v0, Landroid/widget/TextView;
 
     iget-object v5, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1117,43 +1125,43 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
-    .line 330
+    .line 343
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     const/high16 v5, 0x41480000    # 12.5f
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 331
+    .line 344
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v5, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 332
+    .line 345
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 333
+    .line 346
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setSingleLine(Z)V
 
-    .line 334
+    .line 347
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     sget-object v2, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
-    .line 335
+    .line 348
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 336
+    .line 349
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     const/4 v2, 0x2
@@ -1170,25 +1178,25 @@
 
     invoke-virtual {v0, v5, v3, v8, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 337
+    .line 350
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
-    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda2;
+    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda5;
 
-    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda2;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda5;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 338
+    .line 351
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
-    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda3;
+    new-instance v5, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda6;
 
-    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda3;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v5, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda6;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 342
+    .line 355
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-object v5, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
@@ -1203,7 +1211,7 @@
 
     invoke-virtual {v0, v5, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 344
+    .line 357
     new-instance v0, Landroid/widget/TextView;
 
     iget-object v5, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1212,38 +1220,38 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
-    .line 345
+    .line 358
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const/high16 v5, 0x41500000    # 13.0f
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 346
+    .line 359
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     iget v5, p0, Lcom/aigrammar/GrammarBridge;->chipText:I
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 347
+    .line 360
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 348
+    .line 361
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    .line 349
+    .line 362
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
-    .line 350
+    .line 363
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const/16 v1, 0xc
@@ -1268,7 +1276,7 @@
 
     invoke-virtual {v0, v2, v8, v1, v5}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 351
+    .line 364
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const/16 v1, 0x22
@@ -1279,22 +1287,22 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setMinHeight(I)V
 
-    .line 352
+    .line 365
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 353
+    .line 366
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 354
+    .line 367
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->accent:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 355
+    .line 368
     invoke-direct {p0, v4}, Lcom/aigrammar/GrammarBridge;->dp(I)I
 
     move-result v1
@@ -1303,28 +1311,28 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 356
+    .line 369
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 357
+    .line 370
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda4;
+    new-instance v1, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda7;
 
-    invoke-direct {v1, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda4;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v1, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda7;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 358
+    .line 374
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 359
+    .line 375
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
@@ -1335,19 +1343,19 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 361
+    .line 377
     const-string v0, "aigrammar_gear"
 
     invoke-direct {p0, v0, v3}, Lcom/aigrammar/GrammarBridge;->named(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 362
+    .line 378
     const/16 v1, 0x14
 
-    if-eqz v0, :cond_1cb
+    if-eqz v0, :cond_1d1
 
-    .line 363
+    .line 379
     invoke-direct {p0, v1}, Lcom/aigrammar/GrammarBridge;->dp(I)I
 
     move-result v2
@@ -1358,13 +1366,13 @@
 
     invoke-virtual {v0, v3, v3, v2, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 364
+    .line 380
     iget v2, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v2}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
-    .line 366
-    :cond_1cb
+    .line 382
+    :cond_1d1
     const-string v2, "AI Grammar settings"
 
     invoke-direct {p0, v0, v2}, Lcom/aigrammar/GrammarBridge;->iconButton(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)Landroid/widget/ImageButton;
@@ -1373,16 +1381,16 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->settings:Landroid/widget/ImageButton;
 
-    .line 367
+    .line 383
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->settings:Landroid/widget/ImageButton;
 
-    new-instance v2, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda5;
+    new-instance v2, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda8;
 
-    invoke-direct {v2, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda5;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v2, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda8;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 368
+    .line 384
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->settings:Landroid/widget/ImageButton;
@@ -1401,17 +1409,17 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 370
+    .line 386
     const-string v0, "aigrammar_chevron"
 
     invoke-direct {p0, v0, v3}, Lcom/aigrammar/GrammarBridge;->named(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 371
-    if-eqz v0, :cond_209
+    .line 387
+    if-eqz v0, :cond_20f
 
-    .line 372
+    .line 388
     invoke-direct {p0, v1}, Lcom/aigrammar/GrammarBridge;->dp(I)I
 
     move-result v2
@@ -1422,13 +1430,13 @@
 
     invoke-virtual {v0, v3, v3, v2, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 373
+    .line 389
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
-    .line 375
-    :cond_209
+    .line 391
+    :cond_20f
     const-string v1, "Minimize AI Grammar bar"
 
     invoke-direct {p0, v0, v1}, Lcom/aigrammar/GrammarBridge;->iconButton(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)Landroid/widget/ImageButton;
@@ -1437,16 +1445,16 @@
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->collapse:Landroid/widget/ImageButton;
 
-    .line 376
+    .line 392
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->collapse:Landroid/widget/ImageButton;
 
-    new-instance v1, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda6;
+    new-instance v1, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda9;
 
-    invoke-direct {v1, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda6;-><init>(Lcom/aigrammar/GrammarBridge;)V
+    invoke-direct {v1, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda9;-><init>(Lcom/aigrammar/GrammarBridge;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 377
+    .line 393
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->collapse:Landroid/widget/ImageButton;
@@ -1465,12 +1473,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 379
+    .line 395
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 380
+    .line 396
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
@@ -1489,28 +1497,28 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 381
+    .line 397
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 382
+    .line 398
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 383
+    .line 399
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->applyCollapsed()V
 
-    .line 384
+    .line 400
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 385
+    .line 401
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 386
+    .line 402
     iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
 
     new-instance v0, Lcom/aigrammar/GrammarBridge$3;
@@ -1521,36 +1529,36 @@
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 389
+    .line 405
     return-void
 
-    .line 292
-    :cond_269
-    :goto_269
+    .line 302
+    :cond_26f
+    :goto_26f
     const-string p1, "AIGrammar"
 
     const-string v0, "Expected keyboard base is absent"
 
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 293
+    .line 303
     return-void
 .end method
 
 .method private barBackground()Landroid/graphics/drawable/Drawable;
     .registers 4
 
-    .line 258
+    .line 268
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 259
+    .line 269
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->bg:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 260
+    .line 270
     const/16 v1, 0x10
 
     invoke-direct {p0, v1}, Lcom/aigrammar/GrammarBridge;->dp(I)I
@@ -1561,7 +1569,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 261
+    .line 271
     const/4 v1, 0x1
 
     invoke-direct {p0, v1}, Lcom/aigrammar/GrammarBridge;->dp(I)I
@@ -1576,14 +1584,14 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/drawable/GradientDrawable;->setStroke(II)V
 
-    .line 262
+    .line 272
     return-object v0
 .end method
 
 .method public static destroy(Landroid/inputmethodservice/InputMethodService;)V
     .registers 2
 
-    .line 151
+    .line 153
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     if-eqz v0, :cond_14
@@ -1596,33 +1604,54 @@
 
     goto :goto_14
 
-    .line 152
+    .line 154
     :cond_b
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dispose()V
 
-    .line 153
+    .line 155
     const/4 p0, 0x0
 
     sput-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    .line 154
+    .line 156
     return-void
 
-    .line 151
+    .line 153
     :cond_14
     :goto_14
+    return-void
+.end method
+
+.method private dismissReview()V
+    .registers 3
+
+    .line 687
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->review:Landroid/widget/PopupWindow;
+
+    .line 688
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->review:Landroid/widget/PopupWindow;
+
+    .line 689
+    if-eqz v0, :cond_a
+
+    invoke-virtual {v0}, Landroid/widget/PopupWindow;->dismiss()V
+
+    .line 690
+    :cond_a
     return-void
 .end method
 
 .method private dispose()V
     .registers 4
 
-    .line 175
+    .line 177
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 176
+    .line 178
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->registered:Landroid/content/SharedPreferences;
 
     if-eqz v0, :cond_c
@@ -1631,18 +1660,18 @@
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 177
+    .line 179
     :cond_c
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->registered:Landroid/content/SharedPreferences;
 
-    .line 178
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
+    .line 180
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
     if-eqz v1, :cond_26
 
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
     invoke-virtual {v1}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
@@ -1650,25 +1679,25 @@
 
     if-eqz v1, :cond_26
 
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
     if-eqz v1, :cond_26
 
-    .line 179
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
+    .line 181
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    .line 181
-    :cond_26
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    .line 182
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
     .line 183
+    :cond_26
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    .line 184
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    .line 185
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     if-eqz v1, :cond_45
@@ -1683,7 +1712,7 @@
 
     if-eqz v1, :cond_45
 
-    .line 184
+    .line 186
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getParent()Landroid/view/ViewParent;
@@ -1696,21 +1725,21 @@
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 185
+    .line 187
     :cond_45
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    .line 186
+    .line 188
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->restoreBaseMargin()V
 
-    .line 187
+    .line 189
     return-void
 .end method
 
 .method private dp(I)I
     .registers 3
 
-    .line 190
+    .line 192
     int-to-float p1, p1
 
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1737,14 +1766,14 @@
 .method private drawable(I)Landroid/graphics/drawable/Drawable;
     .registers 4
 
-    .line 224
+    .line 234
     const/4 v0, 0x0
 
     if-nez p1, :cond_4
 
     return-object v0
 
-    .line 225
+    .line 235
     :cond_4
     :try_start_4
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -1757,93 +1786,17 @@
 
     return-object p1
 
-    .line 226
+    .line 236
     :catch_b
     move-exception p1
 
     return-object v0
 .end method
 
-.method private findImageView(Landroid/view/View;)Landroid/widget/ImageView;
-    .registers 5
-
-    .line 702
-    instance-of v0, p1, Landroid/widget/ImageView;
-
-    if-eqz v0, :cond_10
-
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
-
-    move-result v0
-
-    const v1, 0x7f0b03c0
-
-    if-ne v0, v1, :cond_10
-
-    check-cast p1, Landroid/widget/ImageView;
-
-    return-object p1
-
-    .line 704
-    :cond_10
-    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_18
-
-    return-object v1
-
-    .line 705
-    :cond_18
-    instance-of v0, p1, Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_33
-
-    .line 706
-    check-cast p1, Landroid/view/ViewGroup;
-
-    .line 707
-    const/4 v0, 0x0
-
-    :goto_1f
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v2
-
-    if-ge v0, v2, :cond_33
-
-    .line 708
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    invoke-direct {p0, v2}, Lcom/aigrammar/GrammarBridge;->findImageView(Landroid/view/View;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    .line 709
-    if-eqz v2, :cond_30
-
-    return-object v2
-
-    .line 707
-    :cond_30
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1f
-
-    .line 712
-    :cond_33
-    return-object v1
-.end method
-
 .method private static get(Landroid/inputmethodservice/InputMethodService;)Lcom/aigrammar/GrammarBridge;
     .registers 3
 
-    .line 88
+    .line 89
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     if-eqz v0, :cond_a
@@ -1854,7 +1807,7 @@
 
     if-eq v0, p0, :cond_1a
 
-    .line 89
+    .line 90
     :cond_a
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
@@ -1864,7 +1817,7 @@
 
     invoke-direct {v0}, Lcom/aigrammar/GrammarBridge;->dispose()V
 
-    .line 90
+    .line 91
     :cond_13
     new-instance v0, Lcom/aigrammar/GrammarBridge;
 
@@ -1872,16 +1825,16 @@
 
     sput-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    .line 92
+    .line 93
     :cond_1a
     invoke-static {p0}, Lcom/aigrammar/GrammarClient;->init(Landroid/content/Context;)V
 
-    .line 93
+    .line 94
     invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
 
     move-result-object p0
 
-    .line 94
+    .line 95
     if-eqz p0, :cond_41
 
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
@@ -1890,14 +1843,14 @@
 
     if-eq v0, p0, :cond_41
 
-    .line 95
+    .line 96
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     iget-object v0, v0, Lcom/aigrammar/GrammarBridge;->registered:Landroid/content/SharedPreferences;
 
     if-eqz v0, :cond_38
 
-    .line 96
+    .line 97
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     iget-object v0, v0, Lcom/aigrammar/GrammarBridge;->registered:Landroid/content/SharedPreferences;
@@ -1906,18 +1859,18 @@
 
     invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 97
+    .line 98
     :cond_38
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     iput-object p0, v0, Lcom/aigrammar/GrammarBridge;->registered:Landroid/content/SharedPreferences;
 
-    .line 98
+    .line 99
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     invoke-interface {p0, v0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 100
+    .line 101
     :cond_41
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
@@ -1927,122 +1880,73 @@
 .method private hideChip()V
     .registers 4
 
-    .line 565
+    .line 693
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dismissReview()V
+
+    .line 694
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    .line 566
+    .line 695
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
 
-    .line 567
+    .line 696
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
-    if-eqz v1, :cond_1c
+    if-eqz v1, :cond_1f
 
-    .line 568
+    .line 697
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const-string v2, ""
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 569
+    .line 698
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 570
+    .line 699
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 572
-    :cond_1c
+    .line 701
+    :cond_1f
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 573
-    return-void
-.end method
-
-.method private hookShiftIcon(Landroid/view/View;)V
-    .registers 3
-
-    .line 665
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    if-nez v0, :cond_21
-
-    if-nez p1, :cond_7
-
-    goto :goto_21
-
-    .line 666
-    :cond_7
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p1
-
-    .line 667
-    invoke-virtual {p1}, Landroid/view/ViewTreeObserver;->isAlive()Z
-
-    move-result v0
-
-    if-nez v0, :cond_12
-
-    return-void
-
-    .line 668
-    :cond_12
-    iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    .line 669
-    new-instance v0, Lcom/aigrammar/GrammarBridge$5;
-
-    invoke-direct {v0, p0}, Lcom/aigrammar/GrammarBridge$5;-><init>(Lcom/aigrammar/GrammarBridge;)V
-
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-    .line 675
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    .line 676
-    return-void
-
-    .line 665
-    :cond_21
-    :goto_21
+    .line 702
     return-void
 .end method
 
 .method private iconButton(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)Landroid/widget/ImageButton;
     .registers 7
 
-    .line 274
+    .line 284
     new-instance v0, Landroid/widget/ImageButton;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {v0, v1}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;)V
 
-    .line 275
+    .line 285
     sget-object v1, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 276
+    .line 286
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setFocusable(Z)V
 
-    .line 277
+    .line 287
     invoke-virtual {v0, p2}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 278
+    .line 288
     const/16 p2, 0x9
 
     invoke-direct {p0, p2}, Lcom/aigrammar/GrammarBridge;->dp(I)I
@@ -2063,10 +1967,10 @@
 
     invoke-virtual {v0, v1, v2, v3, p2}, Landroid/widget/ImageButton;->setPadding(IIII)V
 
-    .line 279
+    .line 289
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 280
+    .line 290
     const/4 p1, 0x0
 
     invoke-direct {p0, p1}, Lcom/aigrammar/GrammarBridge;->ripple(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/RippleDrawable;
@@ -2075,17 +1979,17 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 281
+    .line 291
     return-object v0
 .end method
 
 .method public static insets(Landroid/inputmethodservice/InputMethodService;Landroid/inputmethodservice/InputMethodService$Insets;)V
     .registers 12
 
-    .line 158
+    .line 160
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    .line 159
+    .line 161
     if-eqz v0, :cond_78
 
     iget-object v1, v0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
@@ -2106,7 +2010,7 @@
 
     iget-object p0, v0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
-    .line 160
+    .line 162
     invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
     move-result p0
@@ -2115,7 +2019,7 @@
 
     iget-object p0, v0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    .line 161
+    .line 163
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->isShown()Z
 
     move-result p0
@@ -2132,7 +2036,7 @@
 
     iget-object p0, v0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    .line 162
+    .line 164
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result p0
@@ -2141,18 +2045,18 @@
 
     goto :goto_78
 
-    .line 163
+    .line 165
     :cond_35
     const/4 p0, 0x2
 
     new-array p0, p0, [I
 
-    .line 164
+    .line 166
     iget-object v1, v0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/LinearLayout;->getLocationInWindow([I)V
 
-    .line 165
+    .line 167
     iget v1, p1, Landroid/inputmethodservice/InputMethodService$Insets;->contentTopInsets:I
 
     const/4 v2, 0x1
@@ -2165,7 +2069,7 @@
 
     iput v1, p1, Landroid/inputmethodservice/InputMethodService$Insets;->contentTopInsets:I
 
-    .line 166
+    .line 168
     iget v1, p1, Landroid/inputmethodservice/InputMethodService$Insets;->visibleTopInsets:I
 
     aget v3, p0, v2
@@ -2176,14 +2080,14 @@
 
     iput v1, p1, Landroid/inputmethodservice/InputMethodService$Insets;->visibleTopInsets:I
 
-    .line 167
+    .line 169
     iget v1, p1, Landroid/inputmethodservice/InputMethodService$Insets;->touchableInsets:I
 
     const/4 v3, 0x3
 
     if-ne v1, v3, :cond_77
 
-    .line 168
+    .line 170
     iget-object v4, p1, Landroid/inputmethodservice/InputMethodService$Insets;->touchableRegion:Landroid/graphics/Region;
 
     const/4 p1, 0x0
@@ -2196,7 +2100,7 @@
 
     iget-object v1, v0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
-    .line 169
+    .line 171
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v1
@@ -2215,14 +2119,14 @@
 
     sget-object v9, Landroid/graphics/Region$Op;->UNION:Landroid/graphics/Region$Op;
 
-    .line 168
+    .line 170
     invoke-virtual/range {v4 .. v9}, Landroid/graphics/Region;->op(IIIILandroid/graphics/Region$Op;)Z
 
-    .line 172
+    .line 174
     :cond_77
     return-void
 
-    .line 162
+    .line 164
     :cond_78
     :goto_78
     return-void
@@ -2231,7 +2135,7 @@
 .method private invalidate()V
     .registers 5
 
-    .line 576
+    .line 705
     iget-wide v0, p0, Lcom/aigrammar/GrammarBridge;->revision:J
 
     const-wide/16 v2, 0x1
@@ -2240,113 +2144,233 @@
 
     iput-wide v0, p0, Lcom/aigrammar/GrammarBridge;->revision:J
 
-    .line 577
+    .line 706
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 579
+    .line 708
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
 
-    if-eqz v0, :cond_15
+    const/4 v1, 0x0
 
+    if-eqz v0, :cond_18
+
+    .line 709
     invoke-static {}, Lcom/aigrammar/GrammarClient;->cancelPending()V
 
-    .line 580
-    :cond_15
+    .line 710
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    .line 712
+    :cond_18
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
 
-    .line 581
-    const/4 v0, 0x0
+    .line 713
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
+    .line 714
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
 
-    .line 582
+    .line 715
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
 
-    .line 583
+    .line 716
     return-void
 .end method
 
-.method private matches(Lcom/aigrammar/GrammarBridge$Snapshot;)Z
-    .registers 7
+.method private isFullTextMode()Z
+    .registers 4
 
-    .line 477
+    .line 478
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    .line 479
+    if-eqz v0, :cond_18
+
+    const-string v1, "scope"
+
+    const-string v2, "sentence"
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "full_text"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_18
+
+    const/4 v0, 0x1
+
+    goto :goto_19
+
+    :cond_18
+    const/4 v0, 0x0
+
+    :goto_19
+    return v0
+.end method
+
+.method private matches(Lcom/aigrammar/GrammarBridge$Snapshot;)Z
+    .registers 9
+
+    .line 511
+    iget-object v0, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_37
+
+    .line 512
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_35
+
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_35
+
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->editor:Landroid/view/inputmethod/EditorInfo;
+
+    iget-object v3, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
+
+    if-ne v0, v3, :cond_35
+
+    iget-wide v3, p0, Lcom/aigrammar/GrammarBridge;->revision:J
+
+    iget-wide v5, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
+
+    cmp-long v0, v3, v5
+
+    if-nez v0, :cond_35
+
+    iget v0, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
+
+    iget v3, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
+
+    if-ne v0, v3, :cond_35
+
+    iget-object p1, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    .line 514
+    invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/aigrammar/FullTextSnapshot;->matches(Landroid/view/inputmethod/InputConnection;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_35
+
+    goto :goto_36
+
+    :cond_35
+    move v1, v2
+
+    .line 512
+    :goto_36
+    return v1
+
+    .line 516
+    :cond_37
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3e
+
+    return v2
+
+    .line 517
+    :cond_3e
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->snapshot()Lcom/aigrammar/GrammarBridge$Snapshot;
 
     move-result-object v0
 
-    .line 478
-    if-eqz v0, :cond_36
+    .line 518
+    if-eqz v0, :cond_73
 
-    iget-object v1, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
+    iget-object v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
-    iget-object v2, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
+    iget-object v4, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
-    if-ne v1, v2, :cond_36
+    if-ne v3, v4, :cond_73
 
-    iget-object v1, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
+    iget-object v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
 
-    iget-object v2, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
+    iget-object v4, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
 
-    if-ne v1, v2, :cond_36
+    if-ne v3, v4, :cond_73
 
-    iget-wide v1, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
+    iget-wide v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
 
-    iget-wide v3, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
+    iget-wide v5, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
 
-    cmp-long v1, v1, v3
+    cmp-long v3, v3, v5
 
-    if-nez v1, :cond_36
+    if-nez v3, :cond_73
 
-    iget v1, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
+    iget v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
 
-    iget v2, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
+    iget v4, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
 
-    if-ne v1, v2, :cond_36
+    if-ne v3, v4, :cond_73
 
-    iget-object v1, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
+    iget-object v3, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
+    iget-object v4, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
 
-    .line 480
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 520
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_36
+    if-eqz v3, :cond_73
 
     iget-object v0, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->after:Ljava/lang/String;
 
     iget-object p1, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->after:Ljava/lang/String;
 
-    .line 481
+    .line 521
     invoke-static {v0, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_36
+    if-eqz p1, :cond_73
 
-    const/4 p1, 0x1
+    goto :goto_74
 
-    goto :goto_37
+    :cond_73
+    move v1, v2
 
-    :cond_36
-    const/4 p1, 0x0
-
-    .line 478
-    :goto_37
-    return p1
+    .line 518
+    :goto_74
+    return v1
 .end method
 
 .method private named(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .registers 6
 
-    .line 230
+    .line 240
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
@@ -2365,7 +2389,7 @@
 
     move-result p1
 
-    .line 231
+    .line 241
     if-eqz p1, :cond_15
 
     move p2, p1
@@ -2381,21 +2405,21 @@
 .method private onStatusClick()V
     .registers 3
 
-    .line 405
+    .line 421
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v0, :cond_a
 
-    .line 406
+    .line 422
     const/4 v0, 0x0
 
     const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1}, Lcom/aigrammar/GrammarBridge;->setCollapsed(ZZ)V
 
-    goto :goto_2e
+    goto :goto_39
 
-    .line 407
+    .line 423
     :cond_a
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
 
@@ -2403,18 +2427,18 @@
 
     if-nez v0, :cond_1a
 
-    .line 408
+    .line 424
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
-    if-eqz v0, :cond_2e
+    if-eqz v0, :cond_39
 
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->performClick()Z
 
-    goto :goto_2e
+    goto :goto_39
 
-    .line 409
+    .line 425
     :cond_1a
     invoke-static {}, Lcom/aigrammar/GrammarClient;->hasKey()Z
 
@@ -2422,35 +2446,50 @@
 
     if-nez v0, :cond_24
 
-    .line 410
+    .line 426
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->openSettings()V
 
-    goto :goto_2e
+    goto :goto_39
 
-    .line 411
+    .line 427
     :cond_24
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    if-eqz v0, :cond_2e
+    if-nez v0, :cond_2e
 
-    .line 412
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
+
+    .line 428
+    :cond_2e
+    iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
+
+    if-eqz v0, :cond_33
+
+    return-void
+
+    .line 429
+    :cond_33
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
 
-    .line 413
+    .line 430
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->requestCorrection()V
 
-    .line 415
-    :cond_2e
-    :goto_2e
+    .line 432
+    :cond_39
+    :goto_39
     return-void
 .end method
 
 .method private openSettings()V
     .registers 5
 
-    .line 393
+    .line 409
     :try_start_0
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
@@ -2462,17 +2501,17 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 394
+    .line 410
     const/high16 v2, 0x34000000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 393
+    .line 409
     invoke-virtual {v0, v1}, Landroid/inputmethodservice/InputMethodService;->startActivity(Landroid/content/Intent;)V
 
-    .line 396
+    .line 412
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     const/4 v1, 0x0
@@ -2481,21 +2520,21 @@
     :try_end_1a
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_1a} :catch_1b
 
-    .line 401
+    .line 417
     goto :goto_2f
 
-    .line 397
+    .line 413
     :catch_1b
     move-exception v0
 
-    .line 398
+    .line 414
     const-string v1, "AIGrammar"
 
     const-string v2, "Settings launch failed"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 399
+    .line 415
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     const-string v1, "Open AI Grammar Settings from your app drawer"
@@ -2506,10 +2545,10 @@
 
     move-result-object v0
 
-    .line 400
+    .line 416
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 402
+    .line 418
     :goto_2f
     return-void
 .end method
@@ -2517,7 +2556,7 @@
 .method private readTheme()V
     .registers 3
 
-    .line 235
+    .line 245
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
@@ -2532,7 +2571,7 @@
 
     and-int/lit8 v0, v0, 0x30
 
-    .line 237
+    .line 247
     const/16 v1, 0x20
 
     if-ne v0, v1, :cond_14
@@ -2547,98 +2586,194 @@
     :goto_15
     iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->night:Z
 
-    .line 238
+    .line 248
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->night:Z
 
     const v1, -0xf9dae6
 
     if-eqz v0, :cond_3e
 
-    .line 239
+    .line 249
     const v0, -0xdeae4de
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->bg:I
 
-    .line 240
+    .line 250
     const v0, -0x150f09
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->fg:I
 
-    .line 241
+    .line 251
     const v0, -0x584d3e
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
-    .line 242
+    .line 252
     const v0, -0x601646
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->accent:I
 
-    .line 243
+    .line 253
     iput v1, p0, Lcom/aigrammar/GrammarBridge;->chipText:I
 
-    .line 244
+    .line 254
     const/16 v0, -0x4b55
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->error:I
 
-    .line 245
+    .line 255
     const v0, 0x33ffffff
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->stroke:I
 
     goto :goto_5d
 
-    .line 247
+    .line 257
     :cond_3e
     const v0, -0x8000001
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->bg:I
 
-    .line 248
+    .line 258
     const v0, -0xe8dfd6
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->fg:I
 
-    .line 249
+    .line 259
     const v0, -0xa39586
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
-    .line 250
+    .line 260
     const v0, -0xf185ae
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->accent:I
 
-    .line 251
+    .line 261
     iput v1, p0, Lcom/aigrammar/GrammarBridge;->chipText:I
 
-    .line 252
+    .line 262
     const v0, -0x4cd9e2
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->error:I
 
-    .line 253
+    .line 263
     const/high16 v0, 0x1a000000
 
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->stroke:I
 
-    .line 255
+    .line 265
     :goto_5d
+    return-void
+.end method
+
+.method private refreshGeometry()V
+    .registers 4
+
+    .line 785
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
+
+    .line 786
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_4a
+
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
+
+    move-result v0
+
+    if-nez v0, :cond_10
+
+    goto :goto_4a
+
+    .line 787
+    :cond_10
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    .line 788
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    if-ne v1, v0, :cond_1b
+
+    return-void
+
+    .line 789
+    :cond_1b
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    if-eqz v1, :cond_32
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    invoke-virtual {v1}, Landroid/view/ViewTreeObserver;->isAlive()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_32
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    if-eqz v1, :cond_32
+
+    .line 790
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    .line 792
+    :cond_32
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    if-eqz v1, :cond_3b
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    .line 793
+    :cond_3b
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    .line 794
+    new-instance v1, Lcom/aigrammar/GrammarBridge$5;
+
+    invoke-direct {v1, p0}, Lcom/aigrammar/GrammarBridge$5;-><init>(Lcom/aigrammar/GrammarBridge;)V
+
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    .line 797
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    .line 798
+    return-void
+
+    .line 786
+    :cond_4a
+    :goto_4a
     return-void
 .end method
 
 .method private refreshStatus()V
     .registers 4
 
-    .line 614
+    .line 747
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     if-nez v0, :cond_5
 
     return-void
 
-    .line 615
+    .line 748
     :cond_5
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
@@ -2652,7 +2787,7 @@
 
     return-void
 
-    .line 616
+    .line 749
     :cond_11
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
@@ -2666,15 +2801,15 @@
 
     if-nez v0, :cond_23
 
-    .line 617
+    .line 750
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 618
+    .line 751
     return-void
 
-    .line 620
+    .line 753
     :cond_23
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
@@ -2682,12 +2817,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 621
+    .line 754
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v0, :cond_4e
 
-    .line 622
+    .line 755
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
@@ -2706,7 +2841,7 @@
     :goto_3a
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 623
+    .line 756
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
@@ -2725,86 +2860,98 @@
     :goto_4a
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 624
+    .line 757
     return-void
 
-    .line 626
+    .line 759
     :cond_4e
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
 
     move-result v0
 
-    if-nez v0, :cond_63
+    if-nez v0, :cond_64
 
-    .line 627
+    .line 760
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     const-string v1, "Tap the sparkle to turn on"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 628
+    .line 761
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    goto :goto_bf
+    goto/16 :goto_105
 
-    .line 629
-    :cond_63
+    .line 762
+    :cond_64
     invoke-static {}, Lcom/aigrammar/GrammarClient;->hasKey()Z
 
     move-result v0
 
-    if-nez v0, :cond_78
+    if-nez v0, :cond_7a
 
-    .line 630
+    .line 763
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     const-string v1, "Add your Gemini key"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 631
+    .line 764
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->accent:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    goto :goto_bf
+    goto/16 :goto_105
 
-    .line 632
-    :cond_78
+    .line 765
+    :cond_7a
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
 
-    if-eqz v0, :cond_8b
+    if-eqz v0, :cond_97
 
-    .line 633
+    .line 766
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_89
+
+    const-string v1, "Checking full text\u2026"
+
+    goto :goto_8b
+
+    :cond_89
     const-string v1, "Checking grammar\u2026"
 
+    :goto_8b
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 634
+    .line 767
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    goto :goto_bf
+    goto/16 :goto_105
 
-    .line 635
-    :cond_8b
+    .line 768
+    :cond_97
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    if-eqz v0, :cond_b1
+    if-eqz v0, :cond_bd
 
-    .line 636
+    .line 769
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2829,57 +2976,127 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 637
+    .line 770
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->error:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    goto :goto_bf
+    goto :goto_105
 
-    .line 639
-    :cond_b1
+    .line 771
+    :cond_bd
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
+
+    if-eqz v0, :cond_d0
+
+    .line 772
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
-    const-string v1, "AI Grammar ON"
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 640
+    .line 773
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 642
-    :goto_bf
+    goto :goto_105
+
+    .line 774
+    :cond_d0
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+
+    move-result v0
+
+    if-nez v0, :cond_ee
+
+    .line 775
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
+
+    iget v1, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
+
+    iget v2, p0, Lcom/aigrammar/GrammarBridge;->cursorEnd:I
+
+    if-eq v1, v2, :cond_e1
+
+    const-string v1, "Place the cursor to check text"
+
+    goto :goto_e3
+
+    :cond_e1
+    const-string v1, "AI Grammar paused in this field"
+
+    :goto_e3
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 777
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
+
+    iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_105
+
+    .line 779
+    :cond_ee
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
+
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_f9
+
+    const-string v1, "Check full text \u00b7 tap"
+
+    goto :goto_fb
+
+    :cond_f9
+    const-string v1, "AI Grammar ON"
+
+    :goto_fb
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 780
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->status:Landroid/widget/TextView;
+
+    iget v1, p0, Lcom/aigrammar/GrammarBridge;->muted:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 782
+    :goto_105
     return-void
 .end method
 
 .method private refreshToggle()V
     .registers 8
 
-    .line 586
+    .line 719
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     if-nez v0, :cond_5
 
     return-void
 
-    .line 587
+    .line 720
     :cond_5
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
 
     move-result v0
 
-    .line 588
+    .line 721
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setActivated(Z)V
 
-    .line 589
+    .line 722
     const-string v1, "aigrammar_toggle"
 
     const/4 v2, 0x0
@@ -2888,12 +3105,12 @@
 
     move-result-object v1
 
-    .line 590
+    .line 723
     const/4 v3, 0x0
 
     if-eqz v1, :cond_31
 
-    .line 591
+    .line 724
     iget-boolean v4, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v4, :cond_1f
@@ -2905,7 +3122,7 @@
     :cond_1f
     const/16 v4, 0x18
 
-    .line 592
+    .line 725
     :goto_21
     invoke-direct {p0, v4}, Lcom/aigrammar/GrammarBridge;->dp(I)I
 
@@ -2917,18 +3134,18 @@
 
     invoke-virtual {v1, v2, v2, v5, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 593
+    .line 726
     iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v4, v1, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 595
+    .line 728
     :cond_31
     new-instance v1, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v1}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 596
+    .line 729
     iget-boolean v4, p0, Lcom/aigrammar/GrammarBridge;->night:Z
 
     if-eqz v4, :cond_3e
@@ -2943,7 +3160,7 @@
     :goto_41
     invoke-virtual {v1, v4}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 597
+    .line 730
     const/16 v4, 0x13
 
     invoke-direct {p0, v4}, Lcom/aigrammar/GrammarBridge;->dp(I)I
@@ -2954,7 +3171,7 @@
 
     invoke-virtual {v1, v4}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 598
+    .line 731
     iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     if-eqz v0, :cond_53
@@ -2968,7 +3185,7 @@
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 599
+    .line 732
     iget-boolean v1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v1, :cond_61
@@ -2985,28 +3202,28 @@
 
     move-result v1
 
-    .line 600
+    .line 733
     iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
-    .line 601
+    .line 734
     if-eqz v3, :cond_78
 
-    .line 602
+    .line 735
     iput v1, v3, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 603
+    .line 736
     iput v1, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 604
+    .line 737
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 606
+    .line 739
     :cond_78
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
@@ -3046,7 +3263,7 @@
 
     invoke-virtual {v1, v3, v2, v4, v2}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 607
+    .line 740
     iget-boolean v1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     if-eqz v1, :cond_9b
@@ -3090,7 +3307,7 @@
 
     move-result-object v1
 
-    .line 609
+    .line 742
     :goto_bb
     iget-boolean v2, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
@@ -3122,373 +3339,304 @@
 
     move-result-object v1
 
-    .line 610
+    .line 743
     :cond_da
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->toggle:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 611
-    return-void
-.end method
-
-.method private repairShiftIcon()V
-    .registers 5
-
-    .line 646
-    :try_start_0
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
-
-    .line 647
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
-
-    invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->getWindow()Landroid/app/Dialog;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_e
-
-    move-object v0, v1
-
-    goto :goto_18
-
-    :cond_e
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
-
-    invoke-virtual {v0}, Landroid/inputmethodservice/InputMethodService;->getWindow()Landroid/app/Dialog;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    .line 648
-    :goto_18
-    if-nez v0, :cond_1c
-
-    move-object v0, v1
-
-    goto :goto_20
-
-    :cond_1c
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v0
-
-    .line 649
-    :goto_20
-    if-nez v0, :cond_23
-
-    return-void
-
-    .line 652
-    :cond_23
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v3
-
-    if-eq v2, v3, :cond_47
-
-    .line 653
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    if-eqz v2, :cond_42
-
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    invoke-virtual {v2}, Landroid/view/ViewTreeObserver;->isAlive()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_42
-
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-    if-eqz v2, :cond_42
-
-    .line 654
-    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->shiftPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-    invoke-virtual {v2, v3}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    .line 655
-    :cond_42
-    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->shiftObserver:Landroid/view/ViewTreeObserver;
-
-    .line 656
-    invoke-direct {p0, v0}, Lcom/aigrammar/GrammarBridge;->hookShiftIcon(Landroid/view/View;)V
-
-    .line 658
-    :cond_47
-    invoke-direct {p0, v0}, Lcom/aigrammar/GrammarBridge;->repairVisibleShiftKeys(Landroid/view/View;)V
-    :try_end_4a
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_4a} :catch_4b
-
-    .line 661
-    goto :goto_53
-
-    .line 659
-    :catch_4b
-    move-exception v0
-
-    .line 660
-    const-string v0, "AIGrammar"
-
-    const-string v1, "Cannot repair shift icon"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 662
-    :goto_53
-    return-void
-.end method
-
-.method private repairVisibleShiftKeys(Landroid/view/View;)V
-    .registers 4
-
-    .line 679
-    invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    return-void
-
-    .line 680
-    :cond_7
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
-
-    move-result v0
-
-    const v1, 0x7f0b05b0
-
-    if-ne v0, v1, :cond_1a
-
-    .line 681
-    invoke-direct {p0, p1}, Lcom/aigrammar/GrammarBridge;->findImageView(Landroid/view/View;)Landroid/widget/ImageView;
-
-    move-result-object p1
-
-    .line 682
-    if-eqz p1, :cond_19
-
-    invoke-direct {p0, p1}, Lcom/aigrammar/GrammarBridge;->applyShiftIcon(Landroid/widget/ImageView;)V
-
-    .line 683
-    :cond_19
-    return-void
-
-    .line 685
-    :cond_1a
-    instance-of v0, p1, Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_31
-
-    .line 686
-    check-cast p1, Landroid/view/ViewGroup;
-
-    .line 687
-    const/4 v0, 0x0
-
-    :goto_21
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_31
-
-    .line 688
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-direct {p0, v1}, Lcom/aigrammar/GrammarBridge;->repairVisibleShiftKeys(Landroid/view/View;)V
-
-    .line 687
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_21
-
-    .line 690
-    :cond_31
+    .line 744
     return-void
 .end method
 
 .method private requestCorrection()V
-    .registers 5
+    .registers 7
 
-    .line 486
+    .line 526
     const/4 v0, 0x0
 
-    :try_start_1
+    const/4 v1, 0x0
+
+    :try_start_2
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->snapshot()Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 487
-    if-eqz v1, :cond_2f
+    .line 527
+    if-nez v2, :cond_1c
 
-    iget-object v2, v1, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
-
-    iget-object v2, v2, Lcom/aigrammar/SentenceSlice;->text:Ljava/lang/String;
-
-    iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 528
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
 
     move-result v2
 
-    if-eqz v2, :cond_14
+    if-eqz v2, :cond_1b
 
-    goto :goto_2f
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
 
-    .line 488
-    :cond_14
-    iget-object v2, v1, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
+    move-result v2
 
-    iget-object v2, v2, Lcom/aigrammar/SentenceSlice;->text:Ljava/lang/String;
+    if-eqz v2, :cond_1b
 
-    iput-object v2, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+    .line 529
+    const-string v2, "Cannot read the whole field (limit 30,000 characters)"
 
-    .line 489
-    const/4 v2, 0x1
+    iput-object v2, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    iput-boolean v2, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
+    .line 530
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 490
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
-
-    .line 491
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
-
-    .line 492
-    iget-object v2, v1, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
-
-    iget-object v2, v2, Lcom/aigrammar/SentenceSlice;->text:Ljava/lang/String;
-
-    new-instance v3, Lcom/aigrammar/GrammarBridge$4;
-
-    invoke-direct {v3, p0, v1}, Lcom/aigrammar/GrammarBridge$4;-><init>(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;)V
-
-    invoke-static {v2, v3}, Lcom/aigrammar/GrammarClient;->request(Ljava/lang/String;Lcom/aigrammar/GrammarClient$Callback;)V
-    :try_end_2e
-    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_2e} :catch_30
-
-    .line 521
-    goto :goto_3d
-
-    .line 487
-    :cond_2f
-    :goto_2f
+    .line 532
+    :cond_1b
     return-void
 
-    .line 516
-    :catch_30
-    move-exception v1
+    .line 534
+    :cond_1c
+    iget-object v3, v2, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
 
-    .line 517
-    const/4 v1, 0x0
+    if-nez v3, :cond_25
 
-    iput-boolean v1, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
+    iget-object v3, v2, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
-    .line 518
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+    iget-object v3, v3, Lcom/aigrammar/SentenceSlice;->text:Ljava/lang/String;
 
-    .line 519
+    goto :goto_29
+
+    :cond_25
+    iget-object v3, v2, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    iget-object v3, v3, Lcom/aigrammar/FullTextSnapshot;->text:Ljava/lang/String;
+
+    .line 535
+    :goto_29
+    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    const/4 v5, 0x3
+
+    if-lt v4, v5, :cond_5b
+
+    iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3d
+
+    goto :goto_5b
+
+    .line 536
+    :cond_3d
+    iput-object v3, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    .line 537
+    const/4 v4, 0x1
+
+    iput-boolean v4, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
+
+    .line 538
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
+
+    .line 539
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
+
+    .line 540
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
+
+    .line 541
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
+
+    .line 542
+    iget-object v5, v2, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    if-eqz v5, :cond_51
+
+    goto :goto_52
+
+    :cond_51
+    move v4, v0
+
+    :goto_52
+    new-instance v5, Lcom/aigrammar/GrammarBridge$4;
+
+    invoke-direct {v5, p0, v2, v3}, Lcom/aigrammar/GrammarBridge$4;-><init>(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;Ljava/lang/String;)V
+
+    invoke-static {v3, v4, v5}, Lcom/aigrammar/GrammarClient;->request(Ljava/lang/String;ZLcom/aigrammar/GrammarClient$Callback;)V
+    :try_end_5a
+    .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_5a} :catch_5c
+
+    .line 572
+    goto :goto_68
+
+    .line 535
+    :cond_5b
+    :goto_5b
+    return-void
+
+    .line 567
+    :catch_5c
+    move-exception v2
+
+    .line 568
+    iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->requesting:Z
+
+    .line 569
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
+
+    .line 570
     const-string v0, "Grammar check failed"
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    .line 520
+    .line 571
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->hideChip()V
 
-    .line 522
-    :goto_3d
+    .line 573
+    :goto_68
     return-void
 .end method
 
 .method private restoreBaseMargin()V
-    .registers 3
-
-    .line 194
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_b
-
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
-
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
-
-    .line 195
-    :cond_b
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
-
-    if-eqz v0, :cond_31
-
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+    .registers 4
 
     .line 196
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
-    move-result-object v0
-
-    instance-of v0, v0, Landroid/widget/FrameLayout$LayoutParams;
-
-    if-eqz v0, :cond_31
+    if-eqz v0, :cond_32
 
     .line 197
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
+    if-eqz v0, :cond_17
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
+
+    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17
 
     .line 198
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    .line 199
+    :cond_17
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_32
+
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
+    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
-    .line 199
-    iget v1, p0, Lcom/aigrammar/GrammarBridge;->baseTopMargin:I
+    move-result v0
 
-    iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
+    if-eqz v0, :cond_32
 
     .line 200
-    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 202
-    :cond_31
+    :cond_32
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryObserver:Landroid/view/ViewTreeObserver;
 
     .line 203
-    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->geometryPreDraw:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
     .line 204
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    if-eqz v1, :cond_42
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
+
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    .line 205
+    :cond_42
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    if-eqz v1, :cond_68
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    .line 206
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    instance-of v1, v1, Landroid/widget/FrameLayout$LayoutParams;
+
+    if-eqz v1, :cond_68
+
+    .line 207
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->rowPositionListener:Landroid/view/View$OnLayoutChangeListener;
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    .line 208
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/FrameLayout$LayoutParams;
+
+    .line 209
+    iget v2, p0, Lcom/aigrammar/GrammarBridge;->baseTopMargin:I
+
+    iput v2, v1, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
+
+    .line 210
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 212
+    :cond_68
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
+
+    .line 213
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    .line 214
     return-void
 .end method
 
 .method public static resume(Landroid/inputmethodservice/InputMethodService;)V
     .registers 3
 
-    .line 143
+    .line 145
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     if-eqz v0, :cond_2c
@@ -3501,7 +3649,7 @@
 
     goto :goto_2c
 
-    .line 144
+    .line 146
     :cond_b
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
@@ -3525,25 +3673,25 @@
     :goto_1a
     iput-boolean p0, v0, Lcom/aigrammar/GrammarBridge;->active:Z
 
-    .line 145
+    .line 147
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 146
+    .line 148
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 147
+    .line 149
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshGeometry()V
 
-    .line 148
+    .line 150
     return-void
 
-    .line 143
+    .line 145
     :cond_2c
     :goto_2c
     return-void
@@ -3552,7 +3700,7 @@
 .method private ripple(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/RippleDrawable;
     .registers 5
 
-    .line 266
+    .line 276
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->night:Z
 
     if-eqz v0, :cond_8
@@ -3564,18 +3712,18 @@
     :cond_8
     const/high16 v0, 0x22000000
 
-    .line 267
+    .line 277
     :goto_a
     new-instance v1, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v1}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 268
+    .line 278
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 269
+    .line 279
     const/16 v2, 0x13
 
     invoke-direct {p0, v2}, Lcom/aigrammar/GrammarBridge;->dp(I)I
@@ -3586,7 +3734,7 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 270
+    .line 280
     new-instance v2, Landroid/graphics/drawable/RippleDrawable;
 
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -3598,13 +3746,87 @@
     return-object v2
 .end method
 
-.method public static selection(Landroid/inputmethodservice/InputMethodService;II)V
+.method private scheduleCheck()V
     .registers 5
 
-    .line 125
+    .line 483
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 484
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    .line 485
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_36
+
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_23
+
+    if-eqz v0, :cond_36
+
+    .line 486
+    const-string v1, "full_text_auto"
+
+    const/4 v2, 0x0
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-nez v0, :cond_23
+
+    goto :goto_36
+
+    .line 487
+    :cond_23
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
+
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_30
+
+    const-wide/16 v2, 0x5dc
+
+    goto :goto_32
+
+    :cond_30
+    const-wide/16 v2, 0x2bc
+
+    :goto_32
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 488
+    return-void
+
+    .line 486
+    :cond_36
+    :goto_36
+    return-void
+.end method
+
+.method public static selection(Landroid/inputmethodservice/InputMethodService;II)V
+    .registers 4
+
+    .line 126
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    if-eqz v0, :cond_2c
+    if-eqz v0, :cond_23
 
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
@@ -3612,90 +3834,80 @@
 
     if-eq v0, p0, :cond_b
 
-    goto :goto_2c
+    goto :goto_23
 
-    .line 126
+    .line 127
     :cond_b
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
-    .line 128
+    .line 129
     :try_start_d
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 129
+    .line 130
     iput p1, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
 
-    .line 130
+    .line 131
     iput p2, p0, Lcom/aigrammar/GrammarBridge;->cursorEnd:I
 
-    .line 131
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
-
     .line 132
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_26
-
-    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
-
-    iget-object p2, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
-
-    const-wide/16 v0, 0x2bc
-
-    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-    :try_end_26
-    .catch Ljava/lang/RuntimeException; {:try_start_d .. :try_end_26} :catch_27
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshGeometry()V
 
     .line 133
-    :cond_26
-    goto :goto_2b
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    :catch_27
+    .line 134
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->scheduleCheck()V
+    :try_end_1d
+    .catch Ljava/lang/RuntimeException; {:try_start_d .. :try_end_1d} :catch_1e
+
+    .line 135
+    goto :goto_22
+
+    :catch_1e
     move-exception p1
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 134
-    :goto_2b
+    .line 136
+    :goto_22
     return-void
 
-    .line 125
-    :cond_2c
-    :goto_2c
+    .line 126
+    :cond_23
+    :goto_23
     return-void
 .end method
 
 .method private setCollapsed(ZZ)V
-    .registers 5
+    .registers 4
 
-    .line 418
+    .line 435
     iput-boolean p1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
-    .line 419
+    .line 436
     if-eqz p1, :cond_8
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
     goto :goto_b
 
-    .line 420
+    .line 437
     :cond_8
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
 
-    .line 421
+    .line 438
     :goto_b
     if-eqz p2, :cond_20
 
-    .line 422
+    .line 439
     invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
 
     move-result-object p2
 
-    .line 423
+    .line 440
     if-eqz p2, :cond_20
 
     invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -3710,43 +3922,31 @@
 
     invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 425
+    .line 442
     :cond_20
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->applyCollapsed()V
 
-    .line 426
-    if-nez p1, :cond_34
+    .line 443
+    if-nez p1, :cond_28
 
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->scheduleCheck()V
 
-    move-result p1
-
-    if-eqz p1, :cond_34
-
-    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
-
-    iget-object p2, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
-
-    const-wide/16 v0, 0x2bc
-
-    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 427
-    :cond_34
+    .line 444
+    :cond_28
     return-void
 .end method
 
 .method private showChip(Ljava/lang/String;)V
-    .registers 5
+    .registers 7
 
-    .line 525
+    .line 576
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
     if-nez v0, :cond_5
 
     return-void
 
-    .line 526
+    .line 577
     :cond_5
     iget-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
@@ -3754,44 +3954,80 @@
 
     return-void
 
-    .line 527
+    .line 578
     :cond_a
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/4 v1, 0x0
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz v0, :cond_17
 
-    const-string v2, "\u2713  "
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v0, v0, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
 
-    move-result-object v1
+    if-eqz v0, :cond_17
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    move-result-object v1
+    goto :goto_18
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_17
+    move v0, v1
 
-    move-result-object v1
+    .line 579
+    :goto_18
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    if-eqz v0, :cond_1f
 
-    .line 528
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
+    const-string v3, "Review full-text correction"
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    goto :goto_32
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    :cond_1f
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v2, "Apply grammar correction: "
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "\u2713  "
 
-    move-result-object v1
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    :goto_32
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 580
+    iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_3c
+
+    const-string p1, "Review correction for the whole field"
+
+    goto :goto_4f
+
+    :cond_3c
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Apply grammar correction: "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -3799,26 +4035,427 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+    :goto_4f
+    invoke-virtual {v2, p1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 529
+    .line 582
     iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->chip:Landroid/widget/TextView;
 
-    const/4 v0, 0x0
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 530
+    .line 583
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 531
+    .line 584
+    return-void
+.end method
+
+.method private showFullTextReview()V
+    .registers 14
+
+    .line 626
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
+
+    .line 627
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
+
+    .line 628
+    if-eqz v0, :cond_16d
+
+    if-eqz v1, :cond_16d
+
+    invoke-direct {p0, v0}, Lcom/aigrammar/GrammarBridge;->matches(Lcom/aigrammar/GrammarBridge$Snapshot;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_10
+
+    goto/16 :goto_16d
+
+    .line 629
+    :cond_10
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dismissReview()V
+
+    .line 631
+    :try_start_13
+    new-instance v2, Landroid/widget/LinearLayout;
+
+    iget-object v3, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v2, v3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    .line 632
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
+
+    .line 633
+    const/16 v4, 0xe
+
+    invoke-direct {p0, v4}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v5
+
+    const/16 v6, 0xc
+
+    invoke-direct {p0, v6}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v6
+
+    invoke-direct {p0, v4}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v4
+
+    const/16 v7, 0xa
+
+    invoke-direct {p0, v7}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v7
+
+    invoke-virtual {v2, v5, v6, v4, v7}, Landroid/widget/LinearLayout;->setPadding(IIII)V
+
+    .line 634
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->barBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 635
+    new-instance v4, Landroid/widget/TextView;
+
+    iget-object v5, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v4, v5}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 636
+    const-string v5, "Review full-text correction"
+
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 637
+    iget v5, p0, Lcom/aigrammar/GrammarBridge;->fg:I
+
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 638
+    const/high16 v5, 0x41800000    # 16.0f
+
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 639
+    const/16 v5, 0x8
+
+    invoke-direct {p0, v5}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v6
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v4, v7, v7, v7, v6}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 640
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 641
+    new-instance v4, Landroid/widget/TextView;
+
+    iget-object v6, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v4, v6}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 642
+    invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 643
+    const/high16 v6, 0x41700000    # 15.0f
+
+    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 644
+    iget v6, p0, Lcom/aigrammar/GrammarBridge;->fg:I
+
+    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 645
+    const/4 v6, 0x4
+
+    invoke-direct {p0, v6}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v8
+
+    invoke-direct {p0, v5}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v9
+
+    invoke-virtual {v4, v7, v7, v8, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 646
+    new-instance v8, Landroid/widget/ScrollView;
+
+    iget-object v9, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v8, v9}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
+
+    .line 647
+    invoke-virtual {v8, v4}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
+
+    .line 648
+    new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v9, -0x1
+
+    const/high16 v10, 0x3f800000    # 1.0f
+
+    invoke-direct {v4, v9, v7, v10}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
+
+    invoke-virtual {v2, v8, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 649
+    new-instance v4, Landroid/widget/LinearLayout;
+
+    iget-object v8, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v4, v8}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    .line 650
+    new-instance v8, Landroid/widget/Button;
+
+    iget-object v9, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v8, v9}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+
+    .line 651
+    const-string v9, "Cancel"
+
+    invoke-virtual {v8, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    .line 652
+    invoke-virtual {v8, v7}, Landroid/widget/Button;->setAllCaps(Z)V
+
+    .line 653
+    new-instance v9, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda0;
+
+    invoke-direct {v9, p0}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda0;-><init>(Lcom/aigrammar/GrammarBridge;)V
+
+    invoke-virtual {v8, v9}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 654
+    new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/16 v11, 0x2c
+
+    invoke-direct {p0, v11}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v12
+
+    invoke-direct {v9, v7, v12, v10}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
+
+    invoke-virtual {v4, v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 655
+    new-instance v8, Landroid/widget/Button;
+
+    iget-object v9, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-direct {v8, v9}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+
+    .line 656
+    const-string v9, "Apply to full text"
+
+    invoke-virtual {v8, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    .line 657
+    invoke-virtual {v8, v7}, Landroid/widget/Button;->setAllCaps(Z)V
+
+    .line 658
+    new-instance v9, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda1;
+
+    invoke-direct {v9, p0, v0, v1}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda1;-><init>(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;Ljava/lang/String;)V
+
+    invoke-virtual {v8, v9}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 663
+    new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
+
+    invoke-direct {p0, v11}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v1
+
+    invoke-direct {v0, v7, v1, v10}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
+
+    invoke-virtual {v4, v8, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 664
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 665
+    const/16 v0, 0x168
+
+    invoke-direct {p0, v0}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
+
+    invoke-virtual {v1}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    const/4 v4, 0x2
+
+    div-int/2addr v1, v4
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+
+    move-result v0
+
+    .line 666
+    new-instance v1, Landroid/widget/PopupWindow;
+
+    .line 667
+    const/16 v8, 0xc8
+
+    invoke-direct {p0, v8}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v8
+
+    iget-object v9, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
+
+    invoke-virtual {v9}, Landroid/view/ViewGroup;->getWidth()I
+
+    move-result v9
+
+    const/16 v10, 0x18
+
+    invoke-direct {p0, v10}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v10
+
+    sub-int/2addr v9, v10
+
+    invoke-static {v8, v9}, Ljava/lang/Math;->max(II)I
+
+    move-result v8
+
+    invoke-direct {v1, v2, v8, v0, v7}, Landroid/widget/PopupWindow;-><init>(Landroid/view/View;IIZ)V
+
+    .line 668
+    invoke-virtual {v1, v4}, Landroid/widget/PopupWindow;->setInputMethodMode(I)V
+
+    .line 669
+    invoke-virtual {v1, v3}, Landroid/widget/PopupWindow;->setOutsideTouchable(Z)V
+
+    .line 670
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->barBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/PopupWindow;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 671
+    invoke-direct {p0, v5}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/PopupWindow;->setElevation(F)V
+
+    .line 672
+    new-instance v2, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2, p0, v1}, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda2;-><init>(Lcom/aigrammar/GrammarBridge;Landroid/widget/PopupWindow;)V
+
+    invoke-virtual {v1, v2}, Landroid/widget/PopupWindow;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
+
+    .line 673
+    new-array v2, v4, [I
+
+    .line 674
+    iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v2}, Landroid/widget/LinearLayout;->getLocationInWindow([I)V
+
+    .line 675
+    iput-object v1, p0, Lcom/aigrammar/GrammarBridge;->review:Landroid/widget/PopupWindow;
+
+    .line 676
+    iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
+
+    .line 677
+    invoke-direct {p0, v5}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v5
+
+    aget v2, v2, v3
+
+    sub-int/2addr v2, v0
+
+    invoke-direct {p0, v6}, Lcom/aigrammar/GrammarBridge;->dp(I)I
+
+    move-result v0
+
+    sub-int/2addr v2, v0
+
+    invoke-static {v5, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    .line 676
+    const/16 v2, 0x31
+
+    invoke-virtual {v1, v4, v2, v7, v0}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
+    :try_end_159
+    .catch Ljava/lang/RuntimeException; {:try_start_13 .. :try_end_159} :catch_15a
+
+    .line 683
+    goto :goto_16c
+
+    .line 678
+    :catch_15a
+    move-exception v0
+
+    .line 679
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dismissReview()V
+
+    .line 680
+    const-string v0, "Cannot open the review, try again"
+
+    iput-object v0, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
+
+    .line 681
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
+
+    .line 682
+    const-string v0, "AIGrammar"
+
+    const-string v1, "Cannot show full-text review"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 684
+    :goto_16c
+    return-void
+
+    .line 628
+    :cond_16d
+    :goto_16d
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
+
     return-void
 .end method
 
 .method private snapshot()Lcom/aigrammar/GrammarBridge$Snapshot;
     .registers 13
 
-    .line 462
+    .line 492
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
 
     move-result v0
@@ -3829,7 +4466,7 @@
 
     return-object v1
 
-    .line 463
+    .line 493
     :cond_8
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->ime:Landroid/inputmethodservice/InputMethodService;
 
@@ -3837,52 +4474,90 @@
 
     move-result-object v3
 
-    .line 464
+    .line 494
     if-nez v3, :cond_11
 
     return-object v1
 
-    .line 465
+    .line 495
     :cond_11
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->isFullTextMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2f
+
+    .line 496
+    iget v0, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
+
+    iget v2, p0, Lcom/aigrammar/GrammarBridge;->cursorEnd:I
+
+    invoke-static {v3, v0, v2}, Lcom/aigrammar/FullTextSnapshot;->capture(Landroid/view/inputmethod/InputConnection;II)Lcom/aigrammar/FullTextSnapshot;
+
+    move-result-object v8
+
+    .line 497
+    if-nez v8, :cond_22
+
+    goto :goto_2e
+
+    :cond_22
+    new-instance v1, Lcom/aigrammar/GrammarBridge$Snapshot;
+
+    iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->editor:Landroid/view/inputmethod/EditorInfo;
+
+    iget-wide v5, p0, Lcom/aigrammar/GrammarBridge;->revision:J
+
+    iget v7, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
+
+    move-object v2, v1
+
+    invoke-direct/range {v2 .. v8}, Lcom/aigrammar/GrammarBridge$Snapshot;-><init>(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;JILcom/aigrammar/FullTextSnapshot;)V
+
+    :goto_2e
+    return-object v1
+
+    .line 499
+    :cond_2f
     const/4 v0, 0x0
 
     invoke-interface {v3, v0}, Landroid/view/inputmethod/InputConnection;->getSelectedText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 466
-    if-eqz v2, :cond_1f
+    .line 500
+    if-eqz v2, :cond_3d
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
-    if-lez v2, :cond_1f
+    if-lez v2, :cond_3d
 
     return-object v1
 
-    .line 467
-    :cond_1f
+    .line 501
+    :cond_3d
     const/16 v2, 0xc9
 
     invoke-interface {v3, v2, v0}, Landroid/view/inputmethod/InputConnection;->getTextBeforeCursor(II)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 468
-    if-nez v2, :cond_28
+    .line 502
+    if-nez v2, :cond_46
 
     return-object v1
 
-    .line 469
-    :cond_28
+    .line 503
+    :cond_46
     const/16 v4, 0x20
 
     invoke-interface {v3, v4, v0}, Landroid/view/inputmethod/InputConnection;->getTextAfterCursor(II)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 470
+    .line 504
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v4
@@ -3891,13 +4566,13 @@
 
     move-result-object v10
 
-    .line 471
-    if-nez v10, :cond_39
+    .line 505
+    if-nez v10, :cond_57
 
     return-object v1
 
-    .line 472
-    :cond_39
+    .line 506
+    :cond_57
     new-instance v11, Lcom/aigrammar/GrammarBridge$Snapshot;
 
     iget-object v4, p0, Lcom/aigrammar/GrammarBridge;->editor:Landroid/view/inputmethod/EditorInfo;
@@ -3910,50 +4585,50 @@
 
     move-result-object v8
 
-    if-nez v0, :cond_49
+    if-nez v0, :cond_67
 
     move-object v9, v1
 
-    goto :goto_4e
+    goto :goto_6c
 
-    .line 473
-    :cond_49
+    .line 507
+    :cond_67
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     move-object v9, v1
 
-    :goto_4e
+    :goto_6c
     move-object v2, v11
 
     invoke-direct/range {v2 .. v10}, Lcom/aigrammar/GrammarBridge$Snapshot;-><init>(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;JILjava/lang/String;Ljava/lang/String;Lcom/aigrammar/SentenceSlice;)V
 
-    .line 472
+    .line 506
     return-object v11
 .end method
 
 .method public static start(Landroid/inputmethodservice/InputMethodService;Landroid/view/inputmethod/EditorInfo;)V
     .registers 4
 
-    .line 110
+    .line 111
     :try_start_0
     invoke-static {p0}, Lcom/aigrammar/GrammarBridge;->get(Landroid/inputmethodservice/InputMethodService;)Lcom/aigrammar/GrammarBridge;
 
     move-result-object p0
 
-    .line 111
+    .line 112
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 112
+    .line 113
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->editor:Landroid/view/inputmethod/EditorInfo;
 
-    .line 113
+    .line 114
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->active:Z
 
-    .line 114
+    .line 115
     const/4 v0, -0x1
 
     if-nez p1, :cond_11
@@ -3968,7 +4643,7 @@
     :goto_13
     iput v1, p0, Lcom/aigrammar/GrammarBridge;->cursorStart:I
 
-    .line 115
+    .line 116
     if-nez p1, :cond_18
 
     goto :goto_1a
@@ -3979,42 +4654,29 @@
     :goto_1a
     iput v0, p0, Lcom/aigrammar/GrammarBridge;->cursorEnd:I
 
-    .line 116
+    .line 117
     const/4 p1, 0x0
 
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
 
-    .line 117
+    .line 118
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 118
+    .line 119
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 119
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
-
     .line 120
-    invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_37
-
-    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
-
-    iget-object p0, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
-
-    const-wide/16 v0, 0x2bc
-
-    invoke-virtual {p1, p0, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-    :try_end_37
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_37} :catch_38
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshGeometry()V
 
     .line 121
-    :cond_37
-    goto :goto_40
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->scheduleCheck()V
+    :try_end_2b
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_2b} :catch_2c
 
-    :catch_38
+    .line 122
+    goto :goto_34
+
+    :catch_2c
     move-exception p0
 
     const-string p0, "AIGrammar"
@@ -4023,15 +4685,15 @@
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 122
-    :goto_40
+    .line 123
+    :goto_34
     return-void
 .end method
 
 .method public static suspend(Landroid/inputmethodservice/InputMethodService;)V
     .registers 2
 
-    .line 137
+    .line 139
     sget-object v0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     if-eqz v0, :cond_16
@@ -4044,7 +4706,7 @@
 
     goto :goto_16
 
-    .line 138
+    .line 140
     :cond_b
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
@@ -4052,15 +4714,15 @@
 
     iput-boolean v0, p0, Lcom/aigrammar/GrammarBridge;->active:Z
 
-    .line 139
+    .line 141
     sget-object p0, Lcom/aigrammar/GrammarBridge;->instance:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 140
+    .line 142
     return-void
 
-    .line 137
+    .line 139
     :cond_16
     :goto_16
     return-void
@@ -4069,7 +4731,7 @@
 .method private updateRowPosition()V
     .registers 4
 
-    .line 207
+    .line 217
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     if-eqz v0, :cond_67
@@ -4084,7 +4746,7 @@
 
     goto :goto_67
 
-    .line 208
+    .line 218
     :cond_d
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
 
@@ -4106,7 +4768,7 @@
 
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
-    .line 209
+    .line 219
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v0
@@ -4120,7 +4782,7 @@
     :cond_28
     move v0, v1
 
-    .line 210
+    .line 220
     :goto_29
     iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
@@ -4134,12 +4796,12 @@
     :goto_2f
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 211
+    .line 221
     if-nez v0, :cond_35
 
     return-void
 
-    .line 212
+    .line 222
     :cond_35
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
@@ -4149,7 +4811,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 215
+    .line 225
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->rowRoot:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getHeight()I
@@ -4166,7 +4828,7 @@
 
     iget-object v2, p0, Lcom/aigrammar/GrammarBridge;->keyboardBase:Landroid/view/View;
 
-    .line 216
+    .line 226
     invoke-virtual {v2}, Landroid/view/View;->getY()F
 
     move-result v2
@@ -4185,24 +4847,24 @@
 
     add-int/2addr v1, v2
 
-    .line 217
+    .line 227
     iget v2, v0, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
     if-eq v2, v1, :cond_66
 
-    .line 218
+    .line 228
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
-    .line 219
+    .line 229
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge;->row:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 221
+    .line 231
     :cond_66
     return-void
 
-    .line 207
+    .line 217
     :cond_67
     :goto_67
     return-void
@@ -4211,9 +4873,9 @@
 
 # virtual methods
 .method synthetic lambda$attachRow$0$com-aigrammar-GrammarBridge(Landroid/view/View;)V
-    .registers 5
+    .registers 3
 
-    .line 315
+    .line 328
     iget-boolean p1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     const/4 v0, 0x1
@@ -4226,24 +4888,24 @@
 
     return-void
 
-    .line 316
+    .line 329
     :cond_a
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
 
     move-result p1
 
-    .line 317
+    .line 330
     xor-int/2addr p1, v0
 
     invoke-static {p1}, Lcom/aigrammar/GrammarClient;->setEnabled(Z)V
 
-    .line 318
+    .line 331
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 319
+    .line 332
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 320
+    .line 333
     if-eqz p1, :cond_24
 
     invoke-static {}, Lcom/aigrammar/GrammarClient;->hasKey()Z
@@ -4254,39 +4916,27 @@
 
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->openSettings()V
 
-    goto :goto_35
+    goto :goto_29
 
-    .line 321
+    .line 334
     :cond_24
-    if-eqz p1, :cond_35
+    if-eqz p1, :cond_29
 
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->scheduleCheck()V
 
-    move-result p1
-
-    if-eqz p1, :cond_35
-
-    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
-
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
-
-    const-wide/16 v1, 0x2bc
-
-    invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 322
-    :cond_35
-    :goto_35
+    .line 335
+    :cond_29
+    :goto_29
     return-void
 .end method
 
 .method synthetic lambda$attachRow$1$com-aigrammar-GrammarBridge(Landroid/view/View;)Z
     .registers 2
 
-    .line 324
+    .line 337
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->openSettings()V
 
-    .line 325
+    .line 338
     const/4 p1, 0x1
 
     return p1
@@ -4295,7 +4945,7 @@
 .method synthetic lambda$attachRow$2$com-aigrammar-GrammarBridge(Landroid/view/View;)V
     .registers 2
 
-    .line 337
+    .line 350
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->onStatusClick()V
 
     return-void
@@ -4304,10 +4954,10 @@
 .method synthetic lambda$attachRow$3$com-aigrammar-GrammarBridge(Landroid/view/View;)Z
     .registers 2
 
-    .line 339
+    .line 352
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->openSettings()V
 
-    .line 340
+    .line 353
     const/4 p1, 0x1
 
     return p1
@@ -4316,16 +4966,34 @@
 .method synthetic lambda$attachRow$4$com-aigrammar-GrammarBridge(Landroid/view/View;)V
     .registers 2
 
-    .line 357
+    .line 371
+    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
+
+    if-eqz p1, :cond_e
+
+    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
+
+    iget-object p1, p1, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
+
+    if-eqz p1, :cond_e
+
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->showFullTextReview()V
+
+    goto :goto_11
+
+    .line 372
+    :cond_e
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->applyCorrection()V
 
+    .line 373
+    :goto_11
     return-void
 .end method
 
 .method synthetic lambda$attachRow$5$com-aigrammar-GrammarBridge(Landroid/view/View;)V
     .registers 2
 
-    .line 367
+    .line 383
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->openSettings()V
 
     return-void
@@ -4334,7 +5002,7 @@
 .method synthetic lambda$attachRow$6$com-aigrammar-GrammarBridge(Landroid/view/View;)V
     .registers 3
 
-    .line 376
+    .line 392
     iget-boolean p1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
     const/4 v0, 0x1
@@ -4346,10 +5014,71 @@
     return-void
 .end method
 
+.method synthetic lambda$showFullTextReview$7$com-aigrammar-GrammarBridge(Landroid/view/View;)V
+    .registers 2
+
+    .line 653
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dismissReview()V
+
+    return-void
+.end method
+
+.method synthetic lambda$showFullTextReview$8$com-aigrammar-GrammarBridge(Lcom/aigrammar/GrammarBridge$Snapshot;Ljava/lang/String;Landroid/view/View;)V
+    .registers 4
+
+    .line 659
+    iget-object p3, p0, Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
+
+    if-ne p3, p1, :cond_14
+
+    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_d
+
+    goto :goto_14
+
+    .line 660
+    :cond_d
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->dismissReview()V
+
+    .line 661
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->applyCorrection()V
+
+    .line 662
+    return-void
+
+    .line 659
+    :cond_14
+    :goto_14
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
+
+    return-void
+.end method
+
+.method synthetic lambda$showFullTextReview$9$com-aigrammar-GrammarBridge(Landroid/widget/PopupWindow;)V
+    .registers 3
+
+    .line 672
+    iget-object v0, p0, Lcom/aigrammar/GrammarBridge;->review:Landroid/widget/PopupWindow;
+
+    if-ne v0, p1, :cond_7
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->review:Landroid/widget/PopupWindow;
+
+    :cond_7
+    return-void
+.end method
+
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .registers 5
 
-    .line 716
+    .line 801
     const-string v0, "collapsed"
 
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -4358,7 +5087,7 @@
 
     if-eqz v1, :cond_13
 
-    .line 717
+    .line 802
     const/4 p2, 0x0
 
     invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
@@ -4367,13 +5096,13 @@
 
     iput-boolean p1, p0, Lcom/aigrammar/GrammarBridge;->collapsed:Z
 
-    .line 718
+    .line 803
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->applyCollapsed()V
 
-    .line 719
+    .line 804
     return-void
 
-    .line 721
+    .line 806
     :cond_13
     const-string p1, "enabled"
 
@@ -4381,7 +5110,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_2c
+    if-nez p1, :cond_3c
 
     const-string p1, "api_key"
 
@@ -4389,7 +5118,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_2c
+    if-nez p1, :cond_3c
 
     const-string p1, "model"
 
@@ -4397,44 +5126,48 @@
 
     move-result p1
 
-    if-nez p1, :cond_2c
+    if-nez p1, :cond_3c
+
+    .line 807
+    const-string p1, "scope"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3c
+
+    const-string p1, "full_text_auto"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3c
 
     return-void
 
-    .line 722
-    :cond_2c
+    .line 808
+    :cond_3c
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->invalidate()V
 
-    .line 723
+    .line 809
     const/4 p1, 0x0
 
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
 
-    .line 724
+    .line 810
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
 
-    .line 725
+    .line 811
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshToggle()V
 
-    .line 726
+    .line 812
     invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->refreshStatus()V
 
-    .line 727
-    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->allowed()Z
+    .line 813
+    invoke-direct {p0}, Lcom/aigrammar/GrammarBridge;->scheduleCheck()V
 
-    move-result p1
-
-    if-eqz p1, :cond_49
-
-    iget-object p1, p0, Lcom/aigrammar/GrammarBridge;->handler:Landroid/os/Handler;
-
-    iget-object p2, p0, Lcom/aigrammar/GrammarBridge;->timer:Ljava/lang/Runnable;
-
-    const-wide/16 v0, 0x2bc
-
-    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 728
-    :cond_49
+    .line 814
     return-void
 .end method

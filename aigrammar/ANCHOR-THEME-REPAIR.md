@@ -1,5 +1,7 @@
 # Anchor and native shift theme follow-up
 
+Current follow-up: [WRITING-MODES.md](WRITING-MODES.md) fixes the remaining three null shift-style references and removes the manual shift-view workaround. It also adds multilingual/full-text modes. This document records the preceding anchor pass.
+
 Baseline: `c3f8602204dc242924ea56bd91ebdcb07370b1d0`. The previous test APK placed the grammar bar at the top of the screen in a chat/search field, and its shift repair overrode the keyboard's color and caps-lock appearance. This repair preserves the settings-startup and icon-only-collapse fixes.
 
 ## Measured layout failure

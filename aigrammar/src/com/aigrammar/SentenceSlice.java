@@ -21,7 +21,8 @@ public final class SentenceSlice {
         // Ignore a terminal punctuation mark: the just-completed sentence is useful too.
         for (int i = end - 2; i >= 0; i--) {
             char c = before.charAt(i);
-            boolean punctuation = ".!?。！？؟".indexOf(c) >= 0;
+            // Include common non-Latin sentence endings, independent of keyboard locale.
+            boolean punctuation = ".!?。！？؟۔।॥։።။;".indexOf(c) >= 0;
             if (c == '\n' || c == '\r' || (punctuation &&
                     (Character.isWhitespace(before.charAt(i + 1)) || c > 127))) {
                 start = i + 1;

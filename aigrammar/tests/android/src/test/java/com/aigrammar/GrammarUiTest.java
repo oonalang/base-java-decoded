@@ -281,24 +281,7 @@ public class GrammarUiTest {
         field("settings").performClick();
         assertEquals("Open AI Grammar Settings from your app drawer",ShadowToast.getTextOfLatestToast());
     }
-    @Test public void shiftRepairFollowsReplacedKeyContentAndPreservesStateDrawable() {
-        FrameLayout shift=new FrameLayout(ime); shift.setId(0x7f0b05b0);
-        root.addView(shift);
-        FrameLayout old=new FrameLayout(ime); shift.addView(old);
-        ImageView oldIcon=new ImageView(ime); oldIcon.setId(0x7f0b03c0); old.addView(oldIcon);
-        oldIcon.setImageDrawable(new ColorDrawable(0xff123456));
-        repairShifts();
-        old.setVisibility(View.GONE); oldIcon.setVisibility(View.GONE);
-        FrameLayout current=new FrameLayout(ime); shift.addView(current);
-        ImageView next=new ImageView(ime); next.setId(0x7f0b03c0); current.addView(next);
-        ColorDrawable locked=new ColorDrawable(0xffabcdef); next.setImageDrawable(locked);
-        next.setVisibility(View.GONE); next.setAlpha(0f); next.setImageAlpha(0);
-        repairShifts();
-        assertEquals(View.VISIBLE,next.getVisibility()); assertEquals(1f,next.getAlpha(),0f);
-        assertEquals(255,next.getImageAlpha()); assertSame(locked,next.getDrawable());
-        assertEquals(View.GONE,oldIcon.getVisibility());
-    }
-    @Test public void shiftRepairPreservesNativeThemeTintOpacityAndCaseStates() {
+    @Test public void geometryRefreshPreservesNativeThemeTintOpacityAndCaseStates() {
         FrameLayout shift=new FrameLayout(ime); shift.setId(0x7f0b05b0);
         root.addView(shift);
         ImageView icon=new ImageView(ime); icon.setId(0x7f0b03c0); shift.addView(icon);
@@ -312,7 +295,7 @@ public class GrammarUiTest {
             icon.setSelected(state==1); icon.setActivated(state==2);
             icon.setImageAlpha(170); icon.setAlpha(.8f);
             int[] nativeState=icon.getDrawableState().clone();
-            repairShifts();
+            refreshGeometry();
             assertSame("Each off/on/locked glyph must remain native",glyph,icon.getDrawable());
             assertSame("Repair must not replace the keyboard theme tint",themedTint,icon.getImageTintList());
             assertNull("Repair must not force a white color filter over theme states",icon.getColorFilter());
@@ -322,8 +305,8 @@ public class GrammarUiTest {
             assertEquals("Nonzero view opacity must remain intact",.8f,icon.getAlpha(),0f);
         }
     }
-    private void repairShifts() {
-        ReflectionHelpers.callInstanceMethod(bridge,"repairVisibleShiftKeys",ReflectionHelpers.ClassParameter.from(View.class,root));
+    private void refreshGeometry() {
+        ReflectionHelpers.callInstanceMethod(bridge,"refreshGeometry");
     }
     private void layoutKeyboard(int heightMode,int height) {
         // Layout listeners may reserve a new margin after observing the base's

@@ -10,9 +10,9 @@ The original repository supplied `base_decoded/` and `base_java/`. `base_java/` 
 
 ## Current artifact and test status
 
-- Filename: `Gboard-By-Eliwoa-anchor-fix.apk`.
+- Filename: `Gboard-By-Eliwoa-writing-modes.apk`.
 - Source version: `18.4.1.985164140-release-arm64-v8a`, versionCode `176027078`.
-- APK SHA-256: `044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689`.
+- APK SHA-256: `0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728`.
 - Signing certificate SHA-256: `835CFD33F94E1CC744655D3E48ABDCD0F56C8F0865AA09C5AEC830B5CE51E233` (public certificate fingerprint, not a private key).
 - Runtime target: Android arm64-v8a, API 32+. Earlier user testing was on Android 13.
 - Build, signature, alignment, unit and resource-graph checks pass.
@@ -117,3 +117,13 @@ The previous c3f86022 APK was phone-tested and its AI row appeared at the screen
 One confirmed `/range` hook in `pbb.onComputeInsets` unions the actual visible row into REGION-mode touch bounds and includes it in top insets, preserving existing native modes/regions. Hidden-base/suspended/hidden-row guards are tested. The primary dex consequently changes; the remaining three original dex files and all native libraries are unchanged.
 
 The white filter and OFF fallback were removed from shift repair. Three original density WebPs replace the white vector substitutions. Native selected/activated state, drawable choice, tint and nonzero alpha remain owned by Gboard. Twenty Android UI tests (native graphics for Region checks) pass, as do the 50 earlier checks. The latest anchor-fix APK still needs phone and live Gemini verification. See [ANCHOR-THEME-REPAIR.md](aigrammar/ANCHOR-THEME-REPAIR.md) and `reports/anchor-verification.json`.
+
+## Current writing-mode update
+
+Baseline `5ecda5fe`. The user requested natural prose without em dashes/semicolons, direct word correction, multilingual/code-switched editing, both manual and automatic full-text checks, and another shift repair. The new APK includes all of these configuration/code changes. Sentence remains default (`scope=sentence`), while `scope=full_text` uses a complete 30,000-character snapshot. `full_text_auto` defaults false, enabling a 1.5-second debounce when true. Manual full-text checking remains available.
+
+`FullTextSnapshot.capture/matches/apply` validates the entire editor, including after-cursor text, rejects partial/truncated/racy snapshots, and uses guarded selection+commit without a delete fallback. Full-text chips open a scrollable PopupWindow review, then explicit Apply. Changes, mode/field switches, keyboard rebuilding and suspension invalidate offers. Sensitive-field gating still precedes reads. `GrammarClient.request(text,boolean,callback)` supplies a JSON message envelope, natural multilingual system instruction and an appropriate long-output/timeout budget. The original short request overload remains.
+
+The actual remaining shift root cause was three `@null` values in default style0x7f150421. Source/JADX evidence and compiled verification map attrs1ad/1ae/1af to original drawables5b0/5b1/5b2. Those references are repaired and all manual shift ImageView mutations are removed. Geometry updates now only position the grammar row. No original smali/native class edit was needed in this pass. All four original dex files and 15 native libraries match the prior anchor APK.
+
+50 Android UI/core tests, 53 policy/sentence checks and 9 identity checks pass. New APK/device behavior and actual Gemini language/style output are not live-tested here. See [WRITING-MODES.md](aigrammar/WRITING-MODES.md), `reports/writing-verification.json` and `reports/writing.patch`. Previous UI/anchor notes below/above are historical where superseded.

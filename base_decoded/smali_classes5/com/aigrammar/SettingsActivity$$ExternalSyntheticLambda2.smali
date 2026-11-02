@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .registers 3
+.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .registers 4
 
     .line 0
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;->f$0:Lcom/aigrammar/SettingsActivity;
 
-    invoke-virtual {v0, p1}, Lcom/aigrammar/SettingsActivity;->lambda$onCreate$2$com-aigrammar-SettingsActivity(Landroid/view/View;)V
+    invoke-virtual {v0, p1, p2}, Lcom/aigrammar/SettingsActivity;->lambda$onCreate$2$com-aigrammar-SettingsActivity(Landroid/widget/CompoundButton;Z)V
 
     return-void
 .end method
