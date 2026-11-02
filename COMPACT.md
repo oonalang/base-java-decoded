@@ -1,14 +1,14 @@
 # Compact handoff
 
 - App: **Gboard By Eliwoa**, package **com.gboard.eli**, based on Gboard18.4.1 arm64-v8a / Android API32+.
-- Latest artifact: **Gboard-By-Eliwoa-writing-modes.apk**. SHA-256: **0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728**.
+- Latest artifact: **Gboard-By-Eliwoa-neo-ui.apk**. SHA-256: **78f207d5a41ba53ef931f9002e09b11ec7ad134b159f4e301ad9bebf189e8160**.
 - Model default remains **gemini-3.5-flash-lite**. The user's key stays on the phone and was never supplied to this workspace.
 - Sentence mode remains default. Full text/essay covers the entire field (including after the cursor), up to30,000 UTF-16 characters. Choose manual or automatic checks in settings; manual tap remains available when auto is on.
 - Full-text results open a scrollable review before Apply. Whole-text capture and replacement reject incomplete, oversized, stale and unsupported snapshots. Sensitive fields are still excluded.
 - Natural multilingual/code-switched instructions preserve casual voice, correct words directly and prohibit em dashes/semicolons. Input is a JSON message string rather than conversational instructions. Actual language/style quality is not live-tested here.
 - Shift root cause now repaired: default style0x7f150421 had null attrs1ad/1ae/1af. They reference original locked/off/on drawables5b0/5b1/5b2 again. Manual shift view/tint/alpha overrides are removed entirely.
 - Existing settings-startup, rounded bar, bottom anchoring, touch insets and icon-only-collapse fixes remain.
-- **112 checks pass**:50 API33 UI/core tests,53 policy/sentence checks,9 certificate checks. Same signer, five dex files, 16KB ZIP alignment, all34,193 public IDs valid and zero build IP connections. All four original dex files and15 native libraries match the previous anchor APK.
+- **120 checks pass**:58 API33 UI/core tests,53 unchanged policy/sentence checks,9 unchanged certificate checks. Same signer, five dex files, 16KB ZIP alignment, all34,193 public IDs valid and zero build IP connections. All four original dex files and15 native libraries match the previous anchor APK.
 - **New APK phone behavior and live Gemini output remain unverified.** The user reported the earlier app generally worked but shift was blank and multilingual text was not corrected.
 
 ## Continue
@@ -28,3 +28,9 @@
 - Keep the original Gboard installed and preserve clone data when updating.
 
 Details: [CONTEXT.md](CONTEXT.md), [WRITING-MODES.md](aigrammar/WRITING-MODES.md), [build guide](aigrammar/README.md), [verification](aigrammar/reports/writing-verification.json).
+
+## Current UI/output follow-up
+
+The latest APK retains the original palette but restyles all owned controls with bold outlines, hard offset shadows, smaller corners and clearer type. Settings includes custom radio/switch/field/button visuals. Short previews wrap their content, with a scroll cap for long text.
+
+The model now returns structured JSON with a required correctedText string. GrammarOutput decodes only that string before preview/apply, rejecting the prior echoed message envelope. User-authored JSON is preserved as text. See [NEO-UI.md](aigrammar/NEO-UI.md), rendered previews and reports/neo-verification.json. Original4 dex, native libraries, manifest and resources match the preceding writing APK.

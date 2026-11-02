@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.aigrammar.FullTextBridgeTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.120 s -- in com.aigrammar.FullTextBridgeTest
+
+-------------------------------------------------------------------------------
+Test set: com.aigrammar.FullTextTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 s -- in com.aigrammar.FullTextTest
+
+-------------------------------------------------------------------------------
+Test set: com.aigrammar.GrammarOutputTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.410 s -- in com.aigrammar.GrammarOutputTest
+
+-------------------------------------------------------------------------------
+Test set: com.aigrammar.GrammarUiTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.55 s -- in com.aigrammar.GrammarUiTest
+
+-------------------------------------------------------------------------------
+Test set: com.aigrammar.SettingsScopeTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.200 s -- in com.aigrammar.SettingsScopeTest

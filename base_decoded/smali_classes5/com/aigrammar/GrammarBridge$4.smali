@@ -29,7 +29,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;Ljava/lang/String;)V
     .registers 4
 
-    .line 542
+    .line 538
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     iput-object p2, p0, Lcom/aigrammar/GrammarBridge$4;->val$source:Lcom/aigrammar/GrammarBridge$Snapshot;
@@ -46,7 +46,7 @@
 .method public onError(Ljava/lang/String;)V
     .registers 4
 
-    .line 560
+    .line 556
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     const/4 v1, 0x0
@@ -54,7 +54,7 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->requesting:Z
     invoke-static {v0, v1}, Lcom/aigrammar/GrammarBridge;->access$302(Lcom/aigrammar/GrammarBridge;Z)Z
 
-    .line 562
+    .line 558
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     const/4 v1, 0x0
@@ -62,26 +62,26 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->lastRequested:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/aigrammar/GrammarBridge;->access$1002(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 563
+    .line 559
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # setter for: Lcom/aigrammar/GrammarBridge;->statusError:Ljava/lang/String;
     invoke-static {v0, p1}, Lcom/aigrammar/GrammarBridge;->access$1102(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 564
+    .line 560
     iget-object p1, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->hideChip()V
     invoke-static {p1}, Lcom/aigrammar/GrammarBridge;->access$500(Lcom/aigrammar/GrammarBridge;)V
 
-    .line 565
+    .line 561
     return-void
 .end method
 
 .method public onResult(Ljava/lang/String;)V
     .registers 5
 
-    .line 544
+    .line 540
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     const/4 v1, 0x0
@@ -89,7 +89,7 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->requesting:Z
     invoke-static {v0, v1}, Lcom/aigrammar/GrammarBridge;->access$302(Lcom/aigrammar/GrammarBridge;Z)Z
 
-    .line 546
+    .line 542
     :try_start_6
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
@@ -109,7 +109,7 @@
 
     return-void
 
-    .line 548
+    .line 544
     :cond_16
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->val$source:Lcom/aigrammar/GrammarBridge$Snapshot;
 
@@ -121,7 +121,7 @@
 
     move-result-object p1
 
-    .line 549
+    .line 545
     :cond_20
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -143,7 +143,7 @@
 
     goto :goto_64
 
-    .line 554
+    .line 550
     :cond_33
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
@@ -152,7 +152,7 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->offered:Lcom/aigrammar/GrammarBridge$Snapshot;
     invoke-static {v0, v1}, Lcom/aigrammar/GrammarBridge;->access$702(Lcom/aigrammar/GrammarBridge;Lcom/aigrammar/GrammarBridge$Snapshot;)Lcom/aigrammar/GrammarBridge$Snapshot;
 
-    .line 555
+    .line 551
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     iget-object v1, p0, Lcom/aigrammar/GrammarBridge$4;->val$source:Lcom/aigrammar/GrammarBridge$Snapshot;
@@ -192,16 +192,16 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->correction:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/aigrammar/GrammarBridge;->access$802(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 556
+    .line 552
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->showChip(Ljava/lang/String;)V
     invoke-static {v0, p1}, Lcom/aigrammar/GrammarBridge;->access$900(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)V
 
-    .line 557
+    .line 553
     goto :goto_77
 
-    .line 550
+    .line 546
     :cond_64
     :goto_64
     iget-object p1, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
@@ -211,7 +211,7 @@
     # setter for: Lcom/aigrammar/GrammarBridge;->statusNotice:Ljava/lang/String;
     invoke-static {p1, v0}, Lcom/aigrammar/GrammarBridge;->access$602(Lcom/aigrammar/GrammarBridge;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 551
+    .line 547
     iget-object p1, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->hideChip()V
@@ -219,10 +219,10 @@
     :try_end_70
     .catch Ljava/lang/RuntimeException; {:try_start_6 .. :try_end_70} :catch_71
 
-    .line 552
+    .line 548
     return-void
 
-    .line 557
+    .line 553
     :catch_71
     move-exception p1
 
@@ -231,7 +231,7 @@
     # invokes: Lcom/aigrammar/GrammarBridge;->hideChip()V
     invoke-static {p1}, Lcom/aigrammar/GrammarBridge;->access$500(Lcom/aigrammar/GrammarBridge;)V
 
-    .line 558
+    .line 554
     :goto_77
     return-void
 .end method

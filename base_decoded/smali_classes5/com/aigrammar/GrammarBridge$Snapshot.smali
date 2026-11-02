@@ -36,22 +36,22 @@
 .method constructor <init>(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;JILcom/aigrammar/FullTextSnapshot;)V
     .registers 7
 
-    .line 832
+    .line 848
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 833
+    .line 849
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
     iput-object p2, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
 
     iput-wide p3, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
 
-    .line 834
+    .line 850
     iput p5, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
 
     iput-object p6, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
 
-    .line 835
+    .line 851
     const/4 p1, 0x0
 
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
@@ -60,24 +60,24 @@
 
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
-    .line 836
+    .line 852
     return-void
 .end method
 
 .method constructor <init>(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;JILjava/lang/String;Ljava/lang/String;Lcom/aigrammar/SentenceSlice;)V
     .registers 9
 
-    .line 826
+    .line 842
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 827
+    .line 843
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
     iput-object p2, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
 
     iput-wide p3, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
 
-    .line 828
+    .line 844
     iput p5, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
 
     iput-object p6, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
@@ -86,11 +86,11 @@
 
     iput-object p8, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
-    .line 829
+    .line 845
     const/4 p1, 0x0
 
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->fullText:Lcom/aigrammar/FullTextSnapshot;
 
-    .line 830
+    .line 846
     return-void
 .end method

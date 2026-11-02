@@ -9,6 +9,7 @@ import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.RippleDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.inputmethodservice.InputMethodService;
 import android.os.Handler;
 import android.os.Looper;
@@ -246,37 +247,33 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
                 & Configuration.UI_MODE_NIGHT_MASK;
         night = mode == Configuration.UI_MODE_NIGHT_YES;
         if (night) {
-            bg = 0xF2151B22;
+            bg = 0xFF151B22;
             fg = 0xFFEAF0F7;
             muted = 0xFFA7B2C2;
             accent = 0xFF9FE9BA;
             chipText = 0xFF06251A;
             error = 0xFFFFB4AB;
-            stroke = 0x33FFFFFF;
+            stroke = fg;
         } else {
-            bg = 0xF7FFFFFF;
+            bg = 0xFFFFFFFF;
             fg = 0xFF17202A;
             muted = 0xFF5C6A7A;
             accent = 0xFF0E7A52;
-            chipText = 0xFF06251A;
+            chipText = 0xFFFFFFFF;
             error = 0xFFB3261E;
-            stroke = 0x1A000000;
+            stroke = fg;
         }
     }
 
     private Drawable barBackground() {
-        GradientDrawable shape = new GradientDrawable();
-        shape.setColor(bg);
-        shape.setCornerRadius(dp(16));
-        shape.setStroke(Math.max(1, dp(1)), stroke);
-        return shape;
+        return BrutalUi.panel(ime, bg, stroke);
     }
 
     private RippleDrawable ripple(Drawable content) {
         int color = night ? 0x33FFFFFF : 0x22000000;
         GradientDrawable mask = new GradientDrawable();
         mask.setColor(Color.WHITE);
-        mask.setCornerRadius(dp(19));
+        mask.setCornerRadius(dp(6));
         return new RippleDrawable(ColorStateList.valueOf(color), content, mask);
     }
 
@@ -285,9 +282,9 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         view.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         view.setFocusable(false);
         view.setContentDescription(description);
-        view.setPadding(dp(9), dp(9), dp(9), dp(9));
+        view.setPadding(dp(8), dp(8), dp(11), dp(11));
         view.setImageDrawable(icon);
-        view.setBackground(ripple(null));
+        view.setBackground(ripple(BrutalUi.button(ime, bg, muted)));
         return view;
     }
 
@@ -341,6 +338,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
         status = new TextView(ime);
         status.setTextSize(12.5f);
+        BrutalUi.type(status, false, false);
         status.setTextColor(muted);
         status.setGravity(Gravity.CENTER_VERTICAL);
         status.setSingleLine(true);
@@ -356,6 +354,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
         chip = new TextView(ime);
         chip.setTextSize(13);
+        BrutalUi.type(chip, false, true);
         chip.setTextColor(chipText);
         chip.setGravity(Gravity.CENTER_VERTICAL);
         chip.setMaxLines(2);
@@ -363,10 +362,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         chip.setPadding(dp(12), dp(5), dp(12), dp(5));
         chip.setMinHeight(dp(34));
         chip.setFocusable(false);
-        GradientDrawable chipBackground = new GradientDrawable();
-        chipBackground.setColor(accent);
-        chipBackground.setCornerRadius(dp(17));
-        chip.setBackground(chipBackground);
+        chip.setBackground(ripple(BrutalUi.button(ime, accent, chipText)));
         chip.setOnClickListener(view -> {
             if (offered != null && offered.fullText != null) showFullTextReview();
             else applyCorrection();
@@ -630,45 +626,65 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         try {
             LinearLayout content = new LinearLayout(ime);
             content.setOrientation(LinearLayout.VERTICAL);
-            content.setPadding(dp(14), dp(12), dp(14), dp(10));
+            content.setPadding(dp(16), dp(14), dp(20), dp(18));
             content.setBackground(barBackground());
+            TextView tag = new TextView(ime);
+            tag.setText("FULL TEXT");
+            tag.setTextColor(accent);
+            tag.setTextSize(10);
+            tag.setLetterSpacing(.12f);
+            BrutalUi.type(tag, true, true);
+            tag.setPadding(0, 0, 0, dp(8));
+            content.addView(tag);
             TextView title = new TextView(ime);
-            title.setText("Review full-text correction");
+            title.setText("Review your edit");
             title.setTextColor(fg);
-            title.setTextSize(16);
-            title.setPadding(0, 0, 0, dp(8));
+            title.setTextSize(21);
+            BrutalUi.type(title, false, true);
+            title.setPadding(0, 0, 0, dp(12));
             content.addView(title);
             TextView body = new TextView(ime);
             body.setText(replacement);
             body.setTextSize(15);
             body.setTextColor(fg);
-            body.setPadding(0, 0, dp(4), dp(8));
+            body.setLineSpacing(dp(4), 1f);
+            body.setPadding(dp(12), dp(12), dp(12), dp(12));
             ScrollView scroll = new ScrollView(ime);
+            scroll.setBackground(BrutalUi.flat(ime, BrutalUi.surface(ime), muted));
             scroll.addView(body);
             content.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
             LinearLayout actions = new LinearLayout(ime);
+            actions.setBaselineAligned(false);
+            actions.setGravity(Gravity.CENTER_VERTICAL);
+            actions.setPadding(0, dp(12), 0, 0);
             Button cancel = new Button(ime);
             cancel.setText("Cancel");
-            cancel.setAllCaps(false);
+            BrutalUi.action(cancel, false);
             cancel.setOnClickListener(view -> dismissReview());
-            actions.addView(cancel, new LinearLayout.LayoutParams(0, dp(44), 1));
+            actions.addView(cancel, new LinearLayout.LayoutParams(0, dp(48), 1));
             Button apply = new Button(ime);
-            apply.setText("Apply to full text");
-            apply.setAllCaps(false);
+            apply.setText("Apply");
+            BrutalUi.action(apply, true);
             apply.setOnClickListener(view -> {
                 if (offered != source || !replacement.equals(correction)) { invalidate(); return; }
                 dismissReview();
                 applyCorrection();
             });
-            actions.addView(apply, new LinearLayout.LayoutParams(0, dp(44), 1));
+            LinearLayout.LayoutParams applyParams = new LinearLayout.LayoutParams(0, dp(48), 1);
+            applyParams.setMargins(dp(10), 0, 0, 0);
+            actions.addView(apply, applyParams);
             content.addView(actions);
-            int height = Math.min(dp(360), ime.getResources().getDisplayMetrics().heightPixels / 2);
-            final PopupWindow popup = new PopupWindow(content,
-                    Math.max(dp(200), rowRoot.getWidth() - dp(24)), height, false);
+            int width = Math.min(dp(560), Math.max(dp(200), rowRoot.getWidth() - dp(24)));
+            int maxHeight = Math.min(dp(360), ime.getResources().getDisplayMetrics().heightPixels - dp(48));
+            content.measure(View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
+                    View.MeasureSpec.makeMeasureSpec(maxHeight, View.MeasureSpec.AT_MOST));
+            int height = Math.min(maxHeight, Math.max(dp(120), content.getMeasuredHeight()));
+            final PopupWindow popup = new PopupWindow(content, width, height, false);
             popup.setInputMethodMode(PopupWindow.INPUT_METHOD_NOT_NEEDED);
             popup.setOutsideTouchable(true);
-            popup.setBackgroundDrawable(barBackground());
-            popup.setElevation(dp(8));
+            popup.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            popup.setElevation(0);
+            popup.setAnimationStyle(0);
             popup.setOnDismissListener(() -> { if (review == popup) review = null; });
             int[] location = new int[2];
             row.getLocationInWindow(location);
@@ -721,14 +737,14 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         toggle.setActivated(enabled);
         Drawable icon = named("aigrammar_toggle", 0);
         if (icon != null) {
+            icon = icon.mutate();
+            icon.setTint(enabled ? chipText : muted);
             int size = collapsed ? 18 : 24;
             icon.setBounds(0, 0, dp(size), dp(size));
             toggle.setCompoundDrawables(icon, null, null, null);
         }
-        GradientDrawable pill = new GradientDrawable();
-        pill.setColor(night ? 0x269FE9BA : 0x1A0E7A52);
-        pill.setCornerRadius(dp(19));
-        toggle.setBackground(ripple(enabled ? pill : null));
+        toggle.setBackground(ripple(BrutalUi.button(ime, enabled ? accent : bg,
+                enabled ? chipText : muted)));
         int buttonSize = dp(collapsed ? 28 : 38);
         ViewGroup.LayoutParams toggleParams = toggle.getLayoutParams();
         if (toggleParams != null) {

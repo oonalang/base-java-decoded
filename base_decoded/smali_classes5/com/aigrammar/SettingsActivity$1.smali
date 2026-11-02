@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/SettingsActivity;)V
     .registers 2
 
-    .line 193
+    .line 214
     iput-object p1, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onError(Ljava/lang/String;)V
     .registers 4
 
-    .line 201
+    .line 222
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->destroyed:Z
@@ -50,7 +50,7 @@
 
     return-void
 
-    .line 202
+    .line 223
     :cond_9
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 203
+    .line 224
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
@@ -80,7 +80,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 204
+    .line 225
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
@@ -90,14 +90,14 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 205
+    .line 226
     return-void
 .end method
 
 .method public onResult(Ljava/lang/String;)V
     .registers 5
 
-    .line 195
+    .line 216
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->destroyed:Z
@@ -109,7 +109,7 @@
 
     return-void
 
-    .line 196
+    .line 217
     :cond_9
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
@@ -122,7 +122,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 197
+    .line 218
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
@@ -139,7 +139,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 198
+    .line 219
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$1;->this$0:Lcom/aigrammar/SettingsActivity;
 
     # getter for: Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
@@ -167,6 +167,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 199
+    .line 220
     return-void
 .end method

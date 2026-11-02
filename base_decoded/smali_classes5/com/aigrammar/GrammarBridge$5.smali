@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 794
+    .line 810
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$5;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onPreDraw()Z
     .registers 2
 
-    .line 795
+    .line 811
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$5;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->updateRowPosition()V

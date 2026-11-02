@@ -1,0 +1,49 @@
+{
+  "apk": "releases/Gboard-By-Eliwoa-neo-ui.apk",
+  "apk_sha256": "78f207d5a41ba53ef931f9002e09b11ec7ad134b159f4e301ad9bebf189e8160",
+  "apk_bytes": 94981082,
+  "source_baseline": "a49654ed67641e0eaf6c5c13b3687b0fb0712518",
+  "ui_core_tests_sdk": 33,
+  "ui_core_tests": 58,
+  "policy_sentence_checks_unchanged": 53,
+  "identity_checks_unchanged": 9,
+  "total_checks": 120,
+  "test_failures": 0,
+  "original_dex_files_byte_identical_to_writing_build": 4,
+  "native_libraries_byte_identical": 15,
+  "resources_and_manifest_byte_identical": true,
+  "all_public_resource_ids_retained": 34193,
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex"
+  ],
+  "build_IP_connects": 0,
+  "signer_sha256": "835cfd33f94e1cc744655d3e48abdcd0f56c8f0865aa09c5aec830b5ce51e233",
+  "compiled_sources_match_current": true,
+  "output_contract": "application/json responseSchema required correctedText STRING, decoded exactly once",
+  "malformed_or_wrong_envelope_rejected": true,
+  "short_preview_content_sized": true,
+  "existing_mint_navy_palette_retained": true,
+  "previews": {
+    "neo-settings-night.png": {
+      "width": 720,
+      "height": 1823,
+      "sha256": "b816d4c0e7926c6df4aafd56ad1081dfdd501254889313440ecfca896a918de5"
+    },
+    "neo-preview-short.png": {
+      "width": 452,
+      "height": 386,
+      "sha256": "a9a85747717671f5f92ab411ced72a01eba966bc117344f9589c0728114d7a1a"
+    },
+    "neo-settings-notnight.png": {
+      "width": 720,
+      "height": 1823,
+      "sha256": "00d539ea5bb15a06c7ae9ca2a2d01af378ec2e403732e7b03a0f365df7734afc"
+    }
+  },
+  "new_APK_device_tested": false,
+  "live_Gemini_tested": false
+}

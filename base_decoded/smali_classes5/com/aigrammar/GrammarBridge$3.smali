@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 402
+    .line 398
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$3;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .registers 2
 
-    .line 403
+    .line 399
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$3;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->refreshGeometry()V

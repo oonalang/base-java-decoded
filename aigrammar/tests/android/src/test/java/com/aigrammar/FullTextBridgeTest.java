@@ -165,7 +165,7 @@ public class FullTextBridgeTest {
         field("chip").performClick();
         PopupWindow review=ReflectionHelpers.getField(bridge,"review");
         assertNotNull(review); assertTrue(review.isShowing()); assertEquals(original,editor.text.toString());
-        Button apply=findButton(review.getContentView(),"Apply to full text"); assertNotNull(apply);
+        Button apply=findButton(review.getContentView(),"Apply"); assertNotNull(apply);
         apply.performClick();
         assertEquals(corrected,editor.text.toString());
         assertNull(ReflectionHelpers.getField(bridge,"review"));
@@ -180,11 +180,26 @@ public class FullTextBridgeTest {
         field("chip").performClick();
         PopupWindow oldReview=ReflectionHelpers.getField(bridge,"review");
         assertNotNull(oldReview); assertTrue(oldReview.isShowing());
-        Button staleApply=findButton(oldReview.getContentView(),"Apply to full text");
+        Button staleApply=findButton(oldReview.getContentView(),"Apply");
         GrammarBridge.attach(ime,root);
         assertFalse(oldReview.isShowing());
         assertNull(ReflectionHelpers.getField(bridge,"offered"));
         staleApply.performClick();
+        assertEquals(original,editor.text.toString());
+    }
+    @Test public void shortCorrectionUsesCompactPreviewAndCancelLeavesTextUntouched() {
+        Object source=ReflectionHelpers.callInstanceMethod(bridge,"snapshot");
+        ReflectionHelpers.setField(bridge,"offered",source);
+        ReflectionHelpers.setField(bridge,"correction","It's peak");
+        ReflectionHelpers.callInstanceMethod(bridge,"showChip",ReflectionHelpers.ClassParameter.from(String.class,"It's peak"));
+        field("chip").performClick();
+        PopupWindow preview=ReflectionHelpers.getField(bridge,"review");
+        assertNotNull(preview); assertTrue(preview.isShowing());
+        int maximum=BrutalUi.dp(ime,360);
+        assertTrue("A short edit must not occupy the full essay viewport",preview.getHeight()<maximum);
+        assertNotNull(findButton(preview.getContentView(),"Apply"));
+        findButton(preview.getContentView(),"Cancel").performClick();
+        assertFalse(preview.isShowing());
         assertEquals(original,editor.text.toString());
     }
     private Button findButton(View view,String label) {

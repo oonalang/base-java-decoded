@@ -5,3 +5,4 @@ aigrammar/reports/keyboard-resource-gaps.tsv whitespace=-blank-at-eol
 aigrammar/reports/ui-repair.patch -whitespace
 aigrammar/reports/anchor.patch -whitespace
 aigrammar/reports/writing.patch -whitespace
+aigrammar/reports/neo.patch -whitespace

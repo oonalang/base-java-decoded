@@ -2,11 +2,11 @@
 
 An experimental Android keyboard clone, package **`com.gboard.eli`**, with a dedicated **AI Grammar** row above the existing keyboard. The model default is **`gemini-3.5-flash-lite`**.
 
-The latest APK adds natural multilingual editing, including mixed-language text such as Taglish, and an optional whole-field/essay mode. Sentence mode stays the default. It also repairs the three missing shift-style references so the original native off/on/locked icons can load. See [writing modes and verification](aigrammar/WRITING-MODES.md).
+The latest APK restyles the bar, correction preview and settings with a minimal neo brutal UI using the existing navy/mint palette. Bold outlines, hard shadows and custom geometric controls replace default native styling. Short correction previews size to their content. It also fixes JSON envelope text appearing in corrections. See [UI and output-contract details](aigrammar/NEO-UI.md).
 
 The APK build, resource restoration, signing and static checks pass for the published artifact. It still needs an Android phone test and a live Gemini test. Earlier test APKs exposed startup and missing-resource failures that are documented below.
 
-[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-writing-modes.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
+[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-neo-ui.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
 
 ## Configure
 
@@ -51,3 +51,7 @@ Pre-stage the local JDK, Android jar, R8, baksmali, apktool, apksigner and platf
 The recovered assets are already included, so a normal build does not need to decode or fetch the density split. Neither build script downloads tools or dependencies. On Termux, aapt2 and zipalign must be Android/arm64 binaries; Google's Linux SDK executables are for the Linux build machine.
 
 Raw signing-key files, build intermediates and private device logs are ignored by git. The owner separately authorized a public signing-backup ZIP transfer; that existing transfer is unrelated to this UI repair. A fresh source build can generate its own key and pin that actual certificate; updating an already-installed clone requires its original private signing key.
+
+### Current visual previews
+
+[Dark settings](aigrammar/previews/neo-settings-night.png) · [Light settings](aigrammar/previews/neo-settings-notnight.png) · [Compact correction preview](aigrammar/previews/neo-preview-short.png). These API 33 UI renders use an empty key and a fixed sample, without live Gemini calls.

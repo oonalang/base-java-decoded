@@ -2,7 +2,6 @@ package com.aigrammar;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
@@ -56,30 +55,45 @@ public final class SettingsActivity extends Activity {
         Window window = getWindow();
         window.setStatusBarColor(background);
         window.setNavigationBarColor(background);
-        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
+                | WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setFocusableInTouchMode(true);
         layout.setBackgroundColor(background);
-        int pad = dp(22);
+        int pad = dp(20);
         layout.setPadding(pad, dp(20), pad, dp(36));
 
         TextView title = new TextView(this);
-        title.setText("AI Grammar");
-        title.setTextSize(28);
+        title.setText("AI GRAMMAR");
+        title.setTextSize(32);
         title.setTextColor(foreground);
-        title.setTypeface(title.getTypeface(), android.graphics.Typeface.BOLD);
+        BrutalUi.type(title, false, true);
+        title.setLetterSpacing(-0.025f);
         layout.addView(title);
 
+        View rule = new View(this);
+        rule.setBackgroundColor(accent);
+        LinearLayout.LayoutParams ruleParams = new LinearLayout.LayoutParams(dp(48), dp(4));
+        ruleParams.setMargins(0, dp(10), 0, dp(6));
+        layout.addView(rule, ruleParams);
+
         TextView intro = new TextView(this);
-        intro.setText("Fix grammar, spelling and punctuation with Gemini. Your key stays in this app's private storage.");
+        intro.setText("Your voice. Clearer words.");
         intro.setTextSize(14);
         intro.setTextColor(muted);
         intro.setLineSpacing(dp(3), 1f);
         intro.setPadding(0, dp(6), 0, dp(18));
         layout.addView(intro);
 
-        TextView keySection = section("GEMINI API KEY");
+        LinearLayout powerSlot = new LinearLayout(this);
+        powerSlot.setOrientation(LinearLayout.VERTICAL);
+        LinearLayout.LayoutParams powerParams = new LinearLayout.LayoutParams(-1, -2);
+        powerParams.setMargins(0, 0, 0, dp(14));
+        layout.addView(powerSlot, powerParams);
+
+        TextView keySection = section("01 / GEMINI API KEY");
         layout.addView(keySection);
         apiKey = field("Paste your key", prefs.getString("api_key", ""), true);
         apiKey.setSaveEnabled(false);
@@ -94,7 +108,7 @@ public final class SettingsActivity extends Activity {
         keyHint.setPadding(dp(2), dp(6), 0, dp(16));
         layout.addView(keyHint);
 
-        TextView modelSection = section("MODEL");
+        TextView modelSection = section("02 / MODEL");
         layout.addView(modelSection);
         model = field("gemini-3.5-flash-lite",
                 prefs.getString("model", GrammarClient.DEFAULT_MODEL), false);
@@ -103,19 +117,23 @@ public final class SettingsActivity extends Activity {
         layout.addView(model);
 
         TextView modelHint = new TextView(this);
-        modelHint.setText("Use the bare model ID, such as gemini-3.5-flash-lite.");
+        modelHint.setText("Model ID only, without a URL.");
         modelHint.setTextSize(12);
         modelHint.setTextColor(muted);
         modelHint.setPadding(dp(2), dp(6), 0, dp(16));
         layout.addView(modelHint);
 
-        layout.addView(section("WHAT TO CHECK"));
+        layout.addView(section("03 / WHAT TO CHECK"));
         scope = new RadioGroup(this);
         scope.setOrientation(RadioGroup.VERTICAL);
         sentenceScope = scopeOption("Sentence by sentence");
         fullTextScope = scopeOption("Full text / essay");
-        scope.addView(sentenceScope, new RadioGroup.LayoutParams(-1, -2));
-        scope.addView(fullTextScope, new RadioGroup.LayoutParams(-1, -2));
+        RadioGroup.LayoutParams sentenceParams = new RadioGroup.LayoutParams(-1, -2);
+        sentenceParams.setMargins(0, 0, 0, dp(8));
+        scope.addView(sentenceScope, sentenceParams);
+        RadioGroup.LayoutParams fullParams = new RadioGroup.LayoutParams(-1, -2);
+        fullParams.setMargins(0, 0, 0, dp(10));
+        scope.addView(fullTextScope, fullParams);
         boolean fullText = "full_text".equals(prefs.getString("scope", "sentence"));
         scope.check(fullText ? fullTextScope.getId() : sentenceScope.getId());
         layout.addView(scope);
@@ -126,6 +144,7 @@ public final class SettingsActivity extends Activity {
         fullTextAuto.setTextColor(foreground);
         fullTextAuto.setPadding(dp(2), dp(6), 0, dp(6));
         fullTextAuto.setChecked(prefs.getBoolean("full_text_auto", false));
+        BrutalUi.toggle(fullTextAuto);
         layout.addView(fullTextAuto);
 
         scopeHint = new TextView(this);
@@ -156,7 +175,8 @@ public final class SettingsActivity extends Activity {
             status.setTextColor(muted);
             status.setText(value ? "AI Grammar is on" : "AI Grammar is off");
         });
-        layout.addView(enabled);
+        BrutalUi.toggle(enabled);
+        powerSlot.addView(enabled, new LinearLayout.LayoutParams(-1, -2));
 
         LinearLayout actions = new LinearLayout(this);
         actions.setOrientation(LinearLayout.HORIZONTAL);
@@ -169,10 +189,10 @@ public final class SettingsActivity extends Activity {
             status.setTextColor(muted);
             status.setText("Saved");
         });
-        actions.addView(save, new LinearLayout.LayoutParams(0, dp(48), 1));
+        actions.addView(save, new LinearLayout.LayoutParams(0, dp(52), 1));
 
         test = actionButton("Test connection", true);
-        LinearLayout.LayoutParams testParams = new LinearLayout.LayoutParams(0, dp(48), 1);
+        LinearLayout.LayoutParams testParams = new LinearLayout.LayoutParams(0, dp(52), 1);
         testParams.setMargins(dp(10), 0, 0, 0);
         actions.addView(test, testParams);
         layout.addView(actions);
@@ -181,8 +201,9 @@ public final class SettingsActivity extends Activity {
         status.setTextSize(13);
         status.setTextColor(muted);
         status.setLineSpacing(dp(2), 1f);
-        status.setPadding(dp(4), dp(4), dp(4), dp(18));
-        status.setText("The test sends only: She go to school yesterday.");
+        status.setBackground(BrutalUi.flat(this, surface, muted));
+        status.setPadding(dp(12), dp(12), dp(12), dp(12));
+        status.setText("Test uses: She go to school yesterday.");
         layout.addView(status);
 
         test.setOnClickListener(view -> {
@@ -207,10 +228,11 @@ public final class SettingsActivity extends Activity {
         });
 
         TextView footer = new TextView(this);
-        footer.setText("Sentence mode sends the current sentence after a short pause. Full text mode checks the whole field when you ask, with automatic checks available too. Password, email, URL and private-learning fields are skipped in both modes.");
+        footer.setText("Only enabled checks send text to Gemini. Passwords, email, URLs and private fields are skipped.");
         footer.setTextSize(12);
         footer.setTextColor(muted);
         footer.setLineSpacing(dp(2), 1f);
+        footer.setPadding(0, dp(16), 0, 0);
         layout.addView(footer);
 
         ScrollView scroll = new ScrollView(this);
@@ -219,6 +241,7 @@ public final class SettingsActivity extends Activity {
         scroll.setBackgroundColor(background);
         scroll.addView(layout);
         setContentView(scroll);
+        layout.requestFocus();
         // PhoneWindow.getInsetsController() dereferences its decor on Android 13.
         // setContentView creates it; calling the controller before this can crash.
         if (Build.VERSION.SDK_INT >= 30) {
@@ -243,7 +266,7 @@ public final class SettingsActivity extends Activity {
             accent = 0xFF9FE9BA;
             accentText = 0xFF06251A;
             error = 0xFFFFB4AB;
-            stroke = 0x26FFFFFF;
+            stroke = foreground;
         } else {
             background = 0xFFF6F8FB;
             surface = 0xFFFFFFFF;
@@ -252,7 +275,7 @@ public final class SettingsActivity extends Activity {
             accent = 0xFF0E7A52;
             accentText = 0xFFFFFFFF;
             error = 0xFFB3261E;
-            stroke = 0x14000000;
+            stroke = foreground;
         }
     }
 
@@ -260,22 +283,14 @@ public final class SettingsActivity extends Activity {
         return Math.round(value * getResources().getDisplayMetrics().density);
     }
 
-    private GradientDrawable rounded(int color, int radius, boolean bordered) {
-        GradientDrawable shape = new GradientDrawable();
-        shape.setColor(color);
-        shape.setCornerRadius(dp(radius));
-        if (bordered) shape.setStroke(Math.max(1, dp(1)), stroke);
-        return shape;
-    }
-
     private TextView section(String text) {
         TextView view = new TextView(this);
         view.setText(text);
         view.setTextSize(10.5f);
         view.setLetterSpacing(0.12f);
-        view.setTypeface(view.getTypeface(), android.graphics.Typeface.BOLD);
-        view.setTextColor(muted);
-        view.setPadding(dp(2), 0, 0, dp(7));
+        BrutalUi.type(view, true, true);
+        view.setTextColor(accent);
+        view.setPadding(0, dp(6), 0, dp(9));
         return view;
     }
 
@@ -287,27 +302,25 @@ public final class SettingsActivity extends Activity {
         view.setHintTextColor(muted);
         view.setHint(hint);
         view.setText(value);
-        view.setPadding(dp(14), dp(12), dp(14), dp(12));
-        view.setBackground(rounded(surface, 14, true));
+        view.setBackgroundTintList(null);
+        view.setBackground(BrutalUi.panel(this, surface, foreground));
+        view.setPadding(dp(14), dp(14), dp(18), dp(18));
+        view.setMinHeight(dp(56));
+        view.setHighlightColor((accent & 0x00ffffff) | 0x55000000);
+        GradientDrawable cursor = new GradientDrawable();
+        cursor.setColor(accent); cursor.setSize(dp(2), dp(22));
+        view.setTextCursorDrawable(cursor);
         view.setInputType(InputType.TYPE_CLASS_TEXT
                 | (secret ? InputType.TYPE_TEXT_VARIATION_PASSWORD : InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS));
+        BrutalUi.type(view, true, false);
         return view;
     }
 
     private Button actionButton(String text, boolean primary) {
         Button view = new Button(this);
         view.setText(text);
-        view.setTextSize(14);
-        view.setAllCaps(false);
         view.setGravity(Gravity.CENTER);
-        view.setPadding(dp(12), 0, dp(12), 0);
-        if (primary) {
-            view.setTextColor(accentText);
-            view.setBackground(rounded(accent, 14, false));
-        } else {
-            view.setTextColor(foreground);
-            view.setBackground(rounded(surface, 14, true));
-        }
+        BrutalUi.action(view, primary);
         return view;
     }
 
@@ -316,11 +329,7 @@ public final class SettingsActivity extends Activity {
         view.setId(View.generateViewId());
         view.setText(label);
         view.setTextSize(15);
-        view.setTextColor(foreground);
-        view.setPadding(dp(2), dp(5), 0, dp(5));
-        view.setButtonTintList(new ColorStateList(
-                new int[][]{{android.R.attr.state_checked}, {}},
-                new int[]{accent, muted}));
+        BrutalUi.choice(view);
         return view;
     }
 

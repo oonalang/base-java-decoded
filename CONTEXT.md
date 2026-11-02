@@ -10,9 +10,9 @@ The original repository supplied `base_decoded/` and `base_java/`. `base_java/` 
 
 ## Current artifact and test status
 
-- Filename: `Gboard-By-Eliwoa-writing-modes.apk`.
+- Filename: `Gboard-By-Eliwoa-neo-ui.apk`.
 - Source version: `18.4.1.985164140-release-arm64-v8a`, versionCode `176027078`.
-- APK SHA-256: `0f90dba2b3ef5c3f6c75f919e3aa500aba70e0db129e97f91b097142395df728`.
+- APK SHA-256: `78f207d5a41ba53ef931f9002e09b11ec7ad134b159f4e301ad9bebf189e8160`.
 - Signing certificate SHA-256: `835CFD33F94E1CC744655D3E48ABDCD0F56C8F0865AA09C5AEC830B5CE51E233` (public certificate fingerprint, not a private key).
 - Runtime target: Android arm64-v8a, API 32+. Earlier user testing was on Android 13.
 - Build, signature, alignment, unit and resource-graph checks pass.
@@ -127,3 +127,11 @@ Baseline `5ecda5fe`. The user requested natural prose without em dashes/semicolo
 The actual remaining shift root cause was three `@null` values in default style0x7f150421. Source/JADX evidence and compiled verification map attrs1ad/1ae/1af to original drawables5b0/5b1/5b2. Those references are repaired and all manual shift ImageView mutations are removed. Geometry updates now only position the grammar row. No original smali/native class edit was needed in this pass. All four original dex files and 15 native libraries match the prior anchor APK.
 
 50 Android UI/core tests, 53 policy/sentence checks and 9 identity checks pass. New APK/device behavior and actual Gemini language/style output are not live-tested here. See [WRITING-MODES.md](aigrammar/WRITING-MODES.md), `reports/writing-verification.json` and `reports/writing.patch`. Previous UI/anchor notes below/above are historical where superseded.
+
+## Current neo UI and output contract
+
+Baseline a49654ed. The user requested minimal neo brutal styling with the existing palette and reported a preview containing an echoed JSON message object. BrutalUi now supplies shared outlined surfaces, hard shadows, geometric controls and pressed states. Settings fields retain privacy flags and stored preference behavior, but the screen initially keeps the keyboard hidden. The preview measures content with a bounded scroll viewport, so short corrections no longer fill a large window.
+
+GrammarOutput declares GenerationConfig responseMimeType application/json and responseSchema with required correctedText STRING, verified against public v1beta discovery fields. The model instructions use that explicit output shape. Only the decoded string reaches comparison/preview/apply. Wrong/missing/non-string or malformed results fail with a retry status instead of exposing metadata. User-authored JSON strings and full-text whitespace remain intact. Seven new contract tests and a compact-preview/Cancel test pass.
+
+The current total is58 Android UI/core tests plus53 unchanged policy/sentence and9 unchanged identity checks. API33 native-graphics renders of actual programmatic settings/preview views are in aigrammar/previews with no real key. The new APK still needs phone/live Gemini testing. All four original dex files, native libraries, manifest and resources match the writing APK. See [NEO-UI.md](aigrammar/NEO-UI.md) and reports/neo-verification.json.

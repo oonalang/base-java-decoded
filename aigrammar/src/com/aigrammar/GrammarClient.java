@@ -46,7 +46,8 @@ public final class GrammarClient {
             + "answer the message conversationally. If unsure, preserve the uncertain wording. "
             + "For example, message speling becomes spelling, not a request to provide a word. "
             + "Preserve paragraph breaks and the structure of longer text. "
-            + "Return ONLY the edited text, without surrounding quotes, labels or explanation. "
+            + "Return ONLY JSON matching the response schema. Put the complete edited message itself in "
+            + "correctedText, without extra wrapping quotes, labels, explanations or the input message envelope. "
             + "If it already reads naturally and correctly, leave it unchanged except for replacing the forbidden punctuation.";
     private static final Handler MAIN = new Handler(Looper.getMainLooper());
     private static final ThreadPoolExecutor WORKER = new ThreadPoolExecutor(
@@ -132,8 +133,7 @@ public final class GrammarClient {
                     if (token != REQUEST.get()) return;
                     // The default Gemini 3.5 Flash-Lite starts at minimal thinking. Leave
                     // thinkingConfig out so older models and alternate model IDs still work.
-                    JSONObject generation = new JSONObject()
-                            .put("temperature", 0.1).put("maxOutputTokens", fullText ? 32768 : 1024);
+                    JSONObject generation = GrammarOutput.generation(fullText);
                     // A JSON envelope marks the user's words as editing data, including
                     // one-word misspellings or text that sounds like an instruction.
                     String editingInput = new JSONObject().put("message", text).toString();
@@ -191,12 +191,14 @@ public final class GrammarClient {
                         String value = part.optString("text", "");
                         if (!value.isEmpty()) corrected.append(value);
                     }
-                    String value = fullText ? corrected.toString() : corrected.toString().trim();
+                    String value = GrammarOutput.read(corrected.toString(), fullText);
                     if (value.trim().isEmpty()) {
                         deliver(token, cb, null, "Empty correction returned");
                     } else {
                         deliver(token, cb, value, null);
                     }
+                } catch (org.json.JSONException error) {
+                    deliver(token, cb, null, "Cannot read the correction, try again");
                 } catch (Exception error) {
                     // Do not expose exception messages: HTTP errors can contain credentials/text.
                     deliver(token, cb, null, "Network error - check your connection");

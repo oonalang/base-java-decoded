@@ -279,3 +279,7 @@ The latest download is `Gboard-By-Eliwoa-anchor-fix.apk`. [ANCHOR-THEME-REPAIR.m
 ### Current writing modes and shift bindings
 
 The latest artifact is `Gboard-By-Eliwoa-writing-modes.apk`. [WRITING-MODES.md](WRITING-MODES.md) documents the natural multilingual prompt, sentence/full-text settings, manual and automatic checks, whole-document validation and review, and the actual three null shift-style references. The manual shift repair has been removed. Current verification is `reports/writing-verification.json` (112 checks). Earlier reports remain historical. The ordinary offline build command is unchanged.
+
+### Current neo UI and clean output
+
+The latest artifact is `Gboard-By-Eliwoa-neo-ui.apk`. [NEO-UI.md](NEO-UI.md) documents the palette-preserving redesign, compact previews and correctedText output schema/decoding. The current verification is reports/neo-verification.json (120 checks). Sentence/full-text modes, source shift fix and the offline build command remain unchanged.

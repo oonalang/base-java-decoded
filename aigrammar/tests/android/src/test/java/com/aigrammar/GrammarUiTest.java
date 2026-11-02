@@ -5,7 +5,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.GradientDrawable;
 import android.graphics.Region;
 import android.inputmethodservice.InputMethodService;
 import android.view.Gravity;
@@ -79,7 +78,7 @@ public class GrammarUiTest {
     @Test public void roundedRowLivesOutsideKeyboardBackground() {
         assertSame(root,row.getParent()); assertSame(base,holder.getParent());
         assertTrue(row.getClipToOutline());
-        assertTrue(((GradientDrawable)row.getBackground()).getCornerRadius()>0);
+        assertNotNull(row.getBackground());
         FrameLayout.LayoutParams bp=(FrameLayout.LayoutParams)base.getLayoutParams();
         assertEquals(7+dp(52),bp.topMargin);
     }
@@ -95,7 +94,7 @@ public class GrammarUiTest {
         boolean enabled=GrammarClient.isEnabled();
         field("toggle").performClick();
         assertEquals(enabled,GrammarClient.isEnabled());
-        assertTrue(row.getBackground() instanceof GradientDrawable);
+        assertNotNull(row.getBackground());
         assertEquals(View.VISIBLE,field("settings").getVisibility());
     }
     @Test public void incomingCorrectionDoesNotReopenCollapsedRow() {

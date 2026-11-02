@@ -1,0 +1,43 @@
+path	reason
+.gitattributes	Update current artifact, checksum, design/format documentation and compact/detailed context.
+COMPACT.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+CONTEXT.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+README.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+aigrammar/NEO-UI.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+aigrammar/README.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+aigrammar/WRITING-MODES.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+aigrammar/previews/neo-preview-short.png	Provide native-graphics renders with an empty API key and fixed sample, for visual review.
+aigrammar/previews/neo-settings-night.png	Provide native-graphics renders with an empty API key and fixed sample, for visual review.
+aigrammar/previews/neo-settings-notnight.png	Provide native-graphics renders with an empty API key and fixed sample, for visual review.
+aigrammar/reports/neo-build-network.trace	Record offline build, signing, compiled-source, byte-identity, test and rendered-preview verification.
+aigrammar/reports/neo-build.log	Record offline build, signing, compiled-source, byte-identity, test and rendered-preview verification.
+aigrammar/reports/neo-signing-certificate.txt	Record offline build, signing, compiled-source, byte-identity, test and rendered-preview verification.
+aigrammar/reports/neo-ui-tests.log	Record offline build, signing, compiled-source, byte-identity, test and rendered-preview verification.
+aigrammar/reports/neo-verification.json	Record offline build, signing, compiled-source, byte-identity, test and rendered-preview verification.
+aigrammar/src/com/aigrammar/BrutalUi.java	Provide palette-preserving outlined surfaces, hard shadows, geometric controls and pressed states.
+aigrammar/src/com/aigrammar/GrammarBridge.java	Restyle the row/chips/preview with compact content sizing, custom actions and existing safe apply behavior.
+aigrammar/src/com/aigrammar/GrammarClient.java	Request a typed correctedText JSON field and decode only its string, rejecting echoed envelopes and malformed output.
+aigrammar/src/com/aigrammar/GrammarOutput.java	Request a typed correctedText JSON field and decode only its string, rejecting echoed envelopes and malformed output.
+aigrammar/src/com/aigrammar/SettingsActivity.java	Restyle fields, choices, switches and actions without changing saved preferences or key privacy.
+aigrammar/tests/android/src/test/java/com/aigrammar/FullTextBridgeTest.java	Verify structured-output decoding, authored JSON preservation, compact preview cancel/apply and existing UI behavior.
+aigrammar/tests/android/src/test/java/com/aigrammar/GrammarOutputTest.java	Verify structured-output decoding, authored JSON preservation, compact preview cancel/apply and existing UI behavior.
+aigrammar/tests/android/src/test/java/com/aigrammar/GrammarUiTest.java	Verify structured-output decoding, authored JSON preservation, compact preview cancel/apply and existing UI behavior.
+base_decoded/smali_classes5/com/aigrammar/BrutalUi$Mark.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/BrutalUi$Surface.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/BrutalUi.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$1.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$2.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$3.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$4.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$5.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$Snapshot.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$1.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$2.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/GrammarOutput.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$1.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity.smali	Regenerate helper smali from the styled Java UI and explicit correction-output contract.
+releases/Gboard-By-Eliwoa-neo-ui.apk	Publish the same-signer neo UI and clean-output update.
+releases/README.md	Update current artifact, checksum, design/format documentation and compact/detailed context.
+releases/SHA256SUMS.txt	Update current artifact, checksum, design/format documentation and compact/detailed context.

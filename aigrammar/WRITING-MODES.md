@@ -1,5 +1,7 @@
 # Natural multilingual editing and full-text mode
 
+Current follow-up: [NEO-UI.md](NEO-UI.md) restyles the owned UI and replaces the plain-response assumption with an explicit correctedText JSON transport schema. The editor still receives plain text. The mode/capture behavior below is retained.
+
 Baseline: `5ecda5fe0d4968dad2374ff68cfc3a2fb189363e`. This update combines the user's natural-writing preferences, direct word correction, multilingual/code-switched editing, optional full-text checks and the actual missing shift-style references.
 
 ## Editing style
