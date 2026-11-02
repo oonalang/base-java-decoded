@@ -5,8 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.UserManager;
-import org.json.JSONObject;
 import org.json.JSONArray;
+import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -53,6 +53,11 @@ public final class GrammarClient {
         return p != null && p.getBoolean("enabled", false);
     }
 
+    public static boolean hasKey() {
+        SharedPreferences p = preferences;
+        return p != null && !p.getString("api_key", "").trim().isEmpty();
+    }
+
     public static void setEnabled(boolean enabled) {
         if (!enabled) cancelPending();
         SharedPreferences p = preferences;
@@ -82,12 +87,12 @@ public final class GrammarClient {
         final String key = p.getString("api_key", "").trim();
         final String model = p.getString("model", DEFAULT_MODEL).trim();
         if (key.isEmpty()) {
-            deliver(token, cb, null, "Set an API key first");
+            deliver(token, cb, null, "Add your Gemini API key in settings");
             return;
         }
         // Prevent a model value from changing the URL path or adding a query.
         if (!model.matches("[A-Za-z0-9][A-Za-z0-9._-]{0,127}")) {
-            deliver(token, cb, null, "Invalid model ID (use the bare model name)");
+            deliver(token, cb, null, "Invalid model ID - use the bare model name");
             return;
         }
         pending = WORKER.submit(new Runnable() {
@@ -95,19 +100,23 @@ public final class GrammarClient {
                 HttpURLConnection connection = null;
                 try {
                     if (token != REQUEST.get()) return;
+                    // The default Gemini 3.5 Flash-Lite starts at minimal thinking. Leave
+                    // thinkingConfig out so older models and alternate model IDs still work.
+                    JSONObject generation = new JSONObject()
+                            .put("temperature", 0.1).put("maxOutputTokens", 1024);
                     JSONObject body = new JSONObject()
                             .put("systemInstruction", new JSONObject().put("parts",
                                     new JSONArray().put(new JSONObject().put("text", INSTRUCTION))))
                             .put("contents", new JSONArray().put(new JSONObject().put("parts",
                                     new JSONArray().put(new JSONObject().put("text", text)))))
-                            .put("generationConfig", new JSONObject()
-                                    .put("temperature", 0.1).put("maxOutputTokens", 256));
+                            .put("generationConfig", generation);
                     byte[] bytes = body.toString().getBytes("UTF-8");
                     connection = (HttpURLConnection) new URL(
                             "https://generativelanguage.googleapis.com/v1beta/models/"
                             + model + ":generateContent").openConnection();
-                    connection.setConnectTimeout(5000);
-                    connection.setReadTimeout(8000);
+                    connection.setConnectTimeout(8000);
+                    // Gemini 3 can take longer than a normal autocomplete request.
+                    connection.setReadTimeout(20000);
                     connection.setInstanceFollowRedirects(false);
                     connection.setRequestMethod("POST");
                     connection.setRequestProperty("Content-Type", "application/json");
@@ -118,7 +127,7 @@ public final class GrammarClient {
                     try (OutputStream out = connection.getOutputStream()) { out.write(bytes); }
                     int status = connection.getResponseCode();
                     if (status != 200) {
-                        deliver(token, cb, null, "Gemini HTTP " + status);
+                        deliver(token, cb, null, httpError(status));
                         return;
                     }
                     ByteArrayOutputStream result = new ByteArrayOutputStream();
@@ -133,25 +142,44 @@ public final class GrammarClient {
                     }
                     JSONObject candidate = new JSONObject(result.toString("UTF-8"))
                             .getJSONArray("candidates").getJSONObject(0);
-                    if (!"STOP".equals(candidate.optString("finishReason", "STOP"))) {
+                    String finish = candidate.optString("finishReason", "STOP");
+                    if (!"STOP".equals(finish) && !"FINISH_REASON_UNSPECIFIED".equals(finish)) {
                         deliver(token, cb, null, "No complete correction returned");
                         return;
                     }
-                    String corrected = candidate.getJSONObject("content").getJSONArray("parts")
-                            .getJSONObject(0).getString("text");
-                    if (corrected.trim().isEmpty()) {
+                    // Gemini 3 may lead with a thought-signature part without text; take
+                    // every real text part and ignore the thought parts.
+                    JSONArray parts = candidate.getJSONObject("content").getJSONArray("parts");
+                    StringBuilder corrected = new StringBuilder();
+                    for (int i = 0; i < parts.length(); i++) {
+                        JSONObject part = parts.optJSONObject(i);
+                        if (part == null || part.optBoolean("thought", false)) continue;
+                        String value = part.optString("text", "");
+                        if (!value.isEmpty()) corrected.append(value);
+                    }
+                    String value = corrected.toString().trim();
+                    if (value.isEmpty()) {
                         deliver(token, cb, null, "Empty correction returned");
                     } else {
-                        deliver(token, cb, corrected, null);
+                        deliver(token, cb, value, null);
                     }
                 } catch (Exception error) {
                     // Do not expose exception messages: HTTP errors can contain credentials/text.
-                    deliver(token, cb, null, "Request failed (network, timeout, or response format)");
+                    deliver(token, cb, null, "Network error - check your connection");
                 } finally {
                     if (connection != null) connection.disconnect();
                 }
             }
         });
+    }
+
+    private static String httpError(int status) {
+        if (status == 400) return "Gemini rejected the request - check Model ID";
+        if (status == 401 || status == 403) return "Check your Gemini API key";
+        if (status == 404) return "Model not found - check Model ID";
+        if (status == 429) return "Gemini rate limit - try again";
+        if (status >= 500) return "Gemini is busy - try again";
+        return "Gemini error " + status;
     }
 
     private static void deliver(final long token, final Callback cb,

@@ -5,7 +5,7 @@ Package: `com.gboard.eli`. App label: `Gboard By Eliwoa`.
 **Startup repair:** the first device test exposed both a missing welcome bitmap and rejection of this clone’s actual signing certificate. Both observed faults are patched; see [STARTUP-REPAIR.md](STARTUP-REPAIR.md) for the exact evidence, changes, and remaining missing-resource limitations. The local self-check fallback requires this exact package and the selected build certificate; Google service authentication checks are unchanged. The earlier repaired APK then failed on keyboard activation; the matching density split has now been recovered and its references restored. See the density restoration section below; this newest build still needs a phone test.
 
 
-The selected implementation uses the **dedicated AI Grammar row above the existing keyboard**, as approved in the conversation. It does not register an extra item in Gboard's existing toolbar. The row contains an ON/OFF toggle and a correction chip. Long-press the toggle to open settings.
+The selected implementation uses the **dedicated AI Grammar row above the existing keyboard**, as approved in the conversation. It does not register an extra item in Gboard's existing toolbar. The row contains a sparkle ON/OFF toggle, a status/error line, a correction chip, a gear button and a V collapse/expand button. Long-press the sparkle (or tap the gear) to open settings. The collapsed state is remembered, and a new correction expands the bar automatically.
 
 `base_java/` is unchanged and read-only. No original class, package, native library, Google credential, signature check, or unrelated feature was renamed or removed. The original Google services may reject the clone's package/signature; this work does not bypass their authorization.
 
@@ -82,7 +82,7 @@ grep -ral 'com.google.android.inputmethod.latin' base_decoded/assets base_decode
 | --- | --- |
 | `aigrammar/src/com/aigrammar/GrammarClient.java` | Implement the specified Gemini JSON request, private preferences, timeouts, single worker, request-counter cancellation and main-thread callbacks. |
 | `aigrammar/src/com/aigrammar/SettingsActivity.java` | Add programmatic API key/model fields, enable switch, Save and Test controls. |
-| `aigrammar/src/com/aigrammar/EditorPolicy.java` | Reject password/email/URI, non-text, NO_SUGGESTIONS, private-learning and own-app editors before any text read. |
+| `aigrammar/src/com/aigrammar/EditorPolicy.java` | Reject password/email/URI, non-text, private-learning and own-app editors before any text read; allow the common NO_SUGGESTIONS chat flag. |
 | `aigrammar/src/com/aigrammar/SentenceSlice.java` | Extract a bounded sentence suffix and preserve trailing whitespace without replacing a truncated long sentence. |
 | `aigrammar/src/com/aigrammar/GrammarBridge.java` | Add the row, debounce, stale-result checks and checked InputConnection replacement. |
 | `base_decoded/smali/esi.smali` | Call `GrammarBridge.attach(this, inputView)` while `p0` still holds the IME. |
@@ -119,11 +119,18 @@ Model update: the default is now `gemini-3.5-flash-lite`, confirmed against [Goo
 
 The caller waits 700 ms after an input selection update. Each new update hides the chip and invalidates its outstanding request. A single worker uses connect/read timeouts of 5/8 seconds; an in-flight blocking HTTP operation may continue until its timeout, but its obsolete callback is ignored. Cancellation does not recall text already sent to Gemini. No key, editor text or HTTP response body is logged. Redirects and incomplete/token-limited model output are rejected.
 
-The policy rejects text password, visible password, web password, email address, web email, email subject and URI variations, all non-text classes (including numeric passwords), `IME_FLAG_NO_PERSONALIZED_LEARNING`, `TYPE_TEXT_FLAG_NO_SUGGESTIONS`, and this app's own settings editors. It also requires an unlocked device, collapsed selection, the active input editor, and a visible keyboard/row. Android apps that mislabel sensitive text as ordinary text cannot be reliably detected from `EditorInfo` alone. This does not modify Gboard's existing network behavior.
+The policy rejects text password, visible password, web password, email address, web email, email subject and URI variations, all non-text classes (including numeric passwords), `IME_FLAG_NO_PERSONALIZED_LEARNING`, and this app's own settings editors. `TYPE_TEXT_FLAG_NO_SUGGESTIONS` is allowed because ordinary browser chat/search fields set it; the private-learning flag remains the stronger privacy signal. It also requires an unlocked device, collapsed selection, the active input editor, and a visible keyboard/row. Android apps that mislabel sensitive text as ordinary text cannot be reliably detected from `EditorInfo` alone. This does not modify Gboard's existing network behavior.
 
 Tapping the chip checks the connection, editor identity, revision, cursor and surrounding text again. It uses `beginBatchEdit`, `finishComposingText`, a second text check, `deleteSurroundingText`, `commitText`, and `endBatchEdit`. Editor APIs are not transactional: a broken/remote editor can reject or partially execute these operations. A rejected commit gets a best-effort restoration of the original suffix.
 
 The API key is stored in MODE_PRIVATE SharedPreferences as requested, not encrypted storage. The settings window blocks screenshots and disables autofill/view-state saving on the key field. The original app's backup configuration was not changed; do not assume these preferences are excluded from its custom backup behavior.
+
+### Latest UI/source pass
+
+- The grammar row is theme-aware, collapsible, and shows request/error status instead of hiding failures. The V state is stored under the `collapsed` preference.
+- Requests use `maxOutputTokens` 1024 and 8 s / 20 s timeouts. Gemini 3 thought-signature parts are skipped before joining the correction text. `thinkingConfig` is not sent, so older model IDs continue to work.
+- The shift glyph bitmaps at public IDs `0x7f0805b0`–`0x7f0805b2` were replaced with tintable vectors; `GrammarBridge` repairs that one `SoftKeyView` icon if the renamed clone leaves it hidden or transparent.
+- The published APK predates these changes. This workspace has no private signing key, so rebuild with the existing keystore (`./aigrammar/build-termux.sh`) to install as an update.
 
 Verify Part 2:
 

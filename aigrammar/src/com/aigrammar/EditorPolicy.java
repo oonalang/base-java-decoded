@@ -10,8 +10,8 @@ public final class EditorPolicy {
     public static boolean allows(int inputType, int imeOptions, String packageName) {
         if (packageName == null || "com.gboard.eli".equals(packageName)) return false;
         if ((inputType & InputType.TYPE_MASK_CLASS) != InputType.TYPE_CLASS_TEXT) return false;
+        // This is the explicit "do not send this text to a service" signal.
         if ((imeOptions & EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING) != 0) return false;
-        if ((inputType & InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS) != 0) return false;
         switch (inputType & InputType.TYPE_MASK_VARIATION) {
             case InputType.TYPE_TEXT_VARIATION_PASSWORD:
             case InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD:
@@ -22,6 +22,8 @@ public final class EditorPolicy {
             case InputType.TYPE_TEXT_VARIATION_URI:
                 return false;
             default:
+                // TYPE_TEXT_FLAG_NO_SUGGESTIONS is also set by ordinary browser chat
+                // and search boxes, so it alone is not a sensitive-field signal.
                 return true;
         }
     }

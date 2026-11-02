@@ -23,8 +23,9 @@ public class PolicyTest {
             check(!EditorPolicy.allows(1 | variation, 0, "example.editor"));
         for (int inputClass : new int[]{0, 2, 3, 4})
             check(!EditorPolicy.allows(inputClass, 0, "example.editor"));
-        check(!EditorPolicy.allows(1 | 0x80000, 0, "example.editor"));
-        check(!EditorPolicy.allows(1, 0x1000000, "example.editor"));
+        // Browser chat/search fields commonly set NO_SUGGESTIONS; allow grammar there.
+        check(EditorPolicy.allows(1 | 0x80000, 0, "example.editor"));
+        check(!EditorPolicy.allows(1 | 0x80000, 0x1000000, "example.editor"));
         check(SentenceSlice.from(null) == null);
         check(SentenceSlice.from("") == null);
         check(SentenceSlice.from("a ") == null);

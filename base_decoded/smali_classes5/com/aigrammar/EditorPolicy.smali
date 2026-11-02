@@ -19,7 +19,7 @@
     .line 11
     const/4 v0, 0x0
 
-    if-eqz p2, :cond_25
+    if-eqz p2, :cond_1f
 
     const-string v1, "com.gboard.eli"
 
@@ -29,7 +29,7 @@
 
     if-eqz p2, :cond_c
 
-    goto :goto_25
+    goto :goto_1f
 
     .line 12
     :cond_c
@@ -41,7 +41,7 @@
 
     return v0
 
-    .line 13
+    .line 14
     :cond_12
     const/high16 p2, 0x1000000
 
@@ -51,42 +51,32 @@
 
     return v0
 
-    .line 14
-    :cond_18
-    const/high16 p1, 0x80000
-
-    and-int/2addr p1, p0
-
-    if-eqz p1, :cond_1e
-
-    return v0
-
     .line 15
-    :cond_1e
+    :cond_18
     and-int/lit16 p0, p0, 0xff0
 
-    sparse-switch p0, :sswitch_data_26
+    sparse-switch p0, :sswitch_data_20
 
-    .line 25
+    .line 27
     return v1
 
     .line 23
-    :sswitch_24
+    :sswitch_1e
     return v0
 
     .line 11
-    :cond_25
-    :goto_25
+    :cond_1f
+    :goto_1f
     return v0
 
-    :sswitch_data_26
+    :sswitch_data_20
     .sparse-switch
-        0x10 -> :sswitch_24
-        0x20 -> :sswitch_24
-        0x30 -> :sswitch_24
-        0x80 -> :sswitch_24
-        0x90 -> :sswitch_24
-        0xd0 -> :sswitch_24
-        0xe0 -> :sswitch_24
+        0x10 -> :sswitch_1e
+        0x20 -> :sswitch_1e
+        0x30 -> :sswitch_1e
+        0x80 -> :sswitch_1e
+        0x90 -> :sswitch_1e
+        0xd0 -> :sswitch_1e
+        0xe0 -> :sswitch_1e
     .end sparse-switch
 .end method

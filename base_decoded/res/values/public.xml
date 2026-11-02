@@ -34076,6 +34076,8 @@
     <public type="drawable" name="aigrammar_off" id="0x7f08075d" />
     <public type="drawable" name="aigrammar_on" id="0x7f08075e" />
     <public type="drawable" name="aigrammar_toggle" id="0x7f08075f" />
+    <public type="drawable" name="aigrammar_gear" id="0x7f080760" />
+    <public type="drawable" name="aigrammar_chevron" id="0x7f080761" />
     <public type="string" name="app_name" id="0x7f1416e5" />
     <public type="drawable" name="APKTOOL_RENAMED_0x7f0801e4" id="0x7f0801e4" />
     <public type="drawable" name="APKTOOL_RENAMED_0x7f0801e9" id="0x7f0801e9" />

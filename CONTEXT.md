@@ -17,6 +17,7 @@ The original repository supplied `base_decoded/` and `base_java/`. `base_java/` 
 - Runtime target: Android arm64-v8a, API 32+. Earlier user testing was on Android 13.
 - Build, signature, alignment, unit and resource-graph checks pass.
 - **The newest resource-restored APK is awaiting device verification. The complete typing → API → chip → replacement flow has not been verified on a device, and no live API test was performed in the workspace.**
+- A later source pass (not in the published APK) rebuilds the grammar bar with collapse/status/settings controls, relaxes the no-suggestions field filter, improves Gemini response parsing and timeouts, and repairs the shift glyph. Java 8 compilation, smali regeneration, 41 policy/sentence checks and 9 identity checks pass; new vectors compile with aapt2. Rebuild with the existing keystore to install as an update.
 
 Failed earlier APKs must not be described as working. The latest APK includes fixes absent from those earlier builds. See GitHub Releases for the test artifact; source files and generated smali are included in the repository.
 
@@ -49,13 +50,21 @@ The full old-package-string audit is in `aigrammar/reports/package-audit.tsv`. C
 
 ## Grammar behavior
 
-Preferences: `aigrammar_prefs`, keys `api_key`, `model`, `enabled`; default disabled. The user's API key is entered on the phone and is not available to this repository or the assistant. Preferences are MODE_PRIVATE rather than encrypted storage; original backup behavior remains unchanged.
+Preferences: `aigrammar_prefs`, keys `api_key`, `model`, `enabled`, `collapsed`; default disabled. The user's API key is entered on the phone and is not available to this repository or the assistant. Preferences are MODE_PRIVATE rather than encrypted storage; original backup behavior remains unchanged.
 
-The caller debounces 700 ms, reads a bounded sentence before the cursor and sends the sentence only. A 201-unit read distinguishes a complete <=200-unit suffix from a truncated long sentence. Short, unchanged or already-correct text produces no chip. Results arrive on the main looper. Counter-based cancellation rejects obsolete results; an in-flight socket may run until its 5-second connect / 8-second read timeout. Cancellation cannot recall text already sent.
+### Latest UI/source pass
 
-Requests use the documented `generateContent` endpoint, `x-goog-api-key`, the grammar-only system instruction, temperature 0.1 and maxOutputTokens 256. Empty or incomplete/token-limited output is rejected. Logs do not include the user's key, editor text or server response body.
+- `GrammarBridge` builds a theme-aware bar with a sparkle toggle, status line, green apply chip, gear button and a V collapse/expand button. The collapsed flag is stored in `aigrammar_prefs`; a new correction auto-expands the bar. Errors are shown on the bar and are retryable; a missing key links to settings.
+- `GrammarClient` sends `maxOutputTokens` 1024, uses 8 s connect / 20 s read timeouts, extracts non-thought text parts, accepts an unspecified finish reason, and maps HTTP failures to short user-facing messages. `thinkingConfig` is intentionally omitted so older model IDs still work.
+- The shift key is the only view repaired: Gboard's `key_pos_shift` / `SoftKeyView` icon gets an explicit visible state, full alpha and a theme-color filter. Its split bitmaps were replaced at the same public IDs with density-independent vector arrows.
+- New drawables: `aigrammar_gear`, `aigrammar_chevron`, plus the three shift vectors. `aigrammar_gear` / `aigrammar_chevron` use public IDs `0x7f080760` / `0x7f080761`; shift IDs stay `0x7f0805b0`–`0x7f0805b2`.
+- The published APK was not rebuilt because this workspace does not contain the private signing key. Running `aigrammar/build-termux.sh` with the existing keystore regenerates the smali and a signed update.
 
-The policy excludes password/visible-password/web-password, email address/web email/email subject, URI and non-text fields, NO_SUGGESTIONS and private-learning fields, the clone's own editors, locked devices and noncollapsed selections. Hosts that mislabel sensitive fields cannot be reliably detected from EditorInfo alone. Gboard's unrelated network stack is unchanged.
+The caller debounces 700 ms, reads a bounded sentence before the cursor and sends the sentence only. A 201-unit read distinguishes a complete <=200-unit suffix from a truncated long sentence. Short, unchanged or already-correct text produces no chip. Results arrive on the main looper. Counter-based cancellation rejects obsolete results; an in-flight socket may run until its 8-second connect / 20-second read timeout. Cancellation cannot recall text already sent.
+
+Requests use the documented `generateContent` endpoint, `x-goog-api-key`, the grammar-only system instruction, temperature 0.1 and maxOutputTokens 1024. Real (non-thought) response text parts are joined; an empty or non-STOP response is rejected. Logs do not include the user's key, editor text or server response body. HTTP failures are mapped to short prompts such as "Check your Gemini API key" or "Gemini rate limit - try again".
+
+The policy excludes password/visible-password/web-password, email address/web email/email subject, URI and non-text fields, private-learning fields, the clone's own editors, locked devices and noncollapsed selections. `TYPE_TEXT_FLAG_NO_SUGGESTIONS` is now allowed because ordinary browser chat/search boxes set it; the explicit private-learning flag remains excluded. Hosts that mislabel sensitive fields cannot be reliably detected from EditorInfo alone. Gboard's unrelated network stack is unchanged.
 
 A chip tap rechecks editor/connection identity, revision, cursor and surrounding text; finishes composing; checks again; deletes only the checked suffix; commits the correction and restores trailing whitespace. InputConnection operations are not transactional; editor compatibility still needs device tests.
 
@@ -87,7 +96,7 @@ Verified tooling: Java 8 source/target, R8 8.3.37, baksmali 2.5.2, apktool 3.0.3
 
 Evidence in `aigrammar/reports/` includes exact before/after patches, per-file reasons, 28 original package-string hits, restored-asset hashes, all 204 reference mappings, full build logs and resource verification JSON. Raw personal device logs and private Dropbox URLs are not published.
 
-Checks: 41 policy/sentence tests, 9 identity tests, five dex files, all original 34,071 public IDs preserved, all 34,191 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
+Checks for the published APK: 41 policy/sentence tests, 9 identity tests, five dex files, all original 34,071 public IDs preserved, all 34,191 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. The later source pass adds two drawable IDs (34,193 total) and has not been signed or device-tested. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
 
 ## Continue from here
 

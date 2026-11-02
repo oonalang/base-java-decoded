@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 29
+    .line 41
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$1;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,11 +38,11 @@
 .method public run()V
     .registers 2
 
-    .line 30
+    .line 42
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$1;->this$0:Lcom/aigrammar/GrammarBridge;
 
     # invokes: Lcom/aigrammar/GrammarBridge;->requestCorrection()V
-    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$000(Lcom/aigrammar/GrammarBridge;)V
+    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$0(Lcom/aigrammar/GrammarBridge;)V
 
     return-void
 .end method
