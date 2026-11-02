@@ -25,19 +25,19 @@
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd4" id="@id/APKTOOL_RENAMED_0x7f0b23a5" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="true">
             <action action_on_down="true" keycode="CAPS_LOCK" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c1" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd8" id="@id/APKTOOL_RENAMED_0x7f0b23a7" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="true">
             <action action_on_down="true" keycode="CAPS_LOCK" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c2" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd4" id="@id/APKTOOL_RENAMED_0x7f0b24c2" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="true">
             <action action_on_down="true" data="SUB_CATEGORY_1" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c1" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd8" id="@id/APKTOOL_RENAMED_0x7f0b2051" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="true">
             <action action_on_down="true" data="NORMAL" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c2" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd2" id="@id/APKTOOL_RENAMED_0x7f0b23ab" layout="@layout/APKTOOL_RENAMED_0x7f0e071a" long_press_delay="1200" multi_touch="true">
             <action keycode="SHIFT_DOWN" type="DOWN" />

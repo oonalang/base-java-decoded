@@ -1202,7 +1202,7 @@ Please wait a moment and then try again."</string>
     <string name="APKTOOL_RENAMED_0x7f14050f">Try again</string>
     <string name="APKTOOL_RENAMED_0x7f140510">Undo</string>
     <string name="APKTOOL_RENAMED_0x7f140511">Yes</string>
-    <string name="ime_name">Gboard</string>
+    <string name="ime_name">Gboard By Eliwoa</string>
     <string name="APKTOOL_RENAMED_0x7f140515">com.google.android.apps.inputmethod.hindi</string>
     <string name="APKTOOL_RENAMED_0x7f140516">Zero-width non-joiner control character</string>
     <string name="APKTOOL_RENAMED_0x7f140517">Swipe on space bar to accept</string>
@@ -5473,4 +5473,5 @@ your writing"</string>
     <string name="APKTOOL_RENAMED_0x7f1416e2">www dot</string>
     <string name="APKTOOL_RENAMED_0x7f1416e3">W X Y Z</string>
     <string name="APKTOOL_RENAMED_0x7f1416e4">Tap a smiley to get stickers</string>
+    <string name="app_name">Gboard By Eliwoa</string>
 </resources>

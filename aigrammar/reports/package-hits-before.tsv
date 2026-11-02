@@ -1,0 +1,29 @@
+path	line	content
+base_decoded/assets/phenotype/com_google_android_inputmethod_latin_package_metadata.binarypb	byte:2	b'\n$com.google.android.inputmethod.latin\x10\x01\x1a\x1aANDROID_IME_ANDROID_PRIMES\x1a\x06BRELLA\x1a\x0f'
+base_decoded/res/raw/APKTOOL_RENAMED_0x7f130029.binarypb	byte:2	b'\n$com.google.android.inputmethod.latin\x1a\x1aANDROID_IME_ANDROID_PRIMES\x1a\x06BRELLA\x1a\x0fBR'
+base_decoded/res/values/arrays.xml	328	<item>com.google.android.inputmethod.latin</item>
+base_decoded/res/values/strings.xml	1000	<string name="APKTOOL_RENAMED_0x7f140427">market://details?id=com.google.android.inputmethod.latin</string>
+base_decoded/res/values/strings.xml	1001	<string name="APKTOOL_RENAMED_0x7f140428">http://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin</string>
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170022.xml	4	<configuration-package>com.google.android.inputmethod.latin</configuration-package>
+base_decoded/smali/com/google/android/libraries/inputmethod/staticflag/AllFlags.smali	11	.field public static final STATICMENDELPACKAGENAME:Ljava/lang/String; = "com.google.android.inputmethod.latin"
+base_decoded/smali/huz.smali	3559	const-string v3, "com.google.android.inputmethod.latin"
+base_decoded/smali/huz.smali	3605	const-string v3, "com.google.android.inputmethod.latin"
+base_decoded/smali/nvc.smali	108	const-string v0, "com.google.android.apps.nexuslauncher,com.google.android.apps.searchlite,com.google.android.inputmethod.latin*"
+base_decoded/smali/nvc.smali	116	const-string v0, "com.google.android.apps.searchlite,com.google.android.inputmethod.latin*"
+base_decoded/smali/uio.smali	191	const-string v24, "com.google.android.inputmethod.latin"
+base_decoded/smali/uio.smali	195	const-string v25, "com.google.android.inputmethod.latin.canary"
+base_decoded/smali/uio.smali	199	const-string v26, "com.google.android.inputmethod.latin.dev"
+base_decoded/smali_classes2/eyp.smali	246	const-string v4, "com.google.android.inputmethod.latin.WRITING_HELPER"
+base_decoded/smali_classes2/fao.smali	24	const-string p1, "com.google.android.inputmethod.latin.SIGN_BOARD"
+base_decoded/smali_classes2/fap.smali	79	const-string v1, "com.google.android.inputmethod.latin.SIGN_BOARD"
+base_decoded/smali_classes2/fap.smali	188	const-string v1, "com.google.android.inputmethod.latin.SIGN_BOARD"
+base_decoded/smali_classes2/fba.smali	886	const-string v1, "com.google.android.inputmethod.latin"
+base_decoded/smali_classes2/feu.smali	1610	const-string v2, "com.google.android.inputmethod.latin.dev"
+base_decoded/smali_classes2/hdb.smali	726	const-string v1, "com.google.android.inputmethod.latin.WRITING_HELPER"
+base_decoded/smali_classes2/hiv.smali	1264	const-string p0, "com.google.android.inputmethod.latin.WRITING_HELPER"
+base_decoded/smali_classes2/hkh.smali	1579	const-string v6, "com.google.android.inputmethod.latin.WRITING_HELPER"
+base_decoded/smali_classes2/mdz.smali	33	const-string v0, "com.google.android.inputmethod.latin"
+base_decoded/smali_classes2/qib.smali	171	const-string v0, "com.google.android.inputmethod.latin."
+base_decoded/smali_classes2/qpx.smali	159	const-string p1, "com.google.android.inputmethod.latin.RATE_US"
+base_decoded/smali_classes2/rme.smali	350	const-string v2, "com.google.android.inputmethod.latin%"
+base_decoded/smali_classes2/syk.smali	38	const-string p2, "com.google.android.inputmethod.latin"

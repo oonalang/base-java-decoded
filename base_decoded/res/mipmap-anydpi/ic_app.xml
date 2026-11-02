@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@mipmap/APKTOOL_RENAMED_0x7f110001" />
-    <foreground android:drawable="@mipmap/APKTOOL_RENAMED_0x7f110002" />
-    <monochrome android:drawable="@drawable/APKTOOL_RENAMED_0x7f080516" />
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/aigrammar_launcher_background" />
+    <foreground android:drawable="@drawable/aigrammar_launcher_foreground" />
+    <monochrome android:drawable="@drawable/aigrammar_launcher_foreground" />
 </adaptive-icon>

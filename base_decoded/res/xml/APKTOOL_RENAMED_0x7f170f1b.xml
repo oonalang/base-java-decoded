@@ -135,17 +135,17 @@
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140714" id="@id/APKTOOL_RENAMED_0x7f0b1a19" layout="@layout/APKTOOL_RENAMED_0x7f0e070c" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
             <action keycode="DPAD_LEFT" repeatable="true" type="PRESS" />
             <action keycode="DPAD_LEFT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a0" repeatable="true" type="SLIDE_LEFT" />
-            <action keycode="DPAD_UP" popup_icon="@null" repeatable="true" type="SLIDE_UP" />
+            <action keycode="DPAD_UP" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805ac" repeatable="true" type="SLIDE_UP" />
             <action keycode="DPAD_RIGHT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a1" repeatable="true" type="SLIDE_RIGHT" />
-            <action keycode="DPAD_DOWN" popup_icon="@null" repeatable="true" type="SLIDE_DOWN" />
+            <action keycode="DPAD_DOWN" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a8" repeatable="true" type="SLIDE_DOWN" />
             <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f040178" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140af9" id="@id/APKTOOL_RENAMED_0x7f0b2336" layout="@layout/APKTOOL_RENAMED_0x7f0e070c" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
             <action keycode="DPAD_RIGHT" repeatable="true" type="PRESS" />
             <action keycode="DPAD_LEFT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a0" repeatable="true" type="SLIDE_LEFT" />
-            <action keycode="DPAD_UP" popup_icon="@null" repeatable="true" type="SLIDE_UP" />
+            <action keycode="DPAD_UP" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805ac" repeatable="true" type="SLIDE_UP" />
             <action keycode="DPAD_RIGHT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a1" repeatable="true" type="SLIDE_RIGHT" />
-            <action keycode="DPAD_DOWN" popup_icon="@null" repeatable="true" type="SLIDE_DOWN" />
+            <action keycode="DPAD_DOWN" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a8" repeatable="true" type="SLIDE_DOWN" />
             <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f040179" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140715" id="@id/APKTOOL_RENAMED_0x7f0b16fd" layout="@layout/APKTOOL_RENAMED_0x7f0e070c" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">

@@ -1,0 +1,34 @@
+{
+  "source_split_sha256": "5f235dfff5822f60a2e2b94bfa764839bda683987fb866afb755b39c33c14c0d",
+  "source_split_package": "com.google.android.inputmethod.latin",
+  "source_split_versionCode": 176027078,
+  "source_split": "config.xxhdpi",
+  "imported_drawable_IDs": 113,
+  "imported_image_files": 115,
+  "imported_integer_IDs": 1,
+  "qualified_style_overrides": 1,
+  "restored_references": 204,
+  "compiled_XML_files_checked": 53,
+  "popup_icon_references_checked": 42,
+  "null_bitmap_ninepatch_sources": 0,
+  "original_public_resource_IDs_preserved": 34071,
+  "all_public_resource_IDs_verified": 34191,
+  "compiled_image_pixel_matches": 113,
+  "compiled_ninepatches_validated": 23,
+  "apktool_ninepatch_rounding": [
+    {
+      "file": "base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08020a.9.png",
+      "maximum_premultiplied_RGB_rounding": 0.6000000000000085,
+      "alpha_unchanged": true
+    },
+    {
+      "file": "base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080214.9.png",
+      "maximum_premultiplied_RGB_rounding": 0.7960784313725355,
+      "alpha_unchanged": true
+    }
+  ],
+  "original_parser_smali_unchanged": true,
+  "APK_signature_verified": true,
+  "signing_certificate_sha256": "835CFD33F94E1CC744655D3E48ABDCD0F56C8F0865AA09C5AEC830B5CE51E233",
+  "device_tested": false
+}

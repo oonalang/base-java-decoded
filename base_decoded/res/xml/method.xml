@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <input-method android:isDefault="@bool/APKTOOL_RENAMED_0x7f050021" android:settingsActivity="com.google.android.apps.inputmethod.latin.preference.SettingsActivity" android:supportsSwitchingToNextInputMethod="true" android:supportsInlineSuggestions="true" android:supportsStylusHandwriting="@bool/APKTOOL_RENAMED_0x7f0500d1" android:stylusHandwritingSettingsActivity="@string/APKTOOL_RENAMED_0x7f140db6" android:supportsConnectionlessStylusHandwriting="@bool/APKTOOL_RENAMED_0x7f0500d1"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <subtype android:label="@string/APKTOOL_RENAMED_0x7f140dbb" android:icon="@null" android:imeSubtypeMode="keyboard" android:imeSubtypeExtraValue="AsciiCapable,TrySuppressingImeSwitcher" android:overridesImplicitlyEnabledSubtype="true" android:isAsciiCapable="true" />
+    <subtype android:label="@string/APKTOOL_RENAMED_0x7f140dbb" android:icon="@drawable/APKTOOL_RENAMED_0x7f08054a" android:imeSubtypeMode="keyboard" android:imeSubtypeExtraValue="AsciiCapable,TrySuppressingImeSwitcher" android:overridesImplicitlyEnabledSubtype="true" android:isAsciiCapable="true" />
     <subtype android:imeSubtypeLocale="en_US" android:imeSubtypeMode="keyboard" android:imeSubtypeExtraValue="AsciiCapable" android:isAsciiCapable="true" />
     <subtype android:imeSubtypeLocale="en_GB" android:imeSubtypeMode="keyboard" android:imeSubtypeExtraValue="AsciiCapable" android:isAsciiCapable="true" />
     <subtype android:imeSubtypeLocale="af" android:imeSubtypeMode="keyboard" android:imeSubtypeExtraValue="AsciiCapable" android:isAsciiCapable="true" />

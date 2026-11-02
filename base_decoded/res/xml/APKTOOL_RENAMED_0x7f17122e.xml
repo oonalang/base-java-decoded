@@ -198,14 +198,14 @@
             </softkey>
         </softkey_list>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140516" id="@id/APKTOOL_RENAMED_0x7f0b28e4" layout="@layout/APKTOOL_RENAMED_0x7f0e070b" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
-            <action data="‌" intention="D" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
-            <action data="‍" intention="D" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <action data="‌" intention="D" keycode="ALPHABET" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805c4" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
+            <action data="‍" intention="D" keycode="ALPHABET" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805c3" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c4" />
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b28e5" layout="@layout/APKTOOL_RENAMED_0x7f0e070b" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
-            <action data="‌" intention="C" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
-            <action data="‍" intention="C" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <action data="‌" intention="C" keycode="ALPHABET" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805c4" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
+            <action data="‍" intention="C" keycode="ALPHABET" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805c3" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c4" />
         </softkey>
     </softkeys>
 </framework>

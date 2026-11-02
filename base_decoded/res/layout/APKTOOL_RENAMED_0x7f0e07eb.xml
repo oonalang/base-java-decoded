@@ -2,7 +2,7 @@
 <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:paddingLeft="?APKTOOL_RENAMED_0x7f04057a" android:paddingTop="?APKTOOL_RENAMED_0x7f04057a" android:paddingRight="?APKTOOL_RENAMED_0x7f04057a" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@null" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/APKTOOL_RENAMED_0x7f08067e" android:importantForAccessibility="no" />
         <com.google.android.material.textview.MaterialTextView android:id="@id/APKTOOL_RENAMED_0x7f0b2a1e" android:text="@string/APKTOOL_RENAMED_0x7f141665" style="@style/APKTOOL_RENAMED_0x7f150cec" />
         <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
             <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f080680" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f150ce7" />

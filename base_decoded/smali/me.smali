@@ -1091,6 +1091,14 @@
     .line 501
     if-nez v1, :cond_15
 
+    # Recognize only this clone's exact package and actual signing certificate.
+    # Keep the original check, failure path, and all other SignatureUtils uses intact.
+    invoke-static {v0}, Lcom/aigrammar/CloneIdentity;->isExpectedSelf(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_15
+
     .line 502
     .line 503
     new-instance v1, Ljava/lang/IllegalStateException;

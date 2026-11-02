@@ -12324,6 +12324,9 @@
 .method public final onDestroy()V
     .locals 11
 
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarBridge;->destroy(Landroid/inputmethodservice/InputMethodService;)V
+
     .line 1
     iget-boolean v0, p0, Lpbb;->m:Z
 
@@ -13144,6 +13147,9 @@
 .method public final onFinishInput()V
     .locals 6
 
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarBridge;->suspend(Landroid/inputmethodservice/InputMethodService;)V
+
     .line 1
     iget-boolean v0, p0, Lpbb;->B:Z
 
@@ -13410,6 +13416,9 @@
 
 .method public final onFinishInputView(Z)V
     .locals 11
+
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarBridge;->suspend(Landroid/inputmethodservice/InputMethodService;)V
 
     .line 1
     const-string v0, "INPUT_VIEW"
@@ -15217,6 +15226,9 @@
 .method public final onStartInput(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 19
 
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p1}, Lcom/aigrammar/GrammarBridge;->start(Landroid/inputmethodservice/InputMethodService;Landroid/view/inputmethod/EditorInfo;)V
+
     .line 1
     move-object/from16 v0, p0
 
@@ -16057,6 +16069,9 @@
 
 .method public final onStartInputView(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 21
+
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p1}, Lcom/aigrammar/GrammarBridge;->start(Landroid/inputmethodservice/InputMethodService;Landroid/view/inputmethod/EditorInfo;)V
 
     .line 1
     move-object/from16 v0, p0
@@ -17543,6 +17558,9 @@
 .method public final onUpdateSelection(IIIIII)V
     .locals 1
 
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static {p0, p3, p4}, Lcom/aigrammar/GrammarBridge;->selection(Landroid/inputmethodservice/InputMethodService;II)V
+
     .line 1
     const-string v0, "GoogleInputMethodService.onUpdateSelection"
 
@@ -17635,6 +17653,9 @@
 .method public final onWindowHidden()V
     .locals 5
 
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarBridge;->suspend(Landroid/inputmethodservice/InputMethodService;)V
+
     .line 1
     sget-object v0, Lpbb;->d:Lwnw;
 
@@ -17708,6 +17729,9 @@
 
 .method public final onWindowShown()V
     .locals 5
+
+    # AI Grammar: preserve the incoming IME before Gboard reuses parameter registers.
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarBridge;->resume(Landroid/inputmethodservice/InputMethodService;)V
 
     .line 1
     sget-object v0, Lpbb;->d:Lwnw;

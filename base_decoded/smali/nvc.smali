@@ -105,7 +105,7 @@
 
     .line 27
     .line 28
-    const-string v0, "com.google.android.apps.nexuslauncher,com.google.android.apps.searchlite,com.google.android.inputmethod.latin*"
+    const-string v0, "com.google.android.apps.nexuslauncher,com.google.android.apps.searchlite,com.google.android.inputmethod.latin*,com.gboard.eli*"
 
     .line 29
     .line 30
@@ -113,7 +113,7 @@
 
     .line 31
     :cond_0
-    const-string v0, "com.google.android.apps.searchlite,com.google.android.inputmethod.latin*"
+    const-string v0, "com.google.android.apps.searchlite,com.google.android.inputmethod.latin*,com.gboard.eli*"
 
     .line 32
     .line 33

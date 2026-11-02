@@ -17,7 +17,7 @@
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f14033c" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2473" layout="@layout/APKTOOL_RENAMED_0x7f0e0721" popup_timing="ON_TOUCH">
             <action data="@string/APKTOOL_RENAMED_0x7f14003c" keycode="SWITCH_KEYBOARD" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08059e" />
         </softkey>
         <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2619">
             <softkey desc="@string/APKTOOL_RENAMED_0x7f140460" id="@id/APKTOOL_RENAMED_0x7f0b0838" layout="@layout/APKTOOL_RENAMED_0x7f0e0721" param_data="go" param_icon="@drawable/APKTOOL_RENAMED_0x7f080560" />

@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.google.android.material.card.MaterialCardView style="@style/APKTOOL_RENAMED_0x7f150b40">
         <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b29aa" android:background="#999999" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f07098d" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f07098a" android:scaleType="centerCrop" android:importantForAccessibility="no" />
-        <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b29a9" android:background="@drawable/APKTOOL_RENAMED_0x7f080269" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b29a9" android:background="@drawable/APKTOOL_RENAMED_0x7f080269" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_RENAMED_0x7f0805e5" android:importantForAccessibility="no" />
         <include layout="@layout/APKTOOL_RENAMED_0x7f0e07d0" />
         <include layout="@layout/APKTOOL_RENAMED_0x7f0e07d1" />
     </com.google.android.material.card.MaterialCardView>

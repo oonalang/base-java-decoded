@@ -12,10 +12,10 @@
             <action keycode="SHIFT_UP" type="UP" />
             <action data="'" intention="DECODE" keycode="APOSTROPHE" type="PRESS" />
             <if language="zh-HK|zh-TW|zh-XG">
-                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080556" />
             </if>
             <else>
-                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080555" />
             </else>
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cba" layout="@layout/APKTOOL_RENAMED_0x7f0e073e" multi_touch="false">

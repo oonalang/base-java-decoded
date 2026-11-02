@@ -37,7 +37,7 @@
                 </action>
                 <if japanese_12keys_toggle_only="false">
                     <action content_description="だくてん" data="[" icon_background_level="@integer/APKTOOL_RENAMED_0x7f0c007a" intention="DECODE" keycode="MOZC_NO_START_COMPOSING" popup_icon="@drawable/APKTOOL_RENAMED_0x7f08059c" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e060d" type="SLIDE_LEFT" />
-                    <action content_description="こがき" data="`" icon_background_level="@integer/APKTOOL_RENAMED_0x7f0c007c" intention="DECODE" keycode="MOZC_NO_START_COMPOSING" popup_icon="@null" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e060e" type="SLIDE_UP" />
+                    <action content_description="こがき" data="`" icon_background_level="@integer/APKTOOL_RENAMED_0x7f0c007c" intention="DECODE" keycode="MOZC_NO_START_COMPOSING" popup_icon="@drawable/APKTOOL_RENAMED_0x7f080598" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e060e" type="SLIDE_UP" />
                     <action content_description="はんだくてん" data="]" icon_background_level="@integer/APKTOOL_RENAMED_0x7f0c007b" intention="DECODE" keycode="MOZC_NO_START_COMPOSING" popup_icon="@drawable/APKTOOL_RENAMED_0x7f080596" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e060d" type="SLIDE_RIGHT" />
                 </if>
                 <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080592" />

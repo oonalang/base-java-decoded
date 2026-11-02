@@ -35,7 +35,7 @@
 
     .line 13
     .line 14
-    const-string p2, "com.google.android.inputmethod.latin"
+    const-string p2, "com.gboard.eli"
 
     .line 15
     .line 16

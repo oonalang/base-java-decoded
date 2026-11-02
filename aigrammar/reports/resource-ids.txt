@@ -1,0 +1,13 @@
+    resource 0x7f08053a drawable/APKTOOL_RENAMED_0x7f08053a PUBLIC
+      () (file) res/drawable/APKTOOL_RENAMED_0x7f08053a.xml type=XML
+    resource 0x7f08075b drawable/aigrammar_launcher_background PUBLIC
+      () (file) res/drawable/aigrammar_launcher_background.xml type=XML
+    resource 0x7f08075c drawable/aigrammar_launcher_foreground PUBLIC
+      () (file) res/drawable/aigrammar_launcher_foreground.xml type=XML
+    resource 0x7f08075d drawable/aigrammar_off PUBLIC
+      () (file) res/drawable/aigrammar_off.xml type=XML
+    resource 0x7f08075e drawable/aigrammar_on PUBLIC
+      () (file) res/drawable/aigrammar_on.xml type=XML
+    resource 0x7f08075f drawable/aigrammar_toggle PUBLIC
+      () (file) res/drawable/aigrammar_toggle.xml type=XML
+    resource 0x7f0b05e9 id/keyboard_holder PUBLIC

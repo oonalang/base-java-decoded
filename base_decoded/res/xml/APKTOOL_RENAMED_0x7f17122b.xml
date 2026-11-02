@@ -2,13 +2,13 @@
 <framework>
     <softkeys>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10a9">
-            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040271" type="LONG_PRESS" />
+            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805af" popup_layout="@attr/APKTOOL_RENAMED_0x7f040271" type="LONG_PRESS" />
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10ab">
-            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
+            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805af" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10aa">
-            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
+            <action keycode="LAUNCH_PREFERENCE_ACTIVITY" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805af" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
         </softkey>
     </softkeys>
 </framework>

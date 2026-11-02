@@ -1,0 +1,17 @@
+# Private signing material and device captures must never be published.
+*.jks
+*.keystore
+**/keystore-password*
+gboard*crash*.txt
+/captures/
+/private/
+.env
+.env.local
+
+# Reproducible build outputs and Python caches.
+/aigrammar/build/
+/aigrammar/keys/
+/base_decoded/build/
+/base_decoded/dist/
+**/__pycache__/
+*.pyc

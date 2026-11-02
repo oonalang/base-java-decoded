@@ -11,18 +11,18 @@
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10ae" popup_timing="ON_TOUCH">
             <if expressions="policy_transparency">
-                <action data="@string/APKTOOL_RENAMED_0x7f1405ee" keycode="POLICY_TRANSPARENCY" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
+                <action data="@string/APKTOOL_RENAMED_0x7f1405ee" keycode="POLICY_TRANSPARENCY" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a1" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
             </if>
             <else>
-                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="OPEN_EXTENSION" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="OPEN_EXTENSION" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a1" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
             </else>
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10ad" popup_timing="ON_TOUCH">
             <if expressions="policy_transparency">
-                <action data="@string/APKTOOL_RENAMED_0x7f1405ee" keycode="POLICY_TRANSPARENCY" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
+                <action data="@string/APKTOOL_RENAMED_0x7f1405ee" keycode="POLICY_TRANSPARENCY" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a1" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
             </if>
             <else>
-                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="OPEN_EXTENSION" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="OPEN_EXTENSION" popup_icon="@drawable/APKTOOL_RENAMED_0x7f0805a1" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
             </else>
         </softkey>
         <if expressions="policy_transparency">
@@ -48,13 +48,13 @@
             </softkey>
         </else>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10af" popup_timing="ON_TOUCH">
-            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040271" type="LONG_PRESS" />
+            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@drawable/APKTOOL_RENAMED_0x7f08059e" popup_layout="@attr/APKTOOL_RENAMED_0x7f040271" type="LONG_PRESS" />
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10b1" popup_timing="ON_TOUCH">
-            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
+            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@drawable/APKTOOL_RENAMED_0x7f08059f" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
         </softkey>
         <softkey id="@id/APKTOOL_RENAMED_0x7f0b10b0" popup_timing="ON_TOUCH">
-            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
+            <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" popup_icon="@drawable/APKTOOL_RENAMED_0x7f08059f" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
         </softkey>
     </softkeys>
 </framework>

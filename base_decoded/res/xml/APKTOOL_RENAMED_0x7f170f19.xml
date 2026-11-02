@@ -3,12 +3,12 @@
     <softkeys>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd4" id="@id/APKTOOL_RENAMED_0x7f0b24c2" layout="@layout/APKTOOL_RENAMED_0x7f0e06fe" multi_touch="true">
             <action action_on_down="true" data="SUB_CATEGORY_1" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c1" />
             <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd8" id="@id/APKTOOL_RENAMED_0x7f0b2051" layout="@layout/APKTOOL_RENAMED_0x7f0e06fe" multi_touch="true">
             <action action_on_down="true" data="NORMAL" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805c2" />
             <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="" />
         </softkey>
         <softkey_template id="@id/APKTOOL_RENAMED_0x7f0b2698">

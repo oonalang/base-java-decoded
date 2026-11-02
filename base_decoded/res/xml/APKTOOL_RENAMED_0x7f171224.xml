@@ -7,7 +7,7 @@
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1410b3" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2197" layout="@layout/APKTOOL_RENAMED_0x7f0e0755">
             <action data="symbol" keycode="SWITCH_KEYBOARD" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f0805a2" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1402f3" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2195" layout="@layout/APKTOOL_RENAMED_0x7f0e0755">
             <action data="smiley" keycode="SWITCH_KEYBOARD" type="PRESS" />
@@ -15,7 +15,7 @@
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f14033c" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2196" layout="@layout/APKTOOL_RENAMED_0x7f0e0755">
             <action data="emoticon" keycode="SWITCH_KEYBOARD" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08059e" />
         </softkey>
     </softkeys>
 </framework>

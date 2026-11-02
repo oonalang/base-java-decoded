@@ -1,0 +1,26 @@
+Certificate stored in file </workspace/base-java-decoded/aigrammar/build/apk/signing-certificate.der>
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore /workspace/base-java-decoded/aigrammar/keys/eliwoa.jks -destkeystore /workspace/base-java-decoded/aigrammar/keys/eliwoa.jks -deststoretype pkcs12".
+Helper compiled into base_decoded/smali_classes5 (apktool auto-discovers this directory).
+I: Using Apktool 3.0.3 on base.apk with 2 threads
+I: smali has not changed.
+I: smali_classes2 has not changed.
+I: smali_classes3 has not changed.
+I: smali_classes4 has not changed.
+I: Smaling smali_classes5 folder into classes5.dex...
+I: Building resources with aapt2...
+I: Building apk file...
+I: Importing assets...
+I: Importing lib...
+I: Importing unknown files...
+I: Built apk into: /workspace/base-java-decoded/aigrammar/build/apk/unsigned.apk
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Built: /workspace/base-java-decoded/aigrammar/build/apk/gboard-by-eliwoa.apk

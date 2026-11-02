@@ -3642,6 +3642,9 @@
     :cond_0
     iput-object v0, p0, Lpbb;->i:Lcom/google/android/libraries/inputmethod/inputview/InputView;
 
+    # AI Grammar: p0 is still the IME here; it is reused below.
+    invoke-static {p0, v0}, Lcom/aigrammar/GrammarBridge;->attach(Landroid/inputmethodservice/InputMethodService;Landroid/view/View;)V
+
     .line 41
     .line 42
     sget-object v1, Lpbb;->e:Lntw;

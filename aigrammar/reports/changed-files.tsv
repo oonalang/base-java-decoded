@@ -1,0 +1,228 @@
+path	reason
+.gitattributes	Preserve the exact unified patch context while excluding its required prefixes from whitespace lint.
+.gitignore	Exclude signing material, device logs and generated outputs from publication.
+COMPACT.md	Provide a compact continuation handoff with exact artifact and remaining tests.
+CONTEXT.md	Preserve detailed scope, evidence, mappings, crash repairs and build context.
+README.md	Describe the experimental clone, release downloads and repository navigation.
+aigrammar/.gitignore	Exclude generated build outputs and private signing material from version control.
+aigrammar/DENSITY-RESTORE.md	Document the source split, exact repair, compiled resource/image checks and offline recovery commands.
+aigrammar/README.md	Provide evidence, exact commands, per-part verification and runtime debugging checklist.
+aigrammar/STARTUP-REPAIR.md	Document both observed startup crashes, their exact fixes, build changes, and remaining missing assets.
+aigrammar/build-helper.sh	Compile Java 8, dex and disassemble into the next free smali folder offline.
+aigrammar/build-termux.sh	Build, align, sign and verify with pre-staged local tools.
+aigrammar/restore-density-resources.py	Reproduce evidence-based matching-version split recovery with ID and file collision checks.
+aigrammar/source-splits/gboard-18.4.1-xxhdpi.apk	Retain the user-supplied matching density split for reproducible resource recovery.
+aigrammar/src/com/aigrammar/CloneIdentity.java	Recognize only the clone package and actual pinned APK signer for the app-local startup self-check.
+aigrammar/src/com/aigrammar/EditorPolicy.java	Block sensitive/editor-private fields before reading text.
+aigrammar/src/com/aigrammar/GrammarBridge.java	Attach row, debounce, reject stale results and replace only the checked sentence.
+aigrammar/src/com/aigrammar/GrammarClient.java	Implement the requested Gemini API client and cancellation.
+aigrammar/src/com/aigrammar/SentenceSlice.java	Extract a complete bounded sentence and preserve trailing whitespace.
+aigrammar/src/com/aigrammar/SettingsActivity.java	Add independent key/model/enable/Test settings.
+aigrammar/tests/IdentityTest.java	Check the exact clone identity and rejection of different packages, keys, and null/invalid data.
+aigrammar/tests/PolicyTest.java	Verify sensitive-field exclusions and bounded sentence extraction offline.
+base_decoded/.gitignore	Exclude generated build outputs and private signing material from version control.
+base_decoded/AndroidManifest.xml	Give the clone a separate install identity, providers/permissions and standalone grammar settings launcher.
+base_decoded/res/drawable-ldrtl-xxhdpi/APKTOOL_RENAMED_0x7f080221.9.png	Restore original 0x7f080221 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-sw768dp-xxhdpi/APKTOOL_RENAMED_0x7f080555.webp	Restore original 0x7f080555 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xhdpi/APKTOOL_RENAMED_0x7f080377.png	Restore original 0x7f080377 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801e4.9.png	Restore original 0x7f0801e4 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801e9.png	Restore original 0x7f0801e9 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801ea.png	Restore original 0x7f0801ea image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801ef.png	Restore original 0x7f0801ef image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801f0.png	Restore original 0x7f0801f0 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801f1.9.png	Restore original 0x7f0801f1 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801f2.9.png	Restore original 0x7f0801f2 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801f5.9.png	Restore original 0x7f0801f5 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0801fc.png	Restore original 0x7f0801fc image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080209.9.png	Restore original 0x7f080209 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08020a.9.png	Restore original 0x7f08020a image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08020b.9.png	Restore original 0x7f08020b image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08020c.9.png	Restore original 0x7f08020c image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08020d.9.png	Restore original 0x7f08020d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080210.9.png	Restore original 0x7f080210 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080211.9.png	Restore original 0x7f080211 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080214.9.png	Restore original 0x7f080214 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080215.9.png	Restore original 0x7f080215 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080219.png	Restore original 0x7f080219 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08021a.png	Restore original 0x7f08021a image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08021b.png	Restore original 0x7f08021b image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08021c.9.png	Restore original 0x7f08021c image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08021d.9.png	Restore original 0x7f08021d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080221.9.png	Restore original 0x7f080221 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080226.9.png	Restore original 0x7f080226 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080228.9.png	Restore original 0x7f080228 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022a.png	Restore original 0x7f08022a image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022b.png	Restore original 0x7f08022b image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022c.png	Restore original 0x7f08022c image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022d.9.png	Restore original 0x7f08022d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022e.9.png	Restore original 0x7f08022e image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08022f.9.png	Restore original 0x7f08022f image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080230.9.png	Restore original 0x7f080230 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080373.png	Restore original 0x7f080373 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080375.png	Restore original 0x7f080375 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080376.png	Restore original 0x7f080376 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080503.webp	Restore original 0x7f080503 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080504.webp	Restore original 0x7f080504 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080525.webp	Restore original 0x7f080525 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080526.webp	Restore original 0x7f080526 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080527.webp	Restore original 0x7f080527 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080528.webp	Restore original 0x7f080528 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080529.webp	Restore original 0x7f080529 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052a.png	Restore original 0x7f08052a image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052b.png	Restore original 0x7f08052b image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052c.png	Restore original 0x7f08052c image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052d.webp	Restore original 0x7f08052d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052e.webp	Restore original 0x7f08052e image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08052f.webp	Restore original 0x7f08052f image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080530.webp	Restore original 0x7f080530 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080539.webp	Restore original 0x7f080539 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080548.png	Restore original 0x7f080548 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080549.png	Restore original 0x7f080549 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08054a.webp	Restore original 0x7f08054a image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08054c.webp	Restore original 0x7f08054c image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08054d.webp	Restore original 0x7f08054d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08054e.webp	Restore original 0x7f08054e image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08054f.webp	Restore original 0x7f08054f image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080550.webp	Restore original 0x7f080550 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080551.webp	Restore original 0x7f080551 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080552.webp	Restore original 0x7f080552 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080553.webp	Restore original 0x7f080553 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080555.webp	Restore original 0x7f080555 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080556.webp	Restore original 0x7f080556 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08055b.webp	Restore original 0x7f08055b image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080561.webp	Restore original 0x7f080561 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080593.png	Restore original 0x7f080593 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080594.png	Restore original 0x7f080594 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080595.png	Restore original 0x7f080595 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080597.png	Restore original 0x7f080597 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f080598.png	Restore original 0x7f080598 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08059d.png	Restore original 0x7f08059d image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08059e.webp	Restore original 0x7f08059e image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08059f.webp	Restore original 0x7f08059f image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a0.webp	Restore original 0x7f0805a0 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a1.webp	Restore original 0x7f0805a1 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a2.webp	Restore original 0x7f0805a2 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a7.webp	Restore original 0x7f0805a7 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a8.webp	Restore original 0x7f0805a8 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805a9.webp	Restore original 0x7f0805a9 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805aa.webp	Restore original 0x7f0805aa image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805ab.webp	Restore original 0x7f0805ab image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805ac.webp	Restore original 0x7f0805ac image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805af.webp	Restore original 0x7f0805af image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b0.webp	Restore original 0x7f0805b0 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b1.webp	Restore original 0x7f0805b1 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b2.webp	Restore original 0x7f0805b2 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b5.webp	Restore original 0x7f0805b5 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b6.webp	Restore original 0x7f0805b6 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b7.webp	Restore original 0x7f0805b7 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b8.webp	Restore original 0x7f0805b8 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b9.webp	Restore original 0x7f0805b9 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805ba.webp	Restore original 0x7f0805ba image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805bb.webp	Restore original 0x7f0805bb image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805bc.webp	Restore original 0x7f0805bc image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805bd.webp	Restore original 0x7f0805bd image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805be.webp	Restore original 0x7f0805be image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805bf.webp	Restore original 0x7f0805bf image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805c0.webp	Restore original 0x7f0805c0 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805c1.webp	Restore original 0x7f0805c1 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805c2.webp	Restore original 0x7f0805c2 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805c3.webp	Restore original 0x7f0805c3 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805c4.webp	Restore original 0x7f0805c4 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805d8.webp	Restore original 0x7f0805d8 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805da.webp	Restore original 0x7f0805da image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805db.webp	Restore original 0x7f0805db image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805dc.webp	Restore original 0x7f0805dc image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805e1.webp	Restore original 0x7f0805e1 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805e5.webp	Restore original 0x7f0805e5 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f08067e.png	Restore original 0x7f08067e image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0806a7.png	Restore original 0x7f0806a7 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0806d9.png	Restore original 0x7f0806d9 image/configuration from the matching config.xxhdpi split.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0801e7.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0801ed.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0801f8.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080206.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080207.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f08020e.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f08020f.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080212.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080213.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f08021e.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080220.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080222.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080225.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080227.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080231.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0803be.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0803bf.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0803d4.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f08053a.xml	Replace the missing welcome bitmap wrapper with the clone artwork already supplied for its launcher.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080560.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080592.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f080596.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f08059c.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/drawable/aigrammar_launcher_background.xml	Add new vector/adaptive launcher artwork.
+base_decoded/res/drawable/aigrammar_launcher_foreground.xml	Add new vector/adaptive launcher artwork.
+base_decoded/res/drawable/aigrammar_off.xml	Add activated-state ON/OFF toggle vector resources.
+base_decoded/res/drawable/aigrammar_on.xml	Add activated-state ON/OFF toggle vector resources.
+base_decoded/res/drawable/aigrammar_toggle.xml	Add activated-state ON/OFF toggle vector resources.
+base_decoded/res/layout/APKTOOL_RENAMED_0x7f0e07d4.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/layout/APKTOOL_RENAMED_0x7f0e07eb.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/layout/APKTOOL_RENAMED_0x7f0e07ec.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/mipmap-anydpi/ic_app.xml	Replace the launcher icon resources with the clone artwork.
+base_decoded/res/mipmap-anydpi/ic_app_round.xml	Replace the launcher icon resources with the clone artwork.
+base_decoded/res/values-hdpi/density_split.xml	Restore the original hdpi style override and parent, mapping attribute names by unchanged original IDs.
+base_decoded/res/values-xxhdpi/density_split.xml	Restore original xxhdpi integer 0x7f0c00f2 with value 10.
+base_decoded/res/values/public.xml	Preserve every original ID, reserve clone IDs above the original range, and restore 114 split IDs at their original values.
+base_decoded/res/values/strings.xml	Set the clone name and add app_name.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f08.xml	Restore 10 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f0b.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f0c.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f0d.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f11.xml	Restore 8 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f13.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f14.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f15.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f16.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f19.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f1a.xml	Restore 10 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f1b.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f170f1c.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171046.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17104a.xml	Restore 6 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17104b.xml	Restore 9 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17104c.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171200.xml	Restore 8 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171201.xml	Restore 8 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171205.xml	Restore 15 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171206.xml	Restore 15 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171210.xml	Restore 4 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f171224.xml	Restore 2 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17122b.xml	Restore 3 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17122c.xml	Restore 7 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17122d.xml	Restore 6 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/APKTOOL_RENAMED_0x7f17122e.xml	Restore 6 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/res/xml/method.xml	Restore 1 lost resource references using matching nonzero JADX IDs and recovered original assets.
+base_decoded/smali/esi.smali	Attach the row at the confirmed keyboard root before the IME register is reused.
+base_decoded/smali/me.smali	Add a package-and-certificate-pinned fallback only to the confirmed startup self-check, retaining its failure path.
+base_decoded/smali/nvc.smali	Preserve existing NO_SUGGESTIONS app entries and add the clone.
+base_decoded/smali/pbb.smali	Connect confirmed lifecycle and selection callbacks without changing locals or try/catch blocks.
+base_decoded/smali_classes2/syk.smali	Recognize clone-owned editors in the existing self-package check.
+base_decoded/smali_classes5/com/aigrammar/CloneIdentity.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/EditorPolicy.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda0.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda1.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda2.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$1.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$2.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$Snapshot.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$1.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$2.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$Callback.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SentenceSlice.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda0.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda1.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda2.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$1.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity.smali	Generated from the supplied Java using javac, D8 and baksmali; add the helper without renaming existing classes.

@@ -9,12 +9,12 @@
             <label location="@id/APKTOOL_RENAMED_0x7f0b0600" value="$long_press_data$" />
         </softkey_template>
         <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b268c">
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d97" id="@id/APKTOOL_RENAMED_0x7f0b2428" key_image="@null" keycode="KEYCODE_1" long_press_data="1" press_data="h" />
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d99" id="@id/APKTOOL_RENAMED_0x7f0b242c" key_image="@null" keycode="KEYCODE_2" long_press_data="2" press_data="s" />
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d98" id="@id/APKTOOL_RENAMED_0x7f0b242a" key_image="@null" keycode="KEYCODE_3" long_press_data="3" press_data="p" />
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d96" id="@id/APKTOOL_RENAMED_0x7f0b2426" key_image="@null" keycode="KEYCODE_4" long_press_data="4" press_data="n" />
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d9b" id="@id/APKTOOL_RENAMED_0x7f0b242d" key_image="@null" keycode="KEYCODE_5" long_press_data="5" press_data="z" />
-            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d9a" id="@id/APKTOOL_RENAMED_0x7f0b2429" key_image="@null" keycode="KEYCODE_6" long_press_data="6" press_data="*" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d97" id="@id/APKTOOL_RENAMED_0x7f0b2428" key_image="@drawable/APKTOOL_RENAMED_0x7f0805b7" keycode="KEYCODE_1" long_press_data="1" press_data="h" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d99" id="@id/APKTOOL_RENAMED_0x7f0b242c" key_image="@drawable/APKTOOL_RENAMED_0x7f0805b9" keycode="KEYCODE_2" long_press_data="2" press_data="s" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d98" id="@id/APKTOOL_RENAMED_0x7f0b242a" key_image="@drawable/APKTOOL_RENAMED_0x7f0805b8" keycode="KEYCODE_3" long_press_data="3" press_data="p" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d96" id="@id/APKTOOL_RENAMED_0x7f0b2426" key_image="@drawable/APKTOOL_RENAMED_0x7f0805b6" keycode="KEYCODE_4" long_press_data="4" press_data="n" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d9b" id="@id/APKTOOL_RENAMED_0x7f0b242d" key_image="@drawable/APKTOOL_RENAMED_0x7f0805bb" keycode="KEYCODE_5" long_press_data="5" press_data="z" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140d9a" id="@id/APKTOOL_RENAMED_0x7f0b2429" key_image="@drawable/APKTOOL_RENAMED_0x7f0805ba" keycode="KEYCODE_6" long_press_data="6" press_data="*" />
         </softkey_list>
         <softkey_template id="@id/APKTOOL_RENAMED_0x7f0b268f" layout="@layout/APKTOOL_RENAMED_0x7f0e06dc" multi_touch="false" popup_timing="ON_GESTURE" slide_sensitivity="NORMAL">
             <action data="$press_data$" intention="COMMIT" keycode="$keycode$" type="PRESS" />
@@ -41,38 +41,38 @@
             <action data="'" intention="DECODE" keycode="KEYCODE_7" type="PRESS" />
             <action data="7" intention="COMMIT" keycode="KEYCODE_7" popup_label="7" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
             <if language="zh-HK|zh-TW|zh-XG">
-                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080556" />
             </if>
             <else>
-                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080555" />
             </else>
             <label location="@id/APKTOOL_RENAMED_0x7f0b0600" value="7" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f14033c" id="@id/APKTOOL_RENAMED_0x7f0b0cbc" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
             <action data="@string/APKTOOL_RENAMED_0x7f1405b4" keycode="SWITCH_KEYBOARD" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08059e" />
         </softkey>
         <softkey alpha="@integer/APKTOOL_RENAMED_0x7f0c005e" content_description="" id="@id/APKTOOL_RENAMED_0x7f0b0985" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080550" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140171" id="@id/APKTOOL_RENAMED_0x7f0b0986" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
             <action data="SUB_CATEGORY_1" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080552" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140172" id="@id/APKTOOL_RENAMED_0x7f0b0987" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
             <action data="SUB_CATEGORY_2" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080552" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f14016f" id="@id/APKTOOL_RENAMED_0x7f0b0982" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
             <action data="SUB_CATEGORY_2" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08054e" />
         </softkey>
         <softkey content_description="@string/APKTOOL_RENAMED_0x7f140170" id="@id/APKTOOL_RENAMED_0x7f0b0983" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
             <action data="SUB_CATEGORY_3" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08054e" />
         </softkey>
         <softkey alpha="@integer/APKTOOL_RENAMED_0x7f0c005e" content_description="" id="@id/APKTOOL_RENAMED_0x7f0b0984" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
-            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f08054c" />
         </softkey>
         <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1402a3" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2194" layout="@layout/APKTOOL_RENAMED_0x7f0e0755">
             <action data="prime" keycode="SWITCH_KEYBOARD" type="PRESS" />
