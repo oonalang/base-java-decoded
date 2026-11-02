@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView style="@style/APKTOOL_RENAMED_0x7f151153"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/APKTOOL_RENAMED_0x7f151154">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_RENAMED_0x7f0b2a61" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingVertical="@dimen/APKTOOL_RENAMED_0x7f0709ee">
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15114c" />
+            <TextView app:APKTOOL_RENAMED_0x7f040720="true" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b03c0" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040759="0.0dp" style="@style/APKTOOL_RENAMED_0x7f15114d" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout style="@style/APKTOOL_RENAMED_0x7f15114b">
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e081b" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView>

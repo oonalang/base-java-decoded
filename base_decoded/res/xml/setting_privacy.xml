@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/APKTOOL_RENAMED_0x7f140c49" android:key="@string/APKTOOL_RENAMED_0x7f140a76"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140c18" android:key="@string/APKTOOL_RENAMED_0x7f140bda">
+        <extra android:name="NON_INDEXABLE" android:value="true" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140ba8" android:key="@string/APKTOOL_RENAMED_0x7f140973" android:summary="@string/APKTOOL_RENAMED_0x7f140b9b" />
+        <com.google.android.libraries.inputmethod.preferencewidgets.LinkableSwitchPreference android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140c3a" android:key="@string/APKTOOL_RENAMED_0x7f140a46" android:summary="@string/APKTOOL_RENAMED_0x7f140c38" />
+        <com.google.android.libraries.inputmethod.preferencewidgets.LinkableSwitchPreference android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140bb2" android:key="@string/APKTOOL_RENAMED_0x7f140aae" android:summary="@string/APKTOOL_RENAMED_0x7f140bb1" />
+        <Preference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b63" android:key="@string/APKTOOL_RENAMED_0x7f140c97" android:summary="@string/APKTOOL_RENAMED_0x7f140b62" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140c4d" android:key="@string/APKTOOL_RENAMED_0x7f140c4c">
+        <com.google.android.libraries.inputmethod.preferencewidgets.AutoSyncedSwitchPreference android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140ba9" android:key="@string/APKTOOL_RENAMED_0x7f140975" android:summary="@string/APKTOOL_RENAMED_0x7f140caa" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

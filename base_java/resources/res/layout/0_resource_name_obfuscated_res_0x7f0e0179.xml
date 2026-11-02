@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0410" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e017c"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e017b"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0417" android:visibility="invisible" android:foreground="@drawable/0_resource_name_obfuscated_res_0x7f080370" style="@style/0_resource_name_obfuscated_res_0x7f1504eb"/>
+</merge>

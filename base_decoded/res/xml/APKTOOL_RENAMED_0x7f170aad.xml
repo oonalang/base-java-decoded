@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a19" view_id="@id/key_pos_left_arrow" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2336" view_id="@id/key_pos_right_arrow" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b241b" view_id="@id/key_pos_space" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1598" view_id="@id/key_pos_show_more_candidates" />
+        <if japanese_use_tri_state_mode="true" />
+        <else>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b247d" view_id="@id/key_pos_switch_to_symbol" />
+        </else>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1566" view_id="@id/key_pos_del" />
+    </key_mapping>
+    <if free_cursor_in_split_keyboard_gap="true">
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1297" view_id="@id/APKTOOL_RENAMED_0x7f0b28fb" />
+        </key_mapping>
+    </if>
+    <if expressions="policy_transparency">
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2471" view_id="@id/key_pos_switch_to_smiley" />
+        </key_mapping>
+    </if>
+    <else_if expressions="hidden">
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b247d" view_id="@id/key_pos_switch_to_symbol" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fe4" view_id="@id/key_pos_switch_to_smiley" />
+        </key_mapping>
+    </else_if>
+    <else>
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2470" view_id="@id/key_pos_switch_to_smiley" />
+        </key_mapping>
+        <key_mapping state="EMOJI_AVAILABLE">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b246d" view_id="@id/key_pos_switch_to_smiley" />
+        </key_mapping>
+    </else>
+    <key_mapping state="MORE_CANDIDATES_SHOWN">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1577" view_id="@id/key_pos_show_more_candidates" />
+    </key_mapping>
+    <key_mapping state="FIRST_PAGE">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1597" view_id="@id/key_pos_show_more_candidates" />
+    </key_mapping>
+    <key_mapping state="MORE_CANDIDATES_SHOWN+FIRST_PAGE">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1576" view_id="@id/key_pos_show_more_candidates" />
+    </key_mapping>
+    <if undo="true">
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2846" view_id="@id/key_pos_undo" />
+        </key_mapping>
+        <key_mapping state="UNDO_AVAILABLE">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2845" view_id="@id/key_pos_undo" />
+        </key_mapping>
+    </if>
+    <else>
+        <key_mapping>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2847" view_id="@id/key_pos_undo" />
+        </key_mapping>
+    </else>
+    <key_mapping state="COMPOSING">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2846" view_id="@id/key_pos_undo" />
+    </key_mapping>
+    <key_mapping state="COMPOSING+UNDO_AVAILABLE">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2845" view_id="@id/key_pos_undo" />
+    </key_mapping>
+    <key_mapping state="COMPOSING">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e0f" view_id="@id/key_pos_del" />
+    </key_mapping>
+</framework>

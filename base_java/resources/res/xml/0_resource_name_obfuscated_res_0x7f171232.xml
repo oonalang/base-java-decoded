@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/0_resource_name_obfuscated_res_0x7f0b2628" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0705" popup_timing="ON_TOUCH">
+            <action data="$param_data$" intention="COMMIT" keycode="KEYCODE_BACK" type="PRESS"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="$param_data$"/>
+        </softkey_template>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2628">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b22d9" param_data="%"/>
+        </softkey_list>
+    </softkeys>
+</framework>

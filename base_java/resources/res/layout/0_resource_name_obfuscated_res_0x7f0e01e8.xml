@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0369" style="@style/0_resource_name_obfuscated_res_0x7f1501e3">
+    <FrameLayout android:tag=".bg.expression-keyboard-background" android:background="@drawable/0_resource_name_obfuscated_res_0x7f08026e" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04010d">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/0_resource_name_obfuscated_res_0x7f1502b5">
+            <com.google.android.libraries.inputmethod.contentsuggestion.browse.resource.CategoryViewPager android:id="@+id/0_resource_name_obfuscated_res_0x7f0b026c" android:layout_width="match_parent" android:layout_height="match_parent" android:keyboardNavigationCluster="true"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e00b8"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

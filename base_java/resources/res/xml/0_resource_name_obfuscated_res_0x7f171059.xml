@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2680">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12e9" long_press_data="ჷ" press_data="ჯ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12df" long_press_data="ჱ" press_data="ე"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ef" long_press_data="ჼ" press_data="ნ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12e1" long_press_data="ჹ" press_data="გ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12fd" long_press_data="ჴ" press_data="ხ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f2" long_press_data="ჶ" press_data="ფ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12fb" long_press_data="ჳ" press_data="ვ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12d7" long_press_data="ჺ" press_data="ა"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f3" long_press_data="ჸ" press_data="ყ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12e8" long_press_data="ჲ" press_data="ი"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12e3" long_press_data="ჵ" press_data="ჰ"/>
+        </softkey_list>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2686">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12e2" press_data="ღ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12fa" press_data="უ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12eb" press_data="კ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f6" press_data="შ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12dc" press_data="წ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ff" press_data="ზ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12d9" press_data="ც"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ea" press_data="ძ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f7" press_data="თ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f1" press_data="პ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f4" press_data="რ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f0" press_data="ო"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ed" press_data="ლ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12dd" press_data="დ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1300" press_data="ჟ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12da" press_data="ჭ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12db" press_data="ჩ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f5" press_data="ს"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ee" press_data="მ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12f8" press_data="ტ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12ec" press_data="ქ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b12d8" press_data="ბ"/>
+        </softkey_list>
+    </softkeys>
+</framework>

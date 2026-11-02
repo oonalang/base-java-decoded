@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinSymbolsKeyboard" popup="@attr/APKTOOL_RENAMED_0x7f040279" recent_key_layout="@layout/APKTOOL_RENAMED_0x7f0e073c" recent_key_popup_layout="@layout/APKTOOL_RENAMED_0x7f0e061a">
+        <ifnot keyboard_mode="floating_panel">
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e052e" scalable="false" type="header">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            </view>
+        </ifnot>
+        <if keyboard_mode="split">
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e0503" type="body" />
+        </if>
+        <else_if device="foldable|tablet" keyboard_mode="normal">
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e0505" type="body" />
+        </else_if>
+        <else>
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e0504" type="body" />
+        </else>
+        <view type="body">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler" />
+            <motion_event_handler class=".motioneventhandler.scrubmove.ScrubDeleteMotionEventHandler" preference_key="@string/APKTOOL_RENAMED_0x7f140966" reverse_preference="false" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170ec1" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170fd3" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17122f" />
+            <if language="zh">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171221" />
+            </if>
+            <else>
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f17121f" />
+            </else>
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f171220" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f10" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f0c" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f171224" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef8" />
+            <if device="foldable|tablet" keyboard_mode="normal|split">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a7a" />
+            </if>
+            <else_if device="phone" keyboard_mode="split">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a7a" />
+            </else_if>
+            <else>
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a79" />
+            </else>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c3f" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c38" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c3a" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c3b" />
+        </view>
+    </keyboard>
+</framework>

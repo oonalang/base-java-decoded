@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4f" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404c0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b038c" android:tag=".label.secondary" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f140441"/>

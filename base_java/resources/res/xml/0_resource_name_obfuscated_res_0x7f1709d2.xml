@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1910" view_id="@+id/D03"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1972" view_id="@+id/D09"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b18dc" view_id="@+id/C01"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b199e" view_id="@+id/C02"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1959" view_id="@+id/C09"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a12" view_id="@+id/B01"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a0e" view_id="@+id/B02"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b18ed" view_id="@+id/B03"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1967" view_id="@+id/B06"/>
+    </key_mapping>
+</framework>

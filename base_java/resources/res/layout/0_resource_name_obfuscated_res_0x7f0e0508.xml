@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f1501db">
+    <com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MotionLayoutWorkaround android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0423" app:layoutDescription="@xml/0_resource_name_obfuscated_res_0x7f170ec4" style="@style/0_resource_name_obfuscated_res_0x7f1501f1">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e024d"/>
+        <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f150345">
+            <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f1501eb">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0509"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e04f3"/>
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MotionLayoutWorkaround>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

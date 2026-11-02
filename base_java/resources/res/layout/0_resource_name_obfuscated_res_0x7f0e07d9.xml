@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f150cd5" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f150cd0">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0604" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f150538">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="0dp"/>
+        <FrameLayout android:id="@+id/key_pos_translate_back_wrapper" android:layout_marginTop="6dp" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f0709a2" android:paddingEnd="?attr/0_resource_name_obfuscated_res_0x7f0402d9" app:layout_constraintBottom_toTopOf="@+id/0_resource_name_obfuscated_res_0x7f0b29d9" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f1506bc">
+            <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:layout_gravity="center" android:id="@+id/key_pos_translate_back" android:tag=".oval-navigation-highlight" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29d7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f0709a2" app:layout_constraintBottom_toTopOf="@+id/0_resource_name_obfuscated_res_0x7f0b29d9" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintStart_toEndOf="@+id/key_pos_translate_back_wrapper" app:layout_constraintTop_toTopOf="0">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07dd"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29d9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f0709a2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b03a0">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07df"/>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0dp"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

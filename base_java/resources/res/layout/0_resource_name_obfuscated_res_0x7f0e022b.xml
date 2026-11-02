@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag=".keyboard-header-area" android:background="?attr/0_resource_name_obfuscated_res_0x7f04002d" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:enableTooltipText="true" style="@style/0_resource_name_obfuscated_res_0x7f15035b">
+    <LinearLayout android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0453" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0199"/>
+        <include android:layout_width="match_parent" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f040343" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0193"/>
+        <include android:visibility="gone" layout="@layout/0_resource_name_obfuscated_res_0x7f0e018f"/>
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b044b" android:paddingTop="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e019e"/>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

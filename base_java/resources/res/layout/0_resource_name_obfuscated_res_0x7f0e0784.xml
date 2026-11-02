@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.accesspoint.widget.AccessPointsBarItemSoftKeyView xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="gone" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f040009" android:layout_height="match_parent"/>

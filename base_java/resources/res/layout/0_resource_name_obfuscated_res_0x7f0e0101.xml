@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b02b5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0116" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" android:layout_marginHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04011f" app:liftOnScrollColor="@android:color/transparent">
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01e3" android:layout_width="match_parent" android:layout_height="wrap_content" android:keyboardNavigationCluster="true" app:layout_scrollFlags="0x7"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e00d5"/>
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f8"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

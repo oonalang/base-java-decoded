@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f17119e" />
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140505" id="@id/APKTOOL_RENAMED_0x7f0b242f">
+            <action data="RECENTS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b6" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="GENERAL" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17119a" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b5" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="BRACKETS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f171197" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b1" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="ARROWS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f171196" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b7" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="MATHEMATICS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17119b" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b8" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="NUMBERS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17119c" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b9" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="SHAPES" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17119d" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b2" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="FULL_WIDTH" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <if keyboard_mode="floating_panel">
+            <include href="@xml/APKTOOL_RENAMED_0x7f171199" />
+        </if>
+        <else>
+            <include href="@xml/APKTOOL_RENAMED_0x7f171198" />
+        </else>
+    </softkeys>
+</framework>

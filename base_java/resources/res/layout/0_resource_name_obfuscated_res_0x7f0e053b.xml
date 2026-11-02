@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150304">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner style="@style/0_resource_name_obfuscated_res_0x7f15030c">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0224"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0232"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0227"/>
+        <LinearLayout app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/key_pos_header_end_extra_key" app:layout_constraintStart_toEndOf="@+id/key_pos_header_start_extra_key" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15030d">
+            <com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout style="@style/0_resource_name_obfuscated_res_0x7f150781">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0223"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0225"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0687"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e022d"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e066c"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07ee"/>
+            </com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0231"/>
+        </LinearLayout>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0228"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e022e"/>
+        <include layout="@attr/0_resource_name_obfuscated_res_0x7f04000b"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

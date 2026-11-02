@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="?APKTOOL_RENAMED_0x7f04057a" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f0806af" style="@style/APKTOOL_RENAMED_0x7f150cdc" />
+            <com.google.android.material.textview.MaterialTextView android:id="@id/APKTOOL_RENAMED_0x7f0b036d" android:text="@string/APKTOOL_RENAMED_0x7f140378" style="@style/APKTOOL_RENAMED_0x7f150ce2" />
+            <com.google.android.material.textview.MaterialTextView android:id="@id/APKTOOL_RENAMED_0x7f0b0378" android:text="@string/APKTOOL_RENAMED_0x7f140424" style="@style/APKTOOL_RENAMED_0x7f150ce0" />
+            <android.support.v7.widget.RecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b036f" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ImageView android:layout_gravity="bottom" style="@style/APKTOOL_RENAMED_0x7f150cdf" />
+</FrameLayout>

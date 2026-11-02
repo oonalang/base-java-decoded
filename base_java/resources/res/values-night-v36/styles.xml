@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="0_resource_name_obfuscated_res_0x7f150548" parent="@android:style/Widget.Material.SeekBar">
+        <item name="android:progressTint">@android:color/background_cache_hint_selector_material_light</item>
+        <item name="android:progressBackgroundTint">@android:color/accent_material_light</item>
+        <item name="android:progressBackgroundTintMode">src_over</item>
+        <item name="android:thumbTint">@android:color/background_cache_hint_selector_material_light</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f1509cc" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
+    </style>
+</resources>

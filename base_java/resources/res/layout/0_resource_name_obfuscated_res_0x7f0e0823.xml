@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f15114f">
+    <TextView android:text="@string/0_resource_name_obfuscated_res_0x7f1411b0" style="@style/0_resource_name_obfuscated_res_0x7f151151"/>
+</FrameLayout>

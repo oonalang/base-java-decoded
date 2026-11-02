@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150ce6">
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="14dp" android:textColor="@android:color/white" android:gravity="center" android:tag=".banner-tooltip-foreground" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/0_resource_name_obfuscated_res_0x7f14165c" android:paddingStart="24dp" android:paddingEnd="24dp" app:fontFamily="?attr/0_resource_name_obfuscated_res_0x7f040160" app:scaleMode="3"/>
+</FrameLayout>

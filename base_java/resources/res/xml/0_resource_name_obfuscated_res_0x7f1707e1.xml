@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <if keyboard_mode="split">
+            <if split_with_duplicate_keys="true">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03a2" type="linear"/>
+            </if>
+            <else>
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03a3" type="linear"/>
+            </else>
+        </if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03a1" type="linear"/>
+        </else>
+        <view type="linear">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e47"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c09"/>
+        </view>
+    </keyboard>
+</framework>

@@ -1,0 +1,22 @@
+package defpackage;
+
+import android.graphics.Bitmap;
+/* compiled from: PG */
+/* renamed from: dbt  reason: default package */
+/* loaded from: classes.dex */
+public final class dbt {
+    public final int a;
+    public final int b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public Bitmap f;
+
+    public dbt(int i, int i2, String str, String str2, String str3) {
+        this.a = i;
+        this.b = i2;
+        this.c = str;
+        this.d = str2;
+        this.e = str3;
+    }
+}

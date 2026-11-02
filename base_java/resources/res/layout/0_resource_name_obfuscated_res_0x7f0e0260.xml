@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b042c" app:ignoreHorizontalSystemPadding="true" app:layout_customizedKeyboardHeight="?attr/0_resource_name_obfuscated_res_0x7f040340" style="@style/0_resource_name_obfuscated_res_0x7f1501db">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner app:align_end_edge="true" app:align_start_edge="true" style="@style/0_resource_name_obfuscated_res_0x7f150535">
+        <ViewSwitcher android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a6f" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e055f"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0560"/>
+            </FrameLayout>
+        </ViewSwitcher>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

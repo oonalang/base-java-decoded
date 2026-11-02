@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.popup.MaterialPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b070c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:CoversSoftKey="?attr/0_resource_name_obfuscated_res_0x7f040276" app:PopupDistance="?attr/0_resource_name_obfuscated_res_0x7f040241">
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0726" style="@style/0_resource_name_obfuscated_res_0x7f15048e">
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b071a" style="@style/0_resource_name_obfuscated_res_0x7f150490">
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0720" android:visibility="gone" android:maxWidth="?attr/0_resource_name_obfuscated_res_0x7f04023d" app:fontFamily="@font/0_resource_name_obfuscated_res_0x7f090047" app:scaleMode="3" app:textLocale="my-MM" style="@style/0_resource_name_obfuscated_res_0x7f150487"/>
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b071f" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f150484"/>
+            <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b071c" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f150483"/>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.popup.MaterialPopupView>

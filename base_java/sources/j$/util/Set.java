@@ -1,0 +1,14 @@
+package j$.util;
+/* compiled from: r8-map-id-fd22f1968c39b86d0902f5def5db06fa39f2ae50df95035a94baeb03b9627d73 */
+/* loaded from: classes4.dex */
+public interface Set<E> extends Collection<E> {
+
+    /* compiled from: r8-map-id-fd22f1968c39b86d0902f5def5db06fa39f2ae50df95035a94baeb03b9627d73 */
+    /* renamed from: j$.util.Set$-CC  reason: invalid class name */
+    /* loaded from: classes4.dex */
+    public final /* synthetic */ class CC {
+    }
+
+    @Override // j$.util.Collection, java.lang.Iterable, j$.util.List, j$.lang.a
+    Spliterator<E> spliterator();
+}

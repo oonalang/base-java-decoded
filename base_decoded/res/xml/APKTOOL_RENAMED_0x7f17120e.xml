@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f14053a" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b0cc5" layout="@layout/APKTOOL_RENAMED_0x7f0e0738" multi_touch="false">
+            <action data="prime" keycode="SWITCH_KEYBOARD" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f040187" />
+        </softkey>
+    </softkeys>
+</framework>

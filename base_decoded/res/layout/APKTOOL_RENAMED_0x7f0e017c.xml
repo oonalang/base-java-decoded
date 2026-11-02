@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b041c" android:tag="?APKTOOL_RENAMED_0x7f040086" android:background="@drawable/APKTOOL_RENAMED_0x7f080371" android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f07035e" android:paddingBottom="@dimen/APKTOOL_RENAMED_0x7f07035e" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0416" android:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f1504ea">
+        <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0413" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f1504e8" />
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@id/APKTOOL_RENAMED_0x7f0b0415" app:APKTOOL_RENAMED_0x7f04096c="APKTOOL_RENAMED_0x7f0b0796" style="@style/APKTOOL_RENAMED_0x7f1504e9" />
+    </LinearLayout>
+    <com.google.android.libraries.inputmethod.widgets.text.TransformationTextView android:id="@id/APKTOOL_RENAMED_0x7f0b041a" style="@style/APKTOOL_RENAMED_0x7f1504ec" />
+</LinearLayout>

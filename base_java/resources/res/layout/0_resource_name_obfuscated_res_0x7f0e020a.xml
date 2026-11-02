@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b036a" android:paddingTop="@dimen/0_resource_name_obfuscated_res_0x7f070171" style="@style/0_resource_name_obfuscated_res_0x7f1501e3">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout app:layout_behavior="@string/0_resource_name_obfuscated_res_0x7f140aef" style="@style/0_resource_name_obfuscated_res_0x7f1502b5">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0166" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039c" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="1" app:layout_constraintVertical_weight="1" style="@style/0_resource_name_obfuscated_res_0x7f15079d">
+                    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0058"/>
+                    <com.google.android.libraries.inputmethod.recyclerview.BindingRecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b016f" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+                <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="@dimen/0_resource_name_obfuscated_res_0x7f07093a"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/animated_image_holder_view_container" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintHorizontal_weight="1" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b039c" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15079b">
+                    <include android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0775" android:visibility="gone" layout="@layout/0_resource_name_obfuscated_res_0x7f0e067d"/>
+                    <com.google.android.apps.inputmethod.libs.search.widget.CategoryViewPager android:id="@+id/expression_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b010f" android:tag=".progress-bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f6"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

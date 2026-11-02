@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b265c">
+        <softkey long_press_data="&lt; { [" param_data="(" />
+        <softkey long_press_data="> } ]" param_data=")" />
+        <softkey param_data="[" />
+        <softkey param_data="]" />
+        <softkey param_data="{" />
+        <softkey param_data="}" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140409" param_data="（" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f14040d" param_data="）" />
+        <softkey param_data="［" />
+        <softkey param_data="］" />
+        <softkey param_data="｛" />
+        <softkey param_data="｝" />
+        <softkey param_data="❨" />
+        <softkey param_data="❩" />
+        <softkey param_data="❲" />
+        <softkey param_data="❳" />
+        <softkey param_data="❴" />
+        <softkey param_data="❵" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f14071d" param_data="‘" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140b02" param_data="’" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140717" param_data="“" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140afc" param_data="”" />
+        <softkey param_data="❛" />
+        <softkey param_data="❜" />
+        <softkey param_data="❝" />
+        <softkey param_data="❞" />
+        <softkey param_data="&lt;" />
+        <softkey param_data=">" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140d2d" param_data="〈" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140d2e" param_data="〉" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f1402b9" param_data="《" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f1402ba" param_data="》" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f14071b" param_data="〔" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140b00" param_data="〕" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140716" param_data="【" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140afb" param_data="】" />
+        <softkey param_data="〘" />
+        <softkey param_data="〙" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140720" param_data="「" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140b05" param_data="」" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f14071f" param_data="『" />
+        <softkey desc="@string/APKTOOL_RENAMED_0x7f140b04" param_data="』" />
+        <unicode_range from="U+FE35" param="param_data" to="U+FE42">
+            <softkey />
+        </unicode_range>
+    </softkey_list>
+</framework>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1036" view_id="@+id/E05"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cf7" view_id="@+id/D10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a31" view_id="@+id/D11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b234e" view_id="@+id/D12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1036" view_id="@+id/C08"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b21b6" view_id="@+id/C11"/>
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a23" view_id="@+id/D11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2340" view_id="@+id/D12"/>
+    </key_mapping>
+    <merge_key_mapping exclude_state="SHIFT" state="ALTGR">
+        <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1d73" view_id="@+id/D11"/>
+        <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1e64" view_id="@+id/D12"/>
+    </merge_key_mapping>
+</framework>

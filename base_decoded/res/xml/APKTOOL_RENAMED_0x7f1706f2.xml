@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if keyboard_mode="floating_panel">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706f3" />
+    </if>
+    <else>
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706f8" />
+    </else>
+</framework>

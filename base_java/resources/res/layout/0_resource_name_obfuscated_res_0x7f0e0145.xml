@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f150637">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e06cd"/>
+    <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f150638">
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0378" android:scrollbars="vertical" android:layout_marginTop="20dp" android:maxHeight="150dp" android:text="@string/0_resource_name_obfuscated_res_0x7f140424" android:paddingStart="@dimen/0_resource_name_obfuscated_res_0x7f0708ba" android:paddingEnd="@dimen/0_resource_name_obfuscated_res_0x7f0708ba" style="@style/0_resource_name_obfuscated_res_0x7f15051d"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0148"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0149"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

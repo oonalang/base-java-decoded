@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="196dp">
+    <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0399" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080208" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp"/>
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01de" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f0405a6" style="@style/0_resource_name_obfuscated_res_0x7f150527">
+        <RelativeLayout android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/0_resource_name_obfuscated_res_0x7f150528">
+            <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a6e" android:ellipsize="marquee" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29b6" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" style="@style/0_resource_name_obfuscated_res_0x7f15052b"/>
+            <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a77" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07ea" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/0_resource_name_obfuscated_res_0x7f0b29b6" style="@style/0_resource_name_obfuscated_res_0x7f15052b"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b292c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" style="@style/0_resource_name_obfuscated_res_0x7f15052a"/>
+    </LinearLayout>
+</android.support.v7.view.menu.ListMenuItemView>

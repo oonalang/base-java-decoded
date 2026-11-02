@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="false" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp">
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a27" android:tag=".label.voice-highlight" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a40" android:tag=".label.voice-promo-highlight" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:textColor="?android:attr/colorPrimary" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a36" android:tag=".voice-text-color-secondary" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a15" android:tag=".voice-text-color-generic-accent" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a3f" android:tag=".voice-text-color-primary" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a48" android:tag=".floating-tooltip-foreground" android:layout_width="0dp" android:layout_height="0dp"/>
+</LinearLayout>

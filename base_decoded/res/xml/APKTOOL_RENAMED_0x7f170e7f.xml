@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170e7a" />
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1f97" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1299" view_id="@id/B09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b240c" view_id="@id/B10" />
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_1">
+        <if language="zh">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cb7" view_id="@id/B08" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cb6" view_id="@id/B09" />
+        </if>
+        <else_if language="iw">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b149f" view_id="@id/B08" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b14c3" view_id="@id/B09" />
+        </else_if>
+        <else>
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a71" view_id="@id/B08" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2053" view_id="@id/B09" />
+        </else>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b232d" view_id="@id/B10" />
+    </key_mapping>
+    <if four_or_more_letter_rows="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f170e1b" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f170e7b" />
+    </if>
+    <else_if enable_number_row="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f170e1a" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f170e7b" />
+    </else_if>
+</framework>

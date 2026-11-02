@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="ar" string_id="ime_arabic">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" main_def="@xml/APKTOOL_RENAMED_0x7f17046e" support_a11y_keyboard="true" variant="arabic" variant_label="@string/APKTOOL_RENAMED_0x7f141414" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" main_def="@xml/APKTOOL_RENAMED_0x7f170471" support_a11y_keyboard="true" variant="arabic_two" variant_label="@string/APKTOOL_RENAMED_0x7f141415" />
+    </ime>
+</framework>

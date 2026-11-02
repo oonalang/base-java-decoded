@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f0407b0="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.keyboard.widget.ScrollableCandidatesHolderView android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b07a5" android:layout_width="wrap_content" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f04042a="@layout/APKTOOL_RENAMED_0x7f0e057a" candidate_background="@android:color/transparent">
+        <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b2930" />
+    </com.google.android.libraries.inputmethod.keyboard.widget.ScrollableCandidatesHolderView>
+</FrameLayout>

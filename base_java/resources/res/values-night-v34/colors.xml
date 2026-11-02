@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="0_resource_name_obfuscated_res_0x7f060b10">@android:color/car_cyan_500</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b11">@android:color/car_cyan_400</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b14">@android:color/car_cyan_900</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b15">@android:color/car_cyan_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b18">@android:color/car_green_300</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b1a">@android:color/car_grey_1000</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b1f">@android:color/car_grey_200</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b20">@android:color/car_keyboard_divider_line</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b21">@android:color/car_cyan_50</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b22">@android:color/car_cyan_300</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b26">@android:color/car_cyan_800</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b27">@android:color/car_cyan_600</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2a">@android:color/car_green_200</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2b">@android:color/car_green_800</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2c">@android:color/car_green_500</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2d">@android:color/car_green_600</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2e">@android:color/car_green_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2f">@android:color/car_green_400</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b31">@android:color/car_green_900</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b33">@android:color/car_grey_100</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b4e">@android:color/background_floating_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b4f">@android:color/background_floating_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5b">@android:color/car_green_300</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5d">@android:color/car_grey_1000</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5e">@color/0_resource_name_obfuscated_res_0x7f060b5f</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5f">@android:color/accent_material_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b60">@android:color/background_holo_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b61">@android:color/car_green_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b62">@android:color/background_device_default_dark</color>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag=".keytop.for-capslock-key" style="@style/0_resource_name_obfuscated_res_0x7f150365">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:tag=".background-icon.for-capslock-key.non-linear-scale" style="@style/0_resource_name_obfuscated_res_0x7f150328"/>
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" android:tag=".icon.for-function-key.for-capslock-key.non-linear-scale" style="@style/0_resource_name_obfuscated_res_0x7f150318"/>
+</FrameLayout>

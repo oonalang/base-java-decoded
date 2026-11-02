@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/APKTOOL_RENAMED_0x7f15044d">
+        <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" android:layout_weight="600.0" style="@style/APKTOOL_RENAMED_0x7f15031c" />
+    </LinearLayout>
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@id/APKTOOL_RENAMED_0x7f0b05f3" app:APKTOOL_RENAMED_0x7f0405c9="true" app:APKTOOL_RENAMED_0x7f0405ca="false" style="@style/APKTOOL_RENAMED_0x7f1503d3" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/0_resource_name_obfuscated_res_0x7f060b45">
+    <item android:id="@android:id/background">
+        <layer-list android:paddingTop="@dimen/0_resource_name_obfuscated_res_0x7f070895" android:paddingBottom="@dimen/0_resource_name_obfuscated_res_0x7f070895" android:paddingStart="@dimen/0_resource_name_obfuscated_res_0x7f070895" android:paddingEnd="@dimen/0_resource_name_obfuscated_res_0x7f070895" android:paddingMode="stack">
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/0_resource_name_obfuscated_res_0x7f070885"/>
+                    <solid android:color="@color/0_resource_name_obfuscated_res_0x7f060b2f"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

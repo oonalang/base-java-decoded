@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14048a" id="@id/APKTOOL_RENAMED_0x7f0b14dd" layout="@layout/APKTOOL_RENAMED_0x7f0e0748" multi_touch="false">
+            <action data="SUB_CATEGORY_2" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="1/4" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14048c" id="@id/APKTOOL_RENAMED_0x7f0b14da" layout="@layout/APKTOOL_RENAMED_0x7f0e0748" multi_touch="false">
+            <action data="SUB_CATEGORY_3" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="2/4" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14048e" id="@id/APKTOOL_RENAMED_0x7f0b14db" layout="@layout/APKTOOL_RENAMED_0x7f0e0748" multi_touch="false">
+            <action data="SUB_CATEGORY_4" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="3/4" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14048f" id="@id/APKTOOL_RENAMED_0x7f0b14dc" layout="@layout/APKTOOL_RENAMED_0x7f0e0748" multi_touch="false">
+            <action data="SUB_CATEGORY_1" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="4/4" />
+        </softkey>
+    </softkeys>
+</framework>

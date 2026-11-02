@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e7"/>
+        </shape>
+    </item>
+    <item android:gravity="bottom">
+        <shape>
+            <size android:height="@dimen/0_resource_name_obfuscated_res_0x7f0704a4"/>
+            <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404ca"/>
+        </shape>
+    </item>
+</layer-list>

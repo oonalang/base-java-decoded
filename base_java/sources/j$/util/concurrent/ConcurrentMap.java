@@ -1,0 +1,188 @@
+package j$.util.concurrent;
+
+import j$.nio.file.x;
+import j$.util.Map;
+import j$.util.Objects;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+/* compiled from: r8-map-id-fd22f1968c39b86d0902f5def5db06fa39f2ae50df95035a94baeb03b9627d73 */
+/* loaded from: classes4.dex */
+public interface ConcurrentMap<K, V> extends Map<K, V> {
+
+    /* compiled from: r8-map-id-fd22f1968c39b86d0902f5def5db06fa39f2ae50df95035a94baeb03b9627d73 */
+    /* renamed from: j$.util.concurrent.ConcurrentMap$-CC */
+    /* loaded from: classes4.dex */
+    public final /* synthetic */ class CC {
+        /* JADX WARN: Code restructure failed: missing block: B:38:0x0019, code lost:
+            return r1;
+         */
+        /* JADX WARN: Multi-variable type inference failed */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public static java.lang.Object $default$compute(java.util.concurrent.ConcurrentMap r2, java.lang.Object r3, java.util.function.BiFunction r4) {
+            /*
+            L0:
+                java.lang.Object r0 = r2.get(r3)
+            L4:
+                java.lang.Object r1 = r4.apply(r3, r0)
+                if (r1 == 0) goto L1a
+                if (r0 == 0) goto L13
+                boolean r0 = r2.replace(r3, r0, r1)
+                if (r0 == 0) goto L0
+                goto L19
+            L13:
+                java.lang.Object r0 = r2.putIfAbsent(r3, r1)
+                if (r0 != 0) goto L4
+            L19:
+                return r1
+            L1a:
+                if (r0 == 0) goto L22
+                boolean r0 = r2.remove(r3, r0)
+                if (r0 == 0) goto L0
+            L22:
+                r2 = 0
+                return r2
+            */
+            throw new UnsupportedOperationException("Method not decompiled: j$.util.concurrent.ConcurrentMap.CC.$default$compute(java.util.concurrent.ConcurrentMap, java.lang.Object, java.util.function.BiFunction):java.lang.Object");
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public static Object $default$computeIfAbsent(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, Function function) {
+            Object apply;
+            Objects.requireNonNull(function);
+            Object obj2 = concurrentMap.get(obj);
+            if (obj2 == null && (apply = function.apply(obj)) != null) {
+                Object putIfAbsent = concurrentMap.putIfAbsent(obj, apply);
+                if (putIfAbsent == null) {
+                    return apply;
+                }
+                return putIfAbsent;
+            }
+            return obj2;
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public static Object $default$computeIfPresent(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, BiFunction biFunction) {
+            Object apply;
+            Objects.requireNonNull(biFunction);
+            while (true) {
+                Object obj2 = concurrentMap.get(obj);
+                if (obj2 != null) {
+                    apply = biFunction.apply(obj, obj2);
+                    if (apply == null) {
+                        if (concurrentMap.remove(obj, obj2)) {
+                            break;
+                        }
+                    } else if (concurrentMap.replace(obj, obj2, apply)) {
+                        break;
+                    }
+                } else {
+                    return null;
+                }
+            }
+            return apply;
+        }
+
+        public static void $default$forEach(java.util.concurrent.ConcurrentMap concurrentMap, BiConsumer biConsumer) {
+            Objects.requireNonNull(biConsumer);
+            for (Map.Entry<K, V> entry : concurrentMap.entrySet()) {
+                try {
+                    biConsumer.accept(entry.getKey(), entry.getValue());
+                } catch (IllegalStateException unused) {
+                }
+            }
+        }
+
+        public static Object $default$getOrDefault(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, Object obj2) {
+            Object obj3 = concurrentMap.get(obj);
+            if (obj3 != null) {
+                return obj3;
+            }
+            return obj2;
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public static Object $default$merge(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, Object obj2, BiFunction biFunction) {
+            Objects.requireNonNull(biFunction);
+            Objects.requireNonNull(obj2);
+            while (true) {
+                Object obj3 = concurrentMap.get(obj);
+                while (obj3 == null) {
+                    obj3 = concurrentMap.putIfAbsent(obj, obj2);
+                    if (obj3 == null) {
+                        return obj2;
+                    }
+                }
+                Object apply = biFunction.apply(obj3, obj2);
+                if (apply != null) {
+                    if (concurrentMap.replace(obj, obj3, apply)) {
+                        return apply;
+                    }
+                } else if (concurrentMap.remove(obj, obj3)) {
+                    return null;
+                }
+            }
+        }
+
+        public static void $default$replaceAll(java.util.concurrent.ConcurrentMap concurrentMap, BiFunction biFunction) {
+            Objects.requireNonNull(biFunction);
+            x xVar = new x(concurrentMap, biFunction, (byte) 1);
+            if (concurrentMap instanceof ConcurrentMap) {
+                ((ConcurrentMap) concurrentMap).forEach(xVar);
+            } else {
+                $default$forEach(concurrentMap, xVar);
+            }
+        }
+    }
+
+    /* compiled from: r8-map-id-fd22f1968c39b86d0902f5def5db06fa39f2ae50df95035a94baeb03b9627d73 */
+    /* renamed from: j$.util.concurrent.ConcurrentMap$-EL */
+    /* loaded from: classes4.dex */
+    public final /* synthetic */ class EL {
+        public static /* synthetic */ Object compute(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, BiFunction biFunction) {
+            if (concurrentMap instanceof ConcurrentMap) {
+                return ((ConcurrentMap) concurrentMap).compute(obj, biFunction);
+            }
+            return CC.$default$compute(concurrentMap, obj, biFunction);
+        }
+
+        public static /* synthetic */ Object computeIfAbsent(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, Function function) {
+            if (concurrentMap instanceof ConcurrentMap) {
+                return ((ConcurrentMap) concurrentMap).computeIfAbsent(obj, function);
+            }
+            return CC.$default$computeIfAbsent(concurrentMap, obj, function);
+        }
+
+        public static /* synthetic */ Object getOrDefault(java.util.concurrent.ConcurrentMap concurrentMap, Object obj, Object obj2) {
+            if (concurrentMap instanceof ConcurrentMap) {
+                return ((ConcurrentMap) concurrentMap).getOrDefault(obj, obj2);
+            }
+            return CC.$default$getOrDefault(concurrentMap, obj, obj2);
+        }
+    }
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    V compute(K k, BiFunction<? super K, ? super V, ? extends V> biFunction);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    V computeIfAbsent(K k, Function<? super K, ? extends V> function);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    V computeIfPresent(K k, BiFunction<? super K, ? super V, ? extends V> biFunction);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    void forEach(BiConsumer<? super K, ? super V> biConsumer);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    V getOrDefault(Object obj, V v);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    V merge(K k, V v, BiFunction<? super V, ? super V, ? extends V> biFunction);
+
+    @Override // java.util.concurrent.ConcurrentMap, j$.util.concurrent.ConcurrentMap, j$.util.Map
+    void replaceAll(BiFunction<? super K, ? super V, ? extends V> biFunction);
+}

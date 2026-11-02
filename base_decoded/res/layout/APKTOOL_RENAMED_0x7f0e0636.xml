@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView android:theme="@style/APKTOOL_RENAMED_0x7f151136" app:APKTOOL_RENAMED_0x7f040472="@dimen/APKTOOL_RENAMED_0x7f0709e7" style="@style/APKTOOL_RENAMED_0x7f150233"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.widgets.CopyImageSourceView android:layout_gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b01e9" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f0709e3" android:layout_height="2.0dp" />
+    <LinearLayout android:orientation="vertical" style="@style/APKTOOL_RENAMED_0x7f150236">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a65" style="@style/APKTOOL_RENAMED_0x7f151131" />
+        <com.google.android.libraries.inputmethod.companionwidget.WidgetAccessPointsPanel android:id="@id/APKTOOL_RENAMED_0x7f0b2a4e" style="@style/APKTOOL_RENAMED_0x7f151133" />
+        <com.google.android.libraries.inputmethod.companionwidget.WidgetAccessPointsPanel android:id="@id/APKTOOL_RENAMED_0x7f0b2a50" style="@style/APKTOOL_RENAMED_0x7f151133" />
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a55" style="@style/APKTOOL_RENAMED_0x7f151131" />
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a51" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:tag=".widget.proactive-suggestions-holder-border" android:layout_width="40.0dp" android:layout_height="1.0dp" android:src="@color/APKTOOL_RENAMED_0x7f0605c8" android:importantForAccessibility="no" android:layout_marginVertical="@dimen/APKTOOL_RENAMED_0x7f0709e2" />
+                <FrameLayout android:id="@id/host" android:duplicateParentState="true" style="@style/APKTOOL_RENAMED_0x7f151131" />
+            </LinearLayout>
+        </com.google.android.libraries.inputmethod.widgets.SoftKeyView>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework force_show_number_row="false" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170558" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707dd" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707df" variant="qwerty" variant_label="">
+    <keyboard_group variant="{variant}" variant_label="{variant_label}">
+        <include force_show_number_row="{force_show_number_row}" href="@xml/0_resource_name_obfuscated_res_0x7f170003" support_a11y_keyboard="true"/>
+        <override_keyboard_xml_conditions>
+            <language value="en"/>
+        </override_keyboard_xml_conditions>
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <keyboard def="{lang_def}" type="prime">
+                <merge def="@xml/0_resource_name_obfuscated_res_0x7f170896"/>
+            </keyboard>
+        </if>
+        <else>
+            <keyboard def="{lang_def}" type="prime">
+                <if enable_number_row="true">
+                    <include href="@xml/0_resource_name_obfuscated_res_0x7f170894"/>
+                    <merge def="{no_header_main_def}"/>
+                </if>
+                <else>
+                    <merge def="{main_def}"/>
+                </else>
+            </keyboard>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170914"/>
+            <if enable_number_row="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec8"/>
+            </if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170eca"/>
+            </else>
+        </else>
+    </keyboard_group>
+</framework>

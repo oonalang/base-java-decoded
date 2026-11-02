@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/APKTOOL_RENAMED_0x7f1501e9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.FloatingMonolithicCandidatesRecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b14e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/APKTOOL_RENAMED_0x7f070370" android:keyboardNavigationCluster="true" app:APKTOOL_RENAMED_0x7f04042a="@layout/APKTOOL_RENAMED_0x7f0e072f" app:APKTOOL_RENAMED_0x7f0407ff="?APKTOOL_RENAMED_0x7f040135" app:APKTOOL_RENAMED_0x7f040883="?APKTOOL_RENAMED_0x7f040136" candidateTextOnlyLayout="@layout/APKTOOL_RENAMED_0x7f0e0731">
+        <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b2930" />
+        <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b0644" />
+    </com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.FloatingMonolithicCandidatesRecyclerView>
+</FrameLayout>

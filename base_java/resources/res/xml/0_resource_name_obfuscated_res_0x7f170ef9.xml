@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1404f6" id="@+id/0_resource_name_obfuscated_res_0x7f0b0ba6" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc" multi_touch="false">
+            <action keycode="KEYCODE_SOFT_LEFT" repeatable="true" type="PRESS"/>
+            <action keycode="KEYCODE_SOFT_RIGHT" type="UP"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080554"/>
+        </softkey>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1404f6" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b0ba7" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc" multi_touch="false" popup_timing="ON_GESTURE" slide_sensitivity="LESS">
+            <action keycode="KEYCODE_SOFT_LEFT" repeatable="true" type="PRESS"/>
+            <action keycode="KEYCODE_SOFT_RIGHT" type="UP"/>
+            <action keycode="KEYCODE_UNKNOWN" popup_label="@string/0_resource_name_obfuscated_res_0x7f140642" popup_layout="@layout/0_resource_name_obfuscated_res_0x7f0e0646" type="SLIDE_LEFT"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080554"/>
+        </softkey>
+    </softkeys>
+</framework>

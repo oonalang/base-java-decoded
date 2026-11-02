@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="krl-RU" string_id="ime_karelian">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" main_def="@xml/APKTOOL_RENAMED_0x7f1707b3" variant="karelian" variant_label="@string/APKTOOL_RENAMED_0x7f141505" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" main_def="@xml/APKTOOL_RENAMED_0x7f1707c9" variant="nordic" variant_label="@string/APKTOOL_RENAMED_0x7f1414a2" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c7" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706ca" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bc" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706be" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bd" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c6" lang_def="@xml/APKTOOL_RENAMED_0x7f1705bf" />
+    </ime>
+</framework>

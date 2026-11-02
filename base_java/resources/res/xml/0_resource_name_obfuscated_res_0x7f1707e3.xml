@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170896"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+        <if device="tablet" device_size="large" keyboard_mode="normal">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f1707e5"/>
+        </if>
+        <else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f1707e4"/>
+        </else>
+    </else>
+</framework>

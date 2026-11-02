@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/APKTOOL_RENAMED_0x7f1411b4" android:key="@string/APKTOOL_RENAMED_0x7f140a7b"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.preferencewidgets.LinkableSwitchPreference android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b7c" android:key="@string/APKTOOL_RENAMED_0x7f140941" android:summary="@string/APKTOOL_RENAMED_0x7f140b3a">
+        <extra android:name="hide_if_flag_is_false" android:value="enable_advanced_features_in_consolidated_sd_stack=false" />
+    </com.google.android.libraries.inputmethod.preferencewidgets.LinkableSwitchPreference>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b88" android:key="@string/APKTOOL_RENAMED_0x7f140942" android:summary="@string/APKTOOL_RENAMED_0x7f140bab" android:dependency="@string/APKTOOL_RENAMED_0x7f140941">
+        <extra android:name="hide_if_flag_is_false" android:value="enable_advanced_features_in_consolidated_sd_stack=false" />
+    </SwitchPreferenceCompat>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b89" android:key="@string/APKTOOL_RENAMED_0x7f140943" android:summary="@string/APKTOOL_RENAMED_0x7f140b38" android:dependency="@string/APKTOOL_RENAMED_0x7f140941">
+        <extra android:name="hide_if_flag_is_false" android:value="enable_advanced_features_in_consolidated_sd_stack=false" />
+    </SwitchPreferenceCompat>
+    <Preference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b40" android:key="@string/APKTOOL_RENAMED_0x7f140a7f" android:summary="@string/APKTOOL_RENAMED_0x7f140b41">
+        <extra android:name="hide_if_flag_is_true" android:value="hide_offline_speech_recognition=false" />
+    </Preference>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140c71" android:key="@string/APKTOOL_RENAMED_0x7f140a82" android:summary="@string/APKTOOL_RENAMED_0x7f140c6f">
+        <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f140380" />
+        <extra android:name="toolbar_type" android:value="voice" />
+    </SwitchPreferenceCompat>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b8e" android:key="@string/APKTOOL_RENAMED_0x7f14094c" android:summary="@string/APKTOOL_RENAMED_0x7f140b8d">
+        <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f140366" />
+    </SwitchPreferenceCompat>
+</PreferenceScreen>

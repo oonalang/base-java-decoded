@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29a4" android:layout_width="@dimen/0_resource_name_obfuscated_res_0x7f07098d" android:layout_height="@dimen/0_resource_name_obfuscated_res_0x7f07098c">
+    <com.google.android.material.card.MaterialCardView android:duplicateParentState="true" style="@style/0_resource_name_obfuscated_res_0x7f150b3f">
+        <com.google.android.material.card.MaterialCardView style="@style/0_resource_name_obfuscated_res_0x7f150b40">
+            <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b299e" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b299f" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07d0"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07d1"/>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="@dimen/0_resource_name_obfuscated_res_0x7f07098b" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404c0" android:gravity="bottom|center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b299d" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:scaleMode="3"/>
+</LinearLayout>

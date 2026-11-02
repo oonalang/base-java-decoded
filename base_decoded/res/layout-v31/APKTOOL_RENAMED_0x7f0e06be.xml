@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f0708b5" android:paddingBottom="@dimen/APKTOOL_RENAMED_0x7f0708b5" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0358" android:background="@drawable/APKTOOL_RENAMED_0x7f080722" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/APKTOOL_RENAMED_0x7f0708ad" android:paddingStart="@dimen/APKTOOL_RENAMED_0x7f0708b6" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f0708b7">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b2950" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f0708b4" android:layout_marginVertical="@dimen/APKTOOL_RENAMED_0x7f0708b4" style="@style/APKTOOL_RENAMED_0x7f150451" />
+        <Switch android:theme="@style/APKTOOL_RENAMED_0x7f150793" android:layout_gravity="center_vertical" android:id="@android:id/switch_widget" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48.0dp" />
+    </LinearLayout>
+</LinearLayout>

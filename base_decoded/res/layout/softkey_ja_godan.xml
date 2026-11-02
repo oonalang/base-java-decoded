@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b03c1" style="@style/APKTOOL_RENAMED_0x7f15034a"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03ca" android:tag=".label.secondary" style="@style/APKTOOL_RENAMED_0x7f150326" />
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" android:tag=".label" style="@style/APKTOOL_RENAMED_0x7f150326" />
+</FrameLayout>

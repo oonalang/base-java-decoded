@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:id="@id/APKTOOL_RENAMED_0x7f0b0180" android:drawable="@drawable/APKTOOL_RENAMED_0x7f080623" />
+    <item android:state_checked="false" android:id="@id/APKTOOL_RENAMED_0x7f0b29ee" android:drawable="@android:color/transparent" />
+</animated-selector>

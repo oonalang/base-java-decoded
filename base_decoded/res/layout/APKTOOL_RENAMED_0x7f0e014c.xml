@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0384" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070925" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b0385" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+        <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0383" android:tag=".clipboard-suggestion-paste-icon" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15077a" />
+        <ProgressBar android:id="@id/APKTOOL_RENAMED_0x7f0b03f0" android:visibility="gone" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15077a" />
+    </FrameLayout>
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:theme="@style/APKTOOL_RENAMED_0x7f1509d0" android:id="@id/APKTOOL_RENAMED_0x7f0b0385" android:includeFontPadding="false" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070926" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b0384" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04096c="APKTOOL_RENAMED_0x7f0b0796" style="@style/APKTOOL_RENAMED_0x7f15077d" />
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b2934" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f150b3f">
+    <com.google.android.material.card.MaterialCardView style="@style/0_resource_name_obfuscated_res_0x7f150b40">
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b299c" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07d0"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07d1"/>
+    </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.card.MaterialCardView>

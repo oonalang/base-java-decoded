@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2691" layout="@layout/APKTOOL_RENAMED_0x7f0e0705" multi_touch="false" slide_sensitivity="NORMAL">
+            <action data="$param_data$" keycode="$param_keycode$" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$param_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2691">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cca" param_data=":" param_keycode="PLAIN_TEXT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b240c" param_data="/" param_keycode="SLASH" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14089e" id="@id/APKTOOL_RENAMED_0x7f0b22f8" param_data="+" param_keycode="PLUS" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cf2" param_data="," param_keycode="COMMA" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f1407b4" id="@id/APKTOOL_RENAMED_0x7f0b202f" param_data="-" param_keycode="MINUS" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0fc7" param_data="$" param_keycode="PLAIN_TEXT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0feb" param_data="=" param_keycode="PLAIN_TEXT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22d9" param_data="%" param_keycode="PLAIN_TEXT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22dc" param_data="." param_keycode="PLAIN_TEXT" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b2424" layout="@layout/APKTOOL_RENAMED_0x7f0e0705" multi_touch="false" slide_sensitivity="NORMAL">
+            <action data="*" keycode="STAR" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="*" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b22ff" layout="@layout/APKTOOL_RENAMED_0x7f0e0705" multi_touch="false" slide_sensitivity="NORMAL">
+            <action data="#" keycode="POUND" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="#" />
+        </softkey>
+    </softkeys>
+</framework>

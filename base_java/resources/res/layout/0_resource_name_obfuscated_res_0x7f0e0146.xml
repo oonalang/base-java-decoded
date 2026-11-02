@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f1502fa">
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b036c" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080268" style="@style/0_resource_name_obfuscated_res_0x7f15063b">
+        <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b036e" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0805d9" android:adjustViewBounds="true"/>
+        <TextView android:layout_gravity="start" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b036d" android:text="@string/0_resource_name_obfuscated_res_0x7f140424" style="@style/0_resource_name_obfuscated_res_0x7f15051e"/>
+        <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0375" android:layout_marginTop="16dp" style="@style/0_resource_name_obfuscated_res_0x7f15063f"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b036f" style="@style/0_resource_name_obfuscated_res_0x7f15063c"/>
+        <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0374" style="@style/0_resource_name_obfuscated_res_0x7f15063f"/>
+        <com.google.android.libraries.inputmethod.widgets.text.LinkableTextView android:layout_gravity="start" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0372" android:layout_marginTop="14dp" android:text="@string/0_resource_name_obfuscated_res_0x7f140422" style="@style/0_resource_name_obfuscated_res_0x7f15051e"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="22dp">
+            <Button android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0370" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/0_resource_name_obfuscated_res_0x7f1404f1" android:layout_marginEnd="20dp" style="?attr/0_resource_name_obfuscated_res_0x7f0407c4"/>
+            <Button android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0371" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/0_resource_name_obfuscated_res_0x7f1404f3" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

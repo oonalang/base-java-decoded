@@ -1,0 +1,26 @@
+package defpackage;
+
+import android.content.Context;
+import com.google.android.libraries.inputmethod.module.ModuleManager;
+/* compiled from: PG */
+/* renamed from: pdl  reason: default package */
+/* loaded from: classes.dex */
+public final class pdl implements pzs {
+    public static final odr a = odu.a("enable_install_referrer", false);
+
+    @Override // defpackage.pzs
+    public final pzr a(ModuleManager.ModuleInfo moduleInfo) {
+        return new pdk(moduleInfo.getApplicationContext());
+    }
+
+    @Override // defpackage.pzs
+    public final qad getModuleDef(Context context) {
+        qab qabVar = new qab(400, pdk.class, pdk.class, qac.c);
+        wnw wnwVar = pzx.a;
+        pzu pzuVar = new pzu();
+        pzuVar.h(pcw.b);
+        pzuVar.k(a);
+        qabVar.f = pzuVar;
+        return new qad(qabVar);
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="true" class="com.google.android.libraries.inputmethod.ime.password.PasswordIme" label="@string/0_resource_name_obfuscated_res_0x7f14086d" language="und-Latn-x-password-ascii" string_id="password_ascii">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707dd" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707df" variant="qwerty"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707e0" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707e2" variant="qwertz"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707d3" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707d5" variant="azerty"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707d9" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707db" variant="dvorak"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707d6" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707d8" variant="colemak"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707e0" no_header_main_def="@xml/0_resource_name_obfuscated_res_0x7f1707e2" variant="serbian_qwertz" variant_label="@string/0_resource_name_obfuscated_res_0x7f1415e4"/>
+        <include force_show_number_row="true" href="@xml/0_resource_name_obfuscated_res_0x7f1706c5" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707dc" variant="pcqwerty"/>
+        <keyboard_group variant="clariti">
+            <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f170558" type="prime">
+                <merge def="@xml/0_resource_name_obfuscated_res_0x7f1704f5"/>
+                <merge def="@xml/0_resource_name_obfuscated_res_0x7f170618"/>
+            </keyboard>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f17090e"/>
+            <override_keyboard_xml_conditions>
+                <language value="en"/>
+            </override_keyboard_xml_conditions>
+        </keyboard_group>
+    </ime>
+</framework>

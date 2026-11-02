@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="0_resource_name_obfuscated_res_0x7f150761" parent="@android:style/Widget.Material.Spinner">
+        <item name="android:background">@drawable/0_resource_name_obfuscated_res_0x7f080720</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:popupBackground">@drawable/0_resource_name_obfuscated_res_0x7f080721</item>
+        <item name="android:dropDownVerticalOffset">48dp</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150762" parent="@android:style/Widget.Material.DropDownItem.Spinner">
+        <item name="android:textColor">@color/0_resource_name_obfuscated_res_0x7f060b4c</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150763" parent="@android:style/Widget.DeviceDefault.TextView.SpinnerItem">
+        <item name="android:textColor">@color/0_resource_name_obfuscated_res_0x7f060b4c</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15096a" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0312</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15096b" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0094</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15096c" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0179</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150975" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">44sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15097a" parent="@android:style/ActionBarButton">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15097c" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150985" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">28sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150986" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0094</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150988" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:hyphenationFrequency">3</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="?0x101066f">1</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150b20" parent="@style/0_resource_name_obfuscated_res_0x7f150b23">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150b23" parent="@style/0_resource_name_obfuscated_res_0x7f150b22">
+        <item name="android:spinnerStyle">@style/0_resource_name_obfuscated_res_0x7f150761</item>
+        <item name="android:spinnerDropDownItemStyle">@style/0_resource_name_obfuscated_res_0x7f150762</item>
+        <item name="android:spinnerItemStyle">@style/0_resource_name_obfuscated_res_0x7f150763</item>
+    </style>
+</resources>

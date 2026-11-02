@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if keyboard_mode="split">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1704c8"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17087b"/>
+    </else>
+</framework>

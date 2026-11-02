@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring" android:useLevel="false" android:innerRadius="@dimen/0_resource_name_obfuscated_res_0x7f07082c" android:thickness="@dimen/0_resource_name_obfuscated_res_0x7f07082d">
+            <size android:height="@dimen/0_resource_name_obfuscated_res_0x7f07082b" android:width="@dimen/0_resource_name_obfuscated_res_0x7f07082e"/>
+            <solid android:color="@color/0_resource_name_obfuscated_res_0x7f060aa7"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/0_resource_name_obfuscated_res_0x7f070831" android:top="@dimen/0_resource_name_obfuscated_res_0x7f070831" android:right="@dimen/0_resource_name_obfuscated_res_0x7f070831" android:bottom="@dimen/0_resource_name_obfuscated_res_0x7f070831">
+        <shape android:shape="oval">
+            <solid android:color="@color/0_resource_name_obfuscated_res_0x7f060aa7"/>
+            <size android:height="@dimen/0_resource_name_obfuscated_res_0x7f07082f" android:width="@dimen/0_resource_name_obfuscated_res_0x7f070830"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/0_resource_name_obfuscated_res_0x7f070827" android:width="@dimen/0_resource_name_obfuscated_res_0x7f070826" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f0803a0"/>
+</layer-list>

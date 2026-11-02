@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="led-CD" string_id="ime_lendu">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c7" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706ca" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706bc" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706be" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706bd" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c6" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705cc"/>
+    </ime>
+</framework>

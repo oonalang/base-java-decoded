@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family app:APKTOOL_RENAMED_0x7f040665="com.google.android.gms.fonts" app:APKTOOL_RENAMED_0x7f040666="@array/APKTOOL_RENAMED_0x7f03000f" app:APKTOOL_RENAMED_0x7f04066a="com.google.android.gms" app:APKTOOL_RENAMED_0x7f04066c="variable-headline-medium-emphasized"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fallback app:APKTOOL_RENAMED_0x7f04066b="Google Sans Flex" app:APKTOOL_RENAMED_0x7f04066c="google-sans-flex" app:APKTOOL_RENAMED_0x7f04066e="'CRSV' 0, 'FILL' 0, 'GRAD' 0, 'HEXP' 0, 'ROND' 100, 'opsz' 28, 'slnt' 0, 'wdth' 100, 'wght' 500" />
+    <fallback app:APKTOOL_RENAMED_0x7f04066b="Google Sans:500" app:APKTOOL_RENAMED_0x7f04066c="google-sans-medium" />
+</font-family>

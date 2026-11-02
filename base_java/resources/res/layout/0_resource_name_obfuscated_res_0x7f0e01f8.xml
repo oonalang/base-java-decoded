@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.expression.navbar.FixedHeightNavigationRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b02bd" android:tag="?attr/0_resource_name_obfuscated_res_0x7f040121" android:background="@color/0_resource_name_obfuscated_res_0x7f06056f" android:paddingBottom="?attr/0_resource_name_obfuscated_res_0x7f040109" android:layout_width="match_parent" android:layout_height="0dp" android:elevation="20dp" android:paddingHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04010d" app:layout_behavior="com.google.android.apps.inputmethod.libs.expression.navbar.HideFooterOnScrollBehavior">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f9"/>
+</com.google.android.apps.inputmethod.libs.expression.navbar.FixedHeightNavigationRow>

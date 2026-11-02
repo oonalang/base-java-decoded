@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_secondary_symbols="true">
+        <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b117f" view_id="@+id/C01"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1250" view_id="@+id/C02"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b122b" view_id="@+id/C04"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1139" view_id="@+id/C05"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1139" view_id="@+id/C05_dup"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1202" view_id="@+id/C06"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1202" view_id="@+id/C06_dup"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b125d" view_id="@+id/C07"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b127b" view_id="@+id/C12"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11f5" view_id="@+id/B00"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1154" view_id="@+id/B01"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b113a" view_id="@+id/B03"/>
+        </merge_key_mapping>
+        <if language="ff-Adlm|iw|ji|ydd-IL">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1147" view_id="@+id/C08"/>
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b114f" view_id="@+id/C09"/>
+            </merge_key_mapping>
+        </if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b121d" view_id="@+id/C08"/>
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1267" view_id="@+id/C09"/>
+            </merge_key_mapping>
+        </else>
+        <if language="ibb-NG"/>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b126b" view_id="@+id/C10"/>
+            </merge_key_mapping>
+        </else>
+        <if language="ff-Adlm|qaa-x-alsatian"/>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1278" view_id="@+id/C11"/>
+            </merge_key_mapping>
+        </else>
+        <if language="el-GR|ru-RU">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1261" view_id="@+id/B02"/>
+            </merge_key_mapping>
+        </if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1260" view_id="@+id/B02"/>
+            </merge_key_mapping>
+        </else>
+        <if language="bax-CM">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1156" view_id="@+id/B04"/>
+            </merge_key_mapping>
+        </if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b117e" view_id="@+id/B04"/>
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b117e" view_id="@+id/B04_dup"/>
+            </merge_key_mapping>
+        </else>
+        <if language="bax-CM">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1165" view_id="@+id/B05"/>
+            </merge_key_mapping>
+        </if>
+        <else_if language="ff-Adlm">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1263" view_id="@+id/B05"/>
+            </merge_key_mapping>
+        </else_if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b126a" view_id="@+id/B05"/>
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b126a" view_id="@+id/B05_dup"/>
+            </merge_key_mapping>
+        </else>
+        <if language="bax-CM">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1163" view_id="@+id/B06"/>
+            </merge_key_mapping>
+        </if>
+        <else_if language="shn-MM">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1242" view_id="@+id/B06"/>
+            </merge_key_mapping>
+        </else_if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11e0" view_id="@+id/B06"/>
+            </merge_key_mapping>
+        </else>
+        <if language="bax-CM">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1164" view_id="@+id/B07"/>
+            </merge_key_mapping>
+        </if>
+        <else_if language="ccp-BD">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b117c" view_id="@+id/B07"/>
+            </merge_key_mapping>
+        </else_if>
+        <else_if language="ff-Adlm">
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b114d" view_id="@+id/B07"/>
+            </merge_key_mapping>
+        </else_if>
+        <else>
+            <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+                <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b125e" view_id="@+id/B07"/>
+            </merge_key_mapping>
+        </else>
+    </if>
+</framework>

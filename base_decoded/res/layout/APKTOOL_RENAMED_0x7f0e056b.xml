@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/APKTOOL_RENAMED_0x7f0b060d" android:tag=".language-promo-chip-text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/APKTOOL_RENAMED_0x7f1404ef" style="@style/APKTOOL_RENAMED_0x7f1503f3"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:tag=".jarvis-prompt-notice-popup-dim" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="44dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:tag=".jarvis-prompt-notice-popup" android:background="@drawable/0_resource_name_obfuscated_res_0x7f0802ab" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="220dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:orientation="vertical" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|center_horizontal" android:tag=".icon.jarvis-prompt-notice-popup" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="16dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f08049f" android:importantForAccessibility="no"/>
+                    <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a6a" android:tag=".label.jarvis-prompt-notice-popup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f14055c"/>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="88dp">
+            <com.google.android.material.button.MaterialButton android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a68" android:layout_gravity="end|center_vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0395" android:tag=".jarvis-prompt-notice-popup-button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f1404f9" style="@style/0_resource_name_obfuscated_res_0x7f150e2a"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="gju-PK" string_id="ime_gujari_arabic">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bb" main_def="@xml/APKTOOL_RENAMED_0x7f1706b6" variant="gujari" variant_label="@string/APKTOOL_RENAMED_0x7f1414c4" />
+    </ime>
+</framework>

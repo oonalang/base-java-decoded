@@ -1,0 +1,10 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: qkx  reason: default package */
+/* loaded from: classes2.dex */
+public final class qkx implements qer {
+    @Override // defpackage.qer
+    public final /* synthetic */ boolean b() {
+        return false;
+    }
+}

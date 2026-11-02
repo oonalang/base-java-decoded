@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_RENAMED_0x7f150761" parent="@android:style/Widget.Material.Spinner">
+        <item name="android:background">@drawable/APKTOOL_RENAMED_0x7f080720</item>
+        <item name="android:layout_marginTop">16.0dp</item>
+        <item name="android:layout_marginBottom">8.0dp</item>
+        <item name="android:popupBackground">@drawable/APKTOOL_RENAMED_0x7f080721</item>
+        <item name="android:dropDownVerticalOffset">48.0dp</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150762" parent="@android:style/Widget.Material.DropDownItem.Spinner">
+        <item name="android:textColor">@color/APKTOOL_RENAMED_0x7f060b4c</item>
+        <item name="android:paddingStart">16.0dp</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150763" parent="@android:style/Widget.DeviceDefault.TextView.SpinnerItem">
+        <item name="android:textColor">@color/APKTOOL_RENAMED_0x7f060b4c</item>
+        <item name="android:paddingStart">16.0dp</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15096a" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.03125</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15096b" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15096c" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01785714</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150975" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">36.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">44.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15097a" parent="@android:style/TextAppearance.DeviceDefault.Headline">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">32.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15097c" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.00714286</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150985" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">28.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150986" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150988" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.00714286</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150b20" parent="@style/APKTOOL_RENAMED_0x7f150b23" />
+    <style name="APKTOOL_RENAMED_0x7f150b23" parent="@style/APKTOOL_RENAMED_0x7f150b22">
+        <item name="android:spinnerStyle">@style/APKTOOL_RENAMED_0x7f150761</item>
+        <item name="android:spinnerDropDownItemStyle">@style/APKTOOL_RENAMED_0x7f150762</item>
+        <item name="android:spinnerItemStyle">@style/APKTOOL_RENAMED_0x7f150763</item>
+    </style>
+</resources>

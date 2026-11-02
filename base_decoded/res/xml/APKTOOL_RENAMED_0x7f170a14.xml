@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df1" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2466" view_id="@id/E01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2468" view_id="@id/E02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2397" view_id="@id/E03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fcc" view_id="@id/E04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e0d" view_id="@id/E05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a74" view_id="@id/E06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1329" view_id="@id/E07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b32" view_id="@id/E08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a31" view_id="@id/E09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234e" view_id="@id/E10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fe3" view_id="@id/E11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b21b4" view_id="@id/E12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dc2" view_id="@id/D01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0da7" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dd5" view_id="@id/D03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2309" view_id="@id/D04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dc1" view_id="@id/D05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dca" view_id="@id/D06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0db6" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dba" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0de2" view_id="@id/C02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dc8" view_id="@id/C08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0da5" view_id="@id/C09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b239d" view_id="@id/C10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0da8" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0db6" view_id="@id/C12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b232d" view_id="@id/B00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0ddb" view_id="@id/B02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d3a" view_id="@id/B03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2836" view_id="@id/B06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a2e" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234a" view_id="@id/B09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2411" view_id="@id/B10" />
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT,ALTGR+CAPS">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d6c" view_id="@id/D01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d51" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d7e" view_id="@id/D03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d6b" view_id="@id/D05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d74" view_id="@id/D06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d60" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d64" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d8b" view_id="@id/C02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d72" view_id="@id/C08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d4f" view_id="@id/C09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d52" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d60" view_id="@id/C12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d84" view_id="@id/B02" />
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2835" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234b" view_id="@id/E02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b14ec" view_id="@id/E03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1036" view_id="@id/E04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a23" view_id="@id/E09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2340" view_id="@id/E10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cca" view_id="@id/C10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b287c" view_id="@id/B00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fd8" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a28" view_id="@id/B09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b14ea" view_id="@id/B10" />
+    </key_mapping>
+    <key_mapping state="ALTGR+CAPS">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d6c" view_id="@id/D01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d51" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d7e" view_id="@id/D03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d6b" view_id="@id/D05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d74" view_id="@id/D06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d60" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d64" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d8b" view_id="@id/C02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d72" view_id="@id/C08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d4f" view_id="@id/C09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d52" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d60" view_id="@id/C12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d84" view_id="@id/B02" />
+    </key_mapping>
+    <merge_key_mapping exclude_state="SHIFT" state="ALTGR">
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1f90" view_id="@id/E00" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e69" view_id="@id/E02" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1c8d" view_id="@id/E03" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1c07" view_id="@id/E04" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1d73" view_id="@id/E09" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e64" view_id="@id/E10" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1b88" view_id="@id/C10" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1f92" view_id="@id/B00" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1c03" view_id="@id/B08" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1d75" view_id="@id/B09" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1c8c" view_id="@id/B10" />
+    </merge_key_mapping>
+</framework>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item android:top="@dimen/0_resource_name_obfuscated_res_0x7f070938" android:bottom="@dimen/0_resource_name_obfuscated_res_0x7f070938" android:start="@dimen/0_resource_name_obfuscated_res_0x7f070938" android:end="@dimen/0_resource_name_obfuscated_res_0x7f070938">
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp"/>
+            <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404cc"/>
+        </shape>
+    </item>
+</ripple>

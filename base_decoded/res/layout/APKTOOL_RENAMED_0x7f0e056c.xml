@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/APKTOOL_RENAMED_0x7f1503f4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b060e" android:tag=".language-promo-chip-icon" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1406aa" android:importantForAccessibility="no" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b060f" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f1503f2" />
+    <TextView android:id="@id/APKTOOL_RENAMED_0x7f0b060f" android:tag=".language-promo-chip-text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f0703f7" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f0703f6" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b060e" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f1503f3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

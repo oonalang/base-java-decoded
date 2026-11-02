@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@id/APKTOOL_RENAMED_0x7f0b2628" layout="@layout/APKTOOL_RENAMED_0x7f0e0705" popup_timing="ON_TOUCH">
+            <action data="$param_data$" intention="COMMIT" keycode="PLAIN_TEXT" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$param_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2628">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22d9" param_data="%" />
+        </softkey_list>
+    </softkeys>
+</framework>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinPrimeKeyboard" popup="@attr/0_resource_name_obfuscated_res_0x7f040279" recent_key_layout="@layout/0_resource_name_obfuscated_res_0x7f0e073c" recent_key_popup_layout="@layout/0_resource_name_obfuscated_res_0x7f0e061a">
+        <view default_show="true" direction="bottom_to_top" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0540" scalable="false" type="header">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f1e"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c63"/>
+        </view>
+        <if split_keyboard_handedness_zh="right">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01b8" type="body"/>
+        </if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01b6" type="body"/>
+        </else>
+        <view type="body">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <motion_event_handler class="com.google.android.apps.inputmethod.libs.pinyin.Pinyin9KeyGestureHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+            <motion_event_handler class=".motioneventhandler.scrubmove.ScrubDeleteMotionEventHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f140966" reverse_preference="false"/>
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171221"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f1a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171227"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a89"/>
+            <if keyboard_mode="split">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171201"/>
+            </if>
+            <else>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171200"/>
+            </else>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171202"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171233"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f15"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f0b"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171235"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f0a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef9"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c48"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa0"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa1"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a50"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f17091a"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c31"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a51"/>
+        </view>
+    </keyboard>
+</framework>

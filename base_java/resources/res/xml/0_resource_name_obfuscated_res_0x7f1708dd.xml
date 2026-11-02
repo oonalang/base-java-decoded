@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.textediting.TextEditingKeyboard">
+        <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e055b" scalable="false" type="header">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17123d"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e8c"/>
+        </view>
+        <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0559" type="radial">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17123c"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e8b"/>
+        </view>
+    </keyboard>
+</framework>

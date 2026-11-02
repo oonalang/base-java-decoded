@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight" parent="@style/0_resource_name_obfuscated_res_0x7f15099c">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/0_resource_name_obfuscated_res_0x7f15099c">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a17" parent="@style/0_resource_name_obfuscated_res_0x7f150a07">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a18" parent="@style/0_resource_name_obfuscated_res_0x7f150a08">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a23" parent="@style/0_resource_name_obfuscated_res_0x7f150a13">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a48" parent="@style/0_resource_name_obfuscated_res_0x7f150a38">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a96" parent="@style/0_resource_name_obfuscated_res_0x7f150a92">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150a97" parent="@style/0_resource_name_obfuscated_res_0x7f150a93">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150adc" parent="@style/0_resource_name_obfuscated_res_0x7f150ad8">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150bb8" parent="@style/0_resource_name_obfuscated_res_0x7f150bb6">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150be7" parent="@style/0_resource_name_obfuscated_res_0x7f150be5">
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150cdb" parent="@style/0_resource_name_obfuscated_res_0x7f150bc9">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150cde" parent="@style/0_resource_name_obfuscated_res_0x7f150e11">
+    </style>
+</resources>

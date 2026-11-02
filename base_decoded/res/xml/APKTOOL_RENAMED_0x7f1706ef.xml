@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinJapanesePrimeKeyboard" popup="@attr/APKTOOL_RENAMED_0x7f040279" session_states="CAPS_LOCK">
+        <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e0254" scalable="false" type="header">
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f1e" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c63" />
+        </view>
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e0508" type="body" />
+        </if>
+        <else_if device="tablet" device_size="large" keyboard_mode="normal">
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e03c4" type="body" />
+        </else_if>
+        <else_if keyboard_mode="split">
+            <if split_with_duplicate_keys="true">
+                <view layout="@layout/APKTOOL_RENAMED_0x7f0e03a5" type="body" />
+            </if>
+            <else>
+                <view layout="@layout/APKTOOL_RENAMED_0x7f0e03a4" type="body" />
+            </else>
+        </else_if>
+        <else>
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e03a6" type="body" />
+        </else>
+        <view type="body">
+            <include href="@xml/APKTOOL_RENAMED_0x7f170ec3" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17122e" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17104d" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17104b" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef9" />
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f17121f" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171223" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f1710d0" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ff1" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f01" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171239" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f17120f" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171228" />
+            </if>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170aad" />
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c7b" />
+                <key_mapping>
+                    <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1326" view_id="@id/E00" />
+                </key_mapping>
+                <key_mapping state="SHIFT">
+                    <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2835" view_id="@id/E00" />
+                </key_mapping>
+                <merge_key_mapping exclude_state="SHIFT">
+                    <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1f90" view_id="@id/E00" />
+                </merge_key_mapping>
+            </if>
+            <else>
+                <include href="@xml/APKTOOL_RENAMED_0x7f170e33" />
+            </else>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170cc0" />
+            <ifnot enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170cb9" />
+            </ifnot>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c43" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a51" />
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f01" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171239" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c0c" />
+            </if>
+            <else_if device="tablet" device_size="large" keyboard_mode="normal">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f01" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171239" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c47" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c2b" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c4f" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170e2a" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c0c" />
+            </else_if>
+            <else>
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f00" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c23" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c0a" />
+            </else>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170aae" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170df9" />
+            </if>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a81" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c37" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c04" />
+        </view>
+    </keyboard>
+    <ifnot enable_pk_simulator="true" enable_pk_simulator_setting="true">
+        <if enable_number_row="true">
+            <include href="@xml/APKTOOL_RENAMED_0x7f170763" />
+        </if>
+    </ifnot>
+</framework>

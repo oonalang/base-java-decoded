@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140b57">
+        <ListPreference android:persistent="true" android:entries="@array/APKTOOL_RENAMED_0x7f0300ba" android:title="@string/APKTOOL_RENAMED_0x7f140b58" android:key="@string/APKTOOL_RENAMED_0x7f140905" android:summary="%s" android:entryValues="@array/APKTOOL_RENAMED_0x7f030049" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

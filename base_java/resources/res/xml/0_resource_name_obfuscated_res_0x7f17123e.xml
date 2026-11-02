@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170f09"/>
+    <softkeys>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f1411c2" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2838" layout="@layout/0_resource_name_obfuscated_res_0x7f0e07e0">
+            <action data="source" keycode="KEYCODE_HOME" type="sweep"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080683"/>
+        </softkey>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f1411c7" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b283b" layout="@layout/0_resource_name_obfuscated_res_0x7f0e07e0">
+            <action data="target" keycode="KEYCODE_HOME" type="sweep"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080683"/>
+        </softkey>
+        <softkey disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2839" layout="@layout/0_resource_name_obfuscated_res_0x7f0e07e1">
+            <action data="source" keycode="KEYCODE_HOME" type="sweep"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="@string/0_resource_name_obfuscated_res_0x7f1411b9"/>
+        </softkey>
+        <softkey disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b283c" layout="@layout/0_resource_name_obfuscated_res_0x7f0e07e1">
+            <action data="target" keycode="KEYCODE_HOME" type="sweep"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="English"/>
+        </softkey>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b261a">
+            <softkey desc="@string/0_resource_name_obfuscated_res_0x7f140488" id="@+id/0_resource_name_obfuscated_res_0x7f0b2837" keycode="KEYCODE_UNKNOWN" param_icon="@drawable/0_resource_name_obfuscated_res_0x7f080532" tooltip_text="@string/0_resource_name_obfuscated_res_0x7f140488"/>
+        </softkey_list>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f1411c4" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b283a" layout="@layout/0_resource_name_obfuscated_res_0x7f0e07e2" tooltip_text="@string/0_resource_name_obfuscated_res_0x7f1411c5">
+            <action data="swap" keycode="KEYCODE_HOME" type="sweep"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f0805e2"/>
+        </softkey>
+    </softkeys>
+</framework>

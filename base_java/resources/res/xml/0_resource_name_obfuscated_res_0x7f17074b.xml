@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <if keyboard_mode="split">
+            <if split_with_duplicate_keys="true">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e02c2" type="linear"/>
+            </if>
+            <else>
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e02c3" type="linear"/>
+            </else>
+        </if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e02c1" type="linear"/>
+        </else>
+        <view type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170fba"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170be8"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c0a"/>
+            <if language="za-CN">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c02"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8b"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c00"/>
+            </if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8e"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8b"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8a"/>
+            </else>
+        </view>
+    </keyboard>
+</framework>

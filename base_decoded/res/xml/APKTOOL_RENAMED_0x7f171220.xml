@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <softkeys>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2680">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1f97" press_data="," />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1299" long_press_data=", ? ! ) ( # / ; ' @ : - &quot; + % &amp;" press_data="." />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140407" id="@id/APKTOOL_RENAMED_0x7f0b0cb4" press_data="，" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14040b" id="@id/APKTOOL_RENAMED_0x7f0b0cb8" long_press_data="…… ？ ！ 、 ： ； _ % $ ^ &amp; :P :D :( :) ^_^" long_press_intention="COMMIT" press_data="。" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cf2" press_data="," press_intent="COMMIT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22dc" long_press_data="…" press_data="." press_intent="COMMIT" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1a71" long_press_data="≤ ‹ « ⟨" press_data="&lt;" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2053" long_press_data="≥ › » ⟩" press_data=">" />
+        </softkey_list>
+    </softkeys>
+</framework>

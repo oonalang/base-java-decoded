@@ -1,0 +1,46 @@
+package defpackage;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+/* compiled from: PG */
+/* renamed from: rxm  reason: default package */
+/* loaded from: classes2.dex */
+public final class rxm extends LinkedHashMap {
+    private final int a;
+
+    public rxm(int i, int i2, boolean z) {
+        super(i2, 0.75f, z);
+        this.a = i;
+    }
+
+    @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
+    public final Object put(Object obj, Object obj2) {
+        if (obj != null && obj2 != null) {
+            return super.put(obj, obj2);
+        }
+        throw new NullPointerException("key == null || value == null");
+    }
+
+    @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
+    public final void putAll(Map map) {
+        for (Map.Entry entry : map.entrySet()) {
+            put(entry.getKey(), entry.getValue());
+        }
+    }
+
+    @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
+    public final Object remove(Object obj) {
+        if (obj == null) {
+            return null;
+        }
+        return super.remove(obj);
+    }
+
+    @Override // java.util.LinkedHashMap
+    protected final boolean removeEldestEntry(Map.Entry entry) {
+        if (size() > this.a) {
+            return true;
+        }
+        return false;
+    }
+}

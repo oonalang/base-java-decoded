@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingStart="@dimen/0_resource_name_obfuscated_res_0x7f0708f2" android:paddingEnd="@dimen/0_resource_name_obfuscated_res_0x7f0708f2" style="@style/0_resource_name_obfuscated_res_0x7f15075a">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e014c"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

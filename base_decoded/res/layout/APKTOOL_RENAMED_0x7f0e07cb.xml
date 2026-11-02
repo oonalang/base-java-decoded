@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:tag=".keyboard-base-area" android:background="@drawable/APKTOOL_RENAMED_0x7f0802eb" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/APKTOOL_RENAMED_0x7f0e07ca" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e07cc" />
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e07cd" />
+    </LinearLayout>
+</merge>

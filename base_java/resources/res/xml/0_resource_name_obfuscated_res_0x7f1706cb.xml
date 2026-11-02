@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework dynamic_layout="" force_show_number_row="false" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170042" main_def="@xml/0_resource_name_obfuscated_res_0x7f1707ee" non_prime_def="@xml/0_resource_name_obfuscated_res_0x7f170912" pk_language_tag="" pk_layout_type="" supports_one_handed_mode="true" supports_split_mode="true" variant="" variant_label="" variant_name_mandatory="false">
+    <keyboard_group dynamic_layout="{dynamic_layout}" pk_language_tag="{pk_language_tag}" pk_layout_type="{pk_layout_type}" supports_one_handed_mode="{supports_one_handed_mode}" supports_split_mode="{supports_split_mode}" variant="{variant}" variant_label="{variant_label}" variant_name_mandatory="{variant_name_mandatory}">
+        <include force_show_number_row="{force_show_number_row}" href="@xml/0_resource_name_obfuscated_res_0x7f170003" support_a11y_keyboard="true"/>
+        <layout_specific_settings resource_id="{layout_settings}"/>
+        <keyboard def="{lang_def}" type="prime">
+            <merge def="{main_def}"/>
+        </keyboard>
+        <include href="{non_prime_def}"/>
+    </keyboard_group>
+</framework>

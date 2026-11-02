@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.emojikitchenbrowse.EmojiKitchenBrowseKeyboard">
+        <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e01eb" scalable="false" type="header"/>
+        <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e01e8" type="radial">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170efc"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a9a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef8"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170bff"/>
+        </view>
+    </keyboard>
+</framework>

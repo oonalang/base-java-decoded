@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0601" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" style="@style/0_resource_name_obfuscated_res_0x7f1503ca"/>
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:alignToBaseline="false" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f1503ca"/>
+</LinearLayout>

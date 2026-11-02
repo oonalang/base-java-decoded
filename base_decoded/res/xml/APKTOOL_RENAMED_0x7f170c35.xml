@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fe9" view_id="@id/key_pos_ime_action" />
+    </key_mapping>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3d" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3c" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3a" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3b" />
+</framework>

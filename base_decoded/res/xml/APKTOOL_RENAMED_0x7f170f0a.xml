@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1411cc" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2843" layout="@layout/APKTOOL_RENAMED_0x7f0e06ee" multi_touch="false">
+            <action data="SINGLE_CHARACTER_CANDIDATE" keycode="KEYBOARD_STATE_ON" type="PRESS" />
+            <if language="zh-TW|zh-HK">
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f140d2c" />
+            </if>
+            <else>
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f140d2b" />
+            </else>
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c2" value="@attr/APKTOOL_RENAMED_0x7f04017a" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1411cb" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2842" layout="@layout/APKTOOL_RENAMED_0x7f0e06ef" multi_touch="false">
+            <action data="SINGLE_CHARACTER_CANDIDATE" keycode="KEYBOARD_STATE_OFF" type="PRESS" />
+            <if language="zh-TW|zh-HK">
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f140d2c" />
+            </if>
+            <else>
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f140d2b" />
+            </else>
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c2" value="@attr/APKTOOL_RENAMED_0x7f04017a" />
+        </softkey>
+    </softkeys>
+</framework>

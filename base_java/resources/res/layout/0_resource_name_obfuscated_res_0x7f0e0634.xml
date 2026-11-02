@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.RamblerAlWidgetSoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f15051a" android:tag="@null" android:background="@android:color/transparent" android:clipChildren="false" style="@style/0_resource_name_obfuscated_res_0x7f150232">
+    <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b014d"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0713" android:tag="@null" android:background="@null" android:clipChildren="false" android:layout_marginTop="@dimen/0_resource_name_obfuscated_res_0x7f0708c2" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f0708c2" style="@style/0_resource_name_obfuscated_res_0x7f150234">
+        <com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a55" app:clipRadius="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a52" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15112f"/>
+        <com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a65" app:clipRadius="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a52" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f151130">
+            <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0214"/>
+        </com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyView>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e080f"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.libraries.inputmethod.companionwidget.widget.RamblerAlWidgetSoftKeyboardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.customsticker.ui.CustomStickerTabKeyboard">
+        <view direction="right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0083" type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170efc"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a9a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef8"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170bff"/>
+        </view>
+    </keyboard>
+</framework>

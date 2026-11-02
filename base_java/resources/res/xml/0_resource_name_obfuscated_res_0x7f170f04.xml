@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef5"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b266a">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b125e" long_press_data="?"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11e0" long_press_data="!"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b126a" long_press_data=";"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b117e" long_press_data=":"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b113a" long_press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1260" long_press_data="&quot;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1154" long_press_data="*"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1267" long_press_data=")"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b121d" long_press_data="("/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b125d" long_press_data="+"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1202" long_press_data="-"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b122b" long_press_data="_"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b126b" long_press_data="/"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b125b" long_press_data="%"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11dc" long_press_data="$"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1250" long_press_data="#"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b117f" long_press_data="@"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1262" long_press_data="@string/0_resource_name_obfuscated_res_0x7f1413e6"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1139" long_press_data="&amp;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1278" long_press_data="~"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f4" long_press_data="～"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f5" long_press_data="`"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b121e" long_press_data="["/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1268" long_press_data="]"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b121b" long_press_data="{"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1265" long_press_data="}"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1229" long_press_data="&lt;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b122d" long_press_data="&gt;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b127b" long_press_data="|"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b117d" long_press_data="^"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1181" long_press_data="°"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11de" long_press_data="="/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1180" long_press_data="£"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1204" long_press_data="₹"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1170" long_press_data="৳"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11df" long_press_data="€"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1264" long_press_data="﷼"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1245" long_press_data="₪"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b121a" long_press_data="₭"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1279" long_press_data="₮"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1155" long_press_data="฿"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b127a" long_press_data="₺"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1201" long_press_data="₴"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11dd" long_press_data="₫"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1153" long_press_data="֏"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1138" long_press_data="؋"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b127c" long_press_data="₩"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1203" long_press_data="、"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11ed" long_press_data="："/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f3" long_press_data="；"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11ec" long_press_data="."/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1171" long_press_data="₵"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f0" long_press_data="？"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f1" long_press_data="&quot;" long_press_intention="DECODE" slide_down_intention="DECODE"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11ee" long_press_data="！"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11ef" long_press_data="（"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b11f2" long_press_data="）"/>
+        </softkey_list>
+    </softkeys>
+</framework>

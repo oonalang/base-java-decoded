@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080326" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/0_resource_name_obfuscated_res_0x7f08030f" android:paddingVertical="10dp">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2937" android:tag=".non-linear-scale" android:layout_width="@dimen/0_resource_name_obfuscated_res_0x7f070935" android:layout_height="@dimen/0_resource_name_obfuscated_res_0x7f070935" android:scaleType="fitCenter" android:layout_marginHorizontal="12dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404bc" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2945" android:tag=".non-linear-scale" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="?attr/0_resource_name_obfuscated_res_0x7f040160"/>
+        <com.google.android.libraries.inputmethod.widgets.text.SnippetTextView android:textSize="14dp" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404bc" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2946" android:tag=".non-linear-scale" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" app:fontFamily="?attr/0_resource_name_obfuscated_res_0x7f040160"/>
+    </LinearLayout>
+</LinearLayout>

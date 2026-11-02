@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a42" android:background="@drawable/0_resource_name_obfuscated_res_0x7f08033a" style="@style/0_resource_name_obfuscated_res_0x7f15077f">
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/0_resource_name_obfuscated_res_0x7f070926" android:layout_marginEnd="@dimen/0_resource_name_obfuscated_res_0x7f070926" style="@style/0_resource_name_obfuscated_res_0x7f150cee"/>
+</FrameLayout>

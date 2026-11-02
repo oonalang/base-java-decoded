@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170896"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170810"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17078e"/>
+        <if enable_number_row="true">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170762"/>
+        </if>
+    </else>
+</framework>

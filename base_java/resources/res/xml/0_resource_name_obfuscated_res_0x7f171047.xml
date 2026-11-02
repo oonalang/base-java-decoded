@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template content_description="$data$" enable_slide_actions_in_a11y_mode="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b263b" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0726" multi_touch="false" popup_timing="ON_TOUCH" slide_sensitivity="NORMAL">
+            <action content_description="$data$" data="$data$" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_4" popup_label="$data$" popup_layout="@layout/0_resource_name_obfuscated_res_0x7f0e0611" type="PRESS"/>
+            <action content_description="$left_data$" data="$left_data$" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c007a" intention="DECODE" keycode="KEYCODE_4" popup_label="$left_data$" popup_layout="@layout/popup_bubble_ja_label_large" type="SLIDE_LEFT"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_UP"/>
+            <action content_description="$right_data$" data="$right_data$" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c007b" intention="DECODE" keycode="KEYCODE_4" popup_label="$right_data$" popup_layout="@layout/popup_bubble_ja_label_large" type="SLIDE_RIGHT"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_DOWN"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="$data$"/>
+        </softkey_template>
+        <softkey_template content_description="$data$" id="@+id/0_resource_name_obfuscated_res_0x7f0b263a" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0726" multi_touch="false" popup_timing="@string/0_resource_name_obfuscated_res_0x7f140ae4" slide_sensitivity="NORMAL">
+            <action content_description="$data$" data="$data$" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_4" popup_label="$data$" popup_layout="@layout/0_resource_name_obfuscated_res_0x7f0e0611" type="PRESS"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_LEFT"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_UP"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_RIGHT"/>
+            <action data="" icon_background_level="@integer/0_resource_name_obfuscated_res_0x7f0c0078" intention="DECODE" keycode="KEYCODE_UNKNOWN" type="SLIDE_DOWN"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="$data$"/>
+        </softkey_template>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b263b">
+            <softkey data="()" id="@+id/0_resource_name_obfuscated_res_0x7f0b1529" left_data="(" right_data=")"/>
+            <softkey data="[]" id="@+id/0_resource_name_obfuscated_res_0x7f0b152a" left_data="[" right_data="]"/>
+            <softkey data="{}" id="@+id/0_resource_name_obfuscated_res_0x7f0b1517" left_data="{" right_data="}"/>
+            <softkey data="（）" id="@+id/0_resource_name_obfuscated_res_0x7f0b1519" left_data="（" right_data="）"/>
+            <softkey data="「」" id="@+id/0_resource_name_obfuscated_res_0x7f0b1527" left_data="「" right_data="」"/>
+            <softkey data="【】" id="@+id/0_resource_name_obfuscated_res_0x7f0b1526" left_data="【" right_data="】"/>
+        </softkey_list>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b263a">
+            <softkey data="&amp;" id="@+id/0_resource_name_obfuscated_res_0x7f0b1516"/>
+            <softkey data="＆" id="@+id/0_resource_name_obfuscated_res_0x7f0b1518"/>
+            <softkey data="・" id="@+id/0_resource_name_obfuscated_res_0x7f0b1528"/>
+            <softkey data="`" id="@+id/0_resource_name_obfuscated_res_0x7f0b151a"/>
+        </softkey_list>
+    </softkeys>
+</framework>

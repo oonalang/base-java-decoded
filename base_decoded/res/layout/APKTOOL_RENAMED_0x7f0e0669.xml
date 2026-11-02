@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/APKTOOL_RENAMED_0x7f080297" android:layout_width="?APKTOOL_RENAMED_0x7f04005f" android:layout_height="?APKTOOL_RENAMED_0x7f04005f" android:minWidth="?APKTOOL_RENAMED_0x7f04005f" android:minHeight="?APKTOOL_RENAMED_0x7f04005f" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1404f2" style="@style/APKTOOL_RENAMED_0x7f15077f"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" android:src="@drawable/APKTOOL_RENAMED_0x7f080691" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1404f2" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+</FrameLayout>

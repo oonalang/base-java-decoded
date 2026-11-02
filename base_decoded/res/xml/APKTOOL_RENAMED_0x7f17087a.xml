@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_simplified_expression_keyboard="true">
+        <keyboard class="com.google.android.apps.inputmethod.libs.search.emoji.standard.EmojiPickerSimplifiedKeyboard" initial_states="LOCK_KEYBOARD+SUB_CATEGORY_2" persistent_states="@string/APKTOOL_RENAMED_0x7f140d46" persistent_states_pref_key="@string/APKTOOL_RENAMED_0x7f140d47" recent_key_layout="@layout/APKTOOL_RENAMED_0x7f0e073b" recent_key_popup_layout="@layout/APKTOOL_RENAMED_0x7f0e061a" recent_key_type="smiley" remember_recent_key="ALL_ACTIONS">
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e01fc" scalable="false" type="header" />
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e0537" type="body">
+                <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef8" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170efc" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a9a" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170bff" />
+            </view>
+        </keyboard>
+    </if>
+    <else>
+        <keyboard class="com.google.android.apps.inputmethod.libs.search.emoji.standard.EmojiPickerKeyboard" initial_states="LOCK_KEYBOARD+SUB_CATEGORY_2" persistent_states="@string/APKTOOL_RENAMED_0x7f140d46" persistent_states_pref_key="@string/APKTOOL_RENAMED_0x7f140d47" recent_key_layout="@layout/APKTOOL_RENAMED_0x7f0e073b" recent_key_popup_layout="@layout/APKTOOL_RENAMED_0x7f0e061a" recent_key_type="smiley" remember_recent_key="ALL_ACTIONS">
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e01ef" scalable="false" type="header" />
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e0537" type="body">
+                <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef8" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170efc" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a9a" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170bff" />
+            </view>
+        </keyboard>
+    </else>
+</framework>

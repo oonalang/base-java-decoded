@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if japanese_use_tri_state_mode="true">
+        <softkeys>
+            <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1402f3" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b246d" layout="@layout/APKTOOL_RENAMED_0x7f0e072d">
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="OPEN_EXTENSION" type="PRESS" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080558" />
+            </softkey>
+            <softkey a11y_click_action_label="@string/APKTOOL_RENAMED_0x7f140788" additional_content_description="@string/APKTOOL_RENAMED_0x7f140789" content_description="@string/APKTOOL_RENAMED_0x7f1402f3" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2471" layout="@layout/APKTOOL_RENAMED_0x7f0e072e">
+                <action data="@string/APKTOOL_RENAMED_0x7f1405ee" keycode="POLICY_TRANSPARENCY" type="PRESS" />
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080558" />
+            </softkey>
+            <softkey content_description="@string/APKTOOL_RENAMED_0x7f1402f3" id="@id/APKTOOL_RENAMED_0x7f0b2470" layout="@layout/APKTOOL_RENAMED_0x7f0e072e">
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080558" />
+            </softkey>
+        </softkeys>
+    </if>
+</framework>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b264f">
+            <softkey hint_label="ؤ" id="@id/APKTOOL_RENAMED_0x7f0b0902" long_press_data="ؤ" long_press_label="ؤ" press_data="و" press_label="و" />
+            <softkey hint_label="ۓ" id="@id/APKTOOL_RENAMED_0x7f0b0908" long_press_data="ۓ" long_press_label="ۓ" press_data="ے" press_label="ے" />
+            <softkey hint_label="ٔ" id="@id/APKTOOL_RENAMED_0x7f0b08c9" layout="@layout/APKTOOL_RENAMED_0x7f0e0762" long_press_data="ٔ" long_press_label="ٔ" press_data="ء" press_label="ء" />
+            <softkey hint_label="ۃ" id="@id/APKTOOL_RENAMED_0x7f0b08cc" long_press_data="ۃ,ه,ۂ" long_press_label="ۃ,ه,ۂ" press_data="ہ" press_label="ہ" />
+            <softkey hint_label="آ" id="@id/APKTOOL_RENAMED_0x7f0b08b2" long_press_data="آ,أ,إ" long_press_label="آ,أ,إ" press_data="ا" press_label="ا" />
+            <softkey hint_label="ژ" id="@id/APKTOOL_RENAMED_0x7f0b090f" long_press_data="ژ" long_press_label="ژ" press_data="ز" press_label="ز" />
+            <softkey hint_label="؟" id="@id/APKTOOL_RENAMED_0x7f0b08dd" long_press_data="؟" long_press_label="؟" press_data="م" press_label="م" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b2679">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08b9" press_data="ض" press_label="ض" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08ee" press_data="ص" press_label="ص" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08c4" press_data="غ" press_label="غ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08ed" press_data="ڑ" press_label="ڑ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08fe" press_data="ٹ" press_label="ٹ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08fd" press_data="ث" press_label="ث" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08c5" press_data="ح" press_label="ح" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b090a" long_press_data="ي" long_press_label="ي" press_data="ئ" press_label="ئ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b090e" press_data="ظ" press_label="ظ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08f4" press_data="ط" press_label="ط" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08e5" press_data="ق" press_label="ق" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08b0" press_data="ع" press_label="ع" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08e6" press_data="ر" press_label="ر" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08f6" press_data="ت" press_label="ت" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08bf" press_data="ی" press_label="ی" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08e4" press_data="پ" press_label="پ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08ef" press_data="س" press_label="س" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08bd" press_data="ڈ" press_label="ڈ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08ba" press_data="د" press_label="د" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08c2" press_data="ف" press_label="ف" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08c3" press_data="گ" press_label="گ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08cb" press_data="ھ" press_label="ھ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08ce" press_data="ج" press_label="ج" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08d3" press_data="ک" press_label="ک" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08d6" press_data="ل" press_label="ل" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08fc" press_data="ذ" press_label="ذ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08f1" press_data="ش" press_label="ش" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08d4" press_data="خ" press_label="خ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08f5" press_data="چ" press_label="چ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08b8" press_data="ب" press_label="ب" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08e0" press_data="ں" press_label="ں" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b08df" press_data="ن" press_label="ن" />
+        </softkey_list>
+    </softkeys>
+</framework>

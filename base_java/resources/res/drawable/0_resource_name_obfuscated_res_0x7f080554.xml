@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingEnd="2dp">
+    <item android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f0803f9" android:end="2dp"/>
+</layer-list>

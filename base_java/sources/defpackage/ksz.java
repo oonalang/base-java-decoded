@@ -1,0 +1,31 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: ksz  reason: default package */
+/* loaded from: classes.dex */
+public enum ksz implements aacy {
+    LANG_CHANGE_BEHAVIOR_UNSPECIFIED(0),
+    LANG_CHANGE_STOP_DICTATION(1),
+    LANG_CHANGE_KEEP_DICTATING_IF_ELIGIBLE(2),
+    LANG_CHANGE_KEEP_DICTATING_OR_START_REGULAR_DICTATION(3),
+    LANG_CHANGE_KEEP_DICTATING_OR_START_REGULAR_DICTATION_ONLY_IF_SUPPORTED(4),
+    UNRECOGNIZED(-1);
+    
+    private final int h;
+
+    ksz(int i) {
+        this.h = i;
+    }
+
+    @Override // defpackage.aacy
+    public final int a() {
+        if (this == UNRECOGNIZED) {
+            return aadl.b();
+        }
+        return this.h;
+    }
+
+    @Override // java.lang.Enum
+    public final String toString() {
+        return Integer.toString(this.h);
+    }
+}

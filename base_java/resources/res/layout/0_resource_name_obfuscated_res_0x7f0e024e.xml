@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/0_resource_name_obfuscated_res_0x7f08029f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/0_resource_name_obfuscated_res_0x7f07036f" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f07036f" app:clipRadius="@dimen/0_resource_name_obfuscated_res_0x7f07037d" app:useSystemHoverToFocus="true">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e024f"/>
+</com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyboardView>

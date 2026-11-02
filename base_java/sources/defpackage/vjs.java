@@ -1,0 +1,31 @@
+package defpackage;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import j$.util.Objects;
+import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: PG */
+/* renamed from: vjs  reason: default package */
+/* loaded from: classes3.dex */
+public final class vjs extends AnimatorListenerAdapter {
+    final /* synthetic */ vju a;
+
+    public vjs(vju vjuVar) {
+        Objects.requireNonNull(vjuVar);
+        this.a = vjuVar;
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public final void onAnimationEnd(Animator animator) {
+        super.onAnimationEnd(animator);
+        vju vjuVar = this.a;
+        super/*android.graphics.drawable.Drawable*/.setVisible(false, false);
+        List<cmh> list = vjuVar.k;
+        if (list != null && !vjuVar.l) {
+            for (cmh cmhVar : list) {
+                cmhVar.b(vjuVar);
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <ImageView android:layout_gravity="top|left" android:rotation="270" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f150375"/>
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05d5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f14039e">
+        <ImageView android:layout_gravity="top|center_horizontal" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f150378"/>
+        <ImageView android:layout_gravity="top|center_horizontal" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f15037b"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="top|right" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f150375"/>
+</LinearLayout>

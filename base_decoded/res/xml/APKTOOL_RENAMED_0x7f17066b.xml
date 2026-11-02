@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="body">
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f12" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c47" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c4d" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f171239" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c4f" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170e2a" />
+        </view>
+    </keyboard>
+</framework>

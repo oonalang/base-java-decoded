@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinPasswordKeyboard" popup="@attr/APKTOOL_RENAMED_0x7f040279" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170892" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170641" />
+</framework>

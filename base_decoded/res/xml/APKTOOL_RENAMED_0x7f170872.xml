@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.richsymbol.RichSymbolKeyboardTablet" initial_states="LOCK_KEYBOARD+SUB_CATEGORY_2" persistent_states="@string/APKTOOL_RENAMED_0x7f140d46" persistent_states_pref_key="@string/APKTOOL_RENAMED_0x7f140af5" recent_key_layout="@layout/APKTOOL_RENAMED_0x7f0e073f" recent_key_type="rich_symbol" remember_recent_key="COMMITTED_ACTION_ONLY">
+        <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e0531" type="body">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170efb" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef8" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170efc" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a71" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a9a" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170bff" />
+        </view>
+    </keyboard>
+</framework>

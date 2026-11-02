@@ -1,0 +1,23 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: fny  reason: default package */
+/* loaded from: classes2.dex */
+public enum fny {
+    UNKNOWN(0),
+    PERFORM_PIX_OPERATION_INTENT_TRIGGERED(1),
+    CANCELED_SOURCE_PACKAGE_EMPTY(2),
+    CANCELED_SOURCE_PACKAGE_NOT_INSTALLED_FROM_PLAY_STORE(3),
+    CANCELED_SOURCE_PACKAGE_BLOCKLISTED(4),
+    CANCELED_UNSUPPORTED_SDK_VERSION(5),
+    CANCELED_INVALID_PIX_CODE(6),
+    FAILED_RESOLVABLE_API_EXCEPTION_NO_RESOLUTION(7),
+    FAILED_RESOLVABLE_INTENT_FAILED_TO_SEND(8),
+    FAILED_PERFORM_PIX_OPERATION_UNKNOWN_EXCEPTION(9),
+    FAILED_PERFORM_PIX_OPERATION_SUCCEEDED(10);
+    
+    public final int l;
+
+    fny(int i) {
+        this.l = i;
+    }
+}

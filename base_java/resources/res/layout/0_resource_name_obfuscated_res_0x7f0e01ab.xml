@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150304">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner style="@style/0_resource_name_obfuscated_res_0x7f15030c">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0224"/>
+        <LinearLayout app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/key_pos_header_power_key" app:layout_constraintStart_toEndOf="@+id/key_pos_header_access_points_menu" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15030d">
+            <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f150781">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0223"/>
+            </FrameLayout>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0231"/>
+        </LinearLayout>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e022e"/>
+        <include layout="@attr/0_resource_name_obfuscated_res_0x7f04000b"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

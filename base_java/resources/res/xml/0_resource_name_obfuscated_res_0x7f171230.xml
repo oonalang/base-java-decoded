@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/0_resource_name_obfuscated_res_0x7f0b2626" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0705" popup_timing="ON_TOUCH">
+            <action data="$param_data$" intention="COMMIT" keycode="KEYCODE_2" type="PRESS"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" value="$param_data$"/>
+        </softkey_template>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2626">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b22f8" param_data="+"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b202f" param_data="-"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2424" param_data="*"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b240c" param_data="/"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1a2d" param_data="("/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2349" param_data=")"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1a22" param_data="{"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b233f" param_data="}"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2422" param_data="√"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b240e" param_data="π"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0fc5" param_data="÷"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b205d" param_data="×"/>
+        </softkey_list>
+    </softkeys>
+</framework>

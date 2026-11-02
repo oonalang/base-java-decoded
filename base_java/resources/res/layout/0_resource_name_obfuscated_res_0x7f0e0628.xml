@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.DragConfirmationPopupView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0243" android:background="@color/0_resource_name_obfuscated_res_0x7f060958" android:layout_width="match_parent" android:layout_height="0dp">
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0244" android:layout_above="@+id/0_resource_name_obfuscated_res_0x7f0b0245" style="@style/0_resource_name_obfuscated_res_0x7f15116a"/>
+        <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0245" style="@style/0_resource_name_obfuscated_res_0x7f151169"/>
+    </RelativeLayout>
+</com.google.android.libraries.inputmethod.widgets.DragConfirmationPopupView>

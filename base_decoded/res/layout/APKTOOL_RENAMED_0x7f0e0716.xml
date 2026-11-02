@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="?APKTOOL_RENAMED_0x7f0400a4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b065c" android:tag=".background-icon.for-mic" android:background="@drawable/APKTOOL_RENAMED_0x7f08028f" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0657" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:layout_gravity="center" android:tag=".item-ripple.on-surface" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/APKTOOL_RENAMED_0x7f080295" />
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" android:tag=".icon.for-header-icon.for-mic.non-linear-scale" android:duplicateParentState="true" android:layout_width="?APKTOOL_RENAMED_0x7f0400a4" android:layout_height="?APKTOOL_RENAMED_0x7f0400a4" style="@style/APKTOOL_RENAMED_0x7f15031b" />
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c5" android:tag=".icon.for-voice-animation-icon.non-linear-scale" android:visibility="gone" android:layout_width="?APKTOOL_RENAMED_0x7f0400a4" android:layout_height="?APKTOOL_RENAMED_0x7f0400a4" android:src="@drawable/APKTOOL_RENAMED_0x7f0805a3" style="@style/APKTOOL_RENAMED_0x7f15031b" />
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c6" android:tag=".icon.for-voice-ring-animation.non-linear-scale" android:visibility="gone" android:layout_width="?APKTOOL_RENAMED_0x7f0400a4" android:layout_height="?APKTOOL_RENAMED_0x7f0400a4" android:src="@drawable/APKTOOL_RENAMED_0x7f0805a3" style="@style/APKTOOL_RENAMED_0x7f15031b" />
+</FrameLayout>

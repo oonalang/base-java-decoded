@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_weight="?APKTOOL_RENAMED_0x7f04024e" style="@style/APKTOOL_RENAMED_0x7f150450"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/key_pos_candidates_page_up" android:layout_weight="500.0" style="@style/APKTOOL_RENAMED_0x7f1506f7" />
+    <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/key_pos_candidates_page_down" android:layout_weight="500.0" style="@style/APKTOOL_RENAMED_0x7f1506e5" />
+</LinearLayout>

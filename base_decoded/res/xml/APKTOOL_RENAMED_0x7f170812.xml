@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170496" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170811" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f17078e" />
+    <if enable_number_row="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f17078a" />
+    </if>
+</framework>

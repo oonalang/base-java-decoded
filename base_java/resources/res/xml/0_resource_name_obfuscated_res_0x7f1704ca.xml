@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170498"/>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f1707f5"/>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170796"/>
+    <keyboard>
+        <view override="motion_event_handler" type="sweep">
+            <motion_event_handler class=".motioneventhandler.SpatialModelMotionEventHandler"/>
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c31"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c46"/>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170cbe"/>
+            </if>
+        </view>
+    </keyboard>
+    <ifnot enable_pk_simulator="true" enable_pk_simulator_setting="true">
+        <if enable_number_row="true">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170766"/>
+        </if>
+    </ifnot>
+</framework>

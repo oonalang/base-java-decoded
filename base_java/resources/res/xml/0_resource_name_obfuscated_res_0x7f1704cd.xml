@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170498"/>
+    <keyboard class="com.google.android.apps.inputmethod.latin.keyboard.LatinKeyboardWithNumberMode">
+        <if device="tablet" device_size="large" keyboard_mode="normal">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01b9" type="sweep"/>
+        </if>
+        <else_if keyboard_mode="split">
+            <if split_keyboard_handedness_zh="right">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01c6" type="sweep"/>
+            </if>
+            <else>
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01c4" type="sweep"/>
+            </else>
+        </else_if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e01b4" type="sweep"/>
+        </else>
+        <view override="motion_event_handler" type="sweep">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a72"/>
+            <if device="tablet" device_size="large" keyboard_mode="normal">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e2c"/>
+            </if>
+            <else_if keyboard_mode="split">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f0b"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171222"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa2"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e70"/>
+            </else_if>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c31"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c49"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c08"/>
+            <if device="tablet" device_size="large" keyboard_mode="normal">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f00"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170918"/>
+            </if>
+            <else_if keyboard_mode="split">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c4a"/>
+            </else_if>
+        </view>
+    </keyboard>
+</framework>

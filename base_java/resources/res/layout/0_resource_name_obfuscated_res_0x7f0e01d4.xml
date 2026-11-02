@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:extra_inner_end_padding="?attr/0_resource_name_obfuscated_res_0x7f040077" app:extra_inner_start_padding="?attr/0_resource_name_obfuscated_res_0x7f040077" style="@style/0_resource_name_obfuscated_res_0x7f150538">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="0dp"/>
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a0" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a3" style="@style/0_resource_name_obfuscated_res_0x7f15020b">
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01b5" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f150218"/>
+            <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a2" android:layout_width="match_parent" android:layout_height="40dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/0_resource_name_obfuscated_res_0x7f0b01b5" app:layout_constraintTop_toTopOf="0">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0060"/>
+            </FrameLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b019c" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/0_resource_name_obfuscated_res_0x7f0b01a2"/>
+            <View android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a9" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01b6" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01d2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0dp"/>
+</com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>

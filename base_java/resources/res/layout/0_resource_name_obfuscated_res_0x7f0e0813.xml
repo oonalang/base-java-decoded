@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" style="@style/0_resource_name_obfuscated_res_0x7f15113f">
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a59" style="@style/0_resource_name_obfuscated_res_0x7f15113b">
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f15113a"/>
+        <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView style="@style/0_resource_name_obfuscated_res_0x7f151139"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a5d" style="@style/0_resource_name_obfuscated_res_0x7f15113d">
+        <TextView style="@style/0_resource_name_obfuscated_res_0x7f15113c"/>
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f15113e"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a57" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView style="@style/0_resource_name_obfuscated_res_0x7f151137"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a5f" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f151138"/>
+    </FrameLayout>
+</LinearLayout>

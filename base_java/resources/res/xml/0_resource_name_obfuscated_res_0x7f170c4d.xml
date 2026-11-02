@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="SHOW_EMOJI_SWITCH_KEY">
+        <if expressions="policy_transparency">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2471" view_id="@+id/key_pos_switch_to_smiley"/>
+        </if>
+        <else>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246d" view_id="@+id/key_pos_switch_to_smiley"/>
+        </else>
+    </key_mapping>
+    <key_mapping state="INPUT_TYPE_URI">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0ac1" view_id="@+id/key_pos_switch_to_smiley"/>
+    </key_mapping>
+    <key_mapping state="INPUT_TYPE_EMAIL_ADDRESS">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0ac1" view_id="@+id/key_pos_switch_to_smiley"/>
+    </key_mapping>
+</framework>

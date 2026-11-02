@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150339">
+    <com.google.android.libraries.inputmethod.widgets.ShadowedFrameLayout android:background="@drawable/0_resource_name_obfuscated_res_0x7f08029a" android:clipChildren="false" android:layout_margin="@dimen/0_resource_name_obfuscated_res_0x7f070347" app:clipRadius="18dp" style="@style/0_resource_name_obfuscated_res_0x7f150336">
+        <ImageView android:tint="@color/0_resource_name_obfuscated_res_0x7f060954" android:contentDescription="@null" android:tintMode="multiply" android:layout_marginHorizontal="@dimen/0_resource_name_obfuscated_res_0x7f07033e" android:layout_marginVertical="@dimen/0_resource_name_obfuscated_res_0x7f07033f" style="@style/0_resource_name_obfuscated_res_0x7f150337"/>
+        <com.google.android.libraries.inputmethod.accessory.indicator.BitmapTextView android:textColor="@color/0_resource_name_obfuscated_res_0x7f060954" android:contentDescription="@null" android:layout_marginHorizontal="@dimen/0_resource_name_obfuscated_res_0x7f0703e1" android:layout_marginVertical="@dimen/0_resource_name_obfuscated_res_0x7f0703e2" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f150338"/>
+    </com.google.android.libraries.inputmethod.widgets.ShadowedFrameLayout>
+</FrameLayout>

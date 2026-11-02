@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <override_keyboard_xml_conditions>
+        <bool name="@string/APKTOOL_RENAMED_0x7f140959" value="true" />
+        <bool name="@string/APKTOOL_RENAMED_0x7f140d5b" value="false" />
+    </override_keyboard_xml_conditions>
+</framework>

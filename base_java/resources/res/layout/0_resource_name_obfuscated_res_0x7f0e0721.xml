@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag=".keytop.for-action-key" style="@style/0_resource_name_obfuscated_res_0x7f150367">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:tag=".background-icon.for-action-key" style="@style/0_resource_name_obfuscated_res_0x7f15032a"/>
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleAndAutoMirroredImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" android:tag=".icon.for-action-key" style="@style/0_resource_name_obfuscated_res_0x7f15031e"/>
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1326" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e09" view_id="@id/E01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df3" view_id="@id/E02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df5" view_id="@id/E03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df2" view_id="@id/E04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e07" view_id="@id/E05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e05" view_id="@id/E06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dfe" view_id="@id/E07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df9" view_id="@id/E08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df1" view_id="@id/E09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dfb" view_id="@id/E10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df8" view_id="@id/E11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0df4" view_id="@id/E12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2397" view_id="@id/D04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1959" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b239d" view_id="@id/D10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a31" view_id="@id/D11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234e" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b19a8" view_id="@id/C03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b18fd" view_id="@id/C05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1036" view_id="@id/C08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0890" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b232d" view_id="@id/C12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d3a" view_id="@id/B03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a74" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1329" view_id="@id/B09" />
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT,ALTGR+CAPS">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1850" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1810" view_id="@id/C05" />
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2835" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fe8" view_id="@id/E11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b22fa" view_id="@id/E12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cca" view_id="@id/D10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a23" view_id="@id/D11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2340" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2307" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b287c" view_id="@id/C12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a2e" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234a" view_id="@id/B09" />
+    </key_mapping>
+    <merge_key_mapping exclude_state="SHIFT" state="ALTGR">
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1f90" view_id="@id/E00" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1c05" view_id="@id/E11" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e5d" view_id="@id/E12" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1b88" view_id="@id/D10" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1d73" view_id="@id/D11" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e64" view_id="@id/D12" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e61" view_id="@id/C11" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1f92" view_id="@id/C12" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1d78" view_id="@id/B08" />
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e68" view_id="@id/B09" />
+    </merge_key_mapping>
+</framework>

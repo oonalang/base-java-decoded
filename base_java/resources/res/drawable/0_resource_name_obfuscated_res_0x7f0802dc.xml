@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="?attr/0_resource_name_obfuscated_res_0x7f0402bf" android:paddingBottom="?attr/0_resource_name_obfuscated_res_0x7f0402be" android:paddingStart="?attr/0_resource_name_obfuscated_res_0x7f0402b5" android:paddingEnd="?attr/0_resource_name_obfuscated_res_0x7f0402b5">
+    <item android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f0802dd" android:top="?attr/0_resource_name_obfuscated_res_0x7f0402bf" android:bottom="?attr/0_resource_name_obfuscated_res_0x7f0402be" android:start="?attr/0_resource_name_obfuscated_res_0x7f0402b5" android:end="?attr/0_resource_name_obfuscated_res_0x7f0402b5"/>
+</layer-list>

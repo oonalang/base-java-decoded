@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView android:theme="@style/APKTOOL_RENAMED_0x7f150cfa" app:APKTOOL_RENAMED_0x7f040472="@dimen/APKTOOL_RENAMED_0x7f0709e7" style="@style/APKTOOL_RENAMED_0x7f150232"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b014d" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b0713" style="@style/APKTOOL_RENAMED_0x7f150235">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a55" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b2a52" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040756="40.0dp" style="@style/APKTOOL_RENAMED_0x7f15112e" />
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a65" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b2a52" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040759="2.0dp" style="@style/APKTOOL_RENAMED_0x7f15112e">
+            <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b0214" />
+        </com.google.android.libraries.inputmethod.widgets.SoftKeyView>
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e080e" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView>

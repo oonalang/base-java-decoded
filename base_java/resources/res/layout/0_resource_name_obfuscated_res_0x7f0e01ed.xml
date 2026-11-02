@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:layout_customizedKeyboardHeight="?attr/0_resource_name_obfuscated_res_0x7f0400c7" style="@style/0_resource_name_obfuscated_res_0x7f1501e3">
+    <FrameLayout android:tag=".bg.expression-keyboard-background" android:background="?attr/0_resource_name_obfuscated_res_0x7f040108" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_marginHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04011f" android:paddingHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04010d" app:layout_behavior="@string/0_resource_name_obfuscated_res_0x7f140aef" style="@style/0_resource_name_obfuscated_res_0x7f1502b5">
+                <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07bf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="@integer/0_resource_name_obfuscated_res_0x7f0c000b"/>
+                <LinearLayout android:orientation="vertical" android:layout_weight="@integer/0_resource_name_obfuscated_res_0x7f0c000b" style="@style/0_resource_name_obfuscated_res_0x7f15033a">
+                    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01e3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.google.android.libraries.inputmethod.emoji.picker.EmojiPickerBodyRecyclerView android:scrollbarThumbVertical="@drawable/0_resource_name_obfuscated_res_0x7f0806e9" android:scrollbarTrackVertical="@null" android:scrollbarStyle="outsideOverlay" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05d7" android:paddingLeft="5dp" android:paddingRight="5dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="?attr/0_resource_name_obfuscated_res_0x7f04010b" android:importantForAccessibility="yes"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f8"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

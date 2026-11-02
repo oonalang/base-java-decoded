@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinDigitsKeyboard" initial_states="LOCK_KEYBOARD">
+        <ifnot keyboard_mode="floating_panel">
+            <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e0529" scalable="false" type="header" />
+        </ifnot>
+        <view type="body">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170ec2" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170faf" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f0c" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17122d" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f171224" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f171111" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ef8" />
+        </view>
+        <if keyboard_mode="split">
+            <if split_with_duplicate_keys="true">
+                <view layout="@layout/APKTOOL_RENAMED_0x7f0e058d" type="body" />
+            </if>
+            <else>
+                <view layout="@layout/APKTOOL_RENAMED_0x7f0e058e" type="body" />
+            </else>
+            <view type="body">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171230" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171232" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170caa" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170cad" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a32" />
+            </view>
+        </if>
+        <else>
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e058c" type="body">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171231" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171232" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a55" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a56" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170ca8" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170cac" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a32" />
+            </view>
+        </else>
+    </keyboard>
+</framework>

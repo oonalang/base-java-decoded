@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b2a3c" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.widgets.text.LinkableTextView android:textSize="16.0dp" android:textColor="#3c4043" android:textColorLink="@color/APKTOOL_RENAMED_0x7f0609c3" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b2a3d" android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f0709d6" android:paddingBottom="@dimen/APKTOOL_RENAMED_0x7f0709d6" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f14084e" android:layout_weight="15.0" android:lineSpacingMultiplier="1.2" android:contentDescription="@string/APKTOOL_RENAMED_0x7f14084f" android:paddingStart="@dimen/APKTOOL_RENAMED_0x7f0709d8" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f0709d4" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f0709d7">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b2a16" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f0709d5" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f0709d5" android:src="@drawable/APKTOOL_RENAMED_0x7f080691" android:tint="@color/APKTOOL_RENAMED_0x7f0608c6" android:contentDescription="@string/APKTOOL_RENAMED_0x7f141653" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if burmese_zawgyi="true">
+        <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.ZawgyiWrappedLatinIme" display_app_completions="true" is_unicode="false" language="my" localization_language="my-ZG" string_id="ime_burmese">
+            <include href="@xml/APKTOOL_RENAMED_0x7f1706c2" main_def="@xml/APKTOOL_RENAMED_0x7f170861" support_a11y_keyboard="true" variant="burmese" variant_label="@string/APKTOOL_RENAMED_0x7f14145a" />
+            <extra_values>
+                <item id="@id/APKTOOL_RENAMED_0x7f0b02d7" value="။ " />
+            </extra_values>
+        </ime>
+    </if>
+    <else>
+        <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="my" string_id="ime_burmese">
+            <include href="@xml/APKTOOL_RENAMED_0x7f1706c2" main_def="@xml/APKTOOL_RENAMED_0x7f170860" support_a11y_keyboard="true" variant="burmese" variant_label="@string/APKTOOL_RENAMED_0x7f14145a" />
+            <extra_values>
+                <item id="@id/APKTOOL_RENAMED_0x7f0b02d7" value="။ " />
+            </extra_values>
+        </ime>
+    </else>
+</framework>

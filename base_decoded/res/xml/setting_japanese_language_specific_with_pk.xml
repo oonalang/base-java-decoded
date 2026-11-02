@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140bec" android:key="@string/APKTOOL_RENAMED_0x7f1409a9" android:summary="@string/APKTOOL_RENAMED_0x7f140beb" />
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140be7">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140be9" android:key="@string/APKTOOL_RENAMED_0x7f1409a8" android:summary="@string/APKTOOL_RENAMED_0x7f140be8" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140be6" android:key="@string/APKTOOL_RENAMED_0x7f1409a7" android:summary="@string/APKTOOL_RENAMED_0x7f140be5" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

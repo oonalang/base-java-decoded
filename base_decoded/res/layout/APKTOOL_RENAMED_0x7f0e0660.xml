@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Switch android:gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b294c" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/APKTOOL_RENAMED_0x7f0709a5" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

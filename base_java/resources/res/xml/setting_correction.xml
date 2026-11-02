@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f140b6c" android:key="@string/0_resource_name_obfuscated_res_0x7f140a68">
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140b4f" android:key="@string/0_resource_name_obfuscated_res_0x7f140b4e">
+        <com.google.android.libraries.inputmethod.preferencewidgets.CustomTwoTargetSwitchPreference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b4b" android:key="@string/0_resource_name_obfuscated_res_0x7f140a19" android:fragment="com.google.android.apps.inputmethod.latin.preference.AutoCorrectionSettingsFragment"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b49" android:key="@string/0_resource_name_obfuscated_res_0x7f1408fd" android:summary="@string/0_resource_name_obfuscated_res_0x7f140b48"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c8a" android:key="@string/0_resource_name_obfuscated_res_0x7f140c89">
+        <extra android:name="NON_INDEXABLE" android:value="true"/>
+        <Preference android:persistent="false" android:title="@string/0_resource_name_obfuscated_res_0x7f140c84" android:key="@string/0_resource_name_obfuscated_res_0x7f140a8e" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c83">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$SpellCheckersSettingsActivity"/>
+        </Preference>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c1e" android:key="@string/0_resource_name_obfuscated_res_0x7f140958" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c1d" android:shouldDisableView="true"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140d63" android:key="@string/0_resource_name_obfuscated_res_0x7f14094d" android:summary="@string/0_resource_name_obfuscated_res_0x7f140d62" android:shouldDisableView="true"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c92" android:key="@string/0_resource_name_obfuscated_res_0x7f140c90">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b92" android:key="@string/0_resource_name_obfuscated_res_0x7f140952" android:summary="@string/0_resource_name_obfuscated_res_0x7f140b91">
+            <extra android:name="hide_if_flag_is_false" android:value="enable_inline_suggestions_on_client_side=false"/>
+        </SwitchPreferenceCompat>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b56" android:key="@string/0_resource_name_obfuscated_res_0x7f140902"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c8f" android:key="@string/0_resource_name_obfuscated_res_0x7f140a8b" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c8e"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c80" android:key="@string/0_resource_name_obfuscated_res_0x7f140a8c" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c7f" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140a8b"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c32" android:key="@string/0_resource_name_obfuscated_res_0x7f140a35" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c31" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140a8c"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140bd9" android:key="@string/0_resource_name_obfuscated_res_0x7f14099f" android:summary="@string/0_resource_name_obfuscated_res_0x7f140bd8" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140a8c"/>
+        <Preference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140ba5" android:key="@string/0_resource_name_obfuscated_res_0x7f14096f" android:summary="@string/0_resource_name_obfuscated_res_0x7f140ba4">
+            <intent android:targetPackage="com.google.android.as" android:action="android.intent.action.MAIN" android:targetClass="com.google.android.apps.miphone.aiai.autofill.settings.keyboard.s.KeyboardSuggestionsSettingsActivity"/>
+        </Preference>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c10" android:key="@string/0_resource_name_obfuscated_res_0x7f14092d" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c0f">
+            <extra android:name="hide_if_flag_is_false" android:value="enable_auto_space_setting=false"/>
+        </SwitchPreferenceCompat>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140cb0" android:key="@string/0_resource_name_obfuscated_res_0x7f140caf">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140d65" android:key="@string/0_resource_name_obfuscated_res_0x7f1409af" android:summary="@string/0_resource_name_obfuscated_res_0x7f140d64" android:shouldDisableView="true"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f1416b6" android:key="@string/0_resource_name_obfuscated_res_0x7f140ab9"/>
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

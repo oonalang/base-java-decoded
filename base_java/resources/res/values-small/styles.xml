@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="0_resource_name_obfuscated_res_0x7f150cdb" parent="@style/0_resource_name_obfuscated_res_0x7f150bc9">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+        <item name="0_resource_name_obfuscated_res_0x7f0407ba">@style/0_resource_name_obfuscated</item>
+    </style>
+    <style name="0_resource_name_obfuscated" parent="@style/0_resource_name_obfuscated_res_0x7f15046b">
+        <item name="android:minHeight">65dp</item>
+    </style>
+</resources>

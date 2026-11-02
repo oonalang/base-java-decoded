@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170b01"/>
+    <key_mapping>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0890" view_id="@+id/E00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0df1" view_id="@+id/D11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a31" view_id="@+id/D12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b18ef" view_id="@+id/C10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0e09" view_id="@+id/C11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b234e" view_id="@+id/C12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b232d" view_id="@+id/B00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b239d" view_id="@+id/B10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2411" view_id="@+id/B11"/>
+    </key_mapping>
+    <key_mapping state="SHIFT,CAPS">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1809" view_id="@+id/C10"/>
+    </key_mapping>
+    <key_mapping state="SHIFT">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2307" view_id="@+id/E00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0df8" view_id="@+id/E06"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0dfe" view_id="@+id/D11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a23" view_id="@+id/D12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0df5" view_id="@+id/C11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2340" view_id="@+id/C12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b287c" view_id="@+id/B00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cca" view_id="@+id/B10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2303" view_id="@+id/B11"/>
+    </key_mapping>
+    <key_mapping state="CAPS+SHIFT">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b18ef" view_id="@+id/C10"/>
+    </key_mapping>
+</framework>

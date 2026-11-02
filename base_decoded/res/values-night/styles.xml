@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight" parent="@style/APKTOOL_RENAMED_0x7f15099c" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/APKTOOL_RENAMED_0x7f15099c" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="APKTOOL_RENAMED_0x7f150a17" parent="@style/APKTOOL_RENAMED_0x7f150a07" />
+    <style name="APKTOOL_RENAMED_0x7f150a18" parent="@style/APKTOOL_RENAMED_0x7f150a08" />
+    <style name="APKTOOL_RENAMED_0x7f150a23" parent="@style/APKTOOL_RENAMED_0x7f150a13" />
+    <style name="APKTOOL_RENAMED_0x7f150a48" parent="@style/APKTOOL_RENAMED_0x7f150a38" />
+    <style name="APKTOOL_RENAMED_0x7f150a96" parent="@style/APKTOOL_RENAMED_0x7f150a92" />
+    <style name="APKTOOL_RENAMED_0x7f150a97" parent="@style/APKTOOL_RENAMED_0x7f150a93" />
+    <style name="APKTOOL_RENAMED_0x7f150adc" parent="@style/APKTOOL_RENAMED_0x7f150ad8" />
+    <style name="APKTOOL_RENAMED_0x7f150bb8" parent="@style/APKTOOL_RENAMED_0x7f150bb6" />
+    <style name="APKTOOL_RENAMED_0x7f150be7" parent="@style/APKTOOL_RENAMED_0x7f150be5" />
+    <style name="APKTOOL_RENAMED_0x7f150cdb" parent="@style/APKTOOL_RENAMED_0x7f150bc9">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150cde" parent="@style/APKTOOL_RENAMED_0x7f150e11" />
+</resources>

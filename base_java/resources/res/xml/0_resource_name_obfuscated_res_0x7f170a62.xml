@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if split_keyboard_handedness_ja="right">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a63"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a5f"/>
+    </if>
+    <else_if split_keyboard_handedness_ja="left">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a64"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a5e"/>
+    </else_if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a64"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a63"/>
+    </else>
+    <key_mapping>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1519" view_id="@+id/D01"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1527" view_id="@+id/C01"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1526" view_id="@+id/B00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1528" view_id="@+id/A00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1518" view_id="@+id/B01"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247c" view_id="@+id/A01"/>
+        <if japanese_use_tri_state_mode="true">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159f" view_id="@+id/key_pos_switch_hiragana_alphabet"/>
+        </if>
+        <else>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246c" view_id="@+id/key_pos_switch_hiragana_alphabet"/>
+        </else>
+    </key_mapping>
+    <key_mapping state="SHOW_LANGUAGE_SWITCH_KEY">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159c" view_id="@+id/key_pos_ja_12keys_sub_10"/>
+    </key_mapping>
+    <if split_keyboard_handedness_ja="left">
+        <key_mapping state="COMPOSING">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1565" view_id="@+id/key_pos_ja_12keys_sub_10"/>
+        </key_mapping>
+    </if>
+    <if split_keyboard_handedness_ja="both">
+        <key_mapping>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247c" view_id="@+id/key_pos_ja_12keys_10"/>
+        </key_mapping>
+        <key_mapping state="COMPOSING">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1565" view_id="@+id/key_pos_ja_12keys_10"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1565" view_id="@+id/key_pos_ja_12keys_sub_10"/>
+        </key_mapping>
+    </if>
+    <key_mapping state="COMPOSING">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b241c" view_id="@+id/key_pos_space"/>
+    </key_mapping>
+</framework>

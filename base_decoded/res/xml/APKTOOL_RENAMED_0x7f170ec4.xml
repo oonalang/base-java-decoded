@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:APKTOOL_RENAMED_0x7f04050f="@id/APKTOOL_RENAMED_0x7f0b01d7" motion:APKTOOL_RENAMED_0x7f040510="@id/APKTOOL_RENAMED_0x7f0b01d8" motion:APKTOOL_RENAMED_0x7f0405a8="300" motion:APKTOOL_RENAMED_0x7f0408be="APKTOOL_RENAMED_0x7f0b0247" />
+    <Transition motion:APKTOOL_RENAMED_0x7f04050f="@id/APKTOOL_RENAMED_0x7f0b01d8" motion:APKTOOL_RENAMED_0x7f040510="@id/APKTOOL_RENAMED_0x7f0b01d7" motion:APKTOOL_RENAMED_0x7f0405a8="200" motion:APKTOOL_RENAMED_0x7f0408be="APKTOOL_RENAMED_0x7f0b0249" />
+    <ConstraintSet android:id="@id/APKTOOL_RENAMED_0x7f0b01d8">
+        <Constraint android:id="@id/APKTOOL_RENAMED_0x7f0b0422" android:layout_height="0.0dp" motion:APKTOOL_RENAMED_0x7f040727="@id/input_area" motion:APKTOOL_RENAMED_0x7f04073a="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f04073e="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+        <Constraint android:id="@id/input_area" motion:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f04073a="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f04073e="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/APKTOOL_RENAMED_0x7f0b01d7">
+        <Constraint android:id="@id/APKTOOL_RENAMED_0x7f0b0422" android:layout_height="0.0dp" motion:APKTOOL_RENAMED_0x7f040727="@id/input_area" motion:APKTOOL_RENAMED_0x7f04073a="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f04073e="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+        <Constraint android:id="@id/input_area" android:layout_height="0.0dp" motion:APKTOOL_RENAMED_0x7f040732="APKTOOL_RENAMED_0x7f0b06f7" motion:APKTOOL_RENAMED_0x7f040735="1.0" motion:APKTOOL_RENAMED_0x7f04073a="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f04073e="APKTOOL_RENAMED_0x7f0b06ed" motion:APKTOOL_RENAMED_0x7f040743="APKTOOL_RENAMED_0x7f0b06ed" />
+    </ConstraintSet>
+</MotionScene>

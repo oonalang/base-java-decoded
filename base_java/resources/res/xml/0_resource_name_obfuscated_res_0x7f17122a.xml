@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b112e" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1408e3" keycode="KEYCODE_SOFT_RIGHT" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f08048a" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="linear"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1130" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1408e3" keycode="KEYCODE_SOFT_RIGHT" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f08048a" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027f" type="linear"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b112f" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1408e3" keycode="KEYCODE_SOFT_RIGHT" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f08048a" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040281" type="linear"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1131" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1408e6" keycode="KEYCODE_SOFT_RIGHT" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f08048d" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="linear"/>
+        </softkey>
+    </softkeys>
+</framework>

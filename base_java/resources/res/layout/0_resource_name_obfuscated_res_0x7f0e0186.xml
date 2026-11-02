@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="?attr/0_resource_name_obfuscated_res_0x7f0401cf">
+    <TextView android:textSize="?attr/0_resource_name_obfuscated_res_0x7f0401d0" android:textColor="@color/0_resource_name_obfuscated_res_0x7f0605e3" android:layout_gravity="center_horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b042b" android:tag=".label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="?attr/0_resource_name_obfuscated_res_0x7f0401cc" android:textColor="@color/0_resource_name_obfuscated_res_0x7f0605e3" android:layout_gravity="center_horizontal" android:tag=".label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/0_resource_name_obfuscated_res_0x7f070385" android:text="@string/0_resource_name_obfuscated_res_0x7f140173"/>
+</LinearLayout>

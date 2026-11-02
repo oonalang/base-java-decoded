@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime always_show_suggestions="true" announce_auto_selected_candidate="true" class="com.google.android.apps.inputmethod.libs.chinese.ime.AsyncChineseProcessorBasedIme" display_app_completions="true" indicator_label="五" inline_composing="false" language="zh-CN" string_id="ime_zh_cn_wubi" use_ascii_password_keyboard="true">
+        <if physical_keyboard="qwerty">
+            <attrs language_specific_settings="@xml/0_resource_name_obfuscated_res_0x7f171242"/>
+        </if>
+        <if enable_chinese_inline_composing_cn="true">
+            <attrs inline_composing="true"/>
+        </if>
+        <keyboard_group pk_language_tag="en" pk_layout_type="qwerty" supports_split_mode="true" variant="wubi" variant_label="@string/0_resource_name_obfuscated_res_0x7f1415c2" variant_name_mandatory="true">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170003" support_a11y_keyboard="true"/>
+            <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1706a2" type="prime">
+                <merge def="@xml/0_resource_name_obfuscated_res_0x7f1704d1"/>
+            </keyboard>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170912"/>
+        </keyboard_group>
+        <extra_values>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f3" value="。"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02da" value="@string/0_resource_name_obfuscated_res_0x7f14093b"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02e3" value="true"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f2" value="hmm"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02fa" value="五笔"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02d0" res="@xml/0_resource_name_obfuscated_res_0x7f1704cb"/>
+        </extra_values>
+        <processors>
+            <processor class="com.google.android.libraries.inputmethod.ime.processor.ComposingTextProcessor"/>
+            <processor class="com.google.android.apps.inputmethod.libs.hmmvoice.ChineseHmmVoiceInputProcessor"/>
+            <processor class="com.google.android.apps.inputmethod.libs.chinese.ime.hmm.ChineseAutoHalfWidthPeriodProcessor"/>
+            <processor class="com.google.android.apps.inputmethod.libs.pinyin.HmmWubiDecodeProcessor"/>
+            <processor class="com.google.android.apps.inputmethod.libs.chinese.ime.hmm.ChineseDoubleSpaceProcessor"/>
+            <processor class="com.google.android.apps.inputmethod.libs.chinese.ime.hmm.ChineseAutoSpaceProcessor"/>
+            <processor class="com.google.android.libraries.inputmethod.ime.processor.ScrubMoveProcessor"/>
+            <processor class="com.google.android.libraries.inputmethod.ime.processor.OutputProcessor"/>
+        </processors>
+    </ime>
+</framework>

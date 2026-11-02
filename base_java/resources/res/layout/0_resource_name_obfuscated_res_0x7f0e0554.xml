@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f1502b1">
+    <ViewSwitcher android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03ae" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:tag=".bg.expression-keyboard-background" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080278" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="?attr/0_resource_name_obfuscated_res_0x7f04011f">
+            <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f15053e">
+                <ImageView style="@style/0_resource_name_obfuscated_res_0x7f15053b"/>
+            </FrameLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05ef" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="100" android:overScrollMode="never">
+                <com.google.android.apps.inputmethod.libs.expression.header.StartElementRecyclerView android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f0" android:layout_width="wrap_content" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="com.google.android.apps.inputmethod.libs.expression.header.StartElementScrollBehavior"/>
+                <com.google.android.libraries.inputmethod.recyclerview.BindingRecyclerView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b06e4" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f0400a4" android:overScrollMode="never" android:paddingStart="@dimen/0_resource_name_obfuscated_res_0x7f07071a" android:paddingEnd="@dimen/0_resource_name_obfuscated_res_0x7f0703bc" android:keyboardNavigationCluster="true" app:layout_behavior="com.google.android.apps.inputmethod.libs.expression.header.MiddleElementScrollBehavior"/>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f15053d">
+                <ImageView style="@style/0_resource_name_obfuscated_res_0x7f15053a"/>
+            </FrameLayout>
+        </LinearLayout>
+        <ViewAnimator android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03ad" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0795"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f2"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0680"/>
+        </ViewAnimator>
+    </ViewSwitcher>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

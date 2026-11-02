@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170a9f" />
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f7b" view_id="@id/key_pos_number_panel_0_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fab" view_id="@id/key_pos_number_panel_0_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f9f" view_id="@id/key_pos_number_panel_0_3" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b12a6" view_id="@id/key_pos_number_panel_0_4" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f63" view_id="@id/key_pos_number_panel_1_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f57" view_id="@id/key_pos_number_panel_1_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f93" view_id="@id/key_pos_number_panel_1_3" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b12ae" view_id="@id/key_pos_number_panel_1_4" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cb5" view_id="@id/key_pos_number_panel_2_0" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f87" view_id="@id/key_pos_number_panel_2_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f4b" view_id="@id/key_pos_number_panel_2_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0f6f" view_id="@id/key_pos_number_panel_2_3" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b129d" view_id="@id/key_pos_number_panel_2_4" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b21a7" view_id="@id/key_pos_number_panel_3_0" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cb4" view_id="@id/key_pos_number_panel_3_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fb7" view_id="@id/key_pos_number_panel_3_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b22dc" view_id="@id/key_pos_number_panel_3_3" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b12b0" view_id="@id/key_pos_number_panel_3_4" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b247a" view_id="@id/key_pos_main_panel_left_fun" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2428" view_id="@id/key_pos_main_panel_0_0" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b242c" view_id="@id/key_pos_main_panel_0_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b242a" view_id="@id/key_pos_main_panel_0_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2426" view_id="@id/key_pos_main_panel_1_0" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b242d" view_id="@id/key_pos_main_panel_1_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2429" view_id="@id/key_pos_main_panel_1_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2425" view_id="@id/key_pos_main_panel_2_0" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2427" view_id="@id/key_pos_main_panel_2_1" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b242b" view_id="@id/key_pos_main_panel_2_2" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e0e" view_id="@id/key_pos_del" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b205c" view_id="@id/key_pos_move_cursor" />
+        <if split_keyboard_handedness_zh="left">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b247a" view_id="@id/key_pos_number_panel_3_0" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b21a7" view_id="@id/key_pos_main_panel_left_fun" />
+        </if>
+    </key_mapping>
+    <key_mapping state="SHIFT,CAPS">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b205c" view_id="@id/key_pos_move_cursor" />
+    </key_mapping>
+    <key_mapping state="COMPOSING">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0e0f" view_id="@id/key_pos_del" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cc0" view_id="@id/key_pos_move_cursor" />
+    </key_mapping>
+    <key_mapping state="SHOW_LANGUAGE_SWITCH_KEY">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b247b" view_id="@id/key_pos_number_panel_3_1" />
+    </key_mapping>
+    <merge_key_mapping state="INPUT_TYPE_URI,INPUT_TYPE_EMAIL_ADDRESS">
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b108b" view_id="@id/key_pos_number_panel_3_3" />
+    </merge_key_mapping>
+</framework>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_RENAMED_0x7f150cdb" parent="@style/APKTOOL_RENAMED_0x7f150bc9">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+        <item name="APKTOOL_RENAMED_0x7f0407ba">@style/APKTOOL_RENAMED_0x7f150ce3</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150ce3" parent="@style/APKTOOL_RENAMED_0x7f15046b">
+        <item name="android:minHeight">65.0dp</item>
+    </style>
+</resources>

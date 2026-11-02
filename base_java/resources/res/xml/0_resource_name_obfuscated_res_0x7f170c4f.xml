@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b24e4" view_id="@+id/key_pos_tab"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a19" view_id="@+id/key_pos_left_arrow"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2336" view_id="@+id/key_pos_right_arrow"/>
+    </key_mapping>
+    <key_mapping state="IME_FLAG_NAVIGATE_NEXT,IME_ACTION_NEXT">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b24e3" view_id="@+id/key_pos_tab"/>
+    </key_mapping>
+    <key_mapping state="SHIFT+IME_FLAG_NAVIGATE_PREVIOUS,SHIFT+IME_ACTION_PREVIOUS">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b23b0" view_id="@+id/key_pos_tab"/>
+    </key_mapping>
+</framework>

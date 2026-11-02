@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:tag=".keyboard-base-area" android:background="@drawable/0_resource_name_obfuscated_res_0x7f0802eb" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07ca"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07cc"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07cd"/>
+    </LinearLayout>
+</merge>

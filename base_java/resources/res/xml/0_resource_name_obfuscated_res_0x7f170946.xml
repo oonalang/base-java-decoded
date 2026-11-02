@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b239d" view_id="@+id/C10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b28b3" view_id="@+id/B04"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b28b4" view_id="@+id/B05"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a33" view_id="@+id/B06"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2350" view_id="@+id/B07"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1f97" view_id="@+id/B08"/>
+    </key_mapping>
+</framework>

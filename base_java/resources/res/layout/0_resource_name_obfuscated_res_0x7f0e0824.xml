@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f151153">
+    <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f151154">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a61" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingVertical="@dimen/0_resource_name_obfuscated_res_0x7f0709ee">
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15114c"/>
+            <TextView app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginStart="0dp" style="@style/0_resource_name_obfuscated_res_0x7f15114d"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f15114b">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e081b"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView>

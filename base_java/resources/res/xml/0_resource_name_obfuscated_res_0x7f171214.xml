@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_template content_description="$desc$" id="@+id/0_resource_name_obfuscated_res_0x7f0b2660" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0760" multi_touch="false" popup_timing="@string/0_resource_name_obfuscated_res_0x7f140ae4" slide_sensitivity="NORMAL">
+            <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="KEYCODE_0" popup_label="$long_press_data$" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040280" type="LONG_PRESS"/>
+            <label location="@+id/0_resource_name_obfuscated_res_0x7f0b05fa" value="$hint_label$"/>
+        </softkey_template>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1101" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0760"/>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2660">
+            <softkey hint_label="١" id="@+id/0_resource_name_obfuscated_res_0x7f0b11ac" long_press_data="١,1"/>
+            <softkey hint_label="٢" id="@+id/0_resource_name_obfuscated_res_0x7f0b11cc" long_press_data="٢,2"/>
+            <softkey hint_label="٣" id="@+id/0_resource_name_obfuscated_res_0x7f0b11c4" long_press_data="٣,3"/>
+            <softkey hint_label="٤" id="@+id/0_resource_name_obfuscated_res_0x7f0b119c" long_press_data="٤,4"/>
+            <softkey hint_label="٥" id="@+id/0_resource_name_obfuscated_res_0x7f0b1194" long_press_data="٥,5"/>
+            <softkey hint_label="٦" id="@+id/0_resource_name_obfuscated_res_0x7f0b11bc" long_press_data="٦,6"/>
+            <softkey hint_label="٧" id="@+id/0_resource_name_obfuscated_res_0x7f0b11b4" long_press_data="٧,7"/>
+            <softkey hint_label="٨" id="@+id/0_resource_name_obfuscated_res_0x7f0b118c" long_press_data="٨,8"/>
+            <softkey hint_label="٩" id="@+id/0_resource_name_obfuscated_res_0x7f0b11a4" long_press_data="٩,9"/>
+            <softkey hint_label="٠" id="@+id/0_resource_name_obfuscated_res_0x7f0b11d4" long_press_data="٠,0"/>
+        </softkey_list>
+    </softkeys>
+</framework>

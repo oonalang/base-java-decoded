@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:extra_inner_end_padding="?attr/0_resource_name_obfuscated_res_0x7f0402e0" app:extra_inner_start_padding="?attr/0_resource_name_obfuscated_res_0x7f0402e0" style="@style/0_resource_name_obfuscated_res_0x7f150538">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="0dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b297b" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f150995">
+        <FrameLayout android:layout_weight="900" style="@style/0_resource_name_obfuscated_res_0x7f150996">
+            <LinearLayout android:orientation="vertical" style="@style/0_resource_name_obfuscated_res_0x7f150997">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0557"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0556"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_weight="300" style="@style/0_resource_name_obfuscated_res_0x7f150996">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e055a"/>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0dp"/>
+</com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>

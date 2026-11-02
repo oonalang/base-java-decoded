@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyboardView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/APKTOOL_RENAMED_0x7f0b01ca" android:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f150238" />
+        <FrameLayout android:background="@drawable/APKTOOL_RENAMED_0x7f08034a" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_RENAMED_0x7f040472="@dimen/APKTOOL_RENAMED_0x7f070096">
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e05a8" />
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.widgets.ShadowedSoftKeyboardView>

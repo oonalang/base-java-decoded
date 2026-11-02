@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="cr-XA" string_id="ime_cree_latin">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c2" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" main_def="@xml/APKTOOL_RENAMED_0x7f170743" variant="cree_latin" variant_label="@string/APKTOOL_RENAMED_0x7f141475" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c7" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706ca" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bc" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706be" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bd" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c6" lang_def="@xml/APKTOOL_RENAMED_0x7f17053e" />
+    </ime>
+</framework>

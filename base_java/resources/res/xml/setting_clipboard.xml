@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:title="@string/0_resource_name_obfuscated_res_0x7f140b68" android:key="@string/0_resource_name_obfuscated_res_0x7f140a67">
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b7d" android:key="@string/0_resource_name_obfuscated_res_0x7f140928"/>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b8a" android:key="@string/0_resource_name_obfuscated_res_0x7f140945"/>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140ba0" android:key="@string/0_resource_name_obfuscated_res_0x7f140963"/>
+    <com.google.android.libraries.inputmethod.preferencewidgets.LabelSummarySliderPreference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b69" android:key="@string/0_resource_name_obfuscated_res_0x7f140911" android:entryValues="@array/0_resource_name_obfuscated_res_0x7f03004a" app:defaultIndex="0" app:resetButtonText="@string/0_resource_name_obfuscated_res_0x7f1413f8"/>
+</PreferenceScreen>

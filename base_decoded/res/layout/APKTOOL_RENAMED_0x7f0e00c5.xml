@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0354" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.emoji.view.EmojiView android:id="@id/APKTOOL_RENAMED_0x7f0b0355" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f070141" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f070141" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+    <com.google.android.libraries.inputmethod.emoji.view.EmojiView android:id="@id/APKTOOL_RENAMED_0x7f0b0356" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f070141" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f070141" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

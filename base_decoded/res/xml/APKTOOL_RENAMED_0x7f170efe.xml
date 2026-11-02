@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkey icon="@attr/APKTOOL_RENAMED_0x7f040189" id="@id/APKTOOL_RENAMED_0x7f0b0a5b" />
+    <softkey icon="@attr/APKTOOL_RENAMED_0x7f040196" id="@id/APKTOOL_RENAMED_0x7f0b0a5d" />
+    <softkey desc="@string/APKTOOL_RENAMED_0x7f14017d" empty_reason="@string/APKTOOL_RENAMED_0x7f14017f" icon="@attr/APKTOOL_RENAMED_0x7f040173" id="@id/APKTOOL_RENAMED_0x7f0b0844" />
+    <softkey desc="@string/APKTOOL_RENAMED_0x7f14017d" empty_reason="@string/APKTOOL_RENAMED_0x7f14017e" icon="@attr/APKTOOL_RENAMED_0x7f040173" id="@id/APKTOOL_RENAMED_0x7f0b0845" />
+    <softkey desc="@string/APKTOOL_RENAMED_0x7f140187" empty_reason="@string/APKTOOL_RENAMED_0x7f14018e" icon="@attr/APKTOOL_RENAMED_0x7f04018c" id="@id/APKTOOL_RENAMED_0x7f0b0fe0" />
+</framework>

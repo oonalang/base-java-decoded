@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2468" view_id="@+id/E02"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2467" view_id="@+id/E03"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2300" view_id="@+id/E04"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2397" view_id="@+id/E05"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b22f7" view_id="@+id/E06"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0d3f" view_id="@+id/E08"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0afe" view_id="@+id/E09"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0e0d" view_id="@+id/E10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b22fa" view_id="@+id/E11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b287f" view_id="@+id/E12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1036" view_id="@+id/D03"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2309" view_id="@+id/D04"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2885" view_id="@+id/D06"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a2e" view_id="@+id/D11"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b234a" view_id="@+id/D12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1342" view_id="@+id/C10"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b21b5" view_id="@+id/C12"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b232d" view_id="@+id/B00"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0d3a" view_id="@+id/B03"/>
+    </key_mapping>
+</framework>

@@ -1,0 +1,38 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: zli  reason: default package */
+/* loaded from: classes3.dex */
+public final class zli implements xzq {
+    public static final zli a = new Object();
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [zli, java.lang.Object] */
+    static {
+        xzo xzoVar = new xzo("durationMs");
+        adjb adjbVar = new adjb((byte[]) null, (byte[]) null);
+        adjbVar.a = 1;
+        xzoVar.b(adjbVar.g());
+        xzoVar.a();
+        xzo xzoVar2 = new xzo("errorCode");
+        adjb adjbVar2 = new adjb((byte[]) null, (byte[]) null);
+        adjbVar2.a = 2;
+        xzoVar2.b(adjbVar2.g());
+        xzoVar2.a();
+        xzo xzoVar3 = new xzo("options");
+        adjb adjbVar3 = new adjb((byte[]) null, (byte[]) null);
+        adjbVar3.a = 3;
+        xzoVar3.b(adjbVar3.g());
+        xzoVar3.a();
+        xzo xzoVar4 = new xzo("pageCount");
+        adjb adjbVar4 = new adjb((byte[]) null, (byte[]) null);
+        adjbVar4.a = 4;
+        xzoVar4.b(adjbVar4.g());
+        xzoVar4.a();
+    }
+
+    @Override // defpackage.xzm
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        ztf ztfVar = (ztf) obj;
+        xzr xzrVar = (xzr) obj2;
+        throw null;
+    }
+}

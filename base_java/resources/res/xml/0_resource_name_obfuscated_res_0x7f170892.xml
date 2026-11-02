@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinPasswordKeyboard" popup="@attr/0_resource_name_obfuscated_res_0x7f040279">
+        <view type="body">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.scrubmove.ScrubDeleteMotionEventHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f140966" reverse_preference="false"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f08"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f10"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17122d"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17122e"/>
+            <if device="tablet" device_size="large" keyboard_mode="normal">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f01"/>
+            </if>
+            <else>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f00"/>
+            </else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c43"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c4c"/>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c35"/>
+            </if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c34"/>
+            </else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c42"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e2f"/>
+        </view>
+    </keyboard>
+</framework>

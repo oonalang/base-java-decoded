@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f140c3b" android:key="@string/0_resource_name_obfuscated_res_0x7f140a73">
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c3e" android:key="@string/0_resource_name_obfuscated_res_0x7f140c3d">
+        <Preference android:persistent="false" android:title="@string/0_resource_name_obfuscated_res_0x7f140c0d" android:key="@string/0_resource_name_obfuscated_res_0x7f140a70" android:fragment="com.google.android.apps.inputmethod.libs.languageselection.preference.LanguageSettingFragment"/>
+        <Preference android:persistent="false" android:title="@string/0_resource_name_obfuscated_res_0x7f140c82" android:key="@string/0_resource_name_obfuscated_res_0x7f140a8d" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c81">
+            <intent android:targetPackage="com.android.settings" android:action="android.settings.HARD_KEYBOARD_SETTINGS" android:targetClass="com.android.settings.Settings$PhysicalKeyboardActivity"/>
+        </Preference>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c41" android:key="@string/0_resource_name_obfuscated_res_0x7f140c40">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b45" android:key="@string/0_resource_name_obfuscated_res_0x7f140a4b" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c94" android:disableDependentsState="true"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c7c" android:key="@string/0_resource_name_obfuscated_res_0x7f140a89" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c7b" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140a4b"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c71" android:key="@string/0_resource_name_obfuscated_res_0x7f140a82" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c6f" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140a89">
+            <extra android:name="toolbar_type" android:value="pk"/>
+        </SwitchPreferenceCompat>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c92" android:key="@string/0_resource_name_obfuscated_res_0x7f140c3f">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140359" android:key="@string/0_resource_name_obfuscated_res_0x7f140927" android:summary="@string/0_resource_name_obfuscated_res_0x7f140358"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140b4f" android:key="@string/0_resource_name_obfuscated_res_0x7f140c3c">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c14" android:key="@string/0_resource_name_obfuscated_res_0x7f140a1f" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c13"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c12" android:key="@string/0_resource_name_obfuscated_res_0x7f140a1e" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c11">
+            <extra android:name="hide_if_flag_is_false" android:value="@string/0_resource_name_obfuscated_res_0x7f14035b"/>
+        </SwitchPreferenceCompat>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c45" android:key="@string/0_resource_name_obfuscated_res_0x7f140a4e" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c44"/>
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

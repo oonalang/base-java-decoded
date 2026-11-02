@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f17066b"/>
+    <keyboard>
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e04eb" type="linear"/>
+        </if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03c5" type="linear"/>
+        </else>
+        <view type="linear">
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171223"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17121f"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f1710d0"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ff1"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171228"/>
+            </if>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e33"/>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aae"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e1a"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e1c"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170df9"/>
+            </if>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c07"/>
+        </view>
+    </keyboard>
+</framework>

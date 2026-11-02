@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f070983" style="@style/APKTOOL_RENAMED_0x7f150b33">
+        <com.google.android.material.materialswitch.MaterialSwitch style="@style/APKTOOL_RENAMED_0x7f150b3e" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/APKTOOL_RENAMED_0x7f150b30">
+        <Button app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b2992" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04074a="160.0dp" style="@style/APKTOOL_RENAMED_0x7f150b32" />
+        <Button android:id="@id/APKTOOL_RENAMED_0x7f0b2992" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04074a="160.0dp" style="@style/APKTOOL_RENAMED_0x7f150b2e" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

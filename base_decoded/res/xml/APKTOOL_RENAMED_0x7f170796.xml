@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="body">
+            <ifnot enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171215" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170cb5" />
+            </ifnot>
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f04" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c19" />
+        </view>
+    </keyboard>
+</framework>

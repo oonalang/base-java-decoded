@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView style="@style/0_resource_name_obfuscated_res_0x7f1501e0">
+    <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f1501ed">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e050d"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e04f1"/>
+    </LinearLayout>
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01af"/>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

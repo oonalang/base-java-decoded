@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:interpolator="?attr/0_resource_name_obfuscated_res_0x7f0408ad" android:duration="@integer/0_resource_name_obfuscated_res_0x7f0c008d" android:valueFrom="@string/0_resource_name_obfuscated_res_0x7f1407c5" android:valueTo="@string/0_resource_name_obfuscated_res_0x7f1407c3" android:valueType="pathType" android:propertyName="pathData"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.sharing.GboardSharingSetupDonePage style="@style/APKTOOL_RENAMED_0x7f1502ca"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e011f" />
+            <TextView android:text="@string/APKTOOL_RENAMED_0x7f140cc7" style="@style/APKTOOL_RENAMED_0x7f1502d4" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b032c" android:paddingLeft="@dimen/APKTOOL_RENAMED_0x7f0708ba" android:paddingRight="@dimen/APKTOOL_RENAMED_0x7f0708ba" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/APKTOOL_RENAMED_0x7f0b032d" android:layout_marginBottom="14.0dp" android:text="@string/APKTOOL_RENAMED_0x7f1403d7" style="@style/APKTOOL_RENAMED_0x7f1502ce" />
+                <ImageView android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+                <android.support.v7.widget.RecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b032e" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                <ImageView android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+            </LinearLayout>
+            <com.google.android.libraries.inputmethod.widgets.text.LinkableTextView android:id="@id/APKTOOL_RENAMED_0x7f0b0329" android:text="@string/APKTOOL_RENAMED_0x7f1403d1" style="@style/APKTOOL_RENAMED_0x7f1502ce" />
+            <Button android:id="@id/APKTOOL_RENAMED_0x7f0b0328" android:text="@string/APKTOOL_RENAMED_0x7f1404f7" android:textAllCaps="true" style="@style/APKTOOL_RENAMED_0x7f1502cb" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.google.android.apps.inputmethod.libs.sharing.GboardSharingSetupDonePage>

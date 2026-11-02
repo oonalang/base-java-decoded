@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17123b" />
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2692">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cf2" param_data="," param_keycode="COMMA" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22dc" long_press_data="…" param_data="." param_keycode="PERIOD" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2693">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cb7" long_press_data="《 ≤ ‹ « ⟨ 〈" param_data="&lt;" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cb6" long_press_data="》 ≥ › » ⟩ 〉" param_data=">" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2694">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1a71" long_press_data="≤ ‹ « ⟨" param_data="&lt;" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2053" long_press_data="≥ › » ⟩" param_data=">" />
+        </softkey_list>
+    </softkeys>
+</framework>

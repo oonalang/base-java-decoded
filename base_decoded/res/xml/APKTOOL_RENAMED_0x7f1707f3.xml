@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f17066b" />
+    <keyboard>
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e04eb" type="body" />
+        </if>
+        <else>
+            <view layout="@layout/APKTOOL_RENAMED_0x7f0e03c5" type="body" />
+        </else>
+        <view type="body">
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171223" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f17121f" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f1710d0" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170ff1" />
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f171228" />
+            </if>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170e33" />
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170aae" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170e1a" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170e1c" />
+                <include href="@xml/APKTOOL_RENAMED_0x7f170df9" />
+            </if>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c07" />
+        </view>
+    </keyboard>
+</framework>

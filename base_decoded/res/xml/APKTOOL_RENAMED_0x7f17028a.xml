@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="lki-IR" string_id="ime_laki">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" main_def="@xml/APKTOOL_RENAMED_0x7f17083b" non_prime_def="@xml/APKTOOL_RENAMED_0x7f17090f" variant="laki" variant_label="@string/APKTOOL_RENAMED_0x7f14153c" />
+    </ime>
+</framework>

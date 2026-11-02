@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246c" view_id="@+id/key_pos_switch_hiragana_alphabet"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b158c" view_id="@+id/key_pos_qwerty_globe"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2418" view_id="@+id/key_pos_space"/>
+        <if device="tablet" device_size="large" keyboard_mode="normal"/>
+        <else>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1562" view_id="@+id/A02"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1563" view_id="@+id/A08"/>
+        </else>
+    </key_mapping>
+    <key_mapping state="ALT,CTRL,META,ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b241a" view_id="@+id/key_pos_space"/>
+    </key_mapping>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170c07"/>
+    <key_mapping state="SHOW_EMOJI_SWITCH_KEY">
+        <if expressions="policy_transparency">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2471" view_id="@+id/key_pos_qwerty_globe"/>
+        </if>
+        <else_if expressions="hidden">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247d" view_id="@+id/key_pos_qwerty_globe"/>
+        </else_if>
+        <else>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246d" view_id="@+id/key_pos_qwerty_globe"/>
+        </else>
+    </key_mapping>
+    <key_mapping state="SHOW_LANGUAGE_SWITCH_KEY">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159c" view_id="@+id/key_pos_qwerty_globe"/>
+    </key_mapping>
+    <key_mapping state="COMPOSING">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b158c" view_id="@+id/key_pos_qwerty_globe"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2419" view_id="@+id/key_pos_space"/>
+    </key_mapping>
+    <if japanese_use_tri_state_mode="true">
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <key_mapping state="NORMAL,CTRL,CTRL_LOCK">
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159f" view_id="@+id/key_pos_left_ctrl"/>
+            </key_mapping>
+        </if>
+        <else>
+            <key_mapping>
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159f" view_id="@+id/key_pos_switch_to_symbol"/>
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b159f" view_id="@+id/key_pos_switch_to_symbol_right"/>
+            </key_mapping>
+        </else>
+        <merge_key_mapping exclude_state="NO_SETTINGS_KEY">
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b10a9" view_id="@+id/key_pos_switch_to_symbol"/>
+        </merge_key_mapping>
+        <merge_key_mapping state="SHOW_ONE_HANDED_MODE_SWITCH">
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b112e" view_id="@+id/key_pos_switch_to_symbol"/>
+        </merge_key_mapping>
+    </if>
+    <else>
+        <key_mapping>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247d" view_id="@+id/key_pos_switch_to_symbol"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247d" view_id="@+id/key_pos_switch_to_symbol_right"/>
+        </key_mapping>
+    </else>
+</framework>

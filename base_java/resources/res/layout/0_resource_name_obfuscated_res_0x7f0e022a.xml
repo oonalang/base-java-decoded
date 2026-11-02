@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:paddingStart="9dp" android:paddingEnd="9dp" style="@style/0_resource_name_obfuscated_res_0x7f15035b">
+    <com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptExtensionView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0451" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0453" android:paddingTop="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0198"/>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0193"/>
+            <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b044b" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="60dp">
+                <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0447" android:tag=".jarvis-prompt-edit-text-holder" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080297" android:layout_width="36dp" android:layout_height="36dp" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f1405f4" style="@style/0_resource_name_obfuscated_res_0x7f15035c">
+                    <ImageView android:src="@drawable/0_resource_name_obfuscated_res_0x7f080682" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f15023f"/>
+                </FrameLayout>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e019f"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="40dp" layout="@layout/0_resource_name_obfuscated_res_0x7f0e082d"/>
+    </com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptExtensionView>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

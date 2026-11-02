@@ -1,0 +1,110 @@
+.class public final Laaxg;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lvzq;
+
+
+# static fields
+.field public static final a:Laaxg;
+
+
+# instance fields
+.field private final b:Lvzq;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Laaxg;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Laaxg;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Laaxg;->a:Laaxg;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Laaxi;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v1, Lvzt;
+
+    .line 10
+    .line 11
+    invoke-direct {v1, v0}, Lvzt;-><init>(Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v1, p0, Laaxg;->b:Lvzq;
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Laaxh;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Laaxg;->b:Lvzq;
+
+    .line 2
+    .line 3
+    check-cast p0, Lvzt;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lvzt;->a:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast p0, Laaxh;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public final bridge synthetic get()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Laaxg;->a()Laaxh;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method

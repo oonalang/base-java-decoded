@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2680">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c85" long_press_data="Ꮴ,Ꮵ,Ꮶ,Ꮷ,Ꮸ" press_data="Ꮳ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c7c" long_press_data="Ꮦ,Ꮨ" press_data="Ꮤ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c5a" press_data="Ꭷ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c55" press_data="Ꮏ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c67" press_data="Ꮐ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c75" press_data="Ꮝ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c47" press_data="Ꮬ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c8e" long_press_data="Ꮺ,Ꮻ,Ꮼ,Ꮽ,Ꮾ" press_data="Ꮹ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c95" long_press_data="Ᏸ,Ᏹ,Ᏺ,Ᏻ,Ᏼ" press_data="Ꮿ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c4c" long_press_data="Ꭸ,Ꭹ,Ꭺ,Ꭻ,Ꭼ" press_data="Ꭶ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c52" long_press_data="Ꭾ,Ꭿ,Ꮀ,Ꮁ,Ꮂ" press_data="Ꭽ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c5b" long_press_data="Ꮄ,Ꮅ,Ꮆ,Ꮇ,Ꮈ" press_data="Ꮃ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c61" long_press_data="Ꮊ,Ꮋ,Ꮌ,Ꮍ" press_data="Ꮉ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c66" long_press_data="Ꮑ,Ꮒ,Ꮓ,Ꮔ,Ꮕ" press_data="Ꮎ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c6f" long_press_data="Ꮗ,Ꮘ,Ꮙ,Ꮚ,Ꮛ" press_data="Ꮖ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c76" long_press_data="Ꮞ,Ꮟ,Ꮠ,Ꮡ,Ꮢ" press_data="Ꮜ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c44" long_press_data="Ꮥ,Ꮧ,Ꮩ,Ꮪ,Ꮫ" press_data="Ꮣ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c7f" long_press_data="Ꮮ,Ꮯ,Ꮰ,Ꮱ,Ꮲ" press_data="Ꮭ"/>
+        </softkey_list>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2681">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c43" long_press_data="‌Ꭰ" press_data="Ꭰ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c4b" long_press_data="‌Ꭱ" press_data="Ꭱ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c59" long_press_data="‌Ꭲ" press_data="Ꭲ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c6d" long_press_data="‌Ꭳ" press_data="Ꭳ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c8c" long_press_data="‌Ꭴ" press_data="Ꭴ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0c8d" long_press_data="‌Ꭵ" press_data="Ꭵ"/>
+        </softkey_list>
+    </softkeys>
+</framework>

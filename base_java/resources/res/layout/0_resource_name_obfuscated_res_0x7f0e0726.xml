@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c1" style="@style/0_resource_name_obfuscated_res_0x7f15034a">
+    <TextView android:textColor="?attr/0_resource_name_obfuscated_res_0x7f040099" android:gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" android:tag=".label.for-function-key" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1dp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10dp" android:autoSizeMaxTextSize="?attr/0_resource_name_obfuscated_res_0x7f0401d9" style="@style/0_resource_name_obfuscated_res_0x7f1503a5"/>
+</FrameLayout>

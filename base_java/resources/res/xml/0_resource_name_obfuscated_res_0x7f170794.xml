@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_number_row_in_password="false" enable_secondary_digits="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17078e"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170641"/>
+    </else>
+</framework>

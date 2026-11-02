@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07d5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f040491" android:paddingTop="24dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f140c0c" android:paddingStart="24dp" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0609" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:id="@+id/0_resource_name_obfuscated_res_0x7f0b060a" android:background="?attr/0_resource_name_obfuscated_res_0x7f0404c9" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <FrameLayout android:id="@android:id/list_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

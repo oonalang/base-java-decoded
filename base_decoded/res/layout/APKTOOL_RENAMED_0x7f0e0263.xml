@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView android:clipChildren="false" android:clipToPadding="false" app:APKTOOL_RENAMED_0x7f0406bc="true" style="@style/APKTOOL_RENAMED_0x7f150304"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.inputmethod.libs.jarvis.miscs.ExtendBackgroundView android:id="@id/APKTOOL_RENAMED_0x7f0b2a75" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner android:baselineAligned="false" style="@style/APKTOOL_RENAMED_0x7f150535">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/key_pos_jarvis_back_to_prime" android:tag=".oval-navigation-highlight" android:layout_height="wrap_content" android:layout_marginStart="?APKTOOL_RENAMED_0x7f040355" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f1506be" />
+        <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b2a72" android:tag=".writing-tools-back-button.item-ripple.on-surface" android:background="@drawable/APKTOOL_RENAMED_0x7f080297" android:visibility="gone" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1405f4" android:layout_marginStart="?APKTOOL_RENAMED_0x7f040355" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f150240">
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b03c0" android:src="@drawable/APKTOOL_RENAMED_0x7f080682" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b0431" android:layout_width="0.0dp" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/key_pos_jarvis_icons" app:APKTOOL_RENAMED_0x7f04073f="@id/key_pos_jarvis_back_to_prime" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b043f" android:focusable="true" android:text="@string/APKTOOL_RENAMED_0x7f140657" app:APKTOOL_RENAMED_0x7f04096c="APKTOOL_RENAMED_0x7f0b0796" style="@style/APKTOOL_RENAMED_0x7f1503b9" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/key_pos_jarvis_icons" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="?APKTOOL_RENAMED_0x7f040355" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+            <FrameLayout android:id="@id/key_pos_jarvis_undo" android:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f150356">
+                <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f0806d5" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140510" style="@style/APKTOOL_RENAMED_0x7f15023b" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/key_pos_jarvis_report" android:tag=".writing-tools-back-button.item-ripple.on-surface" android:background="@drawable/APKTOOL_RENAMED_0x7f080297" android:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f150356">
+                <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f080496" android:contentDescription="@string/APKTOOL_RENAMED_0x7f14054b" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

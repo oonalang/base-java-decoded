@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="48.0dp" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0446" android:tag=".writing-tools-back-button.item-ripple.on-surface" android:background="@drawable/APKTOOL_RENAMED_0x7f080297" android:duplicateParentState="false" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1405f4" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f150241">
+        <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:src="@drawable/APKTOOL_RENAMED_0x7f080682" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b0459" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b0446" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:ellipsize="end" android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b0454" android:focusable="true" android:text="@string/APKTOOL_RENAMED_0x7f140548" style="@style/APKTOOL_RENAMED_0x7f1503b9" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0459" android:visibility="gone" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b0455" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15035d">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b045a" android:src="@drawable/APKTOOL_RENAMED_0x7f080436" android:contentDescription="@string/APKTOOL_RENAMED_0x7f14055a" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+            <android.widget.Switch android:id="@id/APKTOOL_RENAMED_0x7f0b045b" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0455" android:tag=".jarvis-prompt-more-button" android:padding="0.0dp" android:layout_width="?APKTOOL_RENAMED_0x7f0400a5" android:layout_height="?APKTOOL_RENAMED_0x7f0400a5" android:contentDescription="@string/APKTOOL_RENAMED_0x7f14054b" android:layout_marginEnd="0.0dp" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15035c">
+        <ImageView android:tag=".jarvis-prompt-more-button-icon" android:src="@drawable/APKTOOL_RENAMED_0x7f08049c" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/APKTOOL_RENAMED_0x7f1509d0" android:id="@id/APKTOOL_RENAMED_0x7f0b0361" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140504" style="@style/APKTOOL_RENAMED_0x7f15077f"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f08041e" android:tint="@color/APKTOOL_RENAMED_0x7f0608c7" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15077c" />
+</FrameLayout>

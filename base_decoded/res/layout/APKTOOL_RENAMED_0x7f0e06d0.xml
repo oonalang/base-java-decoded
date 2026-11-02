@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SizeLimitedFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.inputmethod.widgets.SizeLimitedFrameLayout android:layout_gravity="center|bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:APKTOOL_RENAMED_0x7f04080b="412.0dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ScrollView android:background="@drawable/APKTOOL_RENAMED_0x7f08032d" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp" android:clipToOutline="true">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0dp" android:gravity="center" android:tag=".non-linear-scale" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f140d10" android:layout_marginVertical="16.0dp" />
+                <TextView android:textSize="16.0dp" android:gravity="center" android:tag=".non-linear-scale" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f140d0d" app:APKTOOL_RENAMED_0x7f040664="?APKTOOL_RENAMED_0x7f040160" />
+                <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0802" android:layout_width="match_parent" android:layout_height="210.0dp" android:importantForAccessibility="no" android:layout_marginVertical="16.0dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.airbnb.lottie.LottieAnimationView android:id="@id/APKTOOL_RENAMED_0x7f0b07f2" android:layout_width="0.0dp" android:layout_height="210.0dp" android:scaleType="centerInside" android:layout_weight="1.0" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140d15" android:importantForAccessibility="yes" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="210.0dp" android:layout_weight="1.0">
+                            <TextureView android:id="@id/APKTOOL_RENAMED_0x7f0b0805" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140d12" android:importantForAccessibility="yes" />
+                            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0804" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/APKTOOL_RENAMED_0x7f08072c" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textSize="12.0dp" android:gravity="center" android:tag=".non-linear-scale" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f140d0e" />
+                <com.google.android.libraries.inputmethod.widgets.text.LinkableTextView android:textSize="12.0dp" android:gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b07f1" android:tag=".non-linear-scale" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f140d0f" android:layout_marginVertical="16.0dp" />
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.button.MaterialButton android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b0150" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1404f1" style="?APKTOOL_RENAMED_0x7f0407c4" />
+                    <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/APKTOOL_RENAMED_0x7f0b069a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1404fb" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.google.android.material.button.MaterialButton android:layout_gravity="end|top" android:id="@id/APKTOOL_RENAMED_0x7f0b01b8" android:tag=".icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:contentDescription="@string/APKTOOL_RENAMED_0x7f1404f2" app:APKTOOL_RENAMED_0x7f0406aa="@drawable/APKTOOL_RENAMED_0x7f080691" app:APKTOOL_RENAMED_0x7f0406b0="0.0dp" app:APKTOOL_RENAMED_0x7f040962="?android:colorControlHighlight" style="?APKTOOL_RENAMED_0x7f0407e3" />
+    </com.google.android.libraries.inputmethod.widgets.SizeLimitedFrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SizeLimitedFrameLayout>

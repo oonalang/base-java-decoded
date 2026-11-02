@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.VoiceSolidPulsatingAnimationView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b065d" android:tag=".voice-active-mic-circle" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f04024a" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f04024a" android:scaleType="center"/>

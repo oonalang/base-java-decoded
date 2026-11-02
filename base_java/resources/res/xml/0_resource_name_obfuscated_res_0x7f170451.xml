@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime always_show_suggestions="true" announce_auto_selected_candidate="true" class="com.google.android.apps.inputmethod.libs.chinese.ime.AsyncChineseProcessorBasedIme" display_app_completions="true" indicator_label="教院" inline_composing="false" language="zh-HK" language_specific_settings="@xml/0_resource_name_obfuscated_res_0x7f171245" string_id="ime_zh_hk_cantonese" use_ascii_password_keyboard="true">
+        <if physical_keyboard="qwerty">
+            <attrs language_specific_settings="@xml/0_resource_name_obfuscated_res_0x7f171246"/>
+        </if>
+        <if enable_chinese_inline_composing_hk="true">
+            <attrs inline_composing="true"/>
+        </if>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706cb" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1706a2" layout_settings="@xml/0_resource_name_obfuscated_res_0x7f171247" main_def="@xml/0_resource_name_obfuscated_res_0x7f1704cc" pk_language_tag="en" variant="qwerty-cantonese" variant_label="@string/0_resource_name_obfuscated_res_0x7f14145e" variant_name_mandatory="true"/>
+        <extra_values>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02e3" value="true"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02de" value="true"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f3" value="。"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02da" value="@string/0_resource_name_obfuscated_res_0x7f14093b"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f2" value="hmm"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02d6" value="pinyin_standard_cantonese_pinyin"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02fa" value="@string/0_resource_name_obfuscated_res_0x7f14067e"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02d0" res="@xml/0_resource_name_obfuscated_res_0x7f1704cb"/>
+        </extra_values>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170ecf"/>
+    </ime>
+</framework>

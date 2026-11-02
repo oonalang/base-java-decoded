@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:clipToPadding="false" android:layout_width="147dp" android:layout_height="147dp">
+    <com.google.android.libraries.inputmethod.widgets.RingAnimationView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b074a" android:layout_width="147dp" android:layout_height="147dp" app:animationViewLayoutId="@layout/0_resource_name_obfuscated_res_0x7f0e0044" app:maxRingSize="147dp" app:minRingSize="75dp" app:sizeInterpolator="?attr/0_resource_name_obfuscated_res_0x7f0408ae"/>
+    <View android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0748" android:layout_width="75dp" android:layout_height="75dp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0749" android:background="?android:attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0805d2" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404b5" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f14005c"/>
+</FrameLayout>

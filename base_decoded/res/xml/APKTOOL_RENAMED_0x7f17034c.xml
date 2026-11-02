@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="prk-MM" string_id="ime_parauk_wa">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c7" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706ca" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bc" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706be" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bd" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c6" lang_def="@xml/APKTOOL_RENAMED_0x7f170621" pk_language_tag="prk-Latn-MM" />
+    </ime>
+</framework>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:height="@dimen/0_resource_name_obfuscated_res_0x7f0707f7" android:width="@dimen/0_resource_name_obfuscated_res_0x7f0707f7">
+    <item android:state_pressed="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b073a" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065e"/>
+    <item android:state_checked="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0180" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065b"/>
+    <item android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a67" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065b" app:state_with_icon="true"/>
+    <item android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29ee" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f080661"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065f" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b0180" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b073a"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065f" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b2a67" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b073a"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f080660" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b29ee" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b073a"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065c" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b073a" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b0180"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065d" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b29ee" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b0180"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065c" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b073a" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b2a67"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f080663" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b073a" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b29ee"/>
+    <transition android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f080662" android:toId="@+id/0_resource_name_obfuscated_res_0x7f0b0180" android:fromId="@+id/0_resource_name_obfuscated_res_0x7f0b29ee"/>
+</animated-selector>

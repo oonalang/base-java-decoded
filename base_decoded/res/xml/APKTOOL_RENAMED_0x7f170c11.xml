@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c16" />
+    <if enable_secondary_symbols="true">
+        <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1181" view_id="@id/B00" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1149" view_id="@id/B01" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1151" view_id="@id/B02" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1146" view_id="@id/B03" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b114e" view_id="@id/B04" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b127b" view_id="@id/B07" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1278" view_id="@id/B08" />
+            <if language="az-IR|doi-Arab|dv-MV|khw|ks-Arab|pa-PK|ps|sd-Arab|trw">
+                <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1229" view_id="@id/B05" />
+                <merge key_id="@id/APKTOOL_RENAMED_0x7f0b122d" view_id="@id/B06" />
+            </if>
+            <else>
+                <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1148" view_id="@id/B05" />
+                <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1150" view_id="@id/B06" />
+            </else>
+        </merge_key_mapping>
+    </if>
+</framework>

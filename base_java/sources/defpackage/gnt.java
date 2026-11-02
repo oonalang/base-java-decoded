@@ -1,0 +1,63 @@
+package defpackage;
+
+import j$.time.Instant;
+import j$.util.Objects;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: PG */
+/* renamed from: gnt  reason: default package */
+/* loaded from: classes2.dex */
+public final class gnt extends cev {
+    final /* synthetic */ gnr a;
+
+    public gnt(gnr gnrVar) {
+        Objects.requireNonNull(gnrVar);
+        this.a = gnrVar;
+    }
+
+    @Override // defpackage.cev
+    public final String a() {
+        return "INSERT OR ABORT INTO `custom_sticker_metadata` (`id`,`deleted`,`createdAt`,`generated_feedbackToken`,`generated_prompt`,`generated_emotion`,`segmented_sourceUri`) VALUES (?,?,?,?,?,?,?)";
+    }
+
+    @Override // defpackage.cev
+    public final /* bridge */ /* synthetic */ void b(cid cidVar, Object obj) {
+        gob gobVar = (gob) obj;
+        cidVar.j(1, gobVar.a);
+        cidVar.h(2, gobVar.b ? 1L : 0L);
+        Instant instant = gobVar.c;
+        gnr gnrVar = this.a;
+        Long f = gnrVar.i().f(instant);
+        if (f == null) {
+            cidVar.i(3);
+        } else {
+            cidVar.h(3, f.longValue());
+        }
+        gny gnyVar = gobVar.d;
+        if (gnyVar != null) {
+            cidVar.j(4, gnyVar.a);
+            cidVar.j(5, gnyVar.b);
+            String str = gnyVar.c;
+            if (str == null) {
+                cidVar.i(6);
+            } else {
+                cidVar.j(6, str);
+            }
+        } else {
+            cidVar.i(4);
+            cidVar.i(5);
+            cidVar.i(6);
+        }
+        gnz gnzVar = gobVar.e;
+        if (gnzVar != null) {
+            String h = gnrVar.i().h(gnzVar.a);
+            if (h == null) {
+                cidVar.i(7);
+                return;
+            } else {
+                cidVar.j(7, h);
+                return;
+            }
+        }
+        cidVar.i(7);
+    }
+}

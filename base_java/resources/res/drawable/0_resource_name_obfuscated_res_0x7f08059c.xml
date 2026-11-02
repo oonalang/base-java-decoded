@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="2dp" android:insetBottom="3dp">
+    <bitmap android:src="0x7f08059d"/>
+</inset>

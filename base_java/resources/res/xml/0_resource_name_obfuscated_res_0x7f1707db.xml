@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170893"/>
+    <if device="tablet" device_size="large" keyboard_mode="normal">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17074c"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17074b"/>
+    </else>
+    <if enable_number_row="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170784"/>
+    </if>
+</framework>

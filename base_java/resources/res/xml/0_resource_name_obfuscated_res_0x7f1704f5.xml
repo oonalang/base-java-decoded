@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+    <keyboard>
+        <if keyboard_mode="split">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e04fb" type="linear"/>
+        </if>
+        <else_if device="foldable|tablet" keyboard_mode="normal">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e04fc" type="linear"/>
+        </else_if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e04fa" type="linear"/>
+        </else>
+        <view type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17122f"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17121f"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171220"/>
+            <if device="foldable|tablet" keyboard_mode="normal|split">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa9"/>
+            </if>
+            <else_if device="phone" keyboard_mode="split">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa9"/>
+            </else_if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aa8"/>
+            </else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c3f"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c44"/>
+        </view>
+    </keyboard>
+</framework>

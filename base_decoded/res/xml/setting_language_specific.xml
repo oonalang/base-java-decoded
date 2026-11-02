@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.languageselection.preference.KeyboardLayoutListPreference android:key="@string/APKTOOL_RENAMED_0x7f140c05" />
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140c0a" android:key="@string/APKTOOL_RENAMED_0x7f1406ac" />
+</PreferenceScreen>

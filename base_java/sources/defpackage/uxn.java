@@ -1,0 +1,43 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: uxn  reason: default package */
+/* loaded from: classes3.dex */
+public final class uxn extends aacu implements aaea {
+    public static final uxn a;
+    public int b;
+    public int c;
+    public int d;
+    private int e;
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [uxn, aacu] */
+    static {
+        ?? aacuVar = new aacu();
+        a = aacuVar;
+        aacu.L(uxn.class, aacuVar);
+    }
+
+    private uxn() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // defpackage.aacu
+    public final Object a(int i, Object obj) {
+        int i2 = i - 1;
+        if (i2 != 2) {
+            if (i2 != 3) {
+                if (i2 != 4) {
+                    if (i2 != 5) {
+                        if (i2 != 6) {
+                            return null;
+                        }
+                        return aacu.H(uxn.class);
+                    }
+                    return a;
+                }
+                return new aacp(a);
+            }
+            return new aacu();
+        }
+        return new aaej(a, "\u0004\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001᠌\u0000\u0002᠌\u0001\u0003င\u0002", new Object[]{"e", "b", ufs.o, "c", ufs.n, "d"});
+    }
+}

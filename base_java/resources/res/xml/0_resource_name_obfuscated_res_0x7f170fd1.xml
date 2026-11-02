@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170fd2"/>
+    <softkeys>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140335" id="@+id/0_resource_name_obfuscated_res_0x7f0b242f">
+            <action data="RECENTS" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032b" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="CLASSIC" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc4"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140337" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="SMILING" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fce"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140331" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="LOVE" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fca"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032f" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="HUGGING" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc8"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032e" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="FLEXING" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc7"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032a" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="ANIMALS" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc3"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140338" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="SURPRISE" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fcf"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032d" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="DANCING" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc6"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140336" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="SHRUGGIE" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fcd"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140339" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="TABLE FLIP" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fd0"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140330" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="LOOK OF DISAPPROVAL" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc9"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140332" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="NERVOUS" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fcb"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14032c" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="CRYING" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fc5"/>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140333" id="@+id/0_resource_name_obfuscated_res_0x7f0b242e">
+            <action data="POINTERS" keycode="KEYCODE_9" type="PRESS"/>
+        </softkey>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170fcc"/>
+    </softkeys>
+</framework>

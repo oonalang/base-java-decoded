@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/0_resource_name_obfuscated_res_0x7f1509d0">
+    <ViewSwitcher android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07b4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.loadingindicator.LoadingIndicator android:gravity="center" android:layout_gravity="center" android:tag=".rcs-decoration-v2-progress-indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorSize="?attr/0_resource_name_obfuscated_res_0x7f0400fd"/>
+        <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a68" android:gravity="center" android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07b0" android:tag=".label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </ViewSwitcher>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework pk_language_tag="">
+    <keyboard_group pk_language_tag="{pk_language_tag}" supports_split_mode="true" variant="colemak">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170003" support_a11y_keyboard="true"/>
+        <keyboard def="{lang_def}" type="prime">
+            <merge def="@xml/0_resource_name_obfuscated_res_0x7f170740"/>
+        </keyboard>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170912"/>
+    </keyboard_group>
+</framework>

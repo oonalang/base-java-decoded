@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard_group supports_split_mode="true" variant="{variant}" variant_label="{variant_label}">
+        <include force_show_number_row="true" href="@xml/0_resource_name_obfuscated_res_0x7f170003"/>
+        <keyboard def="{main_def}" type="prime"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17090d"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec9"/>
+    </keyboard_group>
+</framework>

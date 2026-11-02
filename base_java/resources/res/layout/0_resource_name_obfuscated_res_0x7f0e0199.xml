@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptNotice android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0456" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:paddingHorizontal="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:tag=".jarvis-prompt-notice" android:background="@drawable/0_resource_name_obfuscated_res_0x7f0806e8" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:scrollbars="vertical" android:fadingEdgeLength="0dp" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b0457" app:layout_constraintHeight_default="1" app:layout_constraintHeight_max="112dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4f" android:textColor="?android:attr/textColorPrimary" android:textColorLink="?android:attr/textColorPrimary" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0458" android:tag=".label.non-linear-scale.jarvis-prompt-notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f14055c"/>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0457" android:tag=".nav_back_key.item-ripple.no-background" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140568" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:tag=".icon.jarvis-prompt-notice" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080415" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f15023f"/>
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptNotice>
+</androidx.constraintlayout.widget.ConstraintLayout>

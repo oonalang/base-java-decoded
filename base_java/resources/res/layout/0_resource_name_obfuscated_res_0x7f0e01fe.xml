@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0363" style="@style/0_resource_name_obfuscated_res_0x7f1501db">
+    <FrameLayout android:tag=".keyboard-free-cursor-bg" android:background="@drawable/0_resource_name_obfuscated_res_0x7f0802f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/0_resource_name_obfuscated_res_0x7f070098">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:layout_gravity="top|center_horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b035f" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="21dp">
+            <ImageView android:tag=".keyboard-free-cursor-lock-icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080481" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140400"/>
+        </com.google.android.libraries.inputmethod.widgets.SoftKeyView>
+        <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4b" android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b035d" android:tag=".keyboard-free-cursor-label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f1403fd"/>
+        <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4b" android:layout_gravity="bottom|center_horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0360" android:tag=".keyboard-free-cursor-label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28dp"/>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

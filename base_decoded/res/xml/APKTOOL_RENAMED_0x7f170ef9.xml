@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1404f6" id="@id/APKTOOL_RENAMED_0x7f0b0ba6" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="false">
+            <action keycode="DEL" repeatable="true" type="PRESS" />
+            <action keycode="DELETE_FINISH" type="UP" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080554" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1404f6" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b0ba7" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="false" popup_timing="ON_GESTURE" slide_sensitivity="LESS">
+            <action keycode="DEL" repeatable="true" type="PRESS" />
+            <action keycode="DELETE_FINISH" type="UP" />
+            <action keycode="CLEAR_ALL" popup_label="@string/APKTOOL_RENAMED_0x7f140642" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e0646" type="SLIDE_LEFT" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080554" />
+        </softkey>
+    </softkeys>
+</framework>

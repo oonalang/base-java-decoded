@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_list splitter=" ">
+            <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14015c" id="@+id/0_resource_name_obfuscated_res_0x7f0b1a19" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc" popup_timing="@string/0_resource_name_obfuscated_res_0x7f140ae4" slide_sensitivity="NORMAL">
+                <action keycode="KEYCODE_SOFT_RIGHT" repeatable="true" type="PRESS"/>
+                <if free_cursor="false">
+                    <action keycode="KEYCODE_SOFT_RIGHT" popup_icon="@attr/0_resource_name_obfuscated_res_0x7f0401a0" repeatable="true" type="SLIDE_LEFT"/>
+                    <action keycode="KEYCODE_BACK" popup_icon="0x7f0805ac" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027a" repeatable="true" type="SLIDE_UP"/>
+                    <action keycode="KEYCODE_HOME" popup_icon="@attr/0_resource_name_obfuscated_res_0x7f0401a1" repeatable="true" type="SLIDE_RIGHT"/>
+                    <action keycode="KEYCODE_SOFT_LEFT" popup_icon="0x7f0805a8" repeatable="true" type="SLIDE_DOWN"/>
+                </if>
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f080594"/>
+            </softkey>
+            <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14015f" id="@+id/0_resource_name_obfuscated_res_0x7f0b2336" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc" popup_timing="@string/0_resource_name_obfuscated_res_0x7f140ae4" slide_sensitivity="NORMAL">
+                <action keycode="KEYCODE_HOME" repeatable="true" type="PRESS"/>
+                <if free_cursor="false">
+                    <action keycode="KEYCODE_SOFT_RIGHT" popup_icon="@attr/0_resource_name_obfuscated_res_0x7f0401a0" repeatable="true" type="SLIDE_LEFT"/>
+                    <action keycode="KEYCODE_BACK" popup_icon="0x7f0805ac" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027a" repeatable="true" type="SLIDE_UP"/>
+                    <action keycode="KEYCODE_HOME" popup_icon="@attr/0_resource_name_obfuscated_res_0x7f0401a1" repeatable="true" type="SLIDE_RIGHT"/>
+                    <action keycode="KEYCODE_SOFT_LEFT" popup_icon="0x7f0805a8" repeatable="true" type="SLIDE_DOWN"/>
+                </if>
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f080595"/>
+            </softkey>
+        </softkey_list>
+    </softkeys>
+</framework>

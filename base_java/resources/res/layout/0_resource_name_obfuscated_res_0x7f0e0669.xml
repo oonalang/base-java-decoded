@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080297" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f04005f" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f04005f" android:minWidth="?attr/0_resource_name_obfuscated_res_0x7f04005f" android:minHeight="?attr/0_resource_name_obfuscated_res_0x7f04005f" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f1404f2" style="@style/0_resource_name_obfuscated_res_0x7f15077f">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080691" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f1404f2" style="@style/0_resource_name_obfuscated_res_0x7f15023f"/>
+</FrameLayout>

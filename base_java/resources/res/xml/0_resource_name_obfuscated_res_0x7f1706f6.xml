@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptKeyboard">
+        <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e022b" scalable="false" type="header"/>
+    </keyboard>
+</framework>

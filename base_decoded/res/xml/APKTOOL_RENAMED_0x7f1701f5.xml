@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="mul-XI" string_id="ime_international_phonetic_alphabet">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c3" main_def="@xml/APKTOOL_RENAMED_0x7f1706e4" non_prime_def="@xml/APKTOOL_RENAMED_0x7f170911" pk_language_tag="mul-Latn-x-ipa" variant="ipa_chart" variant_label="@string/APKTOOL_RENAMED_0x7f1414ec" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c2" main_def="@xml/APKTOOL_RENAMED_0x7f1706e5" non_prime_def="@xml/APKTOOL_RENAMED_0x7f170911" pk_language_tag="mul-Latn-x-ipa" variant="qwerty" />
+    </ime>
+</framework>

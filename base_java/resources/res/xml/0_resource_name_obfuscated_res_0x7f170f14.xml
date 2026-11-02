@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f14035e" id="@+id/0_resource_name_obfuscated_res_0x7f0b0834" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0711" multi_touch="false">
+            <action keycode="KEYCODE_UNKNOWN" type="radial"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@attr/0_resource_name_obfuscated_res_0x7f0401ae"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c2" value="0x7f080504"/>
+        </softkey>
+        <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f1402a8" id="@+id/0_resource_name_obfuscated_res_0x7f0b0835" layout="@layout/0_resource_name_obfuscated_res_0x7f0e070f" multi_touch="false">
+            <action keycode="KEYCODE_UNKNOWN" type="radial"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@attr/0_resource_name_obfuscated_res_0x7f0401af"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c2" value="0x7f080503"/>
+        </softkey>
+    </softkeys>
+</framework>

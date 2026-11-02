@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f170882" type="symbol"/>
+    <if device="tablet|foldable" keyboard_mode="normal">
+        <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1707c8" type="sweep"/>
+    </if>
+    <else>
+        <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1707c7" type="sweep"/>
+    </else>
+</framework>

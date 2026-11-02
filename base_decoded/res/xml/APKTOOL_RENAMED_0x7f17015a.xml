@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="en-US" string_id="ime_english_united_states" supports_inline_suggestion="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c7" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706ca" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bc" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706be" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bd" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c6" lang_def="@xml/APKTOOL_RENAMED_0x7f170558" />
+        <if enable_pk_simulator="true">
+            <keyboard_group pk_layout_type="extended" variant="us_intl" variant_label="@string/APKTOOL_RENAMED_0x7f141637">
+                <include force_show_number_row="true" href="@xml/APKTOOL_RENAMED_0x7f170003" support_a11y_keyboard="true" />
+                <keyboard def="@xml/APKTOOL_RENAMED_0x7f170558" type="prime">
+                    <merge def="@xml/APKTOOL_RENAMED_0x7f17082b" />
+                </keyboard>
+                <include href="@xml/APKTOOL_RENAMED_0x7f170913" />
+            </keyboard_group>
+        </if>
+        <include href="@xml/APKTOOL_RENAMED_0x7f17003e" />
+    </ime>
+</framework>

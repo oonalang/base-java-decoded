@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170497"/>
+    <if>
+        <any_of>
+            <cond device="tablet" device_size="large" keyboard_mode="normal"/>
+            <cond enable_pk_simulator="true" enable_pk_simulator_setting="true"/>
+        </any_of>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17066b"/>
+    </if>
+    <keyboard>
+        <view direction="right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0540" type="header"/>
+        <view type="radial">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c40"/>
+        </view>
+    </keyboard>
+</framework>

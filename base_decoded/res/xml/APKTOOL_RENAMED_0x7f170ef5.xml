@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_list splitter=",">
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b265e" layout="@layout/APKTOOL_RENAMED_0x7f0e0764" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b265e" layout="@layout/APKTOOL_RENAMED_0x7f0e0760" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </else>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2671" layout="@layout/APKTOOL_RENAMED_0x7f0e0764" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2671" layout="@layout/APKTOOL_RENAMED_0x7f0e0760" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </else>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b266a" layout="@layout/APKTOOL_RENAMED_0x7f0e0764" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b266a" layout="@layout/APKTOOL_RENAMED_0x7f0e0760" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </else>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2666" layout="@layout/APKTOOL_RENAMED_0x7f0e0768" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2666" layout="@layout/APKTOOL_RENAMED_0x7f0e0767" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_label$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </else>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2668" layout="@layout/APKTOOL_RENAMED_0x7f0e0768" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2668" layout="@layout/APKTOOL_RENAMED_0x7f0e0767" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$hint_label$" />
+                </softkey_template>
+            </else>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2667" layout="@layout/APKTOOL_RENAMED_0x7f0e0768" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2667" layout="@layout/APKTOOL_RENAMED_0x7f0e0767" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </else>
+            <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2662" layout="@layout/APKTOOL_RENAMED_0x7f0e0760" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                <action data="$long_press_data$" intention="$long_press_intention=DECODE$" keycode="DEAD_KEY" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040280" type="LONG_PRESS" />
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+            </softkey_template>
+            <if pref_enable_flick_symbols="true">
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b266c" layout="@layout/APKTOOL_RENAMED_0x7f0e0764" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="LESS">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040275" type="LONG_PRESS" />
+                    <action data="$long_press_data$" intention="$slide_down_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" type="SLIDE_DOWN" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </if>
+            <else>
+                <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b266c" layout="@layout/APKTOOL_RENAMED_0x7f0e0760" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                    <action data="$long_press_data$" intention="$long_press_intention=COMMIT$" keycode="PLAIN_TEXT" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040275" type="LONG_PRESS" />
+                    <label location="@id/APKTOOL_RENAMED_0x7f0b05fa" value="$long_press_data$" />
+                </softkey_template>
+            </else>
+        </softkey_list>
+    </softkeys>
+</framework>

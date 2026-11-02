@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if device="tablet" device_size="large" keyboard_mode="normal">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170c0c"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a88"/>
+    </if>
+    <else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170c0a"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8d"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8b"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170a8a"/>
+    </else>
+</framework>

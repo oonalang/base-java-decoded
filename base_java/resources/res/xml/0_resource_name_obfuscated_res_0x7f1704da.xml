@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".keyboard.impl.Keyboard">
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0716" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0637" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0719" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0639" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0711" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0633" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0712" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0634" type="widget"/>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b070d" layout="@layout/0_resource_name_obfuscated_res_0x7f0e062f" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0710" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0632" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b070e" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0631" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view direction="right_to_left" id="@+id/0_resource_name_obfuscated_res_0x7f0b0714" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0635" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view id="@+id/0_resource_name_obfuscated_res_0x7f0b070f" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0636" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view id="@+id/0_resource_name_obfuscated_res_0x7f0b0715" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0636" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+        <view id="@+id/0_resource_name_obfuscated_res_0x7f0b0718" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0636" type="widget">
+            <motion_event_handler class=".companionwidget.WidgetDragToMoveMotionEventHandler"/>
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+    </keyboard>
+</framework>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:filterTouchesWhenObscured="true" android:paddingVertical="@dimen/0_resource_name_obfuscated_res_0x7f070895" style="@style/0_resource_name_obfuscated_res_0x7f15054f">
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07e1" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080710" android:layout_width="wrap_content" android:layout_height="wrap_content" android:filterTouchesWhenObscured="true" android:paddingHorizontal="@dimen/0_resource_name_obfuscated_res_0x7f0708a7" android:paddingVertical="@dimen/0_resource_name_obfuscated_res_0x7f0708a4">
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07e2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f15056b"/>
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b07e3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f15056c"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b2680">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cca" press_data=":" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b239d" long_press_data=":" press_data=";" />
+        </softkey_list>
+    </softkeys>
+</framework>

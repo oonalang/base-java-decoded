@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+    <keyboard popup="@attr/0_resource_name_obfuscated_res_0x7f040274">
+        <if device="tablet" device_size="large" keyboard_mode="normal">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0401" type="linear"/>
+        </if>
+        <else_if keyboard_mode="split">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0300" type="linear"/>
+        </else_if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e02fe" type="linear"/>
+        </else>
+        <view type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f1711a1"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e83"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c08"/>
+        </view>
+    </keyboard>
+    <if enable_number_row="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17075c"/>
+    </if>
+</framework>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.widgets.highframeraterecyclerview.HighFrameRateRecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b01dc" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" android:paddingVertical="12.0dp" app:APKTOOL_RENAMED_0x7f04071f="true" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040732="APKTOOL_RENAMED_0x7f0b2a69" app:APKTOOL_RENAMED_0x7f040733="400.0dp" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

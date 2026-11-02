@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f1502dd">
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0337" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f1502d9"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b033c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" style="@style/0_resource_name_obfuscated_res_0x7f1502db"/>
+    <ImageButton android:id="@+id/0_resource_name_obfuscated_res_0x7f0b018a" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080694" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140179"/>
+</TableRow>

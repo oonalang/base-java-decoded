@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_gravity="center" android:tag=".sticker-header-item" android:background="@drawable/APKTOOL_RENAMED_0x7f080298" android:layout_width="?APKTOOL_RENAMED_0x7f040130" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:duplicateParentState="true" android:layout_width="0.0dp" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072b="1:1" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+        <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b02af" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

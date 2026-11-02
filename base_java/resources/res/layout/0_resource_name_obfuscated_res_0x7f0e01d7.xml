@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a4" style="@style/0_resource_name_obfuscated_res_0x7f150210">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a8" android:baselineAligned="false" style="@style/0_resource_name_obfuscated_res_0x7f150538">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="0dp"/>
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_clipboard_back_to_prime" android:tag=".oval-navigation-highlight" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b03a0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f1506be"/>
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a7" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/key_pos_clipboard_icons" app:layout_constraintStart_toEndOf="@+id/key_pos_clipboard_back_to_prime" app:layout_constraintTop_toTopOf="0">
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:layout_gravity="start" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01a6" android:text="@string/0_resource_name_obfuscated_res_0x7f14018a" app:minimumTextSize="14dp" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f1503b9"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/key_pos_clipboard_icons" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintTop_toTopOf="0">
+            <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_clipboard_batch_delete" android:visibility="invisible" android:layout_marginStart="0dp" style="@style/0_resource_name_obfuscated_res_0x7f150214"/>
+            <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_clipboard_batch_pin" style="@style/0_resource_name_obfuscated_res_0x7f150214"/>
+            <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_clipboard_edit_and_add" style="@style/0_resource_name_obfuscated_res_0x7f150214"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0dp"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

@@ -1,0 +1,260 @@
+package defpackage;
+
+import j$.util.DesugarCollections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+/* compiled from: PG */
+/* renamed from: wte  reason: default package */
+/* loaded from: classes3.dex */
+public final class wte {
+    public static final wtd c;
+    public static final wtd d;
+    public static final wtd e;
+    public static final wtd f;
+    public static final HashMap a = new HashMap();
+    public static final HashMap b = new HashMap();
+    public static final wsg g = new Object();
+
+    /* JADX WARN: Type inference failed for: r0v2, types: [java.lang.Object, wsg] */
+    static {
+        b("A", "");
+        b("ABBR", "");
+        b("ACRONYM", "");
+        b("ADDRESS", "");
+        b("APPLET", "");
+        b("AREA", "E");
+        b("B", "");
+        b("BASE", "E");
+        b("BASEFONT", "E");
+        b("BDO", "");
+        b("BIG", "");
+        b("BLOCKQUOTE", "B");
+        b("BODY", "O");
+        b("BR", "EB");
+        b("BUTTON", "");
+        b("CAPTION", "");
+        b("CENTER", "B");
+        b("CITE", "");
+        b("CODE", "");
+        b("COL", "E");
+        b("COLGROUP", "O");
+        b("DD", "OB");
+        b("DEL", "");
+        b("DFN", "");
+        b("DIR", "B");
+        b("DIV", "B");
+        b("DL", "B");
+        b("DT", "OB");
+        b("EM", "");
+        b("FIELDSET", "");
+        b("FONT", "");
+        b("FORM", "B");
+        b("FRAME", "E");
+        b("FRAMESET", "");
+        b("H1", "B");
+        b("H2", "B");
+        b("H3", "B");
+        b("H4", "B");
+        b("H5", "B");
+        b("H6", "B");
+        b("HEAD", "OB");
+        b("HR", "EB");
+        b("HTML", "OB");
+        b("I", "");
+        b("IFRAME", "");
+        b("IMG", "E");
+        b("INPUT", "E");
+        b("INS", "");
+        b("ISINDEX", "EB");
+        b("KBD", "");
+        b("LABEL", "");
+        b("LEGEND", "");
+        b("LI", "OB");
+        b("LINK", "E");
+        b("MAP", "");
+        b("MENU", "B");
+        b("META", "E");
+        b("NOFRAMES", "B");
+        b("NOSCRIPT", "");
+        b("OBJECT", "");
+        b("OL", "B");
+        b("OPTGROUP", "");
+        b("OPTION", "O");
+        b("P", "OB");
+        b("PARAM", "E");
+        b("PRE", "B");
+        b("Q", "");
+        b("S", "");
+        b("SAMP", "");
+        c = b("SCRIPT", "");
+        b("SELECT", "");
+        b("SMALL", "");
+        b("SPAN", "");
+        b("STRIKE", "");
+        b("STRONG", "");
+        d = b("STYLE", "");
+        b("SUB", "");
+        b("SUP", "");
+        b("TABLE", "B");
+        b("TBODY", "O");
+        b("TD", "OB");
+        e = b("TEXTAREA", "");
+        b("TFOOT", "O");
+        b("TH", "OB");
+        b("THEAD", "O");
+        f = b("TITLE", "B");
+        b("TR", "OB");
+        b("TT", "");
+        b("U", "");
+        b("UL", "B");
+        b("VAR", "");
+        a("ABBR", 0, null);
+        a("ACCEPT", 0, null);
+        a("ACCEPT-CHARSET", 0, null);
+        a("ACCESSKEY", 0, null);
+        a("ACTION", 1, null);
+        a("ALIGN", 3, new String[]{"left", "center", "right", "justify", "char", "top", "bottom", "middle"});
+        a("ALINK", 0, null);
+        a("ALT", 0, null);
+        a("ARCHIVE", 1, null);
+        a("AXIS", 0, null);
+        a("BACKGROUND", 1, null);
+        a("BGCOLOR", 0, null);
+        a("BORDER", 0, null);
+        a("CELLPADDING", 0, null);
+        a("CELLSPACING", 0, null);
+        a("CHAR", 0, null);
+        a("CHAROFF", 0, null);
+        a("CHARSET", 0, null);
+        a("CHECKED", 4, null);
+        a("CITE", 1, null);
+        a("CLASS", 0, null);
+        a("CLASSID", 1, null);
+        a("CLEAR", 3, new String[]{"left", "all", "right", "none"});
+        a("CODE", 0, null);
+        a("CODEBASE", 1, null);
+        a("CODETYPE", 0, null);
+        a("COLOR", 0, null);
+        a("COLS", 0, null);
+        a("COLSPAN", 0, null);
+        a("COMPACT", 4, null);
+        a("CONTENT", 0, null);
+        a("COORDS", 0, null);
+        a("DATA", 1, null);
+        a("DATETIME", 0, null);
+        a("DECLARE", 4, null);
+        a("DEFER", 4, null);
+        a("DIR", 3, new String[]{"ltr", "rtl"});
+        a("DISABLED", 4, null);
+        a("ENCTYPE", 0, null);
+        a("FACE", 0, null);
+        a("FOR", 0, null);
+        a("FRAME", 0, null);
+        a("FRAMEBORDER", 3, new String[]{acud.e, "0"});
+        a("HEADERS", 0, null);
+        a("HEIGHT", 0, null);
+        a("HREF", 1, null);
+        a("HREFLANG", 0, null);
+        a("HSPACE", 0, null);
+        a("HTTP-EQUIV", 0, null);
+        a("ID", 0, null);
+        a("ISMAP", 4, null);
+        a("LABEL", 0, null);
+        a("LANG", 0, null);
+        a("LANGUAGE", 0, null);
+        a("LINK", 0, null);
+        a("LONGDESC", 1, null);
+        a("MARGINHEIGHT", 0, null);
+        a("MARGINWIDTH", 0, null);
+        a("MAXLENGTH", 0, null);
+        a("MEDIA", 0, null);
+        a("METHOD", 3, new String[]{"get", "post"});
+        a("MULTIPLE", 4, null);
+        a("NAME", 0, null);
+        a("NOHREF", 4, null);
+        a("NORESIZE", 4, null);
+        a("NOSHADE", 4, null);
+        a("NOWRAP", 4, null);
+        a("OBJECT", 0, null);
+        a("ONBLUR", 2, null);
+        a("ONCHANGE", 2, null);
+        a("ONCLICK", 2, null);
+        a("ONDBLCLICK", 2, null);
+        a("ONFOCUS", 2, null);
+        a("ONKEYDOWN", 2, null);
+        a("ONKEYPRESS", 2, null);
+        a("ONKEYUP", 2, null);
+        a("ONLOAD", 2, null);
+        a("ONMOUSEDOWN", 2, null);
+        a("ONMOUSEMOVE", 2, null);
+        a("ONMOUSEOUT", 2, null);
+        a("ONMOUSEOVER", 2, null);
+        a("ONMOUSEUP", 2, null);
+        a("ONRESET", 2, null);
+        a("ONSELECT", 2, null);
+        a("ONSUBMIT", 2, null);
+        a("ONUNLOAD", 2, null);
+        a("PROFILE", 1, null);
+        a("PROMPT", 0, null);
+        a("READONLY", 4, null);
+        a("REL", 0, null);
+        a("REV", 0, null);
+        a("ROWS", 0, null);
+        a("ROWSPAN", 0, null);
+        a("RULES", 0, null);
+        a("SCHEME", 0, null);
+        a("SCOPE", 3, new String[]{"row", "col", "rowgroup", "colgroup"});
+        a("SCROLLING", 3, new String[]{"yes", "no", "auto"});
+        a("SELECTED", 4, null);
+        a("SHAPE", 0, null);
+        a("SIZE", 0, null);
+        a("SPAN", 0, null);
+        a("SRC", 1, null);
+        a("STANDBY", 0, null);
+        a("START", 0, null);
+        a("STYLE", 0, null);
+        a("SUMMARY", 0, null);
+        a("TABINDEX", 0, null);
+        a("TARGET", 0, null);
+        a("TEXT", 0, null);
+        a("TITLE", 0, null);
+        a("TYPE", 0, null);
+        a("USEMAP", 0, null);
+        a("VALIGN", 3, new String[]{"top", "middle", "bottom", "baseline"});
+        a("VALUE", 0, null);
+        a("VALUETYPE", 3, new String[]{"data", "ref", "object"});
+        a("VERSION", 0, null);
+        a("VLINK", 0, null);
+        a("VSPACE", 0, null);
+        a("WIDTH", 0, null);
+    }
+
+    private static void a(String str, int i, String[] strArr) {
+        Set set;
+        String aH = uwm.aH(str);
+        if (strArr != null) {
+            HashSet hashSet = new HashSet();
+            for (String str2 : strArr) {
+                hashSet.add(uwm.aH(str2));
+            }
+            set = DesugarCollections.unmodifiableSet(hashSet);
+        } else {
+            set = null;
+        }
+        b.put(aH, new wta(aH, i, set));
+    }
+
+    private static wtd b(String str, String str2) {
+        String aH = uwm.aH(str);
+        for (int i = 0; i < str2.length(); i++) {
+            char charAt = str2.charAt(i);
+            if (charAt != 'B' && charAt != 'E' && charAt != 'O') {
+                throw new Error("Unknown element flag");
+            }
+        }
+        wtd wtdVar = new wtd(aH);
+        a.put(aH, wtdVar);
+        return wtdVar;
+    }
+}

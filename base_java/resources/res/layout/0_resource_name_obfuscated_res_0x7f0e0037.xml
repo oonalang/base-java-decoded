@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00e8" android:layout_above="@+id/0_resource_name_obfuscated_res_0x7f0b00ea" style="@style/0_resource_name_obfuscated_res_0x7f150018">
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintWidth_percent="?attr/0_resource_name_obfuscated_res_0x7f040021">
+        <LinearLayout android:layout_gravity="bottom" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00e7" android:importantForAccessibility="no" android:layoutDirection="inherit" style="@style/0_resource_name_obfuscated_res_0x7f150016">
+            <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00ee" android:text="@string/0_resource_name_obfuscated_res_0x7f14003e" style="@style/0_resource_name_obfuscated_res_0x7f15001a"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="69dp" android:paddingStart="0dp" android:paddingEnd="@dimen/0_resource_name_obfuscated_res_0x7f07006d">
+                <com.google.android.libraries.inputmethod.widgets.EditTextOnKeyboard android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00e9" android:layout_centerVertical="true" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140041" style="@style/0_resource_name_obfuscated_res_0x7f150019"/>
+            </RelativeLayout>
+            <LinearLayout android:layoutDirection="inherit" style="@style/0_resource_name_obfuscated_res_0x7f150015">
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/0_resource_name_obfuscated_res_0x7f07006b" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00e5" android:tag=".keyboard-clipboard-dialog-negative-button.non-linear-scale" android:paddingTop="@dimen/0_resource_name_obfuscated_res_0x7f07006a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/0_resource_name_obfuscated_res_0x7f070068" android:text="@string/0_resource_name_obfuscated_res_0x7f1404f1" style="?attr/0_resource_name_obfuscated_res_0x7f0403fe"/>
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/0_resource_name_obfuscated_res_0x7f07006b" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b00e6" android:tag=".non-linear-scale" android:paddingTop="@dimen/0_resource_name_obfuscated_res_0x7f07006a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/0_resource_name_obfuscated_res_0x7f070068" android:text="@string/0_resource_name_obfuscated_res_0x7f140507" style="?attr/0_resource_name_obfuscated_res_0x7f0403fe"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

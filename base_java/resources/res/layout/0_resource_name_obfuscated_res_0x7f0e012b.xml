@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" style="@style/0_resource_name_obfuscated_res_0x7f1502e7">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="6dp">
+        <androidx.cardview.widget.CardView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01af" android:layout_width="@dimen/0_resource_name_obfuscated_res_0x7f07019d" android:layout_height="@dimen/0_resource_name_obfuscated_res_0x7f07019d" android:layout_marginStart="6dp" app:cardCornerRadius="@dimen/0_resource_name_obfuscated_res_0x7f07019c" app:cardElevation="0dp">
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01ae" android:layout_width="@dimen/0_resource_name_obfuscated_res_0x7f07019d" android:layout_height="@dimen/0_resource_name_obfuscated_res_0x7f07019d" android:scaleType="centerCrop" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f1404ee"/>
+        </androidx.cardview.widget.CardView>
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01b0" android:text="@string/0_resource_name_obfuscated_res_0x7f14018c" style="@style/0_resource_name_obfuscated_res_0x7f15077e"/>
+    </LinearLayout>
+</FrameLayout>

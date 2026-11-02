@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f1501e9">
+    <com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.FloatingMonolithicCandidatesRecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b14e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/0_resource_name_obfuscated_res_0x7f070370" android:keyboardNavigationCluster="true" app:candidateLayout="@layout/0_resource_name_obfuscated_res_0x7f0e072f" app:maxCandidatesPerPage="?attr/0_resource_name_obfuscated_res_0x7f040135" app:minCandidatesPerPage="?attr/0_resource_name_obfuscated_res_0x7f040136" candidateTextOnlyLayout="@layout/0_resource_name_obfuscated_res_0x7f0e0731">
+        <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2930"/>
+        <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0644"/>
+    </com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.FloatingMonolithicCandidatesRecyclerView>
+</FrameLayout>

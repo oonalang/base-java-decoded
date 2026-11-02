@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard_group>
+        <keyboard def="@xml/APKTOOL_RENAMED_0x7f170035" type="composing_text_consumer" />
+    </keyboard_group>
+</framework>

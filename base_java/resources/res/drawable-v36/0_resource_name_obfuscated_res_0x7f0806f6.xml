@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:color="@color/0_resource_name_obfuscated_res_0x7f060b45">
+    <item>
+        <com.google.android.material.focus.FocusRingDrawable app:focusRingsRadius="@dimen/0_resource_name_obfuscated_res_0x7f070882">
+            <inset android:insetTop="4dp" android:insetBottom="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/0_resource_name_obfuscated_res_0x7f070882"/>
+                </shape>
+            </inset>
+        </com.google.android.material.focus.FocusRingDrawable>
+    </item>
+</ripple>

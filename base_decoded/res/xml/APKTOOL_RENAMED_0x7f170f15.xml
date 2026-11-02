@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14035e" id="@id/APKTOOL_RENAMED_0x7f0b0834" layout="@layout/APKTOOL_RENAMED_0x7f0e0712" multi_touch="false">
+            <action keycode="CAPS_LOCK" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f0401ae" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c2" value="@null" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1402a8" id="@id/APKTOOL_RENAMED_0x7f0b0835" layout="@layout/APKTOOL_RENAMED_0x7f0e0710" multi_touch="false">
+            <action keycode="CAPS_LOCK" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f0401af" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c2" value="@null" />
+        </softkey>
+    </softkeys>
+</framework>

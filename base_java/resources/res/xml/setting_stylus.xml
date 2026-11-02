@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f1416b1" android:key="@string/0_resource_name_obfuscated_res_0x7f140a79">
+    <com.android.settingslib.widget.TopIntroPreference android:title="@string/0_resource_name_obfuscated_res_0x7f140d9c"/>
+    <com.google.android.libraries.inputmethod.preferencewidgets.ColoredBackgroundSwitchPreference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140ba1" android:key="@string/0_resource_name_obfuscated_res_0x7f140964" android:disableDependentsState="false"/>
+    <com.google.android.libraries.inputmethod.stylus.education.StylusEducationPreference/>
+    <androidx.preference.PreferenceCategory>
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/0_resource_name_obfuscated_res_0x7f030036" android:title="@string/0_resource_name_obfuscated_res_0x7f140bd4" android:key="@string/0_resource_name_obfuscated_res_0x7f140a64" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140964" android:entryValues="@array/0_resource_name_obfuscated_res_0x7f030054"/>
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/0_resource_name_obfuscated_res_0x7f030035" android:title="@string/0_resource_name_obfuscated_res_0x7f140bd1" android:key="@string/0_resource_name_obfuscated_res_0x7f140a63" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140964" android:entryValues="@array/0_resource_name_obfuscated_res_0x7f030053"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b45" android:key="@string/0_resource_name_obfuscated_res_0x7f140926" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c95" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140964" android:disableDependentsState="true"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c71" android:key="@string/0_resource_name_obfuscated_res_0x7f140a82" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c6f" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140926">
+            <extra android:name="toolbar_type" android:value="stylus"/>
+        </SwitchPreferenceCompat>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140ba3" android:key="@string/0_resource_name_obfuscated_res_0x7f140965" android:summary="@string/0_resource_name_obfuscated_res_0x7f140ba2" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140964" android:disableDependentsState="true"/>
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

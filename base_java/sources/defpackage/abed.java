@@ -1,0 +1,30 @@
+package defpackage;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: PG */
+/* renamed from: abed  reason: default package */
+/* loaded from: classes3.dex */
+public final class abed {
+    public static final abed a;
+    public static final abed b;
+    public static final abed c;
+    private static final /* synthetic */ abed[] d;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Enum, abed] */
+    /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Enum, abed] */
+    /* JADX WARN: Type inference failed for: r3v1, types: [java.lang.Enum, abed] */
+    static {
+        ?? r0 = new Enum("FAKE", 0);
+        a = r0;
+        ?? r1 = new Enum("MTLS", 1);
+        b = r1;
+        ?? r3 = new Enum("CUSTOM_MANAGERS", 2);
+        c = r3;
+        d = new abed[]{r0, r1, r3};
+    }
+
+    public static abed[] values() {
+        return (abed[]) d.clone();
+    }
+}

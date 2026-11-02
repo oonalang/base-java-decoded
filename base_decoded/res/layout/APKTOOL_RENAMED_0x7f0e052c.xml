@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView style="@style/APKTOOL_RENAMED_0x7f1501e3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag=".bg.expression-keyboard-background" android:background="?APKTOOL_RENAMED_0x7f040108" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_marginBottom="?APKTOOL_RENAMED_0x7f04010b" android:paddingHorizontal="?APKTOOL_RENAMED_0x7f04010d" app:APKTOOL_RENAMED_0x7f04071c="@string/APKTOOL_RENAMED_0x7f140aef" style="@style/APKTOOL_RENAMED_0x7f1502b5">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:keyboardNavigationCluster="true">
+                    <include layout="@layout/APKTOOL_RENAMED_0x7f0e00e6" />
+                    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/APKTOOL_RENAMED_0x7f0e068b" />
+                </FrameLayout>
+            </LinearLayout>
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e01f8" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

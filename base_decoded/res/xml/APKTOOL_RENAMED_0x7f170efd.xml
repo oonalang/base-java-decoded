@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170f09" />
+    <softkeys>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b261a">
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140653" id="@id/APKTOOL_RENAMED_0x7f0b0cc2" keycode="SWITCH_KEYBOARD" param_data="prime" param_icon="@drawable/APKTOOL_RENAMED_0x7f080532" tooltip_text="@string/APKTOOL_RENAMED_0x7f140653" />
+        </softkey_list>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b28e6">
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14017d" id="@id/APKTOOL_RENAMED_0x7f0b0842" keycode="CLIPBOARD_ADD" param_icon="@attr/APKTOOL_RENAMED_0x7f040173" tooltip_text="@string/APKTOOL_RENAMED_0x7f14003e" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140187" id="@id/APKTOOL_RENAMED_0x7f0b0fdf" keycode="CLIPBOARD_EDIT" param_icon="@attr/APKTOOL_RENAMED_0x7f04018c" tooltip_text="@string/APKTOOL_RENAMED_0x7f140188" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140185" id="@id/APKTOOL_RENAMED_0x7f0b0cc3" keycode="CLIPBOARD_CLOSE_EDIT" param_icon="@attr/APKTOOL_RENAMED_0x7f040186" tooltip_text="@string/APKTOOL_RENAMED_0x7f140186" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140180" id="@id/APKTOOL_RENAMED_0x7f0b0a5a" keycode="CLIPBOARD_BATCH_DELETE" param_icon="@attr/APKTOOL_RENAMED_0x7f040189" tooltip_text="@string/APKTOOL_RENAMED_0x7f140180" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140181" id="@id/APKTOOL_RENAMED_0x7f0b0a5c" keycode="CLIPBOARD_BATCH_PIN" param_icon="@attr/APKTOOL_RENAMED_0x7f040196" tooltip_text="@string/APKTOOL_RENAMED_0x7f140181" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140194" id="@id/APKTOOL_RENAMED_0x7f0b21eb" keycode="CLIPBOARD_OPT_IN_REVERSE" param_icon="@attr/APKTOOL_RENAMED_0x7f0401b9" tooltip_text="@string/APKTOOL_RENAMED_0x7f140194" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140193" id="@id/APKTOOL_RENAMED_0x7f0b21ea" keycode="CLIPBOARD_OPT_IN_REVERSE" param_icon="@attr/APKTOOL_RENAMED_0x7f0401b8" tooltip_text="@string/APKTOOL_RENAMED_0x7f140193" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140182" id="@id/APKTOOL_RENAMED_0x7f0b0a5e" keycode="CLIPBOARD_BATCH_UNPIN" param_icon="@attr/APKTOOL_RENAMED_0x7f040197" tooltip_text="@string/APKTOOL_RENAMED_0x7f140182" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140185" id="@id/APKTOOL_RENAMED_0x7f0b103d" keycode="CLIPBOARD_CLOSE_ADD" param_icon="@drawable/APKTOOL_RENAMED_0x7f080682" tooltip_text="@string/APKTOOL_RENAMED_0x7f140186" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140185" id="@id/APKTOOL_RENAMED_0x7f0b098f" keycode="CLIPBOARD_CLOSE_EDIT" param_icon="@drawable/APKTOOL_RENAMED_0x7f080682" tooltip_text="@string/APKTOOL_RENAMED_0x7f140186" />
+        </softkey_list>
+        <softkey_template alpha="@attr/APKTOOL_RENAMED_0x7f040175" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b2623" layout="@layout/APKTOOL_RENAMED_0x7f0e06f1" multi_touch="false">
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="$icon$" />
+        </softkey_template>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2623">
+            <include href="@xml/APKTOOL_RENAMED_0x7f170efe" />
+        </softkey_list>
+    </softkeys>
+</framework>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="phr-PK" string_id="ime_pahari_pothwari">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c2" main_def="@xml/APKTOOL_RENAMED_0x7f170895" non_prime_def="@xml/APKTOOL_RENAMED_0x7f17090d" pk_language_tag="phr-Arab-PK" variant="pahari_pothwari" variant_label="@string/APKTOOL_RENAMED_0x7f1415a7" />
+        <extra_values>
+            <item id="@id/APKTOOL_RENAMED_0x7f0b02d7" value="۔ " />
+        </extra_values>
+    </ime>
+</framework>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.focus.FocusRingDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:focusRingsShapeAppearance="@style/0_resource_name_obfuscated_res_0x7f150611">
+    <shape>
+        <solid android:color="@color/0_resource_name_obfuscated_res_0x7f0605c8"/>
+        <corners android:radius="10000dp"/>
+    </shape>
+</com.google.android.material.focus.FocusRingDrawable>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag=".writing-tools-back-button.item-ripple.on-surface" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080297" style="@style/0_resource_name_obfuscated_res_0x7f150241">
+    <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" style="@style/0_resource_name_obfuscated_res_0x7f15023f"/>
+</FrameLayout>

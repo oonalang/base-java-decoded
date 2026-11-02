@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingTop="@dimen/0_resource_name_obfuscated_res_0x7f070983" style="@style/0_resource_name_obfuscated_res_0x7f150b34">
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+            <TextView android:text="@string/0_resource_name_obfuscated_res_0x7f14117a" android:labelFor="@+id/0_resource_name_obfuscated_res_0x7f0b2996" style="@style/0_resource_name_obfuscated_res_0x7f150b35"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6">
+            <com.google.android.material.textfield.TextInputLayout style="@style/0_resource_name_obfuscated_res_0x7f150b38">
+                <AutoCompleteTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2996" style="@style/0_resource_name_obfuscated_res_0x7f150b31"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/0_resource_name_obfuscated_res_0x7f150b30">
+        <Button app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b2992" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_max="160dp" style="@style/0_resource_name_obfuscated_res_0x7f150b32"/>
+        <Button android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2992" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_max="160dp" style="@style/0_resource_name_obfuscated_res_0x7f150b2e"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

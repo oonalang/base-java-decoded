@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="1dp" android:insetRight="1dp" android:insetTop="0dp" android:insetBottom="0dp">
+    <ripple android:color="?android:attr/colorControlHighlight">
+        <item android:id="@android:id/mask">
+            <selector>
+                <item android:state_selected="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                        <corners android:radius="999dp"/>
+                    </shape>
+                </item>
+                <item android:state_single="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932"/>
+                    </shape>
+                </item>
+                <item android:state_first="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933"/>
+                    </shape>
+                </item>
+                <item android:state_last="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932"/>
+                    </shape>
+                </item>
+                <item android:state_middle="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933"/>
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="#ffffff"/>
+                    </shape>
+                </item>
+            </selector>
+        </item>
+        <item android:id="@android:id/background">
+            <selector>
+                <item android:state_selected="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e6"/>
+                        <corners android:radius="999dp"/>
+                    </shape>
+                </item>
+                <item android:state_single="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e6"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932"/>
+                    </shape>
+                </item>
+                <item android:state_first="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e6"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933"/>
+                    </shape>
+                </item>
+                <item android:state_last="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e6"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070932"/>
+                    </shape>
+                </item>
+                <item android:state_middle="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?attr/0_resource_name_obfuscated_res_0x7f0404e6"/>
+                        <corners android:topLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:topRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomLeftRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933" android:bottomRightRadius="@dimen/0_resource_name_obfuscated_res_0x7f070933"/>
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/0_resource_name_obfuscated_res_0x7f060b88"/>
+                    </shape>
+                </item>
+            </selector>
+        </item>
+    </ripple>
+</inset>

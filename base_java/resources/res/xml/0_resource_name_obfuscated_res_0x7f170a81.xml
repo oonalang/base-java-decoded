@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <if japanese_use_tri_state_mode="true">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b15a0" view_id="@+id/key_pos_switch_hiragana_alphabet"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b15a0" view_id="@+id/key_pos_switch_to_symbol_right"/>
+        </if>
+        <else>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2479" view_id="@+id/key_pos_switch_hiragana_alphabet"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2479" view_id="@+id/key_pos_switch_to_symbol_right"/>
+        </else>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247d" view_id="@+id/key_pos_switch_to_symbol"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cf2" view_id="@+id/A02"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2418" view_id="@+id/key_pos_space"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b22dc" view_id="@+id/A08"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b158c" view_id="@+id/key_pos_qwerty_globe"/>
+    </key_mapping>
+    <key_mapping state="ALT,CTRL,META,ALTGR">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b241a" view_id="@+id/key_pos_space"/>
+    </key_mapping>
+    <if japanese_use_tri_state_mode="true">
+        <ifnot ja_qwerty_enable_always_symbol_key="true">
+            <key_mapping state="SHOW_EMOJI_SWITCH_KEY">
+                <if expressions="policy_transparency">
+                    <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2471" view_id="@+id/key_pos_switch_to_symbol"/>
+                </if>
+                <else_if expressions="hidden">
+                    <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fe4" view_id="@+id/key_pos_switch_to_smiley"/>
+                </else_if>
+                <else>
+                    <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246d" view_id="@+id/key_pos_switch_to_symbol"/>
+                </else>
+            </key_mapping>
+        </ifnot>
+    </if>
+    <if device="tablet" device_size="large" keyboard_mode="normal">
+        <key_mapping state="INPUT_TYPE_URI,INPUT_TYPE_EMAIL_ADDRESS">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0ac1" view_id="@+id/key_pos_switch_to_symbol"/>
+        </key_mapping>
+    </if>
+    <key_mapping state="INPUT_TYPE_URI">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b240c" view_id="@+id/A02"/>
+    </key_mapping>
+    <key_mapping state="INPUT_TYPE_EMAIL_ADDRESS">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b098b" view_id="@+id/A02"/>
+    </key_mapping>
+    <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+        <if japanese_use_tri_state_mode="true">
+            <key_mapping state="NORMAL,CTRL,CTRL_LOCK">
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b15a0" view_id="@+id/key_pos_left_ctrl"/>
+            </key_mapping>
+        </if>
+        <else>
+            <key_mapping state="NORMAL,CTRL,CTRL_LOCK">
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2479" view_id="@+id/key_pos_left_ctrl"/>
+            </key_mapping>
+        </else>
+    </if>
+</framework>

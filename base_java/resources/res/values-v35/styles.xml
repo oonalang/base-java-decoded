@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="0_resource_name_obfuscated_res_0x7f150254" parent="@style/0_resource_name_obfuscated_res_0x7f150a23">
+        <item name="?0x101069a">true</item>
+        <item name="0_resource_name_obfuscated_res_0x7f0404df">@color/0_resource_name_obfuscated_res_0x7f06008f</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f150431" parent="@style/0_resource_name_obfuscated_res_0x7f150430">
+        <item name="?0x101069a">true</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f1504ca" parent="">
+        <item name="?0x101069a">true</item>
+    </style>
+    <style name="0_resource_name_obfuscated_res_0x7f15076e" parent="@style/DayNightTheme.NoActionBar">
+        <item name="?0x101069a">true</item>
+    </style>
+</resources>

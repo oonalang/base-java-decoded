@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_checkable="true" android:state_checked="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f04077e"/>
+    <item android:state_pressed="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040784"/>
+    <item android:state_focused="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040780"/>
+    <item android:state_hovered="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040781"/>
+    <item android:state_single="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040785"/>
+    <item android:state_first="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f04077f"/>
+    <item android:state_last="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040782"/>
+    <item android:state_middle="true" app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040783"/>
+    <item app:shapeAppearance="?attr/0_resource_name_obfuscated_res_0x7f040783"/>
+</selector>

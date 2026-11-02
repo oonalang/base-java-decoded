@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="pt-AO" string_id="ime_portuguese_angola">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c7" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" main_def="@xml/APKTOOL_RENAMED_0x7f1707f8" pk_language_tag="pt-BR" support_a11y_keyboard="true" variant="portuguese" variant_label="@string/APKTOOL_RENAMED_0x7f1415bc" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706ca" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bc" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706be" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c0" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" main_def="@xml/APKTOOL_RENAMED_0x7f17074e" pk_language_tag="pt-BR" pk_layout_type="dvorak" support_a11y_keyboard="true" variant="dvorak_spanish" variant_label="@string/APKTOOL_RENAMED_0x7f14148f" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706bd" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c6" lang_def="@xml/APKTOOL_RENAMED_0x7f170623" pk_language_tag="pt-BR" />
+    </ime>
+</framework>

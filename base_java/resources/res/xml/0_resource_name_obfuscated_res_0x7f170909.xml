@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if device="tablet" device_size="large" keyboard_mode="normal">
+        <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1707c8" type="digit"/>
+    </if>
+    <else>
+        <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1704ce" type="digit"/>
+    </else>
+    <keyboard def="@xml/0_resource_name_obfuscated_res_0x7f1704d0" type="symbol"/>
+</framework>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" style="@style/0_resource_name_obfuscated_res_0x7f15033a">
+    <com.google.android.libraries.inputmethod.keyboard.widget.FixedSizeSoftKeyViewsPage android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b14e3" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f0400c2" android:layout_height="match_parent" android:horizontalSpacing="0dp" android:verticalSpacing="0dp" android:layout_weight="181" app:columnCount="3" app:rowCount="3" app:softkeyviewLayout="@layout/0_resource_name_obfuscated_res_0x7f0e05a7"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="424">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0590"/>
+    </FrameLayout>
+    <com.google.android.libraries.inputmethod.keyboard.widget.FixedSizeSoftKeyViewsPage android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b14e4" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f0400c3" android:layout_height="match_parent" android:horizontalSpacing="0dp" android:verticalSpacing="0dp" android:layout_weight="116" app:columnCount="2" app:rowCount="3" app:softkeyviewLayout="@layout/0_resource_name_obfuscated_res_0x7f0e05a7"/>
+    <LinearLayout android:weightSum="300" android:layout_weight="65" style="@style/0_resource_name_obfuscated_res_0x7f150450">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_del" android:layout_weight="100" style="@style/0_resource_name_obfuscated_res_0x7f1506c5"/>
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_ime_action" android:layout_weight="100" style="@style/0_resource_name_obfuscated_res_0x7f1506d7"/>
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_shift_right" android:layout_weight="100" style="@style/0_resource_name_obfuscated_res_0x7f1506c5"/>
+    </LinearLayout>
+</LinearLayout>

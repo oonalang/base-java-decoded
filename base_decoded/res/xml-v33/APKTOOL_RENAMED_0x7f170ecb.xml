@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-shortcut-target android:description="@string/APKTOOL_RENAMED_0x7f140898" android:summary="@string/APKTOOL_RENAMED_0x7f14089a" android:settingsActivity="com.google.android.libraries.inputmethod.pksimulator.settings.PkSimulatorSettingActivity" android:animatedImageDrawable="@raw/APKTOOL_RENAMED_0x7f130000" android:intro="@string/APKTOOL_RENAMED_0x7f140899"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

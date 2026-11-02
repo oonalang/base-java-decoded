@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:tag=".expression-search-container" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080279" android:layout_width="match_parent" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f04012c">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e068c"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.clipboard.ClipboardAddEntryKeyboard">
+        <view default_show="@attr/0_resource_name_obfuscated_res_0x7f04008b" direction="" layout="@layout/0_resource_name_obfuscated_res_0x7f0e01cf" scalable="false" type="header">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170efd"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170aab"/>
+        </view>
+        <view direction="" layout="@attr/0_resource_name_obfuscated_res_0x7f04007e" type="radial">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+        </view>
+    </keyboard>
+</framework>

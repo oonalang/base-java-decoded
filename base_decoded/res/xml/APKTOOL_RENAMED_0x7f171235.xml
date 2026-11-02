@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b2617" layout="@layout/APKTOOL_RENAMED_0x7f0e06dd" popup_timing="ON_TOUCH">
+            <action data="$press_data$" intention="$press_intention=COMMIT$" keycode="PLAIN_TEXT" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$press_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2617">
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f1402cc" id="@id/APKTOOL_RENAMED_0x7f0b0fe2" press_data="……" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140410" id="@id/APKTOOL_RENAMED_0x7f0b2883" press_data="～" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14040c" id="@id/APKTOOL_RENAMED_0x7f0b2305" press_data="？" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140408" id="@id/APKTOOL_RENAMED_0x7f0b103c" press_data="！" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14040f" id="@id/APKTOOL_RENAMED_0x7f0b23a0" press_data="；" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140406" id="@id/APKTOOL_RENAMED_0x7f0b0ccd" press_data="：" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b202f" press_data="-" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b098b" press_data="@" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2308" press_data="&quot;" press_intention="DECODE" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b22d9" press_data="%" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b240c" press_data="/" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140407" id="@id/APKTOOL_RENAMED_0x7f0b0cb4" press_data="，" />
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14040b" id="@id/APKTOOL_RENAMED_0x7f0b0cb8" press_data="。" />
+        </softkey_list>
+    </softkeys>
+</framework>

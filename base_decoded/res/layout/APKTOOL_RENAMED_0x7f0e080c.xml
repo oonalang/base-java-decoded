@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.WidgetInnerHolder android:id="@id/APKTOOL_RENAMED_0x7f0b2a52" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="2.0dp" app:APKTOOL_RENAMED_0x7f040720="true" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b2a4e" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b2a50" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b0214" />
+    <include android:visibility="gone" app:APKTOOL_RENAMED_0x7f040a12="@id/softkey_holder_fixed_candidates" layout="@layout/APKTOOL_RENAMED_0x7f0e066c" style="@style/APKTOOL_RENAMED_0x7f151135" />
+</com.google.android.libraries.inputmethod.companionwidget.widget.WidgetInnerHolder>

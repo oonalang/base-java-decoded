@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.popup.MaterialPopupView android:id="@id/APKTOOL_RENAMED_0x7f0b070c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_RENAMED_0x7f0400a9="false" app:APKTOOL_RENAMED_0x7f040286="?APKTOOL_RENAMED_0x7f040242"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0726" style="@style/APKTOOL_RENAMED_0x7f15048f">
+        <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b071a" style="@style/APKTOOL_RENAMED_0x7f150490">
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="?APKTOOL_RENAMED_0x7f0402f7" android:id="@id/APKTOOL_RENAMED_0x7f0b0720" android:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f15048b" />
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.popup.MaterialPopupView>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="invisible" android:layout_width="@dimen/0_resource_name_obfuscated_res_0x7f070140" android:layout_height="@dimen/0_resource_name_obfuscated_res_0x7f070140" android:layout_marginBottom="@dimen/0_resource_name_obfuscated_res_0x7f07016b" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/0_resource_name_obfuscated_res_0x7f07016b"/>

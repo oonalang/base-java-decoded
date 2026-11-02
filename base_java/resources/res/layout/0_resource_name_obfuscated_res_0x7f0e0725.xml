@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" android:tag=".label.for-ja-twelvekeys.non-linear-scale" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="?attr/0_resource_name_obfuscated_res_0x7f0401d7" style="@style/0_resource_name_obfuscated_res_0x7f150312"/>

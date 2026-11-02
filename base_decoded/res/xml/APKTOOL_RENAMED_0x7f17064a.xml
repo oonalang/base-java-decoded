@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="body">
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f03" />
+            <if device="tablet" device_size="large" keyboard_mode="normal">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c1f" />
+            </if>
+            <else>
+                <include href="@xml/APKTOOL_RENAMED_0x7f170c1e" />
+            </else>
+        </view>
+    </keyboard>
+</framework>

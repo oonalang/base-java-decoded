@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f140b76" android:key="@string/0_resource_name_obfuscated_res_0x7f140a6a">
+    <com.google.android.libraries.inputmethod.personaldictionary.preference.PersonalDictionaryPreference android:title="@string/0_resource_name_obfuscated_res_0x7f140c36" android:key="@string/0_resource_name_obfuscated_res_0x7f140c34"/>
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140ca6" android:key="@string/0_resource_name_obfuscated_res_0x7f140ca5"/>
+</PreferenceScreen>

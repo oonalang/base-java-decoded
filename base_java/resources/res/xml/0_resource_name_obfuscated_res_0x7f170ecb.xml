@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-shortcut-target xmlns:android="http://schemas.android.com/apk/res/android" android:description="@string/0_resource_name_obfuscated_res_0x7f140898" android:summary="@string/0_resource_name_obfuscated_res_0x7f14089a" android:settingsActivity="com.google.android.libraries.inputmethod.pksimulator.settings.PkSimulatorSettingActivity"/>

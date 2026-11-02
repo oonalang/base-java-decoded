@@ -1,0 +1,34 @@
+package defpackage;
+
+import android.graphics.Bitmap;
+/* compiled from: PG */
+/* renamed from: duz  reason: default package */
+/* loaded from: classes2.dex */
+public class duz implements duy {
+    @Override // defpackage.duy
+    public final Bitmap a(int i, int i2, Bitmap.Config config) {
+        return Bitmap.createBitmap(i, i2, config);
+    }
+
+    @Override // defpackage.duy
+    public final Bitmap b(int i, int i2, Bitmap.Config config) {
+        return Bitmap.createBitmap(i, i2, config);
+    }
+
+    @Override // defpackage.duy
+    public void d(Bitmap bitmap) {
+        bitmap.recycle();
+    }
+
+    @Override // defpackage.duy
+    public final void c() {
+    }
+
+    @Override // defpackage.duy
+    public final void e(float f) {
+    }
+
+    @Override // defpackage.duy
+    public final void f(int i) {
+    }
+}

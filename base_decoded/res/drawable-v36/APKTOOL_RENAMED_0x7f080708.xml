@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/APKTOOL_RENAMED_0x7f060b45"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <layer-list android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f070895" android:paddingBottom="@dimen/APKTOOL_RENAMED_0x7f070895" android:paddingStart="@dimen/APKTOOL_RENAMED_0x7f070895" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f070895" android:paddingMode="stack">
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/APKTOOL_RENAMED_0x7f070885" />
+                    <solid android:color="@color/APKTOOL_RENAMED_0x7f060b2f" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

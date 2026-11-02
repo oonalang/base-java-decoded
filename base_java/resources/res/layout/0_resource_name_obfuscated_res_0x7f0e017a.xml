@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f1504ee">
+    <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05c5" android:tag=".bg-clipboard_item-board-popup.panel" android:visibility="?attr/0_resource_name_obfuscated_res_0x7f040085" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/0_resource_name_obfuscated_res_0x7f08023d" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner style="@style/0_resource_name_obfuscated_res_0x7f1504ed">
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b040e" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b039f" app:layout_constraintTop_toTopOf="@+id/0_resource_name_obfuscated_res_0x7f0b040d" app:layout_constraintWidth_percent="?attr/0_resource_name_obfuscated_res_0x7f0401c6">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0179"/>
+        </FrameLayout>
+        <ScrollView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b040d" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b040e" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f1504e7">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0178"/>
+        </ScrollView>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b039f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0dp"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</FrameLayout>

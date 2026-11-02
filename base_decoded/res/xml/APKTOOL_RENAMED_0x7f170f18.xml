@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140d4e" id="@id/APKTOOL_RENAMED_0x7f0b2416" layout="@layout/APKTOOL_RENAMED_0x7f0e0776" long_press_delay="500">
+            <if enable_free_cursor_by_long_press_space="true" free_cursor="true">
+                <attrs long_press_delay="300" />
+            </if>
+            <action data=" " keycode="SPACE" type="PRESS" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170ef2" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value=" " />
+        </softkey>
+    </softkeys>
+</framework>

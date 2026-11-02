@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd4" id="@id/APKTOOL_RENAMED_0x7f0b24c2" layout="@layout/APKTOOL_RENAMED_0x7f0e06fe" multi_touch="true">
+            <action action_on_down="true" data="SUB_CATEGORY_1" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140cd8" id="@id/APKTOOL_RENAMED_0x7f0b2051" layout="@layout/APKTOOL_RENAMED_0x7f0e06fe" multi_touch="true">
+            <action action_on_down="true" data="NORMAL" keycode="SWITCH_SUB_CATEGORY" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="" />
+        </softkey>
+        <softkey_template id="@id/APKTOOL_RENAMED_0x7f0b2698">
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$param_label$" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="" />
+        </softkey_template>
+        <softkey_template id="@id/APKTOOL_RENAMED_0x7f0b2677">
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$param_label$" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="" />
+        </softkey_template>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2698">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10dc" param_label="◌̥◌ʰ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1291" param_label="༼  ༽" />
+        </softkey_list>
+        <softkey_list template_id="@id/APKTOOL_RENAMED_0x7f0b2677">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1065" param_label="U+1E953U+1E952U+1E951U+061F" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1067" param_label="٣٢١؟" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1069" param_label="123؟" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b106b" param_label="᭗᭘᭙" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b106d" param_label="꛷ꛦꛧꛨ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1070" param_label="\?১২৩" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10b8" param_label="𑅃𑄷𑄸𑄹" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10b9" param_label="\?꩑꩒꩓" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10cb" param_label="\?፩፪፫" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10d1" param_label="\?૧૨૩" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10d3" param_label="\?੧੨੩" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10d8" param_label="\?१२३" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10df" param_label="ꧏ꧐꧑" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10e2" param_label="\?೧೨೩" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10e4" param_label="\?꤁꤂꤃" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10ea" param_label="\?᱁᱂᱃" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10ec" param_label="᥅᥇᥈᥉" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10f0" param_label="\?꯱꯲꯳" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10f4" param_label="\?၁၂၃" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10f6" param_label="\?႑႒႓" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10f8" param_label="？᧑᧒᧓" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10fa" param_label="߃߂߁؟" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10fc" param_label="\?୧୨୩" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10fe" param_label="\?᱑᱒᱓" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b112d" param_label="۳۲۱؟" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1134" param_label="\?꣑꣒꣓" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1137" param_label="\?᮱᮲᮳" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b1290" param_label="༡༢༣" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b10db" param_label="/ [ {" />
+        </softkey_list>
+    </softkeys>
+</framework>

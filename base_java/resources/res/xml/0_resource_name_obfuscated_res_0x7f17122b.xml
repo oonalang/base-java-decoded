@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10a9">
+            <action keycode="KEYCODE_UNKNOWN" popup_icon="0x7f0805af" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="radial"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10ab">
+            <action keycode="KEYCODE_UNKNOWN" popup_icon="0x7f0805af" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027f" type="radial"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10aa">
+            <action keycode="KEYCODE_UNKNOWN" popup_icon="0x7f0805af" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040281" type="radial"/>
+        </softkey>
+    </softkeys>
+</framework>

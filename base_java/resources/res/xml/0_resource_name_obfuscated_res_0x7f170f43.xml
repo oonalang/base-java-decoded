@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <if device="tablet" device_size="large" keyboard_mode="normal">
+            <softkey_list splitter=" " template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2680">
+                <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0cf2" long_press_data="!" press_data=","/>
+                <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1038" long_press_data="," press_data="!"/>
+                <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1299" press_data="."/>
+                <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2303" long_press_data="." press_data="?"/>
+            </softkey_list>
+        </if>
+        <else>
+            <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2686">
+                <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2303" press_data="?"/>
+            </softkey_list>
+        </else>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2629">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b246a" long_press_data="‚,‘,’,›,‹" long_press_label="‚,‘,’,‹,›" press_data="&apos;" press_label="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b149b" long_press_data="‘,’,‚,›,‹" long_press_label="‘,’,‚,‹,›" press_data="&apos;" press_label="&apos;"/>
+        </softkey_list>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b262a">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0890" long_press_data="‚,‘,’,‹,›" merge_index="4" press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0fdd" long_press_data="’,‚,‘,‹,›" press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0def" long_press_data="’,‚,‘,›,‹" press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0d3b" long_press_data="‘,‚,’,›,‹" press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2353" long_press_data="‘,‚,’,‹,›" press_data="&apos;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2358" long_press_data="‚,‘,’,‹,›,ʹ,´,ʼ,ˈ" press_data="&apos;"/>
+        </softkey_list>
+    </softkeys>
+</framework>

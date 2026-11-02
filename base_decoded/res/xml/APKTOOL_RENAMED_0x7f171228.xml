@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f171208" />
+    <softkeys>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2680">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0890" press_data="'" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0fec" press_data="=" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b14ee" press_data="-" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2306" press_data="&quot;" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b232d" press_data="@string/APKTOOL_RENAMED_0x7f1413e6" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2411" press_data="/" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b269f">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b28cb" keycode_normal="COMMA" label_header="，" long_press_data="ㄝ ， 〈 《 ……" press_data="," press_label="ㄝ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b28d2" keycode_normal="PERIOD" label_header="。" long_press_data="ㄡ 。 〉 》" press_data="." press_label="ㄡ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b28c3" keycode_normal="SLASH" label_header="／" long_press_data="ㄥ ／ ？ / ?" press_data="/" press_label="ㄥ" />
+        </softkey_list>
+    </softkeys>
+</framework>

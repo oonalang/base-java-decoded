@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f150003">
+        <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" android:tag=".icon.for-access-point-icon.non-linear-scale" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f040002" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0805e9" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="?attr/0_resource_name_obfuscated_res_0x7f040002" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2933" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

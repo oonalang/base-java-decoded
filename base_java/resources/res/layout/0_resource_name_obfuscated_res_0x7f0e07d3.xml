@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:strokeColor="?attr/0_resource_name_obfuscated_res_0x7f0404cb" style="@style/0_resource_name_obfuscated_res_0x7f150b3f">
+    <com.google.android.material.card.MaterialCardView app:cardBackgroundColor="?attr/0_resource_name_obfuscated_res_0x7f0404e9" style="@style/0_resource_name_obfuscated_res_0x7f150b40">
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b29ac" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080681" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404cb" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07d1"/>
+    </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.card.MaterialCardView>

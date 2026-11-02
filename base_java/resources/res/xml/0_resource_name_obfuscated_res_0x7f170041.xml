@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.emoji.search.SearchKeyboardEmojiSpecializerM2" recent_key_layout="@layout/0_resource_name_obfuscated_res_0x7f0e073b" recent_key_type="smiley" remember_recent_key="ALL_ACTIONS">
+        <if enable_simplified_expression_keyboard="true">
+            <view direction="bottom_to_top" layout="@attr/0_resource_name_obfuscated_res_0x7f0400cb" scalable="false" type="header">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171236"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e62"/>
+            </view>
+        </if>
+        <else>
+            <view direction="bottom_to_top" layout="@attr/0_resource_name_obfuscated_res_0x7f0400ca" scalable="false" type="header">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171236"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e62"/>
+            </view>
+        </else>
+        <view id="@+id/0_resource_name_obfuscated_res_0x7f0b0727" layout="@layout/0_resource_name_obfuscated_res_0x7f0e064a"/>
+    </keyboard>
+</framework>

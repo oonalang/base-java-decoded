@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="bgq-PK" string_id="ime_bagri">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c2" main_def="@xml/0_resource_name_obfuscated_res_0x7f1704aa" non_prime_def="@xml/0_resource_name_obfuscated_res_0x7f17090d" pk_language_tag="bgq-Arab-PK" variant="bagri_arabic" variant_label="@string/0_resource_name_obfuscated_res_0x7f141424"/>
+    </ime>
+</framework>

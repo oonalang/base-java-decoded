@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140bd5">
+        <com.google.android.libraries.inputmethod.preferencewidgets.SliderListPreference android:persistent="true" android:entries="@array/0_resource_name_obfuscated_res_0x7f030036" android:title="@string/0_resource_name_obfuscated_res_0x7f140bd4" android:key="@string/0_resource_name_obfuscated_res_0x7f140998" android:entryValues="@array/0_resource_name_obfuscated_res_0x7f03004d" slider_text_left="@string/0_resource_name_obfuscated_res_0x7f140bd2" slider_text_right="@string/0_resource_name_obfuscated_res_0x7f140bd3"/>
+        <com.google.android.libraries.inputmethod.preferencewidgets.SliderListPreference android:persistent="true" android:entries="@array/0_resource_name_obfuscated_res_0x7f030035" android:title="@string/0_resource_name_obfuscated_res_0x7f140bd1" android:key="@string/0_resource_name_obfuscated_res_0x7f140997" android:entryValues="@array/0_resource_name_obfuscated_res_0x7f03004c" slider_text_left="@string/0_resource_name_obfuscated_res_0x7f140bcf" slider_text_right="@string/0_resource_name_obfuscated_res_0x7f140bd0"/>
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

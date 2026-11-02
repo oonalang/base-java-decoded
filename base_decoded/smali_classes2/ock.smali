@@ -1,0 +1,53 @@
+.class public final Lock;
+.super Locf;
+.source "PG"
+
+# interfaces
+.implements Locl;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "applicationContext"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Labyy;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Locf;-><init>(Landroid/content/Context;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final a()Lqem;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lrlo;->d:Lqem;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method protected final b()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const-string p0, "brella_feature_split"
+
+    .line 2
+    .line 3
+    return-object p0
+.end method

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cbb" layout="@layout/APKTOOL_RENAMED_0x7f0e073d" multi_touch="false">
+            <action keycode="SHIFT_DOWN" type="DOWN" />
+            <action keycode="SHIFT_UP" type="UP" />
+            <action data=";" intention="DECODE" keycode="SEMICOLON" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value=";" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040213" content_description="@string/APKTOOL_RENAMED_0x7f140b2b" id="@id/APKTOOL_RENAMED_0x7f0b0cbd" layout="@layout/APKTOOL_RENAMED_0x7f0e070b" multi_touch="false">
+            <action keycode="SHIFT_DOWN" type="DOWN" />
+            <action keycode="SHIFT_UP" type="UP" />
+            <action data="'" intention="DECODE" keycode="APOSTROPHE" type="PRESS" />
+            <if language="zh-HK|zh-TW|zh-XG">
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            </if>
+            <else>
+                <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+            </else>
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cba" layout="@layout/APKTOOL_RENAMED_0x7f0e073e" multi_touch="false">
+            <action data=";" intention="DECODE" keycode="SEMICOLON" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value=";" />
+        </softkey>
+    </softkeys>
+</framework>

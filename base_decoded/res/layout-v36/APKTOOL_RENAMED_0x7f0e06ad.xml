@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:filterTouchesWhenObscured="true" android:paddingVertical="@dimen/APKTOOL_RENAMED_0x7f0708a4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0358" android:background="@drawable/APKTOOL_RENAMED_0x7f080709" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/APKTOOL_RENAMED_0x7f07089b" android:paddingStart="@dimen/APKTOOL_RENAMED_0x7f07089e" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f0708a6">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070895" android:layout_marginVertical="@dimen/APKTOOL_RENAMED_0x7f0708a7">
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:textColor="@color/APKTOOL_RENAMED_0x7f060aff" android:ellipsize="end" android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b2950" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:textColor="@color/APKTOOL_RENAMED_0x7f060aff" android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b294f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/APKTOOL_RENAMED_0x7f0b2950" android:layout_alignLeft="@id/APKTOOL_RENAMED_0x7f0b2950" android:textAlignment="viewStart" android:layout_alignStart="@id/APKTOOL_RENAMED_0x7f0b2950" />
+        </RelativeLayout>
+        <com.google.android.material.materialswitch.MaterialSwitch android:theme="@style/APKTOOL_RENAMED_0x7f150a97" android:id="@android:id/switch_widget" style="@style/APKTOOL_RENAMED_0x7f15058c" />
+    </LinearLayout>
+</LinearLayout>

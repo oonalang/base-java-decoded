@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b292f" android:layout_width="0.0dp" android:layout_height="0.0dp" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/key_pos_header_power_key" app:APKTOOL_RENAMED_0x7f04073f="@id/key_pos_header_access_points_menu" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="start|center" android:tag=".divider.vertical.for-candidate-key" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f070057" android:src="@drawable/APKTOOL_RENAMED_0x7f080512" android:scaleType="center" />
+    <ImageView android:layout_gravity="end|center" android:tag=".divider.vertical.for-candidate-key" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f070057" android:src="@drawable/APKTOOL_RENAMED_0x7f080512" android:scaleType="center" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f140bc6" android:key="@string/0_resource_name_obfuscated_res_0x7f140a6d">
+    <com.google.android.libraries.inputmethod.preferencewidgets.AutoSyncedSwitchPreference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140bcc" android:key="@string/0_resource_name_obfuscated_res_0x7f14094b" android:summary="@string/0_resource_name_obfuscated_res_0x7f140bcb"/>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140bce" android:key="@string/0_resource_name_obfuscated_res_0x7f140995" android:summary="@string/0_resource_name_obfuscated_res_0x7f140bcd" android:dependency="@string/0_resource_name_obfuscated_res_0x7f14094b"/>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c64" android:key="@string/0_resource_name_obfuscated_res_0x7f140966" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c63"/>
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c66" android:key="@string/0_resource_name_obfuscated_res_0x7f140967" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c65"/>
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" ascii_capable="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="cjk-AO" string_id="ime_chokwe">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c7" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c0" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" main_def="@xml/0_resource_name_obfuscated_res_0x7f170800" pk_language_tag="cjk-Latn-AO" variant="portuguese" variant_label="@string/0_resource_name_obfuscated_res_0x7f1415bc"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706ca" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706bc" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706be" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c0" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" main_def="@xml/0_resource_name_obfuscated_res_0x7f17074e" pk_language_tag="cjk-Latn-AO" pk_layout_type="dvorak" variant="dvorak_spanish" variant_label="@string/0_resource_name_obfuscated_res_0x7f14148f"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706bd" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c6" lang_def="@xml/0_resource_name_obfuscated_res_0x7f170539" pk_language_tag="cjk-Latn-AO"/>
+    </ime>
+</framework>

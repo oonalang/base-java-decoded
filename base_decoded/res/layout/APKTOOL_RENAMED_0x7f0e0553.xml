@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView style="@style/APKTOOL_RENAMED_0x7f1502b1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewSwitcher android:id="@id/APKTOOL_RENAMED_0x7f0b03ae" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b05ee" style="@style/APKTOOL_RENAMED_0x7f15023a">
+                <ImageView style="@style/APKTOOL_RENAMED_0x7f15023b" />
+            </FrameLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.apps.inputmethod.libs.expression.header.StartElementRecyclerView android:orientation="horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b05f0" android:layout_width="wrap_content" android:layout_height="match_parent" android:overScrollMode="never" app:APKTOOL_RENAMED_0x7f04071c="com.google.android.apps.inputmethod.libs.expression.header.StartElementScrollBehavior" />
+                <com.google.android.libraries.inputmethod.recyclerview.BindingRecyclerView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b06e4" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="?APKTOOL_RENAMED_0x7f0400a4" android:paddingStart="6.0dp" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f0703bc" android:keyboardNavigationCluster="true" app:APKTOOL_RENAMED_0x7f04071c="com.google.android.apps.inputmethod.libs.expression.header.MiddleElementScrollBehavior" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+        <ViewAnimator android:id="@id/APKTOOL_RENAMED_0x7f0b03ad" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e0794" />
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e01f1" />
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e0680" />
+        </ViewAnimator>
+    </ViewSwitcher>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

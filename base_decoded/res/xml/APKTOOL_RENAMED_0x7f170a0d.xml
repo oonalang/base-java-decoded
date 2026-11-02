@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping state="ALTGR">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dc1" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0cf7" view_id="@id/E02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b21b6" view_id="@id/E03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0fcc" view_id="@id/E04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a31" view_id="@id/E07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b234e" view_id="@id/E08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a23" view_id="@id/E09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2340" view_id="@id/E10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dda" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dd2" view_id="@id/D09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dba" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0de7" view_id="@id/C10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0890" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0dd6" view_id="@id/B07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1a74" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1329" view_id="@id/B09" />
+    </key_mapping>
+    <key_mapping state="ALTGR+SHIFT">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d6b" view_id="@id/E00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2356" view_id="@id/E08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d83" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d7b" view_id="@id/D09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d64" view_id="@id/D12" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d90" view_id="@id/C10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0d7f" view_id="@id/B07" />
+    </key_mapping>
+    <merge_key_mapping exclude_state="SHIFT" state="ALTGR">
+        <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1e6c" view_id="@id/E08" />
+    </merge_key_mapping>
+</framework>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_list splitter=" " template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2680">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1f97" press_data=","/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1299" long_press_data=", ? ! ) ( # / ; &apos; @ : - &quot; + % &amp;" press_data="."/>
+            <softkey desc="@string/0_resource_name_obfuscated_res_0x7f140407" id="@+id/0_resource_name_obfuscated_res_0x7f0b0cb4" press_data="，"/>
+            <softkey desc="@string/0_resource_name_obfuscated_res_0x7f14040b" id="@+id/0_resource_name_obfuscated_res_0x7f0b0cb8" long_press_data="…… ？ ！ 、 ： ； _ % $ ^ &amp; :P :D :( :) ^_^" long_press_intention="COMMIT" press_data="。"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0cf2" press_data="," press_intent="COMMIT"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b22dc" long_press_data="…" press_data="." press_intent="COMMIT"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b1a71" long_press_data="≤ ‹ « ⟨" press_data="&lt;"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b2053" long_press_data="≥ › » ⟩" press_data="&gt;"/>
+        </softkey_list>
+    </softkeys>
+</framework>

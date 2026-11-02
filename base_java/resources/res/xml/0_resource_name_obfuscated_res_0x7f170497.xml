@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard candidate_text_size_ratio="1" class=".latin.keyboard.LatinPrimeKeyboard" popup="@attr/0_resource_name_obfuscated_res_0x7f040279" session_states="CAPS_LOCK">
+        <view default_show="true" direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e053f" scalable="false" type="header">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f1e"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c63"/>
+        </view>
+        <view type="body">
+            <motion_event_handler class=".libs.latin5.handler.LatinMotionEventHandler"/>
+            <motion_event_handler class=".libs.latin5.handler.LatinPreemptiveDecodeHandler"/>
+            <motion_event_handler class=".libs.latin5.handler.LatinGestureMotionEventHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+            <motion_event_handler class=".motioneventhandler.scrubmove.ScrubDeleteMotionEventHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f140966" reverse_preference="false"/>
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <motion_event_handler class=".libs.latin5.handler.LatinKeyboardLayoutHandler"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f1a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f10"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17122d"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17122e"/>
+            <if device="tablet" device_size="large" keyboard_mode="normal">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f01"/>
+            </if>
+            <else>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f00"/>
+            </else>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef9"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c43"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c4c"/>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c35"/>
+            </if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170c34"/>
+            </else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c3f"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e2d"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a51"/>
+        </view>
+    </keyboard>
+</framework>

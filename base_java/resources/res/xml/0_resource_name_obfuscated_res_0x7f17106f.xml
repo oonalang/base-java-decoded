@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2686">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17cd" press_data="ຢ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b2" press_data="ຟ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17eb" press_data="ໂ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c9" press_data="ຖ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ec" press_data="ຸ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ed" press_data="ູ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17bb" press_data="ຄ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17cb" press_data="ຕ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b0" press_data="ຈ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ba" press_data="ຂ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c8" press_data="ຊ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e8" press_data="ົ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d9" press_data="ໄ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17da" press_data="ຳ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c5" press_data="ພ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d7" press_data="ະ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17df" press_data="ິ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e2" press_data="ີ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b7" press_data="ຮ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c1" press_data="ນ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c2" press_data="ຍ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17af" press_data="ບ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e5" press_data="ັ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b4" press_data="ຫ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17bc" press_data="ກ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b1" press_data="ດ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17dd" press_data="ເ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d5" press_data="້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d4" press_data="່"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d8" press_data="າ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c7" press_data="ສ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17cc" press_data="ວ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c0" press_data="ງ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ce" press_data="ໍ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c4" press_data="ຜ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c6" press_data="ປ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17de" press_data="ແ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17c3" press_data="ອ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ee" press_data="ຶ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17f1" press_data="ື"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ca" press_data="ທ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17bf" press_data="ມ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17dc" press_data="ໃ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b3" press_data="ຝ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ab" press_data="ຯ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ae" press_data="ໆ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ad" press_data="ໜ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ac" press_data="ໝ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d2" press_data="ຽ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17bd" press_data="ຣ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17be" press_data="ລ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b8" press_data="ໞ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17b9" press_data="ໟ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17a0" press_data="໌"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d1" press_data="ຼ"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e9" press_data="ົ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17db" press_data="ຳ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e0" press_data="ິ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e3" press_data="ີ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17e6" press_data="ັ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d6" press_data="໊"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17d3" press_data="໋"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17cf" press_data="ໍ່"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17ef" press_data="ຶ້"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b17f2" press_data="ື້"/>
+        </softkey_list>
+    </softkeys>
+</framework>

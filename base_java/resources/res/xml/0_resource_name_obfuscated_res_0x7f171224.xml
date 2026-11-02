@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1402a3" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2194" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0755">
+            <action data="digit" keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@attr/0_resource_name_obfuscated_res_0x7f04019e"/>
+        </softkey>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1410b3" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2197" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0755">
+            <action data="symbol" keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f0805a2"/>
+        </softkey>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1402f3" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2195" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0755">
+            <action data="smiley" keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+        </softkey>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f14033c" disable_lift_to_tap="true" id="@+id/0_resource_name_obfuscated_res_0x7f0b2196" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0755">
+            <action data="emoticon" keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f08059e"/>
+        </softkey>
+    </softkeys>
+</framework>

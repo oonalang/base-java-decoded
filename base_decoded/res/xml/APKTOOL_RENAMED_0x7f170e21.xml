@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b75" view_id="@id/E01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b8a" view_id="@id/E02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b4b" view_id="@id/E03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b39" view_id="@id/E04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b5a" view_id="@id/E05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b63" view_id="@id/E06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b63" view_id="@id/E06_dup" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b84" view_id="@id/E07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b85" view_id="@id/E08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0ba3" view_id="@id/E09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b8d" view_id="@id/E10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b3f" view_id="@id/E11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b3c" view_id="@id/D01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b47" view_id="@id/D02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b48" view_id="@id/D03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b70" view_id="@id/D04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b72" view_id="@id/D05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b33" view_id="@id/D06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b33" view_id="@id/D06_dup" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b34" view_id="@id/D07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b51" view_id="@id/D08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b7e" view_id="@id/D09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b5b" view_id="@id/D10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b5c" view_id="@id/D11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b92" view_id="@id/C01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9d" view_id="@id/C02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9e" view_id="@id/C03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9f" view_id="@id/C04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0ba0" view_id="@id/C05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b90" view_id="@id/C06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b90" view_id="@id/C06_dup" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b91" view_id="@id/C07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b73" view_id="@id/C08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b71" view_id="@id/C09" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b41" view_id="@id/C10" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b45" view_id="@id/C11" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b98" view_id="@id/B00" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b99" view_id="@id/B01" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9a" view_id="@id/B02" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9b" view_id="@id/B03" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b9c" view_id="@id/B04" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b96" view_id="@id/B05" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b96" view_id="@id/B05_dup" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b97" view_id="@id/B06" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b94" view_id="@id/B07" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b46" view_id="@id/B08" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b43" view_id="@id/B09" />
+        <if device="tablet" device_size="large" keyboard_mode="normal">
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2303" view_id="@id/D12" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b1f97" view_id="@id/B10" />
+            <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b0b76" view_id="@id/B11" />
+        </if>
+    </key_mapping>
+</framework>

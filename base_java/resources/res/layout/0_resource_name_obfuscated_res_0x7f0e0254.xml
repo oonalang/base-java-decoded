@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150304">
+    <com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout style="@style/0_resource_name_obfuscated_res_0x7f15030b">
+        <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0428" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:access_point_key_horizontal_padding="?attr/0_resource_name_obfuscated_res_0x7f0402d9" app:extra_width="?attr/0_resource_name_obfuscated_res_0x7f040163" app:key_ratio="?attr/0_resource_name_obfuscated_res_0x7f0402da" app:managed="true">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0224"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0232"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0227"/>
+            <com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/key_pos_header_end_extra_key" app:layout_constraintStart_toEndOf="@+id/key_pos_header_start_extra_key" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15030d">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0223"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e022d"/>
+                <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0427" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:managed="true"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e066d"/>
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e07ee"/>
+            </com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0228"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e022e"/>
+            <include layout="@attr/0_resource_name_obfuscated_res_0x7f04000b"/>
+        </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+        <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0426" android:layout_width="match_parent" android:layout_height="wrap_content" app:managed="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0425" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.DragDetectionLayer android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0424" android:visibility="visible" android:layout_width="0dp" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f0401ef" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/key_pos_show_more_candidates" app:layout_constraintTop_toTopOf="0">
+                    <com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MonolithicCandidatesRecyclerView android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b14e6" android:keyboardNavigationCluster="true" app:candidateLayout="@layout/0_resource_name_obfuscated_res_0x7f0e072b" candidateTextOnlyLayout="@layout/0_resource_name_obfuscated_res_0x7f0e072c" candidate_background="@android:color/transparent" last_column_candidate_background="@android:color/transparent" style="@style/0_resource_name_obfuscated_res_0x7f15034d">
+                        <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2930"/>
+                        <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0644"/>
+                    </com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MonolithicCandidatesRecyclerView>
+                </com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.DragDetectionLayer>
+                <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/key_pos_show_more_candidates" android:tag=".keytop.for-candidate-key" android:background="?attr/0_resource_name_obfuscated_res_0x7f04005b" android:layout_width="0dp" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f0401ef" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/0_resource_name_obfuscated_res_0x7f0b0424" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

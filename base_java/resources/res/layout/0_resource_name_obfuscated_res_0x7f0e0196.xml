@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:gravity="center" android:orientation="vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b044e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.apps.inputmethod.libs.jarvis.miscs.ColorfulScrollbarScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b044f" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404cb" android:layout_marginEnd="12dp"/>
+                <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4b" android:gravity="center_vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0450" android:tag=".label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.apps.inputmethod.libs.jarvis.miscs.ColorfulScrollbarScrollView>
+    </LinearLayout>
+</merge>

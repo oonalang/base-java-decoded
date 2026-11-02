@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a80" android:tag=".label.writing-tools-style-item-v2.item-ripple.on-surface" android:layout_height="48dp" android:maxWidth="?attr/0_resource_name_obfuscated_res_0x7f040350" style="@style/0_resource_name_obfuscated_res_0x7f15115f"/>

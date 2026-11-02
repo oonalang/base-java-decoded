@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f14028d" id="@+id/0_resource_name_obfuscated_res_0x7f0b2477" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc">
+            <action keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f080548"/>
+        </softkey>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f14028e" id="@+id/0_resource_name_obfuscated_res_0x7f0b2478" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc">
+            <action keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="0x7f080549"/>
+        </softkey>
+    </softkeys>
+</framework>

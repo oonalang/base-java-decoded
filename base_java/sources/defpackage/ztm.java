@@ -1,0 +1,43 @@
+package defpackage;
+
+import java.util.Locale;
+/* compiled from: PG */
+/* renamed from: ztm  reason: default package */
+/* loaded from: classes3.dex */
+public final class ztm {
+    /* JADX WARN: Type inference failed for: r1v4, types: [java.util.List, java.lang.Object] */
+    public static final void a(String str, String str2, zvu zvuVar) {
+        int i = 0;
+        for (int i2 = 0; i2 < str.length(); i2++) {
+            char charAt = str.charAt(i2);
+            if (charAt <= 31 || charAt >= 127) {
+                throw new IllegalArgumentException(String.format(Locale.US, "Unexpected char %#04x at %d in header name: %s", Integer.valueOf(charAt), Integer.valueOf(i2), str));
+            }
+        }
+        if (str2 != null) {
+            for (int i3 = 0; i3 < str2.length(); i3++) {
+                char charAt2 = str2.charAt(i3);
+                if (charAt2 <= 31 || charAt2 >= 127) {
+                    throw new IllegalArgumentException(String.format(Locale.US, "Unexpected char %#04x at %d in header value: %s", Integer.valueOf(charAt2), Integer.valueOf(i3), str2));
+                }
+            }
+            while (true) {
+                ?? r1 = zvuVar.a;
+                if (i < r1.size()) {
+                    if (str.equalsIgnoreCase((String) r1.get(i))) {
+                        r1.remove(i);
+                        r1.remove(i);
+                        i -= 2;
+                    }
+                    i += 2;
+                } else {
+                    r1.add(str);
+                    r1.add(str2.trim());
+                    return;
+                }
+            }
+        } else {
+            throw new IllegalArgumentException("value == null");
+        }
+    }
+}

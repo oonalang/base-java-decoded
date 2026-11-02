@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime always_show_suggestions="true" announce_auto_selected_candidate="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="tcy-XT" string_id="ime_tulu_kannada_transliteration">
+        <include href="@xml/APKTOOL_RENAMED_0x7f1706c8" variant_label="@string/APKTOOL_RENAMED_0x7f141619" />
+        <include href="@xml/APKTOOL_RENAMED_0x7f17005b" />
+    </ime>
+</framework>

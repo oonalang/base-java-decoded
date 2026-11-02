@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f1502b1">
+    <ViewSwitcher android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03ae" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@attr/0_resource_name_obfuscated_res_0x7f04011a"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0680"/>
+    </ViewSwitcher>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

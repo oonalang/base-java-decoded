@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_secondary_symbols="true">
+        <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b117f" view_id="@+id/C01"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1250" view_id="@+id/C02"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11dc" view_id="@+id/C03"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b122b" view_id="@+id/C04"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1139" view_id="@+id/C05"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1139" view_id="@+id/C05_dup"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1202" view_id="@+id/C06"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b125d" view_id="@+id/C07"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11ef" view_id="@+id/C08"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11f2" view_id="@+id/C09"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b126b" view_id="@+id/C10"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1203" view_id="@+id/B01"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b121c" view_id="@+id/B02"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1266" view_id="@+id/B03"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11ed" view_id="@+id/B04"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11ed" view_id="@+id/B04_dup"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11f3" view_id="@+id/B05"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11ee" view_id="@+id/B06"/>
+            <merge key_id="@+id/0_resource_name_obfuscated_res_0x7f0b11f0" view_id="@+id/B07"/>
+        </merge_key_mapping>
+    </if>
+</framework>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170f96"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2658">
+            <softkey hint_label="~" id="@+id/0_resource_name_obfuscated_res_0x7f0b1326" long_press_data="~" press_data="`"/>
+            <softkey hint_label="!" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f7b" long_press_data="!,¡,¹,½,⅓,¼,⅕,⅙,⅐,⅛,⅑,⅒" press_data="1"/>
+            <softkey hint_label="@" id="@+id/0_resource_name_obfuscated_res_0x7f0b0fab" long_press_data="@,²,⅔,⅖" press_data="2"/>
+            <softkey hint_label="#" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f9f" long_press_data="#,³,¾,⅗,⅜" press_data="3"/>
+            <softkey hint_label="$" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f63" long_press_data="$,⁴,⅘" press_data="4"/>
+            <softkey hint_label="%" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f57" long_press_data="%,⁵,⅚,⅝" press_data="5"/>
+            <softkey hint_label="^" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f93" long_press_data="^,⁶" press_data="6"/>
+            <softkey hint_label="&amp;" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f87" long_press_data="&amp;,⁷,⅞" press_data="7"/>
+            <softkey hint_label="*" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f4b" long_press_data="*,⁸" press_data="8"/>
+            <softkey hint_label="(" id="@+id/0_resource_name_obfuscated_res_0x7f0b0f6f" long_press_data="(,⁹" press_data="9"/>
+            <softkey hint_label=")" id="@+id/0_resource_name_obfuscated_res_0x7f0b0fb7" long_press_data="),⁰,ⁿ,∅" press_data="0"/>
+            <softkey hint_label="_" id="@+id/0_resource_name_obfuscated_res_0x7f0b14ee" long_press_data="_,–,—,·" press_data="-"/>
+            <softkey hint_label="+" id="@+id/0_resource_name_obfuscated_res_0x7f0b0fec" long_press_data="+,∞,≠,≈" press_data="="/>
+            <softkey hint_label="{" id="@+id/0_resource_name_obfuscated_res_0x7f0b1a31" long_press_data="{" press_data="["/>
+            <softkey hint_label="}" id="@+id/0_resource_name_obfuscated_res_0x7f0b234e" long_press_data="}" press_data="]"/>
+            <softkey hint_label="|" id="@+id/0_resource_name_obfuscated_res_0x7f0b232d" long_press_data="|" press_data="@string/0_resource_name_obfuscated_res_0x7f1413e6"/>
+            <softkey hint_label="?" id="@+id/0_resource_name_obfuscated_res_0x7f0b2411" long_press_data="?,¿" press_data="/"/>
+            <softkey hint_label=":" id="@+id/0_resource_name_obfuscated_res_0x7f0b239d" long_press_data=":" press_data=";"/>
+            <softkey hint_label="&gt;" id="@+id/0_resource_name_obfuscated_res_0x7f0b1299" long_press_data="&gt;" press_data="."/>
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2658">
+            <softkey hint_label="&lt;" id="@+id/0_resource_name_obfuscated_res_0x7f0b1f97" long_press_data="&lt;" press_data=","/>
+        </softkey_list>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b262a">
+            <softkey hint_label="&quot;" id="@+id/0_resource_name_obfuscated_res_0x7f0b0890" long_press_data="„,“,”,&quot;,‚,‘,’" press_data="&apos;"/>
+        </softkey_list>
+        <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" content_description="@string/0_resource_name_obfuscated_res_0x7f1410d3" id="@+id/0_resource_name_obfuscated_res_0x7f0b24e3" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06fc" multi_touch="false">
+            <action data="\9" intention="COMMIT" keycode="KEYCODE_I" type="PRESS"/>
+            <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f0806ad"/>
+        </softkey>
+    </softkeys>
+</framework>

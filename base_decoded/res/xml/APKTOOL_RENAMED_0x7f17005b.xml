@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <extra_values>
+        <item id="@id/APKTOOL_RENAMED_0x7f0b02ec" value="true" />
+        <item id="@id/APKTOOL_RENAMED_0x7f0b02ef" value="20" />
+        <item id="@id/APKTOOL_RENAMED_0x7f0b02e3" value="true" />
+        <item id="@id/APKTOOL_RENAMED_0x7f0b02d9" value="false" />
+        <item id="@id/APKTOOL_RENAMED_0x7f0b02d0" res="@xml/APKTOOL_RENAMED_0x7f1706e2" />
+    </extra_values>
+</framework>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if show_secondary_digits="true">
+        <merge_key_mapping exclude_state="ALT,CTRL,META,ALTGR">
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11ac" view_id="@id/D01" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11cc" view_id="@id/D02" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11c4" view_id="@id/D03" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b119c" view_id="@id/D04" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b1194" view_id="@id/D05" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11bc" view_id="@id/D06" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11b4" view_id="@id/D07" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b118c" view_id="@id/D08" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11a4" view_id="@id/C07" />
+            <merge key_id="@id/APKTOOL_RENAMED_0x7f0b11d4" view_id="@id/C08" />
+        </merge_key_mapping>
+    </if>
+</framework>

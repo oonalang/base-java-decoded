@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/APKTOOL_RENAMED_0x7f140bf1" android:key="@string/APKTOOL_RENAMED_0x7f140a6f"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.latin.preference.OverrideFlagPreference android:icon="@drawable/APKTOOL_RENAMED_0x7f080483" android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b81" android:key="enable_user_contact_biasing=false" android:summary="@string/APKTOOL_RENAMED_0x7f140b80">
+        <extra android:name="hide_if_flag_is_false" android:value="show_personal_dict_biasing_settings_toggle=false" />
+    </com.google.android.apps.inputmethod.latin.preference.OverrideFlagPreference>
+    <Preference android:icon="?APKTOOL_RENAMED_0x7f04018a" android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140c51" android:key="@string/APKTOOL_RENAMED_0x7f140a5d" android:summary="@string/APKTOOL_RENAMED_0x7f140c52" android:fragment="com.google.android.libraries.inputmethod.personaldictionary.preference.PersonalDictionaryWordsFragment">
+        <extra android:name="hide_if_flag_is_false" android:value="show_rambler_dict_settings=false" />
+        <extra android:name="show_rambler_only" android:value="true" />
+    </Preference>
+    <Preference android:icon="@drawable/APKTOOL_RENAMED_0x7f080422" android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b61" android:key="@string/APKTOOL_RENAMED_0x7f14090d" android:summary="@string/APKTOOL_RENAMED_0x7f140b60">
+        <extra android:name="hide_if_flag_is_false" android:value="show_clear_all_corrected_words_settings=false" />
+    </Preference>
+    <androidx.preference.PreferenceCategory>
+        <Preference android:icon="@drawable/APKTOOL_RENAMED_0x7f080459" android:title="@string/APKTOOL_RENAMED_0x7f140bd7" android:key="@string/APKTOOL_RENAMED_0x7f1409b1" android:summary="@string/APKTOOL_RENAMED_0x7f140579" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

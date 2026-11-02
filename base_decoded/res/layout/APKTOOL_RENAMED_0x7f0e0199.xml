@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/APKTOOL_RENAMED_0x7f1509d0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptNotice android:id="@id/APKTOOL_RENAMED_0x7f0b0456" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp" android:paddingHorizontal="0.0dp" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+        <androidx.constraintlayout.widget.ConstraintLayout android:tag=".jarvis-prompt-notice" android:background="@drawable/APKTOOL_RENAMED_0x7f0806e8" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:scrollbars="vertical" android:fadingEdgeLength="0.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b0457" app:APKTOOL_RENAMED_0x7f040732="APKTOOL_RENAMED_0x7f0b2a69" app:APKTOOL_RENAMED_0x7f040733="112.0dp" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?APKTOOL_RENAMED_0x7f040a4f" android:textColor="?android:textColorPrimary" android:textColorLink="?android:textColorPrimary" android:id="@id/APKTOOL_RENAMED_0x7f0b0458" android:tag=".label.non-linear-scale.jarvis-prompt-notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f14055c" />
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0457" android:tag=".nav_back_key.item-ripple.no-background" android:background="@drawable/APKTOOL_RENAMED_0x7f080292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140568" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+                <ImageView android:tag=".icon.jarvis-prompt-notice" android:src="@drawable/APKTOOL_RENAMED_0x7f080415" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.apps.inputmethod.libs.jarvis.prompt.JarvisPromptNotice>
+</androidx.constraintlayout.widget.ConstraintLayout>

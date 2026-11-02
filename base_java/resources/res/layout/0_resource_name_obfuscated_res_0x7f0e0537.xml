@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:layout_customizedKeyboardHeight="?attr/0_resource_name_obfuscated_res_0x7f0400c7" style="@style/0_resource_name_obfuscated_res_0x7f1501e3">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0101"/>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

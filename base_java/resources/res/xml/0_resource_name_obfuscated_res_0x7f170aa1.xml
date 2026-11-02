@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0985" view_id="@+id/key_pos_arrow_up"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0982" view_id="@+id/key_pos_arrow_down"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2835" view_id="@+id/key_pos_number_panel_2_0"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2194" view_id="@+id/key_pos_number_panel_3_0"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cf7" view_id="@+id/key_pos_number_panel_0_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b21b6" view_id="@+id/key_pos_number_panel_0_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2885" view_id="@+id/key_pos_number_panel_0_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b22da" view_id="@+id/key_pos_number_panel_0_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b088d" view_id="@+id/key_pos_number_panel_1_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0988" view_id="@+id/key_pos_number_panel_1_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b22fb" view_id="@+id/key_pos_number_panel_1_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b14ee" view_id="@+id/key_pos_number_panel_1_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b12a6" view_id="@+id/key_pos_number_panel_2_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b12ae" view_id="@+id/key_pos_number_panel_2_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b14fe" view_id="@+id/key_pos_number_panel_2_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2411" view_id="@+id/key_pos_number_panel_2_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a2a" view_id="@+id/key_pos_number_panel_3_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2346" view_id="@+id/key_pos_number_panel_3_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b129d" view_id="@+id/key_pos_number_panel_3_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b12b0" view_id="@+id/key_pos_number_panel_3_4"/>
+        <if split_keyboard_handedness_zh="left">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b247a" view_id="@+id/key_pos_number_panel_3_0"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2194" view_id="@+id/key_pos_main_panel_left_fun"/>
+        </if>
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_2">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0986" view_id="@+id/key_pos_arrow_up"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0983" view_id="@+id/key_pos_arrow_down"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fcc" view_id="@+id/key_pos_number_panel_0_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1f96" view_id="@+id/key_pos_number_panel_0_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a30" view_id="@+id/key_pos_number_panel_0_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2300" view_id="@+id/key_pos_number_panel_0_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b12a2" view_id="@+id/key_pos_number_panel_1_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b12ac" view_id="@+id/key_pos_number_panel_1_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b234d" view_id="@+id/key_pos_number_panel_1_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1036" view_id="@+id/key_pos_number_panel_1_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cbf" view_id="@+id/key_pos_number_panel_2_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0e0d" view_id="@+id/key_pos_number_panel_2_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fec" view_id="@+id/key_pos_number_panel_2_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b232d" view_id="@+id/key_pos_number_panel_2_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fe1" view_id="@+id/key_pos_number_panel_3_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1326" view_id="@+id/key_pos_number_panel_3_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b287c" view_id="@+id/key_pos_number_panel_3_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0b32" view_id="@+id/key_pos_number_panel_3_4"/>
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_3">
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0987" view_id="@+id/key_pos_arrow_up"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0984" view_id="@+id/key_pos_arrow_down"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2422" view_id="@+id/key_pos_number_panel_0_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1357" view_id="@+id/key_pos_number_panel_0_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2397" view_id="@+id/key_pos_number_panel_0_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0baf" view_id="@+id/key_pos_number_panel_0_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fc6" view_id="@+id/key_pos_number_panel_1_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b205e" view_id="@+id/key_pos_number_panel_1_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a31" view_id="@+id/key_pos_number_panel_1_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b234e" view_id="@+id/key_pos_number_panel_1_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a23" view_id="@+id/key_pos_number_panel_2_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2340" view_id="@+id/key_pos_number_panel_2_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b1a1d" view_id="@+id/key_pos_number_panel_2_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b233a" view_id="@+id/key_pos_number_panel_2_4"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2836" view_id="@+id/key_pos_number_panel_3_1"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0c42" view_id="@+id/key_pos_number_panel_3_2"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cb7" view_id="@+id/key_pos_number_panel_3_3"/>
+        <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0cb6" view_id="@+id/key_pos_number_panel_3_4"/>
+    </key_mapping>
+</framework>

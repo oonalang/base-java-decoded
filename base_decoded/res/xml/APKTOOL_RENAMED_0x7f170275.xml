@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime class="com.google.android.libraries.inputmethod.ime.DummyIme" label="@string/APKTOOL_RENAMED_0x7f140848" language="und-Latn-x-number-password" string_id="number_password">
+        <keyboard_group>
+            <keyboard def="@xml/APKTOOL_RENAMED_0x7f1707cd" type="prime" />
+        </keyboard_group>
+    </ime>
+</framework>

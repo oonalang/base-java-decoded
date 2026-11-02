@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.apps.inputmethod.libs.superinsert.impl.SuperInsertExtensionView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2947" android:paddingTop="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="16dp">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-16dp" android:layout_marginBottom="-10dp" android:layout_marginHorizontal="-16dp">
+            <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.core.widget.NestedScrollView>
+        <View android:layout_gravity="top|center_horizontal" android:background="?attr/0_resource_name_obfuscated_res_0x7f0404c9" android:layout_width="32dp" android:layout_height="4dp" android:layout_marginTop="16dp"/>
+        <FrameLayout android:layout_gravity="end|top" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2939" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080297" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="16dp" android:layout_marginStart="0dp" android:backgroundTint="?attr/0_resource_name_obfuscated_res_0x7f0404ea">
+            <ImageView android:layout_gravity="center" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080415" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404bc"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b293b" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="36dp" android:paddingStart="16dp">
+            <FrameLayout android:enabled="true" android:layout_gravity="start|top" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b293a" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080297" android:clickable="true" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="0dp" android:backgroundTint="?attr/0_resource_name_obfuscated_res_0x7f0404ee">
+                <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0803ea" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404bc"/>
+            </FrameLayout>
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="16dp" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404bc" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2938" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="8dp" app:scaleMode="3"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2944" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48dp"/>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.apps.inputmethod.libs.superinsert.impl.SuperInsertEditText android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404bc" android:textColorHint="@color/0_resource_name_obfuscated_res_0x7f0609f8" android:ellipsize="end" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0752" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080322" android:layout_width="match_parent" android:layout_height="48dp" android:minHeight="48dp" android:inputType="textNoSuggestions" android:paddingStart="40dp" android:paddingEnd="16dp" app:fontFamily="?attr/0_resource_name_obfuscated_res_0x7f04015e"/>
+            <ImageView android:layout_gravity="start|center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0804bc" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404c0" android:importantForAccessibility="no"/>
+        </FrameLayout>
+    </com.google.android.apps.inputmethod.libs.superinsert.impl.SuperInsertExtensionView>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

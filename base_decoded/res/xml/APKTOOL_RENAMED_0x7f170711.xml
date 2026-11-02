@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170496" />
+    <keyboard>
+        <view layout="@layout/APKTOOL_RENAMED_0x7f0e0265" override="motion_event_handler" type="body">
+            <motion_event_handler class=".libs.latin5.handler.LatinMotionEventHandler" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170ec2" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170bf2" />
+            <if enable_korean_composition_mode="false">
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a58" />
+            </if>
+            <else>
+                <include href="@xml/APKTOOL_RENAMED_0x7f170a6c" />
+            </else>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a6b" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a8b" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170a8a" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c40" />
+        </view>
+    </keyboard>
+    <if enable_number_row="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f170712" />
+    </if>
+</framework>

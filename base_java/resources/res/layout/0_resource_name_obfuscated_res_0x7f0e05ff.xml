@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:elevation="6dp" style="@style/0_resource_name_obfuscated_res_0x7f150339">
+    <FrameLayout android:background="@drawable/0_resource_name_obfuscated_res_0x7f080312" android:elevation="2dp" android:backgroundTint="?attr/0_resource_name_obfuscated_res_0x7f0404e8" style="@style/0_resource_name_obfuscated_res_0x7f150336">
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:contentDescription="@null" android:paddingHorizontal="24dp" android:paddingVertical="12dp" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f1504cb"/>
+        <ImageView android:contentDescription="@null" style="@style/0_resource_name_obfuscated_res_0x7f150337"/>
+    </FrameLayout>
+</FrameLayout>

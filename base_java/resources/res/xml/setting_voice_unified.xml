@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f140cac" android:key="@string/0_resource_name_obfuscated_res_0x7f140a7d">
+    <com.google.android.libraries.inputmethod.preferencewidgets.ColoredBackgroundSwitchPreference android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140baa" android:key="@string/0_resource_name_obfuscated_res_0x7f140976"/>
+    <PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f1402a0" android:dependency="@string/0_resource_name_obfuscated_res_0x7f140976">
+        <com.google.android.libraries.inputmethod.preferencewidgets.CustomSelectorWithWidgetPreference android:icon="@drawable/0_resource_name_obfuscated_res_0x7f080485" android:persistent="false" android:title="@string/0_resource_name_obfuscated_res_0x7f140b96" android:key="@string/0_resource_name_obfuscated_res_0x7f140924" android:fragment="com.google.android.apps.inputmethod.latin.preference.JetsonVoiceSettingsFragment"/>
+        <com.google.android.libraries.inputmethod.preferencewidgets.CustomSelectorWithWidgetPreference android:icon="@drawable/0_resource_name_obfuscated_res_0x7f080486" android:persistent="false" android:title="@string/0_resource_name_obfuscated_res_0x7f1402a2" android:key="@string/0_resource_name_obfuscated_res_0x7f140925" android:summary="@string/0_resource_name_obfuscated_res_0x7f1402a1" android:fragment="com.google.android.apps.inputmethod.latin.preference.TraditionalVoiceSettingsFragment"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:dependency="@string/0_resource_name_obfuscated_res_0x7f140976">
+        <SwitchPreferenceCompat android:icon="@drawable/0_resource_name_obfuscated_res_0x7f0803fc" android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140ca1" android:key="@string/0_resource_name_obfuscated_res_0x7f140aac" android:summary="@string/0_resource_name_obfuscated_res_0x7f140ca0"/>
+    </PreferenceCategory>
+</PreferenceScreen>

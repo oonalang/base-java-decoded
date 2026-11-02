@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/0_resource_name_obfuscated_res_0x7f14089b" android:key="@string/0_resource_name_obfuscated_res_0x7f140a74">
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140373" android:key="@string/0_resource_name_obfuscated_res_0x7f14095c" android:summary="@string/0_resource_name_obfuscated_res_0x7f140374"/>
+</PreferenceScreen>

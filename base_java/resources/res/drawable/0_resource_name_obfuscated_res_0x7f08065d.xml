@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/0_resource_name_obfuscated_res_0x7f08065b">
+    <set android:interpolator="@interpolator/0_resource_name_obfuscated_res_0x7f0d0015" android:shareInterpolator="true">
+        <target android:name="@string/0_resource_name_obfuscated_res_0x7f1407ff" android:animation="@drawable/0_resource_name_obfuscated_res_0x7f08019e"/>
+        <target android:name="@string/0_resource_name_obfuscated_res_0x7f1407ff" android:animation="@drawable/0_resource_name_obfuscated_res_0x7f08019f"/>
+    </set>
+</animated-vector>

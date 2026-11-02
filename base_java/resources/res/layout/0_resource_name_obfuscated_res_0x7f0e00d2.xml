@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.libraries.inputmethod.emoji.view.EmojiView android:textSize="30dp" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b027c" android:background="@drawable/0_resource_name_obfuscated_res_0x7f0803ab" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp" android:importantForAccessibility="yes" app:minTextSize="10dp"/>
+    <ImageView android:layout_gravity="end|bottom" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a03" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:src="?attr/0_resource_name_obfuscated_res_0x7f0400f1" android:contentDescription="@null" style="?attr/0_resource_name_obfuscated_res_0x7f0400f5"/>
+</FrameLayout>

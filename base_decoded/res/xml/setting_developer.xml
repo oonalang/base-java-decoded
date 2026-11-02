@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/APKTOOL_RENAMED_0x7f140b6d" android:key="@string/APKTOOL_RENAMED_0x7f140a69"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b2c">
+        <extra android:name="hide_if_flag_is_false" android:value="show_feature_split_debug_activity=false" />
+        <intent android:targetPackage="" android:action="android.intent.action.MAIN" android:targetClass="com.google.android.libraries.inputmethod.featuresplit.debugactivity.FeatureSplitDebugActivity" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140bb4" android:key="@string/APKTOOL_RENAMED_0x7f140bb3" android:fragment="com.google.android.libraries.inputmethod.flag.preference.FlagEditorFragment" />
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140cbb" android:key="@string/APKTOOL_RENAMED_0x7f140cba">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140363" android:key="@string/APKTOOL_RENAMED_0x7f140a84" android:summary="@string/APKTOOL_RENAMED_0x7f140362" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="Suggestions while editing a recently autocorrected word shown at the cursor" android:key="@string/APKTOOL_RENAMED_0x7f140a85" android:summary="Toggle on = Suggestions while editing a recently autocorrected word are shown on the toolbar and at the cursor\nToggle off = Suggestions while editing a recently autocorrected word are shown on the toolbar" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="Japanese">
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/APKTOOL_RENAMED_0x7f030039" android:title="Mozc decoder verbose log level" android:key="@string/APKTOOL_RENAMED_0x7f140a31" android:entryValues="@array/APKTOOL_RENAMED_0x7f03004f" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="Stylus">
+        <SwitchPreferenceCompat android:persistent="true" android:title="Use low latency library to render strokes" android:key="@string/APKTOOL_RENAMED_0x7f140957">
+            <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f14037a" />
+        </SwitchPreferenceCompat>
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/APKTOOL_RENAMED_0x7f030037" android:title="Insert mode timeout" android:key="@string/APKTOOL_RENAMED_0x7f1409a0" android:entryValues="@array/APKTOOL_RENAMED_0x7f03003f">
+            <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f14037a" />
+        </com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference>
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/APKTOOL_RENAMED_0x7f03003d" android:title="Scribe partial commit word number" android:key="@string/APKTOOL_RENAMED_0x7f140a62" android:entryValues="@array/APKTOOL_RENAMED_0x7f030040">
+            <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f14037a" />
+        </com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference>
+        <com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference android:persistent="true" android:entries="@array/APKTOOL_RENAMED_0x7f030041" android:title="Use word level delete when the gesture is longer than X times of line height" android:key="@string/APKTOOL_RENAMED_0x7f140ab8" android:entryValues="@array/APKTOOL_RENAMED_0x7f030056">
+            <extra android:name="hide_if_flag_is_false" android:value="@string/APKTOOL_RENAMED_0x7f14037a" />
+        </com.google.android.libraries.inputmethod.preferencewidgets.slider.EntryListSliderPreference>
+    </androidx.preference.PreferenceCategory>
+    <SwitchPreferenceCompat android:persistent="true" android:title="Always show PK toolbar orientation change tooltip" android:key="@string/APKTOOL_RENAMED_0x7f1408f7" />
+    <SwitchPreferenceCompat android:persistent="true" android:title="Always toolbar dragging tooltip" android:key="@string/APKTOOL_RENAMED_0x7f1408f8" />
+    <androidx.preference.PreferenceCategory android:title="Gen AI text input">
+        <SwitchPreferenceCompat android:persistent="true" android:title="Word-by-word revert" android:key="@string/APKTOOL_RENAMED_0x7f1409ab">
+            <extra android:name="hide_if_flag_is_false" android:value="writing_helper_enable_by_word_revert=false" />
+        </SwitchPreferenceCompat>
+        <SwitchPreferenceCompat android:persistent="true" android:title="Text Stylization" android:key="@string/APKTOOL_RENAMED_0x7f140aa4">
+            <extra android:name="hide_if_flag_is_false" android:value="writing_helper_enable_text_stylization_internal=false" />
+        </SwitchPreferenceCompat>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="Crash recovery">
+        <SwitchPreferenceCompat android:persistent="true" android:title="Clean flag when crash recovery is enabled" android:key="crash_recovery_enable_clean_flag" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140bae">
+        <Preference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140b66" android:key="@string/APKTOOL_RENAMED_0x7f14090e" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

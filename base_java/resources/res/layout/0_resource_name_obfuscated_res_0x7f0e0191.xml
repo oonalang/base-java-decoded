@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:tag=".bg_writing_tools_item" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080356" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+    <com.google.android.apps.inputmethod.libs.jarvis.miscs.ColorfulScrollbarScrollView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" app:childMatchParent="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/0_resource_name_obfuscated_res_0x7f151164">
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0465" android:layout_marginBottom="24dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f0805e9" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404cb" style="@style/0_resource_name_obfuscated_res_0x7f151161"/>
+            <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a7e" android:textSize="16dp" android:text="@string/0_resource_name_obfuscated_res_0x7f1416e1" android:lineHeight="24dp" style="@style/0_resource_name_obfuscated_res_0x7f15035f"/>
+            <TextView android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a4d" android:layout_marginTop="12dp" android:text="@string/0_resource_name_obfuscated_res_0x7f1416e0" style="@style/0_resource_name_obfuscated_res_0x7f15035f"/>
+        </LinearLayout>
+    </com.google.android.apps.inputmethod.libs.jarvis.miscs.ColorfulScrollbarScrollView>
+</FrameLayout>

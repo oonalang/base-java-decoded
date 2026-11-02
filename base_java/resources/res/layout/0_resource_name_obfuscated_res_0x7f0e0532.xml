@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f1501e3">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.apps.inputmethod.libs.search.widget.CategoryViewPager android:id="@+id/expression_view_pager" android:layout_height="0dp" app:layout_behavior="@string/0_resource_name_obfuscated_res_0x7f140aef" style="@style/0_resource_name_obfuscated_res_0x7f1502b5"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e01f8"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

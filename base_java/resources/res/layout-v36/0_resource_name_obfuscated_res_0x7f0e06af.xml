@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:filterTouchesWhenObscured="false" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="72dp">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e06b3"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e06b6"/>
+        <LinearLayout android:gravity="end|center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/0_resource_name_obfuscated_res_0x7f0708a4" android:paddingEnd="0dp"/>
+    </LinearLayout>
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e06b2"/>
+</LinearLayout>

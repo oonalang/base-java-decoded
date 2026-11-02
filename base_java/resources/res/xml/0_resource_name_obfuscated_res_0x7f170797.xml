@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="linear">
+            <ifnot enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171215"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170cb1"/>
+            </ifnot>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f04"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c28"/>
+        </view>
+    </keyboard>
+</framework>

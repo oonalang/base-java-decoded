@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if variant="azerty">
+        <include href="@xml/APKTOOL_RENAMED_0x7f170df8" />
+    </if>
+    <else>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170dfa" />
+    </else>
+</framework>

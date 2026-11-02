@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b042c" app:ignoreHorizontalSystemPadding="true" style="@style/0_resource_name_obfuscated_res_0x7f1501db">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner app:align_end_edge="true" app:align_start_edge="true" style="@style/0_resource_name_obfuscated_res_0x7f150535">
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0261"/>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e055e"/>
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

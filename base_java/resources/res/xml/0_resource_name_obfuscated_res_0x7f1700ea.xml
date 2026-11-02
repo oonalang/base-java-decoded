@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime always_show_suggestions="true" announce_auto_selected_candidate="true" auto_capital="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="brx-XU" string_id="ime_bodo_bengali_transliteration">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c8" variant_label="@string/0_resource_name_obfuscated_res_0x7f141451"/>
+        <extra_values>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02ec" value="true"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02ef" value="20"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02e3" value="true"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02d7" value="। "/>
+        </extra_values>
+    </ime>
+</framework>

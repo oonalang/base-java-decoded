@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.popup.SilkPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b070c" app:PopupDistance="@dimen/0_resource_name_obfuscated_res_0x7f0703fd" style="@style/0_resource_name_obfuscated_res_0x7f150649">
+    <FrameLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0726" style="@style/0_resource_name_obfuscated_res_0x7f150648">
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0720" android:visibility="gone" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f150644"/>
+        <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b071f" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f150643"/>
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b071c" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f150640"/>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.popup.SilkPopupView>

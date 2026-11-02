@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView style="@style/0_resource_name_obfuscated_res_0x7f151152">
+    <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f151154">
+        <LinearLayout style="@style/0_resource_name_obfuscated_res_0x7f15114e">
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0820"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0823"/>
+            <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e0821"/>
+        </LinearLayout>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e081a"/>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.companionwidget.tooltip.WidgetTooltipView>

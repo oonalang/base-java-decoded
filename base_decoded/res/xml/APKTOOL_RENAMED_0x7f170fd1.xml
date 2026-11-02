@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170fd2" />
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140335" id="@id/APKTOOL_RENAMED_0x7f0b242f">
+            <action data="RECENTS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032b" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="CLASSIC" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc4" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140337" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="SMILING" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fce" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140331" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="LOVE" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fca" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032f" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="HUGGING" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc8" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032e" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="FLEXING" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc7" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032a" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="ANIMALS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc3" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140338" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="SURPRISE" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fcf" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032d" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="DANCING" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc6" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140336" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="SHRUGGIE" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fcd" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140339" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="TABLE FLIP" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fd0" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140330" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="LOOK OF DISAPPROVAL" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc9" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140332" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="NERVOUS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fcb" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14032c" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="CRYING" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fc5" />
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140333" id="@id/APKTOOL_RENAMED_0x7f0b242e">
+            <action data="POINTERS" keycode="UNKNOWN" type="PRESS" />
+        </softkey>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170fcc" />
+    </softkeys>
+</framework>

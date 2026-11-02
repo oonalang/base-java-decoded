@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170a84" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170a85" />
+    <key_mapping>
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2414" view_id="@id/key_pos_space" />
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2194" view_id="@id/A03" />
+    </key_mapping>
+    <key_mapping state="NO_IME_PICKER">
+        <mapping key_id="@id/APKTOOL_RENAMED_0x7f0b2415" view_id="@id/key_pos_space" />
+    </key_mapping>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c38" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3a" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170c3b" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170a87" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170a86" />
+</framework>

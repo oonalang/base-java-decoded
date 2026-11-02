@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_RENAMED_0x7f150254" parent="@style/APKTOOL_RENAMED_0x7f150a23">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="APKTOOL_RENAMED_0x7f0404df">@color/APKTOOL_RENAMED_0x7f06008f</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f150431" parent="@style/APKTOOL_RENAMED_0x7f150430">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f1504ca">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f15076e" parent="@style/DayNightTheme.NoActionBar">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

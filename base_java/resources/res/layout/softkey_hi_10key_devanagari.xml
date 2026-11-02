@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c1" style="@style/0_resource_name_obfuscated_res_0x7f15034a">
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" style="@style/0_resource_name_obfuscated_res_0x7f1503c4"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05fb" android:layout_marginEnd="?attr/0_resource_name_obfuscated_res_0x7f04021e" style="@style/0_resource_name_obfuscated_res_0x7f1503c5"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0601" android:layout_marginBottom="?attr/0_resource_name_obfuscated_res_0x7f040220" style="@style/0_resource_name_obfuscated_res_0x7f1503c5"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05ff" android:layout_marginStart="?attr/0_resource_name_obfuscated_res_0x7f04021e" style="@style/0_resource_name_obfuscated_res_0x7f1503c5"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f4" android:layout_marginTop="?attr/0_resource_name_obfuscated_res_0x7f04021f" style="@style/0_resource_name_obfuscated_res_0x7f1503c5"/>
+</FrameLayout>

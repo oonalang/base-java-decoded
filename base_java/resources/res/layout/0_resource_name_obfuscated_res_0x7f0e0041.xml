@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.agenticdictation.ui.impl.AgenticDictationOnboardingViewWithArrow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f15001d" android:orientation="vertical" android:layout_width="364dp" android:layout_height="wrap_content" android:elevation="@dimen/0_resource_name_obfuscated_res_0x7f070075" app:bgArrowHeight="10dp" app:bgArrowOverlap="1dp" app:bgArrowRadius="1dp" app:bgArrowWidth="@dimen/0_resource_name_obfuscated_res_0x7f070073" app:bgColor="?attr/0_resource_name_obfuscated_res_0x7f0404ec" app:bgRectangleRadius="@dimen/0_resource_name_obfuscated_res_0x7f070076">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="20dp">
+        <ScrollView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b06c4" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:overScrollMode="never">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b06c2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e003f"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:baselineAligned="false" android:layout_marginHorizontal="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/0_resource_name_obfuscated_res_0x7f0b03f7">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.google.android.material.button.MaterialButton android:textAppearance="?attr/0_resource_name_obfuscated_res_0x7f040a68" android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404cb" android:layout_gravity="start" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b076c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f140058" android:layout_marginEnd="8dp" style="?attr/0_resource_name_obfuscated_res_0x7f0403fe"/>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.google.android.material.button.MaterialButton android:textColor="?attr/0_resource_name_obfuscated_res_0x7f0404a9" android:layout_gravity="end" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b290a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/0_resource_name_obfuscated_res_0x7f140059" android:layout_marginStart="8dp" android:backgroundTint="?attr/0_resource_name_obfuscated_res_0x7f0404cb" style="?attr/0_resource_name_obfuscated_res_0x7f0407c5"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.agenticdictation.ui.impl.AgenticDictationOnboardingViewWithArrow>

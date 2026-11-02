@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MultiLabelPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b070c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:CoversSoftKey="false" app:PopupDistance="?attr/0_resource_name_obfuscated_res_0x7f040241">
+    <LinearLayout android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0726" style="@style/0_resource_name_obfuscated_res_0x7f15048f">
+        <FrameLayout style="@style/0_resource_name_obfuscated_res_0x7f150482">
+            <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0721" android:visibility="gone" android:layout_marginRight="?attr/0_resource_name_obfuscated_res_0x7f040218" style="@style/0_resource_name_obfuscated_res_0x7f15048c"/>
+            <TextView android:textSize="?attr/0_resource_name_obfuscated_res_0x7f0402fc" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0722" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f15048c"/>
+            <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0723" android:visibility="gone" android:layout_marginLeft="?attr/0_resource_name_obfuscated_res_0x7f040219" style="@style/0_resource_name_obfuscated_res_0x7f15048c"/>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.japanese.keyboard.widget.MultiLabelPopupView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170f09"/>
+    <softkeys>
+        <softkey_list template_id="@+id/0_resource_name_obfuscated_res_0x7f0b261a">
+            <softkey desc="@string/0_resource_name_obfuscated_res_0x7f1401b3" id="@+id/0_resource_name_obfuscated_res_0x7f0b0cc6" keycode="KEYCODE_UNKNOWN" param_data="prime" param_icon="@drawable/0_resource_name_obfuscated_res_0x7f080682"/>
+        </softkey_list>
+    </softkeys>
+</framework>

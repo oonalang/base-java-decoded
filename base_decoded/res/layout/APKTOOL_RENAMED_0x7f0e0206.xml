@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/APKTOOL_RENAMED_0x7f1501e6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.keyboard.widget.PageableCandidatesHolderView android:id="@id/APKTOOL_RENAMED_0x7f0b14e6" app:APKTOOL_RENAMED_0x7f04042a="@layout/APKTOOL_RENAMED_0x7f0e06ea" candidate_background="@android:color/transparent" last_column_candidate_background="@android:color/transparent" max_candidates_per_row="@integer/APKTOOL_RENAMED_0x7f0c00a9" row_background="@android:color/transparent" row_count="@integer/APKTOOL_RENAMED_0x7f0c0024" style="@style/APKTOOL_RENAMED_0x7f150303">
+        <tag android:value="true" android:id="@id/APKTOOL_RENAMED_0x7f0b2930" />
+    </com.google.android.libraries.inputmethod.keyboard.widget.PageableCandidatesHolderView>
+    <include layout="@layout/APKTOOL_RENAMED_0x7f0e0207" />
+</LinearLayout>

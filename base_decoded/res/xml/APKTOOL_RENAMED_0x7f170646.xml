@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="body">
+            <if language="my" variant="burmese">
+                <if burmese_zawgyi="true">
+                    <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f07" />
+                </if>
+                <else>
+                    <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f06" />
+                </else>
+            </if>
+            <else>
+                <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f06" />
+            </else>
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c12" />
+        </view>
+    </keyboard>
+</framework>

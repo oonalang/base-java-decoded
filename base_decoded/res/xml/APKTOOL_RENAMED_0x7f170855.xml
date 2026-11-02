@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard candidate_text_size_ratio="1.0" class=".latin.keyboard.MorseKeyboard" popup="@attr/APKTOOL_RENAMED_0x7f040279" session_states="CAPS_LOCK">
+        <view direction="locale" layout="@layout/APKTOOL_RENAMED_0x7f0e053e" scalable="false" type="header">
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f1e" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c63" />
+        </view>
+        <view layout="@layout/APKTOOL_RENAMED_0x7f0e050a" type="body">
+            <motion_event_handler class=".libs.latin5.handler.LatinMotionEventHandler" />
+            <motion_event_handler class=".libs.latin5.handler.LatinKeyboardLayoutHandler" />
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f10" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17122e" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f1710e5" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c43" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c4c" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c33" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c3f" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170e03" />
+        </view>
+        <view id="@id/APKTOOL_RENAMED_0x7f0b066c" layout="@layout/APKTOOL_RENAMED_0x7f0e050c" type="body">
+            <motion_event_handler class=".libs.latin5.handler.LatinMotionEventHandler" />
+            <motion_event_handler class=".libs.latin5.handler.LatinKeyboardLayoutHandler" />
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f08" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f170f10" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f17122e" />
+            <softkeys href="@xml/APKTOOL_RENAMED_0x7f1710e5" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c43" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c4c" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c33" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170c3f" />
+            <include href="@xml/APKTOOL_RENAMED_0x7f170e03" />
+        </view>
+    </keyboard>
+    <if device="tablet" device_size="large" keyboard_mode="normal">
+        <include href="@xml/APKTOOL_RENAMED_0x7f17066b" />
+    </if>
+</framework>

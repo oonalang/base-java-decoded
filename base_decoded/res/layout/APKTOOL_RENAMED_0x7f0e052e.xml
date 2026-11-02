@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView android:id="@id/APKTOOL_RENAMED_0x7f0b03a9" style="@style/APKTOOL_RENAMED_0x7f150305"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner android:id="@id/APKTOOL_RENAMED_0x7f0b14e9" style="@style/APKTOOL_RENAMED_0x7f15030c">
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0224" />
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0232" />
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0227" />
+        <LinearLayout app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/key_pos_header_end_extra_key" app:APKTOOL_RENAMED_0x7f04073f="@id/key_pos_header_start_extra_key" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15030d">
+            <com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout style="@style/APKTOOL_RENAMED_0x7f150781">
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e0223" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e0225" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e0687" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e022d" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e022f" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e066c" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e07ee" />
+            </com.google.android.libraries.inputmethod.widgets.ManagedFrameLayout>
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e0231" />
+        </LinearLayout>
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0228" />
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e022e" />
+        <include layout="@attr/APKTOOL_RENAMED_0x7f04000b" />
+    </com.google.android.libraries.inputmethod.widgets.scaledkeyboard.ScaledKeyboardViewInner>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="?attr/0_resource_name_obfuscated_res_0x7f040304" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" app:enableLowercaseOffset="true" app:enableRelayout="false" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f1503d3"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05fa" style="@style/0_resource_name_obfuscated_res_0x7f1503eb"/>
+    <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:textSize="?attr/0_resource_name_obfuscated_res_0x7f040304" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0601" android:visibility="gone" app:enableLowercaseOffset="true" app:enableRelayout="false" app:scaleMode="3" style="@style/0_resource_name_obfuscated_res_0x7f1503d3"/>
+</merge>

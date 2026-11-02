@@ -1,0 +1,310 @@
+package defpackage;
+
+import android.content.Context;
+import android.os.Build;
+import android.util.LruCache;
+import com.google.android.inputmethod.latin.R;
+import java.util.Locale;
+import java.util.Map;
+/* compiled from: PG */
+/* renamed from: rkb  reason: default package */
+/* loaded from: classes2.dex */
+public final class rkb {
+    public static final rjz A;
+    public static final rjz B;
+    public static final rjz C;
+    public static final rjz D;
+    public static final rjz E;
+    public static final rjz F;
+    public static final rjz G;
+    public static final rjz H;
+    public static final rjz I;
+    public static final rjz J;
+    public static final rjz K;
+    public static final rjz L;
+    public static final rjz M;
+    public static final rjz N;
+    public static final rjz O;
+    public static final rjz P;
+    public static final rjz Q;
+    public static final rjz R;
+    public static final rjz S;
+    public static final rjz T;
+    public static final rjz U;
+    public static final rjz V;
+    public static final rjz W;
+    public static final rjz X;
+    public static final rjz Y;
+    public static final rjz Z;
+    public static final rjz aA;
+    public static final rjz aB;
+    public static final rjz aC;
+    public static final LruCache aD;
+    private static final Map aF;
+    private static final Map aG;
+    private static final String aH;
+    public static final rjz aa;
+    public static final rjz ab;
+    public static final rjz ac;
+    public static final rjz ad;
+    public static final rjz ae;
+    public static final rjz af;
+    public static final rjz ag;
+    public static final rjz ah;
+    public static final rjz ai;
+    public static final rjz aj;
+    public static final rjz ak;
+    public static final rjz al;
+    public static final rjz am;
+    public static final rjz an;
+    public static final rjz ao;
+    public static final rjz ap;
+    public static final rjz aq;
+    public static final rjz ar;
+    public static final rjz as;
+    public static final rjz at;
+    public static final rjz au;
+    public static final rjz av;
+    public static final rjz aw;
+    public static final rjz ax;
+    public static final rjz ay;
+    public static final rjz az;
+    public static final rjz b;
+    public static final rjz c;
+    public static final rjz d;
+    public static final rjz e;
+    public static final rjz f;
+    public static final rjz g;
+    public static final rjz h;
+    public static final rjz i;
+    public static final rjz j;
+    public static final rjz k;
+    public static final rjz l;
+    public static final rjz m;
+    public static final rjz n;
+    public static final rjz o;
+    public static final rjz p;
+    public static final rjz q;
+    public static final rjz r;
+    public static final rjz s;
+    public static final rjz t;
+    public static final rjz u;
+    public static final rjz v;
+    public static final rjz w;
+    public static final rjz x;
+    public static final rjz y;
+    public static final rjz z;
+    public static final rkb a = new Object();
+    private static final wnw aE = wnw.i("com/google/android/libraries/inputmethod/theme/overlay/ThemeOverlays");
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [rkb, java.lang.Object] */
+    static {
+        rjz rjzVar = new rjz(R.style.f280280_resource_name_obfuscated_res_0x7f150bba, R.style.f280520_resource_name_obfuscated_res_0x7f150be9, false, true);
+        b = rjzVar;
+        rjz rjzVar2 = new rjz(R.style.f280250_resource_name_obfuscated_res_0x7f150bb7, R.style.f280490_resource_name_obfuscated_res_0x7f150be6, true, true);
+        c = rjzVar2;
+        d = rjzVar;
+        rjz rjzVar3 = new rjz(R.style.f280350_resource_name_obfuscated_res_0x7f150bc6, R.style.f280550_resource_name_obfuscated_res_0x7f150bf5, false, true);
+        e = rjzVar3;
+        rjz rjzVar4 = new rjz(R.style.f280210_resource_name_obfuscated_res_0x7f150bb1, R.style.f280460_resource_name_obfuscated_res_0x7f150be0, true, true);
+        f = rjzVar4;
+        g = rjzVar3;
+        rjz rjzVar5 = new rjz(R.style.f280590_resource_name_obfuscated_res_0x7f150c12, R.style.f280590_resource_name_obfuscated_res_0x7f150c12, false, false);
+        h = rjzVar5;
+        rjz rjzVar6 = new rjz(R.style.f280690_resource_name_obfuscated_res_0x7f150c1c, R.style.f280690_resource_name_obfuscated_res_0x7f150c1c, false, false);
+        i = rjzVar6;
+        rjz rjzVar7 = new rjz(R.style.f280720_resource_name_obfuscated_res_0x7f150c1f, R.style.f280720_resource_name_obfuscated_res_0x7f150c1f, false, false);
+        j = rjzVar7;
+        rjz rjzVar8 = new rjz(R.style.f280700_resource_name_obfuscated_res_0x7f150c1d, R.style.f280700_resource_name_obfuscated_res_0x7f150c1d, false, false);
+        k = rjzVar8;
+        rjz rjzVar9 = new rjz(R.style.f280710_resource_name_obfuscated_res_0x7f150c1e, R.style.f280710_resource_name_obfuscated_res_0x7f150c1e, false, false);
+        l = rjzVar9;
+        rjz rjzVar10 = new rjz(R.style.f280730_resource_name_obfuscated_res_0x7f150c20, R.style.f280730_resource_name_obfuscated_res_0x7f150c20, false, false);
+        m = rjzVar10;
+        rjz rjzVar11 = new rjz(R.style.f280800_resource_name_obfuscated_res_0x7f150c27, R.style.f280800_resource_name_obfuscated_res_0x7f150c27, false, false);
+        n = rjzVar11;
+        rjz rjzVar12 = new rjz(R.style.f280650_resource_name_obfuscated_res_0x7f150c18, R.style.f280650_resource_name_obfuscated_res_0x7f150c18, false, false);
+        o = rjzVar12;
+        rjz rjzVar13 = new rjz(R.style.f280840_resource_name_obfuscated_res_0x7f150c2b, R.style.f280840_resource_name_obfuscated_res_0x7f150c2b, false, false);
+        p = rjzVar13;
+        rjz rjzVar14 = new rjz(R.style.f280830_resource_name_obfuscated_res_0x7f150c2a, R.style.f280830_resource_name_obfuscated_res_0x7f150c2a, false, false);
+        q = rjzVar14;
+        rjz rjzVar15 = new rjz(R.style.f280770_resource_name_obfuscated_res_0x7f150c24, R.style.f280770_resource_name_obfuscated_res_0x7f150c24, false, false);
+        r = rjzVar15;
+        rjz rjzVar16 = new rjz(R.style.f280760_resource_name_obfuscated_res_0x7f150c23, R.style.f280760_resource_name_obfuscated_res_0x7f150c23, false, false);
+        s = rjzVar16;
+        rjz rjzVar17 = new rjz(R.style.f280660_resource_name_obfuscated_res_0x7f150c19, R.style.f280660_resource_name_obfuscated_res_0x7f150c19, false, false);
+        t = rjzVar17;
+        rjz rjzVar18 = new rjz(R.style.f280740_resource_name_obfuscated_res_0x7f150c21, R.style.f280740_resource_name_obfuscated_res_0x7f150c21, false, false);
+        u = rjzVar18;
+        rjz rjzVar19 = new rjz(R.style.f280610_resource_name_obfuscated_res_0x7f150c14, R.style.f280610_resource_name_obfuscated_res_0x7f150c14, false, false);
+        v = rjzVar19;
+        rjz rjzVar20 = new rjz(R.style.f280620_resource_name_obfuscated_res_0x7f150c15, R.style.f280620_resource_name_obfuscated_res_0x7f150c15, false, false);
+        w = rjzVar20;
+        rjz rjzVar21 = new rjz(R.style.f280630_resource_name_obfuscated_res_0x7f150c16, R.style.f280630_resource_name_obfuscated_res_0x7f150c16, false, false);
+        x = rjzVar21;
+        rjz rjzVar22 = new rjz(R.style.f280820_resource_name_obfuscated_res_0x7f150c29, R.style.f280820_resource_name_obfuscated_res_0x7f150c29, false, false);
+        y = rjzVar22;
+        rjz rjzVar23 = new rjz(R.style.f280790_resource_name_obfuscated_res_0x7f150c26, R.style.f280790_resource_name_obfuscated_res_0x7f150c26, false, false);
+        z = rjzVar23;
+        rjz rjzVar24 = new rjz(R.style.f280810_resource_name_obfuscated_res_0x7f150c28, R.style.f280810_resource_name_obfuscated_res_0x7f150c28, false, false);
+        A = rjzVar24;
+        rjz rjzVar25 = new rjz(R.style.f280670_resource_name_obfuscated_res_0x7f150c1a, R.style.f280670_resource_name_obfuscated_res_0x7f150c1a, false, false);
+        B = rjzVar25;
+        rjz rjzVar26 = new rjz(R.style.f280750_resource_name_obfuscated_res_0x7f150c22, R.style.f280750_resource_name_obfuscated_res_0x7f150c22, false, false);
+        C = rjzVar26;
+        rjz rjzVar27 = new rjz(R.style.f280600_resource_name_obfuscated_res_0x7f150c13, R.style.f280600_resource_name_obfuscated_res_0x7f150c13, false, false);
+        D = rjzVar27;
+        rjz rjzVar28 = new rjz(R.style.f280680_resource_name_obfuscated_res_0x7f150c1b, R.style.f280680_resource_name_obfuscated_res_0x7f150c1b, false, false);
+        E = rjzVar28;
+        rjz rjzVar29 = new rjz(R.style.f280640_resource_name_obfuscated_res_0x7f150c17, R.style.f280640_resource_name_obfuscated_res_0x7f150c17, false, false);
+        F = rjzVar29;
+        rjz rjzVar30 = new rjz(R.style.f280780_resource_name_obfuscated_res_0x7f150c25, R.style.f280780_resource_name_obfuscated_res_0x7f150c25, false, false);
+        G = rjzVar30;
+        rjz rjzVar31 = new rjz(R.style.f279650_resource_name_obfuscated_res_0x7f150b5f, R.style.f279650_resource_name_obfuscated_res_0x7f150b5f, false, false);
+        H = rjzVar31;
+        rjz rjzVar32 = new rjz(R.style.f279590_resource_name_obfuscated_res_0x7f150b59, R.style.f279590_resource_name_obfuscated_res_0x7f150b59, false, false);
+        I = rjzVar32;
+        rjz rjzVar33 = new rjz(R.style.f279620_resource_name_obfuscated_res_0x7f150b5c, R.style.f279620_resource_name_obfuscated_res_0x7f150b5c, false, false);
+        J = rjzVar33;
+        rjz rjzVar34 = new rjz(R.style.f279610_resource_name_obfuscated_res_0x7f150b5b, R.style.f279610_resource_name_obfuscated_res_0x7f150b5b, false, false);
+        K = rjzVar34;
+        rjz rjzVar35 = new rjz(R.style.f279850_resource_name_obfuscated_res_0x7f150b73, R.style.f279850_resource_name_obfuscated_res_0x7f150b73, false, false);
+        L = rjzVar35;
+        rjz rjzVar36 = new rjz(R.style.f279600_resource_name_obfuscated_res_0x7f150b5a, R.style.f279600_resource_name_obfuscated_res_0x7f150b5a, false, false);
+        M = rjzVar36;
+        rjz rjzVar37 = new rjz(R.style.f279670_resource_name_obfuscated_res_0x7f150b61, R.style.f279670_resource_name_obfuscated_res_0x7f150b61, false, false);
+        N = rjzVar37;
+        rjz rjzVar38 = new rjz(R.style.f279780_resource_name_obfuscated_res_0x7f150b6c, R.style.f279780_resource_name_obfuscated_res_0x7f150b6c, false, false);
+        O = rjzVar38;
+        rjz rjzVar39 = new rjz(R.style.f279730_resource_name_obfuscated_res_0x7f150b67, R.style.f279730_resource_name_obfuscated_res_0x7f150b67, false, false);
+        P = rjzVar39;
+        rjz rjzVar40 = new rjz(R.style.f279740_resource_name_obfuscated_res_0x7f150b68, R.style.f279740_resource_name_obfuscated_res_0x7f150b68, false, false);
+        Q = rjzVar40;
+        rjz rjzVar41 = new rjz(R.style.f279680_resource_name_obfuscated_res_0x7f150b62, R.style.f279680_resource_name_obfuscated_res_0x7f150b62, false, false);
+        R = rjzVar41;
+        rjz rjzVar42 = new rjz(R.style.f279690_resource_name_obfuscated_res_0x7f150b63, R.style.f279690_resource_name_obfuscated_res_0x7f150b63, false, false);
+        S = rjzVar42;
+        rjz rjzVar43 = new rjz(R.style.f279700_resource_name_obfuscated_res_0x7f150b64, R.style.f279700_resource_name_obfuscated_res_0x7f150b64, false, false);
+        T = rjzVar43;
+        rjz rjzVar44 = new rjz(R.style.f279710_resource_name_obfuscated_res_0x7f150b65, R.style.f279710_resource_name_obfuscated_res_0x7f150b65, false, false);
+        U = rjzVar44;
+        rjz rjzVar45 = new rjz(R.style.f279720_resource_name_obfuscated_res_0x7f150b66, R.style.f279720_resource_name_obfuscated_res_0x7f150b66, false, false);
+        V = rjzVar45;
+        rjz rjzVar46 = new rjz(R.style.f279810_resource_name_obfuscated_res_0x7f150b6f, R.style.f279810_resource_name_obfuscated_res_0x7f150b6f, false, false);
+        W = rjzVar46;
+        rjz rjzVar47 = new rjz(R.style.f279800_resource_name_obfuscated_res_0x7f150b6e, R.style.f279800_resource_name_obfuscated_res_0x7f150b6e, false, false);
+        X = rjzVar47;
+        rjz rjzVar48 = new rjz(R.style.f279840_resource_name_obfuscated_res_0x7f150b72, R.style.f279840_resource_name_obfuscated_res_0x7f150b72, false, false);
+        Y = rjzVar48;
+        rjz rjzVar49 = new rjz(R.style.f279630_resource_name_obfuscated_res_0x7f150b5d, R.style.f279630_resource_name_obfuscated_res_0x7f150b5d, false, false);
+        Z = rjzVar49;
+        rjz rjzVar50 = new rjz(R.style.f279750_resource_name_obfuscated_res_0x7f150b69, R.style.f279750_resource_name_obfuscated_res_0x7f150b69, false, false);
+        aa = rjzVar50;
+        rjz rjzVar51 = new rjz(R.style.f279660_resource_name_obfuscated_res_0x7f150b60, R.style.f279660_resource_name_obfuscated_res_0x7f150b60, false, false);
+        ab = rjzVar51;
+        rjz rjzVar52 = new rjz(R.style.f279820_resource_name_obfuscated_res_0x7f150b70, R.style.f279820_resource_name_obfuscated_res_0x7f150b70, false, false);
+        ac = rjzVar52;
+        rjz rjzVar53 = new rjz(R.style.f279770_resource_name_obfuscated_res_0x7f150b6b, R.style.f279770_resource_name_obfuscated_res_0x7f150b6b, false, false);
+        ad = rjzVar53;
+        rjz rjzVar54 = new rjz(R.style.f279760_resource_name_obfuscated_res_0x7f150b6a, R.style.f279760_resource_name_obfuscated_res_0x7f150b6a, false, false);
+        ae = rjzVar54;
+        rjz rjzVar55 = new rjz(R.style.f279830_resource_name_obfuscated_res_0x7f150b71, R.style.f279830_resource_name_obfuscated_res_0x7f150b71, false, false);
+        af = rjzVar55;
+        rjz rjzVar56 = new rjz(R.style.f279790_resource_name_obfuscated_res_0x7f150b6d, R.style.f279790_resource_name_obfuscated_res_0x7f150b6d, false, false);
+        ag = rjzVar56;
+        rjz rjzVar57 = new rjz(R.style.f279640_resource_name_obfuscated_res_0x7f150b5e, R.style.f279640_resource_name_obfuscated_res_0x7f150b5e, false, false);
+        ah = rjzVar57;
+        rjz rjzVar58 = new rjz(R.style.f279860_resource_name_obfuscated_res_0x7f150b74, R.style.f279860_resource_name_obfuscated_res_0x7f150b74, false, false);
+        ai = rjzVar58;
+        rjz rjzVar59 = new rjz(R.style.f281930_resource_name_obfuscated_res_0x7f150cc5, R.style.f281930_resource_name_obfuscated_res_0x7f150cc5, false, false);
+        aj = rjzVar59;
+        rjz rjzVar60 = new rjz(R.style.f281920_resource_name_obfuscated_res_0x7f150cc4, R.style.f281920_resource_name_obfuscated_res_0x7f150cc4, false, false);
+        ak = rjzVar60;
+        rjz rjzVar61 = new rjz(R.style.f279950_resource_name_obfuscated_res_0x7f150b7d, R.style.f279950_resource_name_obfuscated_res_0x7f150b7d, false, false);
+        al = rjzVar61;
+        rjz rjzVar62 = new rjz(R.style.f279940_resource_name_obfuscated_res_0x7f150b7c, R.style.f279940_resource_name_obfuscated_res_0x7f150b7c, false, false);
+        am = rjzVar62;
+        rjz rjzVar63 = new rjz(R.style.f279560_resource_name_obfuscated_res_0x7f150b56, R.style.f279560_resource_name_obfuscated_res_0x7f150b56, false, false);
+        an = rjzVar63;
+        rjz rjzVar64 = new rjz(R.style.f279530_resource_name_obfuscated_res_0x7f150b53, R.style.f279530_resource_name_obfuscated_res_0x7f150b53, false, false);
+        ao = rjzVar64;
+        rjz rjzVar65 = new rjz(R.style.f279580_resource_name_obfuscated_res_0x7f150b58, R.style.f279580_resource_name_obfuscated_res_0x7f150b58, false, false);
+        ap = rjzVar65;
+        rjz rjzVar66 = new rjz(R.style.f279480_resource_name_obfuscated_res_0x7f150b4e, R.style.f279480_resource_name_obfuscated_res_0x7f150b4e, false, false);
+        aq = rjzVar66;
+        rjz rjzVar67 = new rjz(R.style.f279510_resource_name_obfuscated_res_0x7f150b51, R.style.f279510_resource_name_obfuscated_res_0x7f150b51, false, false);
+        ar = rjzVar67;
+        rjz rjzVar68 = new rjz(R.style.f279520_resource_name_obfuscated_res_0x7f150b52, R.style.f279520_resource_name_obfuscated_res_0x7f150b52, false, false);
+        as = rjzVar68;
+        rjz rjzVar69 = new rjz(R.style.f279550_resource_name_obfuscated_res_0x7f150b55, R.style.f279550_resource_name_obfuscated_res_0x7f150b55, false, false);
+        at = rjzVar69;
+        rjz rjzVar70 = new rjz(R.style.f279540_resource_name_obfuscated_res_0x7f150b54, R.style.f279540_resource_name_obfuscated_res_0x7f150b54, false, false);
+        au = rjzVar70;
+        rjz rjzVar71 = new rjz(R.style.f279570_resource_name_obfuscated_res_0x7f150b57, R.style.f279570_resource_name_obfuscated_res_0x7f150b57, false, false);
+        av = rjzVar71;
+        rjz rjzVar72 = new rjz(R.style.f279500_resource_name_obfuscated_res_0x7f150b50, R.style.f279500_resource_name_obfuscated_res_0x7f150b50, false, false);
+        aw = rjzVar72;
+        rjz rjzVar73 = new rjz(R.style.f279490_resource_name_obfuscated_res_0x7f150b4f, R.style.f279490_resource_name_obfuscated_res_0x7f150b4f, false, false);
+        ax = rjzVar73;
+        rjz rjzVar74 = new rjz(R.style.f279470_resource_name_obfuscated_res_0x7f150b4d, R.style.f279470_resource_name_obfuscated_res_0x7f150b4d, false, false);
+        ay = rjzVar74;
+        rjz rjzVar75 = new rjz(R.style.f280570_resource_name_obfuscated_res_0x7f150c10, R.style.f280570_resource_name_obfuscated_res_0x7f150c10, false, false);
+        az = rjzVar75;
+        rjz rjzVar76 = new rjz(R.style.f280580_resource_name_obfuscated_res_0x7f150c11, R.style.f280580_resource_name_obfuscated_res_0x7f150c11, false, false);
+        aA = rjzVar76;
+        rjz rjzVar77 = new rjz(R.style.f281980_resource_name_obfuscated_res_0x7f150cca, R.style.f281980_resource_name_obfuscated_res_0x7f150cca, false, false);
+        aB = rjzVar77;
+        rjz rjzVar78 = new rjz(R.style.f281940_resource_name_obfuscated_res_0x7f150cc6, R.style.f281940_resource_name_obfuscated_res_0x7f150cc6, false, false);
+        aC = rjzVar78;
+        aF = abta.t(new abtv("silk:", rjzVar), new abtv("silk:light", rjzVar), new abtv("silk:dark", rjzVar2), new abtv("silk:material3_light", rjzVar3), new abtv("silk:material3_dark", rjzVar4), new abtv("system_auto:", rjzVar3), new abtv("system_auto:light", rjzVar3), new abtv("system_auto:dark", rjzVar4), new abtv("files:downloaded_theme_271a5d9afe99b30285ce898488269bd9", rjzVar5), new abtv("files:downloaded_theme_86ed3ba5d0163d36bb026bd213a95ec7", rjzVar5), new abtv("files:downloaded_theme_1ef45cd2ecf496e42c08c97e64c65226", rjzVar5), new abtv("files:downloaded_theme_75587bbadffd8ddc9bf0ca40f5dc549d", rjzVar5), new abtv("files:downloaded_theme_278a5fd2355cd0c770b9453b4ed33c37", rjzVar5), new abtv("files:downloaded_theme_195be3a640235ba2e43717505a3f329d", rjzVar5), new abtv("files:downloaded_theme_30aac5b21ebbb7addca0d2001c53e5dd", rjzVar5), new abtv("files:downloaded_theme_2c49266c502e52ecbfef121bbeee1db9", rjzVar5), new abtv("files:downloaded_theme_b0d52f50d7d4d6804bc638865b074a78", rjzVar5), new abtv("files:downloaded_theme_fef5dcea2cad4d370e01e7849c26affe", rjzVar5), new abtv("files:downloaded_theme_1cfff581af8d0009030a4398e5e1670b", rjzVar5), new abtv("files:downloaded_theme_b4df659f830191d186624f1787dac1c5", rjzVar5), new abtv("files:downloaded_theme_cc197c58184fe8f15eb8f3a5f98ae632", rjzVar6), new abtv("files:downloaded_theme_a97105aa302ec7afb149d90ff9e8354b", rjzVar7), new abtv("files:downloaded_theme_b0b3646f88a12997d0619bcc86ac6ca3", rjzVar8), new abtv("files:downloaded_theme_ff192899440d186d0badf928d7f73b3c", rjzVar9), new abtv("files:downloaded_theme_716ca29bccdc68e63c686080784dc072", rjzVar10), new abtv("files:downloaded_theme_32f6afc1f56ff1b0b0d32b5e04aca319", rjzVar11), new abtv("files:downloaded_theme_eb19be2914558fb6ccf42d6a96ae9de0", rjzVar12), new abtv("files:downloaded_theme_b49cec12d47b621fcd7f7e6e6768d56a", rjzVar13), new abtv("files:downloaded_theme_59badf3a76fce628c2ede272f48c5a4e", rjzVar14), new abtv("files:downloaded_theme_6c1d3ecb88327b0243c7ee0b81848f82", rjzVar15), new abtv("files:downloaded_theme_767f3cfa86d3ea54db667034fbd159c8", rjzVar16), new abtv("files:downloaded_theme_ae8acffa8f9042b58a5840078c25c4b7", rjzVar17), new abtv("files:downloaded_theme_061805c170abcc466275f2de52faef90", rjzVar18), new abtv("files:downloaded_theme_9d940bae3f0eee8bfa0790678bf15d3f", rjzVar19), new abtv("files:downloaded_theme_3d570974ef1f774aced898f272b1e9f5", rjzVar20), new abtv("files:downloaded_theme_90465db9d1939d4523256832c6614a25", rjzVar21), new abtv("files:downloaded_theme_b1ffbcc5e7117658bf2d5d0c2bb6a764", rjzVar22), new abtv("files:downloaded_theme_ed184c9a963f9e95f96fff0cbc2cfffe", rjzVar23), new abtv("files:downloaded_theme_b3d59fa1220a8acb690ba4a86ab99c35", rjzVar24), new abtv("files:downloaded_theme_65af05adfb0067c0d681123de93ad39f", rjzVar25), new abtv("files:downloaded_theme_4716cd6149c3f5b5767dd5fdc41b3163", rjzVar26), new abtv("files:downloaded_theme_99cbea5e147adec5de5ef9e9938c6a28", rjzVar27), new abtv("files:downloaded_theme_3a1735527b8732a16fb35ae840c65e14", rjzVar28), new abtv("files:downloaded_theme_d6283f7c7c91dc12bd1e9febd4481167", rjzVar29), new abtv("files:downloaded_theme_f8e9fadf64f48cef4569a3552baa00d5", rjzVar30), new abtv("files:downloaded_theme_9ad10f8f967b6fb902658ad3e15d318d", rjzVar31), new abtv("files:downloaded_theme_abfb72d9d477bb0b1a9b77b4cce3326c", rjzVar32), new abtv("files:downloaded_theme_ede812faeedb707a599671209d45a834", rjzVar33), new abtv("files:downloaded_theme_e56874bc66b3742c507d9b74f11fcfda", rjzVar34), new abtv("files:downloaded_theme_43e3e50493f6727beadd75e5ca141952", rjzVar35), new abtv("files:downloaded_theme_7f890feb43ef8e95c4e720b244d19fb2", rjzVar36), new abtv("files:downloaded_theme_88baf1cc25a6277d1cd482cab1cac71b", rjzVar37), new abtv("files:downloaded_theme_0a409bb74fa6f128a249a14d5f0df149", rjzVar38), new abtv("files:downloaded_theme_5076402e65aa2cbcdbfc825aee578cfc", rjzVar39), new abtv("files:downloaded_theme_2ddb20da354861a96003c89fa29c5991", rjzVar40), new abtv("files:downloaded_theme_7051c1deee8cd55d8c9d1fa911b4753b", rjzVar41), new abtv("files:downloaded_theme_7f213531f8ccc173ecab8c779209f41c", rjzVar42), new abtv("files:downloaded_theme_2aa1d1fd2eef6b5cd05d5e1c5fdb8054", rjzVar43), new abtv("files:downloaded_theme_45d198ec4b6e7573d25ec06da7318093", rjzVar44), new abtv("files:downloaded_theme_27ddda34863915a7929ee2a2baf93d8c", rjzVar45), new abtv("files:downloaded_theme_2e1f584e45a269ad4990338a0eca932f", rjzVar46), new abtv("files:downloaded_theme_85f9fc146ad4882d540ece3bdc5e1e87", rjzVar47), new abtv("files:downloaded_theme_e38f42576959c27732974ee9cd25b520", rjzVar48), new abtv("files:downloaded_theme_2e14a9111a60f755a2acda95c838976c", rjzVar49), new abtv("files:downloaded_theme_a72ff4e730a0692a20cdc68c3580ea41", rjzVar50), new abtv("files:downloaded_theme_e5dd59c23fdca72a96e4b5e1acf11163", rjzVar51), new abtv("files:downloaded_theme_b2d94be20adae6840ebffacc21474f68", rjzVar52), new abtv("files:downloaded_theme_56e98106f1bff84b9bdfb69289803f4e", rjzVar53), new abtv("files:downloaded_theme_34ff56c29b5c2c560aa396638a048230", rjzVar54), new abtv("files:downloaded_theme_2d7fa374ce0d5d1a95061dc8d2f146c5", rjzVar55), new abtv("files:downloaded_theme_b72e5a012f7fe8db32f0c40ec6e160d1", rjzVar56), new abtv("files:downloaded_theme_3f32636d0a181b9cb11a132e08643659", rjzVar57), new abtv("files:downloaded_theme_cda050ff44060e4ab8ef1f2bd6705fc4", rjzVar58), new abtv("assets:theme_package_metadata_material_light.binarypb", rjzVar59), new abtv("assets:theme_package_metadata_material_dark.binarypb", rjzVar60), new abtv("assets:theme_package_metadata_google_blue_light.binarypb", rjzVar61), new abtv("assets:theme_package_metadata_google_blue_dark.binarypb", rjzVar62), new abtv("assets:theme_package_metadata_color_red.binarypb", rjzVar63), new abtv("assets:theme_package_metadata_color_green.binarypb", rjzVar64), new abtv("assets:theme_package_metadata_color_teal.binarypb", rjzVar65), new abtv("assets:theme_package_metadata_color_blue.binarypb", rjzVar66), new abtv("assets:theme_package_metadata_color_cyan.binarypb", rjzVar67), new abtv("assets:theme_package_metadata_color_deep_purple.binarypb", rjzVar68), new abtv("assets:theme_package_metadata_color_pink.binarypb", rjzVar69), new abtv("assets:theme_package_metadata_color_light_pink.binarypb", rjzVar70), new abtv("assets:theme_package_metadata_color_sand.binarypb", rjzVar71), new abtv("assets:theme_package_metadata_color_brown.binarypb", rjzVar72), new abtv("assets:theme_package_metadata_color_blue_grey.binarypb", rjzVar73), new abtv("assets:theme_package_metadata_color_black.binarypb", rjzVar74), new abtv("assets:theme_package_metadata_holo_blue.binarypb", rjzVar75), new abtv("assets:theme_package_metadata_holo_white.binarypb", rjzVar76), new abtv("files:zip_theme_package_xiaomi_keytar.zip", rjzVar77), new abtv("files:zip_theme_package_oppo_lautenwerck.zip", rjzVar78), new abtv("files:zip_theme_package_google_another_rockaway_sunset.zip", rjzVar5), new abtv("files:zip_theme_package_google_crimson_tide.zip", rjzVar31), new abtv("files:zip_theme_package_google_gentle_care.zip", rjzVar6), new abtv("files:zip_theme_package_user_image_bayan_RC42.zip", rjzVar5), new abtv("files:zip_theme_package_user_image_calliope_RC35.zip", rjzVar5));
+        aG = abta.t(new abtv("xiaomi", rjzVar77), new abtv("oppo", rjzVar78), new abtv("blackshark", rjzVar77), new abtv("realme", rjzVar78));
+        aH = "files:user_theme_";
+        aD = new LruCache(3);
+    }
+
+    public static final Context a(Context context, String str) {
+        abyy.h(context, "context");
+        abyy.h(str, "themeName");
+        rka b2 = b(str);
+        if (b2 == null) {
+            return context;
+        }
+        Object g2 = onp.a.g();
+        abyy.g(g2, "getValue(...)");
+        return b2.a(context, ((Boolean) g2).booleanValue());
+    }
+
+    public static final rka b(String str) {
+        abyy.h(str, "themeName");
+        rjy rjyVar = (rjy) aD.get(str);
+        if (rjyVar != null) {
+            return rjyVar;
+        }
+        rjz rjzVar = (rjz) aF.get(str);
+        if (rjzVar != null) {
+            return rjzVar;
+        }
+        if (abyy.J(str, aH, false)) {
+            return h;
+        }
+        if (abyy.J(str, "assets:", false)) {
+            ((wnt) aE.d().j("com/google/android/libraries/inputmethod/theme/overlay/ThemeOverlays", "getThemeOverlay", 334, "ThemeOverlays.kt")).w("Asset theme '%s' is missing in THEME_NAME_TO_OVERLAY.", str);
+            return null;
+        } else if (abyy.J(str, "system:", false)) {
+            Map map = aG;
+            String str2 = Build.MANUFACTURER;
+            abyy.g(str2, "MANUFACTURER");
+            String lowerCase = str2.toLowerCase(Locale.ROOT);
+            abyy.g(lowerCase, "toLowerCase(...)");
+            Object obj = map.get(lowerCase);
+            if (((rjz) obj) == null) {
+                ((wnt) aE.d().j("com/google/android/libraries/inputmethod/theme/overlay/ThemeOverlays", "getThemeOverlay$<anonymous>", 341, "ThemeOverlays.kt")).w("System theme '%s' is not supported yet.", str);
+            }
+            return (rka) obj;
+        } else {
+            ((wnt) aE.d().j("com/google/android/libraries/inputmethod/theme/overlay/ThemeOverlays", "getThemeOverlay", 347, "ThemeOverlays.kt")).w("Theme '%s' is not supported yet.", str);
+            return null;
+        }
+    }
+}

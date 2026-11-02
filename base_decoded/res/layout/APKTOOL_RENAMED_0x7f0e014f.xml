@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/APKTOOL_RENAMED_0x7f1509d0" android:id="@id/APKTOOL_RENAMED_0x7f0b0382" android:foreground="@drawable/APKTOOL_RENAMED_0x7f08030f" style="@style/APKTOOL_RENAMED_0x7f1502fc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:tag=".keyboard-header-area" android:background="@drawable/APKTOOL_RENAMED_0x7f08028d" android:layout_width="0.0dp" android:layout_height="0.0dp" android:importantForAccessibility="no" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+    <View android:tag="?APKTOOL_RENAMED_0x7f0402d8" android:background="@drawable/APKTOOL_RENAMED_0x7f08028c" android:duplicateParentState="true" android:layout_width="0.0dp" android:layout_height="0.0dp" android:importantForAccessibility="no" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+    <include layout="@layout/APKTOOL_RENAMED_0x7f0e014c" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0382" android:foreground="@drawable/0_resource_name_obfuscated_res_0x7f08030f" style="@style/0_resource_name_obfuscated_res_0x7f15077f">
+    <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e014c"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

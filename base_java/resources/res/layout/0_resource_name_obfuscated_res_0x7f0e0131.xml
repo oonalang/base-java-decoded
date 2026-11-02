@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0349" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp">
+    <com.google.android.apps.inputmethod.libs.superinsert.impl.FrameLayoutWithNoOutline android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05c3" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <com.google.android.libraries.inputmethod.widgets.KeyboardHolder android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/keyboard_holder" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+            <com.google.android.libraries.inputmethod.keyboard.impl.KeyboardViewHolder android:clipChildren="false" android:clipToPadding="false" android:layoutDirection="ltr" style="@style/0_resource_name_obfuscated_res_0x7f1502c4"/>
+            <com.google.android.libraries.inputmethod.keyboard.impl.KeyboardViewHolder android:layoutDirection="ltr" style="@style/0_resource_name_obfuscated_res_0x7f15037f"/>
+            <com.google.android.libraries.inputmethod.keyboard.impl.KeyboardViewHolder android:layoutDirection="ltr" style="@style/0_resource_name_obfuscated_res_0x7f15036c"/>
+        </com.google.android.libraries.inputmethod.widgets.KeyboardHolder>
+    </com.google.android.apps.inputmethod.libs.superinsert.impl.FrameLayoutWithNoOutline>
+</FrameLayout>

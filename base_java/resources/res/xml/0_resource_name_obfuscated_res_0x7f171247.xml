@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/0_resource_name_obfuscated_res_0x7f140c62">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b5d" android:key="@string/0_resource_name_obfuscated_res_0x7f140909" android:summary="@string/0_resource_name_obfuscated_res_0x7f140b5b"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140bc5" android:key="@string/0_resource_name_obfuscated_res_0x7f140994"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140c6c" android:key="@string/0_resource_name_obfuscated_res_0x7f140a80" android:summary="@string/0_resource_name_obfuscated_res_0x7f140c6b"/>
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/0_resource_name_obfuscated_res_0x7f140b51" android:key="@string/0_resource_name_obfuscated_res_0x7f14092b" android:summary="@string/0_resource_name_obfuscated_res_0x7f140b50"/>
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

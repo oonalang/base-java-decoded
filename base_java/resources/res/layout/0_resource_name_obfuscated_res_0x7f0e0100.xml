@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag=".expression-category-item-cn" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080277" android:layout_width="wrap_content" android:layout_height="match_parent" android:foreground="@drawable/0_resource_name_obfuscated_res_0x7f0806eb">
+    <TextView android:textSize="16dp" android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b02b4" android:tag=".icon.for-category-key.with-circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/0_resource_name_obfuscated_res_0x7f07013b" android:textAlignment="center" android:layout_marginStart="@dimen/0_resource_name_obfuscated_res_0x7f070139" android:layout_marginEnd="@dimen/0_resource_name_obfuscated_res_0x7f070139"/>
+</FrameLayout>

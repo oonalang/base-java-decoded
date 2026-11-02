@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/APKTOOL_RENAMED_0x7f1502fa"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/APKTOOL_RENAMED_0x7f0b036c" android:background="@drawable/APKTOOL_RENAMED_0x7f080268" style="@style/APKTOOL_RENAMED_0x7f15063b">
+        <ImageView android:layout_gravity="center|top" android:id="@id/APKTOOL_RENAMED_0x7f0b036e" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_RENAMED_0x7f0805d9" android:adjustViewBounds="true" />
+        <TextView android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b036d" android:text="@string/APKTOOL_RENAMED_0x7f140424" style="@style/APKTOOL_RENAMED_0x7f15051e" />
+        <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0375" android:layout_marginTop="16.0dp" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+        <android.support.v7.widget.RecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b036f" style="@style/APKTOOL_RENAMED_0x7f15063c" />
+        <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0374" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+        <com.google.android.libraries.inputmethod.widgets.text.LinkableTextView android:layout_gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b0372" android:layout_marginTop="14.0dp" android:text="@string/APKTOOL_RENAMED_0x7f140422" style="@style/APKTOOL_RENAMED_0x7f15051e" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="22.0dp">
+            <Button android:id="@id/APKTOOL_RENAMED_0x7f0b0370" android:layout_width="wrap_content" android:layout_height="50.0dp" android:text="@string/APKTOOL_RENAMED_0x7f1404f1" android:layout_marginEnd="20.0dp" style="?APKTOOL_RENAMED_0x7f0407c4" />
+            <Button android:id="@id/APKTOOL_RENAMED_0x7f0b0371" android:layout_width="wrap_content" android:layout_height="50.0dp" android:text="@string/APKTOOL_RENAMED_0x7f1404f3" android:layout_marginEnd="15.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

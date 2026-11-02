@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView style="@style/APKTOOL_RENAMED_0x7f1502b1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0206" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:gravity="start" android:id="@id/APKTOOL_RENAMED_0x7f0b0201" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15023a">
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0202" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023b" />
+        </FrameLayout>
+        <com.google.android.libraries.inputmethod.widgets.text.MarqueeTextView android:id="@id/APKTOOL_RENAMED_0x7f0b0209" android:visibility="?APKTOOL_RENAMED_0x7f040118" android:layout_width="0.0dp" android:layout_height="0.0dp" android:text="@string/APKTOOL_RENAMED_0x7f140273" android:layout_marginStart="10.0dp" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b0205" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b0201" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f1503b8" />
+        <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0205" android:contentDescription="@string/APKTOOL_RENAMED_0x7f140272" android:layout_marginEnd="10.0dp" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f150242">
+            <ImageView android:src="@drawable/APKTOOL_RENAMED_0x7f080421" android:importantForAccessibility="no" style="@style/APKTOOL_RENAMED_0x7f15023f" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

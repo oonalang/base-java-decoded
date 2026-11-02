@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if enable_simplified_expression_keyboard="true">
+        <keyboard class="com.google.android.apps.inputmethod.libs.expression.keyboard.QueryableExpressionKeyboard">
+            <view direction="bottom_to_top|right_to_left" layout="@attr/0_resource_name_obfuscated_res_0x7f040133" scalable="false" type="header"/>
+            <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e020d" type="radial">
+                <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170efc"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a9a"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef8"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170bff"/>
+            </view>
+        </keyboard>
+    </if>
+    <else>
+        <keyboard class="com.google.android.apps.inputmethod.libs.search.gif.GifKeyboardM2">
+            <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e020c" scalable="false" type="header"/>
+            <view direction="bottom_to_top|right_to_left" layout="@layout/0_resource_name_obfuscated_res_0x7f0e020b" type="radial">
+                <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170efc"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a9a"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef8"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170bff"/>
+            </view>
+        </keyboard>
+    </else>
+</framework>

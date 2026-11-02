@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0361" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140504" style="@style/0_resource_name_obfuscated_res_0x7f15077f">
+    <ImageView android:src="@drawable/0_resource_name_obfuscated_res_0x7f08041e" android:tint="@color/0_resource_name_obfuscated_res_0x7f0608c7" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f15077c"/>
+</FrameLayout>

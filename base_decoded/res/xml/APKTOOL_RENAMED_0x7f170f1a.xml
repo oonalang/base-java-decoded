@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170f17" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f170f13" />
+    <if layout_9key_split="true">
+        <include href="@xml/APKTOOL_RENAMED_0x7f170f0d" />
+    </if>
+    <else>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170f0c" />
+    </else>
+    <include href="@xml/APKTOOL_RENAMED_0x7f17122a" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f17122b" />
+    <include href="@xml/APKTOOL_RENAMED_0x7f17122c" />
+    <softkeys>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b3" id="@id/APKTOOL_RENAMED_0x7f0b249e" layout="@layout/APKTOOL_RENAMED_0x7f0e0700" multi_touch="true">
+            <action data="symbol" keycode="SWITCH_KEYBOARD" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="\?123" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f1410b3" id="@id/APKTOOL_RENAMED_0x7f0b247d" layout="@layout/APKTOOL_RENAMED_0x7f0e0700" multi_touch="true">
+            <action data="symbol" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="\?123" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f140818" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b247b" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action data="globe" keycode="SWITCH_TO_NEXT_LANGUAGE" play_media_effect_on_release="false" type="PRESS" />
+            <action action_on_down="true" data="globe" keycode="SHOW_SYSTEM_IME_PICKER" type="LONG_PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@attr/APKTOOL_RENAMED_0x7f04018e" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140722" id="@id/APKTOOL_RENAMED_0x7f0b098c" layout="@layout/APKTOOL_RENAMED_0x7f0e0700" multi_touch="true">
+            <action data="prime" keycode="SWITCH_KEYBOARD" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f1405f4" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1404f6" id="@id/APKTOOL_RENAMED_0x7f0b0e0e" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="false">
+            <action keycode="DEL" repeatable="true" type="PRESS" />
+            <action keycode="DELETE_FINISH" type="UP" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080554" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1404f6" id="@id/APKTOOL_RENAMED_0x7f0b0e0f" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" multi_touch="false" popup_timing="ON_GESTURE" slide_sensitivity="LESS">
+            <action keycode="DEL" repeatable="true" type="PRESS" />
+            <action keycode="DELETE_FINISH" type="UP" />
+            <action keycode="CLEAR_ALL" popup_label="@string/APKTOOL_RENAMED_0x7f140642" popup_layout="@layout/APKTOOL_RENAMED_0x7f0e0646" type="SLIDE_LEFT" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080554" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0cc0" layout="@layout/APKTOOL_RENAMED_0x7f0e0700">
+            <action keycode="CLEAR_ALL" type="PRESS" />
+            <if language="zh">
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="清除" />
+            </if>
+            <else>
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="@string/APKTOOL_RENAMED_0x7f140642" />
+            </else>
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="" id="@id/APKTOOL_RENAMED_0x7f0b22d5" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="" id="@id/APKTOOL_RENAMED_0x7f0b22d3" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f14086b" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b22d4" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action keycode="PAGE_UP" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f14086a" disable_lift_to_tap="true" id="@id/APKTOOL_RENAMED_0x7f0b22d2" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action keycode="PAGE_DOWN" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" id="@id/APKTOOL_RENAMED_0x7f0b205c" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="HIGH" touch_action_repeat_interval="150" touch_action_repeat_start_delay="300">
+            <action keycode="DPAD_CENTER" popup_icon="@null" type="PRESS" />
+            <action keycode="DPAD_UP" popup_icon="@null" repeatable="true" type="SLIDE_UP" />
+            <action keycode="DPAD_DOWN" popup_icon="@null" repeatable="true" type="SLIDE_DOWN" />
+            <action keycode="DPAD_LEFT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a0" repeatable="true" type="SLIDE_LEFT" />
+            <action keycode="DPAD_RIGHT" popup_icon="@attr/APKTOOL_RENAMED_0x7f0401a1" repeatable="true" type="SLIDE_RIGHT" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f14050c" id="@id/APKTOOL_RENAMED_0x7f0b23a3" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action data="" keycode="LAUNCH_PREFERENCE_ACTIVITY" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f1402f3" id="@id/APKTOOL_RENAMED_0x7f0b246d" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action data="@string/APKTOOL_RENAMED_0x7f14003b" keycode="SWITCH_KEYBOARD" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@drawable/APKTOOL_RENAMED_0x7f080558" />
+        </softkey>
+        <softkey alpha="@attr/APKTOOL_RENAMED_0x7f040175" content_description="@string/APKTOOL_RENAMED_0x7f14033c" id="@id/APKTOOL_RENAMED_0x7f0b2472" layout="@layout/APKTOOL_RENAMED_0x7f0e06fc">
+            <action data="@string/APKTOOL_RENAMED_0x7f14003c" keycode="SWITCH_KEYBOARD" type="PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+    </softkeys>
+</framework>

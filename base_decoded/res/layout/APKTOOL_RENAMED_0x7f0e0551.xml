@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f070171" style="@style/APKTOOL_RENAMED_0x7f1501e3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/APKTOOL_RENAMED_0x7f0b0381" style="@style/APKTOOL_RENAMED_0x7f1502b5">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" app:APKTOOL_RENAMED_0x7f04071c="@string/APKTOOL_RENAMED_0x7f140aef">
+            <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b2910" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b039c" app:APKTOOL_RENAMED_0x7f040737="APKTOOL_RENAMED_0x7f0b28ff" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15079d">
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0e0058" />
+                <com.google.android.libraries.inputmethod.recyclerview.BindingRecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b016f" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b039c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_RENAMED_0x7f040730="@dimen/APKTOOL_RENAMED_0x7f07093a" />
+            <LinearLayout android:orientation="vertical" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040737="APKTOOL_RENAMED_0x7f0b28ff" app:APKTOOL_RENAMED_0x7f040738="1.0" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b039c" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15079b">
+                <include android:id="@id/APKTOOL_RENAMED_0x7f0b0775" android:visibility="gone" layout="@layout/APKTOOL_RENAMED_0x7f0e067d" />
+                <com.google.android.apps.inputmethod.libs.search.widget.CategoryViewPager android:id="@id/expression_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e01f6" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

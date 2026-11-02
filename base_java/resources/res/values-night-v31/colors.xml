@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="0_resource_name_obfuscated_res_0x7f060add">@android:color/Red_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060ade">@android:color/background_cache_hint_selector_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060adf">@color/0_resource_name_obfuscated_res_0x7f060b50</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060ae0">#f28b82</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b08">@android:color/Red_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b10">@android:color/background_holo_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b11">@android:color/background_cache_hint_selector_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b14">@android:color/bright_foreground_inverse_holo_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b15">@android:color/bright_foreground_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b18">@android:color/Indigo_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b1a">@android:color/accent_device_default_dark_60_percent_opacity</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b1f">@android:color/accent_material_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b20">@android:color/autofill_background_material_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b21">@android:color/background_device_default_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b22">@android:color/background_floating_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b26">@android:color/bright_foreground_dark_disabled</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b27">@android:color/bright_foreground_holo_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2a">@color/0_resource_name_obfuscated_res_0x7f060b3e</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2b">@color/0_resource_name_obfuscated_res_0x7f060b3b</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2c">@color/0_resource_name_obfuscated_res_0x7f060b38</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2d">@color/0_resource_name_obfuscated_res_0x7f060b39</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2e">@color/0_resource_name_obfuscated_res_0x7f060b3a</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b2f">@android:color/autofilled_highlight</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b31">@color/0_resource_name_obfuscated_res_0x7f060b3e</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b33">@android:color/autofill_background_material_dark</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b50">@android:color/Red_800</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b59">@android:color/background_cache_hint_selector_material_light</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5b">@android:color/GM2_grey_800</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5d">@android:color/accent_device_default_dark_60_percent_opacity</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5e">@android:color/Red_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b5f">@android:color/Pink_800</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b61">@android:color/Red_700</color>
+    <color name="0_resource_name_obfuscated_res_0x7f060b62">@color/0_resource_name_obfuscated_res_0x7f060b55</color>
+</resources>

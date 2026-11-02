@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/0_resource_name_obfuscated_res_0x7f070097" android:bottom="@dimen/0_resource_name_obfuscated_res_0x7f070097">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/0_resource_name_obfuscated_res_0x7f070096"/>
+            <solid android:color="@color/0_resource_name_obfuscated_res_0x7f060953"/>
+        </shape>
+    </item>
+</layer-list>

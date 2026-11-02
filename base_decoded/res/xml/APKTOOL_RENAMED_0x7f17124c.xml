@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140c17" android:key="@string/APKTOOL_RENAMED_0x7f140c15">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140cb6" android:key="@string/APKTOOL_RENAMED_0x7f140ac9" android:summary="@string/APKTOOL_RENAMED_0x7f140cb5" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140cb4">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b5d" android:key="@string/APKTOOL_RENAMED_0x7f14090a" android:summary="@string/APKTOOL_RENAMED_0x7f140b5c" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140bca" android:key="@string/APKTOOL_RENAMED_0x7f140951" android:summary="@string/APKTOOL_RENAMED_0x7f140bc9" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140bc8" android:key="@string/APKTOOL_RENAMED_0x7f14094a" android:summary="@string/APKTOOL_RENAMED_0x7f140bc7" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b51" android:key="@string/APKTOOL_RENAMED_0x7f14092c" android:summary="@string/APKTOOL_RENAMED_0x7f140b50" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

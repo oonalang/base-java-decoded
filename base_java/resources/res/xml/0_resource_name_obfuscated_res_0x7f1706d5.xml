@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+    <keyboard>
+        <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0233" override="motion_event_handler" type="sweep">
+            <motion_event_handler class=".motioneventhandler.BasicMotionEventHandler"/>
+            <motion_event_handler class=".libs.latin5.handler.LatinKeyboardLayoutHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec2"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170bf2"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a59"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a6d"/>
+        </view>
+    </keyboard>
+    <if enable_number_row="true">
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170713"/>
+    </if>
+</framework>

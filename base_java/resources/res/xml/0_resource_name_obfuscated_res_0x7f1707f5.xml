@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view override="motion_event_handler" type="sweep">
+            <motion_event_handler class=".motioneventhandler.SpatialModelMotionEventHandler"/>
+            <motion_event_handler class=".inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec1"/>
+            <if language="zh-CN">
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.pinyin.PinyinGestureHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.pinyin.PinyinKeyboardLayoutHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+            </if>
+            <if language="zh-TW">
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.zhuyin.ZhuyinGestureHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.zhuyin.PinyinKeyboardLayoutHandler" preference_key="@string/0_resource_name_obfuscated_res_0x7f14094b" reverse_preference="false"/>
+            </if>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171223"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17121f"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f1710d0"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ff1"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171228"/>
+            </if>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170ac4"/>
+            </if>
+            <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170aae"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e1a"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170df9"/>
+            </if>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170e33"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c08"/>
+        </view>
+        <if enable_pk_simulator="true" enable_pk_simulator_setting="true">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e04eb" type="sweep"/>
+        </if>
+        <else_if keyboard_mode="split">
+            <if split_with_duplicate_keys="true">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03ab" type="sweep"/>
+            </if>
+            <else>
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03ac" type="sweep"/>
+            </else>
+        </else_if>
+        <else_if device="tablet" device_size="large" keyboard_mode="normal">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03c7" type="sweep"/>
+        </else_if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e03aa" type="sweep"/>
+        </else>
+    </keyboard>
+</framework>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b0379" android:background="@drawable/APKTOOL_RENAMED_0x7f080268" android:paddingTop="@dimen/APKTOOL_RENAMED_0x7f0701d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b07e7" style="@style/APKTOOL_RENAMED_0x7f15063e">
+                <ImageView android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_RENAMED_0x7f0803ce" android:scaleType="centerInside" android:tint="?APKTOOL_RENAMED_0x7f0404cb" />
+            </FrameLayout>
+            <TextView android:id="@id/APKTOOL_RENAMED_0x7f0b0380" android:text="@string/APKTOOL_RENAMED_0x7f140431" style="@style/APKTOOL_RENAMED_0x7f15063d" />
+            <TextView android:gravity="center_horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b037a" android:text="@string/APKTOOL_RENAMED_0x7f14042d" style="@style/APKTOOL_RENAMED_0x7f15063a" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b037f" android:layout_marginTop="14.0dp" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+            <android.support.v7.widget.RecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b037b" android:paddingStart="@dimen/APKTOOL_RENAMED_0x7f0708be" android:paddingEnd="@dimen/APKTOOL_RENAMED_0x7f0708be" style="@style/APKTOOL_RENAMED_0x7f15063c" />
+            <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b037e" style="@style/APKTOOL_RENAMED_0x7f15063f" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dp">
+        <Button android:id="@id/APKTOOL_RENAMED_0x7f0b037c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1404f1" style="?APKTOOL_RENAMED_0x7f0403fe" />
+        <Button android:id="@id/APKTOOL_RENAMED_0x7f0b037d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f14042f" style="?APKTOOL_RENAMED_0x7f0403fe" />
+    </LinearLayout>
+</LinearLayout>

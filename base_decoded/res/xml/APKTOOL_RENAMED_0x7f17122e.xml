@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <softkeys>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0abd" long_press_data="ഃ ഽ ൹" param_data="ം" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey hint_label="ঁ​ং​ঃ" id="@id/APKTOOL_RENAMED_0x7f0b0ac0" long_press_data="ং ঃ ঁ ় ʼ" long_press_label="ং ঃ ঁ ় ʼ" param_data="্" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0743" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2679">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac2" long_press_data="҇ ̀ ҃ ̑ ҆́ ҆̀ ҆ ҅ ̾ ꙽ ̇ ꙼ ⸯ ꙿ ̈ ꙾" long_press_label="◌҇ ◌̀ ◌҃ ◌̑ ◌҆́ ◌҆̀ ◌҆ ◌҅ ◌̾ ◌꙽ ◌̇ ◌꙼ ⸯ ꙿ ◌̈ ꙾" press_data="́" press_label="◌́" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac4" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="⹁" intention="COMMIT" keycode="COMMA" popup_label="⹁" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="⹁" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac5" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="،" intention="COMMIT" keycode="COMMA" popup_label="،" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="،" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac6" param_data="᭞" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac7" param_data="꛵" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f140407" id="@id/APKTOOL_RENAMED_0x7f0b0ac8" param_data="，" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0aca" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="፣" intention="COMMIT" keycode="COMMA" popup_label="፣" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="፣" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0acc" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="꫰" intention="COMMIT" keycode="COMMA" popup_label="꫰" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="꫰" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0acd" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="၊" intention="COMMIT" keycode="COMMA" popup_label="၊" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="၊" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0acb" param_data="꓾" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ace" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="߸" intention="COMMIT" keycode="COMMA" popup_label="߸" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="߸" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0acf" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="᜵" intention="COMMIT" keycode="COMMA" popup_label="᜵" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="᜵" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad1" param_data="।" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad2" param_data="𑅁" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad3" param_data="꣎" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad4" param_data="॥" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad5" long_press_data="፟ ፞ ፝" param_data="፡" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad6" param_data="׳" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad7" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="ַ" intention="COMMIT" keycode="ALPHABET" popup_label="◌ַ" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="◌ַ" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad8" long_press_data="'" long_press_label="'" param_data="-" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2679">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0adc" press_data="ʰ" press_label="◌ʰ" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0add" param_data="ˈ" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ade" param_data="." param_keycode="PERIOD" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0adf" long_press_data=", ՞ ՜ . ՚ ՙ ? ! ՝ ՛ ֊ » « ՟ ; :" param_data="։" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae0" param_data="᭟" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae1" param_data="꛳" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae2" param_data="᙮" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae3" param_data="꩞" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey desc="@string/APKTOOL_RENAMED_0x7f14040b" id="@id/APKTOOL_RENAMED_0x7f0b0ae4" param_data="。" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae5" param_data="።" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae6" long_press_data="઼ ઁ ં ઃ ઽ ૐ લૃ ।" long_press_label="઼ ઁ ં ઃ ઽ ૐ લૃ ।" param_data="." param_keycode="PERIOD" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae7" param_data="꓿" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae8" long_press_data="꫱ ꫰ ꯭ ꯬ ꫲ ꫳ ꫴ ꫵ ꫶" param_data="꯫" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ae9" param_data="။" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0aea" param_data="᜶" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0aeb" param_data="۔" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0aec" long_press_data=": ·" long_press_label=": ·" param_data=";" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2621">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0af2" long_press_data="༒ ༑ ༐ ༏ ༎ ༈ ࿓ ࿔ ༇ ༆ ༄ ༅ ࿙ ࿚ ༼ ༽ ༺ ༻" param_data="།" param_keycode="PERIOD" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ad9" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="꧈" intention="COMMIT" keycode="COMMA" popup_label="꧈" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="꧈" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ada" param_data="꧉" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0adb" param_data="꤯" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0af5" param_data="᰻" param_keycode="PERIOD" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b25b1" layout="@layout/APKTOOL_RENAMED_0x7f0e0740" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="ஃ" intention="COMMIT" keycode="COMMA" popup_label="ஃ" type="PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="ஃ" />
+        </softkey>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0af6" param_data="༔" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2621">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0af8" long_press_data="༷ ༵ ༸ ཿ ཾ ྃ ༹ ྄ ྅ ྂ ྆ ྇ ༀ ༁ ༂ ༃ ༴ ࿒" param_data="་" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0af7" long_press_data="༷ ༵ ༸ ཿ ཾ ྃ ༹ ྄ ྅ ྂ ྆ ྇ ࿑ ࿐ ༊ ༉ ༴ ࿒" param_data="་" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0afa" param_data="ꘌ" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0afb" param_data="્" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/APKTOOL_RENAMED_0x7f0b2620">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0afc" param_data="ꀕ" param_keycode="ALPHABET" param_layout="@layout/APKTOOL_RENAMED_0x7f0e0740" />
+        </softkey_list>
+        <softkey_template content_description="$desc$" id="@id/APKTOOL_RENAMED_0x7f0b261c" layout="$param_layout$" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="$param_data$" intention="COMMIT" keycode="$param_keycode$" popup_label="$param_data$" type="PRESS" />
+            <action data="$long_press_data$" intention="COMMIT" keycode="$param_keycode$" popup_label="$long_press_data$" popup_layout="@attr/APKTOOL_RENAMED_0x7f040281" type="LONG_PRESS" />
+            <label location="@id/APKTOOL_RENAMED_0x7f0b05f3" value="$param_data$" />
+        </softkey_template>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b261c">
+            <if language="zh-CN">
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f140649" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </if>
+            <else_if language="zh-HK">
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f14064a" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </else_if>
+            <else_if language="zh-TW">
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f14064b" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </else_if>
+            <else_if language="ko">
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f140648" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </else_if>
+            <else_if language="ja">
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f140647" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </else_if>
+            <else>
+                <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac1" long_press_data="@string/APKTOOL_RENAMED_0x7f140646" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/APKTOOL_RENAMED_0x7f0e074d" />
+            </else>
+        </softkey_list>
+        <softkey_list splitter=",">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b0ac9" layout="@layout/APKTOOL_RENAMED_0x7f0e0744" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4" slide_sensitivity="NORMAL">
+                <action data="，" intention="COMMIT" keycode="PLAIN_TEXT" popup_label="，" type="PRESS" />
+                <action data="。" intention="COMMIT" keycode="PLAIN_TEXT" popup_label="｡" type="SLIDE_UP" />
+                <action data="。,.,！,？,、,「,」,『,』,……,：,；,XD,:P,:D,:(,:),^_^" intention="COMMIT" keycode="PLAIN_TEXT" popup_label="。,.,！,？,、,「,」,『,』,……,：,；,XD,:P,:D,:(,:),^_^" popup_layout="@attr/APKTOOL_RENAMED_0x7f04027f" type="LONG_PRESS" />
+                <label location="@id/APKTOOL_RENAMED_0x7f0b05f4" value="，" />
+                <label location="@id/APKTOOL_RENAMED_0x7f0b0601" value="。" />
+            </softkey>
+        </softkey_list>
+        <softkey content_description="@string/APKTOOL_RENAMED_0x7f140516" id="@id/APKTOOL_RENAMED_0x7f0b28e4" layout="@layout/APKTOOL_RENAMED_0x7f0e070b" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="‌" intention="D" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
+            <action data="‍" intention="D" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+        <softkey id="@id/APKTOOL_RENAMED_0x7f0b28e5" layout="@layout/APKTOOL_RENAMED_0x7f0e070b" multi_touch="false" popup_timing="@string/APKTOOL_RENAMED_0x7f140ae4">
+            <action data="‌" intention="C" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="PRESS" />
+            <action data="‍" intention="C" keycode="ALPHABET" popup_icon="@null" popup_layout="@attr/APKTOOL_RENAMED_0x7f040283" type="LONG_PRESS" />
+            <icon location="@id/APKTOOL_RENAMED_0x7f0b03c0" value="@null" />
+        </softkey>
+    </softkeys>
+</framework>

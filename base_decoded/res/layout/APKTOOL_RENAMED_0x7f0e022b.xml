@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView android:tag=".keyboard-header-area" android:background="?APKTOOL_RENAMED_0x7f04002d" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:APKTOOL_RENAMED_0x7f0405cb="true" style="@style/APKTOOL_RENAMED_0x7f15035b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b0453" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0199" />
+        <include android:layout_width="match_parent" android:layout_height="?APKTOOL_RENAMED_0x7f040343" layout="@layout/APKTOOL_RENAMED_0x7f0e0193" />
+        <include android:visibility="gone" layout="@layout/APKTOOL_RENAMED_0x7f0e018f" />
+        <FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b044b" android:paddingTop="16.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/APKTOOL_RENAMED_0x7f0e019e" />
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.WidgetInnerHolder xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a52" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a4e" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a50" app:layout_constraintTop_toTopOf="0">
+    <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0214"/>
+    <include android:visibility="invisible" layout="@layout/0_resource_name_obfuscated_res_0x7f0e055d" style="@style/0_resource_name_obfuscated_res_0x7f151135"/>
+    <include android:visibility="gone" app:suppressedSiblingId="@+id/softkey_holder_fixed_candidates" layout="@layout/0_resource_name_obfuscated_res_0x7f0e066c" style="@style/0_resource_name_obfuscated_res_0x7f151135"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b292f" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="start|center_vertical" android:contentDescription="@null" style="@style/0_resource_name_obfuscated_res_0x7f151155"/>
+        <ImageView android:layout_gravity="end|center_vertical" android:contentDescription="@null" style="@style/0_resource_name_obfuscated_res_0x7f151155"/>
+    </FrameLayout>
+</com.google.android.libraries.inputmethod.companionwidget.widget.WidgetInnerHolder>

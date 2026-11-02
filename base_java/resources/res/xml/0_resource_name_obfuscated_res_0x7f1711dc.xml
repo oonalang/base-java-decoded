@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170ef4"/>
+    <softkeys>
+        <softkey_list splitter="," template_id="@+id/0_resource_name_obfuscated_res_0x7f0b2680">
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0dbe" long_press_data="ё" merge_index="1" press_data="е"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0d68" long_press_data="Ё" merge_index="1" press_data="Е"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0db3" long_press_data="ғ" merge_index="1" press_data="г"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0d5d" long_press_data="Ғ" merge_index="1" press_data="Г"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0db8" long_press_data="ҳ" merge_index="1" press_data="х"/>
+            <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b0d62" long_press_data="Ҳ" merge_index="1" press_data="Х"/>
+        </softkey_list>
+    </softkeys>
+</framework>

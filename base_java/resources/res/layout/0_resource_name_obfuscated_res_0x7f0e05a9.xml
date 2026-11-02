@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f150350">
+    <include android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="?attr/0_resource_name_obfuscated_res_0x7f0401f9" android:layout_weight="1" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0696"/>
+    <TextView style="@style/0_resource_name_obfuscated_res_0x7f15034f"/>
+</LinearLayout>

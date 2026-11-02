@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f170496"/>
+    <include href="@xml/0_resource_name_obfuscated_res_0x7f17066b"/>
+    <keyboard>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f170831"/>
+        <view type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17121f"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170fd3"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171229"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171223"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f1710d0"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ff1"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f03"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171228"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170aae"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ac4"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170cdb"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170df9"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f1709cd"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c07"/>
+        </view>
+    </keyboard>
+</framework>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if expressions="policy_transparency">
+        <key_mapping>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2471" view_id="@+id/key_pos_number_panel_0_0"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2476" view_id="@+id/key_pos_number_panel_1_0"/>
+        </key_mapping>
+    </if>
+    <else_if expressions="hidden">
+        <key_mapping>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fe4" view_id="@+id/key_pos_number_panel_0_0"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0fe4" view_id="@+id/key_pos_number_panel_1_0"/>
+        </key_mapping>
+    </else_if>
+    <else>
+        <key_mapping>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2470" view_id="@+id/key_pos_number_panel_0_0"/>
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2475" view_id="@+id/key_pos_number_panel_1_0"/>
+        </key_mapping>
+        <key_mapping state="EMOJI_AVAILABLE">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b246d" view_id="@+id/key_pos_number_panel_0_0"/>
+        </key_mapping>
+        <key_mapping state="EMOTICON_AVAILABLE">
+            <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b2472" view_id="@+id/key_pos_number_panel_1_0"/>
+        </key_mapping>
+    </else>
+</framework>

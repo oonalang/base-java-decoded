@@ -1,0 +1,121 @@
+package defpackage;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+/* compiled from: PG */
+/* renamed from: pvk  reason: default package */
+/* loaded from: classes.dex */
+public final class pvk {
+    public static final long A;
+    public static final long B;
+    public static final long C;
+    public static final long D;
+    public static final long E;
+    public static final long F;
+    public static final long G;
+    public static final long H;
+    public static final long I;
+    public static final long J;
+    public static final long K;
+    public static final long L;
+    public static final long M;
+    public static final long N;
+    public static final wfr O;
+    public static final abts P;
+    public static final vzn Q;
+    public static final rcq R = new Object();
+    public static final wnw a = wnw.i("com/google/android/libraries/inputmethod/metadata/KeyboardState");
+    public static final ReentrantReadWriteLock b = new ReentrantReadWriteLock();
+    public static final HashMap c = new HashMap();
+    public static final ayt d = new ayt(10);
+    public static final ArrayList e = new ArrayList();
+    public static final long f;
+    public static final long g;
+    public static final long h;
+    public static final long i;
+    public static final long j;
+    public static final long k;
+    public static final long l;
+    public static final long m;
+    public static final long n;
+    public static final long o;
+    public static final long p;
+    public static final long q;
+    public static final long r;
+    public static final long s;
+    public static final long t;
+    public static final long u;
+    public static final long v;
+    public static final long w;
+    public static final long x;
+    public static final long y;
+    public static final long z;
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [rcq, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v19, types: [abxr, java.lang.Object] */
+    static {
+        pvj pvjVar = new pvj(4, 18);
+        f = pvjVar.a();
+        g = pvjVar.a();
+        h = pvjVar.a();
+        i = pvjVar.a();
+        j = pvjVar.a();
+        pvj pvjVar2 = new pvj(5, 22);
+        k = pvjVar2.a();
+        l = pvjVar2.a();
+        m = pvjVar2.a();
+        n = pvjVar2.a();
+        o = pvjVar2.a();
+        p = pvjVar2.a();
+        q = pvjVar2.a();
+        r = pvjVar2.a;
+        pvj pvjVar3 = new pvj(6, 27);
+        long a2 = pvjVar3.a();
+        t = a2;
+        long a3 = pvjVar3.a();
+        u = a3;
+        long a4 = pvjVar3.a();
+        v = a4;
+        long a5 = pvjVar3.a();
+        w = a5;
+        long a6 = pvjVar3.a();
+        x = a6;
+        long a7 = pvjVar3.a();
+        y = a7;
+        long a8 = pvjVar3.a();
+        z = a8;
+        long a9 = pvjVar3.a();
+        A = a9;
+        long a10 = pvjVar3.a();
+        B = a10;
+        long a11 = pvjVar3.a();
+        C = a11;
+        long a12 = pvjVar3.a();
+        D = a12;
+        long a13 = pvjVar3.a();
+        E = a13;
+        long a14 = pvjVar3.a();
+        F = a14;
+        long a15 = pvjVar3.a();
+        G = a15;
+        long a16 = pvjVar3.a();
+        H = a16;
+        long a17 = pvjVar3.a();
+        I = a17;
+        long a18 = pvjVar3.a();
+        J = a18;
+        long a19 = pvjVar3.a();
+        K = a19;
+        long a20 = pvjVar3.a();
+        L = a20;
+        long a21 = pvjVar3.a();
+        M = a21;
+        long j2 = pvjVar3.a;
+        N = j2;
+        s = j2;
+        O = wfr.B(Long.valueOf(a2), Long.valueOf(a3), Long.valueOf(a4), Long.valueOf(a5), Long.valueOf(a6), Long.valueOf(a7), Long.valueOf(a8), Long.valueOf(a9), Long.valueOf(a10), Long.valueOf(a11), Long.valueOf(a12), Long.valueOf(a13), Long.valueOf(a14), Long.valueOf(a15), Long.valueOf(a16), Long.valueOf(a17), Long.valueOf(a18), Long.valueOf(a19), Long.valueOf(a20), Long.valueOf(a21));
+        P = new abtz(new Object());
+        Q = vzn.d("+");
+    }
+}

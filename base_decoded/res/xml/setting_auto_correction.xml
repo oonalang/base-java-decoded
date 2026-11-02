@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/APKTOOL_RENAMED_0x7f140b4b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.inputmethod.preferencewidgets.ColoredBackgroundSwitchPreference android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140c9f" android:key="@string/APKTOOL_RENAMED_0x7f140a19" />
+    <com.android.settingslib.widget.RadioButtonPreference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f140118" android:key="@string/APKTOOL_RENAMED_0x7f1408fe" android:dependency="@string/APKTOOL_RENAMED_0x7f140a19" app:APKTOOL_RENAMED_0x7f0409ba="false">
+        <extra android:name="hide_if_flag_is_false" android:value="enable_llm_pc=false" />
+    </com.android.settingslib.widget.RadioButtonPreference>
+    <com.android.settingslib.widget.RadioButtonPreference android:persistent="false" android:title="@string/APKTOOL_RENAMED_0x7f14011a" android:key="@string/APKTOOL_RENAMED_0x7f1408ff" android:dependency="@string/APKTOOL_RENAMED_0x7f140a19" app:APKTOOL_RENAMED_0x7f0409ba="false">
+        <extra android:name="hide_if_flag_is_false" android:value="enable_llm_pc=false" />
+    </com.android.settingslib.widget.RadioButtonPreference>
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140b4d" android:key="@string/APKTOOL_RENAMED_0x7f140b4c">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b7b" android:key="@string/APKTOOL_RENAMED_0x7f140a1b" android:dependency="@string/APKTOOL_RENAMED_0x7f140a19" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/APKTOOL_RENAMED_0x7f140b98" android:key="@string/APKTOOL_RENAMED_0x7f140b97">
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/APKTOOL_RENAMED_0x7f140b9a" android:key="@string/APKTOOL_RENAMED_0x7f140956" android:summary="@string/APKTOOL_RENAMED_0x7f140b99" />
+    </androidx.preference.PreferenceCategory>
+</PreferenceScreen>

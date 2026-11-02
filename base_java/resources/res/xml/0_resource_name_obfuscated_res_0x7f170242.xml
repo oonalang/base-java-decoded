@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime announce_auto_selected_candidate="true" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" indicator_label="한" inline_composing="true" keyevent_interpreter="com.google.android.apps.inputmethod.libs.korean.KoreanKeyEventInterpreter" language="ko" language_specific_settings="@xml/0_resource_name_obfuscated_res_0x7f170eb9" string_id="ime_ko_10key" use_ascii_password_keyboard="true">
+        <if physical_keyboard="qwerty">
+            <attrs language_specific_settings="@xml/0_resource_name_obfuscated_res_0x7f170eba"/>
+        </if>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f1706c0" lang_def="@xml/0_resource_name_obfuscated_res_0x7f1705b8" main_def="@xml/0_resource_name_obfuscated_res_0x7f170711" pk_language_tag="en" pk_layout_type="qwerty" supports_split_mode="false" variant="korean_10key" variant_label="@string/0_resource_name_obfuscated_res_0x7f141526" variant_name_mandatory="true"/>
+        <extra_values>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f3" value=". "/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02da" value="@string/0_resource_name_obfuscated_res_0x7f14093b"/>
+            <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f9" value="@string/0_resource_name_obfuscated_res_0x7f140a12"/>
+        </extra_values>
+        <if enable_korean_composition_mode="true">
+            <extra_values>
+                <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02ee" value="TEN_KEY"/>
+            </extra_values>
+        </if>
+        <else>
+            <attrs class="com.google.android.libraries.inputmethod.ime.processor.ProcessorBasedIme"/>
+            <extra_values>
+                <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02f2" value="hmm"/>
+                <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02d1" value="true"/>
+                <item id="@+id/0_resource_name_obfuscated_res_0x7f0b02e4" value="false"/>
+            </extra_values>
+            <processors>
+                <processor class="com.google.android.libraries.inputmethod.ime.processor.ComposingTextProcessor"/>
+                <processor class="com.google.android.apps.inputmethod.libs.hmmvoice.HmmVoiceInputProcessor"/>
+                <processor class="com.google.android.apps.inputmethod.libs.korean.Korean10KeyAutoSpaceProcessor"/>
+                <processor class="com.google.android.libraries.inputmethod.ime.processor.AppCompletionsProcessor"/>
+                <processor class="com.google.android.apps.inputmethod.libs.korean.Hmm10KeyKoreanDecodeProcessor"/>
+                <processor class="com.google.android.apps.inputmethod.libs.korean.KoreanDoubleSpaceProcessor"/>
+                <processor class="com.google.android.libraries.inputmethod.ime.processor.ScrubMoveProcessor"/>
+                <processor class="com.google.android.libraries.inputmethod.ime.processor.OutputProcessor"/>
+            </processors>
+        </else>
+        <include href="@xml/0_resource_name_obfuscated_res_0x7f17003d"/>
+    </ime>
+</framework>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.libraries.inputmethod.accesspoint.impl.AccessPointKeyboard">
+        <view direction="bottom_to_top" layout="@layout/0_resource_name_obfuscated_res_0x7f0e01ab" scalable="false" type="header"/>
+        <view direction="bottom_to_top" layout="@layout/0_resource_name_obfuscated_res_0x7f0e01aa" type="body">
+            <softkeys>
+                <softkey content_description="@string/0_resource_name_obfuscated_res_0x7f140023" id="@+id/0_resource_name_obfuscated_res_0x7f0b0836" layout="@layout/0_resource_name_obfuscated_res_0x7f0e06e6">
+                    <action keycode="KEYCODE_SOFT_LEFT" type="linear"/>
+                    <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080431"/>
+                </softkey>
+            </softkeys>
+            <key_mapping>
+                <mapping key_id="@+id/0_resource_name_obfuscated_res_0x7f0b0836" view_id="@+id/0_resource_name_obfuscated_res_0x7f0b0088"/>
+            </key_mapping>
+            <motion_event_handler class="com.google.android.libraries.inputmethod.accesspoint.impl.AccessPointsPanelMotionEventHandler"/>
+        </view>
+    </keyboard>
+</framework>

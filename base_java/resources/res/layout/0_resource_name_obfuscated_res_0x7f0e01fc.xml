@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.widgets.SoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/0_resource_name_obfuscated_res_0x7f1502b3">
+    <include android:layout_gravity="center_vertical" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b029c" android:layout_width="match_parent" android:layout_height="?attr/0_resource_name_obfuscated_res_0x7f040132" android:layout_marginStart="@dimen/0_resource_name_obfuscated_res_0x7f070165" android:layout_marginEnd="@dimen/0_resource_name_obfuscated_res_0x7f070165" layout="@layout/0_resource_name_obfuscated_res_0x7f0e00fb"/>
+</com.google.android.libraries.inputmethod.widgets.SoftKeyboardView>

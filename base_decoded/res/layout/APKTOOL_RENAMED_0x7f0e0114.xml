@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_marginHorizontal="@dimen/APKTOOL_RENAMED_0x7f070180" app:APKTOOL_RENAMED_0x7f04071f="true" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed">
+        <TextView android:gravity="center_horizontal" android:id="@id/APKTOOL_RENAMED_0x7f0b0406" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/APKTOOL_RENAMED_0x7f1502c6" />
+    </ScrollView>
+    <ImageView android:id="@id/APKTOOL_RENAMED_0x7f0b0403" android:tag=".fast-access-bar-arrow" android:layout_width="55.0dp" android:layout_height="25.0dp" android:src="@drawable/APKTOOL_RENAMED_0x7f080547" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070179" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

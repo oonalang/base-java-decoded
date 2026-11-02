@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" style="@style/APKTOOL_RENAMED_0x7f150235">
+        <com.google.android.libraries.inputmethod.widgets.CopyImageSourceView android:id="@id/APKTOOL_RENAMED_0x7f0b01e9" android:layout_width="2.0dp" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f0709e3" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" />
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a55" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040740="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15112e" />
+        <com.google.android.libraries.inputmethod.companionwidget.WidgetAccessPointsPanel android:id="@id/APKTOOL_RENAMED_0x7f0b2a50" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04073f="@id/APKTOOL_RENAMED_0x7f0b2a55" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f151132" />
+        <com.google.android.libraries.inputmethod.companionwidget.WidgetAccessPointsPanel android:id="@id/APKTOOL_RENAMED_0x7f0b2a4e" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072d="@id/APKTOOL_RENAMED_0x7f0b2a65" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f151132" />
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@id/APKTOOL_RENAMED_0x7f0b2a65" app:APKTOOL_RENAMED_0x7f040726="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f04072c="APKTOOL_RENAMED_0x7f0b06ed" app:APKTOOL_RENAMED_0x7f040744="APKTOOL_RENAMED_0x7f0b06ed" style="@style/APKTOOL_RENAMED_0x7f15112e" />
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e080d" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

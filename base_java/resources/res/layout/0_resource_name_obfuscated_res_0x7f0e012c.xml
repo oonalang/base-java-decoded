@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/0_resource_name_obfuscated_res_0x7f1509d0" style="@style/0_resource_name_obfuscated_res_0x7f1502e7">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0156" android:contentDescription="@null" style="@style/0_resource_name_obfuscated_res_0x7f1502e8"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp">
+            <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01ad" android:tint="?attr/0_resource_name_obfuscated_res_0x7f0404c0" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140521" android:importantForAccessibility="no" style="@style/0_resource_name_obfuscated_res_0x7f15077b"/>
+            <com.google.android.libraries.inputmethod.widgets.text.TransformationTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01b0" style="@style/0_resource_name_obfuscated_res_0x7f15077e"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

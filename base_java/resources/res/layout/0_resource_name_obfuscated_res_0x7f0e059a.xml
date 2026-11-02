@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150364">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/0_resource_name_obfuscated_res_0x7f1501f8">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0152" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" android:paddingEnd="2dp" app:minimumScale="0.7" app:scaleMode="1" style="@style/0_resource_name_obfuscated_res_0x7f1503af"/>
+            <ImageView android:visibility="visible" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/0_resource_name_obfuscated_res_0x7f08069a" android:contentDescription="@string/0_resource_name_obfuscated_res_0x7f140460" android:layout_marginEnd="@dimen/0_resource_name_obfuscated_res_0x7f0708e3" style="@style/0_resource_name_obfuscated_res_0x7f150319"/>
+        </LinearLayout>
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f7" android:layout_toRightOf="@+id/0_resource_name_obfuscated_res_0x7f0b0152" style="@style/0_resource_name_obfuscated_res_0x7f151134"/>
+    </RelativeLayout>
+</FrameLayout>

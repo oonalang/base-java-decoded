@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/APKTOOL_RENAMED_0x7f0b045e" android:tag=".jarvis-prompt-content-holder" android:background="@drawable/APKTOOL_RENAMED_0x7f0805f4" android:paddingBottom="6.0dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/APKTOOL_RENAMED_0x7f0b0463" android:paddingTop="10.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f070395" android:layout_alignParentBottom="true">
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0e0197" />
+    </FrameLayout>
+</RelativeLayout>

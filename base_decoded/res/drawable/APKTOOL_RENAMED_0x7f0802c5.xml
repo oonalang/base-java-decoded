@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingTop="?APKTOOL_RENAMED_0x7f0402bd" android:paddingBottom="?APKTOOL_RENAMED_0x7f0402bc" android:paddingStart="?APKTOOL_RENAMED_0x7f040238" android:paddingEnd="?APKTOOL_RENAMED_0x7f040238"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/APKTOOL_RENAMED_0x7f0802c4" android:top="?APKTOOL_RENAMED_0x7f0402bd" android:bottom="?APKTOOL_RENAMED_0x7f0402bc" android:start="?APKTOOL_RENAMED_0x7f040238" android:end="?APKTOOL_RENAMED_0x7f040238" />
+</layer-list>

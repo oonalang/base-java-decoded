@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="10dp" android:layout_height="10dp">
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b042e" android:tag=".jarvis_genai_color_1" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b042f" android:tag=".jarvis_genai_color_2" android:layout_width="0dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0430" android:tag=".jarvis_genai_color_3" android:layout_width="0dp" android:layout_height="0dp"/>
+</FrameLayout>

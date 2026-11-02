@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.emojikitchenbrowse.EmojiKitchenBrowseSearchKeyboard">
+        <if enable_simplified_expression_keyboard="true">
+            <view direction="right_to_left" layout="@attr/0_resource_name_obfuscated_res_0x7f0400cb" scalable="false" type="header">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171236"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e62"/>
+            </view>
+        </if>
+        <else>
+            <view direction="right_to_left" layout="@attr/0_resource_name_obfuscated_res_0x7f0400ca" scalable="false" type="header">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171236"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170e62"/>
+            </view>
+        </else>
+        <view id="@+id/0_resource_name_obfuscated_res_0x7f0b0727" layout="@layout/0_resource_name_obfuscated_res_0x7f0e064a"/>
+    </keyboard>
+</framework>

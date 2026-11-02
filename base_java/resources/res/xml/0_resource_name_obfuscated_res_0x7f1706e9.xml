@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class=".latin.keyboard.LatinJapanesePrimeKeyboard" popup="@attr/0_resource_name_obfuscated_res_0x7f040279">
+        <view direction="bottom_to_top" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0254" scalable="false" type="header">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f1e"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c63"/>
+        </view>
+        <if keyboard_mode="split">
+            <if split_keyboard_handedness_ja="right">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0238" type="radial"/>
+            </if>
+            <else_if split_keyboard_handedness_ja="left">
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0237" type="radial"/>
+            </else_if>
+            <else>
+                <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0236" type="radial"/>
+            </else>
+            <view type="radial">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171047"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f0b"/>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171051"/>
+            </view>
+        </if>
+        <else_if device="tablet" device_size="large" keyboard_mode="normal">
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e0239" type="radial"/>
+        </else_if>
+        <else>
+            <view layout="@layout/0_resource_name_obfuscated_res_0x7f0e023a" type="radial"/>
+        </else>
+        <view type="radial">
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170ec3"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f08"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17104b"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170ef9"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f17120c"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171045"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170aad"/>
+            <if keyboard_mode="split">
+                <if split_keyboard_handedness_ja="right|left">
+                    <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171050"/>
+                </if>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a60"/>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a5b"/>
+            </if>
+            <else>
+                <include href="@xml/0_resource_name_obfuscated_res_0x7f170a5a"/>
+            </else>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170a51"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c37"/>
+            <include href="@xml/0_resource_name_obfuscated_res_0x7f170c04"/>
+        </view>
+    </keyboard>
+</framework>

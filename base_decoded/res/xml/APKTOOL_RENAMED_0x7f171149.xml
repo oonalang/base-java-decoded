@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/APKTOOL_RENAMED_0x7f170ef4" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b2679">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20d6" press_data="်" press_label="◌်" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20e0" press_data="္" press_label="◌္" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20f1" press_data="ိ" press_label="◌ိ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20eb" long_press_data="ော" long_press_label="◌ော" press_data="ာ" press_label="◌ာ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20ee" press_data="ေ" press_label="◌ေ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20f2" press_data="ီ" press_label="◌ီ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20fb" press_data="ါ" press_label="◌ါ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20fc" press_data="ု" press_label="◌ု" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20fe" press_data="ူ" press_label="◌ူ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20ed" press_data="ဲ" press_label="◌ဲ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20e1" press_data="း" press_label="◌း" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2063" press_data="ြ" press_label="◌ြ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2060" press_data="ှ" press_label="◌ှ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20d7" press_data="့" press_label="◌့" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2065" press_data="ျ" press_label="◌ျ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2064" press_data="ွ" press_label="◌ွ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20d5" press_data="ံ" press_label="◌ံ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/APKTOOL_RENAMED_0x7f0b2680">
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2078" press_data="ဆ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20bd" press_data="တ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b209d" press_data="န" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2094" press_data="မ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2073" press_data="အ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a6" press_data="ပ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b208a" press_data="က" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b209e" press_data="င" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a9" press_data="သ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2077" press_data="စ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20e5" long_press_data="၎,၍" merge_index="-1" press_data="၏" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a7" press_data="ဖ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20be" press_data="ထ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b208b" press_data="ခ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b208f" press_data="လ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2076" press_data="ဘ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a3" press_data="ည" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2085" press_data="ဟ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20c9" press_data="ယ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b207c" press_data="ဍ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2089" press_data="ဈ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2086" press_data="ဣ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20c8" press_data="ဝ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2087" press_data="ဤ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a8" press_data="ရ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20c2" press_data="ဥ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2074" long_press_data="ဪ" merge_index="-1" press_data="ဩ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a0" press_data="ဏ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20e6" press_data="၌" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2075" press_data="ဗ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2082" press_data="ဂ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2084" press_data="ဿ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2079" press_data="ဒ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b207e" press_data="ဓ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20bf" press_data="ဋ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2088" press_data="ဇ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20c1" press_data="ဌ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2083" press_data="ဃ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b2093" press_data="ဠ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b207d" press_data="ဎ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20a4" press_data="ဉ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20c3" press_data="ဦ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b207f" press_data="ဧ" />
+            <softkey id="@id/APKTOOL_RENAMED_0x7f0b20e7" long_press_data="!" press_data="႟" />
+        </softkey_list>
+    </softkeys>
+</framework>

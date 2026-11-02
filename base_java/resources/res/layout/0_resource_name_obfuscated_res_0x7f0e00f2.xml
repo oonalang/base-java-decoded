@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:tag=".sticker-header-item" android:background="@drawable/0_resource_name_obfuscated_res_0x7f080298" android:layout_width="?attr/0_resource_name_obfuscated_res_0x7f040130" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b02af" android:layout_width="24dp" android:layout_height="24dp"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_RENAMED_0x7f0b02aa" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f0700f0" android:layout_height="@dimen/APKTOOL_RENAMED_0x7f0700ed" android:foreground="@drawable/APKTOOL_RENAMED_0x7f08038b" android:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f0700ee"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:tag="?APKTOOL_RENAMED_0x7f040122" android:background="@drawable/APKTOOL_RENAMED_0x7f080265" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <com.google.android.apps.inputmethod.libs.expression.widget.AnimateOnVisibleAndSelectedImageView android:layout_gravity="center" android:id="@id/APKTOOL_RENAMED_0x7f0b02ab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" style="@style/APKTOOL_RENAMED_0x7f150700" />
+</FrameLayout>

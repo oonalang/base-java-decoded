@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/APKTOOL_RENAMED_0x7f150002" android:clipToPadding="false" style="@style/APKTOOL_RENAMED_0x7f150004"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center_vertical" android:layout_width="@dimen/APKTOOL_RENAMED_0x7f070055" android:layout_height="wrap_content" layout="@layout/APKTOOL_RENAMED_0x7f0e001c" />
+    <com.google.android.libraries.inputmethod.accesspoint.widget.AccessPointsBarExpandLabelView android:textSize="14.0dp" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_RENAMED_0x7f0b05f3" android:tag=".label.access-point-item.top-bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:paddingStart="4.0dp" app:APKTOOL_RENAMED_0x7f040664="?APKTOOL_RENAMED_0x7f040160" />
+</LinearLayout>

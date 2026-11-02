@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b01d4" android:visibility="gone" android:layout_marginTop="10dp" android:layout_marginStart="81dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/0_resource_name_obfuscated_res_0x7f15023d">
+    <ImageView style="@style/0_resource_name_obfuscated_res_0x7f15023b"/>
+</FrameLayout>

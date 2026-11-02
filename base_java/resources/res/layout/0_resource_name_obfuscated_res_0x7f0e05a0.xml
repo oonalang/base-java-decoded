@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/0_resource_name_obfuscated_res_0x7f150363">
+    <ImageView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0156" style="@style/0_resource_name_obfuscated_res_0x7f150752"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/0_resource_name_obfuscated_res_0x7f1501f8">
+        <com.google.android.libraries.inputmethod.widgets.text.AutoCenterScaleTextView android:layout_gravity="center" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f3" android:layout_width="0dp" android:layout_weight="1" app:alignToBaseline="false" app:enableRelayout="false" app:minimumScale="0.7" app:scaleMode="1" style="@style/0_resource_name_obfuscated_res_0x7f1503ad"/>
+        <TextView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b05f5" android:visibility="gone" style="@style/0_resource_name_obfuscated_res_0x7f1503e9"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b03c1" style="@style/0_resource_name_obfuscated_res_0x7f15034a">
+    <com.google.android.libraries.inputmethod.widgets.NonLinearScaleImageView android:visibility="visible" android:src="@drawable/0_resource_name_obfuscated_res_0x7f080575" style="@style/0_resource_name_obfuscated_res_0x7f150326"/>
+</FrameLayout>

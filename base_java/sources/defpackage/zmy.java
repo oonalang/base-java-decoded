@@ -1,0 +1,22 @@
+package defpackage;
+/* compiled from: PG */
+/* renamed from: zmy  reason: default package */
+/* loaded from: classes3.dex */
+public final class zmy implements xzq {
+    public static final zmy a = new Object();
+    private static final xzp b;
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [zmy, java.lang.Object] */
+    static {
+        xzo xzoVar = new xzo("errorCode");
+        adjb adjbVar = new adjb((byte[]) null, (byte[]) null);
+        adjbVar.a = 1;
+        xzoVar.b(adjbVar.g());
+        b = xzoVar.a();
+    }
+
+    @Override // defpackage.xzm
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        ((xzr) obj2).a(b, ((zuv) obj).a);
+    }
+}

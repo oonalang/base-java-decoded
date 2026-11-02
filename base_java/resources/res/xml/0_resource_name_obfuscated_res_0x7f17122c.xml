@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10ac" popup_timing="ON_TOUCH">
+            <if expressions="policy_transparency">
+                <action data="@string/0_resource_name_obfuscated_res_0x7f1405ee" keycode="KEYCODE_HOME" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f080558" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="linear"/>
+            </if>
+            <else>
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="KEYCODE_SOFT_RIGHT" popup_icon="@drawable/0_resource_name_obfuscated_res_0x7f080558" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="linear"/>
+            </else>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10ae" popup_timing="ON_TOUCH">
+            <if expressions="policy_transparency">
+                <action data="@string/0_resource_name_obfuscated_res_0x7f1405ee" keycode="KEYCODE_HOME" popup_icon="0x7f0805a1" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027f" type="linear"/>
+            </if>
+            <else>
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="KEYCODE_SOFT_RIGHT" popup_icon="0x7f0805a1" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027f" type="linear"/>
+            </else>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10ad" popup_timing="ON_TOUCH">
+            <if expressions="policy_transparency">
+                <action data="@string/0_resource_name_obfuscated_res_0x7f1405ee" keycode="KEYCODE_HOME" popup_icon="0x7f0805a1" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040281" type="linear"/>
+            </if>
+            <else>
+                <action data="com.google.android.apps.inputmethod.libs.expression.extension.IEmojiOrGifExtension" keycode="KEYCODE_SOFT_RIGHT" popup_icon="0x7f0805a1" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040281" type="linear"/>
+            </else>
+        </softkey>
+        <if expressions="policy_transparency">
+            <softkey alpha="@integer/0_resource_name_obfuscated_res_0x7f0c00ca" id="@+id/0_resource_name_obfuscated_res_0x7f0b107a" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0741">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+            <softkey alpha="@integer/0_resource_name_obfuscated_res_0x7f0c00ca" id="@+id/0_resource_name_obfuscated_res_0x7f0b107b" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0749">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+            <softkey alpha="@integer/0_resource_name_obfuscated_res_0x7f0c00ca" id="@+id/0_resource_name_obfuscated_res_0x7f0b10d9" layout="@layout/0_resource_name_obfuscated_res_0x7f0e076c">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+        </if>
+        <else>
+            <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" id="@+id/0_resource_name_obfuscated_res_0x7f0b107a" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0741">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+            <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" id="@+id/0_resource_name_obfuscated_res_0x7f0b107b" layout="@layout/0_resource_name_obfuscated_res_0x7f0e0749">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+            <softkey alpha="@attr/0_resource_name_obfuscated_res_0x7f040175" id="@+id/0_resource_name_obfuscated_res_0x7f0b10d9" layout="@layout/0_resource_name_obfuscated_res_0x7f0e076c">
+                <icon location="@+id/0_resource_name_obfuscated_res_0x7f0b03c0" value="@drawable/0_resource_name_obfuscated_res_0x7f080558"/>
+            </softkey>
+        </else>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10af" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1405b4" keycode="KEYCODE_BACK" popup_icon="0x7f08059e" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040271" type="linear"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10b1" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1405b4" keycode="KEYCODE_BACK" popup_icon="0x7f08059f" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f04027f" type="linear"/>
+        </softkey>
+        <softkey id="@+id/0_resource_name_obfuscated_res_0x7f0b10b0" popup_timing="ON_TOUCH">
+            <action data="@string/0_resource_name_obfuscated_res_0x7f1405b4" keycode="KEYCODE_BACK" popup_icon="0x7f08059f" popup_layout="@attr/0_resource_name_obfuscated_res_0x7f040281" type="linear"/>
+        </softkey>
+    </softkeys>
+</framework>

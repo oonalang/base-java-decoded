@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework pk_language_tag="">
+    <keyboard_group pk_language_tag="{pk_language_tag}" variant="pcqwerty">
+        <include force_show_number_row="true" href="@xml/APKTOOL_RENAMED_0x7f170003" support_a11y_keyboard="true" />
+        <keyboard def="{lang_def}" type="prime">
+            <merge def="@xml/APKTOOL_RENAMED_0x7f1707e3" />
+        </keyboard>
+        <include href="@xml/APKTOOL_RENAMED_0x7f170913" />
+    </keyboard_group>
+</framework>

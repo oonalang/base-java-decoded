@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/0_resource_name_obfuscated_res_0x7f150cfa" app:clipRadius="@dimen/0_resource_name_obfuscated_res_0x7f0709e7" style="@style/0_resource_name_obfuscated_res_0x7f150232">
+    <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b014d"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0713" style="@style/0_resource_name_obfuscated_res_0x7f150235">
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a55" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a52" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginEnd="40dp" style="@style/0_resource_name_obfuscated_res_0x7f15112e"/>
+        <com.google.android.libraries.inputmethod.widgets.SoftKeyView android:id="@+id/0_resource_name_obfuscated_res_0x7f0b2a65" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/0_resource_name_obfuscated_res_0x7f0b2a52" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginStart="2dp" style="@style/0_resource_name_obfuscated_res_0x7f15112e">
+            <tag android:value="true" android:id="@+id/0_resource_name_obfuscated_res_0x7f0b0214"/>
+        </com.google.android.libraries.inputmethod.widgets.SoftKeyView>
+        <include layout="@layout/0_resource_name_obfuscated_res_0x7f0e080e"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.libraries.inputmethod.companionwidget.widget.WidgetSoftKeyboardView>

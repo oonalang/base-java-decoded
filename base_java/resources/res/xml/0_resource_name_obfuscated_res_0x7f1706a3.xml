@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view type="linear">
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f0a"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170f14"/>
+            <if keyboard_mode="split">
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171206"/>
+            </if>
+            <else>
+                <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171205"/>
+            </else>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f170faf"/>
+            <softkeys href="@xml/0_resource_name_obfuscated_res_0x7f171235"/>
+        </view>
+    </keyboard>
+</framework>
