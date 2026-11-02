@@ -2,11 +2,11 @@
 
 An experimental Android keyboard clone, package **`com.gboard.eli`**, with a dedicated **AI Grammar** row above the existing keyboard. The model default is **`gemini-3.5-flash-lite`**.
 
-The latest APK includes the current source and fixes the reproduced Android 13 settings startup crash, rounded-bar background, collapse behavior and stale shift-icon repair. See [UI repair and verification](aigrammar/UI-REPAIR.md).
+The latest APK anchors the grammar bar immediately above the actual keyboard, including full-height input windows. It restores Gboard’s original shift artwork and preserves native theme/caps-lock colors. The settings-startup, rounded background and icon-only-collapse fixes are retained. See [anchor/theme repair and verification](aigrammar/ANCHOR-THEME-REPAIR.md).
 
 The APK build, resource restoration, signing and static checks pass for the published artifact. It still needs an Android phone test and a live Gemini test. Earlier test APKs exposed startup and missing-resource failures that are documented below.
 
-[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-ui-fix.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
+[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-anchor-fix.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
 
 ## Configure
 
@@ -19,7 +19,7 @@ Saved model preferences survive updates; change an older saved model manually. A
 - The grammar bar is now theme-aware, collapses with the **V** button, remembers its collapsed state, exposes a gear button, and shows requests/errors instead of failing silently.
 - Chat and search fields that set Android's `TYPE_TEXT_FLAG_NO_SUGGESTIONS` are no longer skipped. Password, email, URL, private-learning and non-text fields remain excluded.
 - Gemini 3 responses are parsed from real text parts, `maxOutputTokens` is larger, and the client waits longer before reporting a network failure.
-- The shift glyph is supplied as tintable vectors and the currently visible shift content is resolved afresh after case/layout changes; opacity is restored while retaining its state drawable.
+- Original shift glyphs are restored. Current visible key content is resolved after case/layout changes; native tint, state and nonzero opacity are retained.
 
 ## Repository map
 

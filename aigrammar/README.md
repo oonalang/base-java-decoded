@@ -271,3 +271,7 @@ For deeper debugging, collect a full log only on a disposable test field; upstre
 ### Settings, collapse and shift follow-up
 
 The rebuilt `Gboard-By-Eliwoa-ui-fix.apk` includes the latest source. [UI-REPAIR.md](UI-REPAIR.md) supersedes earlier descriptions of bar placement, automatic expansion and the cached shift ImageView. The settings crash was reproduced in an API 33 framework test and repaired. Nine UI tests and all 50 earlier checks pass; device behavior and live Gemini remain to be verified. See [the current verification](reports/ui-repair-verification.json).
+
+### Full-height placement and shift theme follow-up
+
+The latest download is `Gboard-By-Eliwoa-anchor-fix.apk`. [ANCHOR-THEME-REPAIR.md](ANCHOR-THEME-REPAIR.md) records the measured full-height layout regression, bottom anchoring, native touch-inset hook and restoration of native shift tint/caps-lock artwork. Twenty UI tests plus the 50 earlier checks pass. `reports/anchor-verification.json` is the current APK verification; earlier reports remain historical.

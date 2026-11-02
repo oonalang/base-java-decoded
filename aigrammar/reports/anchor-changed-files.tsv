@@ -1,0 +1,32 @@
+path	reason
+.gitattributes	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+COMPACT.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+CONTEXT.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+README.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+aigrammar/ANCHOR-THEME-REPAIR.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+aigrammar/README.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+aigrammar/UI-REPAIR.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+aigrammar/reports/anchor-build-network.trace	Record signed APK/resource/image verification and offline build/UI test evidence.
+aigrammar/reports/anchor-build.log	Record signed APK/resource/image verification and offline build/UI test evidence.
+aigrammar/reports/anchor-signing-certificate.txt	Record signed APK/resource/image verification and offline build/UI test evidence.
+aigrammar/reports/anchor-ui-tests.log	Record signed APK/resource/image verification and offline build/UI test evidence.
+aigrammar/reports/anchor-verification.json	Record signed APK/resource/image verification and offline build/UI test evidence.
+aigrammar/src/com/aigrammar/GrammarBridge.java	Anchor above the actual keyboard, preserve native touch regions and shift tint/state/opacity, and clean up layout listeners.
+aigrammar/tests/android/src/test/java/com/aigrammar/GrammarUiTest.java	Reproduce full-height placement with measured geometry and verify native Region union, visibility, resizing and shift theme state.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b0.webp	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b1.webp	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/res/drawable-xxhdpi/APKTOOL_RENAMED_0x7f0805b2.webp	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0805b0.xml	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0805b1.xml	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/res/drawable/APKTOOL_RENAMED_0x7f0805b2.xml	Restore original locked/off/on density artwork and remove substituted white vectors; preserve original resource IDs.
+base_decoded/smali/pbb.smali	Union the grammar row into native touch/inset calculation with one /range call at the confirmed shared branch; locals and parameter registers unchanged.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$1.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$2.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$3.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$4.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$5.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$Snapshot.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge.smali	Regenerate helper smali from Java 8 sources with the same certificate pin.
+releases/Gboard-By-Eliwoa-anchor-fix.apk	Publish the same-signer anchor/theme update APK.
+releases/README.md	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.
+releases/SHA256SUMS.txt	Document current behavior, APK checksum, exact repair evidence and remaining phone tests.

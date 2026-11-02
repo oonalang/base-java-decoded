@@ -34,17 +34,17 @@
 .method constructor <init>(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;JILjava/lang/String;Ljava/lang/String;Lcom/aigrammar/SentenceSlice;)V
     .registers 9
 
-    .line 695
+    .line 739
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 696
+    .line 740
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->connection:Landroid/view/inputmethod/InputConnection;
 
     iput-object p2, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->editor:Landroid/view/inputmethod/EditorInfo;
 
     iput-wide p3, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->revision:J
 
-    .line 697
+    .line 741
     iput p5, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->cursor:I
 
     iput-object p6, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->before:Ljava/lang/String;
@@ -53,6 +53,6 @@
 
     iput-object p8, p0, Lcom/aigrammar/GrammarBridge$Snapshot;->slice:Lcom/aigrammar/SentenceSlice;
 
-    .line 698
+    .line 742
     return-void
 .end method

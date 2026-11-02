@@ -1,0 +1,30 @@
+{
+  "apk": "releases/Gboard-By-Eliwoa-anchor-fix.apk",
+  "apk_sha256": "044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689",
+  "apk_bytes": 94964698,
+  "source_baseline": "c3f8602204dc242924ea56bd91ebdcb07370b1d0",
+  "signer_sha256": "835cfd33f94e1cc744655d3e48abdcd0f56c8f0865aa09c5aec830b5ce51e233",
+  "ui_tests_sdk": 33,
+  "ui_tests": 20,
+  "ui_test_failures": 0,
+  "native_graphics_for_region_tests": true,
+  "policy_sentence_tests": 41,
+  "identity_tests": 9,
+  "original_native_libraries_byte_identical": 15,
+  "original_dex_files_byte_identical": 3,
+  "primary_dex_change": "One /range grammar insets hook in pbb.onComputeInsets; .locals 19 unchanged",
+  "all_public_resource_ids_verified": 34193,
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex"
+  ],
+  "original_shift_glyph_files_restored_and_hash_verified_in_APK": 3,
+  "build_IP_connects": 0,
+  "new_APK_device_tested": false,
+  "live_Gemini_tested": false,
+  "anchor": "Row bottom = actual keyboard base visual top minus 2dp, including full-height/wrapped roots and native offsets",
+  "shift_theme": "Native tint, state drawable, selected/activated and nonzero opacity retained; no forced color filter or OFF fallback"
+}

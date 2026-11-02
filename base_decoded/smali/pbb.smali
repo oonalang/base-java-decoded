@@ -9899,6 +9899,9 @@
     .line 302
     .line 303
     :cond_a
+    # AI Grammar: preserve native insets and include the sibling grammar row.
+    invoke-static/range {p0 .. p1}, Lcom/aigrammar/GrammarBridge;->insets(Landroid/inputmethodservice/InputMethodService;Landroid/inputmethodservice/InputMethodService$Insets;)V
+
     invoke-static {}, Lqew;->b()Lqew;
 
     .line 304

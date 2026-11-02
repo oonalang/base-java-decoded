@@ -3,12 +3,12 @@
 .source "GrammarBridge.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/aigrammar/GrammarBridge;->attachRow(Landroid/view/View;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/aigrammar/GrammarBridge;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 341
+    .line 56
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$2;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,14 +35,15 @@
 
 
 # virtual methods
-.method public run()V
-    .registers 2
+.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .registers 10
 
-    .line 342
-    iget-object v0, p0, Lcom/aigrammar/GrammarBridge$2;->this$0:Lcom/aigrammar/GrammarBridge;
+    .line 59
+    iget-object p1, p0, Lcom/aigrammar/GrammarBridge$2;->this$0:Lcom/aigrammar/GrammarBridge;
 
-    # invokes: Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
-    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$100(Lcom/aigrammar/GrammarBridge;)V
+    # invokes: Lcom/aigrammar/GrammarBridge;->updateRowPosition()V
+    invoke-static {p1}, Lcom/aigrammar/GrammarBridge;->access$100(Lcom/aigrammar/GrammarBridge;)V
 
+    .line 60
     return-void
 .end method

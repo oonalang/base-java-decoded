@@ -1,5 +1,7 @@
 # Settings crash, rounded bar, collapse and shift repair
 
+Follow-up: the c3f86022 APK revealed a full-height-window placement regression and a forced shift tint. [ANCHOR-THEME-REPAIR.md](ANCHOR-THEME-REPAIR.md) documents their repair and supersedes the placement, tint and current-dex details below; this document records the preceding pass.
+
 Baseline: `e24134cdf5b8ea443198a3b8f5345fe05c2e50a1`, including the changes in `22243b37`. All other source changes from that revision are retained.
 
 ## Settings crash and both entry points

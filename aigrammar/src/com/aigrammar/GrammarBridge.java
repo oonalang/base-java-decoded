@@ -5,8 +5,7 @@ import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
+import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.RippleDrawable;
@@ -38,7 +37,6 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     // R.id.key_pos_shift and the default SoftKeyView icon slot.
     private static final int KEY_SHIFT = 0x7f0b05b0;
     private static final int KEY_ICON = 0x7f0b03c0;
-    private static final int SHIFT_OFF_ICON = 0x7f0805b1;
     private final InputMethodService ime;
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable timer = new Runnable() {
@@ -52,10 +50,17 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private ImageButton settings;
     private ImageButton collapse;
     private View keyboardBase;
+    private ViewGroup rowRoot;
     private int baseTopMargin;
+    private final View.OnLayoutChangeListener rowPositionListener =
+            new View.OnLayoutChangeListener() {
+        @Override public void onLayoutChange(View view, int left, int top, int right,
+                int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+            updateRowPosition();
+        }
+    };
     private ViewTreeObserver shiftObserver;
     private ViewTreeObserver.OnPreDrawListener shiftPreDraw;
-    private PorterDuffColorFilter shiftFilter;
     private EditorInfo editor;
     private boolean active;
     private boolean collapsed;
@@ -148,6 +153,24 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         instance = null;
     }
 
+    /** Extend the native IME region with only our visible row, in window coordinates. */
+    public static void insets(InputMethodService ime, InputMethodService.Insets insets) {
+        GrammarBridge bridge = instance;
+        if (bridge == null || bridge.ime != ime || !bridge.active || bridge.row == null
+                || bridge.keyboardBase == null || !bridge.keyboardBase.isShown()
+                || !bridge.row.isShown() || bridge.row.getWidth() <= 0
+                || bridge.row.getHeight() <= 0) return;
+        int[] location = new int[2];
+        bridge.row.getLocationInWindow(location);
+        insets.contentTopInsets = Math.min(insets.contentTopInsets, location[1]);
+        insets.visibleTopInsets = Math.min(insets.visibleTopInsets, location[1]);
+        if (insets.touchableInsets == InputMethodService.Insets.TOUCHABLE_INSETS_REGION) {
+            insets.touchableRegion.op(location[0], location[1],
+                    location[0] + bridge.row.getWidth(), location[1] + bridge.row.getHeight(),
+                    Region.Op.UNION);
+        }
+    }
+
     private void dispose() {
         invalidate();
         if (registered != null) registered.unregisterOnSharedPreferenceChangeListener(this);
@@ -168,13 +191,33 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     }
 
     private void restoreBaseMargin() {
+        if (rowRoot != null) rowRoot.removeOnLayoutChangeListener(rowPositionListener);
         if (keyboardBase != null
                 && keyboardBase.getLayoutParams() instanceof FrameLayout.LayoutParams) {
+            keyboardBase.removeOnLayoutChangeListener(rowPositionListener);
             FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) keyboardBase.getLayoutParams();
             params.topMargin = baseTopMargin;
             keyboardBase.setLayoutParams(params);
         }
         keyboardBase = null;
+        rowRoot = null;
+    }
+
+    private void updateRowPosition() {
+        if (row == null || keyboardBase == null || rowRoot == null) return;
+        boolean laidOut = rowRoot.getHeight() > 0 && keyboardBase.getHeight() > 0
+                && keyboardBase.getVisibility() == View.VISIBLE;
+        row.setVisibility(laidOut ? View.VISIBLE : View.INVISIBLE);
+        if (!laidOut) return;
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) row.getLayoutParams();
+        // InputView can be full-height while its keyboard-base remains at the bottom.
+        // Follow the actual visual top, including native offsets, rather than root.top.
+        int margin = rowRoot.getHeight() - rowRoot.getPaddingBottom()
+                - Math.round(keyboardBase.getY()) + dp(2);
+        if (params.bottomMargin != margin) {
+            params.bottomMargin = margin;
+            row.setLayoutParams(params);
+        }
     }
 
     private Drawable drawable(int id) {
@@ -209,8 +252,6 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             error = 0xFFB3261E;
             stroke = 0x1A000000;
         }
-        shiftFilter = new PorterDuffColorFilter(
-                night ? Color.WHITE : Color.rgb(27, 36, 48), PorterDuff.Mode.SRC_IN);
     }
 
     private Drawable barBackground() {
@@ -260,6 +301,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         keyboardBase = base;
         baseTopMargin = ((FrameLayout.LayoutParams) base.getLayoutParams()).topMargin;
         FrameLayout parent = (FrameLayout) root;
+        rowRoot = parent;
         row = new LinearLayout(ime);
         row.setOrientation(LinearLayout.HORIZONTAL);
         row.setGravity(Gravity.CENTER_VERTICAL);
@@ -334,7 +376,10 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         collapse.setOnClickListener(view -> setCollapsed(!collapsed, true));
         row.addView(collapse, new LinearLayout.LayoutParams(dp(38), dp(38)));
 
-        parent.addView(row, new FrameLayout.LayoutParams(-1, dp(48), Gravity.TOP | Gravity.LEFT));
+        row.setVisibility(View.INVISIBLE);
+        parent.addView(row, new FrameLayout.LayoutParams(-1, dp(48), Gravity.BOTTOM | Gravity.LEFT));
+        keyboardBase.addOnLayoutChangeListener(rowPositionListener);
+        parent.addOnLayoutChangeListener(rowPositionListener);
         applyCollapsed();
         refreshToggle();
         refreshStatus();
@@ -394,6 +439,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         FrameLayout.LayoutParams baseParams = (FrameLayout.LayoutParams) keyboardBase.getLayoutParams();
         baseParams.topMargin = baseTopMargin + rowParams.height + dp(4);
         keyboardBase.setLayoutParams(baseParams);
+        updateRowPosition();
         settings.setVisibility(collapsed ? View.GONE : View.VISIBLE);
         collapse.setVisibility(collapsed ? View.GONE : View.VISIBLE);
         if (collapsed) hideChip();
@@ -597,6 +643,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
     private void repairShiftIcon() {
         try {
+            updateRowPosition();
             Window window = ime.getWindow() == null ? null : ime.getWindow().getWindow();
             View root = window == null ? null : window.getDecorView();
             if (root == null) return;
@@ -644,14 +691,11 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
     private void applyShiftIcon(ImageView icon) {
         if (icon.getVisibility() != View.VISIBLE) icon.setVisibility(View.VISIBLE);
-        if (icon.getAlpha() != 1f) icon.setAlpha(1f);
-        if (icon.getImageAlpha() != 255) icon.setImageAlpha(255);
-        if (icon.getColorFilter() != shiftFilter) icon.setColorFilter(shiftFilter);
-        Drawable drawable = icon.getDrawable();
-        if (drawable == null) {
-            try { icon.setImageResource(SHIFT_OFF_ICON); }
-            catch (RuntimeException ignored) { }
-        }
+        // Native rhz.e()/onb.s() own the themed tint and off/on/locked drawable.
+        // Repair a fully hidden icon without bleaching native color/translucency
+        // or replacing an on/locked state with the off glyph during a transition.
+        if (icon.getAlpha() == 0f) icon.setAlpha(1f);
+        if (icon.getImageAlpha() == 0) icon.setImageAlpha(255);
     }
 
     private ImageView findImageView(View view) {

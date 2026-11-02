@@ -10,14 +10,14 @@ The original repository supplied `base_decoded/` and `base_java/`. `base_java/` 
 
 ## Current artifact and test status
 
-- Filename: `Gboard-By-Eliwoa-ui-fix.apk`.
+- Filename: `Gboard-By-Eliwoa-anchor-fix.apk`.
 - Source version: `18.4.1.985164140-release-arm64-v8a`, versionCode `176027078`.
-- APK SHA-256: `83b4cdfcbd3db194ec7b6befe559e0431e9983cb8cf3bb847a7c71846eff6477`.
+- APK SHA-256: `044b9b7a5f932deedac436e50cc7e9ba5e286054132a2aa5128914b5b1b36689`.
 - Signing certificate SHA-256: `835CFD33F94E1CC744655D3E48ABDCD0F56C8F0865AA09C5AEC830B5CE51E233` (public certificate fingerprint, not a private key).
 - Runtime target: Android arm64-v8a, API 32+. Earlier user testing was on Android 13.
 - Build, signature, alignment, unit and resource-graph checks pass.
 - **The newest resource-restored APK is awaiting device verification. The complete typing → API → chip → replacement flow has not been verified on a device, and no live API test was performed in the workspace.**
-- The rebuilt APK includes `22243b37` and the current UI repair: insets after content installation, independent rounded row, icon-only collapse and current-content shift repair. Nine Robolectric API 33 UI tests plus the 50 earlier checks pass. See [UI-REPAIR.md](aigrammar/UI-REPAIR.md) and the current verification JSON.
+- The rebuilt APK includes `22243b37` and the current UI repair: insets after content installation, independent rounded row, icon-only collapse and current-content shift repair. Twenty Robolectric API 33 UI tests plus the 50 earlier checks pass. See [UI-REPAIR.md](aigrammar/UI-REPAIR.md) and the current verification JSON.
 
 Failed earlier APKs must not be described as working. The latest APK includes fixes absent from those earlier builds. See GitHub Releases for the test artifact; source files and generated smali are included in the repository.
 
@@ -56,8 +56,8 @@ Preferences: `aigrammar_prefs`, keys `api_key`, `model`, `enabled`, `collapsed`;
 
 - `GrammarBridge` builds a theme-aware bar with a sparkle toggle, status line, green apply chip, gear button and a V collapse/expand button. The collapsed flag is stored in `aigrammar_prefs`; collapse leaves only a left restore icon and pauses checks; corrections cannot auto-expand it. Errors are shown on the bar and are retryable; a missing key links to settings.
 - `GrammarClient` sends `maxOutputTokens` 1024, uses 8 s connect / 20 s read timeouts, extracts non-thought text parts, accepts an unspecified finish reason, and maps HTTP failures to short user-facing messages. `thinkingConfig` is intentionally omitted so older model IDs still work.
-- The shift key is the only view repaired: Gboard's `key_pos_shift` / `SoftKeyView` icon gets an explicit visible state, full alpha and a theme-color filter. Its split bitmaps were replaced at the same public IDs with density-independent vector arrows.
-- New drawables: `aigrammar_gear`, `aigrammar_chevron`, plus the three shift vectors. `aigrammar_gear` / `aigrammar_chevron` use public IDs `0x7f080760` / `0x7f080761`; shift IDs stay `0x7f0805b0`–`0x7f0805b2`.
+- Shift repair resolves current visible content, preserving Gboard's original stateful tint, drawable and nonzero opacity. Only hidden/zero-alpha visibility is repaired; the three original density glyphs are restored.
+- New drawables: `aigrammar_gear` and `aigrammar_chevron`. `aigrammar_gear` / `aigrammar_chevron` use public IDs `0x7f080760` / `0x7f080761`; shift IDs stay `0x7f0805b0`–`0x7f0805b2`.
 - The published APK was not rebuilt because this workspace does not contain the private signing key. Running `aigrammar/build-termux.sh` with the existing keystore regenerates the smali and a signed update.
 
 The caller debounces 700 ms, reads a bounded sentence before the cursor and sends the sentence only. A 201-unit read distinguishes a complete <=200-unit suffix from a truncated long sentence. Short, unchanged or already-correct text produces no chip. Results arrive on the main looper. Counter-based cancellation rejects obsolete results; an in-flight socket may run until its 8-second connect / 20-second read timeout. Cancellation cannot recall text already sent.
@@ -96,7 +96,7 @@ Verified tooling: Java 8 source/target, R8 8.3.37, baksmali 2.5.2, apktool 3.0.3
 
 Evidence in `aigrammar/reports/` includes exact before/after patches, per-file reasons, 28 original package-string hits, restored-asset hashes, all 204 reference mappings, full build logs and resource verification JSON. Raw personal device logs and private Dropbox URLs are not published.
 
-Checks for the current published APK: 9 Android UI tests, 41 policy/sentence checks, 9 identity checks, five dex files, all original 34,071 public IDs preserved, all 34,193 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. The latest source is included in the newly signed UI-fix APK; that APK has not yet been device-tested. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
+Checks for the current published APK: 20 Android UI tests, 41 policy/sentence checks, 9 identity checks, five dex files, all original 34,071 public IDs preserved, all 34,193 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. The latest source is included in the newly signed UI-fix APK; that APK has not yet been device-tested. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
 
 ## Continue from here
 
@@ -104,8 +104,16 @@ The next meaningful step is a phone test of the latest APK: install as an update
 
 If it crashes, obtain the newest `com.gboard.eli` stack before editing; old log entries remain in the crash buffer. Do not repeatedly rebuild on a guessed cause or suppress metadata assertions to hide missing resources. Keep the original Gboard installed and selectable. Do not clear clone data or publish its private signing key/API key as a routine troubleshooting step.
 
-## Current UI repair handoff
+## Previous UI repair handoff (c3f86022)
 
-Source baseline `e24134cd`; only helper Java/generated smali, documentation/tests/reports and a new APK were changed. The original four dex files and all native libraries remain byte-identical. The settings exception was reproduced in Android framework tests; no fresh phone crash stack was received. Settings now configures window insets after `setContentView`. The grammar row lives beside the keyboard-base FrameLayout inside InputView, with a reserved top margin and full corner clipping. Collapsed state leaves only a left restore icon, preserves enabled state, pauses requests and cannot autoexpand. Shift repair resolves visible key content instead of keeping a stale ImageView, restoring view/image alpha while preserving native state glyphs.
+In the preceding c3f86022 pass, source baseline was `e24134cd`; only helper Java/generated smali, documentation/tests/reports and a new APK changed. For that earlier APK, the original four dex files and all native libraries were byte-identical. The current pass below adds a primary-dex inset hook. The settings exception was reproduced in Android framework tests; no fresh phone crash stack was received. Settings now configures window insets after `setContentView`. The grammar row lives beside the keyboard-base FrameLayout inside InputView, with a reserved top margin and full corner clipping. Collapsed state leaves only a left restore icon, preserves enabled state, pauses requests and cannot autoexpand. Shift repair resolves visible key content instead of keeping a stale ImageView, restoring view/image alpha while preserving native state glyphs.
 
 The signing backup was separately published at the owner's explicit request; do not describe that key as confidential or republish it as part of an unrelated fix. Continue using the existing signer for this installation unless the owner requests a migration. No Gemini API key has been provided to this workspace.
+
+## Anchor and native-theme follow-up
+
+The previous c3f86022 APK was phone-tested and its AI row appeared at the screen top while the keyboard remained below. Measured tests reproduce why: InputView may fill the IME window, with the keyboard base bottom-aligned. The current row uses bottom gravity and follows the native base's visual top with a 2dp gap; layout listeners and pre-draw updates follow resizing and native movement. It remains separate from the native rectangular background.
+
+One confirmed `/range` hook in `pbb.onComputeInsets` unions the actual visible row into REGION-mode touch bounds and includes it in top insets, preserving existing native modes/regions. Hidden-base/suspended/hidden-row guards are tested. The primary dex consequently changes; the remaining three original dex files and all native libraries are unchanged.
+
+The white filter and OFF fallback were removed from shift repair. Three original density WebPs replace the white vector substitutions. Native selected/activated state, drawable choice, tint and nonzero alpha remain owned by Gboard. Twenty Android UI tests (native graphics for Region checks) pass, as do the 50 earlier checks. The latest anchor-fix APK still needs phone and live Gemini verification. See [ANCHOR-THEME-REPAIR.md](aigrammar/ANCHOR-THEME-REPAIR.md) and `reports/anchor-verification.json`.

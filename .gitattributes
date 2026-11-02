@@ -3,3 +3,4 @@ aigrammar/reports/implementation.patch -whitespace
 # TSV trailing tabs retain empty final fields in the evidence table.
 aigrammar/reports/keyboard-resource-gaps.tsv whitespace=-blank-at-eol
 aigrammar/reports/ui-repair.patch -whitespace
+aigrammar/reports/anchor.patch -whitespace
