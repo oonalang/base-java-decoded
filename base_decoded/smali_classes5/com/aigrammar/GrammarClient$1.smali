@@ -1,4 +1,4 @@
-.class Lcom/aigrammar/GrammarClient$1;
+.class final Lcom/aigrammar/GrammarClient$1;
 .super Ljava/lang/Object;
 .source "GrammarClient.java"
 
@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x8
     name = null
 .end annotation
 
 
 # instance fields
-.field private final synthetic val$cb:Lcom/aigrammar/GrammarClient$Callback;
+.field final synthetic val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
-.field private final synthetic val$key:Ljava/lang/String;
+.field final synthetic val$key:Ljava/lang/String;
 
-.field private final synthetic val$model:Ljava/lang/String;
+.field final synthetic val$model:Ljava/lang/String;
 
-.field private final synthetic val$text:Ljava/lang/String;
+.field final synthetic val$text:Ljava/lang/String;
 
-.field private final synthetic val$token:J
+.field final synthetic val$token:J
 
 
 # direct methods
@@ -52,37 +52,35 @@
 
 # virtual methods
 .method public run()V
-    .registers 17
+    .registers 16
 
     .line 100
-    move-object/from16 v1, p0
-
     const-string v0, "STOP"
 
-    const-string v2, "UTF-8"
+    const-string v1, "UTF-8"
 
-    const-string v3, "text"
+    const-string v2, "text"
 
-    const-string v4, "parts"
+    const-string v3, "parts"
 
     .line 102
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    :try_start_b
-    iget-wide v6, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    :try_start_9
+    iget-wide v5, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
     # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
-    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$0()Ljava/util/concurrent/atomic/AtomicLong;
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$000()Ljava/util/concurrent/atomic/AtomicLong;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
-    move-result-wide v8
+    move-result-wide v7
 
-    cmp-long v6, v6, v8
+    cmp-long v5, v5, v7
 
-    if-eqz v6, :cond_1b
+    if-eqz v5, :cond_19
 
     .line 170
     nop
@@ -91,73 +89,38 @@
     return-void
 
     .line 105
-    :cond_1b
+    :cond_19
+    new-instance v5, Lorg/json/JSONObject;
+
+    invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v6, "temperature"
+
+    .line 106
+    const-wide v7, 0x3fb999999999999aL    # 0.1
+
+    invoke-virtual {v5, v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    const-string v6, "maxOutputTokens"
+
+    const/16 v7, 0x400
+
+    invoke-virtual {v5, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 107
     new-instance v6, Lorg/json/JSONObject;
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    .line 106
-    const-string v7, "temperature"
+    const-string v7, "systemInstruction"
 
-    const-wide v8, 0x3fb999999999999aL    # 0.1
+    new-instance v8, Lorg/json/JSONObject;
 
-    invoke-virtual {v6, v7, v8, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    const-string v7, "maxOutputTokens"
-
-    const/16 v8, 0x400
-
-    invoke-virtual {v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    .line 105
-    nop
-
-    .line 107
-    new-instance v7, Lorg/json/JSONObject;
-
-    invoke-direct {v7}, Lorg/json/JSONObject;-><init>()V
-
-    .line 108
-    const-string v8, "systemInstruction"
-
-    new-instance v9, Lorg/json/JSONObject;
-
-    invoke-direct {v9}, Lorg/json/JSONObject;-><init>()V
-
-    .line 109
-    new-instance v10, Lorg/json/JSONArray;
-
-    invoke-direct {v10}, Lorg/json/JSONArray;-><init>()V
-
-    new-instance v11, Lorg/json/JSONObject;
-
-    invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
-
-    const-string v12, "Fix grammar, spelling and punctuation only. Keep the meaning, tone, language and emojis. Return ONLY the corrected text, no quotes, no explanation. If already correct, return it unchanged."
-
-    invoke-virtual {v11, v3, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v11
-
-    invoke-virtual {v10, v11}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
-
-    move-result-object v10
-
-    .line 108
-    invoke-virtual {v9, v4, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v9
-
-    invoke-virtual {v7, v8, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v7
-
-    .line 110
-    const-string v8, "contents"
+    invoke-direct {v8}, Lorg/json/JSONObject;-><init>()V
 
     new-instance v9, Lorg/json/JSONArray;
 
@@ -167,27 +130,10 @@
 
     invoke-direct {v10}, Lorg/json/JSONObject;-><init>()V
 
-    .line 111
-    new-instance v11, Lorg/json/JSONArray;
+    const-string v11, "Fix grammar, spelling and punctuation only. Keep the meaning, tone, language and emojis. Return ONLY the corrected text, no quotes, no explanation. If already correct, return it unchanged."
 
-    invoke-direct {v11}, Lorg/json/JSONArray;-><init>()V
-
-    new-instance v12, Lorg/json/JSONObject;
-
-    invoke-direct {v12}, Lorg/json/JSONObject;-><init>()V
-
-    iget-object v13, v1, Lcom/aigrammar/GrammarClient$1;->val$text:Ljava/lang/String;
-
-    invoke-virtual {v12, v3, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v12
-
-    invoke-virtual {v11, v12}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
-
-    move-result-object v11
-
-    .line 110
-    invoke-virtual {v10, v4, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    .line 109
+    invoke-virtual {v10, v2, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     move-result-object v10
 
@@ -195,139 +141,182 @@
 
     move-result-object v9
 
-    invoke-virtual {v7, v8, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v7
-
-    .line 112
-    const-string v8, "generationConfig"
-
-    invoke-virtual {v7, v8, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    .line 107
-    nop
-
-    .line 113
-    invoke-virtual {v6}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
-
-    move-result-object v6
-
-    .line 114
-    new-instance v7, Ljava/net/URL;
-
-    .line 115
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    const-string v9, "https://generativelanguage.googleapis.com/v1beta/models/"
-
-    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 116
-    iget-object v9, v1, Lcom/aigrammar/GrammarClient$1;->val$model:Ljava/lang/String;
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 108
+    invoke-virtual {v8, v3, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     move-result-object v8
 
-    const-string v9, ":generateContent"
+    invoke-virtual {v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v8
+    const-string v7, "contents"
 
-    .line 115
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v8, Lorg/json/JSONArray;
 
-    move-result-object v8
+    invoke-direct {v8}, Lorg/json/JSONArray;-><init>()V
 
-    .line 114
-    invoke-direct {v7, v8}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+    new-instance v9, Lorg/json/JSONObject;
 
-    .line 116
-    invoke-virtual {v7}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+    invoke-direct {v9}, Lorg/json/JSONObject;-><init>()V
 
-    move-result-object v7
+    new-instance v10, Lorg/json/JSONArray;
 
-    .line 114
-    check-cast v7, Ljava/net/HttpURLConnection;
-    :try_end_b9
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b9} :catch_224
-    .catchall {:try_start_b .. :try_end_b9} :catchall_222
+    invoke-direct {v10}, Lorg/json/JSONArray;-><init>()V
 
-    .line 117
-    const/16 v8, 0x1f40
+    new-instance v11, Lorg/json/JSONObject;
 
-    :try_start_bb
-    invoke-virtual {v7, v8}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
 
-    .line 119
-    const/16 v8, 0x4e20
+    iget-object v12, p0, Lcom/aigrammar/GrammarClient$1;->val$text:Ljava/lang/String;
 
-    invoke-virtual {v7, v8}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
-
-    .line 120
-    const/4 v8, 0x0
-
-    invoke-virtual {v7, v8}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
-
-    .line 121
-    const-string v9, "POST"
-
-    invoke-virtual {v7, v9}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
-
-    .line 122
-    const-string v9, "Content-Type"
-
-    const-string v10, "application/json"
-
-    invoke-virtual {v7, v9, v10}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 123
-    const-string v9, "x-goog-api-key"
-
-    iget-object v10, v1, Lcom/aigrammar/GrammarClient$1;->val$key:Ljava/lang/String;
-
-    invoke-virtual {v7, v9, v10}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 124
-    const/4 v9, 0x1
-
-    invoke-virtual {v7, v9}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
-
-    .line 125
-    array-length v9, v6
-
-    invoke-virtual {v7, v9}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
-
-    .line 126
-    iget-wide v9, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
-
-    # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
-    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$0()Ljava/util/concurrent/atomic/AtomicLong;
+    .line 111
+    invoke-virtual {v11, v2, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     move-result-object v11
 
-    invoke-virtual {v11}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+    invoke-virtual {v10, v11}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    move-result-wide v11
+    move-result-object v10
+
+    .line 110
+    invoke-virtual {v9, v3, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    move-result-object v8
+
+    invoke-virtual {v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "generationConfig"
+
+    .line 112
+    invoke-virtual {v6, v7, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 113
+    invoke-virtual {v5}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object v5
+
+    .line 114
+    new-instance v6, Ljava/net/URL;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "https://generativelanguage.googleapis.com/v1beta/models/"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget-object v8, p0, Lcom/aigrammar/GrammarClient$1;->val$model:Ljava/lang/String;
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v8, ":generateContent"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v7}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    .line 116
+    invoke-virtual {v6}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/net/HttpURLConnection;
+    :try_end_b9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_b9} :catch_20f
+    .catchall {:try_start_9 .. :try_end_b9} :catchall_20d
+
+    .line 117
+    const/16 v7, 0x1f40
+
+    :try_start_bb
+    invoke-virtual {v6, v7}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+
+    .line 119
+    const/16 v7, 0x4e20
+
+    invoke-virtual {v6, v7}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+
+    .line 120
+    const/4 v7, 0x0
+
+    invoke-virtual {v6, v7}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+
+    .line 121
+    const-string v8, "POST"
+
+    invoke-virtual {v6, v8}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+
+    .line 122
+    const-string v8, "Content-Type"
+
+    const-string v9, "application/json"
+
+    invoke-virtual {v6, v8, v9}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 123
+    const-string v8, "x-goog-api-key"
+
+    iget-object v9, p0, Lcom/aigrammar/GrammarClient$1;->val$key:Ljava/lang/String;
+
+    invoke-virtual {v6, v8, v9}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 124
+    const/4 v8, 0x1
+
+    invoke-virtual {v6, v8}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+
+    .line 125
+    array-length v8, v5
+
+    invoke-virtual {v6, v8}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+
+    .line 126
+    iget-wide v8, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
+
+    # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$000()Ljava/util/concurrent/atomic/AtomicLong;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+
+    move-result-wide v10
     :try_end_ec
-    .catch Ljava/lang/Exception; {:try_start_bb .. :try_end_ec} :catch_220
-    .catchall {:try_start_bb .. :try_end_ec} :catchall_235
+    .catch Ljava/lang/Exception; {:try_start_bb .. :try_end_ec} :catch_20b
+    .catchall {:try_start_bb .. :try_end_ec} :catchall_220
 
-    cmp-long v9, v9, v11
+    cmp-long v8, v8, v10
 
-    if-eqz v9, :cond_f6
+    if-eqz v8, :cond_f6
 
     .line 170
-    if-eqz v7, :cond_f5
+    if-eqz v6, :cond_f5
 
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->disconnect()V
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 126
     :cond_f5
@@ -336,56 +325,54 @@
     .line 127
     :cond_f6
     :try_start_f6
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
-    move-result-object v9
+    move-result-object v8
     :try_end_fa
-    .catchall {:try_start_f6 .. :try_end_fa} :catchall_214
+    .catch Ljava/lang/Exception; {:try_start_f6 .. :try_end_fa} :catch_20b
+    .catchall {:try_start_f6 .. :try_end_fa} :catchall_220
 
     :try_start_fa
-    invoke-virtual {v9, v6}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {v8, v5}, Ljava/io/OutputStream;->write([B)V
     :try_end_fd
-    .catchall {:try_start_fa .. :try_end_fd} :catchall_20a
+    .catchall {:try_start_fa .. :try_end_fd} :catchall_1fd
 
-    if-eqz v9, :cond_102
+    if-eqz v8, :cond_102
 
     :try_start_ff
-    invoke-virtual {v9}, Ljava/io/OutputStream;->close()V
-    :try_end_102
-    .catchall {:try_start_ff .. :try_end_102} :catchall_214
+    invoke-virtual {v8}, Ljava/io/OutputStream;->close()V
 
     .line 128
     :cond_102
-    :try_start_102
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->getResponseCode()I
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
-    move-result v6
+    move-result v5
 
     .line 129
-    const/16 v9, 0xc8
+    const/16 v8, 0xc8
 
-    if-eq v6, v9, :cond_11b
+    if-eq v5, v8, :cond_11b
 
     .line 130
-    iget-wide v2, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    iget-wide v0, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
-    iget-object v0, v1, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
+    iget-object v2, p0, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
     # invokes: Lcom/aigrammar/GrammarClient;->httpError(I)Ljava/lang/String;
-    invoke-static {v6}, Lcom/aigrammar/GrammarClient;->access$1(I)Ljava/lang/String;
+    invoke-static {v5}, Lcom/aigrammar/GrammarClient;->access$100(I)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
     # invokes: Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v2, v3, v0, v5, v4}, Lcom/aigrammar/GrammarClient;->access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v4, v3}, Lcom/aigrammar/GrammarClient;->access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_115
-    .catch Ljava/lang/Exception; {:try_start_102 .. :try_end_115} :catch_220
-    .catchall {:try_start_102 .. :try_end_115} :catchall_235
+    .catch Ljava/lang/Exception; {:try_start_ff .. :try_end_115} :catch_20b
+    .catchall {:try_start_ff .. :try_end_115} :catchall_220
 
     .line 170
-    if-eqz v7, :cond_11a
+    if-eqz v6, :cond_11a
 
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->disconnect()V
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 131
     :cond_11a
@@ -394,148 +381,244 @@
     .line 133
     :cond_11b
     :try_start_11b
-    new-instance v6, Ljava/io/ByteArrayOutputStream;
+    new-instance v5, Ljava/io/ByteArrayOutputStream;
 
-    invoke-direct {v6}, Ljava/io/ByteArrayOutputStream;-><init>()V
-    :try_end_120
-    .catch Ljava/lang/Exception; {:try_start_11b .. :try_end_120} :catch_220
-    .catchall {:try_start_11b .. :try_end_120} :catchall_235
+    invoke-direct {v5}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 134
-    :try_start_120
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
-    move-result-object v9
+    move-result-object v8
     :try_end_124
-    .catchall {:try_start_120 .. :try_end_124} :catchall_1fe
+    .catch Ljava/lang/Exception; {:try_start_11b .. :try_end_124} :catch_20b
+    .catchall {:try_start_11b .. :try_end_124} :catchall_220
 
     .line 135
-    const/16 v10, 0x1000
+    const/16 v9, 0x1000
 
     :try_start_126
-    new-array v10, v10, [B
+    new-array v9, v9, [B
 
     .line 137
-    nop
+    :goto_128
+    invoke-virtual {v8, v9}, Ljava/io/InputStream;->read([B)I
 
-    :goto_129
-    invoke-virtual {v9, v10}, Ljava/io/InputStream;->read([B)I
+    move-result v10
 
-    move-result v11
-    :try_end_12d
-    .catchall {:try_start_126 .. :try_end_12d} :catchall_1f4
+    const/4 v11, -0x1
 
-    const/4 v12, -0x1
+    if-eq v10, v11, :cond_15b
 
-    if-ne v11, v12, :cond_1c7
+    .line 138
+    iget-wide v11, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
+
+    # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$000()Ljava/util/concurrent/atomic/AtomicLong;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+
+    move-result-wide v13
+    :try_end_139
+    .catchall {:try_start_126 .. :try_end_139} :catchall_1ef
+
+    cmp-long v11, v11, v13
+
+    if-eqz v11, :cond_148
 
     .line 142
-    if-eqz v9, :cond_135
+    if-eqz v8, :cond_142
 
-    :try_start_132
-    invoke-virtual {v9}, Ljava/io/InputStream;->close()V
-    :try_end_135
-    .catchall {:try_start_132 .. :try_end_135} :catchall_1fe
+    :try_start_13f
+    invoke-virtual {v8}, Ljava/io/InputStream;->close()V
+    :try_end_142
+    .catch Ljava/lang/Exception; {:try_start_13f .. :try_end_142} :catch_20b
+    .catchall {:try_start_13f .. :try_end_142} :catchall_220
+
+    .line 170
+    :cond_142
+    if-eqz v6, :cond_147
+
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    .line 138
+    :cond_147
+    return-void
+
+    .line 139
+    :cond_148
+    :try_start_148
+    invoke-virtual {v5}, Ljava/io/ByteArrayOutputStream;->size()I
+
+    move-result v11
+
+    add-int/2addr v11, v10
+
+    const/high16 v12, 0x10000
+
+    if-gt v11, v12, :cond_155
+
+    .line 140
+    invoke-virtual {v5, v9, v7, v10}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+
+    goto :goto_128
+
+    .line 139
+    :cond_155
+    new-instance v0, Ljava/io/IOException;
+
+    invoke-direct {v0}, Ljava/io/IOException;-><init>()V
+
+    throw v0
+    :try_end_15b
+    .catchall {:try_start_148 .. :try_end_15b} :catchall_1ef
+
+    .line 142
+    :cond_15b
+    if-eqz v8, :cond_160
+
+    :try_start_15d
+    invoke-virtual {v8}, Ljava/io/InputStream;->close()V
 
     .line 143
-    :cond_135
-    :try_start_135
-    new-instance v9, Lorg/json/JSONObject;
+    :cond_160
+    new-instance v8, Lorg/json/JSONObject;
 
-    invoke-virtual {v6, v2}, Ljava/io/ByteArrayOutputStream;->toString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v1}, Ljava/io/ByteArrayOutputStream;->toString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-direct {v9, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    invoke-direct {v8, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "candidates"
 
     .line 144
-    const-string v2, "candidates"
+    invoke-virtual {v8, v1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    invoke-virtual {v9, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v1, v7}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
-    invoke-virtual {v2, v8}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    .line 143
-    nop
+    move-result-object v1
 
     .line 145
-    const-string v6, "finishReason"
+    const-string v5, "finishReason"
 
-    invoke-virtual {v2, v6, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v5, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
     .line 146
-    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-nez v0, :cond_16c
+    if-nez v0, :cond_196
 
     const-string v0, "FINISH_REASON_UNSPECIFIED"
 
-    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-nez v0, :cond_16c
+    if-nez v0, :cond_196
 
     .line 147
-    iget-wide v2, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    iget-wide v0, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
-    iget-object v0, v1, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
+    iget-object v2, p0, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
-    const-string v4, "No complete correction returned"
+    const-string v3, "No complete correction returned"
 
     # invokes: Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v2, v3, v0, v5, v4}, Lcom/aigrammar/GrammarClient;->access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_166
-    .catch Ljava/lang/Exception; {:try_start_135 .. :try_end_166} :catch_220
-    .catchall {:try_start_135 .. :try_end_166} :catchall_235
+    invoke-static {v0, v1, v2, v4, v3}, Lcom/aigrammar/GrammarClient;->access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_190
+    .catch Ljava/lang/Exception; {:try_start_15d .. :try_end_190} :catch_20b
+    .catchall {:try_start_15d .. :try_end_190} :catchall_220
 
     .line 170
-    if-eqz v7, :cond_16b
+    if-eqz v6, :cond_195
 
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->disconnect()V
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 148
-    :cond_16b
+    :cond_195
     return-void
 
     .line 152
-    :cond_16c
-    :try_start_16c
+    :cond_196
+    :try_start_196
     const-string v0, "content"
 
-    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-virtual {v1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v0
 
     .line 153
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 154
-    move v4, v8
+    move v3, v7
 
-    :goto_17c
+    :goto_1a6
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
-    move-result v6
+    move-result v5
 
-    if-lt v4, v6, :cond_1a6
+    if-ge v3, v5, :cond_1cd
+
+    .line 155
+    invoke-virtual {v0, v3}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 156
+    if-eqz v5, :cond_1ca
+
+    const-string v8, "thought"
+
+    invoke-virtual {v5, v8, v7}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1bb
+
+    goto :goto_1ca
+
+    .line 157
+    :cond_1bb
+    const-string v8, ""
+
+    invoke-virtual {v5, v2, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 158
+    invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v8
+
+    if-nez v8, :cond_1ca
+
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 154
+    :cond_1ca
+    :goto_1ca
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1a6
 
     .line 160
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_1cd
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -546,300 +629,163 @@
     .line 161
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_19a
+    if-eqz v1, :cond_1e5
 
     .line 162
-    iget-wide v2, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    iget-wide v0, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
-    iget-object v0, v1, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
+    iget-object v2, p0, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
-    const-string v4, "Empty correction returned"
+    const-string v3, "Empty correction returned"
 
     # invokes: Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v2, v3, v0, v5, v4}, Lcom/aigrammar/GrammarClient;->access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v4, v3}, Lcom/aigrammar/GrammarClient;->access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 163
-    goto :goto_1a2
+    goto :goto_1ec
 
     .line 164
-    :cond_19a
-    iget-wide v2, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    :cond_1e5
+    iget-wide v1, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
-    iget-object v4, v1, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
+    iget-object v3, p0, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
     # invokes: Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v2, v3, v4, v0, v5}, Lcom/aigrammar/GrammarClient;->access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 166
-    nop
-
-    .line 170
-    :goto_1a2
-    if-eqz v7, :cond_234
-
-    goto/16 :goto_231
-
-    .line 155
-    :cond_1a6
-    invoke-virtual {v0, v4}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    .line 156
-    if-eqz v6, :cond_1c4
-
-    const-string v9, "thought"
-
-    invoke-virtual {v6, v9, v8}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_1b5
-
-    goto :goto_1c4
-
-    .line 157
-    :cond_1b5
-    const-string v9, ""
-
-    invoke-virtual {v6, v3, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 158
-    invoke-virtual {v6}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v9
-
-    if-nez v9, :cond_1c4
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_1c4
-    .catch Ljava/lang/Exception; {:try_start_16c .. :try_end_1c4} :catch_220
-    .catchall {:try_start_16c .. :try_end_1c4} :catchall_235
-
-    .line 154
-    :cond_1c4
-    :goto_1c4
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_17c
-
-    .line 138
-    :cond_1c7
-    :try_start_1c7
-    iget-wide v12, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
-
-    # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
-    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$0()Ljava/util/concurrent/atomic/AtomicLong;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
-
-    move-result-wide v14
-    :try_end_1d1
-    .catchall {:try_start_1c7 .. :try_end_1d1} :catchall_1f4
-
-    cmp-long v12, v12, v14
-
-    if-eqz v12, :cond_1e0
-
-    .line 142
-    if-eqz v9, :cond_1da
-
-    :try_start_1d7
-    invoke-virtual {v9}, Ljava/io/InputStream;->close()V
-    :try_end_1da
-    .catchall {:try_start_1d7 .. :try_end_1da} :catchall_1fe
+    invoke-static {v1, v2, v3, v0, v4}, Lcom/aigrammar/GrammarClient;->access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_1ec
+    .catch Ljava/lang/Exception; {:try_start_196 .. :try_end_1ec} :catch_20b
+    .catchall {:try_start_196 .. :try_end_1ec} :catchall_220
 
     .line 170
-    :cond_1da
-    if-eqz v7, :cond_1df
+    :goto_1ec
+    if-eqz v6, :cond_21f
 
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->disconnect()V
+    goto :goto_21c
 
-    .line 138
-    :cond_1df
-    return-void
+    .line 134
+    :catchall_1ef
+    move-exception v0
 
-    .line 139
-    :cond_1e0
-    :try_start_1e0
-    invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;->size()I
-
-    move-result v12
-
-    add-int/2addr v12, v11
-
-    const/high16 v13, 0x10000
-
-    if-gt v12, v13, :cond_1ee
-
-    .line 140
-    invoke-virtual {v6, v10, v8, v11}, Ljava/io/ByteArrayOutputStream;->write([BII)V
-
-    goto/16 :goto_129
-
-    .line 139
-    :cond_1ee
-    new-instance v0, Ljava/io/IOException;
-
-    invoke-direct {v0}, Ljava/io/IOException;-><init>()V
-
+    :try_start_1f0
     throw v0
-    :try_end_1f4
-    .catchall {:try_start_1e0 .. :try_end_1f4} :catchall_1f4
+    :try_end_1f1
+    .catchall {:try_start_1f0 .. :try_end_1f1} :catchall_1f1
 
     .line 142
-    :catchall_1f4
-    move-exception v0
+    :catchall_1f1
+    move-exception v1
 
-    move-object v2, v0
+    if-eqz v8, :cond_1fc
 
-    if-eqz v9, :cond_1fb
+    :try_start_1f4
+    invoke-virtual {v8}, Ljava/io/InputStream;->close()V
+    :try_end_1f7
+    .catchall {:try_start_1f4 .. :try_end_1f7} :catchall_1f8
 
-    :try_start_1f8
-    invoke-virtual {v9}, Ljava/io/InputStream;->close()V
+    goto :goto_1fc
 
-    :cond_1fb
-    throw v2
-    :try_end_1fc
-    .catchall {:try_start_1f8 .. :try_end_1fc} :catchall_1fc
+    :catchall_1f8
+    move-exception v2
 
-    :catchall_1fc
-    move-exception v0
+    :try_start_1f9
+    invoke-virtual {v0, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    goto :goto_200
-
-    :catchall_1fe
-    move-exception v0
-
-    move-object v2, v5
-
-    :goto_200
-    if-eqz v2, :cond_208
-
-    if-eq v2, v0, :cond_209
-
-    :try_start_204
-    invoke-virtual {v2, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    goto :goto_209
-
-    :cond_208
-    move-object v2, v0
-
-    :cond_209
-    :goto_209
-    throw v2
-    :try_end_20a
-    .catch Ljava/lang/Exception; {:try_start_204 .. :try_end_20a} :catch_220
-    .catchall {:try_start_204 .. :try_end_20a} :catchall_235
+    :cond_1fc
+    :goto_1fc
+    throw v1
+    :try_end_1fd
+    .catch Ljava/lang/Exception; {:try_start_1f9 .. :try_end_1fd} :catch_20b
+    .catchall {:try_start_1f9 .. :try_end_1fd} :catchall_220
 
     .line 127
-    :catchall_20a
+    :catchall_1fd
     move-exception v0
 
-    move-object v2, v0
+    :try_start_1fe
+    throw v0
+    :try_end_1ff
+    .catchall {:try_start_1fe .. :try_end_1ff} :catchall_1ff
 
-    if-eqz v9, :cond_211
+    :catchall_1ff
+    move-exception v1
 
-    :try_start_20e
-    invoke-virtual {v9}, Ljava/io/OutputStream;->close()V
+    if-eqz v8, :cond_20a
 
-    :cond_211
-    throw v2
-    :try_end_212
-    .catchall {:try_start_20e .. :try_end_212} :catchall_212
+    :try_start_202
+    invoke-virtual {v8}, Ljava/io/OutputStream;->close()V
+    :try_end_205
+    .catchall {:try_start_202 .. :try_end_205} :catchall_206
 
-    :catchall_212
-    move-exception v0
+    goto :goto_20a
 
-    goto :goto_216
+    :catchall_206
+    move-exception v2
 
-    :catchall_214
-    move-exception v0
+    :try_start_207
+    invoke-virtual {v0, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    move-object v2, v5
-
-    :goto_216
-    if-eqz v2, :cond_21e
-
-    if-eq v2, v0, :cond_21f
-
-    :try_start_21a
-    invoke-virtual {v2, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    goto :goto_21f
-
-    :cond_21e
-    move-object v2, v0
-
-    :cond_21f
-    :goto_21f
-    throw v2
-    :try_end_220
-    .catch Ljava/lang/Exception; {:try_start_21a .. :try_end_220} :catch_220
-    .catchall {:try_start_21a .. :try_end_220} :catchall_235
+    :cond_20a
+    :goto_20a
+    throw v1
+    :try_end_20b
+    .catch Ljava/lang/Exception; {:try_start_207 .. :try_end_20b} :catch_20b
+    .catchall {:try_start_207 .. :try_end_20b} :catchall_220
 
     .line 166
-    :catch_220
+    :catch_20b
     move-exception v0
 
-    goto :goto_226
+    goto :goto_211
 
-    .line 169
-    :catchall_222
+    .line 170
+    :catchall_20d
     move-exception v0
 
-    goto :goto_237
+    goto :goto_222
 
     .line 166
-    :catch_224
+    :catch_20f
     move-exception v0
+
+    move-object v6, v4
 
     .line 168
-    move-object v7, v5
+    :goto_211
+    :try_start_211
+    iget-wide v0, p0, Lcom/aigrammar/GrammarClient$1;->val$token:J
 
-    :goto_226
-    :try_start_226
-    iget-wide v2, v1, Lcom/aigrammar/GrammarClient$1;->val$token:J
+    iget-object v2, p0, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
-    iget-object v0, v1, Lcom/aigrammar/GrammarClient$1;->val$cb:Lcom/aigrammar/GrammarClient$Callback;
-
-    const-string v1, "Network error - check your connection"
+    const-string v3, "Network error - check your connection"
 
     # invokes: Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v2, v3, v0, v5, v1}, Lcom/aigrammar/GrammarClient;->access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_22f
-    .catchall {:try_start_226 .. :try_end_22f} :catchall_235
+    invoke-static {v0, v1, v2, v4, v3}, Lcom/aigrammar/GrammarClient;->access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_21a
+    .catchall {:try_start_211 .. :try_end_21a} :catchall_220
 
     .line 170
-    if-eqz v7, :cond_234
+    if-eqz v6, :cond_21f
 
-    :goto_231
-    invoke-virtual {v7}, Ljava/net/HttpURLConnection;->disconnect()V
+    :goto_21c
+    invoke-virtual {v6}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 172
-    :cond_234
+    :cond_21f
     return-void
 
-    .line 169
-    :catchall_235
+    .line 170
+    :catchall_220
     move-exception v0
 
-    move-object v5, v7
+    move-object v4, v6
 
-    .line 170
-    :goto_237
-    if-eqz v5, :cond_23c
+    :goto_222
+    if-eqz v4, :cond_227
 
-    invoke-virtual {v5}, Ljava/net/HttpURLConnection;->disconnect()V
+    invoke-virtual {v4}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 171
-    :cond_23c
+    :cond_227
     throw v0
 .end method

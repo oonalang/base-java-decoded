@@ -10,14 +10,14 @@ The original repository supplied `base_decoded/` and `base_java/`. `base_java/` 
 
 ## Current artifact and test status
 
-- Filename: `Gboard-By-Eliwoa-resources-fixed.apk`.
+- Filename: `Gboard-By-Eliwoa-ui-fix.apk`.
 - Source version: `18.4.1.985164140-release-arm64-v8a`, versionCode `176027078`.
-- APK SHA-256: `e3ad4163e1851b2b5a0b34c8dcf7c012be51b2802dded85ad89158a13d66c1f0`.
+- APK SHA-256: `83b4cdfcbd3db194ec7b6befe559e0431e9983cb8cf3bb847a7c71846eff6477`.
 - Signing certificate SHA-256: `835CFD33F94E1CC744655D3E48ABDCD0F56C8F0865AA09C5AEC830B5CE51E233` (public certificate fingerprint, not a private key).
 - Runtime target: Android arm64-v8a, API 32+. Earlier user testing was on Android 13.
 - Build, signature, alignment, unit and resource-graph checks pass.
 - **The newest resource-restored APK is awaiting device verification. The complete typing → API → chip → replacement flow has not been verified on a device, and no live API test was performed in the workspace.**
-- A later source pass (not in the published APK) rebuilds the grammar bar with collapse/status/settings controls, relaxes the no-suggestions field filter, improves Gemini response parsing and timeouts, and repairs the shift glyph. Java 8 compilation, smali regeneration, 41 policy/sentence checks and 9 identity checks pass; new vectors compile with aapt2. Rebuild with the existing keystore to install as an update.
+- The rebuilt APK includes `22243b37` and the current UI repair: insets after content installation, independent rounded row, icon-only collapse and current-content shift repair. Nine Robolectric API 33 UI tests plus the 50 earlier checks pass. See [UI-REPAIR.md](aigrammar/UI-REPAIR.md) and the current verification JSON.
 
 Failed earlier APKs must not be described as working. The latest APK includes fixes absent from those earlier builds. See GitHub Releases for the test artifact; source files and generated smali are included in the repository.
 
@@ -42,7 +42,7 @@ The registered settings component is `com.gboard.eli/com.aigrammar.SettingsActiv
 
 `LatinIME` is an empty subclass of `esi`; `esi` extends `pbb`; `pbb` extends Android InputMethodService. Most lifecycle methods in `pbb` are final, so adding overrides to LatinIME would be invalid. Hooks were inserted into the confirmed methods instead, without changing original locals/labels/exception ranges. High parameter registers use `/range` calls. Selection hooks use the new selection arguments before Gboard reuses `p0`.
 
-`esi.f()` inflates layout `0x7f0e0170`, which includes `0x7f0e0171`. `keyboard_holder` is **`0x7f0b05e9`**, with a vertical LinearLayout parent. The row is inserted immediately before that holder; InputView and the existing holders are not wrapped or reparented.
+`esi.f()` inflates layout `0x7f0e0170`, which includes `0x7f0e0171`. `keyboard_holder` is **`0x7f0b05e9`**, with a vertical LinearLayout parent. The grammar row is a separate child of InputView beside the original keyboard-base FrameLayout (`0x7f0b05c3`), whose top margin reserves room for it. InputView and the existing holders are not wrapped or reparented.
 
 Translate is registered in code: `kfo.hT()` builds the toolbar states/action `-10124`; `kam` registers modules 223/224; `kgg.L()` loads XML `0x7f1708e6` for TranslateKeyboard. Theme binary protobufs style it. These Translate files were not modified.
 
@@ -54,7 +54,7 @@ Preferences: `aigrammar_prefs`, keys `api_key`, `model`, `enabled`, `collapsed`;
 
 ### Latest UI/source pass
 
-- `GrammarBridge` builds a theme-aware bar with a sparkle toggle, status line, green apply chip, gear button and a V collapse/expand button. The collapsed flag is stored in `aigrammar_prefs`; a new correction auto-expands the bar. Errors are shown on the bar and are retryable; a missing key links to settings.
+- `GrammarBridge` builds a theme-aware bar with a sparkle toggle, status line, green apply chip, gear button and a V collapse/expand button. The collapsed flag is stored in `aigrammar_prefs`; collapse leaves only a left restore icon and pauses checks; corrections cannot auto-expand it. Errors are shown on the bar and are retryable; a missing key links to settings.
 - `GrammarClient` sends `maxOutputTokens` 1024, uses 8 s connect / 20 s read timeouts, extracts non-thought text parts, accepts an unspecified finish reason, and maps HTTP failures to short user-facing messages. `thinkingConfig` is intentionally omitted so older model IDs still work.
 - The shift key is the only view repaired: Gboard's `key_pos_shift` / `SoftKeyView` icon gets an explicit visible state, full alpha and a theme-color filter. Its split bitmaps were replaced at the same public IDs with density-independent vector arrows.
 - New drawables: `aigrammar_gear`, `aigrammar_chevron`, plus the three shift vectors. `aigrammar_gear` / `aigrammar_chevron` use public IDs `0x7f080760` / `0x7f080761`; shift IDs stay `0x7f0805b0`–`0x7f0805b2`.
@@ -96,10 +96,16 @@ Verified tooling: Java 8 source/target, R8 8.3.37, baksmali 2.5.2, apktool 3.0.3
 
 Evidence in `aigrammar/reports/` includes exact before/after patches, per-file reasons, 28 original package-string hits, restored-asset hashes, all 204 reference mappings, full build logs and resource verification JSON. Raw personal device logs and private Dropbox URLs are not published.
 
-Checks for the published APK: 41 policy/sentence tests, 9 identity tests, five dex files, all original 34,071 public IDs preserved, all 34,191 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. The later source pass adds two drawable IDs (34,193 total) and has not been signed or device-tested. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
+Checks for the current published APK: 9 Android UI tests, 41 policy/sentence checks, 9 identity checks, five dex files, all original 34,071 public IDs preserved, all 34,193 current declarations valid, all 204 restored references nonzero in compiled XML, no null bitmap/nine-patch sources, 23 valid compiled nine-patches, 15 original native libraries unchanged, 16 KB ZIP alignment, signature validation and no IP/network sends during the build trace. The latest source is included in the newly signed UI-fix APK; that APK has not yet been device-tested. Two decoded nine-patches have documented sub-one-byte premultiplied RGB rounding; their alpha/dimensions remain unchanged.
 
 ## Continue from here
 
 The next meaningful step is a phone test of the latest APK: install as an update, select the clone, open a textbox, type normally, then configure/Test Gemini and apply a correction chip in a normal notes/message field. Saved model settings are preserved, so older installs may need the Model field changed manually to `gemini-3.5-flash-lite`.
 
 If it crashes, obtain the newest `com.gboard.eli` stack before editing; old log entries remain in the crash buffer. Do not repeatedly rebuild on a guessed cause or suppress metadata assertions to hide missing resources. Keep the original Gboard installed and selectable. Do not clear clone data or publish its private signing key/API key as a routine troubleshooting step.
+
+## Current UI repair handoff
+
+Source baseline `e24134cd`; only helper Java/generated smali, documentation/tests/reports and a new APK were changed. The original four dex files and all native libraries remain byte-identical. The settings exception was reproduced in Android framework tests; no fresh phone crash stack was received. Settings now configures window insets after `setContentView`. The grammar row lives beside the keyboard-base FrameLayout inside InputView, with a reserved top margin and full corner clipping. Collapsed state leaves only a left restore icon, preserves enabled state, pauses requests and cannot autoexpand. Shift repair resolves visible key content instead of keeping a stale ImageView, restoring view/image alpha while preserving native state glyphs.
+
+The signing backup was separately published at the owner's explicit request; do not describe that key as confidential or republish it as part of an unrelated fix. Continue using the existing signer for this installation unless the owner requests a migration. No Gemini API key has been provided to this workspace.

@@ -11,6 +11,7 @@ gboard*crash*.txt
 # Reproducible build outputs and Python caches.
 /aigrammar/build/
 /aigrammar/keys/
+/aigrammar/tests/android/target/
 /base_decoded/build/
 /base_decoded/dist/
 **/__pycache__/

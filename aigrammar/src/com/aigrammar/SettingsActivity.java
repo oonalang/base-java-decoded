@@ -49,12 +49,6 @@ public final class SettingsActivity extends Activity {
         window.setStatusBarColor(background);
         window.setNavigationBarColor(background);
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        if (Build.VERSION.SDK_INT >= 30 && window.getInsetsController() != null) {
-            int lightBars = WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
-                    | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
-            window.getInsetsController().setSystemBarsAppearance(
-                    night ? 0 : lightBars, lightBars);
-        }
 
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
@@ -182,6 +176,16 @@ public final class SettingsActivity extends Activity {
         scroll.setBackgroundColor(background);
         scroll.addView(layout);
         setContentView(scroll);
+        // PhoneWindow.getInsetsController() dereferences its decor on Android 13.
+        // setContentView creates it; calling the controller before this can crash.
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowInsetsController controller = window.getInsetsController();
+            if (controller != null) {
+                int lightBars = WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+                        | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+                controller.setSystemBarsAppearance(night ? 0 : lightBars, lightBars);
+            }
+        }
     }
 
     private void readTheme() {

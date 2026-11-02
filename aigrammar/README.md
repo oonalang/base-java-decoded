@@ -267,3 +267,7 @@ adb shell dumpsys input_method
 `ClassNotFoundException` / `NoClassDefFoundError` for `com.aigrammar`: inspect `classes5.dex` and rebuild the helper. `VerifyError`: identify the exact method/register from the stack, compare it with the patch and keep parameter/register aliases valid. `Resources$NotFoundException`: inspect the actual resource ID and confirm public IDs were retained. `UnsatisfiedLinkError`, native aborts or missing JNI methods: use the crash buffer/tombstone; this project deliberately preserves all native-facing class names and libraries. `SecurityException` from Google services can reflect the new signer/package and is not evidence that the Gemini key is wrong. `AIGrammar` warnings contain no editor text or API key.
 
 For deeper debugging, collect a full log only on a disposable test field; upstream Gboard logs may contain sensitive data. Share the failing stack/method and device Android version, not the key or private typed text.
+
+### Settings, collapse and shift follow-up
+
+The rebuilt `Gboard-By-Eliwoa-ui-fix.apk` includes the latest source. [UI-REPAIR.md](UI-REPAIR.md) supersedes earlier descriptions of bar placement, automatic expansion and the cached shift ImageView. The settings crash was reproduced in an API 33 framework test and repaired. Nine UI tests and all 50 earlier checks pass; device behavior and live Gemini remain to be verified. See [the current verification](reports/ui-repair-verification.json).

@@ -1,0 +1,29 @@
+{
+  "apk": "releases/Gboard-By-Eliwoa-ui-fix.apk",
+  "apk_sha256": "83b4cdfcbd3db194ec7b6befe559e0431e9983cb8cf3bb847a7c71846eff6477",
+  "apk_bytes": 94948314,
+  "source_baseline": "e24134cdf5b8ea443198a3b8f5345fe05c2e50a1",
+  "signer_sha256": "835cfd33f94e1cc744655d3e48abdcd0f56c8f0865aa09c5aec830b5ce51e233",
+  "ui_tests_sdk": 33,
+  "ui_tests": 9,
+  "ui_test_failures": 0,
+  "policy_sentence_tests": 41,
+  "identity_tests": 9,
+  "original_native_libraries_byte_identical": 15,
+  "original_dex_files_byte_identical": 4,
+  "all_public_resource_ids_verified": 34193,
+  "dex_files": [
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes.dex"
+  ],
+  "build_IP_connects": 0,
+  "new_APK_device_tested": false,
+  "live_Gemini_tested": false,
+  "settings_crash_reproduced_in_Robolectric": "NullPointerException in PhoneWindow.getInsetsController before mDecor exists",
+  "settings_fix": "Configure insets after setContentView",
+  "shift_fix": "Resolve currently visible key content on each draw; restore view/image alpha; preserve native state drawable",
+  "collapse_behavior": "Only a left sparkle remains; restoring does not toggle enabled; grammar checks pause while collapsed"
+}

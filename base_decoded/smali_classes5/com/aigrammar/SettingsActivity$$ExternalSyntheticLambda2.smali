@@ -30,7 +30,7 @@
     .line 0
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;->f$0:Lcom/aigrammar/SettingsActivity;
 
-    invoke-virtual {v0, p1}, Lcom/aigrammar/SettingsActivity;->lambda$2$com-aigrammar-SettingsActivity(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/aigrammar/SettingsActivity;->lambda$onCreate$2$com-aigrammar-SettingsActivity(Landroid/view/View;)V
 
     return-void
 .end method

@@ -30,7 +30,7 @@
     .line 0
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$$ExternalSyntheticLambda1;->f$0:Lcom/aigrammar/GrammarBridge;
 
-    invoke-virtual {v0, p1}, Lcom/aigrammar/GrammarBridge;->lambda$1$com-aigrammar-GrammarBridge(Landroid/view/View;)Z
+    invoke-virtual {v0, p1}, Lcom/aigrammar/GrammarBridge;->lambda$attachRow$1$com-aigrammar-GrammarBridge(Landroid/view/View;)Z
 
     move-result p1
 

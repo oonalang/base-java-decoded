@@ -24,8 +24,11 @@ import android.view.ViewTreeObserver;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.ImageView;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /** Small platform-only adapter. No reflection into Gboard and no root replacement. */
 public final class GrammarBridge implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -46,9 +49,10 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private TextView toggle;
     private TextView status;
     private TextView chip;
-    private TextView settings;
-    private TextView collapse;
-    private ImageView shiftIcon;
+    private ImageButton settings;
+    private ImageButton collapse;
+    private View keyboardBase;
+    private int baseTopMargin;
     private ViewTreeObserver shiftObserver;
     private ViewTreeObserver.OnPreDrawListener shiftPreDraw;
     private PorterDuffColorFilter shiftFilter;
@@ -156,10 +160,21 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         if (row != null && row.getParent() instanceof ViewGroup)
             ((ViewGroup) row.getParent()).removeView(row);
         row = null;
+        restoreBaseMargin();
     }
 
     private int dp(int value) {
         return Math.round(value * ime.getResources().getDisplayMetrics().density);
+    }
+
+    private void restoreBaseMargin() {
+        if (keyboardBase != null
+                && keyboardBase.getLayoutParams() instanceof FrameLayout.LayoutParams) {
+            FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) keyboardBase.getLayoutParams();
+            params.topMargin = baseTopMargin;
+            keyboardBase.setLayoutParams(params);
+        }
+        keyboardBase = null;
     }
 
     private Drawable drawable(int id) {
@@ -201,33 +216,39 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     private Drawable barBackground() {
         GradientDrawable shape = new GradientDrawable();
         shape.setColor(bg);
-        float corner = dp(16);
-        shape.setCornerRadii(new float[]{corner, corner, corner, corner, 0, 0, 0, 0});
+        shape.setCornerRadius(dp(16));
         shape.setStroke(Math.max(1, dp(1)), stroke);
         return shape;
     }
 
     private RippleDrawable ripple(Drawable content) {
         int color = night ? 0x33FFFFFF : 0x22000000;
-        return new RippleDrawable(ColorStateList.valueOf(color), content, null);
+        GradientDrawable mask = new GradientDrawable();
+        mask.setColor(Color.WHITE);
+        mask.setCornerRadius(dp(19));
+        return new RippleDrawable(ColorStateList.valueOf(color), content, mask);
     }
 
-    private TextView iconButton(Drawable icon, String description) {
-        TextView view = new TextView(ime);
-        view.setGravity(Gravity.CENTER);
+    private ImageButton iconButton(Drawable icon, String description) {
+        ImageButton view = new ImageButton(ime);
+        view.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         view.setFocusable(false);
         view.setContentDescription(description);
-        view.setMinWidth(dp(38));
-        view.setMinHeight(dp(38));
-        if (icon != null) view.setCompoundDrawables(icon, null, null, null);
+        view.setPadding(dp(9), dp(9), dp(9), dp(9));
+        view.setImageDrawable(icon);
         view.setBackground(ripple(null));
         return view;
     }
 
     private void attachRow(View root) {
         View holder = root.findViewById(KEYBOARD_HOLDER);
-        if (holder == null || !(holder.getParent() instanceof LinearLayout)) {
-            Log.w("AIGrammar", "Expected keyboard holder parent is absent");
+        // InputView is a FrameLayout; ...0171 contains the original keyboard-base
+        // FrameLayout. Keep both native-facing views and their children in place.
+        View base = root.findViewById(0x7f0b05c3);
+        if (!(root instanceof FrameLayout) || holder == null || base == null
+                || base.getParent() != root
+                || !(base.getLayoutParams() instanceof FrameLayout.LayoutParams)) {
+            Log.w("AIGrammar", "Expected keyboard base is absent");
             return;
         }
         readTheme();
@@ -235,16 +256,21 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         collapsed = prefs != null && prefs.getBoolean("collapsed", false);
         if (row != null && row.getParent() instanceof ViewGroup)
             ((ViewGroup) row.getParent()).removeView(row);
-        LinearLayout parent = (LinearLayout) holder.getParent();
+        restoreBaseMargin();
+        keyboardBase = base;
+        baseTopMargin = ((FrameLayout.LayoutParams) base.getLayoutParams()).topMargin;
+        FrameLayout parent = (FrameLayout) root;
         row = new LinearLayout(ime);
         row.setOrientation(LinearLayout.HORIZONTAL);
         row.setGravity(Gravity.CENTER_VERTICAL);
         row.setBackground(barBackground());
+        row.setClipToOutline(true);
 
         toggle = new TextView(ime);
         toggle.setGravity(Gravity.CENTER);
         toggle.setFocusable(false);
         toggle.setOnClickListener(view -> {
+            if (collapsed) { setCollapsed(false, true); return; }
             boolean enable = !GrammarClient.isEnabled();
             GrammarClient.setEnabled(enable);
             refreshToggle();
@@ -308,7 +334,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         collapse.setOnClickListener(view -> setCollapsed(!collapsed, true));
         row.addView(collapse, new LinearLayout.LayoutParams(dp(38), dp(38)));
 
-        parent.addView(row, parent.indexOfChild(holder), new LinearLayout.LayoutParams(-1, -2));
+        parent.addView(row, new FrameLayout.LayoutParams(-1, dp(48), Gravity.TOP | Gravity.LEFT));
         applyCollapsed();
         refreshToggle();
         refreshStatus();
@@ -318,8 +344,16 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
     }
 
     private void openSettings() {
-        ime.startActivity(new Intent(ime, SettingsActivity.class)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        try {
+            ime.startActivity(new Intent(ime, SettingsActivity.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP
+                            | Intent.FLAG_ACTIVITY_SINGLE_TOP));
+            ime.requestHideSelf(0);
+        } catch (RuntimeException error) {
+            Log.w("AIGrammar", "Settings launch failed", error);
+            Toast.makeText(ime, "Open AI Grammar Settings from your app drawer",
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
     private void onStatusClick() {
@@ -337,35 +371,38 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
     private void setCollapsed(boolean value, boolean persist) {
         collapsed = value;
+        if (value) invalidate();
+        else lastRequested = null;
         if (persist) {
             SharedPreferences prefs = GrammarClient.preferences();
             if (prefs != null) prefs.edit().putBoolean("collapsed", value).apply();
         }
         applyCollapsed();
+        if (!value && allowed()) handler.postDelayed(timer, 700);
     }
 
     private void applyCollapsed() {
         if (row == null || status == null || settings == null || collapse == null) return;
-        row.setMinimumHeight(dp(collapsed ? 30 : 44));
-        row.setPadding(dp(4), dp(collapsed ? 2 : 3), dp(4), dp(collapsed ? 2 : 3));
+        row.setMinimumHeight(0);
+        row.setPadding(dp(4), dp(3), dp(4), dp(3));
+        row.setBackground(collapsed ? null : barBackground());
+        FrameLayout.LayoutParams rowParams = (FrameLayout.LayoutParams) row.getLayoutParams();
+        rowParams.width = collapsed ? dp(40) : ViewGroup.LayoutParams.MATCH_PARENT;
+        rowParams.height = dp(collapsed ? 34 : 48);
+        rowParams.setMargins(dp(4), dp(2), dp(4), dp(2));
+        row.setLayoutParams(rowParams);
+        FrameLayout.LayoutParams baseParams = (FrameLayout.LayoutParams) keyboardBase.getLayoutParams();
+        baseParams.topMargin = baseTopMargin + rowParams.height + dp(4);
+        keyboardBase.setLayoutParams(baseParams);
         settings.setVisibility(collapsed ? View.GONE : View.VISIBLE);
-        ViewGroup.LayoutParams collapseParams = collapse.getLayoutParams();
-        if (collapseParams != null) {
-            int size = dp(collapsed ? 30 : 38);
-            collapseParams.width = size;
-            collapseParams.height = size;
-            collapse.setLayoutParams(collapseParams);
-        }
-        collapse.setRotation(collapsed ? 180f : 0f);
-        collapse.setContentDescription(collapsed
-                ? "Expand AI Grammar bar" : "Minimize AI Grammar bar");
+        collapse.setVisibility(collapsed ? View.GONE : View.VISIBLE);
         if (collapsed) hideChip();
         refreshToggle();
         refreshStatus();
     }
 
     private boolean allowed() {
-        if (!active || row == null || !row.isShown() || !GrammarClient.isEnabled()
+        if (!active || collapsed || row == null || !row.isShown() || !GrammarClient.isEnabled()
                 || !ime.isInputViewShown() || editor == null
                 || editor != ime.getCurrentInputEditorInfo() || cursorStart < 0
                 || cursorStart != cursorEnd) return false;
@@ -440,7 +477,7 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
     private void showChip(String core) {
         if (chip == null) return;
-        if (collapsed) setCollapsed(false, false);
+        if (collapsed) return;
         chip.setText("✓  " + core);
         chip.setContentDescription("Apply grammar correction: " + core);
         chip.setVisibility(View.VISIBLE);
@@ -521,13 +558,15 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
             toggle.setLayoutParams(toggleParams);
         }
         toggle.setPadding(dp(collapsed ? 3 : 7), 0, dp(collapsed ? 3 : 7), 0);
-        String description = "AI Grammar " + (enabled ? "on" : "off") + ". Tap to toggle.";
-        if (!enabled && !GrammarClient.hasKey()) description += " API key needed.";
+        String description = collapsed ? "Restore AI Grammar bar"
+                : "AI Grammar " + (enabled ? "on" : "off") + ". Tap to toggle.";
+        if (!collapsed && !enabled && !GrammarClient.hasKey()) description += " API key needed.";
         toggle.setContentDescription(description);
     }
 
     private void refreshStatus() {
         if (status == null) return;
+        if (collapsed) { status.setVisibility(View.GONE); return; }
         if (chip != null && chip.getVisibility() == View.VISIBLE) {
             status.setVisibility(View.GONE);
             return;
@@ -558,25 +597,18 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
 
     private void repairShiftIcon() {
         try {
-            if (shiftIcon == null || shiftIcon.getWindowToken() == null) {
-                if (shiftObserver != null && shiftObserver.isAlive() && shiftPreDraw != null) {
+            Window window = ime.getWindow() == null ? null : ime.getWindow().getWindow();
+            View root = window == null ? null : window.getDecorView();
+            if (root == null) return;
+            // Observe the stable window, not a key child that Gboard replaces when
+            // changing case/layout. Never retain the old child ImageView.
+            if (shiftObserver != root.getViewTreeObserver()) {
+                if (shiftObserver != null && shiftObserver.isAlive() && shiftPreDraw != null)
                     shiftObserver.removeOnPreDrawListener(shiftPreDraw);
-                }
                 shiftObserver = null;
-                shiftPreDraw = null;
-                shiftIcon = null;
-                Window window = ime.getWindow() == null ? null : ime.getWindow().getWindow();
-                View root = window == null ? null : window.getDecorView();
-                if (root == null) return;
-                View shift = root.findViewById(KEY_SHIFT);
-                if (shift == null) return;
-                View candidate = shift.findViewById(KEY_ICON);
-                if (!(candidate instanceof ImageView)) candidate = findImageView(shift);
-                if (!(candidate instanceof ImageView)) return;
-                shiftIcon = (ImageView) candidate;
-                hookShiftIcon(shift);
+                hookShiftIcon(root);
             }
-            applyShiftIcon();
+            repairVisibleShiftKeys(root);
         } catch (RuntimeException error) {
             Log.w("AIGrammar", "Cannot repair shift icon");
         }
@@ -589,31 +621,43 @@ public final class GrammarBridge implements SharedPreferences.OnSharedPreference
         shiftObserver = observer;
         shiftPreDraw = new ViewTreeObserver.OnPreDrawListener() {
             @Override public boolean onPreDraw() {
-                applyShiftIcon();
+                repairShiftIcon();
                 return true;
             }
         };
         observer.addOnPreDrawListener(shiftPreDraw);
     }
 
-    private void applyShiftIcon() {
-        if (shiftIcon == null || shiftIcon.getWindowToken() == null) return;
-        // Gboard's split density pack supplies this glyph; after the package rename
-        // the themed ImageView can still be hidden or left fully transparent.
-        if (shiftIcon.getVisibility() != View.VISIBLE) shiftIcon.setVisibility(View.VISIBLE);
-        if (shiftIcon.getImageAlpha() != 255) shiftIcon.setImageAlpha(255);
-        if (shiftIcon.getColorFilter() != shiftFilter) {
-            shiftIcon.setColorFilter(shiftFilter);
+    private void repairVisibleShiftKeys(View view) {
+        if (view.getVisibility() != View.VISIBLE) return;
+        if (view.getId() == KEY_SHIFT) {
+            ImageView icon = findImageView(view);
+            if (icon != null) applyShiftIcon(icon);
+            return;
         }
-        Drawable drawable = shiftIcon.getDrawable();
+        if (view instanceof ViewGroup) {
+            ViewGroup group = (ViewGroup) view;
+            for (int i = 0; i < group.getChildCount(); i++)
+                repairVisibleShiftKeys(group.getChildAt(i));
+        }
+    }
+
+    private void applyShiftIcon(ImageView icon) {
+        if (icon.getVisibility() != View.VISIBLE) icon.setVisibility(View.VISIBLE);
+        if (icon.getAlpha() != 1f) icon.setAlpha(1f);
+        if (icon.getImageAlpha() != 255) icon.setImageAlpha(255);
+        if (icon.getColorFilter() != shiftFilter) icon.setColorFilter(shiftFilter);
+        Drawable drawable = icon.getDrawable();
         if (drawable == null) {
-            try { shiftIcon.setImageResource(SHIFT_OFF_ICON); }
+            try { icon.setImageResource(SHIFT_OFF_ICON); }
             catch (RuntimeException ignored) { }
         }
     }
 
     private ImageView findImageView(View view) {
-        if (view instanceof ImageView) return (ImageView) view;
+        if (view instanceof ImageView && view.getId() == KEY_ICON) return (ImageView) view;
+        // An ImageView may itself be GONE; its enclosing key content must be current.
+        if (view.getVisibility() != View.VISIBLE) return null;
         if (view instanceof ViewGroup) {
             ViewGroup group = (ViewGroup) view;
             for (int i = 0; i < group.getChildCount(); i++) {

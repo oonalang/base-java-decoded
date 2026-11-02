@@ -52,14 +52,12 @@
     .line 31
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 32
     sget-object v7, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     new-instance v8, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v8}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    .line 31
     const/4 v3, 0x1
 
     const/4 v4, 0x1
@@ -79,7 +77,6 @@
 
     sput-object v0, Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 35
     return-void
 .end method
 
@@ -92,19 +89,19 @@
     return-void
 .end method
 
-.method static synthetic access$0()Ljava/util/concurrent/atomic/AtomicLong;
+.method static synthetic access$000()Ljava/util/concurrent/atomic/AtomicLong;
     .registers 1
 
-    .line 33
+    .line 22
     sget-object v0, Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
 
     return-object v0
 .end method
 
-.method static synthetic access$1(I)Ljava/lang/String;
+.method static synthetic access$100(I)Ljava/lang/String;
     .registers 1
 
-    .line 176
+    .line 22
     invoke-static {p0}, Lcom/aigrammar/GrammarClient;->httpError(I)Ljava/lang/String;
 
     move-result-object p0
@@ -112,10 +109,10 @@
     return-object p0
 .end method
 
-.method static synthetic access$2(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic access$200(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
     .registers 5
 
-    .line 185
+    .line 22
     invoke-static {p0, p1, p2, p3, p4}, Lcom/aigrammar/GrammarClient;->deliver(JLcom/aigrammar/GrammarClient$Callback;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -227,11 +224,12 @@
 
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_19
 
     :cond_18
     const/4 v0, 0x0
 
+    :goto_19
     return v0
 .end method
 
@@ -251,13 +249,13 @@
     :cond_7
     const/16 v0, 0x191
 
-    if-eq p0, v0, :cond_35
+    if-eq p0, v0, :cond_39
 
     const/16 v0, 0x193
 
     if-ne p0, v0, :cond_10
 
-    goto :goto_35
+    goto :goto_39
 
     .line 179
     :cond_10
@@ -293,9 +291,13 @@
     :cond_25
     new-instance v0, Ljava/lang/StringBuilder;
 
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     const-string v1, "Gemini error "
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -308,8 +310,8 @@
     return-object p0
 
     .line 178
-    :cond_35
-    :goto_35
+    :cond_39
+    :goto_39
     const-string p0, "Check your Gemini API key"
 
     return-object p0
@@ -354,10 +356,8 @@
 
     move-result-object p0
 
-    .line 45
     const-string v1, "aigrammar_prefs"
 
-    .line 44
     const/4 v2, 0x0
 
     invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
@@ -399,7 +399,7 @@
     .line 53
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_e
 
     const-string v2, "enabled"
 
@@ -407,13 +407,11 @@
 
     move-result v0
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_e
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    return v0
-
-    :cond_f
+    :cond_e
     return v1
 .end method
 

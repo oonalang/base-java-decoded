@@ -43,46 +43,46 @@
     return-void
 .end method
 
-.method static synthetic access$0(Lcom/aigrammar/SettingsActivity;)Z
+.method static synthetic access$000(Lcom/aigrammar/SettingsActivity;)Z
     .registers 1
 
-    .line 28
+    .line 23
     iget-boolean p0, p0, Lcom/aigrammar/SettingsActivity;->destroyed:Z
 
     return p0
 .end method
 
-.method static synthetic access$1(Lcom/aigrammar/SettingsActivity;)Landroid/widget/Button;
+.method static synthetic access$100(Lcom/aigrammar/SettingsActivity;)Landroid/widget/Button;
     .registers 1
 
-    .line 27
+    .line 23
     iget-object p0, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
 
     return-object p0
 .end method
 
-.method static synthetic access$2(Lcom/aigrammar/SettingsActivity;)Landroid/widget/TextView;
+.method static synthetic access$200(Lcom/aigrammar/SettingsActivity;)I
     .registers 1
 
-    .line 26
-    iget-object p0, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    return-object p0
-.end method
-
-.method static synthetic access$3(Lcom/aigrammar/SettingsActivity;)I
-    .registers 1
-
-    .line 35
+    .line 23
     iget p0, p0, Lcom/aigrammar/SettingsActivity;->accent:I
 
     return p0
 .end method
 
-.method static synthetic access$4(Lcom/aigrammar/SettingsActivity;)I
+.method static synthetic access$300(Lcom/aigrammar/SettingsActivity;)Landroid/widget/TextView;
     .registers 1
 
-    .line 37
+    .line 23
+    iget-object p0, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    return-object p0
+.end method
+
+.method static synthetic access$400(Lcom/aigrammar/SettingsActivity;)I
+    .registers 1
+
+    .line 23
     iget p0, p0, Lcom/aigrammar/SettingsActivity;->error:I
 
     return p0
@@ -91,30 +91,30 @@
 .method private actionButton(Ljava/lang/String;Z)Landroid/widget/Button;
     .registers 6
 
-    .line 251
+    .line 255
     new-instance v0, Landroid/widget/Button;
 
     invoke-direct {v0, p0}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    .line 252
+    .line 256
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 253
+    .line 257
     const/high16 p1, 0x41600000    # 14.0f
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setTextSize(F)V
 
-    .line 254
+    .line 258
     const/4 p1, 0x0
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setAllCaps(Z)V
 
-    .line 255
+    .line 259
     const/16 v1, 0x11
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 256
+    .line 260
     const/16 v1, 0xc
 
     invoke-direct {p0, v1}, Lcom/aigrammar/SettingsActivity;->dp(I)I
@@ -127,17 +127,17 @@
 
     invoke-virtual {v0, v2, p1, v1, p1}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 257
+    .line 261
     const/16 v1, 0xe
 
     if-eqz p2, :cond_36
 
-    .line 258
+    .line 262
     iget p2, p0, Lcom/aigrammar/SettingsActivity;->accentText:I
 
     invoke-virtual {v0, p2}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 259
+    .line 263
     iget p2, p0, Lcom/aigrammar/SettingsActivity;->accent:I
 
     invoke-direct {p0, p2, v1, p1}, Lcom/aigrammar/SettingsActivity;->rounded(IIZ)Landroid/graphics/drawable/GradientDrawable;
@@ -146,16 +146,15 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 260
     goto :goto_45
 
-    .line 261
+    .line 265
     :cond_36
     iget p1, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 262
+    .line 266
     iget p1, p0, Lcom/aigrammar/SettingsActivity;->surface:I
 
     const/4 p2, 0x1
@@ -166,7 +165,7 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 264
+    .line 268
     :goto_45
     return-object v0
 .end method
@@ -174,7 +173,7 @@
 .method private dp(I)I
     .registers 3
 
-    .line 213
+    .line 217
     int-to-float p1, p1
 
     invoke-virtual {p0}, Lcom/aigrammar/SettingsActivity;->getResources()Landroid/content/res/Resources;
@@ -199,38 +198,38 @@
 .method private field(Ljava/lang/String;Ljava/lang/String;Z)Landroid/widget/EditText;
     .registers 9
 
-    .line 236
+    .line 240
     new-instance v0, Landroid/widget/EditText;
 
     invoke-direct {v0, p0}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 237
+    .line 241
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSingleLine(Z)V
 
-    .line 238
+    .line 242
     const/high16 v2, 0x41700000    # 15.0f
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setTextSize(F)V
 
-    .line 239
+    .line 243
     iget v2, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setTextColor(I)V
 
-    .line 240
+    .line 244
     iget v2, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setHintTextColor(I)V
 
-    .line 241
+    .line 245
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 242
+    .line 246
     invoke-virtual {v0, p2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 243
+    .line 247
     const/16 p1, 0xe
 
     invoke-direct {p0, p1}, Lcom/aigrammar/SettingsActivity;->dp(I)I
@@ -253,7 +252,7 @@
 
     invoke-virtual {v0, p2, v3, v4, v2}, Landroid/widget/EditText;->setPadding(IIII)V
 
-    .line 244
+    .line 248
     iget p2, p0, Lcom/aigrammar/SettingsActivity;->surface:I
 
     invoke-direct {p0, p2, p1, v1}, Lcom/aigrammar/SettingsActivity;->rounded(IIZ)Landroid/graphics/drawable/GradientDrawable;
@@ -262,33 +261,29 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 245
-    nop
-
-    .line 246
-    if-eqz p3, :cond_44
+    .line 249
+    if-eqz p3, :cond_43
 
     const/16 p1, 0x80
 
-    goto :goto_46
+    goto :goto_45
 
-    :cond_44
+    :cond_43
     const/high16 p1, 0x80000
 
-    :goto_46
+    :goto_45
     or-int/2addr p1, v1
 
-    .line 245
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setInputType(I)V
 
-    .line 247
+    .line 251
     return-object v0
 .end method
 
 .method private readTheme()V
     .registers 3
 
-    .line 188
+    .line 192
     invoke-virtual {p0}, Lcom/aigrammar/SettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -299,131 +294,126 @@
 
     iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
 
-    .line 189
-    nop
-
-    .line 188
     and-int/lit8 v0, v0, 0x30
 
-    .line 190
+    .line 194
     const/16 v1, 0x20
 
-    if-ne v0, v1, :cond_13
+    if-ne v0, v1, :cond_12
 
     const/4 v0, 0x1
 
-    goto :goto_14
+    goto :goto_13
 
-    :cond_13
+    :cond_12
     const/4 v0, 0x0
 
-    :goto_14
+    :goto_13
     iput-boolean v0, p0, Lcom/aigrammar/SettingsActivity;->night:Z
 
-    .line 191
+    .line 195
     iget-boolean v0, p0, Lcom/aigrammar/SettingsActivity;->night:Z
 
-    if-eqz v0, :cond_42
+    if-eqz v0, :cond_41
 
-    .line 192
+    .line 196
     const v0, -0xf0ebe6
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->background:I
 
-    .line 193
+    .line 197
     const v0, -0xe5ded5
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->surface:I
 
-    .line 194
+    .line 198
     const v0, -0x150f09
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
 
-    .line 195
+    .line 199
     const v0, -0x655849
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
-    .line 196
+    .line 200
     const v0, -0x601646
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->accent:I
 
-    .line 197
+    .line 201
     const v0, -0xf9dae6
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->accentText:I
 
-    .line 198
+    .line 202
     const/16 v0, -0x4b55
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->error:I
 
-    .line 199
+    .line 203
     const v0, 0x26ffffff
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->stroke:I
 
-    .line 200
-    goto :goto_64
+    goto :goto_63
 
-    .line 201
-    :cond_42
+    .line 205
+    :cond_41
     const v0, -0x90705
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->background:I
 
-    .line 202
+    .line 206
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->surface:I
 
-    .line 203
+    .line 207
     const v1, -0xe8dfd6
 
     iput v1, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
 
-    .line 204
+    .line 208
     const v1, -0xa39586
 
     iput v1, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
-    .line 205
+    .line 209
     const v1, -0xf185ae
 
     iput v1, p0, Lcom/aigrammar/SettingsActivity;->accent:I
 
-    .line 206
+    .line 210
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->accentText:I
 
-    .line 207
+    .line 211
     const v0, -0x4cd9e2
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->error:I
 
-    .line 208
+    .line 212
     const/high16 v0, 0x14000000
 
     iput v0, p0, Lcom/aigrammar/SettingsActivity;->stroke:I
 
-    .line 210
-    :goto_64
+    .line 214
+    :goto_63
     return-void
 .end method
 
 .method private rounded(IIZ)Landroid/graphics/drawable/GradientDrawable;
     .registers 5
 
-    .line 217
+    .line 221
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 218
+    .line 222
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 219
+    .line 223
     invoke-direct {p0, p2}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
     move-result p1
@@ -432,7 +422,7 @@
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 220
+    .line 224
     if-eqz p3, :cond_20
 
     const/4 p1, 0x1
@@ -449,7 +439,7 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/GradientDrawable;->setStroke(II)V
 
-    .line 221
+    .line 225
     :cond_20
     return-object v0
 .end method
@@ -457,7 +447,7 @@
 .method private save()V
     .registers 5
 
-    .line 268
+    .line 272
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -472,7 +462,7 @@
 
     move-result-object v0
 
-    .line 269
+    .line 273
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
@@ -481,26 +471,26 @@
 
     const-string v0, "gemini-3.5-flash-lite"
 
-    .line 270
+    .line 274
     :cond_16
     invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    .line 271
+    .line 275
     if-nez v1, :cond_1d
 
     return-void
 
-    .line 272
+    .line 276
     :cond_1d
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 
-    .line 273
     iget-object v2, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
 
+    .line 277
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v2
@@ -519,7 +509,7 @@
 
     move-result-object v1
 
-    .line 274
+    .line 278
     const-string v2, "model"
 
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
@@ -528,32 +518,32 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 275
+    .line 279
     return-void
 .end method
 
 .method private section(Ljava/lang/String;)Landroid/widget/TextView;
     .registers 5
 
-    .line 225
+    .line 229
     new-instance v0, Landroid/widget/TextView;
 
     invoke-direct {v0, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 226
+    .line 230
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 227
+    .line 231
     const/high16 p1, 0x41280000    # 10.5f
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 228
+    .line 232
     const p1, 0x3df5c28f    # 0.12f
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setLetterSpacing(F)V
 
-    .line 229
+    .line 233
     invoke-virtual {v0}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object p1
@@ -562,12 +552,12 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    .line 230
+    .line 234
     iget p1, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 231
+    .line 235
     const/4 p1, 0x2
 
     invoke-direct {p0, p1}, Lcom/aigrammar/SettingsActivity;->dp(I)I
@@ -584,29 +574,29 @@
 
     invoke-virtual {v0, p1, v2, v2, v1}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 232
+    .line 236
     return-object v0
 .end method
 
 
 # virtual methods
-.method synthetic lambda$0$com-aigrammar-SettingsActivity(Landroid/widget/CompoundButton;Z)V
+.method synthetic lambda$onCreate$0$com-aigrammar-SettingsActivity(Landroid/widget/CompoundButton;Z)V
     .registers 4
 
-    .line 117
+    .line 111
     invoke-direct {p0}, Lcom/aigrammar/SettingsActivity;->save()V
 
-    .line 118
+    .line 112
     invoke-static {p2}, Lcom/aigrammar/GrammarClient;->setEnabled(Z)V
 
-    .line 119
+    .line 113
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     iget v0, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 120
+    .line 114
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     if-eqz p2, :cond_14
@@ -621,62 +611,62 @@
     :goto_16
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 121
+    .line 115
     return-void
 .end method
 
-.method synthetic lambda$1$com-aigrammar-SettingsActivity(Landroid/view/View;)V
+.method synthetic lambda$onCreate$1$com-aigrammar-SettingsActivity(Landroid/view/View;)V
     .registers 3
 
-    .line 131
+    .line 125
     invoke-direct {p0}, Lcom/aigrammar/SettingsActivity;->save()V
 
-    .line 132
+    .line 126
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     iget v0, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 133
+    .line 127
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     const-string v0, "Saved"
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 134
+    .line 128
     return-void
 .end method
 
-.method synthetic lambda$2$com-aigrammar-SettingsActivity(Landroid/view/View;)V
+.method synthetic lambda$onCreate$2$com-aigrammar-SettingsActivity(Landroid/view/View;)V
     .registers 3
 
-    .line 152
+    .line 146
     invoke-direct {p0}, Lcom/aigrammar/SettingsActivity;->save()V
 
-    .line 153
+    .line 147
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 154
+    .line 148
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     iget v0, p0, Lcom/aigrammar/SettingsActivity;->muted:I
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 155
+    .line 149
     iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
 
     const-string v0, "Testing\u2026"
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 156
+    .line 150
     new-instance p1, Lcom/aigrammar/SettingsActivity$1;
 
     invoke-direct {p1, p0}, Lcom/aigrammar/SettingsActivity$1;-><init>(Lcom/aigrammar/SettingsActivity;)V
@@ -685,685 +675,685 @@
 
     invoke-static {v0, p1}, Lcom/aigrammar/GrammarClient;->request(Ljava/lang/String;Lcom/aigrammar/GrammarClient$Callback;)V
 
-    .line 170
+    .line 164
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .registers 16
+    .registers 18
 
     .line 41
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    move-object/from16 v0, p0
+
+    invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 42
-    invoke-virtual {p0}, Lcom/aigrammar/SettingsActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual/range {p0 .. p0}, Lcom/aigrammar/SettingsActivity;->getWindow()Landroid/view/Window;
 
-    move-result-object p1
+    move-result-object v1
 
-    const/16 v0, 0x2000
+    const/16 v2, 0x2000
 
-    invoke-virtual {p1, v0}, Landroid/view/Window;->addFlags(I)V
+    invoke-virtual {v1, v2}, Landroid/view/Window;->addFlags(I)V
 
     .line 43
-    invoke-static {p0}, Lcom/aigrammar/GrammarClient;->init(Landroid/content/Context;)V
+    invoke-static/range {p0 .. p0}, Lcom/aigrammar/GrammarClient;->init(Landroid/content/Context;)V
 
     .line 44
     invoke-static {}, Lcom/aigrammar/GrammarClient;->preferences()Landroid/content/SharedPreferences;
 
-    move-result-object p1
+    move-result-object v1
 
     .line 45
-    if-nez p1, :cond_19
+    if-nez v1, :cond_1b
 
-    invoke-virtual {p0}, Lcom/aigrammar/SettingsActivity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/aigrammar/SettingsActivity;->finish()V
 
     return-void
 
     .line 46
-    :cond_19
-    invoke-direct {p0}, Lcom/aigrammar/SettingsActivity;->readTheme()V
+    :cond_1b
+    invoke-direct/range {p0 .. p0}, Lcom/aigrammar/SettingsActivity;->readTheme()V
 
     .line 48
-    invoke-virtual {p0}, Lcom/aigrammar/SettingsActivity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    .line 49
-    iget v1, p0, Lcom/aigrammar/SettingsActivity;->background:I
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setStatusBarColor(I)V
-
-    .line 50
-    iget v1, p0, Lcom/aigrammar/SettingsActivity;->background:I
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setNavigationBarColor(I)V
-
-    .line 51
-    const/16 v1, 0x10
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
-
-    .line 52
-    invoke-virtual {v0}, Landroid/view/Window;->getInsetsController()Landroid/view/WindowInsetsController;
+    invoke-virtual/range {p0 .. p0}, Lcom/aigrammar/SettingsActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
-    const/4 v3, 0x0
+    .line 49
+    iget v3, v0, Lcom/aigrammar/SettingsActivity;->background:I
 
-    if-eqz v2, :cond_47
+    invoke-virtual {v2, v3}, Landroid/view/Window;->setStatusBarColor(I)V
+
+    .line 50
+    iget v3, v0, Lcom/aigrammar/SettingsActivity;->background:I
+
+    invoke-virtual {v2, v3}, Landroid/view/Window;->setNavigationBarColor(I)V
+
+    .line 51
+    const/16 v3, 0x10
+
+    invoke-virtual {v2, v3}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 53
-    nop
+    new-instance v4, Landroid/widget/LinearLayout;
+
+    invoke-direct {v4, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    .line 54
+    const/4 v5, 0x1
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 55
-    invoke-virtual {v0}, Landroid/view/Window;->getInsetsController()Landroid/view/WindowInsetsController;
+    iget v6, v0, Lcom/aigrammar/SettingsActivity;->background:I
 
-    move-result-object v0
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
     .line 56
-    iget-boolean v2, p0, Lcom/aigrammar/SettingsActivity;->night:Z
+    const/16 v6, 0x16
 
-    const/16 v4, 0x18
-
-    if-eqz v2, :cond_43
-
-    move v2, v3
-
-    goto :goto_44
-
-    :cond_43
-    move v2, v4
-
-    .line 55
-    :goto_44
-    invoke-interface {v0, v2, v4}, Landroid/view/WindowInsetsController;->setSystemBarsAppearance(II)V
-
-    .line 59
-    :cond_47
-    new-instance v0, Landroid/widget/LinearLayout;
-
-    invoke-direct {v0, p0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
-
-    .line 60
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setOrientation(I)V
-
-    .line 61
-    iget v4, p0, Lcom/aigrammar/SettingsActivity;->background:I
-
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
-
-    .line 62
-    const/16 v4, 0x16
-
-    invoke-direct {p0, v4}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v4
-
-    .line 63
-    const/16 v5, 0x14
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v5
-
-    const/16 v6, 0x24
-
-    invoke-direct {p0, v6}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    invoke-direct {v0, v6}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
     move-result v6
 
-    invoke-virtual {v0, v4, v5, v4, v6}, Landroid/widget/LinearLayout;->setPadding(IIII)V
+    .line 57
+    const/16 v7, 0x14
 
-    .line 65
-    new-instance v4, Landroid/widget/TextView;
-
-    invoke-direct {v4, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
-
-    .line 66
-    const-string v5, "AI Grammar"
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 67
-    const/high16 v5, 0x41e00000    # 28.0f
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextSize(F)V
-
-    .line 68
-    iget v5, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 69
-    invoke-virtual {v4}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
-
-    .line 70
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    .line 72
-    new-instance v4, Landroid/widget/TextView;
-
-    invoke-direct {v4, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
-
-    .line 73
-    const-string v5, "Fix grammar, spelling and punctuation with Gemini. Your key stays in this app\'s private storage."
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 74
-    const/high16 v5, 0x41600000    # 14.0f
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextSize(F)V
-
-    .line 75
-    iget v5, p0, Lcom/aigrammar/SettingsActivity;->muted:I
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 76
-    const/4 v5, 0x3
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v5
-
-    int-to-float v5, v5
-
-    const/high16 v6, 0x3f800000    # 1.0f
-
-    invoke-virtual {v4, v5, v6}, Landroid/widget/TextView;->setLineSpacing(FF)V
-
-    .line 77
-    const/4 v5, 0x6
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
     move-result v7
 
-    const/16 v8, 0x12
+    const/16 v8, 0x24
 
-    invoke-direct {p0, v8}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    invoke-direct {v0, v8}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v8
+
+    invoke-virtual {v4, v6, v7, v6, v8}, Landroid/widget/LinearLayout;->setPadding(IIII)V
+
+    .line 59
+    new-instance v6, Landroid/widget/TextView;
+
+    invoke-direct {v6, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 60
+    const-string v7, "AI Grammar"
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 61
+    const/high16 v7, 0x41e00000    # 28.0f
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 62
+    iget v7, v0, Lcom/aigrammar/SettingsActivity;->foreground:I
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 63
+    invoke-virtual {v6}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7, v5}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
+
+    .line 64
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 66
+    new-instance v6, Landroid/widget/TextView;
+
+    invoke-direct {v6, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 67
+    const-string v7, "Fix grammar, spelling and punctuation with Gemini. Your key stays in this app\'s private storage."
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 68
+    const/high16 v7, 0x41600000    # 14.0f
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 69
+    iget v7, v0, Lcom/aigrammar/SettingsActivity;->muted:I
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 70
+    const/4 v7, 0x3
+
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v7
+
+    int-to-float v7, v7
+
+    const/high16 v8, 0x3f800000    # 1.0f
+
+    invoke-virtual {v6, v7, v8}, Landroid/widget/TextView;->setLineSpacing(FF)V
+
+    .line 71
+    const/4 v7, 0x6
+
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
     move-result v9
 
-    invoke-virtual {v4, v3, v7, v3, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+    const/16 v10, 0x12
+
+    invoke-direct {v0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v11
+
+    const/4 v12, 0x0
+
+    invoke-virtual {v6, v12, v9, v12, v11}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 72
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 74
+    const-string v6, "GEMINI API KEY"
+
+    invoke-direct {v0, v6}, Lcom/aigrammar/SettingsActivity;->section(Ljava/lang/String;)Landroid/widget/TextView;
+
+    move-result-object v6
+
+    .line 75
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 76
+    const-string v6, "api_key"
+
+    const-string v9, ""
+
+    invoke-interface {v1, v6, v9}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v9, "Paste your key"
+
+    invoke-direct {v0, v9, v6, v5}, Lcom/aigrammar/SettingsActivity;->field(Ljava/lang/String;Ljava/lang/String;Z)Landroid/widget/EditText;
+
+    move-result-object v6
+
+    iput-object v6, v0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+
+    .line 77
+    iget-object v6, v0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+
+    invoke-virtual {v6, v12}, Landroid/widget/EditText;->setSaveEnabled(Z)V
 
     .line 78
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    iget-object v6, v0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+
+    const/16 v9, 0x8
+
+    invoke-virtual {v6, v9}, Landroid/widget/EditText;->setImportantForAutofill(I)V
+
+    .line 79
+    iget-object v6, v0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+
+    const/high16 v9, 0x1000000
+
+    invoke-virtual {v6, v9}, Landroid/widget/EditText;->setImeOptions(I)V
 
     .line 80
-    const-string v4, "GEMINI API KEY"
+    iget-object v6, v0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
 
-    invoke-direct {p0, v4}, Lcom/aigrammar/SettingsActivity;->section(Ljava/lang/String;)Landroid/widget/TextView;
-
-    move-result-object v4
-
-    .line 81
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 82
-    const-string v4, "api_key"
+    new-instance v6, Landroid/widget/TextView;
 
-    const-string v7, ""
-
-    invoke-interface {p1, v4, v7}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v7, "Paste your key"
-
-    invoke-direct {p0, v7, v4, v2}, Lcom/aigrammar/SettingsActivity;->field(Ljava/lang/String;Ljava/lang/String;Z)Landroid/widget/EditText;
-
-    move-result-object v4
-
-    iput-object v4, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+    invoke-direct {v6, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 83
-    iget-object v4, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+    const-string v11, "Create a key at aistudio.google.com/apikey"
 
-    invoke-virtual {v4, v3}, Landroid/widget/EditText;->setSaveEnabled(Z)V
+    invoke-virtual {v6, v11}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 84
-    iget-object v4, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+    const/high16 v11, 0x41400000    # 12.0f
 
-    const/16 v7, 0x8
-
-    invoke-virtual {v4, v7}, Landroid/widget/EditText;->setImportantForAutofill(I)V
+    invoke-virtual {v6, v11}, Landroid/widget/TextView;->setTextSize(F)V
 
     .line 85
-    iget-object v4, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+    iget v13, v0, Lcom/aigrammar/SettingsActivity;->muted:I
 
-    const/high16 v7, 0x1000000
-
-    invoke-virtual {v4, v7}, Landroid/widget/EditText;->setImeOptions(I)V
+    invoke-virtual {v6, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 86
-    iget-object v4, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
+    const/4 v13, 0x2
 
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-direct {v0, v13}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    .line 88
-    new-instance v4, Landroid/widget/TextView;
+    move-result v14
 
-    invoke-direct {v4, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v15
+
+    invoke-direct {v0, v3}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v10
+
+    invoke-virtual {v6, v14, v15, v12, v10}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 87
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 89
-    const-string v9, "Create a key at aistudio.google.com/apikey"
+    const-string v6, "MODEL"
 
-    invoke-virtual {v4, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-direct {v0, v6}, Lcom/aigrammar/SettingsActivity;->section(Ljava/lang/String;)Landroid/widget/TextView;
+
+    move-result-object v6
 
     .line 90
-    const/high16 v9, 0x41400000    # 12.0f
-
-    invoke-virtual {v4, v9}, Landroid/widget/TextView;->setTextSize(F)V
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 91
-    iget v10, p0, Lcom/aigrammar/SettingsActivity;->muted:I
-
-    invoke-virtual {v4, v10}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 92
-    const/4 v10, 0x2
-
-    invoke-direct {p0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v11
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v12
-
-    invoke-direct {p0, v1}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v13
-
-    invoke-virtual {v4, v11, v12, v3, v13}, Landroid/widget/TextView;->setPadding(IIII)V
-
-    .line 93
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    .line 95
-    const-string v4, "MODEL"
-
-    invoke-direct {p0, v4}, Lcom/aigrammar/SettingsActivity;->section(Ljava/lang/String;)Landroid/widget/TextView;
-
-    move-result-object v4
-
-    .line 96
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    .line 97
     nop
 
-    .line 98
-    const-string v4, "model"
+    .line 92
+    const-string v6, "model"
 
-    const-string v11, "gemini-3.5-flash-lite"
+    const-string v10, "gemini-3.5-flash-lite"
 
-    invoke-interface {p1, v4, v11}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v6, v10}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
+
+    .line 91
+    invoke-direct {v0, v10, v1, v12}, Lcom/aigrammar/SettingsActivity;->field(Ljava/lang/String;Ljava/lang/String;Z)Landroid/widget/EditText;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+
+    .line 93
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+
+    const v6, 0x80001
+
+    invoke-virtual {v1, v6}, Landroid/widget/EditText;->setInputType(I)V
+
+    .line 94
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+
+    invoke-virtual {v1, v9}, Landroid/widget/EditText;->setImeOptions(I)V
+
+    .line 95
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 97
-    invoke-direct {p0, v11, p1, v3}, Lcom/aigrammar/SettingsActivity;->field(Ljava/lang/String;Ljava/lang/String;Z)Landroid/widget/EditText;
+    new-instance v1, Landroid/widget/TextView;
 
-    move-result-object p1
+    invoke-direct {v1, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+    .line 98
+    const-string v6, "Use the bare model ID. The default is optimized for short corrections."
+
+    invoke-virtual {v1, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 99
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
-
-    const v4, 0x80001
-
-    invoke-virtual {p1, v4}, Landroid/widget/EditText;->setInputType(I)V
+    invoke-virtual {v1, v11}, Landroid/widget/TextView;->setTextSize(F)V
 
     .line 100
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+    iget v6, v0, Lcom/aigrammar/SettingsActivity;->muted:I
 
-    invoke-virtual {p1, v7}, Landroid/widget/EditText;->setImeOptions(I)V
+    invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 101
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->model:Landroid/widget/EditText;
+    invoke-direct {v0, v13}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    move-result v6
 
-    .line 103
-    new-instance p1, Landroid/widget/TextView;
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    invoke-direct {p1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+    move-result v7
+
+    invoke-direct {v0, v3}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v9
+
+    invoke-virtual {v1, v6, v7, v12, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 102
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 104
-    const-string v4, "Use the bare model ID. The default is optimized for short corrections."
+    new-instance v1, Landroid/widget/Switch;
 
-    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-direct {v1, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
     .line 105
-    invoke-virtual {p1, v9}, Landroid/widget/TextView;->setTextSize(F)V
+    const-string v6, "Enable AI Grammar"
+
+    invoke-virtual {v1, v6}, Landroid/widget/Switch;->setText(Ljava/lang/CharSequence;)V
 
     .line 106
-    iget v4, p0, Lcom/aigrammar/SettingsActivity;->muted:I
+    const/high16 v6, 0x41700000    # 15.0f
 
-    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v1, v6}, Landroid/widget/Switch;->setTextSize(F)V
 
     .line 107
-    invoke-direct {p0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    iget v6, v0, Lcom/aigrammar/SettingsActivity;->foreground:I
 
-    move-result v4
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v5
-
-    invoke-direct {p0, v1}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v7
-
-    invoke-virtual {p1, v4, v5, v3, v7}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v1, v6}, Landroid/widget/Switch;->setTextColor(I)V
 
     .line 108
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    .line 110
-    new-instance p1, Landroid/widget/Switch;
-
-    invoke-direct {p1, p0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
-
-    .line 111
-    const-string v4, "Enable AI Grammar"
-
-    invoke-virtual {p1, v4}, Landroid/widget/Switch;->setText(Ljava/lang/CharSequence;)V
-
-    .line 112
-    const/high16 v4, 0x41700000    # 15.0f
-
-    invoke-virtual {p1, v4}, Landroid/widget/Switch;->setTextSize(F)V
-
-    .line 113
-    iget v4, p0, Lcom/aigrammar/SettingsActivity;->foreground:I
-
-    invoke-virtual {p1, v4}, Landroid/widget/Switch;->setTextColor(I)V
-
-    .line 114
     invoke-static {}, Lcom/aigrammar/GrammarClient;->isEnabled()Z
 
-    move-result v4
+    move-result v6
 
-    invoke-virtual {p1, v4}, Landroid/widget/Switch;->setChecked(Z)V
+    invoke-virtual {v1, v6}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 115
-    invoke-direct {p0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    .line 109
+    invoke-direct {v0, v13}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    move-result v4
+    move-result v6
 
-    const/4 v5, 0x4
+    const/4 v7, 0x4
 
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    move-result v7
+    move-result v9
 
-    const/16 v11, 0xe
+    const/16 v10, 0xe
 
-    invoke-direct {p0, v11}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    invoke-direct {v0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    move-result v11
+    move-result v10
 
-    invoke-virtual {p1, v4, v7, v3, v11}, Landroid/widget/Switch;->setPadding(IIII)V
+    invoke-virtual {v1, v6, v9, v12, v10}, Landroid/widget/Switch;->setPadding(IIII)V
+
+    .line 110
+    new-instance v6, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda0;
+
+    invoke-direct {v6, v0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda0;-><init>(Lcom/aigrammar/SettingsActivity;)V
+
+    invoke-virtual {v1, v6}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 116
-    new-instance v4, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda0;
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    invoke-direct {v4, p0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda0;-><init>(Lcom/aigrammar/SettingsActivity;)V
+    .line 118
+    new-instance v1, Landroid/widget/LinearLayout;
 
-    invoke-virtual {p1, v4}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-direct {v1, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 122
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    .line 119
+    invoke-virtual {v1, v12}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 124
-    new-instance p1, Landroid/widget/LinearLayout;
+    .line 120
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setGravity(I)V
 
-    invoke-direct {p1, p0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
-
-    .line 125
-    invoke-virtual {p1, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
-
-    .line 126
-    invoke-virtual {p1, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
-
-    .line 127
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v1
-
-    const/16 v4, 0xc
-
-    invoke-direct {p0, v4}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v4
-
-    invoke-virtual {p1, v3, v1, v3, v4}, Landroid/widget/LinearLayout;->setPadding(IIII)V
-
-    .line 129
-    const-string v1, "Save"
-
-    invoke-direct {p0, v1, v3}, Lcom/aigrammar/SettingsActivity;->actionButton(Ljava/lang/String;Z)Landroid/widget/Button;
-
-    move-result-object v1
-
-    .line 130
-    new-instance v4, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda1;
-
-    invoke-direct {v4, p0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda1;-><init>(Lcom/aigrammar/SettingsActivity;)V
-
-    invoke-virtual {v1, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 135
-    new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
-
-    const/16 v7, 0x30
-
-    invoke-direct {p0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v11
-
-    invoke-direct {v4, v3, v11, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
-
-    invoke-virtual {p1, v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 137
-    const-string v1, "Test connection"
-
-    invoke-direct {p0, v1, v2}, Lcom/aigrammar/SettingsActivity;->actionButton(Ljava/lang/String;Z)Landroid/widget/Button;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
-
-    .line 138
-    new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
-
-    invoke-direct {p0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v4
-
-    invoke-direct {v1, v3, v4, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
-
-    .line 139
-    const/16 v4, 0xa
-
-    invoke-direct {p0, v4}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v4
-
-    invoke-virtual {v1, v4, v3, v3, v3}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
-
-    .line 140
-    iget-object v3, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
-
-    invoke-virtual {p1, v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 141
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    .line 143
-    new-instance p1, Landroid/widget/TextView;
-
-    invoke-direct {p1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
-
-    iput-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    .line 144
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    const/high16 v1, 0x41500000    # 13.0f
-
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setTextSize(F)V
-
-    .line 145
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    iget v1, p0, Lcom/aigrammar/SettingsActivity;->muted:I
-
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 146
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    invoke-direct {p0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    invoke-virtual {p1, v1, v6}, Landroid/widget/TextView;->setLineSpacing(FF)V
-
-    .line 147
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
-
-    move-result v1
-
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    .line 121
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
     move-result v3
 
-    invoke-direct {p0, v5}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    const/16 v6, 0xc
 
-    move-result v4
+    invoke-direct {v0, v6}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    invoke-direct {p0, v8}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    move-result v6
 
-    move-result v5
+    invoke-virtual {v1, v12, v3, v12, v6}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
-    invoke-virtual {p1, v1, v3, v4, v5}, Landroid/widget/TextView;->setPadding(IIII)V
+    .line 123
+    const-string v3, "Save"
 
-    .line 148
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+    invoke-direct {v0, v3, v12}, Lcom/aigrammar/SettingsActivity;->actionButton(Ljava/lang/String;Z)Landroid/widget/Button;
 
-    const-string v1, "The test sends only: She go to school yesterday."
+    move-result-object v3
 
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    .line 124
+    new-instance v6, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda1;
 
-    .line 149
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+    invoke-direct {v6, v0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda1;-><init>(Lcom/aigrammar/SettingsActivity;)V
 
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v3, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 151
-    iget-object p1, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
+    .line 129
+    new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
-    new-instance v1, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;
+    const/16 v9, 0x30
 
-    invoke-direct {v1, p0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;-><init>(Lcom/aigrammar/SettingsActivity;)V
+    invoke-direct {v0, v9}, Lcom/aigrammar/SettingsActivity;->dp(I)I
 
-    invoke-virtual {p1, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    move-result v10
 
-    .line 172
-    new-instance p1, Landroid/widget/TextView;
+    invoke-direct {v6, v12, v10, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
-    invoke-direct {p1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+    invoke-virtual {v1, v3, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 131
+    const-string v3, "Test connection"
+
+    invoke-direct {v0, v3, v5}, Lcom/aigrammar/SettingsActivity;->actionButton(Ljava/lang/String;Z)Landroid/widget/Button;
+
+    move-result-object v3
+
+    iput-object v3, v0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
+
+    .line 132
+    new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
+
+    invoke-direct {v0, v9}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v6
+
+    invoke-direct {v3, v12, v6, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
+
+    .line 133
+    const/16 v6, 0xa
+
+    invoke-direct {v0, v6}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v6
+
+    invoke-virtual {v3, v6, v12, v12, v12}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
+
+    .line 134
+    iget-object v6, v0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
+
+    invoke-virtual {v1, v6, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 135
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 137
+    new-instance v1, Landroid/widget/TextView;
+
+    invoke-direct {v1, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    iput-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    .line 138
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    const/high16 v3, 0x41500000    # 13.0f
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 139
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    iget v3, v0, Lcom/aigrammar/SettingsActivity;->muted:I
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 140
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    invoke-direct {v0, v13}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v3
+
+    int-to-float v3, v3
+
+    invoke-virtual {v1, v3, v8}, Landroid/widget/TextView;->setLineSpacing(FF)V
+
+    .line 141
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v3
+
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v6
+
+    invoke-direct {v0, v7}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v7
+
+    const/16 v9, 0x12
+
+    invoke-direct {v0, v9}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v9
+
+    invoke-virtual {v1, v3, v6, v7, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 142
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    const-string v3, "The test sends only: She go to school yesterday."
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 143
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->status:Landroid/widget/TextView;
+
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 145
+    iget-object v1, v0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
+
+    new-instance v3, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;
+
+    invoke-direct {v3, v0}, Lcom/aigrammar/SettingsActivity$$ExternalSyntheticLambda2;-><init>(Lcom/aigrammar/SettingsActivity;)V
+
+    invoke-virtual {v1, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 166
+    new-instance v1, Landroid/widget/TextView;
+
+    invoke-direct {v1, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 167
+    const-string v3, "Only the current sentence before the cursor is sent, and only after a short pause. Password, email, URL and private-learning fields are skipped."
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 168
+    invoke-virtual {v1, v11}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 169
+    iget v3, v0, Lcom/aigrammar/SettingsActivity;->muted:I
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 170
+    invoke-direct {v0, v13}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+
+    move-result v3
+
+    int-to-float v3, v3
+
+    invoke-virtual {v1, v3, v8}, Landroid/widget/TextView;->setLineSpacing(FF)V
+
+    .line 171
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 173
-    const-string v1, "Only the current sentence before the cursor is sent, and only after a short pause. Password, email, URL and private-learning fields are skipped."
+    new-instance v1, Landroid/widget/ScrollView;
 
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-direct {v1, v0}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     .line 174
-    invoke-virtual {p1, v9}, Landroid/widget/TextView;->setTextSize(F)V
+    invoke-virtual {v1, v5}, Landroid/widget/ScrollView;->setFillViewport(Z)V
 
     .line 175
-    iget v1, p0, Lcom/aigrammar/SettingsActivity;->muted:I
-
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/ScrollView;->setFitsSystemWindows(Z)V
 
     .line 176
-    invoke-direct {p0, v10}, Lcom/aigrammar/SettingsActivity;->dp(I)I
+    iget v3, v0, Lcom/aigrammar/SettingsActivity;->background:I
 
-    move-result v1
-
-    int-to-float v1, v1
-
-    invoke-virtual {p1, v1, v6}, Landroid/widget/TextView;->setLineSpacing(FF)V
+    invoke-virtual {v1, v3}, Landroid/widget/ScrollView;->setBackgroundColor(I)V
 
     .line 177
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v1, v4}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    .line 179
-    new-instance p1, Landroid/widget/ScrollView;
-
-    invoke-direct {p1, p0}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
-
-    .line 180
-    invoke-virtual {p1, v2}, Landroid/widget/ScrollView;->setFillViewport(Z)V
+    .line 178
+    invoke-virtual {v0, v1}, Lcom/aigrammar/SettingsActivity;->setContentView(Landroid/view/View;)V
 
     .line 181
-    invoke-virtual {p1, v2}, Landroid/widget/ScrollView;->setFitsSystemWindows(Z)V
+    nop
 
     .line 182
-    iget v1, p0, Lcom/aigrammar/SettingsActivity;->background:I
+    invoke-virtual {v2}, Landroid/view/Window;->getInsetsController()Landroid/view/WindowInsetsController;
 
-    invoke-virtual {p1, v1}, Landroid/widget/ScrollView;->setBackgroundColor(I)V
+    move-result-object v1
 
     .line 183
-    invoke-virtual {p1, v0}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
+    if-eqz v1, :cond_269
 
     .line 184
-    invoke-virtual {p0, p1}, Lcom/aigrammar/SettingsActivity;->setContentView(Landroid/view/View;)V
+    nop
 
-    .line 185
+    .line 186
+    iget-boolean v0, v0, Lcom/aigrammar/SettingsActivity;->night:Z
+
+    const/16 v2, 0x18
+
+    if-eqz v0, :cond_265
+
+    goto :goto_266
+
+    :cond_265
+    move v12, v2
+
+    :goto_266
+    invoke-interface {v1, v12, v2}, Landroid/view/WindowInsetsController;->setSystemBarsAppearance(II)V
+
+    .line 189
+    :cond_269
     return-void
 .end method
 
 .method protected onDestroy()V
     .registers 2
 
-    .line 285
+    .line 289
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/aigrammar/SettingsActivity;->destroyed:Z
 
-    .line 286
+    .line 290
     invoke-static {}, Lcom/aigrammar/GrammarClient;->cancelPending()V
 
-    .line 287
+    .line 291
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 288
+    .line 292
     return-void
 .end method
 
 .method protected onPause()V
     .registers 3
 
-    .line 278
+    .line 282
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity;->apiKey:Landroid/widget/EditText;
 
     if-eqz v0, :cond_b
@@ -1374,11 +1364,11 @@
 
     invoke-direct {p0}, Lcom/aigrammar/SettingsActivity;->save()V
 
-    .line 279
+    .line 283
     :cond_b
     invoke-static {}, Lcom/aigrammar/GrammarClient;->cancelPending()V
 
-    .line 280
+    .line 284
     iget-object v0, p0, Lcom/aigrammar/SettingsActivity;->test:Landroid/widget/Button;
 
     if-eqz v0, :cond_18
@@ -1389,10 +1379,10 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 281
+    .line 285
     :cond_18
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 282
+    .line 286
     return-void
 .end method

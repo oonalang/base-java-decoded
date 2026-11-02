@@ -1,0 +1,42 @@
+path	reason
+.gitattributes	Exclude UI test outputs and preserve exact unified-patch context in whitespace checks.
+.gitignore	Exclude UI test outputs and preserve exact unified-patch context in whitespace checks.
+COMPACT.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+CONTEXT.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+README.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+aigrammar/README.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+aigrammar/UI-REPAIR.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+aigrammar/reports/ui-build-network.trace	Record current build, signing, offline network trace and UI/resource verification evidence.
+aigrammar/reports/ui-repair-build.log	Record current build, signing, offline network trace and UI/resource verification evidence.
+aigrammar/reports/ui-repair-verification.json	Record current build, signing, offline network trace and UI/resource verification evidence.
+aigrammar/reports/ui-signing-certificate.txt	Record current build, signing, offline network trace and UI/resource verification evidence.
+aigrammar/reports/ui-tests.log	Record current build, signing, offline network trace and UI/resource verification evidence.
+aigrammar/src/com/aigrammar/GrammarBridge.java	Fix bar background/collapse/settings launch and resolve current shift content instead of retaining a child icon.
+aigrammar/src/com/aigrammar/SettingsActivity.java	Configure window insets after setContentView creates the decor; fixes the reproduced Android 13 startup NPE.
+aigrammar/tests/android/pom.xml	Verify startup, both settings entry points, launch failure, row geometry, collapse and shift-content replacement with staged offline Android UI tests.
+aigrammar/tests/android/run-offline.sh	Verify startup, both settings entry points, launch failure, row geometry, collapse and shift-content replacement with staged offline Android UI tests.
+aigrammar/tests/android/src/test/java/com/aigrammar/GrammarUiTest.java	Verify startup, both settings entry points, launch failure, row geometry, collapse and shift-content replacement with staged offline Android UI tests.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda0.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda1.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda2.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda3.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda4.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda5.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$$ExternalSyntheticLambda6.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$1.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$2.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$3.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$4.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge$Snapshot.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarBridge.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$1.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient$2.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/GrammarClient.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda0.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda1.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$$ExternalSyntheticLambda2.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity$1.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+base_decoded/smali_classes5/com/aigrammar/SettingsActivity.smali	Regenerate helper dex/smali from Java 8 sources using the selected real signing certificate.
+releases/Gboard-By-Eliwoa-ui-fix.apk	Publish the signed UI-fix update, retaining the existing installation signer.
+releases/README.md	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.
+releases/SHA256SUMS.txt	Document the current APK, checksum, behavior, verified crash cause and remaining phone/API validation.

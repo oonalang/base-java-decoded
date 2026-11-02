@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/aigrammar/GrammarBridge;)V
     .registers 2
 
-    .line 590
+    .line 622
     iput-object p1, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,13 +38,13 @@
 .method public onPreDraw()Z
     .registers 2
 
-    .line 592
+    .line 624
     iget-object v0, p0, Lcom/aigrammar/GrammarBridge$4;->this$0:Lcom/aigrammar/GrammarBridge;
 
-    # invokes: Lcom/aigrammar/GrammarBridge;->applyShiftIcon()V
-    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$10(Lcom/aigrammar/GrammarBridge;)V
+    # invokes: Lcom/aigrammar/GrammarBridge;->repairShiftIcon()V
+    invoke-static {v0}, Lcom/aigrammar/GrammarBridge;->access$100(Lcom/aigrammar/GrammarBridge;)V
 
-    .line 593
+    .line 625
     const/4 v0, 0x1
 
     return v0

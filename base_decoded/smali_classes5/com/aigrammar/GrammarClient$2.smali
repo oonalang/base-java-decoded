@@ -1,4 +1,4 @@
-.class Lcom/aigrammar/GrammarClient$2;
+.class final Lcom/aigrammar/GrammarClient$2;
 .super Ljava/lang/Object;
 .source "GrammarClient.java"
 
@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x8
     name = null
 .end annotation
 
 
 # instance fields
-.field private final synthetic val$cb:Lcom/aigrammar/GrammarClient$Callback;
+.field final synthetic val$cb:Lcom/aigrammar/GrammarClient$Callback;
 
-.field private final synthetic val$corrected:Ljava/lang/String;
+.field final synthetic val$corrected:Ljava/lang/String;
 
-.field private final synthetic val$error:Ljava/lang/String;
+.field final synthetic val$error:Ljava/lang/String;
 
-.field private final synthetic val$token:J
+.field final synthetic val$token:J
 
 
 # direct methods
@@ -54,7 +54,7 @@
     iget-wide v0, p0, Lcom/aigrammar/GrammarClient$2;->val$token:J
 
     # getter for: Lcom/aigrammar/GrammarClient;->REQUEST:Ljava/util/concurrent/atomic/AtomicLong;
-    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$0()Ljava/util/concurrent/atomic/AtomicLong;
+    invoke-static {}, Lcom/aigrammar/GrammarClient;->access$000()Ljava/util/concurrent/atomic/AtomicLong;
 
     move-result-object v2
 
