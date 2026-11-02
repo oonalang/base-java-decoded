@@ -4,7 +4,7 @@ An experimental Android keyboard clone, package **`com.gboard.eli`**, with a ded
 
 The APK build, resource restoration, signing and static checks pass. **This newest resource-restored APK still needs an Android phone test and a live Gemini test.** Earlier test APKs exposed startup and missing-resource failures that are documented below.
 
-Download the test APK from [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
+[Download the current test APK](https://github.com/oonalang/base-java-decoded/raw/refs/heads/main/releases/Gboard-By-Eliwoa-resources-fixed.apk) or see [GitHub Releases](https://github.com/oonalang/base-java-decoded/releases). Android requirements: **arm64-v8a, API 32 or newer**. Install it as an update if you already have a clone signed with the same key. Keep the original Gboard installed until the clone is verified.
 
 ## Configure
 
